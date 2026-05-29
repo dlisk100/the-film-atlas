@@ -1,0 +1,31 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Secrets
+.env
+.env.local
+*.key
+
+# Raw/cached data
+data/cache/
+data/raw/
+data/external/
+data/processed/
+
+# Large/private outputs
+outputs/private/
+outputs/intermediate/
+
+# Keep folders
+!data/.gitkeep
+!outputs/.gitkeep
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/
