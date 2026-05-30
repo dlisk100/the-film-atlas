@@ -5,12 +5,19 @@ from __future__ import annotations
 import json
 import re
 from pathlib import Path
+from typing import Literal
 
 from film_atlas.models import MovieRecord, SemanticProfile
 from film_atlas.normalize import load_movie_records
 
 PROFILES_FILENAME = "profiles.json"
-MAX_PROFILE_REVIEW_CHARS = 300
+DEFAULT_MAX_REVIEW_CHARS = 180
+ReviewWeight = Literal["light", "medium", "heavy"]
+REVIEW_WEIGHT_SNIPPETS: dict[ReviewWeight, int] = {
+    "light": 1,
+    "medium": 2,
+    "heavy": 4,
+}
 
 FORBIDDEN_PROFILE_FIELDS = {
     "year",
@@ -39,9 +46,22 @@ COUNTRY_ADJECTIVES = {
 }
 
 
-def build_semantic_profile(movie: MovieRecord) -> SemanticProfile:
+def build_semantic_profile(
+    movie: MovieRecord,
+    *,
+    include_reviews: bool = True,
+    max_review_chars: int = DEFAULT_MAX_REVIEW_CHARS,
+    review_weight: ReviewWeight = "light",
+) -> SemanticProfile:
     """Build profile text without production-context fields."""
     forbidden_values = _forbidden_values(movie)
+    review_language = _build_review_language(
+        movie.reviews,
+        forbidden_values=forbidden_values,
+        include_reviews=include_reviews,
+        max_review_chars=max_review_chars,
+        review_weight=review_weight,
+    )
     parts = [
         _section("Title", [movie.title]),
         _section("Overview", [_redact_forbidden_values(movie.overview, forbidden_values)]),
@@ -52,10 +72,7 @@ def build_semantic_profile(movie: MovieRecord) -> SemanticProfile:
         ),
         _section(
             "Review language",
-            [
-                _redact_forbidden_values(_truncate_review(review), forbidden_values)
-                for review in movie.reviews
-            ],
+            review_language,
         ),
     ]
     profile_text = "\n".join(part for part in parts if part)
@@ -73,9 +90,20 @@ def build_profiles_file(
     *,
     movies_path: str | Path = "data/processed/movies.json",
     output_dir: str | Path = "data",
+    include_reviews: bool = True,
+    max_review_chars: int = DEFAULT_MAX_REVIEW_CHARS,
+    review_weight: ReviewWeight = "light",
 ) -> Path:
     """Build all semantic profiles and write them to data/processed/profiles.json."""
-    profiles = [build_semantic_profile(movie) for movie in load_movie_records(movies_path)]
+    profiles = [
+        build_semantic_profile(
+            movie,
+            include_reviews=include_reviews,
+            max_review_chars=max_review_chars,
+            review_weight=review_weight,
+        )
+        for movie in load_movie_records(movies_path)
+    ]
     output_path = Path(output_dir) / "processed" / PROFILES_FILENAME
     output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_text(
@@ -98,9 +126,40 @@ def _section(label: str, values: list[str | None]) -> str:
     return f"{label}: {'; '.join(cleaned)}"
 
 
-def _truncate_review(review: str) -> str:
-    cleaned = " ".join(review.split())
-    return cleaned[:MAX_PROFILE_REVIEW_CHARS]
+def _build_review_language(
+    reviews: list[str],
+    *,
+    forbidden_values: list[str],
+    include_reviews: bool,
+    max_review_chars: int,
+    review_weight: ReviewWeight,
+) -> list[str]:
+    if not include_reviews or max_review_chars <= 0:
+        return []
+
+    snippet_limit = REVIEW_WEIGHT_SNIPPETS[review_weight]
+    snippets: list[str] = []
+    remaining_chars = max_review_chars
+    for review in reviews[:snippet_limit]:
+        cleaned = _clean_review_snippet(review)
+        cleaned = _redact_forbidden_values(cleaned, forbidden_values)
+        if not cleaned:
+            continue
+        snippet = cleaned[:remaining_chars].strip()
+        if snippet:
+            snippets.append(snippet)
+            remaining_chars -= len(snippet)
+        if remaining_chars <= 0:
+            break
+
+    return snippets
+
+
+def _clean_review_snippet(review: str) -> str:
+    cleaned = _strip_review_noise(review)
+    cleaned = re.sub(r"([!?.,;:])\1{1,}", r"\1", cleaned)
+    cleaned = _collapse_repeated_tokens(cleaned)
+    return " ".join(cleaned.split())
 
 
 def _forbidden_values(movie: MovieRecord) -> list[str]:
@@ -133,6 +192,26 @@ def _redact_forbidden_values(value: str | None, forbidden_values: list[str]) -> 
             pattern = re.compile(re.escape(variant), flags=re.IGNORECASE)
             redacted = pattern.sub("", redacted)
     return " ".join(redacted.split()) or None
+
+
+def _collapse_repeated_tokens(value: str) -> str:
+    tokens = value.split()
+    collapsed: list[str] = []
+    previous_normalized = ""
+    repeat_count = 0
+
+    for token in tokens:
+        normalized = re.sub(r"\W+", "", token).lower()
+        if normalized and normalized == previous_normalized:
+            repeat_count += 1
+        else:
+            repeat_count = 1
+            previous_normalized = normalized
+
+        if repeat_count <= 2:
+            collapsed.append(token)
+
+    return " ".join(collapsed)
 
 
 def _decade_label(year: int | None) -> str | None:

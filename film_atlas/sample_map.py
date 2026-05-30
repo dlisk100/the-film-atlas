@@ -236,6 +236,7 @@ def _write_points_csv(path: Path, points: list[MapPoint]) -> None:
         writer = csv.DictWriter(
             handle,
             fieldnames=["tmdb_id", "title", "year", "x", "y", "top_terms"],
+            lineterminator="\n",
         )
         writer.writeheader()
         for point in points:

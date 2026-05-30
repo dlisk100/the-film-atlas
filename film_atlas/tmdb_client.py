@@ -6,6 +6,7 @@ import hashlib
 import json
 import time
 from collections.abc import Callable
+from datetime import date
 from pathlib import Path
 from typing import Any
 
@@ -57,30 +58,40 @@ class TMDbClient:
         min_votes: int = 500,
         sort_by: str = "popularity.desc",
         min_runtime: int = 60,
+        release_date_gte: str | None = None,
+        release_date_lte: str | None = None,
+        exclude_future: bool = True,
         refresh: bool = False,
     ) -> list[dict[str, Any]]:
         """Fetch a controlled sample of original English-language films."""
         results: list[dict[str, Any]] = []
         page = 1
         total_pages = 1
+        release_lte = _bounded_release_lte(release_date_lte, exclude_future)
 
         while len(results) < limit and page <= total_pages:
+            params: dict[str, Any] = {
+                "include_adult": "false",
+                "include_video": "false",
+                "language": "en-US",
+                "page": page,
+                "sort_by": sort_by,
+                "vote_count.gte": min_votes,
+                "with_original_language": "en",
+                "with_runtime.gte": min_runtime,
+            }
+            if release_date_gte:
+                params["primary_release_date.gte"] = release_date_gte
+            if release_lte:
+                params["primary_release_date.lte"] = release_lte
+
             payload = self.get_json(
                 "/discover/movie",
-                params={
-                    "include_adult": "false",
-                    "include_video": "false",
-                    "language": "en-US",
-                    "page": page,
-                    "sort_by": sort_by,
-                    "vote_count.gte": min_votes,
-                    "with_original_language": "en",
-                    "with_runtime.gte": min_runtime,
-                },
+                params=params,
                 refresh=refresh,
             )
             total_pages = int(payload.get("total_pages") or 1)
-            results.extend(payload.get("results") or [])
+            results = _dedupe_movies([*results, *(payload.get("results") or [])])
             page += 1
 
         return results[:limit]
@@ -148,3 +159,25 @@ class TMDbClient:
         serialized_params = json.dumps(params, sort_keys=True, default=str)
         digest = hashlib.sha1(f"{endpoint}:{serialized_params}".encode("utf-8")).hexdigest()[:16]
         return self.cache_dir / f"{normalized_endpoint}__{digest}.json"
+
+
+def _dedupe_movies(movies: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    deduped: list[dict[str, Any]] = []
+    seen_ids: set[int] = set()
+    for movie in movies:
+        tmdb_id = movie.get("id")
+        if tmdb_id in seen_ids:
+            continue
+        seen_ids.add(tmdb_id)
+        deduped.append(movie)
+    return deduped
+
+
+def _bounded_release_lte(release_date_lte: str | None, exclude_future: bool) -> str | None:
+    if not exclude_future:
+        return release_date_lte
+
+    today = date.today().isoformat()
+    if not release_date_lte:
+        return today
+    return min(release_date_lte, today)

@@ -3,15 +3,16 @@
 from __future__ import annotations
 
 from pathlib import Path
-from typing import Annotated
+from typing import Annotated, cast
 
 import typer
 
 from film_atlas.config import MissingCredentialsError, load_settings
+from film_atlas.fetch import fetch_balanced as fetch_balanced_step
 from film_atlas.fetch import fetch_details as fetch_details_step
 from film_atlas.fetch import fetch_discover as fetch_discover_step
 from film_atlas.normalize import normalize_details_file
-from film_atlas.profiles import build_profiles_file
+from film_atlas.profiles import ReviewWeight, build_profiles_file
 from film_atlas.report import generate_report_file
 from film_atlas.sample_map import make_sample_map_file
 from film_atlas.tmdb_client import TMDbClient
@@ -31,6 +32,21 @@ def fetch_discover(
     output_dir: Annotated[Path | None, typer.Option(help="Base data output directory.")] = None,
     sort_by: Annotated[str, typer.Option(help="TMDb discover sort order.")] = "popularity.desc",
     min_runtime: Annotated[int, typer.Option(help="Minimum runtime in minutes.")] = 60,
+    release_date_gte: Annotated[
+        str | None,
+        typer.Option(help="Earliest primary release date, YYYY-MM-DD."),
+    ] = None,
+    release_date_lte: Annotated[
+        str | None,
+        typer.Option(help="Latest primary release date, YYYY-MM-DD."),
+    ] = None,
+    exclude_future: Annotated[
+        bool,
+        typer.Option(
+            "--exclude-future/--include-future",
+            help="Exclude future/unreleased films by capping release date at today.",
+        ),
+    ] = True,
     refresh: Annotated[bool, typer.Option(help="Ignore cached responses.")] = False,
 ) -> None:
     """Fetch a controlled sample from TMDb /discover/movie."""
@@ -47,11 +63,56 @@ def fetch_discover(
                 output_dir=settings.data_dir,
                 sort_by=sort_by,
                 min_runtime=min_runtime,
+                release_date_gte=release_date_gte,
+                release_date_lte=release_date_lte,
+                exclude_future=exclude_future,
                 refresh=refresh,
             )
     except MissingCredentialsError as exc:
         _missing_token_exit(exc)
     typer.echo(f"Wrote discovered movies to {path}")
+
+
+@app.command()
+def fetch_balanced(
+    per_decade: Annotated[int, typer.Option(help="Movies to fetch per decade bucket.")] = 100,
+    start_year: Annotated[int, typer.Option(help="First release year to include.")] = 1980,
+    end_year: Annotated[int, typer.Option(help="Last release year to include.")] = 2026,
+    min_votes: Annotated[int, typer.Option(help="Minimum TMDb vote count.")] = 500,
+    output_dir: Annotated[Path | None, typer.Option(help="Base data output directory.")] = None,
+    sort_by: Annotated[str, typer.Option(help="TMDb discover sort order.")] = "vote_count.desc",
+    min_runtime: Annotated[int, typer.Option(help="Minimum runtime in minutes.")] = 60,
+    exclude_future: Annotated[
+        bool,
+        typer.Option(
+            "--exclude-future/--include-future",
+            help="Exclude future/unreleased films by capping release date at today.",
+        ),
+    ] = True,
+    refresh: Annotated[bool, typer.Option(help="Ignore cached responses.")] = False,
+) -> None:
+    """Fetch a decade-balanced TMDb sample into data/raw/discover_movies.json."""
+    settings = load_settings(data_dir=output_dir)
+    try:
+        with TMDbClient(
+            settings.tmdb_bearer_token,
+            cache_dir=settings.data_dir / "cache",
+        ) as client:
+            path = fetch_balanced_step(
+                client,
+                per_decade=per_decade,
+                start_year=start_year,
+                end_year=end_year,
+                min_votes=min_votes,
+                output_dir=settings.data_dir,
+                sort_by=sort_by,
+                min_runtime=min_runtime,
+                exclude_future=exclude_future,
+                refresh=refresh,
+            )
+    except MissingCredentialsError as exc:
+        _missing_token_exit(exc)
+    typer.echo(f"Wrote balanced discovered movies to {path}")
 
 
 @app.command()
@@ -106,11 +167,32 @@ def build_profiles(
         typer.Option(help="Path to data/processed/movies.json."),
     ] = None,
     output_dir: Annotated[Path | None, typer.Option(help="Base data output directory.")] = None,
+    include_reviews: Annotated[
+        bool,
+        typer.Option(
+            "--include-reviews/--no-include-reviews",
+            help="Include conservative review-language snippets in profile text.",
+        ),
+    ] = True,
+    max_review_chars: Annotated[
+        int,
+        typer.Option(help="Maximum total review-language characters per movie profile."),
+    ] = 180,
+    review_weight: Annotated[
+        str,
+        typer.Option(help="Review contribution weight: light, medium, or heavy."),
+    ] = "light",
 ) -> None:
     """Build semantic profile text for each normalized movie."""
     settings = load_settings(data_dir=output_dir)
     resolved_movies_path = movies_path or settings.data_dir / "processed" / "movies.json"
-    path = build_profiles_file(movies_path=resolved_movies_path, output_dir=settings.data_dir)
+    path = build_profiles_file(
+        movies_path=resolved_movies_path,
+        output_dir=settings.data_dir,
+        include_reviews=include_reviews,
+        max_review_chars=max_review_chars,
+        review_weight=_parse_review_weight(review_weight),
+    )
     typer.echo(f"Wrote semantic profiles to {path}")
 
 
@@ -152,6 +234,36 @@ def quickstart(
     min_votes: Annotated[int, typer.Option(help="Minimum TMDb vote count.")] = 500,
     data_dir: Annotated[Path | None, typer.Option(help="Base data directory.")] = None,
     output_dir: Annotated[Path | None, typer.Option(help="Base outputs directory.")] = None,
+    release_date_gte: Annotated[
+        str | None,
+        typer.Option(help="Earliest primary release date, YYYY-MM-DD."),
+    ] = None,
+    release_date_lte: Annotated[
+        str | None,
+        typer.Option(help="Latest primary release date, YYYY-MM-DD."),
+    ] = None,
+    exclude_future: Annotated[
+        bool,
+        typer.Option(
+            "--exclude-future/--include-future",
+            help="Exclude future/unreleased films by capping release date at today.",
+        ),
+    ] = True,
+    include_reviews: Annotated[
+        bool,
+        typer.Option(
+            "--include-reviews/--no-include-reviews",
+            help="Include conservative review-language snippets in profile text.",
+        ),
+    ] = True,
+    max_review_chars: Annotated[
+        int,
+        typer.Option(help="Maximum total review-language characters per movie profile."),
+    ] = 180,
+    review_weight: Annotated[
+        str,
+        typer.Option(help="Review contribution weight: light, medium, or heavy."),
+    ] = "light",
 ) -> None:
     """Run the full Milestone 1 pipeline after TMDB_BEARER_TOKEN is configured."""
     settings = load_settings(data_dir=data_dir, output_dir=output_dir)
@@ -165,6 +277,9 @@ def quickstart(
                 limit=limit,
                 min_votes=min_votes,
                 output_dir=settings.data_dir,
+                release_date_gte=release_date_gte,
+                release_date_lte=release_date_lte,
+                exclude_future=exclude_future,
             )
             details_path = fetch_details_step(
                 client,
@@ -175,7 +290,13 @@ def quickstart(
         _missing_token_exit(exc)
 
     movies_path = normalize_details_file(details_path=details_path, output_dir=settings.data_dir)
-    profiles_path = build_profiles_file(movies_path=movies_path, output_dir=settings.data_dir)
+    profiles_path = build_profiles_file(
+        movies_path=movies_path,
+        output_dir=settings.data_dir,
+        include_reviews=include_reviews,
+        max_review_chars=max_review_chars,
+        review_weight=_parse_review_weight(review_weight),
+    )
     make_sample_map_file(profiles_path=profiles_path, output_dir=settings.output_dir)
     report_path = generate_report_file(data_dir=settings.data_dir, output_dir=settings.output_dir)
     typer.echo(f"Milestone 1 quickstart complete. Report: {report_path}")
@@ -186,3 +307,9 @@ def _missing_token_exit(exc: MissingCredentialsError) -> None:
     typer.echo("After adding TMDB_BEARER_TOKEN to .env, run:", err=True)
     typer.echo("  uv run film-atlas quickstart --limit 100", err=True)
     raise typer.Exit(code=1)
+
+
+def _parse_review_weight(value: str) -> ReviewWeight:
+    if value in {"light", "medium", "heavy"}:
+        return cast(ReviewWeight, value)
+    raise typer.BadParameter("review-weight must be one of: light, medium, heavy")

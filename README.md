@@ -56,7 +56,7 @@ Or run each step:
 film-atlas fetch-discover --limit 500 --min-votes 500
 film-atlas fetch-details
 film-atlas normalize
-film-atlas build-profiles
+film-atlas build-profiles --review-weight light --max-review-chars 180
 film-atlas make-sample-map
 film-atlas report
 ```
@@ -72,13 +72,17 @@ uv run film-atlas quickstart --limit 100
 - Fetches a controlled sample from TMDb `/discover/movie`.
 - Filters for original English-language films.
 - Excludes adult content and videos.
+- Excludes future/unreleased films by default.
 - Applies a default minimum vote count of 500.
 - Requests a minimum runtime of 60 minutes through the discover endpoint.
+- Supports primary release date bounds with `--release-date-gte` and
+  `--release-date-lte`.
+- Supports decade-balanced sampling with `fetch-balanced`.
 - Fetches details, keywords, reviews, credits, and external IDs for discovered
   movie IDs.
 - Normalizes records into JSON and Parquet.
 - Builds semantic text profiles from title, overview, genres, keywords, and
-  short review-language snippets.
+  conservative, cleaned, capped review-language snippets.
 - Creates a rough TF-IDF plus TruncatedSVD 2D sample map.
 - Writes a data-quality report to `outputs/reports/milestone_1_report.md`.
 
@@ -107,6 +111,51 @@ Tracked output folders:
 
 Raw review content may appear in local TMDb cache files. Export-ready semantic
 profiles only use truncated review-language snippets.
+
+## Milestone 1.5 Sampling Controls
+
+The default `fetch-discover` and `quickstart` commands now cap release dates at
+today so future/unreleased films do not enter the sample unless
+`--include-future` is passed.
+
+Date-bound example:
+
+```bash
+uv run film-atlas fetch-discover --limit 500 --min-votes 500 --release-date-gte 1980-01-01 --release-date-lte 2026-12-31
+```
+
+Recommended balanced sampling command before Milestone 2:
+
+```bash
+uv run film-atlas fetch-balanced --per-decade 100 --start-year 1980 --end-year 2026
+uv run film-atlas fetch-details
+uv run film-atlas normalize
+uv run film-atlas build-profiles --review-weight light --max-review-chars 180
+uv run film-atlas make-sample-map
+uv run film-atlas report
+```
+
+`fetch-balanced` writes the same active discover file as `fetch-discover`
+(`data/raw/discover_movies.json`) and dedupes movies by TMDb ID.
+
+## Profile Review Controls
+
+Review language is useful for vibe discovery, but it can overwhelm plot and
+keyword signals. Milestone 1.5 keeps reviews conservative by default:
+
+```bash
+uv run film-atlas build-profiles --include-reviews --max-review-chars 180 --review-weight light
+```
+
+Available controls:
+
+- `--include-reviews / --no-include-reviews`
+- `--max-review-chars`
+- `--review-weight light|medium|heavy`
+
+Profile building strips obvious review noise such as URLs, hashtags, repeated
+punctuation, and excessive repeated tokens. It also redacts known
+production-context values from non-title profile text.
 
 ## Testing And Linting
 

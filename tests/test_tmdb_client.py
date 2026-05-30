@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+from datetime import date
 from pathlib import Path
 
 import httpx
@@ -36,6 +37,7 @@ def test_discover_movies_uses_required_filters_and_caches(tmp_path: Path) -> Non
     assert request.url.params["include_video"] == "false"
     assert request.url.params["vote_count.gte"] == "500"
     assert request.url.params["with_runtime.gte"] == "60"
+    assert request.url.params["primary_release_date.lte"] == date.today().isoformat()
 
     cached_client = TMDbClient(
         None,
@@ -44,3 +46,33 @@ def test_discover_movies_uses_required_filters_and_caches(tmp_path: Path) -> Non
     )
     cached_movies = cached_client.discover_movies(limit=1, min_votes=500)
     assert cached_movies[0]["id"] == 101
+
+
+def test_discover_movies_accepts_release_bounds_and_dedupes(tmp_path: Path) -> None:
+    fixture = json.loads(Path("tests/fixtures/tmdb_discover_page.json").read_text())
+    fixture["results"] = [fixture["results"][0], fixture["results"][0]]
+    seen_requests: list[httpx.Request] = []
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        seen_requests.append(request)
+        return httpx.Response(200, json=fixture)
+
+    client = TMDbClient(
+        "test-token",
+        cache_dir=tmp_path,
+        transport=httpx.MockTransport(handler),
+        sleep=lambda _seconds: None,
+    )
+
+    movies = client.discover_movies(
+        limit=2,
+        min_votes=100,
+        release_date_gte="1980-01-01",
+        release_date_lte="1989-12-31",
+        exclude_future=True,
+    )
+
+    assert len(movies) == 1
+    request = seen_requests[0]
+    assert request.url.params["primary_release_date.gte"] == "1980-01-01"
+    assert request.url.params["primary_release_date.lte"] == "1989-12-31"

@@ -3,7 +3,9 @@
 from __future__ import annotations
 
 import json
+import re
 from collections import Counter
+from datetime import date
 from pathlib import Path
 from typing import Any
 
@@ -12,6 +14,30 @@ from film_atlas.normalize import load_movie_records
 from film_atlas.profiles import load_profiles
 
 REPORT_FILENAME = "milestone_1_report.md"
+CURRENT_RELEASE_YEAR = 2024
+FRANCHISE_KEYWORD_TERMS = {
+    "aftercreditsstinger",
+    "based on comic",
+    "based on video game",
+    "duringcreditsstinger",
+    "marvel cinematic universe (mcu)",
+    "reboot",
+    "remake",
+    "sequel",
+    "superhero",
+    "superhero team",
+}
+REVIEW_NOISE_TERMS = {
+    "http",
+    "https",
+    "www",
+    "spoiler",
+    "review",
+    "rating",
+    "stars",
+    "full",
+    "letterboxd",
+}
 
 
 def generate_report_file(
@@ -69,6 +95,8 @@ def render_report(
         f"- With overview: {_percent_with(movies, lambda movie: bool(movie.overview))}",
         f"- With keywords: {_percent_with(movies, lambda movie: bool(movie.keywords))}",
         f"- With reviews: {_percent_with(movies, lambda movie: bool(movie.reviews))}",
+        f"- From {CURRENT_RELEASE_YEAR} or later: {_percent_with(movies, _is_current_release)}",
+        f"- From future release years: {_percent_with(movies, _is_future_release_year)}",
         "",
         "## Year Distribution",
         "",
@@ -81,6 +109,14 @@ def render_report(
         "## Top Keywords",
         "",
         _counter_table(Counter(keyword for movie in movies for keyword in movie.keywords), "Keyword"),
+        "",
+        "## Sampling Bias Diagnostics",
+        "",
+        _sampling_bias_section(movies),
+        "",
+        "## Review Noise Diagnostics",
+        "",
+        _review_noise_section(movies),
         "",
         "## Movies Missing Important Fields",
         "",
@@ -99,6 +135,8 @@ def render_report(
         "- This report is a data-quality proof, not the final public website output.",
         "- Raw TMDb responses live under data/cache/ and data/raw/, which are gitignored.",
         "- Review language in profiles is truncated for semantic experimentation.",
+        "- Recommended balanced sampling command before Milestone 2: "
+        "`uv run film-atlas fetch-balanced --per-decade 100 --start-year 1980 --end-year 2026`.",
         "- OpenAI embeddings and cluster labeling are out of scope for Milestone 1.",
         "",
     ]
@@ -135,6 +173,14 @@ def _percent_with(movies: list[MovieRecord], predicate: Any) -> str:
     return f"{count / len(movies) * 100:.1f}% ({count}/{len(movies)})"
 
 
+def _is_current_release(movie: MovieRecord) -> bool:
+    return bool(movie.year and movie.year >= CURRENT_RELEASE_YEAR)
+
+
+def _is_future_release_year(movie: MovieRecord) -> bool:
+    return bool(movie.year and movie.year > date.today().year)
+
+
 def _counter_table(counter: Counter[Any], label: str, *, limit: int = 25) -> str:
     if not counter:
         return "_No data available._"
@@ -143,6 +189,122 @@ def _counter_table(counter: Counter[Any], label: str, *, limit: int = 25) -> str
     for value, count in counter.most_common(limit):
         lines.append(f"| {value} | {count} |")
     return "\n".join(lines)
+
+
+def _sampling_bias_section(movies: list[MovieRecord]) -> str:
+    if not movies:
+        return "_No detail records available._"
+
+    current_count = sum(1 for movie in movies if _is_current_release(movie))
+    future_count = sum(1 for movie in movies if _is_future_release_year(movie))
+    franchise_counter = Counter(
+        keyword
+        for movie in movies
+        for keyword in movie.keywords
+        if _is_franchise_keyword(keyword)
+    )
+    franchise_movie_count = sum(
+        1 for movie in movies if any(_is_franchise_keyword(keyword) for keyword in movie.keywords)
+    )
+    current_pct = current_count / len(movies) * 100
+    franchise_pct = franchise_movie_count / len(movies) * 100
+
+    warnings = []
+    if current_pct >= 25:
+        warnings.append(
+            f"Current-release concentration is high: {current_pct:.1f}% of movies are "
+            f"from {CURRENT_RELEASE_YEAR} or later."
+        )
+    if future_count:
+        warnings.append(f"Future release years are present: {future_count} movies.")
+    if franchise_pct >= 25:
+        warnings.append(
+            f"Franchise/sequel concentration is high: {franchise_pct:.1f}% of movies have "
+            "franchise-related keywords."
+        )
+
+    lines = [
+        f"- Movies from {CURRENT_RELEASE_YEAR} or later: {current_pct:.1f}% "
+        f"({current_count}/{len(movies)})",
+        f"- Movies from future release years: {future_count / len(movies) * 100:.1f}% "
+        f"({future_count}/{len(movies)})",
+        f"- Movies with franchise/sequel keywords: {franchise_pct:.1f}% "
+        f"({franchise_movie_count}/{len(movies)})",
+        "",
+        "### Franchise/Sequel Keywords",
+        "",
+        _counter_table(franchise_counter, "Keyword", limit=15),
+        "",
+        "### Warnings",
+        "",
+    ]
+    if warnings:
+        lines.extend(f"- Warning: {warning}" for warning in warnings)
+    else:
+        lines.append("_No high-concentration warnings for this sample._")
+    lines.extend(
+        [
+            "",
+            "### Recommended Balanced Command",
+            "",
+            "```bash",
+            "uv run film-atlas fetch-balanced --per-decade 100 --start-year 1980 --end-year 2026",
+            "uv run film-atlas fetch-details",
+            "uv run film-atlas normalize",
+            "uv run film-atlas build-profiles --review-weight light --max-review-chars 180",
+            "uv run film-atlas make-sample-map",
+            "uv run film-atlas report",
+            "```",
+        ]
+    )
+    return "\n".join(lines)
+
+
+def _review_noise_section(movies: list[MovieRecord]) -> str:
+    if not movies:
+        return "_No detail records available._"
+
+    counter = Counter()
+    examples = []
+    for movie in movies:
+        for review in movie.reviews:
+            lowered = review.lower()
+            for term in REVIEW_NOISE_TERMS:
+                if term in lowered:
+                    counter[term] += 1
+            if len(examples) < 5 and _looks_noisy(review):
+                examples.append((movie.title, _shorten_review(review)))
+
+    lines = [
+        "### Suspicious Review Terms",
+        "",
+        _counter_table(counter, "Term", limit=15),
+        "",
+        "### Review Noise Examples",
+        "",
+    ]
+    if not examples:
+        lines.append("_No obvious review-noise examples found._")
+    else:
+        for title, example in examples:
+            lines.append(f"- {title}: {example}")
+    return "\n".join(lines)
+
+
+def _is_franchise_keyword(keyword: str) -> bool:
+    lowered = keyword.lower()
+    return any(term in lowered for term in FRANCHISE_KEYWORD_TERMS)
+
+
+def _looks_noisy(review: str) -> bool:
+    lowered = review.lower()
+    return any(term in lowered for term in REVIEW_NOISE_TERMS) or "#" in review
+
+
+def _shorten_review(review: str, *, limit: int = 180) -> str:
+    cleaned = re.sub(r"https?://\S+|www\.\S+|#\S+", "", review)
+    cleaned = " ".join(cleaned.split())
+    return cleaned[:limit].strip()
 
 
 def _missing_fields_table(movies: list[MovieRecord]) -> str:
