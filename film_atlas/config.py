@@ -20,6 +20,7 @@ class Settings:
     tmdb_bearer_token: str | None
     openai_api_key: str | None
     openai_embedding_model: str
+    openai_label_model: str
     data_dir: Path
     output_dir: Path
 
@@ -57,10 +58,12 @@ def load_settings(
     token = os.getenv("TMDB_BEARER_TOKEN") or None
     openai_api_key = os.getenv("OPENAI_API_KEY") or None
     openai_embedding_model = os.getenv("OPENAI_EMBEDDING_MODEL", "text-embedding-3-large")
+    openai_label_model = os.getenv("OPENAI_LABEL_MODEL", "gpt-4.1-mini")
     return Settings(
         tmdb_bearer_token=token,
         openai_api_key=openai_api_key,
         openai_embedding_model=openai_embedding_model,
+        openai_label_model=openai_label_model,
         data_dir=Path(data_dir or env_data_dir),
         output_dir=Path(output_dir or env_output_dir),
     )

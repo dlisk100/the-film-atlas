@@ -1,0 +1,2585 @@
+[
+  {
+    "cluster_id": 0,
+    "confidence_score": 0.73,
+    "description": "Characters step into a seemingly ordinary place and get trapped in escalating rituals, curses, or predatory game rules.",
+    "label_id": "macro:0",
+    "layer": "macro",
+    "plain_label": "Modern folk horror & survival dread",
+    "recommended_label": "Folk Horror Survival Dread"
+  },
+  {
+    "cluster_id": 1,
+    "confidence_score": 0.68,
+    "description": "Romance told through bruised conversations, life detours, and the quiet physics of attachment.",
+    "label_id": "macro:1",
+    "layer": "macro",
+    "plain_label": "Adult romance & emotional realism",
+    "recommended_label": "Adult Romance, Soft Edges"
+  },
+  {
+    "cluster_id": 2,
+    "confidence_score": 0.71,
+    "description": "Agents and assassins hunt targets across missions that spiral from intel to personal payback.",
+    "label_id": "macro:2",
+    "layer": "macro",
+    "plain_label": "High-octane spy & revenge action",
+    "recommended_label": "Spy-Thriller: Revenge & Extraction"
+  },
+  {
+    "cluster_id": 3,
+    "confidence_score": 0.64,
+    "description": "Crime plots treated like a playground\u2014buddy dynamics, absurdity, and punchlines that keep escalating.",
+    "label_id": "macro:3",
+    "layer": "macro",
+    "plain_label": "Buddy-cop comedy & parody crime",
+    "recommended_label": "Parody Crime & Buddy Cop Chaos"
+  },
+  {
+    "cluster_id": 4,
+    "confidence_score": 0.66,
+    "description": "Animated family adventures where friendship and empathy win, often with gleeful villains and showy musical storytelling.",
+    "label_id": "macro:4",
+    "layer": "macro",
+    "plain_label": "Whimsical family animation with heart & villains",
+    "recommended_label": "Family Animation: Heart + Mischief"
+  },
+  {
+    "cluster_id": 5,
+    "confidence_score": 0.74,
+    "description": "Big, grimy science-fiction worlds where survival depends on fast action, alien contact, and broken systems.",
+    "label_id": "macro:5",
+    "layer": "macro",
+    "plain_label": "High-Stakes Sci\u2011Fi Dystopia Action",
+    "recommended_label": "Doomed Horizons: Sci\u2011Fi Action & Alien Menace"
+  },
+  {
+    "cluster_id": 6,
+    "confidence_score": 0.69,
+    "description": "Family-friendly fantasy adventures built from classic fairy-tale logic\u2014magic, quests, and good-versus-evil tension.",
+    "label_id": "macro:6",
+    "layer": "macro",
+    "plain_label": "Fairy-Tale Fantasy Quest for the Young",
+    "recommended_label": "Wizards, Witches & Wardrobes"
+  },
+  {
+    "cluster_id": 7,
+    "confidence_score": 0.71,
+    "description": "War films that grip you with true-story weight and battlefield immediacy\u2014fear, duty, and the cost of survival.",
+    "label_id": "macro:7",
+    "layer": "macro",
+    "plain_label": "Human-Cost War Drama (WWII & Battlefield Survival)",
+    "recommended_label": "Battlefield Survival Dramas"
+  },
+  {
+    "cluster_id": 8,
+    "confidence_score": 0.76,
+    "description": "Superhero action built around shared universes\u2014powers, secret identities, and escalating team-or-crossover stakes.",
+    "label_id": "macro:8",
+    "layer": "macro",
+    "plain_label": "Comic-Book Superhero Universe Action",
+    "recommended_label": "Superhero Universe Chaos"
+  },
+  {
+    "cluster_id": 9,
+    "confidence_score": 0.66,
+    "description": "Lighthearted, fast-cut action-comedy sequels where buddy energy and villain plotting drive the laughs.",
+    "label_id": "macro:9",
+    "layer": "macro",
+    "plain_label": "Quippy Sequel Buddy-Action Comedy for Families",
+    "recommended_label": "Comedy Action Sequels (Buddy & Villain)"
+  },
+  {
+    "cluster_id": 10,
+    "confidence_score": 0.78,
+    "description": "Stylish, morally slippery crime stories where investigation and violence braid together into a tightening web of suspicion.",
+    "label_id": "macro:10",
+    "layer": "macro",
+    "plain_label": "Neo-noir crime thrillers",
+    "recommended_label": "Neo-noir crime tension"
+  },
+  {
+    "cluster_id": 11,
+    "confidence_score": 0.74,
+    "description": "Relationship-driven comedies that play out flirtation, mishaps, and heartfelt growth with sharp timing and big feelings.",
+    "label_id": "macro:11",
+    "layer": "macro",
+    "plain_label": "Adult rom-coms",
+    "recommended_label": "Adult rom-coms"
+  },
+  {
+    "cluster_id": 0,
+    "confidence_score": 0.58,
+    "description": "Smart, funny love stories where pregnancy and growing up collide with family mess and sudden adulthood.",
+    "label_id": "neighborhood:0",
+    "layer": "neighborhood",
+    "plain_label": "Teen-to-adult dramedy romance",
+    "recommended_label": "Teen-to-adult dramedy romance"
+  },
+  {
+    "cluster_id": 1,
+    "confidence_score": 0.63,
+    "description": "Brutal, landscape-heavy survival tales built from real events\u2014where faith, brutality, and endurance grind together.",
+    "label_id": "neighborhood:1",
+    "layer": "neighborhood",
+    "plain_label": "True-story historical survival epics",
+    "recommended_label": "True-story historical survival epics"
+  },
+  {
+    "cluster_id": 2,
+    "confidence_score": 0.66,
+    "description": "Dating comedies where friends turn into competitors and attraction becomes a high-stakes prank.",
+    "label_id": "neighborhood:2",
+    "layer": "neighborhood",
+    "plain_label": "Rom-com rivalry and messy hookups",
+    "recommended_label": "Rom-com rivalry and messy hookups"
+  },
+  {
+    "cluster_id": 3,
+    "confidence_score": 0.91,
+    "description": "Superhero action powered by secret identities, multiversal/legacy stakes, and the constant pressure of saving a city while your life fractures.",
+    "label_id": "neighborhood:3",
+    "layer": "neighborhood",
+    "plain_label": "Web-slinging superhero universe stories",
+    "recommended_label": "Web-slinging superhero universe stories"
+  },
+  {
+    "cluster_id": 4,
+    "confidence_score": 0.86,
+    "description": "High-speed crime stories where car culture meets police pressure, revenge plots, and big, reckless set pieces.",
+    "label_id": "neighborhood:4",
+    "layer": "neighborhood",
+    "plain_label": "Street-racing crime thrillers",
+    "recommended_label": "Street-racing crime thrillers"
+  },
+  {
+    "cluster_id": 5,
+    "confidence_score": 0.72,
+    "description": "Serious crime stories where violence, institutions, and personal trauma corrode everyone in the frame.",
+    "label_id": "neighborhood:5",
+    "layer": "neighborhood",
+    "plain_label": "Boston crime dramas with moral rot",
+    "recommended_label": "Moral-rot gangster dramas"
+  },
+  {
+    "cluster_id": 6,
+    "confidence_score": 0.74,
+    "description": "Supernatural terror that targets families\u2014often through a child, a home, and a slow, escalating dread.",
+    "label_id": "neighborhood:6",
+    "layer": "neighborhood",
+    "plain_label": "Haunted-child and domestic supernatural horrors",
+    "recommended_label": "Domestic haunting horror"
+  },
+  {
+    "cluster_id": 7,
+    "confidence_score": 0.77,
+    "description": "Speculative futures where robots and AI chase meaning\u2014through loneliness, love, and the ethics of becoming human.",
+    "label_id": "neighborhood:7",
+    "layer": "neighborhood",
+    "plain_label": "Human-feeling AI and robot sci-fi",
+    "recommended_label": "Heart-on-silicon sci-fi"
+  },
+  {
+    "cluster_id": 8,
+    "confidence_score": 0.68,
+    "description": "Movies where relationships\u2014especially family\u2014collide with talent, identity, and life choices, mixing comedy with bruised sincerity.",
+    "label_id": "neighborhood:8",
+    "layer": "neighborhood",
+    "plain_label": "Character-driven dramedies about family and ambition",
+    "recommended_label": "Family-and-aspiration dramedies"
+  },
+  {
+    "cluster_id": 9,
+    "confidence_score": 0.73,
+    "description": "High-energy comedy-crime where mismatched cops (or cop-adjacent losers) stumble into investigations with punchlines and mayhem.",
+    "label_id": "neighborhood:9",
+    "layer": "neighborhood",
+    "plain_label": "Buddy cop action comedies and parody crimes",
+    "recommended_label": "Buddy-cop action comedy"
+  },
+  {
+    "cluster_id": 10,
+    "confidence_score": 0.66,
+    "description": "Psychological thrillers where a missing person or hidden double life detonates inside intimate relationships.",
+    "label_id": "neighborhood:10",
+    "layer": "neighborhood",
+    "plain_label": "Serial-killer domestic noir",
+    "recommended_label": "Serial-killer domestic noir"
+  },
+  {
+    "cluster_id": 11,
+    "confidence_score": 0.62,
+    "description": "Ensemble capers where a mastermind crew outsmarts rivals, regulators, and each other using misdirection and investigation.",
+    "label_id": "neighborhood:11",
+    "layer": "neighborhood",
+    "plain_label": "Clever crew heist mysteries",
+    "recommended_label": "Clever crew heist mysteries"
+  },
+  {
+    "cluster_id": 12,
+    "confidence_score": 0.72,
+    "description": "Animated or live-action family fantasies that turn classic fairy tales into big, singable kingdoms of magic and romance.",
+    "label_id": "neighborhood:12",
+    "layer": "neighborhood",
+    "plain_label": "Fairy-tale musical family fantasy",
+    "recommended_label": "Fairy-tale musical family fantasy"
+  },
+  {
+    "cluster_id": 13,
+    "confidence_score": 0.73,
+    "description": "Creature-feature terror set in claustrophobic ocean environments, where survival depends on grit, luck, and a shrinking air supply.",
+    "label_id": "neighborhood:13",
+    "layer": "neighborhood",
+    "plain_label": "Shark & deep-sea survival horror",
+    "recommended_label": "Shark & deep-sea survival horror"
+  },
+  {
+    "cluster_id": 14,
+    "confidence_score": 0.69,
+    "description": "Horror films where teenagers or groups run the gauntlet of a killer, often spiked with revenge, dark humor, and rule-breaking supernatural menace.",
+    "label_id": "neighborhood:14",
+    "layer": "neighborhood",
+    "plain_label": "Slasher survival with wink-and-vengeance",
+    "recommended_label": "Slasher survival with wink-and-vengeance"
+  },
+  {
+    "cluster_id": 15,
+    "confidence_score": 0.62,
+    "description": "Whimsical family comedies where a single parent\u2019s life gets hijacked\u2014usually by a nanny or stand-in caregiver\u2014and everything spirals into heartfelt chaos.",
+    "label_id": "neighborhood:15",
+    "layer": "neighborhood",
+    "plain_label": "Single-Parent Chaos & Nanny Fixes",
+    "recommended_label": "Nanny-to-the-Rescue Family Comedy"
+  },
+  {
+    "cluster_id": 16,
+    "confidence_score": 0.66,
+    "description": "High-intensity war films built on real missions\u2014snipers, raids, and special-ops operations\u2014driven by suspense and moral pressure.",
+    "label_id": "neighborhood:16",
+    "layer": "neighborhood",
+    "plain_label": "Modern Battlefield True-Story Thrillers",
+    "recommended_label": "True-Story War Thrillers (SEALs to Snipers)"
+  },
+  {
+    "cluster_id": 17,
+    "confidence_score": 0.64,
+    "description": "Swashbuckling globe-trotting adventures where archaeologists and treasure hunters chase riddles, relics, and curses across exotic ruins and seas.",
+    "label_id": "neighborhood:17",
+    "layer": "neighborhood",
+    "plain_label": "Treasure-Hunt Archaeology Adventure",
+    "recommended_label": "Temple Ruins & Pirate Treasure Adventures"
+  },
+  {
+    "cluster_id": 18,
+    "confidence_score": 0.63,
+    "description": "Sharp, music-friendly high-school comedies where social status games and teenage crushes collide with coming-of-age awkwardness.",
+    "label_id": "neighborhood:18",
+    "layer": "neighborhood",
+    "plain_label": "High-School Social Warfare & Crush Comedy",
+    "recommended_label": "Teen Mean-Heart Comedy (School & Romance)"
+  },
+  {
+    "cluster_id": 19,
+    "confidence_score": 0.72,
+    "description": "Future-shock action thrillers where artificial intelligence, cyborg bodies, and brutal systems turn survival into a philosophy fight.",
+    "label_id": "neighborhood:19",
+    "layer": "neighborhood",
+    "plain_label": "Dystopian AI & Man-vs-Machine Action",
+    "recommended_label": "Cyber Dystopia Action (AI, Cyborgs, Futures Gone Wrong)"
+  },
+  {
+    "cluster_id": 20,
+    "confidence_score": 0.77,
+    "description": "High-speed policing with mismatched chemistry, where the job gets done and the punches come with punchlines.",
+    "label_id": "neighborhood:20",
+    "layer": "neighborhood",
+    "plain_label": "Buddy Cop Action-Comedy",
+    "recommended_label": "Buddy Cop Action-Comedy"
+  },
+  {
+    "cluster_id": 21,
+    "confidence_score": 0.66,
+    "description": "Bright, fast-moving animated worlds where a charming misfit (often a villain) turns into an unlikely hero for the whole family.",
+    "label_id": "neighborhood:21",
+    "layer": "neighborhood",
+    "plain_label": "Animated Villain-Flip Family Adventure",
+    "recommended_label": "Animated Villain-Flip Family Adventure"
+  },
+  {
+    "cluster_id": 22,
+    "confidence_score": 0.8,
+    "description": "Sweat-soaked fight dramas where mentorship, discipline, and heartbreak build toward the next bell.",
+    "label_id": "neighborhood:22",
+    "layer": "neighborhood",
+    "plain_label": "Boxing Training & Comeback Drama",
+    "recommended_label": "Boxing Training & Comeback Drama"
+  },
+  {
+    "cluster_id": 23,
+    "confidence_score": 0.62,
+    "description": "Fairy-tale worlds\u2014sometimes familiar, sometimes flipped\u2014where magic, queens, hunts, and wonder collide in grand adventure.",
+    "label_id": "neighborhood:23",
+    "layer": "neighborhood",
+    "plain_label": "Fairy-Tale Live-Action & Animated Remix",
+    "recommended_label": "Fairy-Tale Live-Action & Animated Remix"
+  },
+  {
+    "cluster_id": 24,
+    "confidence_score": 0.78,
+    "description": "Teen and young-adult romance stories built for emotional impact\u2014secrets, fate, and heartbreak delivered with big, heartfelt sincerity.",
+    "label_id": "neighborhood:24",
+    "layer": "neighborhood",
+    "plain_label": "YA Tearjerker Romance Dramas",
+    "recommended_label": "YA Tearjerker Romance Dramas"
+  },
+  {
+    "cluster_id": 25,
+    "confidence_score": 0.72,
+    "description": "High-stakes voyages where astronauts (and scientists) collide with time-bending mysteries, alien signals, and the physics of survival.",
+    "label_id": "neighborhood:25",
+    "layer": "neighborhood",
+    "plain_label": "Space-mission sci\u2011fi (time, aliens, survival)",
+    "recommended_label": "Alien-contact space missions"
+  },
+  {
+    "cluster_id": 26,
+    "confidence_score": 0.68,
+    "description": "Tense cat-and-mouse crime stories where a killer\u2019s plan unspools across transit hubs and crowded cities.",
+    "label_id": "neighborhood:26",
+    "layer": "neighborhood",
+    "plain_label": "Urban hitman thrillers (revenge on the move)",
+    "recommended_label": "Assassin-in-motion thrillers"
+  },
+  {
+    "cluster_id": 27,
+    "confidence_score": 0.74,
+    "description": "Unsettling horror where relationships fray into paranoia, and fear spreads like a contagion through households and trust.",
+    "label_id": "neighborhood:27",
+    "layer": "neighborhood",
+    "plain_label": "Dread-soaked psychological horror (family paranoia)",
+    "recommended_label": "Psychological dread horror"
+  },
+  {
+    "cluster_id": 28,
+    "confidence_score": 0.7,
+    "description": "Bright, family-friendly animated follow-ups packed with new villains, mid-film momentum, and comedy-forward adventure set pieces.",
+    "label_id": "neighborhood:28",
+    "layer": "neighborhood",
+    "plain_label": "Big, sequel-driven animated comedy-adventure",
+    "recommended_label": "Sequel comedy-adventure animation"
+  },
+  {
+    "cluster_id": 29,
+    "confidence_score": 0.78,
+    "description": "Post-apocalyptic horror where outbreaks, conspiracies, and mutated threats force characters into desperate survival missions.",
+    "label_id": "neighborhood:29",
+    "layer": "neighborhood",
+    "plain_label": "Zombie sci\u2011fi survival (virus apocalypse)",
+    "recommended_label": "Virus-zombie apocalypse survival"
+  },
+  {
+    "cluster_id": 30,
+    "confidence_score": 0.66,
+    "description": "Young heroes step into magic-soaked worlds where destiny, quests, and old-school wonder collide.",
+    "label_id": "neighborhood:30",
+    "layer": "neighborhood",
+    "plain_label": "Mythic YA Portal Fantasy",
+    "recommended_label": "Mythic YA Portal Fantasy"
+  },
+  {
+    "cluster_id": 31,
+    "confidence_score": 0.57,
+    "description": "Big divine premises meet fast jokes\u2014faith, ego, and love get scrambled in a comedic afterlife of consequences.",
+    "label_id": "neighborhood:31",
+    "layer": "neighborhood",
+    "plain_label": "Heavenly Comedy of Errors",
+    "recommended_label": "Heavenly Comedy of Errors"
+  },
+  {
+    "cluster_id": 32,
+    "confidence_score": 0.72,
+    "description": "High-energy expeditions where paleontology, DNA tinkering, and island thrills turn into full-on dinosaur mayhem.",
+    "label_id": "neighborhood:32",
+    "layer": "neighborhood",
+    "plain_label": "Dinosaur Science-Adventure",
+    "recommended_label": "Dinosaur Science-Adventure"
+  },
+  {
+    "cluster_id": 33,
+    "confidence_score": 0.69,
+    "description": "Tense space-bound hunts where deadly extraterrestrial creatures turn every firefight into a survival horror sprint.",
+    "label_id": "neighborhood:33",
+    "layer": "neighborhood",
+    "plain_label": "Alien Predator Creature Warfare",
+    "recommended_label": "Alien Predator Creature Warfare"
+  },
+  {
+    "cluster_id": 34,
+    "confidence_score": 0.79,
+    "description": "Big ensemble superhero adventures where stakes balloon fast and set-piece action is built for maximum crowd payoff.",
+    "label_id": "neighborhood:34",
+    "layer": "neighborhood",
+    "plain_label": "Cinematic Superhero Team Spectacle",
+    "recommended_label": "Cinematic Superhero Team Spectacle"
+  },
+  {
+    "cluster_id": 35,
+    "confidence_score": 0.56,
+    "description": "Bright, mid-30s romantic chaos where love, identity, and family plans collide\u2014often with an unexpected pregnancy or parenthood question.",
+    "label_id": "neighborhood:35",
+    "layer": "neighborhood",
+    "plain_label": "Rom-coms with a baby-shaped plot twist",
+    "recommended_label": "Baby-bomb rom-coms"
+  },
+  {
+    "cluster_id": 36,
+    "confidence_score": 0.52,
+    "description": "Thoughtful, stylish romance stories where people fall into\u2014then analyze\u2014their feelings while cities and time do the emotional choreography.",
+    "label_id": "neighborhood:36",
+    "layer": "neighborhood",
+    "plain_label": "Lyrical relationship daydreams",
+    "recommended_label": "Lyrical love & life reveries"
+  },
+  {
+    "cluster_id": 37,
+    "confidence_score": 0.8,
+    "description": "Razor-paced action spy yarns where the central trick is infiltration\u2014disguises, false identities, and secret agencies turning every plan into a new problem.",
+    "label_id": "neighborhood:37",
+    "layer": "neighborhood",
+    "plain_label": "Spy missions built on fake identities",
+    "recommended_label": "Mask-and-infiltrate spy thrillers"
+  },
+  {
+    "cluster_id": 38,
+    "confidence_score": 0.48,
+    "description": "Intense character studies of ambition and self-destruction, where music culture and addiction turn everyday life into a high-volume tragedy.",
+    "label_id": "neighborhood:38",
+    "layer": "neighborhood",
+    "plain_label": "Music-fueled, drug-addiction rise-and-collapse dramas",
+    "recommended_label": "Drug-and-dream music dramas"
+  },
+  {
+    "cluster_id": 39,
+    "confidence_score": 0.54,
+    "description": "Fast, funny romance stories where chance encounters in big-city life spiral into feelings\u2014often with weddings, friends, and public embarrassment as the accelerant.",
+    "label_id": "neighborhood:39",
+    "layer": "neighborhood",
+    "plain_label": "City-based rom-coms with meet-cute energy",
+    "recommended_label": "Meet-cute romcoms (city + wedding orbit)"
+  },
+  {
+    "cluster_id": 40,
+    "confidence_score": 0.78,
+    "description": "Tense, immersive World War II stories that track soldiers through fear, chaos, and moral pressure in real-time battle conditions.",
+    "label_id": "neighborhood:40",
+    "layer": "neighborhood",
+    "plain_label": "World War II battlefield realism",
+    "recommended_label": "Frontline WW2 realism"
+  },
+  {
+    "cluster_id": 41,
+    "confidence_score": 0.73,
+    "description": "Supernatural horror built around haunting entities\u2014often through dolls, spirits, and escalation from omen to possession.",
+    "label_id": "neighborhood:41",
+    "layer": "neighborhood",
+    "plain_label": "Demonic possession doll-and-spirit horror",
+    "recommended_label": "Demonic possession horror"
+  },
+  {
+    "cluster_id": 42,
+    "confidence_score": 0.66,
+    "description": "Fast-talking, action-forward spy stories where the mission is mostly a setup for absurdity, pratfalls, and escalating criminal chaos.",
+    "label_id": "neighborhood:42",
+    "layer": "neighborhood",
+    "plain_label": "Spy parody and slapstick crime capers",
+    "recommended_label": "Spy parody action-comedy"
+  },
+  {
+    "cluster_id": 43,
+    "confidence_score": 0.71,
+    "description": "Dark crime thrillers that obsess over investigators and predators, where identity fractures under the weight of serial murder.",
+    "label_id": "neighborhood:43",
+    "layer": "neighborhood",
+    "plain_label": "Serial-killer psychological crime thrillers",
+    "recommended_label": "Serial-killer psychological noir"
+  },
+  {
+    "cluster_id": 44,
+    "confidence_score": 0.85,
+    "description": "Big-screen mutant superhero adventures where powers, identity, and team politics collide in high-stakes action set pieces.",
+    "label_id": "neighborhood:44",
+    "layer": "neighborhood",
+    "plain_label": "Comic-book mutant superhero action",
+    "recommended_label": "Mutant superhero action"
+  },
+  {
+    "cluster_id": 45,
+    "confidence_score": 0.74,
+    "description": "When the skyline becomes a boxing ring, giant creatures duke it out in loud, high-stakes spectacle.",
+    "label_id": "neighborhood:45",
+    "layer": "neighborhood",
+    "plain_label": "Kaiju & Giant-Monster Showdowns",
+    "recommended_label": "Kaiju & Giant-Monster Showdowns"
+  },
+  {
+    "cluster_id": 46,
+    "confidence_score": 0.7,
+    "description": "Tight, suspenseful stories where time travel and future technology turn every decision into a trap.",
+    "label_id": "neighborhood:46",
+    "layer": "neighborhood",
+    "plain_label": "Time-Loop & Paradox Tech Thrillers",
+    "recommended_label": "Time-Loop & Paradox Tech Thrillers"
+  },
+  {
+    "cluster_id": 47,
+    "confidence_score": 0.66,
+    "description": "High-velocity crime action where revenge and assassin professionalism power the set pieces\u2014often amplified in sequels.",
+    "label_id": "neighborhood:47",
+    "layer": "neighborhood",
+    "plain_label": "Stylized Action Crime Sequels",
+    "recommended_label": "Stylized Action Crime Sequels"
+  },
+  {
+    "cluster_id": 48,
+    "confidence_score": 0.68,
+    "description": "A modern Western mood where cartels, borders, and brutality squeeze characters into irreversible choices.",
+    "label_id": "neighborhood:48",
+    "layer": "neighborhood",
+    "plain_label": "Cartel-Pressure Neo-Westerns",
+    "recommended_label": "Cartel-Pressure Neo-Westerns"
+  },
+  {
+    "cluster_id": 49,
+    "confidence_score": 0.63,
+    "description": "Christmas chaos where family trouble and home/holiday trespass turn into slapstick action set pieces.",
+    "label_id": "neighborhood:49",
+    "layer": "neighborhood",
+    "plain_label": "Christmas Home-Invasion Comedy-Action",
+    "recommended_label": "Christmas Home-Invasion Comedy-Action"
+  },
+  {
+    "cluster_id": 50,
+    "confidence_score": 0.66,
+    "description": "Animated journeys where friendship and found-family power a bright, emotionally safe adventure.",
+    "label_id": "neighborhood:50",
+    "layer": "neighborhood",
+    "plain_label": "Feel-good animated quests",
+    "recommended_label": "Cozy Animated Adventure Quests"
+  },
+  {
+    "cluster_id": 51,
+    "confidence_score": 0.62,
+    "description": "Biographical, based-on-real-events dramas where institutions, law, and power collide under pressure.",
+    "label_id": "neighborhood:51",
+    "layer": "neighborhood",
+    "plain_label": "True-story political thrillers",
+    "recommended_label": "True-Story Legal & Political Thrillers"
+  },
+  {
+    "cluster_id": 52,
+    "confidence_score": 0.63,
+    "description": "Big-screen sci-fi action with aliens, robots, and franchise-scale set pieces\u2014built for momentum over subtlety.",
+    "label_id": "neighborhood:52",
+    "layer": "neighborhood",
+    "plain_label": "Space-and-mecha blockbuster action",
+    "recommended_label": "Space Opera Robot Blockbusters"
+  },
+  {
+    "cluster_id": 53,
+    "confidence_score": 0.6,
+    "description": "Crime stories with bite\u2014often revenge-driven\u2014where menace and dark humor share the same spotlight.",
+    "label_id": "neighborhood:53",
+    "layer": "neighborhood",
+    "plain_label": "Darkly witty revenge and danger",
+    "recommended_label": "Dark Comedy Revenge & Crime Thrillers"
+  },
+  {
+    "cluster_id": 54,
+    "confidence_score": 0.86,
+    "description": "A YA fantasy school-and-stakes run where growing up at a magical academy turns into a fight for survival.",
+    "label_id": "neighborhood:54",
+    "layer": "neighborhood",
+    "plain_label": "Hogwarts-style teen wizard school saga",
+    "recommended_label": "Teen Wizard School Fantasy"
+  },
+  {
+    "cluster_id": 55,
+    "confidence_score": 0.66,
+    "description": "Vampire wars and slayer myth meets hard-edged action in rain-soaked, gothic cityscapes.",
+    "label_id": "neighborhood:55",
+    "layer": "neighborhood",
+    "plain_label": "Urban Gothic Vampire Action",
+    "recommended_label": "Urban Gothic Vampire Action"
+  },
+  {
+    "cluster_id": 56,
+    "confidence_score": 0.88,
+    "description": "A serial-killer\u2019s ruleset turns captivity into escalating puzzles where survival is the only answer.",
+    "label_id": "neighborhood:56",
+    "layer": "neighborhood",
+    "plain_label": "Survival Torture Mind Games",
+    "recommended_label": "Survival Torture Mind Games"
+  },
+  {
+    "cluster_id": 57,
+    "confidence_score": 0.62,
+    "description": "Leashed by politics and deadlines, a world-traveling agent turns espionage into nonstop pursuit and retaliation.",
+    "label_id": "neighborhood:57",
+    "layer": "neighborhood",
+    "plain_label": "High-Pressure Modern Spy Thriller",
+    "recommended_label": "High-Pressure Modern Spy Thriller"
+  },
+  {
+    "cluster_id": 58,
+    "confidence_score": 0.7,
+    "description": "When the universe shows up, the only plan is to survive the creature and the unknown rules it brings.",
+    "label_id": "neighborhood:58",
+    "layer": "neighborhood",
+    "plain_label": "Cosmic Survival Monster Horror (Sci-Fi)",
+    "recommended_label": "Cosmic Survival Monster Horror (Sci-Fi)"
+  },
+  {
+    "cluster_id": 59,
+    "confidence_score": 0.57,
+    "description": "A fractured identity sparks a chase through assassins, agencies, and conspiracies where every lead comes with a flashback cost.",
+    "label_id": "neighborhood:59",
+    "layer": "neighborhood",
+    "plain_label": "Amnesiac Assassin Chase Espionage",
+    "recommended_label": "Amnesiac Assassin Chase Espionage"
+  },
+  {
+    "cluster_id": 60,
+    "confidence_score": 0.86,
+    "description": "Big-planet mythmaking where Jedi ideals collide with empires, prophecy, and high-stakes space battles.",
+    "label_id": "neighborhood:60",
+    "layer": "neighborhood",
+    "plain_label": "Space Opera Jedi Rebellions",
+    "recommended_label": "Jedi Rebellion Space Opera"
+  },
+  {
+    "cluster_id": 61,
+    "confidence_score": 0.74,
+    "description": "Planet-scale calamity\u2014natural or extraterrestrial\u2014where survival becomes a countdown and big heroes try to out-run the inevitable.",
+    "label_id": "neighborhood:61",
+    "layer": "neighborhood",
+    "plain_label": "Global Catastrophe Sci\u2011Fi",
+    "recommended_label": "End-of-World Disaster Sci\u2011Fi"
+  },
+  {
+    "cluster_id": 62,
+    "confidence_score": 0.9,
+    "description": "Horror built on foreknowledge\u2014characters glimpse their deaths and race (usually too late) to dodge a supernatural timetable.",
+    "label_id": "neighborhood:62",
+    "layer": "neighborhood",
+    "plain_label": "Death-Premonition Horror",
+    "recommended_label": "Premonition-Driven Death Horror"
+  },
+  {
+    "cluster_id": 63,
+    "confidence_score": 0.67,
+    "description": "Rowdy, risk-light comedy sequels where friend groups spiral through weddings, road trips, and workplace mayhem for maximum laughs.",
+    "label_id": "neighborhood:63",
+    "layer": "neighborhood",
+    "plain_label": "Raucous Sequel Buddy Comedy",
+    "recommended_label": "Rude-Road Sequel Buddy Comedy"
+  },
+  {
+    "cluster_id": 64,
+    "confidence_score": 0.78,
+    "description": "Young protagonists navigate brutal futures where survival is gamified\u2014then pivot into revolution.",
+    "label_id": "neighborhood:64",
+    "layer": "neighborhood",
+    "plain_label": "YA Dystopian Survival Games",
+    "recommended_label": "Dystopian Survival Games YA"
+  },
+  {
+    "cluster_id": 65,
+    "confidence_score": 0.66,
+    "description": "Big-ego friendships and bad-timing dates collide with office life, turning awkward romance into high-volume punchlines.",
+    "label_id": "neighborhood:65",
+    "layer": "neighborhood",
+    "plain_label": "Adult workplace & dating comedy",
+    "recommended_label": "Adult workplace & dating comedy"
+  },
+  {
+    "cluster_id": 66,
+    "confidence_score": 0.72,
+    "description": "Heroic warriors, mythic creatures, and biblical/ancient legends fuel thunderous battles and stylized mythmaking.",
+    "label_id": "neighborhood:66",
+    "layer": "neighborhood",
+    "plain_label": "Mythic sword-and-sandal spectacle",
+    "recommended_label": "Mythic sword-and-sandal spectacle"
+  },
+  {
+    "cluster_id": 67,
+    "confidence_score": 0.81,
+    "description": "Horror that knows the rules\u2014then weaponizes them\u2014using meta jokes, serial-killer setups, and franchise-baiting sequels.",
+    "label_id": "neighborhood:67",
+    "layer": "neighborhood",
+    "plain_label": "Self-aware slasher parody & sequel-horror",
+    "recommended_label": "Self-aware slasher parody & sequel-horror"
+  },
+  {
+    "cluster_id": 68,
+    "confidence_score": 0.7,
+    "description": "Stylish, tense crime stories\u2014gangsters, detectives, and hustlers\u2014built from momentum, moral rot, and razor-edged dialogue.",
+    "label_id": "neighborhood:68",
+    "layer": "neighborhood",
+    "plain_label": "Gritty crime drama with swagger",
+    "recommended_label": "Gritty crime drama with swagger"
+  },
+  {
+    "cluster_id": 69,
+    "confidence_score": 0.78,
+    "description": "Superhero myths staged as big, conflicted battles\u2014where identities, powers, and alliances fracture under moral intensity.",
+    "label_id": "neighborhood:69",
+    "layer": "neighborhood",
+    "plain_label": "Dark, mythic superhero action (comic-universe scale)",
+    "recommended_label": "Dark, mythic superhero action (comic-universe scale)"
+  },
+  {
+    "cluster_id": 70,
+    "confidence_score": 0.73,
+    "description": "Supernatural horror where the threat feels immediate\u2014ghosts, demons, and possessions creeping in through ordinary spaces and escalating set pieces.",
+    "label_id": "neighborhood:70",
+    "layer": "neighborhood",
+    "plain_label": "Haunted-by-the-camera supernatural horror",
+    "recommended_label": "Demon-possessed haunted-house chills"
+  },
+  {
+    "cluster_id": 71,
+    "confidence_score": 0.66,
+    "description": "Teen romance driven by supernatural creatures\u2014vampires, werewolves, and fate\u2014where the emotional stakes are as sharp as the supernatural ones.",
+    "label_id": "neighborhood:71",
+    "layer": "neighborhood",
+    "plain_label": "YA vampire & werewolf romance",
+    "recommended_label": "Vampire love triangles & teen immortality"
+  },
+  {
+    "cluster_id": 72,
+    "confidence_score": 0.71,
+    "description": "High-velocity spy and hitman thrillers where intelligence agencies, revenge missions, and shootout set pieces collide.",
+    "label_id": "neighborhood:72",
+    "layer": "neighborhood",
+    "plain_label": "Assassin/spy action thrillers",
+    "recommended_label": "Assassin- and CIA-style action thrillers"
+  },
+  {
+    "cluster_id": 73,
+    "confidence_score": 0.52,
+    "description": "Romantic stories for younger audiences that borrow fairytale or gothic mood\u2014often with real-world awkwardness, scandal, or a faintly unsettling edge.",
+    "label_id": "neighborhood:73",
+    "layer": "neighborhood",
+    "plain_label": "YA romance with darker edge",
+    "recommended_label": "Teen romance in gothic-ish modern fairytales"
+  },
+  {
+    "cluster_id": 74,
+    "confidence_score": 0.69,
+    "description": "Emotional coming-of-age stories where friendship, school life, family ties, and identity shifts carry the weight.",
+    "label_id": "neighborhood:74",
+    "layer": "neighborhood",
+    "plain_label": "Coming-of-age with friendship at the center",
+    "recommended_label": "Friendship-driven coming-of-age drama"
+  },
+  {
+    "cluster_id": 0,
+    "confidence_score": 0.68,
+    "description": "No-nonsense detectives and airborne chaos collide in big-city set pieces with holiday heat turned up.",
+    "label_id": "micro:0",
+    "layer": "micro",
+    "plain_label": "Christmas-city cop action",
+    "recommended_label": "Holiday Skyscraper Cop Chaos"
+  },
+  {
+    "cluster_id": 1,
+    "confidence_score": 0.63,
+    "description": "Dread blooms in familiar neighborhoods as clowns, ghosts, and haunted spaces weaponize childhood fear.",
+    "label_id": "micro:1",
+    "layer": "micro",
+    "plain_label": "Small-town clown haunt horror",
+    "recommended_label": "Clown-Seeded Small-Town Haunt"
+  },
+  {
+    "cluster_id": 2,
+    "confidence_score": 0.56,
+    "description": "Martial arts heroes fight world-ending threats with magic, alternate realities, and video-game swagger.",
+    "label_id": "micro:2",
+    "layer": "micro",
+    "plain_label": "Magic martial arts action-fantasy",
+    "recommended_label": "Kung-Fu Fantasy Mayhem"
+  },
+  {
+    "cluster_id": 3,
+    "confidence_score": 0.56,
+    "description": "When retreat turns into a trap, storms, ships, and remote shorelines turn ordinary people into victims of paranoia and violence.",
+    "label_id": "micro:3",
+    "layer": "micro",
+    "plain_label": "Island isolation psychological horror-thriller",
+    "recommended_label": "Storm-Island Mind-Break Thrillers"
+  },
+  {
+    "cluster_id": 4,
+    "confidence_score": 0.51,
+    "description": "High-emotion biographical stories where ambition collides with family, institutions, and the mess of real-world consequences.",
+    "label_id": "micro:4",
+    "layer": "micro",
+    "plain_label": "Biopic creation & courtroom-era drama",
+    "recommended_label": "Creative Genius Biopic Drama"
+  },
+  {
+    "cluster_id": 5,
+    "confidence_score": 0.52,
+    "description": "A breathtaking journey where survival and awe collide with family bonds, grief, and spiritual questions.",
+    "label_id": "micro:5",
+    "layer": "micro",
+    "plain_label": "Life\u2019s Big Questions Survival Tales",
+    "recommended_label": "Survival + Meaning-Seeking"
+  },
+  {
+    "cluster_id": 6,
+    "confidence_score": 0.57,
+    "description": "High-velocity sci-fi where alien or post-apocalyptic futures come with memory glitches, escape plans, and identity trouble.",
+    "label_id": "micro:6",
+    "layer": "micro",
+    "plain_label": "Dystopian Space-Action with Identity Twists",
+    "recommended_label": "Dystopia Space-Action"
+  },
+  {
+    "cluster_id": 7,
+    "confidence_score": 0.54,
+    "description": "A sharp comic spiral where everyday tech and social awkwardness turn into real-time psychological danger.",
+    "label_id": "micro:7",
+    "layer": "micro",
+    "plain_label": "Phone-Call Comedy Thrillers",
+    "recommended_label": "Dark Comedy Phone-Run Thrillers"
+  },
+  {
+    "cluster_id": 8,
+    "confidence_score": 0.54,
+    "description": "Animated stories powered by friendship, mischievous villains, and big-hearted emotional payoff\u2014often with a pet or toy sidekick.",
+    "label_id": "micro:8",
+    "layer": "micro",
+    "plain_label": "Heartfelt Animated Buddy Adventures",
+    "recommended_label": "Hopeful Animated Buddy Journeys"
+  },
+  {
+    "cluster_id": 9,
+    "confidence_score": 0.55,
+    "description": "Broad, fast, sometimes heartfelt comedy about fathers and blended-family life colliding with responsibility, weddings, and parenting mishaps.",
+    "label_id": "micro:9",
+    "layer": "micro",
+    "plain_label": "Rowdy Modern Dad Comedy",
+    "recommended_label": "Dad-Driven Family Chaos"
+  },
+  {
+    "cluster_id": 10,
+    "confidence_score": 0.74,
+    "description": "Big-screen fairy tales retold as live-action musical spectacles\u2014romance, curses, and showstopping enchantments included.",
+    "label_id": "micro:10",
+    "layer": "micro",
+    "plain_label": "Fairy-tale musical live-action remakes",
+    "recommended_label": "Fairy-tale musical remakes"
+  },
+  {
+    "cluster_id": 11,
+    "confidence_score": 0.86,
+    "description": "High-octane espionage where aliases, infiltration, and secret agencies drive a relentless mission-chase.",
+    "label_id": "micro:11",
+    "layer": "micro",
+    "plain_label": "Spy thriller with identity masks and infiltrations",
+    "recommended_label": "Masked-infiltration spy thrillers"
+  },
+  {
+    "cluster_id": 12,
+    "confidence_score": 0.67,
+    "description": "World War II dramas built on real events\u2014tight historical perspective, moral stakes, and the machinery of survival.",
+    "label_id": "micro:12",
+    "layer": "micro",
+    "plain_label": "World War II true-story courtroom of the battlefield",
+    "recommended_label": "WWII true-story battlefield dramas"
+  },
+  {
+    "cluster_id": 13,
+    "confidence_score": 0.78,
+    "description": "Raucous high-school coming-of-age stories where romance, embarrassment, and sexual misadventures fuel the jokes.",
+    "label_id": "micro:13",
+    "layer": "micro",
+    "plain_label": "Teen sex-comedy coming-of-age",
+    "recommended_label": "Teen sex-comedy coming-of-age"
+  },
+  {
+    "cluster_id": 14,
+    "confidence_score": 0.72,
+    "description": "Surreal science-fiction horrors where alien or unknown threats turn dread into an atmospheric, psychological trap.",
+    "label_id": "micro:14",
+    "layer": "micro",
+    "plain_label": "Psychedelic sci-fi horror and alien dread",
+    "recommended_label": "Alien dread sci-fi horror"
+  },
+  {
+    "cluster_id": 15,
+    "confidence_score": 0.64,
+    "description": "A lone operator with a hidden past moves through crime, war-zone grit, and tight rescue missions to settle scores with surgical brutality.",
+    "label_id": "micro:15",
+    "layer": "micro",
+    "plain_label": "tactical revenge thrillers",
+    "recommended_label": "Tactical Revenge Thriller"
+  },
+  {
+    "cluster_id": 16,
+    "confidence_score": 0.62,
+    "description": "Crime unspools as fallout\u2014abuse, grief, and moral debt\u2014pulling police, courts, and families into a slow-motion reckoning.",
+    "label_id": "micro:16",
+    "layer": "micro",
+    "plain_label": "trauma-soaked crime dramas",
+    "recommended_label": "Trauma-Driven Crime Drama"
+  },
+  {
+    "cluster_id": 17,
+    "confidence_score": 0.66,
+    "description": "Big-hearted animated quests where music, magic, and a growing sense of hope carry the story across oceans, kingdoms, and curses.",
+    "label_id": "micro:17",
+    "layer": "micro",
+    "plain_label": "musical fantasy animation adventures",
+    "recommended_label": "Animated Musical Adventure Fantasy"
+  },
+  {
+    "cluster_id": 18,
+    "confidence_score": 0.69,
+    "description": "A creeping escalation of supernatural threats\u2014haunted homes, spirits, and demonic logic\u2014where the family tries to survive the unseen.",
+    "label_id": "micro:18",
+    "layer": "micro",
+    "plain_label": "haunted-house supernatural horror",
+    "recommended_label": "Haunted Supernatural Horror"
+  },
+  {
+    "cluster_id": 19,
+    "confidence_score": 0.74,
+    "description": "Large-scale sci-fi action where a superhero team battles alien threats and escalating stakes across a connected cinematic universe.",
+    "label_id": "micro:19",
+    "layer": "micro",
+    "plain_label": "cinematic superhero team epics",
+    "recommended_label": "Superhero Team Sci-Fi Action"
+  },
+  {
+    "cluster_id": 20,
+    "confidence_score": 0.62,
+    "description": "Big, dumb momentum comedies where bad decisions turn into escalating road chaos and punchline payoffs.",
+    "label_id": "micro:20",
+    "layer": "micro",
+    "plain_label": "Stupid-Intent Roadtrip Comedy",
+    "recommended_label": "Roadtrip Mayhem Comedy"
+  },
+  {
+    "cluster_id": 21,
+    "confidence_score": 0.66,
+    "description": "Family-friendly fantasy adventures built on young protagonists, legendary worlds, and moral battles between good and evil.",
+    "label_id": "micro:21",
+    "layer": "micro",
+    "plain_label": "YA Mythic Kingdom Fantasy",
+    "recommended_label": "YA Mythic Quests"
+  },
+  {
+    "cluster_id": 22,
+    "confidence_score": 0.6,
+    "description": "Rom-coms where a social misfit collides with wealth and status, turning courtship into a comedy of manners.",
+    "label_id": "micro:22",
+    "layer": "micro",
+    "plain_label": "Fish-Out-of-Water Romance Comedy",
+    "recommended_label": "Rich-Heart Rom-Coms"
+  },
+  {
+    "cluster_id": 23,
+    "confidence_score": 0.64,
+    "description": "Moody sci-fi futures where AI, androids, and surveillance noir collide with big existential questions.",
+    "label_id": "micro:23",
+    "layer": "micro",
+    "plain_label": "Cyberpunk Tech-Noir Dystopia",
+    "recommended_label": "Tech-Noir Cyberpunk"
+  },
+  {
+    "cluster_id": 24,
+    "confidence_score": 0.52,
+    "description": "Surreal fantasy survival stories where women fight to break impossible systems\u2014often through stylized violence and escape attempts.",
+    "label_id": "micro:24",
+    "layer": "micro",
+    "plain_label": "Surreal Female-Driven Fantasy Survival",
+    "recommended_label": "Survival Escape Fantasy"
+  },
+  {
+    "cluster_id": 25,
+    "confidence_score": 0.78,
+    "description": "High-octane street races and heists fueled by loyalty, betrayal, and escalating personal grudges.",
+    "label_id": "micro:25",
+    "layer": "micro",
+    "plain_label": "Street-racing family revenge action",
+    "recommended_label": "Street-Racing Revenge Action"
+  },
+  {
+    "cluster_id": 26,
+    "confidence_score": 0.66,
+    "description": "Close-up stories of young people navigating first love, friendship, and identity\u2014often with quiet humor and sharp emotional edges.",
+    "label_id": "micro:26",
+    "layer": "micro",
+    "plain_label": "YA coming-of-age with tenderness and bite",
+    "recommended_label": "Tender YA Coming-of-Age"
+  },
+  {
+    "cluster_id": 27,
+    "confidence_score": 0.6,
+    "description": "Charm-first romances where letters, art, and travel set up misunderstandings, soft suspense, and unexpected connection.",
+    "label_id": "micro:27",
+    "layer": "micro",
+    "plain_label": "Romantic art-and-misdirection travel dramas",
+    "recommended_label": "European Romantic Mischief"
+  },
+  {
+    "cluster_id": 28,
+    "confidence_score": 0.57,
+    "description": "Big-screen space missions that mix sci-fi spectacle, action set pieces, and ensemble character energy.",
+    "label_id": "micro:28",
+    "layer": "micro",
+    "plain_label": "Space-opera adventure with crew banter",
+    "recommended_label": "Crew Space-Opera Action"
+  },
+  {
+    "cluster_id": 29,
+    "confidence_score": 0.72,
+    "description": "Island-sized creature showdowns with apes, dinosaurs, and nuclear-level spectacle.",
+    "label_id": "micro:29",
+    "layer": "micro",
+    "plain_label": "Kaiju monster brawls on the big scale",
+    "recommended_label": "Kaiju Creature Feature"
+  },
+  {
+    "cluster_id": 30,
+    "confidence_score": 0.58,
+    "description": "Bright, kid-friendly animation where a lovable cast tangles with an out-of-this-world threat and turns it into a friendship-and-hope victory lap.",
+    "label_id": "micro:30",
+    "layer": "micro",
+    "plain_label": "Animated alien/monster family comedy-adventure",
+    "recommended_label": "Goofy Alien & Monster Family Adventure"
+  },
+  {
+    "cluster_id": 31,
+    "confidence_score": 0.56,
+    "description": "Hard-edged crime films that track drug empires, moral collapse, and the grinding collision between cops, courts, and street logic.",
+    "label_id": "micro:31",
+    "layer": "micro",
+    "plain_label": "Gangster cautionary crime drama",
+    "recommended_label": "Gangster Downfall Crime Dramas"
+  },
+  {
+    "cluster_id": 32,
+    "confidence_score": 0.62,
+    "description": "Big-budget end-of-the-world thrillers where scientists and strangers scramble as meteors, storms, and climate-flavored disasters close in.",
+    "label_id": "micro:32",
+    "layer": "micro",
+    "plain_label": "Global catastrophe action sci-fi",
+    "recommended_label": "Apocalypse Disaster Action Sci\u2011Fi"
+  },
+  {
+    "cluster_id": 33,
+    "confidence_score": 0.6,
+    "description": "Stylish, darkly playful stories of monsters and misfits\u2014often stop-motion or gothic animation\u2014where melancholy turns into connection.",
+    "label_id": "micro:33",
+    "layer": "micro",
+    "plain_label": "Gothic stop-motion/quirky macabre family fantasy",
+    "recommended_label": "Gothic Macabre Family Fantasy"
+  },
+  {
+    "cluster_id": 34,
+    "confidence_score": 0.57,
+    "description": "White-knuckle investigations and cat-and-mouse mind games centered on serial killers, psychological collapse, and forensic obsession.",
+    "label_id": "micro:34",
+    "layer": "micro",
+    "plain_label": "Serial-killer psychological thriller",
+    "recommended_label": "Serial-Killer Psychological Thrillers"
+  },
+  {
+    "cluster_id": 35,
+    "confidence_score": 0.66,
+    "description": "Slow-burn dread where witchcraft, isolation, and family rot fester inside forests and old-world superstition.",
+    "label_id": "micro:35",
+    "layer": "micro",
+    "plain_label": "Witch-and-Woods Folk Horror",
+    "recommended_label": "Folk Horror: Witchcraft in the Pines"
+  },
+  {
+    "cluster_id": 36,
+    "confidence_score": 0.6,
+    "description": "Vampire-and-monster stories where Dracula\u2019s world collides with hotels, family chaos, and punchline-friendly horror.",
+    "label_id": "micro:36",
+    "layer": "micro",
+    "plain_label": "Hotel-Dracula Monster Comedy",
+    "recommended_label": "Dracula-in-a-Hotel Monster Comedy"
+  },
+  {
+    "cluster_id": 37,
+    "confidence_score": 0.55,
+    "description": "Colorful animated animal stories where big feelings and bigger schemes\u2014often led by a charismatic villain\u2014drive the laughs and quests.",
+    "label_id": "micro:37",
+    "layer": "micro",
+    "plain_label": "Villain-Driven Animal Animation",
+    "recommended_label": "Villain-Forward Animal Comedy Adventure"
+  },
+  {
+    "cluster_id": 38,
+    "confidence_score": 0.52,
+    "description": "Spy films that mix undercover tradecraft with sharp suspense or satire, trading glamour for paranoia and misdirection.",
+    "label_id": "micro:38",
+    "layer": "micro",
+    "plain_label": "Cold War Spy Parody & Smart Thriller",
+    "recommended_label": "Cold War Spy Capers (Dry Wit + Tradecraft)"
+  },
+  {
+    "cluster_id": 39,
+    "confidence_score": 0.48,
+    "description": "A fast-talking mix of undercover identity games and crime-adjacent chaos, usually powered by a sharp ensemble and comedic stakes.",
+    "label_id": "micro:39",
+    "layer": "micro",
+    "plain_label": "Female-Led Undercover Crime Comedy",
+    "recommended_label": "Undercover Crew Comedy with Crime Tension"
+  },
+  {
+    "cluster_id": 40,
+    "confidence_score": 0.74,
+    "description": "Taut, human-stakes war dramas where intelligence work, raids, and real operations collide with moral pressure.",
+    "label_id": "micro:40",
+    "layer": "micro",
+    "plain_label": "True-Story War & Counterterror Intelligence Thrillers",
+    "recommended_label": "True-Story War & Counterterror Intelligence Thrillers"
+  },
+  {
+    "cluster_id": 41,
+    "confidence_score": 0.86,
+    "description": "High-school romance driven by secret letters that accidentally turn longing into momentum.",
+    "label_id": "micro:41",
+    "layer": "micro",
+    "plain_label": "YA Epistolary Crush Romance",
+    "recommended_label": "YA Epistolary Crush Romance"
+  },
+  {
+    "cluster_id": 42,
+    "confidence_score": 0.68,
+    "description": "Mismatched partners, escalating police absurdity, and crime plots treated like a live-action punchline.",
+    "label_id": "micro:42",
+    "layer": "micro",
+    "plain_label": "Buddy Cop Parody & Slapstick Crime",
+    "recommended_label": "Buddy Cop Parody & Slapstick Crime"
+  },
+  {
+    "cluster_id": 43,
+    "confidence_score": 0.62,
+    "description": "Confessional, fashion-aware relationship stories where romantic misfires turn into loud, messy comedy and tender self-reinvention.",
+    "label_id": "micro:43",
+    "layer": "micro",
+    "plain_label": "Big-City Romcom Diary & Relationship Comedy-Drama",
+    "recommended_label": "Big-City Romcom Diary & Relationship Comedy-Drama"
+  },
+  {
+    "cluster_id": 44,
+    "confidence_score": 0.73,
+    "description": "Killer-on-the-loose horror built on slasher mechanics\u2014murders, remakes, and ramped-up gore with Halloween-season momentum.",
+    "label_id": "micro:44",
+    "layer": "micro",
+    "plain_label": "Slasher Classics, Remakes & Gore-Forward Halloween Horror",
+    "recommended_label": "Slasher Classics, Remakes & Gore-Forward Halloween Horror"
+  },
+  {
+    "cluster_id": 45,
+    "confidence_score": 0.66,
+    "description": "High-tension mysteries where suspicion, infidelity, and missing pieces turn into a slow-motion psychological collapse.",
+    "label_id": "micro:45",
+    "layer": "micro",
+    "plain_label": "Psychological dread thriller",
+    "recommended_label": "Psychological dread thriller"
+  },
+  {
+    "cluster_id": 46,
+    "confidence_score": 0.62,
+    "description": "Fast-talking buddy cops and undercover misadventures where the investigation is mostly a vehicle for escalating jokes and bad decisions.",
+    "label_id": "micro:46",
+    "layer": "micro",
+    "plain_label": "Undercover buddy cop comedy-crime",
+    "recommended_label": "Undercover buddy cop comedy-crime"
+  },
+  {
+    "cluster_id": 47,
+    "confidence_score": 0.57,
+    "description": "Friend groups thrown into rule-bound fantasy simulations\u2014jungles, dungeons, or alien basketball courts\u2014where action and comedy collide.",
+    "label_id": "micro:47",
+    "layer": "micro",
+    "plain_label": "Game-world adventure comedy",
+    "recommended_label": "Game-world adventure comedy"
+  },
+  {
+    "cluster_id": 48,
+    "confidence_score": 0.64,
+    "description": "Cerebral, character-driven heist stories where robberies become investigations and con artists play chess with the FBI and each other.",
+    "label_id": "micro:48",
+    "layer": "micro",
+    "plain_label": "Heist crime drama (FBI/NYC con games)",
+    "recommended_label": "Heist crime drama (FBI/NYC con games)"
+  },
+  {
+    "cluster_id": 49,
+    "confidence_score": 0.78,
+    "description": "Bright, joke-forward animated stories where a lovable supervillain and a found-family crew turn chaos into heartfelt comedy.",
+    "label_id": "micro:49",
+    "layer": "micro",
+    "plain_label": "Villain-led animated family comedy",
+    "recommended_label": "Villain-led animated family comedy"
+  },
+  {
+    "cluster_id": 50,
+    "confidence_score": 0.66,
+    "description": "A survival story where the apocalypse is the joke and the jokes are the survival plan.",
+    "label_id": "micro:50",
+    "layer": "micro",
+    "plain_label": "Zombie Road-Trip Comedy",
+    "recommended_label": "Zombie Road-Trip Comedy"
+  },
+  {
+    "cluster_id": 51,
+    "confidence_score": 0.6,
+    "description": "Big landscapes, big wars, and intimate losses\u2014history told through relationships and endurance.",
+    "label_id": "micro:51",
+    "layer": "micro",
+    "plain_label": "Epic Frontier Heartbreak",
+    "recommended_label": "Epic Frontier Heartbreak"
+  },
+  {
+    "cluster_id": 52,
+    "confidence_score": 0.86,
+    "description": "A horror run on logic and cruelty\u2014victims pushed through engineered trials where every move is a test.",
+    "label_id": "micro:52",
+    "layer": "micro",
+    "plain_label": "Torture-Mind-Game Horror",
+    "recommended_label": "Torture-Mind-Game Horror"
+  },
+  {
+    "cluster_id": 53,
+    "confidence_score": 0.5,
+    "description": "Superpowers collide with alien possession energy\u2014high-octane fights, shifting identities, and after-credits chaos.",
+    "label_id": "micro:53",
+    "layer": "micro",
+    "plain_label": "Symbiote Superhero Chaos",
+    "recommended_label": "Symbiote Superhero Chaos"
+  },
+  {
+    "cluster_id": 54,
+    "confidence_score": 0.57,
+    "description": "A crime-soaked superhero world where training montages and secret identities get undercut by messier, darker jokes.",
+    "label_id": "micro:54",
+    "layer": "micro",
+    "plain_label": "Violent-Comic Superhero Satire",
+    "recommended_label": "Violent-Comic Superhero Satire"
+  },
+  {
+    "cluster_id": 55,
+    "confidence_score": 0.74,
+    "description": "High-stakes trials where law collides with racism, power, and personal survival.",
+    "label_id": "micro:55",
+    "layer": "micro",
+    "plain_label": "Courtroom moral reckoning",
+    "recommended_label": "Courtroom moral reckoning"
+  },
+  {
+    "cluster_id": 56,
+    "confidence_score": 0.81,
+    "description": "Comedy built on ghosts and monsters, where scares keep getting interrupted by punchlines.",
+    "label_id": "micro:56",
+    "layer": "micro",
+    "plain_label": "Chaotic afterlife comedy",
+    "recommended_label": "Chaotic afterlife comedy"
+  },
+  {
+    "cluster_id": 57,
+    "confidence_score": 0.73,
+    "description": "Immortal longing and high-school stakes wrapped in vampire-and-werewolf melodrama.",
+    "label_id": "micro:57",
+    "layer": "micro",
+    "plain_label": "Teen vampire romance saga",
+    "recommended_label": "Teen vampire romance saga"
+  },
+  {
+    "cluster_id": 58,
+    "confidence_score": 0.77,
+    "description": "Gloves-off missions through cartel territory where violence, corruption, and revenge drive the plot.",
+    "label_id": "micro:58",
+    "layer": "micro",
+    "plain_label": "Border-cartel action thriller",
+    "recommended_label": "Border-cartel action thriller"
+  },
+  {
+    "cluster_id": 59,
+    "confidence_score": 0.7,
+    "description": "Big-sky science fiction where alien threats become fuel for satire, dystopia, and dark comedy.",
+    "label_id": "micro:59",
+    "layer": "micro",
+    "plain_label": "Satirical alien-invasion sci-fi",
+    "recommended_label": "Satirical alien-invasion sci-fi"
+  },
+  {
+    "cluster_id": 60,
+    "confidence_score": 0.66,
+    "description": "Big-hearted animated sequels that sprint through action-comedy set pieces, then reward patience with after-credits stingers.",
+    "label_id": "micro:60",
+    "layer": "micro",
+    "plain_label": "Animated sequel adventure with after-credits chaos",
+    "recommended_label": "After-Credits Animated Sequel Adventure"
+  },
+  {
+    "cluster_id": 61,
+    "confidence_score": 0.74,
+    "description": "High-energy police showdowns where mismatched partners turn violence, banter, and procedure into momentum.",
+    "label_id": "micro:61",
+    "layer": "micro",
+    "plain_label": "Buddy-cop action crime thrillers",
+    "recommended_label": "Buddy-Cop Action Heat"
+  },
+  {
+    "cluster_id": 62,
+    "confidence_score": 0.62,
+    "description": "Festive comedy built on kids outsmarting intruders and families reuniting in the nick of time.",
+    "label_id": "micro:62",
+    "layer": "micro",
+    "plain_label": "Holiday home-alone slapstick and kid-protection capers",
+    "recommended_label": "Holiday Home-Invasion Slapstick"
+  },
+  {
+    "cluster_id": 63,
+    "confidence_score": 0.69,
+    "description": "Dark crime stories where ordinary people or damaged agents spiral into revenge, coercion, and moral reckoning.",
+    "label_id": "micro:63",
+    "layer": "micro",
+    "plain_label": "Revenge-driven vigilante crime thrillers",
+    "recommended_label": "Revenge Vigilante Crime Thriller"
+  },
+  {
+    "cluster_id": 64,
+    "confidence_score": 0.78,
+    "description": "Understated sports dramas built around relentless training, mentorship, and the emotional calculus of a comeback fight.",
+    "label_id": "micro:64",
+    "layer": "micro",
+    "plain_label": "Boxing training comeback dramas",
+    "recommended_label": "Boxing Comeback & Training Drama"
+  },
+  {
+    "cluster_id": 65,
+    "confidence_score": 0.66,
+    "description": "High-stakes naval battles where alien threats, giant beasts, and wartime chaos collide in watery set pieces.",
+    "label_id": "micro:65",
+    "layer": "micro",
+    "plain_label": "Sea-battle monster mayhem",
+    "recommended_label": "Kaiju/Monster Naval Warfare"
+  },
+  {
+    "cluster_id": 66,
+    "confidence_score": 0.61,
+    "description": "Fantasy adventures built around wizards, magical creatures, and episodic quests that feel like puzzles you can rob.",
+    "label_id": "micro:66",
+    "layer": "micro",
+    "plain_label": "Wizarding-school creature capers",
+    "recommended_label": "Wizarding Creature Adventure"
+  },
+  {
+    "cluster_id": 67,
+    "confidence_score": 0.73,
+    "description": "Stylish vampire-and-werewolf battles in a dark, modern world where fights are choreographed like mythology.",
+    "label_id": "micro:67",
+    "layer": "micro",
+    "plain_label": "Urban gothic vampire action",
+    "recommended_label": "Urban Gothic Vampire Combat"
+  },
+  {
+    "cluster_id": 68,
+    "confidence_score": 0.9,
+    "description": "Big-spirited pirate journeys across exotic islands, where curses, rival crews, and bold swordplay drive the adventure.",
+    "label_id": "micro:68",
+    "layer": "micro",
+    "plain_label": "Swashbuckling cursed-island adventure",
+    "recommended_label": "Cursed Pirate Swashbuckling"
+  },
+  {
+    "cluster_id": 69,
+    "confidence_score": 0.62,
+    "description": "High-octane crime thrillers where the hunt is relentless\u2014FBI agents, prison breaks, and escalating shootouts turn every lead into danger.",
+    "label_id": "micro:69",
+    "layer": "micro",
+    "plain_label": "Manhunt thriller with prison break energy",
+    "recommended_label": "FBI/Prison Escape Manhunt Thriller"
+  },
+  {
+    "cluster_id": 70,
+    "confidence_score": 0.58,
+    "description": "Bright, storybook fantasy built around mischief, spells, and wonder that never loses its sense of play.",
+    "label_id": "micro:70",
+    "layer": "micro",
+    "plain_label": "Enchanted family adventure magic",
+    "recommended_label": "Family Magic & Spellbound Adventure"
+  },
+  {
+    "cluster_id": 71,
+    "confidence_score": 0.67,
+    "description": "Space travel stories where the real tension comes from confinement, distance, and the psychological weight of a single mission.",
+    "label_id": "micro:71",
+    "layer": "micro",
+    "plain_label": "Moon mission sci-fi isolation",
+    "recommended_label": "Moon Mission Isolation Sci-Fi"
+  },
+  {
+    "cluster_id": 72,
+    "confidence_score": 0.86,
+    "description": "High-velocity survival action where zombies, mutants, and lab-bred horror are tied to corporate plots and collapsing safe zones.",
+    "label_id": "micro:72",
+    "layer": "micro",
+    "plain_label": "Zombie apocalypse corporate conspiracy action",
+    "recommended_label": "Zombie Bioweapon Conspiracy Action"
+  },
+  {
+    "cluster_id": 73,
+    "confidence_score": 0.84,
+    "description": "Tense horror-mysteries where visions of disaster force characters into increasingly doomed attempts to outsmart fate.",
+    "label_id": "micro:73",
+    "layer": "micro",
+    "plain_label": "Premonition-driven death fate horror",
+    "recommended_label": "Premonition Death-Omen Horror"
+  },
+  {
+    "cluster_id": 74,
+    "confidence_score": 0.9,
+    "description": "Teen-centered wizardry at a school that gradually turns from wonder into a high-stakes fight against dark magic.",
+    "label_id": "micro:74",
+    "layer": "micro",
+    "plain_label": "Teen wizard school fantasy war arc",
+    "recommended_label": "Wizard School Spellcraft & Rising War"
+  },
+  {
+    "cluster_id": 75,
+    "confidence_score": 0.62,
+    "description": "Western stories where honor is a myth, violence has paperwork, and mercy arrives too late.",
+    "label_id": "micro:75",
+    "layer": "micro",
+    "plain_label": "Grim modern Western tragedy",
+    "recommended_label": "Grim modern Western tragedy"
+  },
+  {
+    "cluster_id": 76,
+    "confidence_score": 0.66,
+    "description": "Fast, brainy investigations where sacred texts, secret societies, and murder clues spiral into paranoia.",
+    "label_id": "micro:76",
+    "layer": "micro",
+    "plain_label": "Religious conspiracy thrillers",
+    "recommended_label": "Religious conspiracy thrillers"
+  },
+  {
+    "cluster_id": 77,
+    "confidence_score": 0.6,
+    "description": "Family-first adventures where animals (and the people who love them) carry the emotional weight.",
+    "label_id": "micro:77",
+    "layer": "micro",
+    "plain_label": "Wholesome animal-hearted family adventure",
+    "recommended_label": "Wholesome animal-hearted family adventure"
+  },
+  {
+    "cluster_id": 78,
+    "confidence_score": 0.57,
+    "description": "Dramatic, real-event rescues and ship/sea catastrophes where leadership and grit are tested minute by minute.",
+    "label_id": "micro:78",
+    "layer": "micro",
+    "plain_label": "True-story maritime disaster & survival",
+    "recommended_label": "True-story maritime disaster & survival"
+  },
+  {
+    "cluster_id": 79,
+    "confidence_score": 0.63,
+    "description": "Heart-tugging romances that start in hope and end in consequence\u2014often adapted from novels.",
+    "label_id": "micro:79",
+    "layer": "micro",
+    "plain_label": "Tearjerker romance from books",
+    "recommended_label": "Tearjerker romance from books"
+  },
+  {
+    "cluster_id": 80,
+    "confidence_score": 0.74,
+    "description": "Fast, bleak thrillers where a hard-edged protector hunts backroom criminals and \u201crescues\u201d people the system won\u2019t.",
+    "label_id": "micro:80",
+    "layer": "micro",
+    "plain_label": "Vigilante thriller action",
+    "recommended_label": "Vigilante thriller action"
+  },
+  {
+    "cluster_id": 81,
+    "confidence_score": 0.7,
+    "description": "Sweeping, character-driven gangster stories where power grows, families fracture, and every deal tightens the noose.",
+    "label_id": "micro:81",
+    "layer": "micro",
+    "plain_label": "Rise-and-fall mafia crime epics",
+    "recommended_label": "Rise-and-fall mafia crime epics"
+  },
+  {
+    "cluster_id": 82,
+    "confidence_score": 0.62,
+    "description": "Big, bright comedy-musicals where groups train, audition, and bicker their way through high-stakes singing competitions.",
+    "label_id": "micro:82",
+    "layer": "micro",
+    "plain_label": "Sequel-driven collegiate musical comedy",
+    "recommended_label": "College sing-off comedies (sequel energy)"
+  },
+  {
+    "cluster_id": 83,
+    "confidence_score": 0.72,
+    "description": "Science-fiction suspense where robots, android systems, or AI proxies reshape everyday life\u2014and turn violence into a feature, not a bug.",
+    "label_id": "micro:83",
+    "layer": "micro",
+    "plain_label": "Robot-and-AI dystopia thrillers",
+    "recommended_label": "Robot-and-AI dystopia thrillers"
+  },
+  {
+    "cluster_id": 84,
+    "confidence_score": 0.66,
+    "description": "Intimate, emotionally punishing dramas about love, marriage, infidelity, addiction, and the quiet devastation that follows.",
+    "label_id": "micro:84",
+    "layer": "micro",
+    "plain_label": "Relationship wreckage dramas",
+    "recommended_label": "Relationship wreckage dramas"
+  },
+  {
+    "cluster_id": 85,
+    "confidence_score": 0.66,
+    "description": "Films where the summit becomes a countdown and survival depends on grit, weather, and hard choices.",
+    "label_id": "micro:85",
+    "layer": "micro",
+    "plain_label": "Mountain survival dramas",
+    "recommended_label": "Mountain survival drama"
+  },
+  {
+    "cluster_id": 86,
+    "confidence_score": 0.88,
+    "description": "Over-the-top horror parodies that treat jump scares like punchlines and franchises like a playground.",
+    "label_id": "micro:86",
+    "layer": "micro",
+    "plain_label": "Horror spoof sequels",
+    "recommended_label": "Horror spoof comedy"
+  },
+  {
+    "cluster_id": 87,
+    "confidence_score": 0.6,
+    "description": "Stories where time travel or time-based technology reshapes love, identity, and the cost of changing the clock.",
+    "label_id": "micro:87",
+    "layer": "micro",
+    "plain_label": "Time-drenched sci-fi romance thrillers",
+    "recommended_label": "Time sci-fi thriller romance"
+  },
+  {
+    "cluster_id": 88,
+    "confidence_score": 0.82,
+    "description": "Hard-edged action war films where a veteran\u2019s mission turns into a brutal, personal fight against overwhelming odds.",
+    "label_id": "micro:88",
+    "layer": "micro",
+    "plain_label": "Vietnam-to-hell action war missions",
+    "recommended_label": "Rambo-style war action"
+  },
+  {
+    "cluster_id": 89,
+    "confidence_score": 0.72,
+    "description": "Dystopian futures where intelligent primates rise, forcing humans and apes into a heartbreaking cycle of war and survival.",
+    "label_id": "micro:89",
+    "layer": "micro",
+    "plain_label": "Apes vs humans dystopian action dramas",
+    "recommended_label": "Dystopian ape rebellion sci-fi"
+  },
+  {
+    "cluster_id": 90,
+    "confidence_score": 0.74,
+    "description": "Hard-edged, quippy mutant stories where lethal skills and messy morals collide.",
+    "label_id": "micro:90",
+    "layer": "micro",
+    "plain_label": "Rogue comic-book mercenaries",
+    "recommended_label": "Antihero Mutant Brawls"
+  },
+  {
+    "cluster_id": 91,
+    "confidence_score": 0.63,
+    "description": "Crime thrillers where the most dangerous force is a mind\u2014often female\u2014turning empathy into a weapon.",
+    "label_id": "micro:91",
+    "layer": "micro",
+    "plain_label": "Psychological crime with female predators",
+    "recommended_label": "Female-Driven Psychological Crime"
+  },
+  {
+    "cluster_id": 92,
+    "confidence_score": 0.78,
+    "description": "Big-budget battles of transforming machines, aliens, and human-scale heroes caught in robot wars.",
+    "label_id": "micro:92",
+    "layer": "micro",
+    "plain_label": "Giant robot spectacle adventures",
+    "recommended_label": "Giant Robot Action-Adventure"
+  },
+  {
+    "cluster_id": 93,
+    "confidence_score": 0.67,
+    "description": "Modern comedy-romances where dating misfires, one-night stands, and friendship fallout lead to unexpectedly tender lessons.",
+    "label_id": "micro:93",
+    "layer": "micro",
+    "plain_label": "Adult romcoms for awkward hearts",
+    "recommended_label": "Awkward Adult Rom-Coms"
+  },
+  {
+    "cluster_id": 94,
+    "confidence_score": 0.66,
+    "description": "Movies where gaming worlds blur with real life\u2014VR, dystopian platforms, and digital obsession driving the danger.",
+    "label_id": "micro:94",
+    "layer": "micro",
+    "plain_label": "Video-game reality satire & VR dystopia",
+    "recommended_label": "Video-Game Reality Dystopias"
+  },
+  {
+    "cluster_id": 95,
+    "confidence_score": 0.72,
+    "description": "Spy thrillers where identity fractures and the hunt becomes a maze of flashes, surveillance, and sudden violence.",
+    "label_id": "micro:95",
+    "layer": "micro",
+    "plain_label": "Memory-Black-Ops Thriller",
+    "recommended_label": "Amnesia Espionage Chase"
+  },
+  {
+    "cluster_id": 96,
+    "confidence_score": 0.68,
+    "description": "Smart, warm romantic comedies where big-city life (and seasonal chaos) turns awkward longing into heartfelt timing.",
+    "label_id": "micro:96",
+    "layer": "micro",
+    "plain_label": "Urban Holiday Rom-Com",
+    "recommended_label": "Holiday & City Rom-Com"
+  },
+  {
+    "cluster_id": 97,
+    "confidence_score": 0.61,
+    "description": "Young-adult science-fiction survival stories built around deadly systems\u2014mazes, labs, and escalating dystopias\u2014where escape is the only compass.",
+    "label_id": "micro:97",
+    "layer": "micro",
+    "plain_label": "Labyrinth YA Escape Sci-Fi",
+    "recommended_label": "YA Maze Dystopia"
+  },
+  {
+    "cluster_id": 98,
+    "confidence_score": 0.66,
+    "description": "Comedy-fantasy buddy stories where a toy/mascot premise turns everyday life into chaotic, affectionate absurdity.",
+    "label_id": "micro:98",
+    "layer": "micro",
+    "plain_label": "Talking-Toy Buddy Comedy-Fantasy",
+    "recommended_label": "Toy Come-To-Life Comedy"
+  },
+  {
+    "cluster_id": 99,
+    "confidence_score": 0.7,
+    "description": "High-velocity post-apocalyptic action dramas where survival is a moving target and the road itself is the battlefield.",
+    "label_id": "micro:99",
+    "layer": "micro",
+    "plain_label": "Wasteland Road Survival Action",
+    "recommended_label": "Wasteland Road Survival"
+  },
+  {
+    "cluster_id": 100,
+    "confidence_score": 0.74,
+    "description": "High-voltage action set in techno-dystopias where AI, cyborgs, and time-bent fate turn every escape into a countdown.",
+    "label_id": "micro:100",
+    "layer": "micro",
+    "plain_label": "Dystopian AI robot-war action",
+    "recommended_label": "Machine Apocalypse Thrills"
+  },
+  {
+    "cluster_id": 101,
+    "confidence_score": 0.7,
+    "description": "Teen stories where jokes land hard, feelings land harder, and growing up happens in public.",
+    "label_id": "micro:101",
+    "layer": "micro",
+    "plain_label": "Sharp, messy teen coming-of-age comedy-drama",
+    "recommended_label": "High School Chaos & Heart"
+  },
+  {
+    "cluster_id": 102,
+    "confidence_score": 0.66,
+    "description": "Stylish murder-mystery cases built like social puzzles\u2014detectives, suspects, and sharp comedic misdirection.",
+    "label_id": "micro:102",
+    "layer": "micro",
+    "plain_label": "Whodunit dark-comedy puzzle mysteries",
+    "recommended_label": "Clever Crime & Whodunit Wit"
+  },
+  {
+    "cluster_id": 103,
+    "confidence_score": 0.61,
+    "description": "Team-up superhero action where the mission is messy, the heroes are compromised, and the villains are never far off the leash.",
+    "label_id": "micro:103",
+    "layer": "micro",
+    "plain_label": "Antihero superhero mayhem",
+    "recommended_label": "Antihero Super-Squad Action"
+  },
+  {
+    "cluster_id": 104,
+    "confidence_score": 0.63,
+    "description": "Raw, character-first dramas where training, rivalry, and physical combat become a route to identity and redemption.",
+    "label_id": "micro:104",
+    "layer": "micro",
+    "plain_label": "Fighting-sports underdog drama",
+    "recommended_label": "Punch-Clock Redemption Dramas"
+  },
+  {
+    "cluster_id": 105,
+    "confidence_score": 0.66,
+    "description": "Spacefaring problem-solvers race the physics and the clock, where survival depends on science, grit, and a brutal mission timeline.",
+    "label_id": "micro:105",
+    "layer": "micro",
+    "plain_label": "Hard-SF Space Survival & Time-Pressure Missions",
+    "recommended_label": "Hard-SF Space Survival & Time-Pressure Missions"
+  },
+  {
+    "cluster_id": 106,
+    "confidence_score": 0.93,
+    "description": "Big-cat royalty stories told through roar-loud musicality, family bonds, and the push-pull of legacy.",
+    "label_id": "micro:106",
+    "layer": "micro",
+    "plain_label": "Roaring Pride-Land Musical Royalty",
+    "recommended_label": "Roaring Pride-Land Musical Royalty"
+  },
+  {
+    "cluster_id": 107,
+    "confidence_score": 0.62,
+    "description": "Medieval England\u2019s politics collide with violence and moral tests\u2014kings, outlaws, and knights under pressure.",
+    "label_id": "micro:107",
+    "layer": "micro",
+    "plain_label": "British Medieval Power Plays & True-History Dramas",
+    "recommended_label": "British Medieval Power Plays & True-History Dramas"
+  },
+  {
+    "cluster_id": 108,
+    "confidence_score": 0.7,
+    "description": "When beloved cartoon universes hit theaters, the humor turns louder, the stakes get stranger, and the punchlines keep sprinting.",
+    "label_id": "micro:108",
+    "layer": "micro",
+    "plain_label": "Animated TV-World Big-Screen Chaos Comedies",
+    "recommended_label": "Animated TV-World Big-Screen Chaos Comedies"
+  },
+  {
+    "cluster_id": 109,
+    "confidence_score": 0.71,
+    "description": "Horror survival stories where monsters and dread are paired with sharp, often laugh-through-the-pain comedy.",
+    "label_id": "micro:109",
+    "layer": "micro",
+    "plain_label": "Survival Horror With Dark Comedy & Monster Mayhem",
+    "recommended_label": "Survival Horror With Dark Comedy & Monster Mayhem"
+  },
+  {
+    "cluster_id": 110,
+    "confidence_score": 0.72,
+    "description": "Heartbreaking WWII dramas that track children and young people caught in Nazi terror and concentration-camp systems.",
+    "label_id": "micro:110",
+    "layer": "micro",
+    "plain_label": "Holocaust & WWII Youth Survival Drama",
+    "recommended_label": "WWII Youth Survival in Concentration Camps"
+  },
+  {
+    "cluster_id": 111,
+    "confidence_score": 0.66,
+    "description": "Stylish crime thrillers where detectives and criminals move through moral fog, with dark humor and dreamlike logic.",
+    "label_id": "micro:111",
+    "layer": "micro",
+    "plain_label": "Neo-Noir Crime with Dark Comedy & Surreal Twists",
+    "recommended_label": "Neo-Noir Crime Tales (Darkly Funny, Surreal)"
+  },
+  {
+    "cluster_id": 112,
+    "confidence_score": 0.74,
+    "description": "High-stakes fantasy adventures built around traveling parties, battles, and legendary artifacts.",
+    "label_id": "micro:112",
+    "layer": "micro",
+    "plain_label": "Sword-and-Sorcery Fantasy Journeys",
+    "recommended_label": "Epic Sword-and-Sorcery Quest Fantasy"
+  },
+  {
+    "cluster_id": 113,
+    "confidence_score": 0.61,
+    "description": "Bright teen stories where crushes, cliques, and growing up collide\u2014with music, games, and big feelings.",
+    "label_id": "micro:113",
+    "layer": "micro",
+    "plain_label": "Teen School Rom-Coms with Musical Energy",
+    "recommended_label": "High School Rom-Coms (With Musical/Playful Heat)"
+  },
+  {
+    "cluster_id": 114,
+    "confidence_score": 0.63,
+    "description": "Period dramas rooted in slavery, racism, and the personal cost of American injustice\u2014often through family ties and political struggle.",
+    "label_id": "micro:114",
+    "layer": "micro",
+    "plain_label": "US Civil Rights & Slavery-Era Family/Political Drama",
+    "recommended_label": "US Slavery & Segregation Dramas (Family + Power)"
+  },
+  {
+    "cluster_id": 115,
+    "confidence_score": 0.62,
+    "description": "Deadpan agents juggle alien threats, secret identities, and escalating time-travel oddities with buddy-cop momentum.",
+    "label_id": "micro:115",
+    "layer": "micro",
+    "plain_label": "Cosmic buddy-cop sci-fi comedy",
+    "recommended_label": "Cosmic buddy-cop sci-fi comedy"
+  },
+  {
+    "cluster_id": 116,
+    "confidence_score": 0.66,
+    "description": "Masked heroes and sharp swords swing through conspiracies with Musketeer swagger and Zorro-style flair.",
+    "label_id": "micro:116",
+    "layer": "micro",
+    "plain_label": "Swashbuckling masked action-adventure",
+    "recommended_label": "Swashbuckling masked action-adventure"
+  },
+  {
+    "cluster_id": 117,
+    "confidence_score": 0.74,
+    "description": "Possessions escalate from cursed artifacts to demonic entities, often with priests, nuns, and family-struck fear at the center.",
+    "label_id": "micro:117",
+    "layer": "micro",
+    "plain_label": "Demonic possession doll-and-nun horror",
+    "recommended_label": "Demonic possession doll-and-nun horror"
+  },
+  {
+    "cluster_id": 118,
+    "confidence_score": 0.6,
+    "description": "Romantic entanglements collide with CIA-level spy missions, kidnapping plots, and after-credits-style escalation.",
+    "label_id": "micro:118",
+    "layer": "micro",
+    "plain_label": "Rom-com spy action with hitman chaos",
+    "recommended_label": "Rom-com spy action with hitman chaos"
+  },
+  {
+    "cluster_id": 119,
+    "confidence_score": 0.58,
+    "description": "Caper-like action with CIA/FBI pressure, shootouts, and a knowing, amused tone that keeps the thriller moving.",
+    "label_id": "micro:119",
+    "layer": "micro",
+    "plain_label": "Deadpan comic-book action-thriller heist energy",
+    "recommended_label": "Deadpan comic-book action-thriller heist energy"
+  },
+  {
+    "cluster_id": 120,
+    "confidence_score": 0.83,
+    "description": "Big, loud dinosaur set-pieces where survival depends on keeping the theme-park fantasy from collapsing into chaos.",
+    "label_id": "micro:120",
+    "layer": "micro",
+    "plain_label": "Jurassic-scale creature adventure",
+    "recommended_label": "Dino-park survival adventure"
+  },
+  {
+    "cluster_id": 121,
+    "confidence_score": 0.74,
+    "description": "A god-and-monster road show where heroes swing steel through mythic landscapes\u2014equal parts legend, spectacle, and action-mythmaking.",
+    "label_id": "micro:121",
+    "layer": "micro",
+    "plain_label": "Mythic hero quests (Greek/Eastern pantheon)",
+    "recommended_label": "Myth-sword spectacle"
+  },
+  {
+    "cluster_id": 122,
+    "confidence_score": 0.66,
+    "description": "Moody, fashion-tinged gothic stories where romance and cruelty curdle into ghosts, murders, and lingering psychological dread.",
+    "label_id": "micro:122",
+    "layer": "micro",
+    "plain_label": "Gothic romance hauntings",
+    "recommended_label": "Gothic obsession haunt-fables"
+  },
+  {
+    "cluster_id": 123,
+    "confidence_score": 0.62,
+    "description": "Sharp, often absurd political maneuvering\u2014campaigns, conspiracies, and international wrong turns\u2014played for laughs.",
+    "label_id": "micro:123",
+    "layer": "micro",
+    "plain_label": "Political satire & coup comedy",
+    "recommended_label": "Dirty-politics comedy capers"
+  },
+  {
+    "cluster_id": 124,
+    "confidence_score": 0.71,
+    "description": "Turbulent, book-adapted love stories where desire and control escalate into melodramatic conflict and occasional thriller tension.",
+    "label_id": "micro:124",
+    "layer": "micro",
+    "plain_label": "Teen/young-adult erotic romance drama",
+    "recommended_label": "Billionaire-burn romance thrillers"
+  },
+  {
+    "cluster_id": 125,
+    "confidence_score": 0.78,
+    "description": "Epic, mythic space adventures where factions collide and heroism is written like legend.",
+    "label_id": "micro:125",
+    "layer": "micro",
+    "plain_label": "Star Wars-style space opera blockbusters",
+    "recommended_label": "Jedi-Rebel Space Opera"
+  },
+  {
+    "cluster_id": 126,
+    "confidence_score": 0.63,
+    "description": "Heart-forward films where athletic ambition becomes a fight for dignity, justice, or survival\u2014based on real events.",
+    "label_id": "micro:126",
+    "layer": "micro",
+    "plain_label": "Sports true-story underdog dramas",
+    "recommended_label": "True-Story Sports Underdogs"
+  },
+  {
+    "cluster_id": 127,
+    "confidence_score": 0.84,
+    "description": "High-gloss, globe-trotting spy adventures driven by secrets, surveillance, and escalating set-piece action.",
+    "label_id": "micro:127",
+    "layer": "micro",
+    "plain_label": "Modern James Bond spy thrillers",
+    "recommended_label": "MI6-Style Casino-Grade Spy Action"
+  },
+  {
+    "cluster_id": 128,
+    "confidence_score": 0.32,
+    "description": "A superhero sequel built around high-impact destruction, iconic set pieces, and a new nemesis escalating the stakes.",
+    "label_id": "micro:128",
+    "layer": "micro",
+    "plain_label": "Superman sequel spectacle",
+    "recommended_label": "Superman Sequel Mayhem"
+  },
+  {
+    "cluster_id": 129,
+    "confidence_score": 0.58,
+    "description": "Origin-adjacent superhero stories where science, transformation, and teamwork collide with blockbuster action.",
+    "label_id": "micro:129",
+    "layer": "micro",
+    "plain_label": "Comic-book superhero team transformation action",
+    "recommended_label": "Fantastic-Style Superhero Team Brawls"
+  },
+  {
+    "cluster_id": 130,
+    "confidence_score": 0.66,
+    "description": "Big-budget quests for hidden cities and mythic riches, powered by pulp wonder and a dash of science-fiction spectacle.",
+    "label_id": "micro:130",
+    "layer": "micro",
+    "plain_label": "Treasure-map sci-fi adventure",
+    "recommended_label": "Treasure-Map Sci\u2011Fi Adventure"
+  },
+  {
+    "cluster_id": 131,
+    "confidence_score": 0.63,
+    "description": "Criminal schemes and get-rich fantasies where the real engine is the awkward chemistry and escalating mishaps.",
+    "label_id": "micro:131",
+    "layer": "micro",
+    "plain_label": "Misfit con-artist heist comedy",
+    "recommended_label": "Misfit Con Heist Comedy"
+  },
+  {
+    "cluster_id": 132,
+    "confidence_score": 0.9,
+    "description": "Nightmarish dystopian horror where society\u2019s rules collapse into organized, sanctioned violence.",
+    "label_id": "micro:132",
+    "layer": "micro",
+    "plain_label": "Purge-style survival horror",
+    "recommended_label": "Purge-Mode Survival Horror"
+  },
+  {
+    "cluster_id": 133,
+    "confidence_score": 0.62,
+    "description": "Arena-ready wars and empire-scale power struggles told with mythic drama, swordplay, and tragic momentum.",
+    "label_id": "micro:133",
+    "layer": "micro",
+    "plain_label": "Sword-and-empire historical epic",
+    "recommended_label": "Sword-and-Empire Historical Epic"
+  },
+  {
+    "cluster_id": 134,
+    "confidence_score": 0.7,
+    "description": "High-energy cop duos trade banter while running undercover operations, busting drug networks, and escalating into nonstop set-piece action.",
+    "label_id": "micro:134",
+    "layer": "micro",
+    "plain_label": "Buddy-cop action comedy (Miami-flavored)",
+    "recommended_label": "Buddy-Cop Action Comedy"
+  },
+  {
+    "cluster_id": 135,
+    "confidence_score": 0.62,
+    "description": "Sharp-tongued, femme-forward crime stories where comic-book chaos plays like detective noir with style.",
+    "label_id": "micro:135",
+    "layer": "micro",
+    "plain_label": "Comic-book noir misfits",
+    "recommended_label": "Noir Misfit Supervillain Energy"
+  },
+  {
+    "cluster_id": 136,
+    "confidence_score": 0.9,
+    "description": "Back-alley monster-hunting tales where a snarky hero drags black magic and apocalypse-scale threats into daylight.",
+    "label_id": "micro:136",
+    "layer": "micro",
+    "plain_label": "Demon-fighting pulp fantasy",
+    "recommended_label": "Paranormal Pulp Brawlers"
+  },
+  {
+    "cluster_id": 137,
+    "confidence_score": 0.67,
+    "description": "Space opera sagas built from desert worlds, imperial politics, and a messiah/chosen-one arc with blockbuster-scale action.",
+    "label_id": "micro:137",
+    "layer": "micro",
+    "plain_label": "Desert space epics",
+    "recommended_label": "Prophecy-Driven Desert Space Opera"
+  },
+  {
+    "cluster_id": 138,
+    "confidence_score": 0.66,
+    "description": "Fast, tangled crime capers where London crews traffic in drugs, diamonds, and bad decisions\u2014played for dark laughs.",
+    "label_id": "micro:138",
+    "layer": "micro",
+    "plain_label": "London gangster dark comedy",
+    "recommended_label": "Dark-Comedy London Gang Crime"
+  },
+  {
+    "cluster_id": 139,
+    "confidence_score": 0.6,
+    "description": "Heart-forward stories where time, bodies, or ages shift\u2014turning adulthood, friendship, and family bonds into the real magic.",
+    "label_id": "micro:139",
+    "layer": "micro",
+    "plain_label": "Age-bending coming-of-age fantasies",
+    "recommended_label": "Body-Switch / Age-Change Life Lessons"
+  },
+  {
+    "cluster_id": 140,
+    "confidence_score": 0.67,
+    "description": "Big-hearted animated adventures where a found family rides out against a looming villain and learns what kind of hero they want to be.",
+    "label_id": "micro:140",
+    "layer": "micro",
+    "plain_label": "Mythic Buddy-Quest Animation",
+    "recommended_label": "Mythic Buddy-Quest Animation"
+  },
+  {
+    "cluster_id": 141,
+    "confidence_score": 0.74,
+    "description": "Teen and young-adult romances built around illness, grief, and the stubborn choice to feel everything anyway.",
+    "label_id": "micro:141",
+    "layer": "micro",
+    "plain_label": "Young Adult Terminal-Love Tearjerkers",
+    "recommended_label": "Young Adult Terminal-Love Tearjerkers"
+  },
+  {
+    "cluster_id": 142,
+    "confidence_score": 0.58,
+    "description": "Food-centered character pieces where a chef\u2019s career mess becomes a road-tested redemption story.",
+    "label_id": "micro:142",
+    "layer": "micro",
+    "plain_label": "Cook-Character Comeback Dramas (with bite)",
+    "recommended_label": "Cook-Character Comeback Dramas (with bite)"
+  },
+  {
+    "cluster_id": 143,
+    "confidence_score": 0.71,
+    "description": "High-stakes dystopian action where survival games and political rebellion collide, usually through a fiercely reactive young protagonist.",
+    "label_id": "micro:143",
+    "layer": "micro",
+    "plain_label": "Dystopian Hunger-Game Action",
+    "recommended_label": "Dystopian Survival Action"
+  },
+  {
+    "cluster_id": 144,
+    "confidence_score": 0.66,
+    "description": "Tender, character-driven dramas where intellect, disability, or life hardship becomes the doorway to friendship, family, and meaning.",
+    "label_id": "micro:144",
+    "layer": "micro",
+    "plain_label": "True-Story Genius & Human-Connection Dramas",
+    "recommended_label": "True-Story Genius & Human-Connection Dramas"
+  },
+  {
+    "cluster_id": 145,
+    "confidence_score": 0.64,
+    "description": "Big-screen retellings of Old Testament events where divine myth meets sweeping action and spectacle.",
+    "label_id": "micro:145",
+    "layer": "micro",
+    "plain_label": "Biblical epics & sands-of-time adventure",
+    "recommended_label": "Biblical Sands-and-Swords"
+  },
+  {
+    "cluster_id": 146,
+    "confidence_score": 0.52,
+    "description": "Musical dramas that chase stardom with jazz hands and then quietly break your heart.",
+    "label_id": "micro:146",
+    "layer": "micro",
+    "plain_label": "Hollywood dream-musicals & music-industry heartbreak",
+    "recommended_label": "Showbiz Heartbreak Musicals"
+  },
+  {
+    "cluster_id": 147,
+    "confidence_score": 0.72,
+    "description": "Loud, myth-drenched MCU adventures where thunder, portals, and team-up chaos power the action.",
+    "label_id": "micro:147",
+    "layer": "micro",
+    "plain_label": "Cosmic Norse superhero brawls (MCU Thor era)",
+    "recommended_label": "Norse Cosmic Superhero Brawls"
+  },
+  {
+    "cluster_id": 148,
+    "confidence_score": 0.76,
+    "description": "Stylized revenge tales where assassins follow strict rules while escalating into relentless close-quarters violence.",
+    "label_id": "micro:148",
+    "layer": "micro",
+    "plain_label": "Code-of-honor hitman action thrillers",
+    "recommended_label": "Honor-System Hitman Action"
+  },
+  {
+    "cluster_id": 149,
+    "confidence_score": 0.58,
+    "description": "War films that linger on infantry fear, moral injury, and the cost of survival in jungles, trenches, and broken lines.",
+    "label_id": "micro:149",
+    "layer": "micro",
+    "plain_label": "Jungle-and-trench antiwar soldier dramas",
+    "recommended_label": "Antiwar Soldier Dramas"
+  },
+  {
+    "cluster_id": 150,
+    "confidence_score": 0.78,
+    "description": "Crewed spacecraft and remote colonies become hunting grounds for biomechanical terror and escalating survival chaos.",
+    "label_id": "micro:150",
+    "layer": "micro",
+    "plain_label": "Spacefaring Alien Horror",
+    "recommended_label": "Spacefaring Alien Horror"
+  },
+  {
+    "cluster_id": 151,
+    "confidence_score": 0.64,
+    "description": "A lone community fights a relentless apex hunter in open wilderness where every advantage is temporary.",
+    "label_id": "micro:151",
+    "layer": "micro",
+    "plain_label": "Badlands Predator Survival",
+    "recommended_label": "Badlands Predator Survival"
+  },
+  {
+    "cluster_id": 152,
+    "confidence_score": 0.73,
+    "description": "Contemporary characters collide with divine power and scripture-shaped calamities, mixing moral wonder with comedic timing.",
+    "label_id": "micro:152",
+    "layer": "micro",
+    "plain_label": "Bible-Soaked Modern Miracles",
+    "recommended_label": "Bible-Soaked Modern Miracles"
+  },
+  {
+    "cluster_id": 153,
+    "confidence_score": 0.61,
+    "description": "Romantic entanglements and escalating family rivalry collide with workplace/agency-like misunderstandings in rapid-fire comedy.",
+    "label_id": "micro:153",
+    "layer": "micro",
+    "plain_label": "In-Law Intelligence-Agency Farce",
+    "recommended_label": "In-Law Intelligence-Agency Farce"
+  },
+  {
+    "cluster_id": 154,
+    "confidence_score": 0.66,
+    "description": "A fairy-tale world gets turned inside out\u2014questing, bantering, and undercutting magic with big-hearted jokes.",
+    "label_id": "micro:154",
+    "layer": "micro",
+    "plain_label": "Fairytale Kingdom Adventure Comedy",
+    "recommended_label": "Fairytale Kingdom Adventure Comedy"
+  },
+  {
+    "cluster_id": 155,
+    "confidence_score": 0.66,
+    "description": "A hard-edged survival nightmare where trapped crews face alien predation under relentless darkness.",
+    "label_id": "micro:155",
+    "layer": "micro",
+    "plain_label": "Deserted-World Survival Horror Sci\u2011Fi",
+    "recommended_label": "Eclipse Survival Sci\u2011Fi Horror"
+  },
+  {
+    "cluster_id": 156,
+    "confidence_score": 0.61,
+    "description": "Love stories that fracture the self\u2014through memory glitches, time slips, and reality that won\u2019t hold still.",
+    "label_id": "micro:156",
+    "layer": "micro",
+    "plain_label": "Memory, Love & Reality Drift",
+    "recommended_label": "Dream-Logic Romance & Memory"
+  },
+  {
+    "cluster_id": 157,
+    "confidence_score": 0.7,
+    "description": "Team-up blockbusters that expand a shared mythic universe with large-scale action and myth-fantasy stakes.",
+    "label_id": "micro:157",
+    "layer": "micro",
+    "plain_label": "Cinematic Superhero Ensemble Myth\u2011Build",
+    "recommended_label": "DC-Style Ensemble Superhero Spectacle"
+  },
+  {
+    "cluster_id": 158,
+    "confidence_score": 0.74,
+    "description": "Serial-killer slasher entries that play like sequels to the genre itself\u2014masks, copycats, and knowing dialogue.",
+    "label_id": "micro:158",
+    "layer": "micro",
+    "plain_label": "Meta Slasher Reboots & Copycat Killers",
+    "recommended_label": "Self-Referential Slasher Sequels"
+  },
+  {
+    "cluster_id": 159,
+    "confidence_score": 0.63,
+    "description": "Fast, choreographed crime action built around drivers/assassins, shootouts, and desperate escapes through crowded cities.",
+    "label_id": "micro:159",
+    "layer": "micro",
+    "plain_label": "Getaway Driver Action Crime Thrills",
+    "recommended_label": "Getaway Driver Crime Action"
+  },
+  {
+    "cluster_id": 160,
+    "confidence_score": 0.68,
+    "description": "Fast, globe-trotting treasure hunts where archaeologists and adventurers outsmart traps, rivals, and bad luck.",
+    "label_id": "micro:160",
+    "layer": "micro",
+    "plain_label": "Temple-robbery treasure hunts",
+    "recommended_label": "Relic-Raid Adventure"
+  },
+  {
+    "cluster_id": 161,
+    "confidence_score": 0.74,
+    "description": "Batman-style crime-fighter stories where vigilantism collides with corruption, moral compromise, and psychological pressure.",
+    "label_id": "micro:161",
+    "layer": "micro",
+    "plain_label": "Gritty vigilante crime noir superhero",
+    "recommended_label": "Noir Vigilante Superhero"
+  },
+  {
+    "cluster_id": 162,
+    "confidence_score": 0.61,
+    "description": "Character-led stories that mix comedy and romance with ache\u2014often set amid travel, airports, and dysfunctional family gravity.",
+    "label_id": "micro:162",
+    "layer": "micro",
+    "plain_label": "Melancholy adult comedy-drama with travel detours",
+    "recommended_label": "Wounded-Realism Dramedy"
+  },
+  {
+    "cluster_id": 163,
+    "confidence_score": 0.66,
+    "description": "Thrillers where law, faith, and guilt collide with angels, demons, and nightmare logic.",
+    "label_id": "micro:163",
+    "layer": "micro",
+    "plain_label": "Supernatural legal-and-moral thrillers",
+    "recommended_label": "Demonic Courtroom Thrillers"
+  },
+  {
+    "cluster_id": 164,
+    "confidence_score": 0.63,
+    "description": "Family-friendly fantasy-adventure where artifacts, museums, and ancient tombs come alive to fuel big set-piece escapades.",
+    "label_id": "micro:164",
+    "layer": "micro",
+    "plain_label": "Magical museum and living-object adventure",
+    "recommended_label": "Awakened-History Adventure"
+  },
+  {
+    "cluster_id": 165,
+    "confidence_score": 0.66,
+    "description": "Heart-forward stories where kids (and animals) learn courage through nature, friendship, and a little magic of the everyday.",
+    "label_id": "micro:165",
+    "layer": "micro",
+    "plain_label": "Gentle Creature & Woodland Wonder",
+    "recommended_label": "Dino Daydreams & Forest Friends"
+  },
+  {
+    "cluster_id": 166,
+    "confidence_score": 0.62,
+    "description": "High-tension hunts where extraterrestrial or monstrous predators turn the battlefield into a lethal playground.",
+    "label_id": "micro:166",
+    "layer": "micro",
+    "plain_label": "Jungle Predator Invasion Thrillers",
+    "recommended_label": "Alien Predators & Jungle Killshots"
+  },
+  {
+    "cluster_id": 167,
+    "confidence_score": 0.58,
+    "description": "Big-screen fantasy battles where legendary heroes face giants, warriors, and magic in sprawling, myth-soaked set pieces.",
+    "label_id": "micro:167",
+    "layer": "micro",
+    "plain_label": "Mythic Sword-and-Wall Spectacles",
+    "recommended_label": "Giants, Great Walls & Kingly Swordplay"
+  },
+  {
+    "cluster_id": 168,
+    "confidence_score": 0.64,
+    "description": "Animated coming-of-age fairy tales with big musical beats, magical stakes, and villains who make the hero\u2019s journey louder.",
+    "label_id": "micro:168",
+    "layer": "micro",
+    "plain_label": "Musical Princess Villain Turnarounds",
+    "recommended_label": "Princess Musical Magic & Villain Energy"
+  },
+  {
+    "cluster_id": 169,
+    "confidence_score": 0.7,
+    "description": "Tense, grim survival stories where outbreaks spread fast and every choice is about staying alive one step longer.",
+    "label_id": "micro:169",
+    "layer": "micro",
+    "plain_label": "Epidemic Survival & Zombie Virus Dread",
+    "recommended_label": "Virus Outbreaks, Zombie Survival & Dystopia"
+  },
+  {
+    "cluster_id": 170,
+    "confidence_score": 0.74,
+    "description": "Spider-heroes bounce between realities, identities, and legacies while the stakes feel both cosmic and personal.",
+    "label_id": "micro:170",
+    "layer": "micro",
+    "plain_label": "Multiverse Spider-Mythos",
+    "recommended_label": "Multiverse Spider-Mythos"
+  },
+  {
+    "cluster_id": 171,
+    "confidence_score": 0.83,
+    "description": "Character-driven dramas that treat desire like a compulsion\u2014messy, intimate, and examined rather than glamorized.",
+    "label_id": "micro:171",
+    "layer": "micro",
+    "plain_label": "Sex Addiction Portraits",
+    "recommended_label": "Sex Addiction Portraits"
+  },
+  {
+    "cluster_id": 172,
+    "confidence_score": 0.62,
+    "description": "Over-the-top spy comedies that weaponize parody, timing, and escalating set pieces to turn espionage tropes into chaos.",
+    "label_id": "micro:172",
+    "layer": "micro",
+    "plain_label": "Spy-Driven Parody Mayhem",
+    "recommended_label": "Spy-Driven Parody Mayhem"
+  },
+  {
+    "cluster_id": 173,
+    "confidence_score": 0.66,
+    "description": "Marvel-flavored fantasy adventures where magic, identity, and reality-bending consequences collide with superhero grit.",
+    "label_id": "micro:173",
+    "layer": "micro",
+    "plain_label": "Magic-Myth Marvel Mysticism",
+    "recommended_label": "Magic-Myth Marvel Mysticism"
+  },
+  {
+    "cluster_id": 174,
+    "confidence_score": 0.8,
+    "description": "Family-friendly holiday stories where Christmas mythology (Santas, poles, and ghosts) gets reshaped into wonder, warmth, and occasional wickedness.",
+    "label_id": "micro:174",
+    "layer": "micro",
+    "plain_label": "Holiday Fantasy Cheer & Mischief",
+    "recommended_label": "Holiday Fantasy Cheer & Mischief"
+  },
+  {
+    "cluster_id": 175,
+    "confidence_score": 0.62,
+    "description": "High-stakes plots where time travel, prediction, and artificial intelligence collide into tense cat-and-mouse mysteries.",
+    "label_id": "micro:175",
+    "layer": "micro",
+    "plain_label": "Time-bending AI thrillers",
+    "recommended_label": "Time-bending AI thrillers"
+  },
+  {
+    "cluster_id": 176,
+    "confidence_score": 0.73,
+    "description": "Big, storybook escapades where children (or dreamers) are swept into fantastical realms of pirates, wonder, and flight.",
+    "label_id": "micro:176",
+    "layer": "micro",
+    "plain_label": "Second-star fantasy adventures",
+    "recommended_label": "Second-star fantasy adventures"
+  },
+  {
+    "cluster_id": 177,
+    "confidence_score": 0.66,
+    "description": "Fast, roster-style action where secret agents and mercenaries chase rescues, escapes, and revenge through relentless set pieces.",
+    "label_id": "micro:177",
+    "layer": "micro",
+    "plain_label": "Mercenary rescue action thrillers",
+    "recommended_label": "Mercenary rescue action thrillers"
+  },
+  {
+    "cluster_id": 178,
+    "confidence_score": 0.61,
+    "description": "Restraint-heavy, emotionally vivid stories of love and identity unfolding through period settings drawn from novels.",
+    "label_id": "micro:178",
+    "layer": "micro",
+    "plain_label": "Romantic period novel dramas",
+    "recommended_label": "Romantic period novel dramas"
+  },
+  {
+    "cluster_id": 179,
+    "confidence_score": 0.58,
+    "description": "Animated or storybook family tales where macabre humor and fantastical chaos turn dysfunction into punchlines.",
+    "label_id": "micro:179",
+    "layer": "micro",
+    "plain_label": "Wicked family comedy fantasy",
+    "recommended_label": "Wicked family comedy fantasy"
+  },
+  {
+    "cluster_id": 180,
+    "confidence_score": 0.66,
+    "description": "High-school and small-town horror built around recurring killers, escalating murders, and supernatural twists.",
+    "label_id": "micro:180",
+    "layer": "micro",
+    "plain_label": "Teen slasher & supernatural kill-cycles",
+    "recommended_label": "Teen Slasher & Supernatural Kill-Cycles"
+  },
+  {
+    "cluster_id": 181,
+    "confidence_score": 0.93,
+    "description": "Wholesome family films where a chatty, CGI/live-action animal becomes the centerpiece of a comedic, heartwarming adventure.",
+    "label_id": "micro:181",
+    "layer": "micro",
+    "plain_label": "Live-action/CGI talking-animal family comedy",
+    "recommended_label": "Talking Animal Family Comedy (Live-Action/CGI)"
+  },
+  {
+    "cluster_id": 182,
+    "confidence_score": 0.81,
+    "description": "Animated, sequel-heavy prehistoric escapades powered by mismatched friends, villainous chases, and slapstick survival.",
+    "label_id": "micro:182",
+    "layer": "micro",
+    "plain_label": "Ice-age road-trip comedy of survival",
+    "recommended_label": "Prehistoric Buddy Comedy Adventure"
+  },
+  {
+    "cluster_id": 183,
+    "confidence_score": 0.67,
+    "description": "Dark retellings of classic fairy tales where witches, curses, and royal plots fuel swordplay and spell-slinging action.",
+    "label_id": "micro:183",
+    "layer": "micro",
+    "plain_label": "Fairy-tale witch-hunter fantasy action",
+    "recommended_label": "Witch-Hunter Fairy-Tale Fantasy Action"
+  },
+  {
+    "cluster_id": 184,
+    "confidence_score": 0.71,
+    "description": "Big-screen superhero stories driven by royal responsibility, geopolitical tension, and sci-fi-flavored threats.",
+    "label_id": "micro:184",
+    "layer": "micro",
+    "plain_label": "Modern superhero monarchy sci-fi stakes",
+    "recommended_label": "Superhero Royalty Sci\u2011Fi Stakes"
+  },
+  {
+    "cluster_id": 185,
+    "confidence_score": 0.78,
+    "description": "High-stakes plots where terrorists, coups, or chaos turn the presidential residence into a ticking clock.",
+    "label_id": "micro:185",
+    "layer": "micro",
+    "plain_label": "White House siege thrillers",
+    "recommended_label": "White House siege thrillers"
+  },
+  {
+    "cluster_id": 186,
+    "confidence_score": 0.74,
+    "description": "Stories of Catholic institutions where possession, ritual, and doctrine collide with investigation, power, and conspiracy.",
+    "label_id": "micro:186",
+    "layer": "micro",
+    "plain_label": "Vatican exorcism & papal intrigue",
+    "recommended_label": "Vatican exorcism & papal intrigue"
+  },
+  {
+    "cluster_id": 187,
+    "confidence_score": 0.62,
+    "description": "Giant-monster or alien disasters filtered through amateur footage energy, turning everyday people into witnesses of the impossible.",
+    "label_id": "micro:187",
+    "layer": "micro",
+    "plain_label": "Found-footage kaiju & alien panic",
+    "recommended_label": "Found-footage kaiju & alien panic"
+  },
+  {
+    "cluster_id": 188,
+    "confidence_score": 0.66,
+    "description": "Post-apocalypse terror where survival hinges on controlling sound, fear, and family under constant predation.",
+    "label_id": "micro:188",
+    "layer": "micro",
+    "plain_label": "Silence-based survival horror",
+    "recommended_label": "Silence-based survival horror"
+  },
+  {
+    "cluster_id": 189,
+    "confidence_score": 0.6,
+    "description": "Character-driven dramas that braid sexuality, ambition, and identity into a bruising portrait of modern life and artistic hunger.",
+    "label_id": "micro:189",
+    "layer": "micro",
+    "plain_label": "Sex, fame & messy coming-of-age dramas",
+    "recommended_label": "Sex, fame & messy coming-of-age dramas"
+  },
+  {
+    "cluster_id": 190,
+    "confidence_score": 0.66,
+    "description": "Survival horror in extreme cold where an unknown presence turns isolation into a grotesque biological fight for time.",
+    "label_id": "micro:190",
+    "layer": "micro",
+    "plain_label": "Arctic alien body-horror survival",
+    "recommended_label": "Arctic Alien Body-Horror Survival"
+  },
+  {
+    "cluster_id": 191,
+    "confidence_score": 0.62,
+    "description": "Bright, modern teen/early-adult romance comedies where crushes, insecurity, and social misfires collide into a hopeful love story.",
+    "label_id": "micro:191",
+    "layer": "micro",
+    "plain_label": "YA romcoms about awkward crushes",
+    "recommended_label": "YA Crush-Romcom Chaos"
+  },
+  {
+    "cluster_id": 192,
+    "confidence_score": 0.58,
+    "description": "Spectacle-heavy sci-fi adventures that treat alien worlds as emotional battlegrounds, with family bonds steering the action.",
+    "label_id": "micro:192",
+    "layer": "micro",
+    "plain_label": "Big-budget ocean-and-planet family sci-fi adventure",
+    "recommended_label": "Family-Scale Sci\u2011Fi Planet Epics"
+  },
+  {
+    "cluster_id": 193,
+    "confidence_score": 0.59,
+    "description": "Dark mysteries where investigations spiral into obsession, dread, and moral questions under the pressure of relentless violence.",
+    "label_id": "micro:193",
+    "layer": "micro",
+    "plain_label": "Serial-killer mystery thrillers and obsession",
+    "recommended_label": "Serial-Killer Investigation Thrillers"
+  },
+  {
+    "cluster_id": 194,
+    "confidence_score": 0.64,
+    "description": "Light, fast superhero adventures where magic systems and family-like team dynamics fuel the jokes, action, and end-credits stingers.",
+    "label_id": "micro:194",
+    "layer": "micro",
+    "plain_label": "Wizarding superhero buddy comedy",
+    "recommended_label": "Wizard-Myth Superhero Buddy Action-Comedy"
+  },
+  {
+    "cluster_id": 195,
+    "confidence_score": 0.58,
+    "description": "Comedies where makeover fantasies\u2014sometimes literal, sometimes psychological\u2014turn vanity, romance, and humiliation into high-speed farce.",
+    "label_id": "micro:195",
+    "layer": "micro",
+    "plain_label": "Body-swap & makeover comedy fantasy",
+    "recommended_label": "Body-magic makeover comedy"
+  },
+  {
+    "cluster_id": 196,
+    "confidence_score": 0.64,
+    "description": "Big, loud action-adventure entries built around gaining or awakening superhuman power\u2014often with reboot or continuity reset energy.",
+    "label_id": "micro:196",
+    "layer": "micro",
+    "plain_label": "Superhero origin blockbusters & rebooted power fantasies",
+    "recommended_label": "Superpower origin & reboot action"
+  },
+  {
+    "cluster_id": 197,
+    "confidence_score": 0.72,
+    "description": "Horror films where paranoia, grief, and family fractures spiral into ritualistic, mystery-driven terror.",
+    "label_id": "micro:197",
+    "layer": "micro",
+    "plain_label": "Folklore-tinged psychological horror mysteries",
+    "recommended_label": "Ritual-psych horror mystery"
+  },
+  {
+    "cluster_id": 198,
+    "confidence_score": 0.66,
+    "description": "Cold, sleek action-thrillers centered on assassins and hit squads, where missions collide with secret organizations, politics, and revenge.",
+    "label_id": "micro:198",
+    "layer": "micro",
+    "plain_label": "Assassin thriller with conspiracy & revenge hooks",
+    "recommended_label": "CIA-adjacent assassin thrillers"
+  },
+  {
+    "cluster_id": 199,
+    "confidence_score": 0.84,
+    "description": "Ensemble superhero stories about mutants\u2014superhuman abilities, discrimination, and team dynamics\u2014pushed through big action and shifting timelines.",
+    "label_id": "micro:199",
+    "layer": "micro",
+    "plain_label": "Mutant-team superhero sagas",
+    "recommended_label": "Mutant superhero team action"
+  }
+]

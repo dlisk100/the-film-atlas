@@ -1,0 +1,8916 @@
+[
+  {
+    "cluster_id": 0,
+    "coherence_score": 0.49054671315848253,
+    "description": "Smart, funny love stories where pregnancy and growing up collide with family mess and sudden adulthood.",
+    "label_id": "neighborhood:0",
+    "parent_cluster_id": 11,
+    "recommended_label": "Teen-to-adult dramedy romance",
+    "representative_movies": [
+      "Juno",
+      "Knocked Up",
+      "LOL",
+      "Marley & Me",
+      "Walk the Line"
+    ],
+    "size": 5,
+    "terms": [
+      "music",
+      "pregnancy",
+      "juno",
+      "romance",
+      "family",
+      "drama",
+      "comedy",
+      "lola",
+      "movie",
+      "mom",
+      "daughter",
+      "like",
+      "girl",
+      "knocked",
+      "stand"
+    ],
+    "top_genres": [
+      [
+        "Comedy",
+        4
+      ],
+      [
+        "Drama",
+        4
+      ],
+      [
+        "Romance",
+        4
+      ],
+      [
+        "Family",
+        1
+      ],
+      [
+        "Music",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "pregnancy",
+        2
+      ],
+      [
+        "coming of age",
+        2
+      ],
+      [
+        "duringcreditsstinger",
+        2
+      ],
+      [
+        "puberty",
+        1
+      ],
+      [
+        "first time",
+        1
+      ],
+      [
+        "becoming an adult",
+        1
+      ],
+      [
+        "sexuality",
+        1
+      ],
+      [
+        "adoption",
+        1
+      ],
+      [
+        "precocity",
+        1
+      ],
+      [
+        "partnership",
+        1
+      ],
+      [
+        "pregnant minor",
+        1
+      ],
+      [
+        "teenage pregnancy",
+        1
+      ]
+    ]
+  },
+  {
+    "cluster_id": 1,
+    "coherence_score": 0.5190019557929262,
+    "description": "Brutal, landscape-heavy survival tales built from real events\u2014where faith, brutality, and endurance grind together.",
+    "label_id": "neighborhood:1",
+    "parent_cluster_id": 7,
+    "recommended_label": "True-story historical survival epics",
+    "representative_movies": [
+      "Apocalypto",
+      "The Revenant",
+      "War for the Planet of the Apes",
+      "10,000 BC",
+      "In the Heart of the Sea",
+      "The Impossible",
+      "Alpha",
+      "Noah"
+    ],
+    "size": 24,
+    "terms": [
+      "war",
+      "drama",
+      "based",
+      "adventure",
+      "story",
+      "action",
+      "film",
+      "mountain",
+      "true",
+      "history",
+      "survival",
+      "book",
+      "apes",
+      "thriller",
+      "century"
+    ],
+    "top_genres": [
+      [
+        "Drama",
+        21
+      ],
+      [
+        "Action",
+        13
+      ],
+      [
+        "Adventure",
+        12
+      ],
+      [
+        "History",
+        10
+      ],
+      [
+        "Thriller",
+        9
+      ],
+      [
+        "Science Fiction",
+        4
+      ],
+      [
+        "War",
+        3
+      ],
+      [
+        "Romance",
+        2
+      ],
+      [
+        "Western",
+        1
+      ],
+      [
+        "Horror",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "based on true story",
+        7
+      ],
+      [
+        "based on novel or book",
+        6
+      ],
+      [
+        "slavery",
+        5
+      ],
+      [
+        "survival",
+        4
+      ],
+      [
+        "snow",
+        4
+      ],
+      [
+        "19th century",
+        4
+      ],
+      [
+        "dystopia",
+        4
+      ],
+      [
+        "bible",
+        4
+      ],
+      [
+        "native american",
+        3
+      ],
+      [
+        "revenge",
+        3
+      ],
+      [
+        "shocking",
+        3
+      ],
+      [
+        "gorilla",
+        3
+      ]
+    ]
+  },
+  {
+    "cluster_id": 2,
+    "coherence_score": 0.5261324680702685,
+    "description": "Dating comedies where friends turn into competitors and attraction becomes a high-stakes prank.",
+    "label_id": "neighborhood:2",
+    "parent_cluster_id": 11,
+    "recommended_label": "Rom-com rivalry and messy hookups",
+    "representative_movies": [
+      "This Means War",
+      "The Ugly Truth",
+      "Bridesmaids",
+      "Trainwreck",
+      "The Other Woman",
+      "That Awkward Moment",
+      "Friends with Benefits",
+      "The Break-Up"
+    ],
+    "size": 19,
+    "terms": [
+      "comedy",
+      "romance",
+      "job",
+      "friends",
+      "boyfriend",
+      "secret",
+      "relationship",
+      "woman",
+      "agent",
+      "ex",
+      "best",
+      "angels",
+      "dating",
+      "love",
+      "comedy romance"
+    ],
+    "top_genres": [
+      [
+        "Comedy",
+        18
+      ],
+      [
+        "Romance",
+        12
+      ],
+      [
+        "Action",
+        6
+      ],
+      [
+        "Drama",
+        2
+      ],
+      [
+        "Adventure",
+        2
+      ],
+      [
+        "Thriller",
+        1
+      ],
+      [
+        "Crime",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "friendship",
+        4
+      ],
+      [
+        "duringcreditsstinger",
+        4
+      ],
+      [
+        "amused",
+        4
+      ],
+      [
+        "competition",
+        3
+      ],
+      [
+        "rivalry",
+        3
+      ],
+      [
+        "secret agent",
+        2
+      ],
+      [
+        "excited",
+        2
+      ],
+      [
+        "new york city",
+        2
+      ],
+      [
+        "break-up",
+        2
+      ],
+      [
+        "casual sex",
+        2
+      ],
+      [
+        "aftercreditsstinger",
+        2
+      ],
+      [
+        "daughter",
+        2
+      ]
+    ]
+  },
+  {
+    "cluster_id": 3,
+    "coherence_score": 0.6065504063520207,
+    "description": "Superhero action powered by secret identities, multiversal/legacy stakes, and the constant pressure of saving a city while your life fractures.",
+    "label_id": "neighborhood:3",
+    "parent_cluster_id": 8,
+    "recommended_label": "Web-slinging superhero universe stories",
+    "representative_movies": [
+      "Spider-Man",
+      "Spider-Man: No Way Home",
+      "The Amazing Spider-Man",
+      "Spider-Man: Across the Spider-Verse",
+      "Spider-Man: Homecoming",
+      "Spider-Man: Far From Home",
+      "Spider-Man 3",
+      "Spider-Man 2"
+    ],
+    "size": 18,
+    "terms": [
+      "spider",
+      "man",
+      "spider man",
+      "superhero",
+      "new",
+      "venom",
+      "peter",
+      "hero",
+      "comic",
+      "life",
+      "symbiote",
+      "city",
+      "action",
+      "adventure",
+      "based"
+    ],
+    "top_genres": [
+      [
+        "Action",
+        18
+      ],
+      [
+        "Science Fiction",
+        17
+      ],
+      [
+        "Adventure",
+        13
+      ],
+      [
+        "Fantasy",
+        3
+      ],
+      [
+        "Animation",
+        2
+      ]
+    ],
+    "top_keywords": [
+      [
+        "based on comic",
+        18
+      ],
+      [
+        "superhero",
+        17
+      ],
+      [
+        "sequel",
+        9
+      ],
+      [
+        "secret identity",
+        7
+      ],
+      [
+        "aftercreditsstinger",
+        7
+      ],
+      [
+        "duringcreditsstinger",
+        7
+      ],
+      [
+        "new york city",
+        6
+      ],
+      [
+        "teen superhero",
+        6
+      ],
+      [
+        "masked superhero",
+        5
+      ],
+      [
+        "villain",
+        5
+      ],
+      [
+        "super power",
+        5
+      ],
+      [
+        "hero",
+        4
+      ]
+    ]
+  },
+  {
+    "cluster_id": 4,
+    "coherence_score": 0.6173283022916756,
+    "description": "High-speed crime stories where car culture meets police pressure, revenge plots, and big, reckless set pieces.",
+    "label_id": "neighborhood:4",
+    "parent_cluster_id": 2,
+    "recommended_label": "Street-racing crime thrillers",
+    "representative_movies": [
+      "Fast & Furious",
+      "The Fast and the Furious",
+      "Fast Five",
+      "The Fate of the Furious",
+      "Furious 7",
+      "Fast X",
+      "F9",
+      "2 Fast 2 Furious"
+    ],
+    "size": 22,
+    "terms": [
+      "race",
+      "car",
+      "crime",
+      "action",
+      "driver",
+      "racing",
+      "street",
+      "fast",
+      "dom",
+      "thriller",
+      "toretto",
+      "cars",
+      "furious",
+      "revenge",
+      "brother"
+    ],
+    "top_genres": [
+      [
+        "Action",
+        21
+      ],
+      [
+        "Crime",
+        15
+      ],
+      [
+        "Thriller",
+        15
+      ],
+      [
+        "Drama",
+        7
+      ],
+      [
+        "Adventure",
+        3
+      ],
+      [
+        "History",
+        1
+      ],
+      [
+        "Comedy",
+        1
+      ],
+      [
+        "Science Fiction",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "car race",
+        11
+      ],
+      [
+        "street race",
+        10
+      ],
+      [
+        "cars",
+        10
+      ],
+      [
+        "duringcreditsstinger",
+        6
+      ],
+      [
+        "racing",
+        5
+      ],
+      [
+        "police chase",
+        4
+      ],
+      [
+        "los angeles, california",
+        4
+      ],
+      [
+        "bold",
+        4
+      ],
+      [
+        "excited",
+        4
+      ],
+      [
+        "aftercreditsstinger",
+        4
+      ],
+      [
+        "sports",
+        4
+      ],
+      [
+        "heist",
+        3
+      ]
+    ]
+  },
+  {
+    "cluster_id": 5,
+    "coherence_score": 0.49799899386473917,
+    "description": "Serious crime stories where violence, institutions, and personal trauma corrode everyone in the frame.",
+    "label_id": "neighborhood:5",
+    "parent_cluster_id": 10,
+    "recommended_label": "Moral-rot gangster dramas",
+    "representative_movies": [
+      "Mystic River",
+      "The Departed",
+      "The Town",
+      "The Irishman",
+      "Sleepers",
+      "Road to Perdition",
+      "A Time to Kill",
+      "Cape Fear"
+    ],
+    "size": 32,
+    "terms": [
+      "prison",
+      "crime",
+      "drama",
+      "thriller",
+      "based",
+      "story",
+      "boston",
+      "police",
+      "death",
+      "irish",
+      "man",
+      "novel",
+      "catholic",
+      "abuse",
+      "film"
+    ],
+    "top_genres": [
+      [
+        "Drama",
+        30
+      ],
+      [
+        "Crime",
+        21
+      ],
+      [
+        "Thriller",
+        15
+      ],
+      [
+        "Mystery",
+        6
+      ],
+      [
+        "History",
+        6
+      ],
+      [
+        "Action",
+        2
+      ],
+      [
+        "Fantasy",
+        1
+      ],
+      [
+        "Romance",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "based on novel or book",
+        14
+      ],
+      [
+        "boston, massachusetts",
+        8
+      ],
+      [
+        "irish-american",
+        6
+      ],
+      [
+        "gangster",
+        5
+      ],
+      [
+        "child abuse",
+        5
+      ],
+      [
+        "lawyer",
+        5
+      ],
+      [
+        "murder",
+        5
+      ],
+      [
+        "corruption",
+        4
+      ],
+      [
+        "organized crime",
+        4
+      ],
+      [
+        "complex",
+        4
+      ],
+      [
+        "rape",
+        4
+      ],
+      [
+        "conspiracy",
+        4
+      ]
+    ]
+  },
+  {
+    "cluster_id": 6,
+    "coherence_score": 0.551445421814172,
+    "description": "Supernatural terror that targets families\u2014often through a child, a home, and a slow, escalating dread.",
+    "label_id": "neighborhood:6",
+    "parent_cluster_id": 0,
+    "recommended_label": "Domestic haunting horror",
+    "representative_movies": [
+      "Lights Out",
+      "The Others",
+      "Silent Hill",
+      "The Boy",
+      "The Babadook",
+      "The Autopsy of Jane Doe",
+      "The Invisible Man",
+      "Orphan"
+    ],
+    "size": 17,
+    "terms": [
+      "child",
+      "supernatural",
+      "horror",
+      "woman",
+      "house",
+      "thriller",
+      "relationship",
+      "mother",
+      "ghost",
+      "haunted",
+      "murder",
+      "haunted house",
+      "single",
+      "death",
+      "old"
+    ],
+    "top_genres": [
+      [
+        "Horror",
+        16
+      ],
+      [
+        "Thriller",
+        8
+      ],
+      [
+        "Mystery",
+        5
+      ],
+      [
+        "Drama",
+        4
+      ],
+      [
+        "Science Fiction",
+        1
+      ],
+      [
+        "Crime",
+        1
+      ],
+      [
+        "Fantasy",
+        1
+      ],
+      [
+        "Romance",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "ghost",
+        6
+      ],
+      [
+        "supernatural",
+        6
+      ],
+      [
+        "child abuse",
+        4
+      ],
+      [
+        "supernatural horror",
+        4
+      ],
+      [
+        "haunted house",
+        4
+      ],
+      [
+        "based on novel or book",
+        4
+      ],
+      [
+        "murder",
+        4
+      ],
+      [
+        "parent child relationship",
+        3
+      ],
+      [
+        "remake",
+        3
+      ],
+      [
+        "loss of loved one",
+        2
+      ],
+      [
+        "paranormal phenomena",
+        2
+      ],
+      [
+        "single mother",
+        2
+      ]
+    ]
+  },
+  {
+    "cluster_id": 7,
+    "coherence_score": 0.5757676076995165,
+    "description": "Speculative futures where robots and AI chase meaning\u2014through loneliness, love, and the ethics of becoming human.",
+    "label_id": "neighborhood:7",
+    "parent_cluster_id": 5,
+    "recommended_label": "Heart-on-silicon sci-fi",
+    "representative_movies": [
+      "A.I. Artificial Intelligence",
+      "Finch",
+      "Ex Machina",
+      "WALL\u00b7E",
+      "9",
+      "The Iron Giant",
+      "Robots",
+      "Her"
+    ],
+    "size": 12,
+    "terms": [
+      "robot",
+      "love",
+      "future",
+      "apocalyptic",
+      "post",
+      "post apocalyptic",
+      "fiction",
+      "science fiction",
+      "science",
+      "wall",
+      "intelligence",
+      "technology",
+      "artificial",
+      "drama",
+      "artificial intelligence"
+    ],
+    "top_genres": [
+      [
+        "Science Fiction",
+        11
+      ],
+      [
+        "Drama",
+        7
+      ],
+      [
+        "Animation",
+        5
+      ],
+      [
+        "Family",
+        4
+      ],
+      [
+        "Adventure",
+        4
+      ],
+      [
+        "Romance",
+        3
+      ],
+      [
+        "Thriller",
+        2
+      ],
+      [
+        "Fantasy",
+        1
+      ],
+      [
+        "Comedy",
+        1
+      ],
+      [
+        "Action",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "robot",
+        9
+      ],
+      [
+        "artificial intelligence (a.i.)",
+        4
+      ],
+      [
+        "dystopia",
+        3
+      ],
+      [
+        "android",
+        3
+      ],
+      [
+        "friendship",
+        3
+      ],
+      [
+        "post-apocalyptic future",
+        3
+      ],
+      [
+        "loneliness",
+        2
+      ],
+      [
+        "aftercreditsstinger",
+        2
+      ],
+      [
+        "duringcreditsstinger",
+        2
+      ],
+      [
+        "speculative",
+        2
+      ],
+      [
+        "provocative",
+        2
+      ],
+      [
+        "man vs machine",
+        2
+      ]
+    ]
+  },
+  {
+    "cluster_id": 8,
+    "coherence_score": 0.4785300238589745,
+    "description": "Movies where relationships\u2014especially family\u2014collide with talent, identity, and life choices, mixing comedy with bruised sincerity.",
+    "label_id": "neighborhood:8",
+    "parent_cluster_id": 1,
+    "recommended_label": "Family-and-aspiration dramedies",
+    "representative_movies": [
+      "Lady Bird",
+      "As Good as It Gets",
+      "A Star Is Born",
+      "La La Land",
+      "Silver Linings Playbook",
+      "Carol",
+      "Fences",
+      "Saving Mr. Banks"
+    ],
+    "size": 35,
+    "terms": [
+      "story",
+      "family",
+      "relationship",
+      "new",
+      "drama",
+      "father",
+      "based",
+      "woman",
+      "man",
+      "wife",
+      "movie",
+      "life",
+      "school",
+      "child",
+      "comedy"
+    ],
+    "top_genres": [
+      [
+        "Drama",
+        34
+      ],
+      [
+        "Comedy",
+        13
+      ],
+      [
+        "Romance",
+        8
+      ],
+      [
+        "History",
+        5
+      ],
+      [
+        "Music",
+        4
+      ]
+    ],
+    "top_keywords": [
+      [
+        "based on novel or book",
+        10
+      ],
+      [
+        "based on true story",
+        8
+      ],
+      [
+        "road trip",
+        6
+      ],
+      [
+        "woman director",
+        6
+      ],
+      [
+        "new york city",
+        6
+      ],
+      [
+        "friendship",
+        5
+      ],
+      [
+        "lgbt",
+        4
+      ],
+      [
+        "1960s",
+        4
+      ],
+      [
+        "remake",
+        4
+      ],
+      [
+        "father daughter relationship",
+        4
+      ],
+      [
+        "husband wife relationship",
+        4
+      ],
+      [
+        "sibling relationship",
+        4
+      ]
+    ]
+  },
+  {
+    "cluster_id": 9,
+    "coherence_score": 0.5163325343308851,
+    "description": "High-energy comedy-crime where mismatched cops (or cop-adjacent losers) stumble into investigations with punchlines and mayhem.",
+    "label_id": "neighborhood:9",
+    "parent_cluster_id": 3,
+    "recommended_label": "Buddy-cop action comedy",
+    "representative_movies": [
+      "The Other Guys",
+      "The Heat",
+      "Let's Be Cops",
+      "The Nice Guys",
+      "Tropic Thunder",
+      "2 Guns",
+      "Get Hard",
+      "Identity Thief"
+    ],
+    "size": 33,
+    "terms": [
+      "comedy",
+      "police",
+      "cop",
+      "movie",
+      "action",
+      "crime",
+      "high",
+      "prison",
+      "school",
+      "agent",
+      "comedy crime",
+      "high school",
+      "action comedy",
+      "drug",
+      "buddy"
+    ],
+    "top_genres": [
+      [
+        "Comedy",
+        33
+      ],
+      [
+        "Action",
+        20
+      ],
+      [
+        "Crime",
+        17
+      ],
+      [
+        "Drama",
+        3
+      ],
+      [
+        "Adventure",
+        2
+      ],
+      [
+        "Thriller",
+        2
+      ],
+      [
+        "War",
+        1
+      ],
+      [
+        "Fantasy",
+        1
+      ],
+      [
+        "Science Fiction",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "buddy cop",
+        7
+      ],
+      [
+        "amused",
+        7
+      ],
+      [
+        "investigation",
+        5
+      ],
+      [
+        "duringcreditsstinger",
+        4
+      ],
+      [
+        "playful",
+        4
+      ],
+      [
+        "aftercreditsstinger",
+        4
+      ],
+      [
+        "fbi",
+        4
+      ],
+      [
+        "police",
+        4
+      ],
+      [
+        "drug dealer",
+        3
+      ],
+      [
+        "parody",
+        3
+      ],
+      [
+        "buddy comedy",
+        3
+      ],
+      [
+        "satire",
+        3
+      ]
+    ]
+  },
+  {
+    "cluster_id": 10,
+    "coherence_score": 0.5066857623166198,
+    "description": "Psychological thrillers where a missing person or hidden double life detonates inside intimate relationships.",
+    "label_id": "neighborhood:10",
+    "parent_cluster_id": 10,
+    "recommended_label": "Serial-killer domestic noir",
+    "representative_movies": [
+      "Prisoners",
+      "Gone Girl",
+      "Fracture",
+      "Unhinged",
+      "The Next Three Days",
+      "Knock Knock",
+      "Identity",
+      "Memento"
+    ],
+    "size": 45,
+    "terms": [
+      "thriller",
+      "crime",
+      "drama",
+      "daughter",
+      "murder",
+      "wife",
+      "mystery",
+      "man",
+      "police",
+      "son",
+      "relationship",
+      "father",
+      "based",
+      "missing",
+      "child"
+    ],
+    "top_genres": [
+      [
+        "Thriller",
+        41
+      ],
+      [
+        "Drama",
+        32
+      ],
+      [
+        "Crime",
+        24
+      ],
+      [
+        "Mystery",
+        13
+      ],
+      [
+        "Action",
+        7
+      ],
+      [
+        "Horror",
+        4
+      ],
+      [
+        "Romance",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "based on novel or book",
+        11
+      ],
+      [
+        "murder",
+        11
+      ],
+      [
+        "psychological thriller",
+        8
+      ],
+      [
+        "detective",
+        7
+      ],
+      [
+        "serial killer",
+        7
+      ],
+      [
+        "kidnapping",
+        6
+      ],
+      [
+        "parent child relationship",
+        6
+      ],
+      [
+        "new york city",
+        6
+      ],
+      [
+        "investigation",
+        5
+      ],
+      [
+        "philadelphia, pennsylvania",
+        5
+      ],
+      [
+        "hostage",
+        5
+      ],
+      [
+        "psychopath",
+        5
+      ]
+    ]
+  },
+  {
+    "cluster_id": 11,
+    "coherence_score": 0.5131045497898734,
+    "description": "Ensemble capers where a mastermind crew outsmarts rivals, regulators, and each other using misdirection and investigation.",
+    "label_id": "neighborhood:11",
+    "parent_cluster_id": 9,
+    "recommended_label": "Clever crew heist mysteries",
+    "representative_movies": [
+      "Now You See Me 2",
+      "Ocean's Twelve",
+      "Ocean's Eleven",
+      "Ocean's Thirteen",
+      "Now You See Me",
+      "Ocean's Eight",
+      "Focus",
+      "Sherlock Holmes: A Game of Shadows"
+    ],
+    "size": 12,
+    "terms": [
+      "ocean",
+      "holmes",
+      "detective",
+      "new",
+      "mystery",
+      "heist",
+      "movie",
+      "fbi",
+      "sherlock",
+      "casino",
+      "danny",
+      "crime",
+      "thriller",
+      "sequel",
+      "crew"
+    ],
+    "top_genres": [
+      [
+        "Crime",
+        11
+      ],
+      [
+        "Thriller",
+        7
+      ],
+      [
+        "Mystery",
+        3
+      ],
+      [
+        "Comedy",
+        3
+      ],
+      [
+        "Adventure",
+        2
+      ],
+      [
+        "Drama",
+        2
+      ],
+      [
+        "Science Fiction",
+        1
+      ],
+      [
+        "Action",
+        1
+      ],
+      [
+        "Romance",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "sequel",
+        7
+      ],
+      [
+        "heist",
+        5
+      ],
+      [
+        "new york city",
+        3
+      ],
+      [
+        "paris, france",
+        3
+      ],
+      [
+        "las vegas",
+        3
+      ],
+      [
+        "professional thief",
+        3
+      ],
+      [
+        "detective",
+        3
+      ],
+      [
+        "magic",
+        2
+      ],
+      [
+        "fbi",
+        2
+      ],
+      [
+        "investigation",
+        2
+      ],
+      [
+        "casino",
+        2
+      ],
+      [
+        "con artist",
+        2
+      ]
+    ]
+  },
+  {
+    "cluster_id": 12,
+    "coherence_score": 0.5615497777856634,
+    "description": "Animated or live-action family fantasies that turn classic fairy tales into big, singable kingdoms of magic and romance.",
+    "label_id": "neighborhood:12",
+    "parent_cluster_id": 4,
+    "recommended_label": "Fairy-tale musical family fantasy",
+    "representative_movies": [
+      "Cinderella",
+      "Frozen",
+      "Tangled",
+      "Beauty and the Beast",
+      "Beauty and the Beast",
+      "Enchanted",
+      "The Little Mermaid",
+      "Mulan"
+    ],
+    "size": 31,
+    "terms": [
+      "family",
+      "fairy",
+      "tale",
+      "fairy tale",
+      "live",
+      "action",
+      "prince",
+      "live action",
+      "animation",
+      "evil",
+      "magic",
+      "princess",
+      "based",
+      "fantasy",
+      "musical"
+    ],
+    "top_genres": [
+      [
+        "Family",
+        26
+      ],
+      [
+        "Fantasy",
+        22
+      ],
+      [
+        "Animation",
+        18
+      ],
+      [
+        "Adventure",
+        17
+      ],
+      [
+        "Romance",
+        11
+      ],
+      [
+        "Drama",
+        8
+      ],
+      [
+        "Comedy",
+        7
+      ],
+      [
+        "Crime",
+        1
+      ],
+      [
+        "Action",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "musical",
+        20
+      ],
+      [
+        "villain",
+        15
+      ],
+      [
+        "princess",
+        11
+      ],
+      [
+        "based on fairy tale",
+        10
+      ],
+      [
+        "live action remake",
+        9
+      ],
+      [
+        "magic",
+        8
+      ],
+      [
+        "cartoon",
+        7
+      ],
+      [
+        "fairy tale",
+        7
+      ],
+      [
+        "live action and animation",
+        6
+      ],
+      [
+        "prince",
+        6
+      ],
+      [
+        "kingdom",
+        5
+      ],
+      [
+        "aftercreditsstinger",
+        4
+      ]
+    ]
+  },
+  {
+    "cluster_id": 13,
+    "coherence_score": 0.6009547952981853,
+    "description": "Creature-feature terror set in claustrophobic ocean environments, where survival depends on grit, luck, and a shrinking air supply.",
+    "label_id": "neighborhood:13",
+    "parent_cluster_id": 5,
+    "recommended_label": "Shark & deep-sea survival horror",
+    "representative_movies": [
+      "Underwater",
+      "The Meg",
+      "Meg 2: The Trench",
+      "47 Meters Down",
+      "Deep Blue Sea",
+      "The Shallows",
+      "The Abyss",
+      "Crawl"
+    ],
+    "size": 10,
+    "terms": [
+      "shark",
+      "horror",
+      "underwater",
+      "animal",
+      "survival",
+      "sea",
+      "trench",
+      "action",
+      "deep",
+      "trapped",
+      "aquaman",
+      "brother",
+      "attack",
+      "deep sea",
+      "great"
+    ],
+    "top_genres": [
+      [
+        "Horror",
+        7
+      ],
+      [
+        "Action",
+        6
+      ],
+      [
+        "Science Fiction",
+        6
+      ],
+      [
+        "Adventure",
+        4
+      ],
+      [
+        "Thriller",
+        4
+      ],
+      [
+        "Drama",
+        1
+      ],
+      [
+        "Fantasy",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "shark",
+        5
+      ],
+      [
+        "animal horror",
+        5
+      ],
+      [
+        "underwater",
+        4
+      ],
+      [
+        "creature",
+        4
+      ],
+      [
+        "sequel",
+        3
+      ],
+      [
+        "deep sea",
+        3
+      ],
+      [
+        "shark attack",
+        3
+      ],
+      [
+        "animal attack",
+        3
+      ],
+      [
+        "trapped underwater",
+        3
+      ],
+      [
+        "alien life-form",
+        2
+      ],
+      [
+        "intense",
+        2
+      ],
+      [
+        "based on novel or book",
+        2
+      ]
+    ]
+  },
+  {
+    "cluster_id": 14,
+    "coherence_score": 0.5515956299690526,
+    "description": "Horror films where teenagers or groups run the gauntlet of a killer, often spiked with revenge, dark humor, and rule-breaking supernatural menace.",
+    "label_id": "neighborhood:14",
+    "parent_cluster_id": 0,
+    "recommended_label": "Slasher survival with wink-and-vengeance",
+    "representative_movies": [
+      "The Cabin in the Woods",
+      "You're Next",
+      "Friday the 13th",
+      "A Nightmare on Elm Street",
+      "The Strangers",
+      "Wrong Turn",
+      "A Nightmare on Elm Street",
+      "The Texas Chainsaw Massacre"
+    ],
+    "size": 46,
+    "terms": [
+      "horror",
+      "dead",
+      "murder",
+      "cabin",
+      "town",
+      "evil",
+      "friends",
+      "family",
+      "comedy",
+      "thriller",
+      "purge",
+      "slasher",
+      "new",
+      "woods",
+      "killer"
+    ],
+    "top_genres": [
+      [
+        "Horror",
+        46
+      ],
+      [
+        "Thriller",
+        19
+      ],
+      [
+        "Comedy",
+        12
+      ],
+      [
+        "Mystery",
+        8
+      ],
+      [
+        "Action",
+        4
+      ],
+      [
+        "Crime",
+        3
+      ],
+      [
+        "Fantasy",
+        3
+      ],
+      [
+        "Science Fiction",
+        2
+      ],
+      [
+        "Adventure",
+        2
+      ],
+      [
+        "Drama",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "slasher",
+        15
+      ],
+      [
+        "murder",
+        13
+      ],
+      [
+        "gore",
+        12
+      ],
+      [
+        "survival horror",
+        8
+      ],
+      [
+        "revenge",
+        7
+      ],
+      [
+        "remake",
+        7
+      ],
+      [
+        "lovecraftian",
+        6
+      ],
+      [
+        "supernatural horror",
+        6
+      ],
+      [
+        "zombie",
+        5
+      ],
+      [
+        "chainsaw",
+        5
+      ],
+      [
+        "supernatural",
+        5
+      ],
+      [
+        "friends",
+        5
+      ]
+    ]
+  },
+  {
+    "cluster_id": 15,
+    "coherence_score": 0.48641495579471755,
+    "description": "Whimsical family comedies where a single parent\u2019s life gets hijacked\u2014usually by a nanny or stand-in caregiver\u2014and everything spirals into heartfelt chaos.",
+    "label_id": "neighborhood:15",
+    "parent_cluster_id": 11,
+    "recommended_label": "Nanny-to-the-Rescue Family Comedy",
+    "representative_movies": [
+      "Mrs. Doubtfire",
+      "Daddy's Home",
+      "Instant Family",
+      "Mr. Popper's Penguins",
+      "The Parent Trap",
+      "The Pacifier",
+      "The Family",
+      "Liar Liar"
+    ],
+    "size": 19,
+    "terms": [
+      "family",
+      "relationship",
+      "father",
+      "nanny",
+      "based",
+      "son",
+      "comedy",
+      "zoo",
+      "children",
+      "kids",
+      "story",
+      "child",
+      "drama",
+      "parent",
+      "wife"
+    ],
+    "top_genres": [
+      [
+        "Comedy",
+        18
+      ],
+      [
+        "Family",
+        11
+      ],
+      [
+        "Fantasy",
+        7
+      ],
+      [
+        "Drama",
+        6
+      ],
+      [
+        "Action",
+        2
+      ],
+      [
+        "Adventure",
+        1
+      ],
+      [
+        "Romance",
+        1
+      ],
+      [
+        "Crime",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "father son relationship",
+        5
+      ],
+      [
+        "based on novel or book",
+        5
+      ],
+      [
+        "based on true story",
+        4
+      ],
+      [
+        "san francisco, california",
+        3
+      ],
+      [
+        "parent child relationship",
+        3
+      ],
+      [
+        "nanny",
+        3
+      ],
+      [
+        "father daughter relationship",
+        3
+      ],
+      [
+        "family relationships",
+        3
+      ],
+      [
+        "single father",
+        2
+      ],
+      [
+        "social worker",
+        2
+      ],
+      [
+        "restaurant",
+        2
+      ],
+      [
+        "california",
+        2
+      ]
+    ]
+  },
+  {
+    "cluster_id": 16,
+    "coherence_score": 0.5240238940845131,
+    "description": "High-intensity war films built on real missions\u2014snipers, raids, and special-ops operations\u2014driven by suspense and moral pressure.",
+    "label_id": "neighborhood:16",
+    "parent_cluster_id": 7,
+    "recommended_label": "True-Story War Thrillers (SEALs to Snipers)",
+    "representative_movies": [
+      "13 Hours: The Secret Soldiers of Benghazi",
+      "Lone Survivor",
+      "American Sniper",
+      "The Hurt Locker",
+      "Tears of the Sun",
+      "Civil War",
+      "Zero Dark Thirty",
+      "12 Strong"
+    ],
+    "size": 26,
+    "terms": [
+      "war",
+      "based",
+      "story",
+      "action",
+      "navy",
+      "afghanistan",
+      "thriller",
+      "drama",
+      "true story",
+      "true",
+      "based true",
+      "marine",
+      "bomb",
+      "mission",
+      "president"
+    ],
+    "top_genres": [
+      [
+        "Action",
+        20
+      ],
+      [
+        "Drama",
+        17
+      ],
+      [
+        "War",
+        15
+      ],
+      [
+        "Thriller",
+        13
+      ],
+      [
+        "History",
+        6
+      ],
+      [
+        "Crime",
+        4
+      ],
+      [
+        "Adventure",
+        2
+      ],
+      [
+        "Comedy",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "based on true story",
+        11
+      ],
+      [
+        "based on novel or book",
+        7
+      ],
+      [
+        "intense",
+        5
+      ],
+      [
+        "iraq",
+        4
+      ],
+      [
+        "u.s. navy seal",
+        4
+      ],
+      [
+        "soldier",
+        4
+      ],
+      [
+        "sniper",
+        3
+      ],
+      [
+        "biography",
+        3
+      ],
+      [
+        "u.s. marine",
+        3
+      ],
+      [
+        "suspenseful",
+        3
+      ],
+      [
+        "usa president",
+        3
+      ],
+      [
+        "washington dc, usa",
+        3
+      ]
+    ]
+  },
+  {
+    "cluster_id": 17,
+    "coherence_score": 0.5168229129515471,
+    "description": "Swashbuckling globe-trotting adventures where archaeologists and treasure hunters chase riddles, relics, and curses across exotic ruins and seas.",
+    "label_id": "neighborhood:17",
+    "parent_cluster_id": 6,
+    "recommended_label": "Temple Ruins & Pirate Treasure Adventures",
+    "representative_movies": [
+      "The Mummy",
+      "Raiders of the Lost Ark",
+      "Lara Croft: Tomb Raider - The Cradle of Life",
+      "Indiana Jones and the Temple of Doom",
+      "National Treasure",
+      "Indiana Jones and the Kingdom of the Crystal Skull",
+      "The Mummy: Tomb of the Dragon Emperor",
+      "Pirates of the Caribbean: Dead Men Tell No Tales"
+    ],
+    "size": 43,
+    "terms": [
+      "treasure",
+      "action",
+      "adventure",
+      "fantasy",
+      "jones",
+      "history",
+      "movie",
+      "lost",
+      "time",
+      "world",
+      "secret",
+      "based",
+      "jack",
+      "pirate",
+      "ancient"
+    ],
+    "top_genres": [
+      [
+        "Adventure",
+        38
+      ],
+      [
+        "Action",
+        36
+      ],
+      [
+        "Fantasy",
+        23
+      ],
+      [
+        "Comedy",
+        10
+      ],
+      [
+        "Mystery",
+        6
+      ],
+      [
+        "Thriller",
+        5
+      ],
+      [
+        "Family",
+        4
+      ],
+      [
+        "Science Fiction",
+        3
+      ],
+      [
+        "Western",
+        3
+      ],
+      [
+        "Crime",
+        2
+      ]
+    ],
+    "top_keywords": [
+      [
+        "treasure hunt",
+        10
+      ],
+      [
+        "archaeologist",
+        10
+      ],
+      [
+        "aftercreditsstinger",
+        9
+      ],
+      [
+        "swashbuckler",
+        8
+      ],
+      [
+        "excited",
+        7
+      ],
+      [
+        "riddle",
+        7
+      ],
+      [
+        "duringcreditsstinger",
+        7
+      ],
+      [
+        "pirate",
+        6
+      ],
+      [
+        "sword fight",
+        6
+      ],
+      [
+        "egypt",
+        6
+      ],
+      [
+        "based on video game",
+        6
+      ],
+      [
+        "london, england",
+        5
+      ]
+    ]
+  },
+  {
+    "cluster_id": 18,
+    "coherence_score": 0.5173130015538698,
+    "description": "Sharp, music-friendly high-school comedies where social status games and teenage crushes collide with coming-of-age awkwardness.",
+    "label_id": "neighborhood:18",
+    "parent_cluster_id": 11,
+    "recommended_label": "Teen Mean-Heart Comedy (School & Romance)",
+    "representative_movies": [
+      "High School Musical",
+      "10 Things I Hate About You",
+      "Clueless",
+      "Easy A",
+      "Pitch Perfect",
+      "The Edge of Seventeen",
+      "The DUFF",
+      "Mean Girls"
+    ],
+    "size": 34,
+    "terms": [
+      "school",
+      "high",
+      "high school",
+      "comedy",
+      "romance",
+      "based",
+      "girl",
+      "teen",
+      "movie",
+      "musical",
+      "drama",
+      "love",
+      "party",
+      "teenage",
+      "coming"
+    ],
+    "top_genres": [
+      [
+        "Comedy",
+        29
+      ],
+      [
+        "Romance",
+        16
+      ],
+      [
+        "Drama",
+        14
+      ],
+      [
+        "Family",
+        7
+      ],
+      [
+        "Music",
+        4
+      ],
+      [
+        "Fantasy",
+        2
+      ],
+      [
+        "TV Movie",
+        2
+      ],
+      [
+        "Crime",
+        1
+      ],
+      [
+        "History",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "high school",
+        21
+      ],
+      [
+        "coming of age",
+        14
+      ],
+      [
+        "teen comedy",
+        7
+      ],
+      [
+        "teenager",
+        7
+      ],
+      [
+        "high school student",
+        7
+      ],
+      [
+        "based on novel or book",
+        6
+      ],
+      [
+        "teen movie",
+        6
+      ],
+      [
+        "basketball",
+        6
+      ],
+      [
+        "duringcreditsstinger",
+        5
+      ],
+      [
+        "based on play or musical",
+        4
+      ],
+      [
+        "teenage romance",
+        4
+      ],
+      [
+        "based on young adult novel",
+        4
+      ]
+    ]
+  },
+  {
+    "cluster_id": 19,
+    "coherence_score": 0.5820798061687439,
+    "description": "Future-shock action thrillers where artificial intelligence, cyborg bodies, and brutal systems turn survival into a philosophy fight.",
+    "label_id": "neighborhood:19",
+    "parent_cluster_id": 5,
+    "recommended_label": "Cyber Dystopia Action (AI, Cyborgs, Futures Gone Wrong)",
+    "representative_movies": [
+      "The Terminator",
+      "RoboCop",
+      "The Matrix",
+      "Terminator Genisys",
+      "RoboCop",
+      "Terminator Salvation",
+      "Blade Runner 2049",
+      "Terminator 2: Judgment Day"
+    ],
+    "size": 39,
+    "terms": [
+      "robot",
+      "action",
+      "future",
+      "world",
+      "science fiction",
+      "fiction",
+      "science",
+      "terminator",
+      "dystopia",
+      "computer",
+      "matrix",
+      "intelligence",
+      "thriller",
+      "man",
+      "hero"
+    ],
+    "top_genres": [
+      [
+        "Science Fiction",
+        39
+      ],
+      [
+        "Action",
+        35
+      ],
+      [
+        "Thriller",
+        19
+      ],
+      [
+        "Adventure",
+        14
+      ],
+      [
+        "Drama",
+        4
+      ],
+      [
+        "Crime",
+        3
+      ],
+      [
+        "Mystery",
+        1
+      ],
+      [
+        "Comedy",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "dystopia",
+        36
+      ],
+      [
+        "artificial intelligence (a.i.)",
+        16
+      ],
+      [
+        "cyberpunk",
+        16
+      ],
+      [
+        "future",
+        12
+      ],
+      [
+        "cyborg",
+        11
+      ],
+      [
+        "dystopian",
+        10
+      ],
+      [
+        "action hero",
+        9
+      ],
+      [
+        "man vs machine",
+        8
+      ],
+      [
+        "martial arts",
+        8
+      ],
+      [
+        "post-apocalyptic future",
+        8
+      ],
+      [
+        "saving the world",
+        7
+      ],
+      [
+        "transhumanism",
+        7
+      ]
+    ]
+  },
+  {
+    "cluster_id": 20,
+    "coherence_score": 0.5958733055785048,
+    "description": "High-speed policing with mismatched chemistry, where the job gets done and the punches come with punchlines.",
+    "label_id": "neighborhood:20",
+    "parent_cluster_id": 9,
+    "recommended_label": "Buddy Cop Action-Comedy",
+    "representative_movies": [
+      "Bad Boys II",
+      "Bad Boys",
+      "Lethal Weapon 2",
+      "Beverly Hills Cop II",
+      "Lethal Weapon 3",
+      "Lethal Weapon 4",
+      "Rush Hour 2",
+      "Bad Boys: Ride or Die"
+    ],
+    "size": 17,
+    "terms": [
+      "cop",
+      "action",
+      "police",
+      "detective",
+      "comedy",
+      "buddy",
+      "crime",
+      "lee",
+      "miami",
+      "bad",
+      "murtaugh",
+      "sequel",
+      "los angeles",
+      "los",
+      "angeles"
+    ],
+    "top_genres": [
+      [
+        "Action",
+        15
+      ],
+      [
+        "Crime",
+        15
+      ],
+      [
+        "Comedy",
+        12
+      ],
+      [
+        "Thriller",
+        6
+      ],
+      [
+        "Science Fiction",
+        1
+      ],
+      [
+        "Adventure",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "buddy cop",
+        14
+      ],
+      [
+        "los angeles, california",
+        12
+      ],
+      [
+        "action hero",
+        10
+      ],
+      [
+        "sequel",
+        8
+      ],
+      [
+        "police",
+        7
+      ],
+      [
+        "showdown",
+        5
+      ],
+      [
+        "maverick cop",
+        5
+      ],
+      [
+        "undercover",
+        4
+      ],
+      [
+        "miami, florida",
+        4
+      ],
+      [
+        "police detective",
+        4
+      ],
+      [
+        "narcotics detective",
+        4
+      ],
+      [
+        "martial arts",
+        4
+      ]
+    ]
+  },
+  {
+    "cluster_id": 21,
+    "coherence_score": 0.512668055743913,
+    "description": "Bright, fast-moving animated worlds where a charming misfit (often a villain) turns into an unlikely hero for the whole family.",
+    "label_id": "neighborhood:21",
+    "parent_cluster_id": 4,
+    "recommended_label": "Animated Villain-Flip Family Adventure",
+    "representative_movies": [
+      "The Lego Movie",
+      "Despicable Me",
+      "Megamind",
+      "Meet the Robinsons",
+      "Chicken Little",
+      "Madagascar",
+      "The Smurfs",
+      "The Mitchells vs. the Machines"
+    ],
+    "size": 59,
+    "terms": [
+      "animation",
+      "family",
+      "villain",
+      "comedy",
+      "movie",
+      "action",
+      "adventure",
+      "world",
+      "live",
+      "live action",
+      "comedy family",
+      "fantasy",
+      "cartoon",
+      "animation comedy",
+      "game"
+    ],
+    "top_genres": [
+      [
+        "Comedy",
+        56
+      ],
+      [
+        "Family",
+        48
+      ],
+      [
+        "Animation",
+        45
+      ],
+      [
+        "Adventure",
+        33
+      ],
+      [
+        "Fantasy",
+        18
+      ],
+      [
+        "Science Fiction",
+        14
+      ],
+      [
+        "Action",
+        10
+      ],
+      [
+        "Crime",
+        5
+      ],
+      [
+        "Romance",
+        2
+      ],
+      [
+        "Mystery",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "villain",
+        29
+      ],
+      [
+        "aftercreditsstinger",
+        23
+      ],
+      [
+        "duringcreditsstinger",
+        22
+      ],
+      [
+        "live action and animation",
+        15
+      ],
+      [
+        "friendship",
+        8
+      ],
+      [
+        "anthropomorphism",
+        8
+      ],
+      [
+        "3d animation",
+        7
+      ],
+      [
+        "cartoon",
+        7
+      ],
+      [
+        "parent child relationship",
+        6
+      ],
+      [
+        "superhero",
+        5
+      ],
+      [
+        "joyful",
+        5
+      ],
+      [
+        "video game",
+        5
+      ]
+    ]
+  },
+  {
+    "cluster_id": 22,
+    "coherence_score": 0.582477624561078,
+    "description": "Sweat-soaked fight dramas where mentorship, discipline, and heartbreak build toward the next bell.",
+    "label_id": "neighborhood:22",
+    "parent_cluster_id": 7,
+    "recommended_label": "Boxing Training & Comeback Drama",
+    "representative_movies": [
+      "Rocky Balboa",
+      "Creed II",
+      "The Fighter",
+      "Creed",
+      "Rocky III",
+      "Rocky IV",
+      "Rocky V",
+      "Southpaw"
+    ],
+    "size": 18,
+    "terms": [
+      "rocky",
+      "boxing",
+      "trainer",
+      "boxer",
+      "creed",
+      "fight",
+      "training",
+      "champion",
+      "drama",
+      "life",
+      "sports",
+      "school",
+      "arts",
+      "martial arts",
+      "martial"
+    ],
+    "top_genres": [
+      [
+        "Drama",
+        18
+      ],
+      [
+        "Action",
+        8
+      ],
+      [
+        "Family",
+        2
+      ],
+      [
+        "Science Fiction",
+        1
+      ],
+      [
+        "Music",
+        1
+      ],
+      [
+        "Adventure",
+        1
+      ],
+      [
+        "History",
+        1
+      ],
+      [
+        "Romance",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "sports",
+        12
+      ],
+      [
+        "boxing",
+        12
+      ],
+      [
+        "boxer",
+        7
+      ],
+      [
+        "training",
+        7
+      ],
+      [
+        "transporter",
+        6
+      ],
+      [
+        "fight",
+        5
+      ],
+      [
+        "philadelphia, pennsylvania",
+        4
+      ],
+      [
+        "powerful",
+        4
+      ],
+      [
+        "dying and death",
+        3
+      ],
+      [
+        "boxing trainer",
+        3
+      ],
+      [
+        "excited",
+        3
+      ],
+      [
+        "trainer",
+        3
+      ]
+    ]
+  },
+  {
+    "cluster_id": 23,
+    "coherence_score": 0.5597682667367551,
+    "description": "Fairy-tale worlds\u2014sometimes familiar, sometimes flipped\u2014where magic, queens, hunts, and wonder collide in grand adventure.",
+    "label_id": "neighborhood:23",
+    "parent_cluster_id": 6,
+    "recommended_label": "Fairy-Tale Live-Action & Animated Remix",
+    "representative_movies": [
+      "Maleficent: Mistress of Evil",
+      "Alice Through the Looking Glass",
+      "Maleficent",
+      "Alice in Wonderland",
+      "Mary Poppins Returns",
+      "The Chronicles of Narnia: Prince Caspian",
+      "Frozen II",
+      "The Chronicles of Narnia: The Voyage of the Dawn Treader"
+    ],
+    "size": 15,
+    "terms": [
+      "fantasy",
+      "based",
+      "action",
+      "maleficent",
+      "family",
+      "fairy",
+      "book",
+      "live",
+      "live action",
+      "adventure",
+      "huntsman",
+      "alice",
+      "novel",
+      "evil",
+      "queen"
+    ],
+    "top_genres": [
+      [
+        "Adventure",
+        14
+      ],
+      [
+        "Family",
+        12
+      ],
+      [
+        "Fantasy",
+        12
+      ],
+      [
+        "Action",
+        3
+      ],
+      [
+        "Animation",
+        3
+      ],
+      [
+        "Comedy",
+        3
+      ],
+      [
+        "Drama",
+        2
+      ],
+      [
+        "Romance",
+        1
+      ],
+      [
+        "TV Movie",
+        1
+      ],
+      [
+        "Music",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "live action remake",
+        9
+      ],
+      [
+        "magic",
+        7
+      ],
+      [
+        "based on novel or book",
+        6
+      ],
+      [
+        "musical",
+        5
+      ],
+      [
+        "sequel",
+        5
+      ],
+      [
+        "based on children's book",
+        4
+      ],
+      [
+        "fantasy world",
+        4
+      ],
+      [
+        "fairy tale",
+        4
+      ],
+      [
+        "queen",
+        3
+      ],
+      [
+        "based on young adult novel",
+        3
+      ],
+      [
+        "fairy",
+        3
+      ],
+      [
+        "witch",
+        3
+      ]
+    ]
+  },
+  {
+    "cluster_id": 24,
+    "coherence_score": 0.5115994928421433,
+    "description": "Teen and young-adult romance stories built for emotional impact\u2014secrets, fate, and heartbreak delivered with big, heartfelt sincerity.",
+    "label_id": "neighborhood:24",
+    "parent_cluster_id": 1,
+    "recommended_label": "YA Tearjerker Romance Dramas",
+    "representative_movies": [
+      "A Walk to Remember",
+      "The Notebook",
+      "The Best of Me",
+      "Me Before You",
+      "The Fault in Our Stars",
+      "All the Bright Places",
+      "Everything, Everything",
+      "Remember Me"
+    ],
+    "size": 36,
+    "terms": [
+      "love",
+      "based",
+      "drama",
+      "romance",
+      "novel",
+      "life",
+      "young",
+      "based novel",
+      "relationship",
+      "book",
+      "novel book",
+      "story",
+      "drama romance",
+      "war",
+      "marriage"
+    ],
+    "top_genres": [
+      [
+        "Drama",
+        35
+      ],
+      [
+        "Romance",
+        32
+      ],
+      [
+        "History",
+        3
+      ],
+      [
+        "Fantasy",
+        2
+      ],
+      [
+        "Adventure",
+        2
+      ],
+      [
+        "War",
+        1
+      ],
+      [
+        "Comedy",
+        1
+      ],
+      [
+        "Family",
+        1
+      ],
+      [
+        "Thriller",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "based on novel or book",
+        21
+      ],
+      [
+        "love",
+        6
+      ],
+      [
+        "based on young adult novel",
+        6
+      ],
+      [
+        "based on true story",
+        5
+      ],
+      [
+        "romance",
+        5
+      ],
+      [
+        "valentine's day",
+        5
+      ],
+      [
+        "sentimental",
+        5
+      ],
+      [
+        "star crossed lovers",
+        4
+      ],
+      [
+        "teen drama",
+        4
+      ],
+      [
+        "romantic",
+        4
+      ],
+      [
+        "1950s",
+        4
+      ],
+      [
+        "secret love",
+        3
+      ]
+    ]
+  },
+  {
+    "cluster_id": 25,
+    "coherence_score": 0.5397884716752744,
+    "description": "High-stakes voyages where astronauts (and scientists) collide with time-bending mysteries, alien signals, and the physics of survival.",
+    "label_id": "neighborhood:25",
+    "parent_cluster_id": 5,
+    "recommended_label": "Alien-contact space missions",
+    "representative_movies": [
+      "Interstellar",
+      "Ad Astra",
+      "The Martian",
+      "Arrival",
+      "Passengers",
+      "The Space Between Us",
+      "Avatar",
+      "Gravity"
+    ],
+    "size": 39,
+    "terms": [
+      "space",
+      "time",
+      "alien",
+      "future",
+      "planet",
+      "science",
+      "mission",
+      "fiction",
+      "science fiction",
+      "adventure",
+      "travel",
+      "astronaut",
+      "moon",
+      "drama",
+      "based"
+    ],
+    "top_genres": [
+      [
+        "Science Fiction",
+        36
+      ],
+      [
+        "Adventure",
+        20
+      ],
+      [
+        "Drama",
+        17
+      ],
+      [
+        "Action",
+        9
+      ],
+      [
+        "Comedy",
+        5
+      ],
+      [
+        "Mystery",
+        5
+      ],
+      [
+        "Thriller",
+        4
+      ],
+      [
+        "Romance",
+        3
+      ],
+      [
+        "Family",
+        3
+      ],
+      [
+        "Fantasy",
+        2
+      ]
+    ],
+    "top_keywords": [
+      [
+        "space",
+        14
+      ],
+      [
+        "based on novel or book",
+        13
+      ],
+      [
+        "space travel",
+        11
+      ],
+      [
+        "alien",
+        10
+      ],
+      [
+        "future",
+        9
+      ],
+      [
+        "astronaut",
+        9
+      ],
+      [
+        "space opera",
+        7
+      ],
+      [
+        "nasa",
+        6
+      ],
+      [
+        "dystopia",
+        6
+      ],
+      [
+        "scientist",
+        6
+      ],
+      [
+        "time travel",
+        5
+      ],
+      [
+        "planet",
+        5
+      ]
+    ]
+  },
+  {
+    "cluster_id": 26,
+    "coherence_score": 0.5557359876343545,
+    "description": "Tense cat-and-mouse crime stories where a killer\u2019s plan unspools across transit hubs and crowded cities.",
+    "label_id": "neighborhood:26",
+    "parent_cluster_id": 2,
+    "recommended_label": "Assassin-in-motion thrillers",
+    "representative_movies": [
+      "Wrath of Man",
+      "The Killer",
+      "The Transporter",
+      "The Commuter",
+      "Non-Stop",
+      "The Foreigner",
+      "Collateral",
+      "Nobody"
+    ],
+    "size": 16,
+    "terms": [
+      "train",
+      "action",
+      "thriller",
+      "crime",
+      "mystery",
+      "murder",
+      "jimmy",
+      "killer",
+      "revenge",
+      "taxi",
+      "home",
+      "assassin",
+      "nels",
+      "new",
+      "flight"
+    ],
+    "top_genres": [
+      [
+        "Thriller",
+        14
+      ],
+      [
+        "Action",
+        12
+      ],
+      [
+        "Crime",
+        9
+      ],
+      [
+        "Mystery",
+        4
+      ],
+      [
+        "Drama",
+        4
+      ],
+      [
+        "Comedy",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "train",
+        5
+      ],
+      [
+        "remake",
+        4
+      ],
+      [
+        "murder",
+        4
+      ],
+      [
+        "hitman",
+        4
+      ],
+      [
+        "revenge",
+        4
+      ],
+      [
+        "based on novel or book",
+        3
+      ],
+      [
+        "assassin",
+        3
+      ],
+      [
+        "briefcase",
+        3
+      ],
+      [
+        "snow",
+        2
+      ],
+      [
+        "duringcreditsstinger",
+        2
+      ],
+      [
+        "hidden past",
+        2
+      ],
+      [
+        "runaway train",
+        2
+      ]
+    ]
+  },
+  {
+    "cluster_id": 27,
+    "coherence_score": 0.5524306212502645,
+    "description": "Unsettling horror where relationships fray into paranoia, and fear spreads like a contagion through households and trust.",
+    "label_id": "neighborhood:27",
+    "parent_cluster_id": 0,
+    "recommended_label": "Psychological dread horror",
+    "representative_movies": [
+      "Midsommar",
+      "Hereditary",
+      "Old",
+      "It Follows",
+      "It Comes at Night",
+      "Us",
+      "The Invitation",
+      "Ghostland"
+    ],
+    "size": 58,
+    "terms": [
+      "horror",
+      "thriller",
+      "mystery",
+      "family",
+      "psychological",
+      "relationship",
+      "murder",
+      "film",
+      "drama",
+      "movie",
+      "horror mystery",
+      "mother",
+      "new",
+      "house",
+      "friends"
+    ],
+    "top_genres": [
+      [
+        "Horror",
+        47
+      ],
+      [
+        "Mystery",
+        29
+      ],
+      [
+        "Thriller",
+        26
+      ],
+      [
+        "Drama",
+        19
+      ],
+      [
+        "Fantasy",
+        7
+      ],
+      [
+        "Comedy",
+        5
+      ],
+      [
+        "Science Fiction",
+        4
+      ],
+      [
+        "Romance",
+        2
+      ],
+      [
+        "Action",
+        1
+      ],
+      [
+        "Crime",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "murder",
+        14
+      ],
+      [
+        "based on novel or book",
+        12
+      ],
+      [
+        "psychological thriller",
+        8
+      ],
+      [
+        "psychological horror",
+        7
+      ],
+      [
+        "nightmare",
+        7
+      ],
+      [
+        "paranoia",
+        7
+      ],
+      [
+        "tense",
+        7
+      ],
+      [
+        "fear",
+        6
+      ],
+      [
+        "supernatural horror",
+        6
+      ],
+      [
+        "body horror",
+        6
+      ],
+      [
+        "female protagonist",
+        5
+      ],
+      [
+        "supernatural",
+        5
+      ]
+    ]
+  },
+  {
+    "cluster_id": 28,
+    "coherence_score": 0.5406857527993588,
+    "description": "Bright, family-friendly animated follow-ups packed with new villains, mid-film momentum, and comedy-forward adventure set pieces.",
+    "label_id": "neighborhood:28",
+    "parent_cluster_id": 9,
+    "recommended_label": "Sequel comedy-adventure animation",
+    "representative_movies": [
+      "Shrek 2",
+      "Despicable Me 2",
+      "Rio 2",
+      "Kung Fu Panda 2",
+      "Incredibles 2",
+      "Cloudy with a Chance of Meatballs 2",
+      "Cars 2",
+      "Madagascar: Escape 2 Africa"
+    ],
+    "size": 48,
+    "terms": [
+      "family",
+      "new",
+      "animation",
+      "adventure",
+      "sequel",
+      "villain",
+      "comedy",
+      "action",
+      "ice",
+      "comedy family",
+      "animal",
+      "animation comedy",
+      "toy",
+      "duringcreditsstinger",
+      "shrek"
+    ],
+    "top_genres": [
+      [
+        "Family",
+        45
+      ],
+      [
+        "Comedy",
+        42
+      ],
+      [
+        "Animation",
+        41
+      ],
+      [
+        "Adventure",
+        32
+      ],
+      [
+        "Action",
+        13
+      ],
+      [
+        "Fantasy",
+        13
+      ],
+      [
+        "Science Fiction",
+        5
+      ],
+      [
+        "Romance",
+        3
+      ],
+      [
+        "Drama",
+        2
+      ],
+      [
+        "Music",
+        2
+      ]
+    ],
+    "top_keywords": [
+      [
+        "sequel",
+        39
+      ],
+      [
+        "villain",
+        25
+      ],
+      [
+        "duringcreditsstinger",
+        20
+      ],
+      [
+        "aftercreditsstinger",
+        17
+      ],
+      [
+        "cartoon",
+        9
+      ],
+      [
+        "talking animal",
+        8
+      ],
+      [
+        "friendship",
+        7
+      ],
+      [
+        "anthropomorphism",
+        7
+      ],
+      [
+        "animals",
+        7
+      ],
+      [
+        "3d animation",
+        6
+      ],
+      [
+        "live action and animation",
+        6
+      ],
+      [
+        "family",
+        4
+      ]
+    ]
+  },
+  {
+    "cluster_id": 29,
+    "coherence_score": 0.6166986071598465,
+    "description": "Post-apocalyptic horror where outbreaks, conspiracies, and mutated threats force characters into desperate survival missions.",
+    "label_id": "neighborhood:29",
+    "parent_cluster_id": 5,
+    "recommended_label": "Virus-zombie apocalypse survival",
+    "representative_movies": [
+      "Resident Evil",
+      "Resident Evil: Afterlife",
+      "28 Days Later",
+      "Dawn of the Dead",
+      "Resident Evil: Extinction",
+      "Resident Evil: Apocalypse",
+      "Resident Evil: Welcome to Raccoon City",
+      "28 Weeks Later"
+    ],
+    "size": 19,
+    "terms": [
+      "zombie",
+      "evil",
+      "virus",
+      "world",
+      "horror",
+      "resident",
+      "action",
+      "resident evil",
+      "apocalypse",
+      "fiction",
+      "science fiction",
+      "science",
+      "city",
+      "alice",
+      "corporation"
+    ],
+    "top_genres": [
+      [
+        "Horror",
+        17
+      ],
+      [
+        "Science Fiction",
+        14
+      ],
+      [
+        "Action",
+        10
+      ],
+      [
+        "Thriller",
+        7
+      ],
+      [
+        "Comedy",
+        3
+      ],
+      [
+        "Drama",
+        2
+      ],
+      [
+        "Romance",
+        1
+      ],
+      [
+        "Crime",
+        1
+      ],
+      [
+        "Adventure",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "zombie",
+        18
+      ],
+      [
+        "dystopia",
+        10
+      ],
+      [
+        "post-apocalyptic future",
+        8
+      ],
+      [
+        "zombie apocalypse",
+        7
+      ],
+      [
+        "mutant",
+        7
+      ],
+      [
+        "based on video game",
+        7
+      ],
+      [
+        "survival",
+        6
+      ],
+      [
+        "virus",
+        6
+      ],
+      [
+        "infection",
+        5
+      ],
+      [
+        "conspiracy",
+        4
+      ],
+      [
+        "saving the world",
+        3
+      ],
+      [
+        "based on novel or book",
+        3
+      ]
+    ]
+  },
+  {
+    "cluster_id": 30,
+    "coherence_score": 0.5283176989782029,
+    "description": "Young heroes step into magic-soaked worlds where destiny, quests, and old-school wonder collide.",
+    "label_id": "neighborhood:30",
+    "parent_cluster_id": 6,
+    "recommended_label": "Mythic YA Portal Fantasy",
+    "representative_movies": [
+      "The Lord of the Rings: The Fellowship of the Ring",
+      "The Hobbit: An Unexpected Journey",
+      "The Spiderwick Chronicles",
+      "Oz the Great and Powerful",
+      "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
+      "Eragon",
+      "Miss Peregrine's Home for Peculiar Children",
+      "The BFG"
+    ],
+    "size": 36,
+    "terms": [
+      "fantasy",
+      "based",
+      "world",
+      "action",
+      "novel",
+      "adventure",
+      "young",
+      "ring",
+      "family",
+      "magic",
+      "witch",
+      "movie",
+      "book",
+      "evil",
+      "good"
+    ],
+    "top_genres": [
+      [
+        "Fantasy",
+        35
+      ],
+      [
+        "Adventure",
+        29
+      ],
+      [
+        "Family",
+        19
+      ],
+      [
+        "Action",
+        13
+      ],
+      [
+        "Comedy",
+        7
+      ],
+      [
+        "Drama",
+        5
+      ],
+      [
+        "Animation",
+        4
+      ],
+      [
+        "Thriller",
+        3
+      ],
+      [
+        "Romance",
+        2
+      ],
+      [
+        "Horror",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "based on novel or book",
+        17
+      ],
+      [
+        "magic",
+        13
+      ],
+      [
+        "fantasy world",
+        12
+      ],
+      [
+        "wizard",
+        10
+      ],
+      [
+        "elves",
+        9
+      ],
+      [
+        "good versus evil",
+        9
+      ],
+      [
+        "based on young adult novel",
+        9
+      ],
+      [
+        "sword and sorcery",
+        8
+      ],
+      [
+        "witch",
+        8
+      ],
+      [
+        "high fantasy",
+        7
+      ],
+      [
+        "dwarf",
+        6
+      ],
+      [
+        "ring",
+        6
+      ]
+    ]
+  },
+  {
+    "cluster_id": 31,
+    "coherence_score": 0.49432326678622623,
+    "description": "Big divine premises meet fast jokes\u2014faith, ego, and love get scrambled in a comedic afterlife of consequences.",
+    "label_id": "neighborhood:31",
+    "parent_cluster_id": 11,
+    "recommended_label": "Heavenly Comedy of Errors",
+    "representative_movies": [
+      "Bruce Almighty",
+      "Dogma",
+      "Evan Almighty",
+      "The Nutty Professor",
+      "Meet Joe Black",
+      "Me, Myself & Irene",
+      "Jerry Maguire"
+    ],
+    "size": 7,
+    "terms": [
+      "death",
+      "almighty",
+      "god",
+      "bruce",
+      "love",
+      "sports",
+      "comedy",
+      "ark",
+      "hilarious",
+      "joe",
+      "professor",
+      "movie",
+      "duringcreditsstinger",
+      "church",
+      "fantasy"
+    ],
+    "top_genres": [
+      [
+        "Comedy",
+        6
+      ],
+      [
+        "Fantasy",
+        4
+      ],
+      [
+        "Romance",
+        3
+      ],
+      [
+        "Drama",
+        2
+      ],
+      [
+        "Family",
+        1
+      ],
+      [
+        "Science Fiction",
+        1
+      ],
+      [
+        "Adventure",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "duringcreditsstinger",
+        4
+      ],
+      [
+        "hilarious",
+        3
+      ],
+      [
+        "faith",
+        2
+      ],
+      [
+        "god",
+        2
+      ],
+      [
+        "religion",
+        2
+      ],
+      [
+        "almighty",
+        2
+      ],
+      [
+        "aftercreditsstinger",
+        2
+      ],
+      [
+        "new love",
+        1
+      ],
+      [
+        "lovesickness",
+        1
+      ],
+      [
+        "moon",
+        1
+      ],
+      [
+        "street gang",
+        1
+      ],
+      [
+        "moses",
+        1
+      ]
+    ]
+  },
+  {
+    "cluster_id": 32,
+    "coherence_score": 0.6054766066681926,
+    "description": "High-energy expeditions where paleontology, DNA tinkering, and island thrills turn into full-on dinosaur mayhem.",
+    "label_id": "neighborhood:32",
+    "parent_cluster_id": 5,
+    "recommended_label": "Dinosaur Science-Adventure",
+    "representative_movies": [
+      "Jurassic World",
+      "The Lost World: Jurassic Park",
+      "Jurassic Park",
+      "Jurassic World: Fallen Kingdom",
+      "Jurassic World Rebirth",
+      "Jurassic Park III",
+      "Jurassic World Dominion",
+      "Journey 2: The Mysterious Island"
+    ],
+    "size": 13,
+    "terms": [
+      "park",
+      "world",
+      "game",
+      "island",
+      "jurassic",
+      "dinosaur",
+      "adventure",
+      "action",
+      "jungle",
+      "jurassic world",
+      "science",
+      "tarzan",
+      "dinosaurs",
+      "mission",
+      "science fiction"
+    ],
+    "top_genres": [
+      [
+        "Adventure",
+        13
+      ],
+      [
+        "Science Fiction",
+        9
+      ],
+      [
+        "Action",
+        6
+      ],
+      [
+        "Fantasy",
+        3
+      ],
+      [
+        "Thriller",
+        3
+      ],
+      [
+        "Family",
+        3
+      ],
+      [
+        "Comedy",
+        2
+      ],
+      [
+        "Animation",
+        1
+      ],
+      [
+        "Drama",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "dinosaur",
+        9
+      ],
+      [
+        "tyrannosaurus rex",
+        6
+      ],
+      [
+        "sequel",
+        6
+      ],
+      [
+        "island",
+        5
+      ],
+      [
+        "dna",
+        4
+      ],
+      [
+        "amusement park",
+        4
+      ],
+      [
+        "paleontology",
+        4
+      ],
+      [
+        "velociraptor",
+        3
+      ],
+      [
+        "creature",
+        3
+      ],
+      [
+        "theme park",
+        3
+      ],
+      [
+        "animal horror",
+        3
+      ],
+      [
+        "excited",
+        3
+      ]
+    ]
+  },
+  {
+    "cluster_id": 33,
+    "coherence_score": 0.6221031712969844,
+    "description": "Tense space-bound hunts where deadly extraterrestrial creatures turn every firefight into a survival horror sprint.",
+    "label_id": "neighborhood:33",
+    "parent_cluster_id": 5,
+    "recommended_label": "Alien Predator Creature Warfare",
+    "representative_movies": [
+      "Predators",
+      "Predator",
+      "AVP: Alien vs. Predator",
+      "The Predator",
+      "Aliens vs Predator: Requiem",
+      "Aliens",
+      "Alien Resurrection",
+      "Alien\u00b3"
+    ],
+    "size": 17,
+    "terms": [
+      "alien",
+      "predator",
+      "action",
+      "planet",
+      "space",
+      "horror",
+      "riddick",
+      "creature",
+      "thriller",
+      "fiction",
+      "science fiction",
+      "science",
+      "movie",
+      "fiction action",
+      "aliens"
+    ],
+    "top_genres": [
+      [
+        "Action",
+        16
+      ],
+      [
+        "Science Fiction",
+        16
+      ],
+      [
+        "Thriller",
+        12
+      ],
+      [
+        "Adventure",
+        5
+      ],
+      [
+        "Horror",
+        5
+      ]
+    ],
+    "top_keywords": [
+      [
+        "alien",
+        12
+      ],
+      [
+        "creature",
+        12
+      ],
+      [
+        "predator",
+        7
+      ],
+      [
+        "dystopia",
+        7
+      ],
+      [
+        "alien invasion",
+        6
+      ],
+      [
+        "sequel",
+        6
+      ],
+      [
+        "aggressive",
+        4
+      ],
+      [
+        "android",
+        3
+      ],
+      [
+        "space marine",
+        3
+      ],
+      [
+        "space travel",
+        3
+      ],
+      [
+        "sci-fi horror",
+        3
+      ],
+      [
+        "action horror",
+        3
+      ]
+    ]
+  },
+  {
+    "cluster_id": 34,
+    "coherence_score": 0.600255408541215,
+    "description": "Big ensemble superhero adventures where stakes balloon fast and set-piece action is built for maximum crowd payoff.",
+    "label_id": "neighborhood:34",
+    "parent_cluster_id": 8,
+    "recommended_label": "Cinematic Superhero Team Spectacle",
+    "representative_movies": [
+      "The Avengers",
+      "Avengers: Endgame",
+      "Captain America: Civil War",
+      "Avengers: Infinity War",
+      "Thor: The Dark World",
+      "Avengers: Age of Ultron",
+      "Thor: Ragnarok",
+      "Iron Man"
+    ],
+    "size": 35,
+    "terms": [
+      "marvel",
+      "universe",
+      "superhero",
+      "mcu",
+      "new",
+      "action",
+      "world",
+      "cinematic universe",
+      "cinematic",
+      "marvel cinematic",
+      "adventure",
+      "captain",
+      "universe mcu",
+      "based",
+      "comic"
+    ],
+    "top_genres": [
+      [
+        "Action",
+        35
+      ],
+      [
+        "Adventure",
+        32
+      ],
+      [
+        "Science Fiction",
+        28
+      ],
+      [
+        "Fantasy",
+        6
+      ],
+      [
+        "Comedy",
+        3
+      ],
+      [
+        "Thriller",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "based on comic",
+        35
+      ],
+      [
+        "superhero",
+        33
+      ],
+      [
+        "marvel cinematic universe (mcu)",
+        33
+      ],
+      [
+        "aftercreditsstinger",
+        30
+      ],
+      [
+        "duringcreditsstinger",
+        23
+      ],
+      [
+        "sequel",
+        12
+      ],
+      [
+        "hero",
+        8
+      ],
+      [
+        "superhero team",
+        6
+      ],
+      [
+        "super power",
+        5
+      ],
+      [
+        "new york city",
+        4
+      ],
+      [
+        "father daughter relationship",
+        4
+      ],
+      [
+        "good versus evil",
+        4
+      ]
+    ]
+  },
+  {
+    "cluster_id": 35,
+    "coherence_score": 0.5342067167165717,
+    "description": "Bright, mid-30s romantic chaos where love, identity, and family plans collide\u2014often with an unexpected pregnancy or parenthood question.",
+    "label_id": "neighborhood:35",
+    "parent_cluster_id": 11,
+    "recommended_label": "Baby-bomb rom-coms",
+    "representative_movies": [
+      "Bridget Jones's Baby",
+      "Bridget Jones's Diary",
+      "Bridget Jones: The Edge of Reason",
+      "Mamma Mia!",
+      "To All the Boys I've Loved Before",
+      "Mamma Mia! Here We Go Again",
+      "To All the Boys: P.S. I Still Love You",
+      "The Princess Diaries 2: Royal Engagement"
+    ],
+    "size": 10,
+    "terms": [
+      "love",
+      "bridget",
+      "mother",
+      "based",
+      "romance",
+      "father",
+      "woman",
+      "comedy",
+      "family",
+      "musical",
+      "novel",
+      "book",
+      "jones",
+      "bridget jones",
+      "jack"
+    ],
+    "top_genres": [
+      [
+        "Romance",
+        10
+      ],
+      [
+        "Comedy",
+        9
+      ],
+      [
+        "Drama",
+        4
+      ],
+      [
+        "Family",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "woman director",
+        6
+      ],
+      [
+        "based on novel or book",
+        4
+      ],
+      [
+        "duringcreditsstinger",
+        3
+      ],
+      [
+        "london, england",
+        3
+      ],
+      [
+        "sequel",
+        3
+      ],
+      [
+        "love letter",
+        2
+      ],
+      [
+        "romantic",
+        2
+      ],
+      [
+        "parent child relationship",
+        2
+      ],
+      [
+        "greece",
+        2
+      ],
+      [
+        "musical",
+        2
+      ],
+      [
+        "unknown father",
+        2
+      ],
+      [
+        "greek island",
+        2
+      ]
+    ]
+  },
+  {
+    "cluster_id": 36,
+    "coherence_score": 0.5091448033470554,
+    "description": "Thoughtful, stylish romance stories where people fall into\u2014then analyze\u2014their feelings while cities and time do the emotional choreography.",
+    "label_id": "neighborhood:36",
+    "parent_cluster_id": 1,
+    "recommended_label": "Lyrical love & life reveries",
+    "representative_movies": [
+      "Midnight in Paris",
+      "Lost in Translation",
+      "Eternal Sunshine of the Spotless Mind",
+      "Collateral Beauty",
+      "Before Sunrise",
+      "The Tourist",
+      "About Time",
+      "The Grand Budapest Hotel"
+    ],
+    "size": 38,
+    "terms": [
+      "love",
+      "time",
+      "romance",
+      "drama",
+      "life",
+      "relationship",
+      "paris",
+      "drama romance",
+      "hotel",
+      "film",
+      "movie",
+      "man",
+      "comedy",
+      "fantasy",
+      "island"
+    ],
+    "top_genres": [
+      [
+        "Drama",
+        34
+      ],
+      [
+        "Romance",
+        28
+      ],
+      [
+        "Comedy",
+        13
+      ],
+      [
+        "Fantasy",
+        12
+      ],
+      [
+        "Adventure",
+        5
+      ],
+      [
+        "Thriller",
+        3
+      ],
+      [
+        "Music",
+        2
+      ],
+      [
+        "History",
+        2
+      ],
+      [
+        "Science Fiction",
+        1
+      ],
+      [
+        "Family",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "love",
+        7
+      ],
+      [
+        "romantic",
+        7
+      ],
+      [
+        "based on novel or book",
+        6
+      ],
+      [
+        "paris, france",
+        6
+      ],
+      [
+        "hotel",
+        5
+      ],
+      [
+        "author",
+        5
+      ],
+      [
+        "introspective",
+        4
+      ],
+      [
+        "photographer",
+        4
+      ],
+      [
+        "lyrical",
+        4
+      ],
+      [
+        "painter",
+        4
+      ],
+      [
+        "writer",
+        4
+      ],
+      [
+        "new york city",
+        3
+      ]
+    ]
+  },
+  {
+    "cluster_id": 37,
+    "coherence_score": 0.795347603885986,
+    "description": "Razor-paced action spy yarns where the central trick is infiltration\u2014disguises, false identities, and secret agencies turning every plan into a new problem.",
+    "label_id": "neighborhood:37",
+    "parent_cluster_id": 2,
+    "recommended_label": "Mask-and-infiltrate spy thrillers",
+    "representative_movies": [
+      "Mission: Impossible",
+      "Mission: Impossible - Dead Reckoning Part One",
+      "Mission: Impossible - Rogue Nation",
+      "Mission: Impossible - Fallout",
+      "Mission: Impossible - Ghost Protocol",
+      "Mission: Impossible - The Final Reckoning",
+      "Mission: Impossible III",
+      "Mission: Impossible II"
+    ],
+    "size": 8,
+    "terms": [
+      "mission",
+      "government",
+      "secret",
+      "agency",
+      "government agency",
+      "agent",
+      "hunt",
+      "impossible",
+      "action",
+      "mission impossible",
+      "ethan",
+      "identity",
+      "watched",
+      "organization",
+      "cia"
+    ],
+    "top_genres": [
+      [
+        "Action",
+        8
+      ],
+      [
+        "Adventure",
+        8
+      ],
+      [
+        "Thriller",
+        6
+      ]
+    ],
+    "top_keywords": [
+      [
+        "mask",
+        8
+      ],
+      [
+        "fake identity",
+        8
+      ],
+      [
+        "secret government organization",
+        8
+      ],
+      [
+        "infiltration",
+        8
+      ],
+      [
+        "fictional government agency",
+        8
+      ],
+      [
+        "government agency",
+        8
+      ],
+      [
+        "based on tv series",
+        8
+      ],
+      [
+        "spy",
+        7
+      ],
+      [
+        "sequel",
+        5
+      ],
+      [
+        "secret agent",
+        5
+      ],
+      [
+        "mission",
+        4
+      ],
+      [
+        "central intelligence agency (cia)",
+        4
+      ]
+    ]
+  },
+  {
+    "cluster_id": 38,
+    "coherence_score": 0.48130817995079,
+    "description": "Intense character studies of ambition and self-destruction, where music culture and addiction turn everyday life into a high-volume tragedy.",
+    "label_id": "neighborhood:38",
+    "parent_cluster_id": 1,
+    "recommended_label": "Drug-and-dream music dramas",
+    "representative_movies": [
+      "Boogie Nights",
+      "Whiplash",
+      "Don Jon",
+      "The Wolf of Wall Street",
+      "The Master",
+      "The Disaster Artist",
+      "Punch-Drunk Love",
+      "Ed Wood"
+    ],
+    "size": 34,
+    "terms": [
+      "music",
+      "drama",
+      "story",
+      "based",
+      "life",
+      "sexual",
+      "film",
+      "movie",
+      "true",
+      "drug",
+      "love",
+      "new",
+      "relationship",
+      "comedy",
+      "sex"
+    ],
+    "top_genres": [
+      [
+        "Drama",
+        34
+      ],
+      [
+        "Comedy",
+        12
+      ],
+      [
+        "Music",
+        8
+      ],
+      [
+        "History",
+        5
+      ],
+      [
+        "Crime",
+        4
+      ],
+      [
+        "Romance",
+        4
+      ],
+      [
+        "Thriller",
+        3
+      ],
+      [
+        "Mystery",
+        2
+      ],
+      [
+        "Action",
+        1
+      ],
+      [
+        "Fantasy",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "based on true story",
+        10
+      ],
+      [
+        "biography",
+        7
+      ],
+      [
+        "drug addiction",
+        6
+      ],
+      [
+        "drugs",
+        6
+      ],
+      [
+        "1980s",
+        6
+      ],
+      [
+        "new york city",
+        6
+      ],
+      [
+        "1970s",
+        5
+      ],
+      [
+        "dark comedy",
+        5
+      ],
+      [
+        "los angeles, california",
+        5
+      ],
+      [
+        "based on novel or book",
+        4
+      ],
+      [
+        "intense",
+        4
+      ],
+      [
+        "london, england",
+        4
+      ]
+    ]
+  },
+  {
+    "cluster_id": 39,
+    "coherence_score": 0.5358295588678169,
+    "description": "Fast, funny romance stories where chance encounters in big-city life spiral into feelings\u2014often with weddings, friends, and public embarrassment as the accelerant.",
+    "label_id": "neighborhood:39",
+    "parent_cluster_id": 11,
+    "recommended_label": "Meet-cute romcoms (city + wedding orbit)",
+    "representative_movies": [
+      "Notting Hill",
+      "How to Lose a Guy in 10 Days",
+      "Definitely, Maybe",
+      "Four Weddings and a Funeral",
+      "Isn't It Romantic",
+      "The Proposal",
+      "27 Dresses",
+      "(500) Days of Summer"
+    ],
+    "size": 49,
+    "terms": [
+      "love",
+      "comedy",
+      "romance",
+      "new",
+      "relationship",
+      "wedding",
+      "life",
+      "city",
+      "comedy romance",
+      "york",
+      "new york",
+      "woman",
+      "romcom",
+      "romantic",
+      "drama"
+    ],
+    "top_genres": [
+      [
+        "Romance",
+        48
+      ],
+      [
+        "Comedy",
+        46
+      ],
+      [
+        "Drama",
+        19
+      ],
+      [
+        "Fantasy",
+        2
+      ],
+      [
+        "Thriller",
+        1
+      ],
+      [
+        "Music",
+        1
+      ],
+      [
+        "Science Fiction",
+        1
+      ],
+      [
+        "History",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "romcom",
+        23
+      ],
+      [
+        "new york city",
+        13
+      ],
+      [
+        "based on novel or book",
+        9
+      ],
+      [
+        "love",
+        7
+      ],
+      [
+        "valentine's day",
+        7
+      ],
+      [
+        "romantic",
+        7
+      ],
+      [
+        "duringcreditsstinger",
+        7
+      ],
+      [
+        "woman director",
+        7
+      ],
+      [
+        "amused",
+        7
+      ],
+      [
+        "wedding",
+        7
+      ],
+      [
+        "london, england",
+        6
+      ],
+      [
+        "friendship",
+        6
+      ]
+    ]
+  },
+  {
+    "cluster_id": 40,
+    "coherence_score": 0.5135617720316147,
+    "description": "Tense, immersive World War II stories that track soldiers through fear, chaos, and moral pressure in real-time battle conditions.",
+    "label_id": "neighborhood:40",
+    "parent_cluster_id": 7,
+    "recommended_label": "Frontline WW2 realism",
+    "representative_movies": [
+      "1917",
+      "Dunkirk",
+      "The Thin Red Line",
+      "Saving Private Ryan",
+      "The Boy in the Striped Pyjamas",
+      "Hacksaw Ridge",
+      "War Horse",
+      "Inglourious Basterds"
+    ],
+    "size": 35,
+    "terms": [
+      "war",
+      "world",
+      "world war",
+      "ii",
+      "war ii",
+      "drama",
+      "based",
+      "story",
+      "nazi",
+      "true",
+      "battle",
+      "true story",
+      "history",
+      "army",
+      "based true"
+    ],
+    "top_genres": [
+      [
+        "Drama",
+        32
+      ],
+      [
+        "War",
+        25
+      ],
+      [
+        "History",
+        20
+      ],
+      [
+        "Action",
+        6
+      ],
+      [
+        "Romance",
+        5
+      ],
+      [
+        "Adventure",
+        4
+      ],
+      [
+        "Thriller",
+        3
+      ],
+      [
+        "Comedy",
+        2
+      ],
+      [
+        "Western",
+        2
+      ]
+    ],
+    "top_keywords": [
+      [
+        "world war ii",
+        23
+      ],
+      [
+        "based on true story",
+        19
+      ],
+      [
+        "based on novel or book",
+        11
+      ],
+      [
+        "biography",
+        10
+      ],
+      [
+        "1940s",
+        9
+      ],
+      [
+        "nazi",
+        9
+      ],
+      [
+        "period drama",
+        7
+      ],
+      [
+        "historical fiction",
+        5
+      ],
+      [
+        "19th century",
+        5
+      ],
+      [
+        "friendship",
+        4
+      ],
+      [
+        "military",
+        4
+      ],
+      [
+        "jew persecution",
+        4
+      ]
+    ]
+  },
+  {
+    "cluster_id": 41,
+    "coherence_score": 0.5878701701818586,
+    "description": "Supernatural horror built around haunting entities\u2014often through dolls, spirits, and escalation from omen to possession.",
+    "label_id": "neighborhood:41",
+    "parent_cluster_id": 0,
+    "recommended_label": "Demonic possession horror",
+    "representative_movies": [
+      "Annabelle",
+      "Insidious: Chapter 2",
+      "Annabelle: Creation",
+      "Insidious: Chapter 3",
+      "Annabelle Comes Home",
+      "Paranormal Activity 2",
+      "Ouija: Origin of Evil",
+      "The Conjuring 2"
+    ],
+    "size": 19,
+    "terms": [
+      "doll",
+      "horror",
+      "halloween",
+      "killer",
+      "supernatural",
+      "evil",
+      "film",
+      "spirit",
+      "sequel",
+      "house",
+      "annabelle",
+      "insidious",
+      "mother",
+      "demonic",
+      "demon"
+    ],
+    "top_genres": [
+      [
+        "Horror",
+        19
+      ],
+      [
+        "Thriller",
+        6
+      ],
+      [
+        "Mystery",
+        2
+      ],
+      [
+        "Drama",
+        1
+      ],
+      [
+        "Science Fiction",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "sequel",
+        9
+      ],
+      [
+        "supernatural",
+        9
+      ],
+      [
+        "halloween",
+        8
+      ],
+      [
+        "demon",
+        7
+      ],
+      [
+        "prequel",
+        6
+      ],
+      [
+        "spirit",
+        5
+      ],
+      [
+        "demonic possession",
+        5
+      ],
+      [
+        "slasher",
+        5
+      ],
+      [
+        "supernatural horror",
+        5
+      ],
+      [
+        "ghost",
+        4
+      ],
+      [
+        "evil doll",
+        4
+      ],
+      [
+        "doll",
+        4
+      ]
+    ]
+  },
+  {
+    "cluster_id": 42,
+    "coherence_score": 0.5545891745433955,
+    "description": "Fast-talking, action-forward spy stories where the mission is mostly a setup for absurdity, pratfalls, and escalating criminal chaos.",
+    "label_id": "neighborhood:42",
+    "parent_cluster_id": 3,
+    "recommended_label": "Spy parody action-comedy",
+    "representative_movies": [
+      "Johnny English",
+      "Austin Powers: International Man of Mystery",
+      "Austin Powers: The Spy Who Shagged Me",
+      "Johnny English Strikes Again",
+      "Johnny English Reborn",
+      "Austin Powers in Goldmember",
+      "The Naked Gun: From the Files of Police Squad!",
+      "Kingsman: The Secret Service"
+    ],
+    "size": 16,
+    "terms": [
+      "agent",
+      "spy",
+      "comedy",
+      "secret",
+      "austin",
+      "time",
+      "english",
+      "action",
+      "world",
+      "bean",
+      "johnny",
+      "painting",
+      "man",
+      "crime",
+      "johnny english"
+    ],
+    "top_genres": [
+      [
+        "Comedy",
+        15
+      ],
+      [
+        "Crime",
+        9
+      ],
+      [
+        "Action",
+        6
+      ],
+      [
+        "Adventure",
+        6
+      ],
+      [
+        "Mystery",
+        2
+      ],
+      [
+        "Thriller",
+        2
+      ],
+      [
+        "Family",
+        2
+      ],
+      [
+        "Drama",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "spy",
+        7
+      ],
+      [
+        "parody",
+        6
+      ],
+      [
+        "duringcreditsstinger",
+        5
+      ],
+      [
+        "secret agent",
+        4
+      ],
+      [
+        "slapstick comedy",
+        4
+      ],
+      [
+        "los angeles, california",
+        3
+      ],
+      [
+        "undercover",
+        3
+      ],
+      [
+        "james bond spoof",
+        3
+      ],
+      [
+        "aftercreditsstinger",
+        3
+      ],
+      [
+        "police",
+        2
+      ],
+      [
+        "murder",
+        2
+      ],
+      [
+        "buddy cop",
+        2
+      ]
+    ]
+  },
+  {
+    "cluster_id": 43,
+    "coherence_score": 0.515174832615704,
+    "description": "Dark crime thrillers that obsess over investigators and predators, where identity fractures under the weight of serial murder.",
+    "label_id": "neighborhood:43",
+    "parent_cluster_id": 10,
+    "recommended_label": "Serial-killer psychological noir",
+    "representative_movies": [
+      "American Psycho",
+      "The Silence of the Lambs",
+      "Zodiac",
+      "Nightcrawler",
+      "Natural Born Killers",
+      "Se7en",
+      "Hannibal",
+      "Nightmare Alley"
+    ],
+    "size": 23,
+    "terms": [
+      "crime",
+      "thriller",
+      "killer",
+      "psychological",
+      "horror",
+      "drama",
+      "based",
+      "serial",
+      "new",
+      "serial killer",
+      "man",
+      "murder",
+      "fbi",
+      "identity",
+      "novel"
+    ],
+    "top_genres": [
+      [
+        "Thriller",
+        19
+      ],
+      [
+        "Drama",
+        16
+      ],
+      [
+        "Crime",
+        15
+      ],
+      [
+        "Mystery",
+        7
+      ],
+      [
+        "Horror",
+        4
+      ],
+      [
+        "Fantasy",
+        2
+      ],
+      [
+        "Comedy",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "based on novel or book",
+        10
+      ],
+      [
+        "serial killer",
+        10
+      ],
+      [
+        "psychological thriller",
+        8
+      ],
+      [
+        "psychopath",
+        8
+      ],
+      [
+        "murder",
+        7
+      ],
+      [
+        "neo-noir",
+        5
+      ],
+      [
+        "macabre",
+        5
+      ],
+      [
+        "1980s",
+        4
+      ],
+      [
+        "fbi",
+        4
+      ],
+      [
+        "cannibal",
+        4
+      ],
+      [
+        "psychological horror",
+        4
+      ],
+      [
+        "new york city",
+        4
+      ]
+    ]
+  },
+  {
+    "cluster_id": 44,
+    "coherence_score": 0.6562510524946342,
+    "description": "Big-screen mutant superhero adventures where powers, identity, and team politics collide in high-stakes action set pieces.",
+    "label_id": "neighborhood:44",
+    "parent_cluster_id": 8,
+    "recommended_label": "Mutant superhero action",
+    "representative_movies": [
+      "X-Men: Apocalypse",
+      "X-Men Origins: Wolverine",
+      "X-Men",
+      "X2",
+      "X-Men: Days of Future Past",
+      "X-Men: First Class",
+      "Dark Phoenix",
+      "X-Men: The Last Stand"
+    ],
+    "size": 12,
+    "terms": [
+      "men",
+      "superhero",
+      "wolverine",
+      "mutant",
+      "mutants",
+      "world",
+      "comic",
+      "fiction",
+      "action",
+      "future",
+      "science fiction",
+      "science",
+      "based",
+      "based comic",
+      "superhero mutant"
+    ],
+    "top_genres": [
+      [
+        "Science Fiction",
+        12
+      ],
+      [
+        "Action",
+        11
+      ],
+      [
+        "Adventure",
+        8
+      ],
+      [
+        "Drama",
+        1
+      ],
+      [
+        "Fantasy",
+        1
+      ],
+      [
+        "Comedy",
+        1
+      ],
+      [
+        "Horror",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "superhero",
+        12
+      ],
+      [
+        "mutant",
+        12
+      ],
+      [
+        "based on comic",
+        11
+      ],
+      [
+        "superhuman",
+        7
+      ],
+      [
+        "excited",
+        6
+      ],
+      [
+        "super power",
+        5
+      ],
+      [
+        "aftercreditsstinger",
+        5
+      ],
+      [
+        "duringcreditsstinger",
+        4
+      ],
+      [
+        "dramatic",
+        3
+      ],
+      [
+        "superhero team",
+        3
+      ],
+      [
+        "sequel",
+        2
+      ],
+      [
+        "beast",
+        2
+      ]
+    ]
+  },
+  {
+    "cluster_id": 45,
+    "coherence_score": 0.5822960132359531,
+    "description": "When the skyline becomes a boxing ring, giant creatures duke it out in loud, high-stakes spectacle.",
+    "label_id": "neighborhood:45",
+    "parent_cluster_id": 5,
+    "recommended_label": "Kaiju & Giant-Monster Showdowns",
+    "representative_movies": [
+      "Godzilla vs. Kong",
+      "Godzilla: King of the Monsters",
+      "Godzilla x Kong: The New Empire",
+      "Pacific Rim",
+      "Rampage",
+      "Kong: Skull Island",
+      "Godzilla",
+      "Godzilla"
+    ],
+    "size": 19,
+    "terms": [
+      "giant",
+      "kong",
+      "godzilla",
+      "monster",
+      "king",
+      "island",
+      "action",
+      "robot",
+      "animal",
+      "movie",
+      "adventure",
+      "ape",
+      "creature",
+      "fiction",
+      "monsters"
+    ],
+    "top_genres": [
+      [
+        "Action",
+        17
+      ],
+      [
+        "Adventure",
+        14
+      ],
+      [
+        "Science Fiction",
+        13
+      ],
+      [
+        "Fantasy",
+        7
+      ],
+      [
+        "Drama",
+        4
+      ],
+      [
+        "Thriller",
+        2
+      ],
+      [
+        "Comedy",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "giant monster",
+        10
+      ],
+      [
+        "kaiju",
+        10
+      ],
+      [
+        "monster",
+        9
+      ],
+      [
+        "creature",
+        5
+      ],
+      [
+        "godzilla",
+        5
+      ],
+      [
+        "sequel",
+        4
+      ],
+      [
+        "bold",
+        4
+      ],
+      [
+        "giant ape",
+        4
+      ],
+      [
+        "king kong",
+        4
+      ],
+      [
+        "dinosaur",
+        4
+      ],
+      [
+        "based on video game",
+        4
+      ],
+      [
+        "dystopia",
+        3
+      ]
+    ]
+  },
+  {
+    "cluster_id": 46,
+    "coherence_score": 0.5328101800725488,
+    "description": "Tight, suspenseful stories where time travel and future technology turn every decision into a trap.",
+    "label_id": "neighborhood:46",
+    "parent_cluster_id": 5,
+    "recommended_label": "Time-Loop & Paradox Tech Thrillers",
+    "representative_movies": [
+      "Transcendence",
+      "Predestination",
+      "Inception",
+      "In Time",
+      "Source Code",
+      "Minority Report",
+      "Next",
+      "Self/less"
+    ],
+    "size": 37,
+    "terms": [
+      "time",
+      "thriller",
+      "science",
+      "fiction",
+      "science fiction",
+      "future",
+      "travel",
+      "man",
+      "world",
+      "action",
+      "reality",
+      "life",
+      "love",
+      "drama",
+      "time travel"
+    ],
+    "top_genres": [
+      [
+        "Science Fiction",
+        32
+      ],
+      [
+        "Thriller",
+        24
+      ],
+      [
+        "Action",
+        14
+      ],
+      [
+        "Drama",
+        13
+      ],
+      [
+        "Mystery",
+        12
+      ],
+      [
+        "Romance",
+        5
+      ],
+      [
+        "Adventure",
+        3
+      ],
+      [
+        "Comedy",
+        2
+      ]
+    ],
+    "top_keywords": [
+      [
+        "time travel",
+        12
+      ],
+      [
+        "dystopia",
+        9
+      ],
+      [
+        "suspenseful",
+        7
+      ],
+      [
+        "paranoia",
+        6
+      ],
+      [
+        "terrorism",
+        6
+      ],
+      [
+        "technology",
+        5
+      ],
+      [
+        "time loop",
+        4
+      ],
+      [
+        "future",
+        4
+      ],
+      [
+        "love",
+        4
+      ],
+      [
+        "transhumanism",
+        4
+      ],
+      [
+        "love of one's life",
+        4
+      ],
+      [
+        "based on short story",
+        4
+      ]
+    ]
+  },
+  {
+    "cluster_id": 47,
+    "coherence_score": 0.5408571515298183,
+    "description": "High-velocity crime action where revenge and assassin professionalism power the set pieces\u2014often amplified in sequels.",
+    "label_id": "neighborhood:47",
+    "parent_cluster_id": 2,
+    "recommended_label": "Stylized Action Crime Sequels",
+    "representative_movies": [
+      "The Equalizer 2",
+      "Extraction 2",
+      "John Wick: Chapter 2",
+      "John Wick: Chapter 3 - Parabellum",
+      "The Expendables 2",
+      "Mechanic: Resurrection",
+      "RED 2",
+      "Kingsman: The Golden Circle"
+    ],
+    "size": 33,
+    "terms": [
+      "action",
+      "crime",
+      "sequel",
+      "rambo",
+      "thriller",
+      "wick",
+      "john",
+      "assassin",
+      "war",
+      "secret",
+      "man",
+      "john wick",
+      "action thriller",
+      "world",
+      "revenge"
+    ],
+    "top_genres": [
+      [
+        "Action",
+        31
+      ],
+      [
+        "Thriller",
+        27
+      ],
+      [
+        "Crime",
+        20
+      ],
+      [
+        "Adventure",
+        10
+      ],
+      [
+        "Comedy",
+        5
+      ],
+      [
+        "Drama",
+        3
+      ],
+      [
+        "War",
+        3
+      ],
+      [
+        "Science Fiction",
+        2
+      ],
+      [
+        "Horror",
+        2
+      ]
+    ],
+    "top_keywords": [
+      [
+        "sequel",
+        22
+      ],
+      [
+        "aftercreditsstinger",
+        7
+      ],
+      [
+        "revenge",
+        7
+      ],
+      [
+        "mercenary",
+        5
+      ],
+      [
+        "duringcreditsstinger",
+        5
+      ],
+      [
+        "martial arts",
+        5
+      ],
+      [
+        "based on comic",
+        4
+      ],
+      [
+        "assassin",
+        4
+      ],
+      [
+        "hitman",
+        4
+      ],
+      [
+        "shootout",
+        3
+      ],
+      [
+        "code of honor",
+        3
+      ],
+      [
+        "hand to hand combat",
+        3
+      ]
+    ]
+  },
+  {
+    "cluster_id": 48,
+    "coherence_score": 0.5311878389804843,
+    "description": "A modern Western mood where cartels, borders, and brutality squeeze characters into irreversible choices.",
+    "label_id": "neighborhood:48",
+    "parent_cluster_id": 10,
+    "recommended_label": "Cartel-Pressure Neo-Westerns",
+    "representative_movies": [
+      "Hell or High Water",
+      "No Country for Old Men",
+      "Desperado",
+      "The Magnificent Seven",
+      "The Hateful Eight",
+      "Bone Tomahawk",
+      "Sicario",
+      "3:10 to Yuma"
+    ],
+    "size": 27,
+    "terms": [
+      "western",
+      "drug",
+      "cartel",
+      "border",
+      "west",
+      "native",
+      "texas",
+      "crime",
+      "mexico",
+      "action",
+      "thriller",
+      "sheriff",
+      "father",
+      "drama",
+      "mexican"
+    ],
+    "top_genres": [
+      [
+        "Western",
+        14
+      ],
+      [
+        "Drama",
+        13
+      ],
+      [
+        "Thriller",
+        13
+      ],
+      [
+        "Crime",
+        12
+      ],
+      [
+        "Action",
+        10
+      ],
+      [
+        "Adventure",
+        5
+      ],
+      [
+        "Comedy",
+        4
+      ],
+      [
+        "Mystery",
+        2
+      ],
+      [
+        "Horror",
+        2
+      ],
+      [
+        "War",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "texas",
+        6
+      ],
+      [
+        "sheriff",
+        6
+      ],
+      [
+        "brutality",
+        5
+      ],
+      [
+        "native american",
+        5
+      ],
+      [
+        "revenge",
+        4
+      ],
+      [
+        "19th century",
+        4
+      ],
+      [
+        "neo-western",
+        4
+      ],
+      [
+        "mexican cartel",
+        4
+      ],
+      [
+        "murder",
+        4
+      ],
+      [
+        "rescue",
+        3
+      ],
+      [
+        "friendship",
+        3
+      ],
+      [
+        "bounty hunter",
+        3
+      ]
+    ]
+  },
+  {
+    "cluster_id": 49,
+    "coherence_score": 0.5606854815101221,
+    "description": "Christmas chaos where family trouble and home/holiday trespass turn into slapstick action set pieces.",
+    "label_id": "neighborhood:49",
+    "parent_cluster_id": 3,
+    "recommended_label": "Christmas Home-Invasion Comedy-Action",
+    "representative_movies": [
+      "Home Alone",
+      "Die Hard",
+      "Home Alone 2: Lost in New York",
+      "Jingle All the Way",
+      "Violent Night",
+      "National Lampoon's Christmas Vacation",
+      "Elf",
+      "Red One"
+    ],
+    "size": 14,
+    "terms": [
+      "christmas",
+      "home",
+      "action",
+      "family",
+      "child",
+      "new",
+      "comedy",
+      "santa",
+      "mall",
+      "york",
+      "new york",
+      "team",
+      "santa claus",
+      "claus",
+      "christmas eve"
+    ],
+    "top_genres": [
+      [
+        "Comedy",
+        11
+      ],
+      [
+        "Family",
+        7
+      ],
+      [
+        "Action",
+        7
+      ],
+      [
+        "Fantasy",
+        5
+      ],
+      [
+        "Thriller",
+        4
+      ],
+      [
+        "Adventure",
+        3
+      ]
+    ],
+    "top_keywords": [
+      [
+        "christmas",
+        11
+      ],
+      [
+        "holiday",
+        8
+      ],
+      [
+        "santa claus",
+        5
+      ],
+      [
+        "slapstick comedy",
+        4
+      ],
+      [
+        "action hero",
+        4
+      ],
+      [
+        "sequel",
+        4
+      ],
+      [
+        "burglar",
+        3
+      ],
+      [
+        "family relationships",
+        3
+      ],
+      [
+        "little boy",
+        3
+      ],
+      [
+        "home invasion",
+        3
+      ],
+      [
+        "precocious child",
+        3
+      ],
+      [
+        "home alone",
+        3
+      ]
+    ]
+  },
+  {
+    "cluster_id": 50,
+    "coherence_score": 0.5287309952448025,
+    "description": "Animated journeys where friendship and found-family power a bright, emotionally safe adventure.",
+    "label_id": "neighborhood:50",
+    "parent_cluster_id": 4,
+    "recommended_label": "Cozy Animated Adventure Quests",
+    "representative_movies": [
+      "Up",
+      "How to Train Your Dragon",
+      "Monsters, Inc.",
+      "Onward",
+      "Home",
+      "How to Train Your Dragon: The Hidden World",
+      "The Croods",
+      "The Good Dinosaur"
+    ],
+    "size": 73,
+    "terms": [
+      "family",
+      "animation",
+      "adventure",
+      "comedy",
+      "villain",
+      "world",
+      "fantasy",
+      "em",
+      "dog",
+      "film",
+      "bear",
+      "life",
+      "friendship",
+      "book",
+      "animation family"
+    ],
+    "top_genres": [
+      [
+        "Family",
+        71
+      ],
+      [
+        "Animation",
+        64
+      ],
+      [
+        "Adventure",
+        52
+      ],
+      [
+        "Comedy",
+        46
+      ],
+      [
+        "Fantasy",
+        28
+      ],
+      [
+        "Drama",
+        8
+      ],
+      [
+        "Action",
+        6
+      ],
+      [
+        "Science Fiction",
+        5
+      ],
+      [
+        "Music",
+        4
+      ],
+      [
+        "Romance",
+        2
+      ]
+    ],
+    "top_keywords": [
+      [
+        "villain",
+        30
+      ],
+      [
+        "aftercreditsstinger",
+        21
+      ],
+      [
+        "duringcreditsstinger",
+        19
+      ],
+      [
+        "anthropomorphism",
+        19
+      ],
+      [
+        "friendship",
+        14
+      ],
+      [
+        "cartoon",
+        12
+      ],
+      [
+        "based on novel or book",
+        12
+      ],
+      [
+        "animals",
+        12
+      ],
+      [
+        "cheerful",
+        11
+      ],
+      [
+        "pets",
+        10
+      ],
+      [
+        "dog",
+        8
+      ],
+      [
+        "coming of age",
+        7
+      ]
+    ]
+  },
+  {
+    "cluster_id": 51,
+    "coherence_score": 0.464959037057815,
+    "description": "Biographical, based-on-real-events dramas where institutions, law, and power collide under pressure.",
+    "label_id": "neighborhood:51",
+    "parent_cluster_id": 7,
+    "recommended_label": "True-Story Legal & Political Thrillers",
+    "representative_movies": [
+      "Bridge of Spies",
+      "Snowden",
+      "The Post",
+      "Catch Me If You Can",
+      "Steve Jobs",
+      "The Trial of the Chicago 7",
+      "The Big Short",
+      "Argo"
+    ],
+    "size": 37,
+    "terms": [
+      "story",
+      "based",
+      "true",
+      "drama",
+      "true story",
+      "history",
+      "biography",
+      "based true",
+      "thriller",
+      "biography based",
+      "film",
+      "war",
+      "world",
+      "drama history",
+      "pilot"
+    ],
+    "top_genres": [
+      [
+        "Drama",
+        37
+      ],
+      [
+        "History",
+        15
+      ],
+      [
+        "Thriller",
+        9
+      ],
+      [
+        "Crime",
+        6
+      ],
+      [
+        "Comedy",
+        4
+      ],
+      [
+        "Action",
+        3
+      ],
+      [
+        "War",
+        1
+      ],
+      [
+        "Adventure",
+        1
+      ],
+      [
+        "Mystery",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "based on true story",
+        25
+      ],
+      [
+        "biography",
+        22
+      ],
+      [
+        "1970s",
+        6
+      ],
+      [
+        "pilot",
+        5
+      ],
+      [
+        "based on novel or book",
+        4
+      ],
+      [
+        "historical fiction",
+        4
+      ],
+      [
+        "legal drama",
+        4
+      ],
+      [
+        "inspirational",
+        3
+      ],
+      [
+        "fbi",
+        3
+      ],
+      [
+        "racism",
+        3
+      ],
+      [
+        "1960s",
+        3
+      ],
+      [
+        "central intelligence agency (cia)",
+        3
+      ]
+    ]
+  },
+  {
+    "cluster_id": 52,
+    "coherence_score": 0.5495480604873655,
+    "description": "Big-screen sci-fi action with aliens, robots, and franchise-scale set pieces\u2014built for momentum over subtlety.",
+    "label_id": "neighborhood:52",
+    "parent_cluster_id": 5,
+    "recommended_label": "Space Opera Robot Blockbusters",
+    "representative_movies": [
+      "Star Trek Into Darkness",
+      "Transformers",
+      "Star Trek Beyond",
+      "Transformers: Age of Extinction",
+      "Independence Day: Resurgence",
+      "Star Trek",
+      "Cowboys & Aliens",
+      "Bumblebee"
+    ],
+    "size": 25,
+    "terms": [
+      "space",
+      "alien",
+      "robot",
+      "adventure",
+      "action",
+      "science",
+      "science fiction",
+      "fiction",
+      "new",
+      "based",
+      "transformers",
+      "world",
+      "action adventure",
+      "star",
+      "time"
+    ],
+    "top_genres": [
+      [
+        "Science Fiction",
+        25
+      ],
+      [
+        "Action",
+        20
+      ],
+      [
+        "Adventure",
+        20
+      ],
+      [
+        "Comedy",
+        10
+      ],
+      [
+        "Thriller",
+        5
+      ],
+      [
+        "Mystery",
+        1
+      ],
+      [
+        "Western",
+        1
+      ],
+      [
+        "Family",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "alien",
+        10
+      ],
+      [
+        "sequel",
+        7
+      ],
+      [
+        "spacecraft",
+        7
+      ],
+      [
+        "based on comic",
+        6
+      ],
+      [
+        "based on toy",
+        6
+      ],
+      [
+        "giant robot",
+        6
+      ],
+      [
+        "duringcreditsstinger",
+        6
+      ],
+      [
+        "robot",
+        5
+      ],
+      [
+        "time travel",
+        4
+      ],
+      [
+        "space opera",
+        4
+      ],
+      [
+        "buddy cop",
+        3
+      ],
+      [
+        "hilarious",
+        3
+      ]
+    ]
+  },
+  {
+    "cluster_id": 53,
+    "coherence_score": 0.4976742335295245,
+    "description": "Crime stories with bite\u2014often revenge-driven\u2014where menace and dark humor share the same spotlight.",
+    "label_id": "neighborhood:53",
+    "parent_cluster_id": 10,
+    "recommended_label": "Dark Comedy Revenge & Crime Thrillers",
+    "representative_movies": [
+      "Promising Young Woman",
+      "I Care a Lot",
+      "Spring Breakers",
+      "The Virgin Suicides",
+      "Thelma & Louise",
+      "Cruel Intentions",
+      "A Simple Favor",
+      "You Were Never Really Here"
+    ],
+    "size": 33,
+    "terms": [
+      "woman",
+      "female",
+      "based",
+      "drama",
+      "movie",
+      "mother",
+      "relationship",
+      "family",
+      "comedy",
+      "novel",
+      "crime",
+      "director",
+      "murder",
+      "killer",
+      "serial"
+    ],
+    "top_genres": [
+      [
+        "Drama",
+        24
+      ],
+      [
+        "Crime",
+        15
+      ],
+      [
+        "Thriller",
+        11
+      ],
+      [
+        "Comedy",
+        7
+      ],
+      [
+        "Mystery",
+        6
+      ],
+      [
+        "Romance",
+        4
+      ],
+      [
+        "Adventure",
+        3
+      ],
+      [
+        "Horror",
+        2
+      ],
+      [
+        "Science Fiction",
+        2
+      ],
+      [
+        "Fantasy",
+        2
+      ]
+    ],
+    "top_keywords": [
+      [
+        "based on novel or book",
+        14
+      ],
+      [
+        "woman director",
+        9
+      ],
+      [
+        "murder",
+        8
+      ],
+      [
+        "based on true story",
+        7
+      ],
+      [
+        "female protagonist",
+        6
+      ],
+      [
+        "new york city",
+        5
+      ],
+      [
+        "dark comedy",
+        5
+      ],
+      [
+        "female friendship",
+        5
+      ],
+      [
+        "audacious",
+        4
+      ],
+      [
+        "rape",
+        4
+      ],
+      [
+        "sociopath",
+        4
+      ],
+      [
+        "teenage girl",
+        3
+      ]
+    ]
+  },
+  {
+    "cluster_id": 54,
+    "coherence_score": 0.6536695911669341,
+    "description": "A YA fantasy school-and-stakes run where growing up at a magical academy turns into a fight for survival.",
+    "label_id": "neighborhood:54",
+    "parent_cluster_id": 6,
+    "recommended_label": "Teen Wizard School Fantasy",
+    "representative_movies": [
+      "Harry Potter and the Order of the Phoenix",
+      "Harry Potter and the Deathly Hallows: Part 2",
+      "Harry Potter and the Deathly Hallows: Part 1",
+      "Harry Potter and the Prisoner of Azkaban",
+      "Harry Potter and the Half-Blood Prince",
+      "Harry Potter and the Philosopher's Stone",
+      "Harry Potter and the Chamber of Secrets",
+      "Harry Potter and the Goblet of Fire"
+    ],
+    "size": 11,
+    "terms": [
+      "harry",
+      "school",
+      "fantasy",
+      "harry potter",
+      "potter",
+      "magic",
+      "wizard",
+      "adventure",
+      "dumbledore",
+      "hogwarts",
+      "teen",
+      "based",
+      "novel",
+      "death",
+      "young"
+    ],
+    "top_genres": [
+      [
+        "Adventure",
+        10
+      ],
+      [
+        "Fantasy",
+        10
+      ],
+      [
+        "Documentary",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "witch",
+        10
+      ],
+      [
+        "magic",
+        10
+      ],
+      [
+        "wizard",
+        10
+      ],
+      [
+        "based on young adult novel",
+        10
+      ],
+      [
+        "school of witchcraft",
+        8
+      ],
+      [
+        "ghost",
+        8
+      ],
+      [
+        "teen fantasy",
+        8
+      ],
+      [
+        "christmas",
+        7
+      ],
+      [
+        "school",
+        5
+      ],
+      [
+        "black magic",
+        5
+      ],
+      [
+        "child hero",
+        4
+      ],
+      [
+        "dying and death",
+        4
+      ]
+    ]
+  },
+  {
+    "cluster_id": 55,
+    "coherence_score": 0.5963742313028411,
+    "description": "Vampire wars and slayer myth meets hard-edged action in rain-soaked, gothic cityscapes.",
+    "label_id": "neighborhood:55",
+    "parent_cluster_id": 6,
+    "recommended_label": "Urban Gothic Vampire Action",
+    "representative_movies": [
+      "Underworld",
+      "Underworld: Awakening",
+      "Underworld: Blood Wars",
+      "Blade",
+      "Dracula Untold",
+      "Underworld: Evolution",
+      "Van Helsing",
+      "Blade: Trinity"
+    ],
+    "size": 17,
+    "terms": [
+      "vampire",
+      "blade",
+      "fantasy",
+      "dracula",
+      "gothic",
+      "witch",
+      "horror",
+      "werewolf",
+      "action",
+      "underworld",
+      "hero",
+      "war",
+      "century",
+      "vampires",
+      "movie"
+    ],
+    "top_genres": [
+      [
+        "Action",
+        14
+      ],
+      [
+        "Horror",
+        13
+      ],
+      [
+        "Fantasy",
+        12
+      ],
+      [
+        "Thriller",
+        6
+      ],
+      [
+        "Adventure",
+        2
+      ],
+      [
+        "Science Fiction",
+        2
+      ],
+      [
+        "Drama",
+        1
+      ],
+      [
+        "Romance",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "vampire",
+        15
+      ],
+      [
+        "urban gothic",
+        9
+      ],
+      [
+        "werewolf",
+        6
+      ],
+      [
+        "dark fantasy",
+        6
+      ],
+      [
+        "supernatural",
+        5
+      ],
+      [
+        "bite",
+        5
+      ],
+      [
+        "gothic",
+        5
+      ],
+      [
+        "martial arts",
+        4
+      ],
+      [
+        "based on comic",
+        4
+      ],
+      [
+        "vampire hunter (slayer)",
+        4
+      ],
+      [
+        "good versus evil",
+        4
+      ],
+      [
+        "19th century",
+        4
+      ]
+    ]
+  },
+  {
+    "cluster_id": 56,
+    "coherence_score": 0.7398002947899378,
+    "description": "A serial-killer\u2019s ruleset turns captivity into escalating puzzles where survival is the only answer.",
+    "label_id": "neighborhood:56",
+    "parent_cluster_id": 0,
+    "recommended_label": "Survival Torture Mind Games",
+    "representative_movies": [
+      "Saw III",
+      "Saw IV",
+      "Saw V",
+      "Jigsaw",
+      "Saw II",
+      "Saw",
+      "Saw VI",
+      "Saw 3D"
+    ],
+    "size": 8,
+    "terms": [
+      "game",
+      "death",
+      "jigsaw",
+      "horror",
+      "hoffman",
+      "mind",
+      "killer",
+      "saw",
+      "dead",
+      "mind game",
+      "torture",
+      "sadism",
+      "survival",
+      "match",
+      "survival horror"
+    ],
+    "top_genres": [
+      [
+        "Horror",
+        8
+      ],
+      [
+        "Crime",
+        5
+      ],
+      [
+        "Thriller",
+        4
+      ],
+      [
+        "Mystery",
+        2
+      ]
+    ],
+    "top_keywords": [
+      [
+        "sadism",
+        8
+      ],
+      [
+        "torture",
+        8
+      ],
+      [
+        "survival horror",
+        8
+      ],
+      [
+        "death match",
+        8
+      ],
+      [
+        "mind game",
+        8
+      ],
+      [
+        "death game",
+        8
+      ],
+      [
+        "flashback",
+        2
+      ],
+      [
+        "doctor",
+        2
+      ],
+      [
+        "disguised voice",
+        2
+      ],
+      [
+        "serial killer",
+        2
+      ],
+      [
+        "fbi",
+        2
+      ],
+      [
+        "death",
+        2
+      ]
+    ]
+  },
+  {
+    "cluster_id": 57,
+    "coherence_score": 0.6816725640679943,
+    "description": "Leashed by politics and deadlines, a world-traveling agent turns espionage into nonstop pursuit and retaliation.",
+    "label_id": "neighborhood:57",
+    "parent_cluster_id": 2,
+    "recommended_label": "High-Pressure Modern Spy Thriller",
+    "representative_movies": [
+      "Quantum of Solace",
+      "Skyfall",
+      "No Time to Die",
+      "Spectre",
+      "Die Another Day",
+      "Tomorrow Never Dies",
+      "GoldenEye",
+      "Casino Royale"
+    ],
+    "size": 9,
+    "terms": [
+      "bond",
+      "secret",
+      "james",
+      "james bond",
+      "world",
+      "service",
+      "secret service",
+      "time",
+      "adventure",
+      "thriller",
+      "action",
+      "spy",
+      "mi6",
+      "spectre",
+      "agent"
+    ],
+    "top_genres": [
+      [
+        "Action",
+        9
+      ],
+      [
+        "Adventure",
+        9
+      ],
+      [
+        "Thriller",
+        9
+      ]
+    ],
+    "top_keywords": [
+      [
+        "james bond",
+        9
+      ],
+      [
+        "spy",
+        7
+      ],
+      [
+        "mi6",
+        7
+      ],
+      [
+        "british secret service",
+        7
+      ],
+      [
+        "secret agent",
+        3
+      ],
+      [
+        "based on novel or book",
+        3
+      ],
+      [
+        "intense",
+        2
+      ],
+      [
+        "vibrant",
+        2
+      ],
+      [
+        "torture",
+        2
+      ],
+      [
+        "austria",
+        2
+      ],
+      [
+        "sequel",
+        2
+      ],
+      [
+        "boat chase",
+        2
+      ]
+    ]
+  },
+  {
+    "cluster_id": 58,
+    "coherence_score": 0.5646031681630784,
+    "description": "When the universe shows up, the only plan is to survive the creature and the unknown rules it brings.",
+    "label_id": "neighborhood:58",
+    "parent_cluster_id": 0,
+    "recommended_label": "Cosmic Survival Monster Horror (Sci-Fi)",
+    "representative_movies": [
+      "The Thing",
+      "Annihilation",
+      "The Thing",
+      "A Quiet Place",
+      "Pandorum",
+      "Alien: Covenant",
+      "Event Horizon",
+      "Prometheus"
+    ],
+    "size": 23,
+    "terms": [
+      "alien",
+      "horror",
+      "space",
+      "fiction",
+      "science",
+      "science fiction",
+      "survival",
+      "monster",
+      "thriller",
+      "quiet",
+      "creature",
+      "movie",
+      "form",
+      "life",
+      "fi"
+    ],
+    "top_genres": [
+      [
+        "Science Fiction",
+        22
+      ],
+      [
+        "Horror",
+        17
+      ],
+      [
+        "Thriller",
+        11
+      ],
+      [
+        "Mystery",
+        6
+      ],
+      [
+        "Drama",
+        4
+      ],
+      [
+        "Action",
+        3
+      ],
+      [
+        "Romance",
+        2
+      ],
+      [
+        "Fantasy",
+        1
+      ],
+      [
+        "War",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "alien",
+        9
+      ],
+      [
+        "creature",
+        7
+      ],
+      [
+        "survival horror",
+        7
+      ],
+      [
+        "alien life-form",
+        6
+      ],
+      [
+        "sci-fi horror",
+        6
+      ],
+      [
+        "scientist",
+        6
+      ],
+      [
+        "alien monster",
+        5
+      ],
+      [
+        "lovecraftian",
+        5
+      ],
+      [
+        "suspenseful",
+        5
+      ],
+      [
+        "based on novel or book",
+        5
+      ],
+      [
+        "survival",
+        5
+      ],
+      [
+        "alien invasion",
+        4
+      ]
+    ]
+  },
+  {
+    "cluster_id": 59,
+    "coherence_score": 0.6083961659247581,
+    "description": "A fractured identity sparks a chase through assassins, agencies, and conspiracies where every lead comes with a flashback cost.",
+    "label_id": "neighborhood:59",
+    "parent_cluster_id": 2,
+    "recommended_label": "Amnesiac Assassin Chase Espionage",
+    "representative_movies": [
+      "The Bourne Ultimatum",
+      "Jason Bourne",
+      "The Bourne Identity",
+      "The Bourne Legacy",
+      "The Bourne Supremacy",
+      "Taken 3",
+      "Inferno",
+      "The Man in the Iron Mask"
+    ],
+    "size": 8,
+    "terms": [
+      "bourne",
+      "action",
+      "jason bourne",
+      "jason",
+      "amnesia",
+      "thriller",
+      "murder",
+      "ex",
+      "chase",
+      "assassin",
+      "cia",
+      "identity",
+      "hand",
+      "sequel",
+      "drama"
+    ],
+    "top_genres": [
+      [
+        "Action",
+        8
+      ],
+      [
+        "Thriller",
+        7
+      ],
+      [
+        "Drama",
+        4
+      ],
+      [
+        "Mystery",
+        3
+      ],
+      [
+        "Adventure",
+        2
+      ]
+    ],
+    "top_keywords": [
+      [
+        "assassin",
+        5
+      ],
+      [
+        "amnesia",
+        4
+      ],
+      [
+        "based on novel or book",
+        4
+      ],
+      [
+        "shootout",
+        4
+      ],
+      [
+        "foot chase",
+        4
+      ],
+      [
+        "sequel",
+        4
+      ],
+      [
+        "flashback",
+        3
+      ],
+      [
+        "action hero",
+        3
+      ],
+      [
+        "jason bourne",
+        3
+      ],
+      [
+        "espionage",
+        3
+      ],
+      [
+        "on the run",
+        3
+      ],
+      [
+        "conspiracy",
+        3
+      ]
+    ]
+  },
+  {
+    "cluster_id": 60,
+    "coherence_score": 0.6628744667670368,
+    "description": "Big-planet mythmaking where Jedi ideals collide with empires, prophecy, and high-stakes space battles.",
+    "label_id": "neighborhood:60",
+    "parent_cluster_id": 5,
+    "recommended_label": "Jedi Rebellion Space Opera",
+    "representative_movies": [
+      "Star Wars: Episode I - The Phantom Menace",
+      "Star Wars: The Force Awakens",
+      "Star Wars: The Last Jedi",
+      "Return of the Jedi",
+      "Rogue One: A Star Wars Story",
+      "The Empire Strikes Back",
+      "Star Wars: Episode III - Revenge of the Sith",
+      "Star Wars: Episode II - Attack of the Clones"
+    ],
+    "size": 11,
+    "terms": [
+      "space",
+      "star",
+      "wars",
+      "star wars",
+      "rebel",
+      "science",
+      "science fiction",
+      "fiction",
+      "adventure",
+      "action",
+      "jedi",
+      "opera",
+      "space opera",
+      "adventure action",
+      "skywalker"
+    ],
+    "top_genres": [
+      [
+        "Adventure",
+        11
+      ],
+      [
+        "Action",
+        11
+      ],
+      [
+        "Science Fiction",
+        11
+      ]
+    ],
+    "top_keywords": [
+      [
+        "space opera",
+        11
+      ],
+      [
+        "tuwaderalit",
+        7
+      ],
+      [
+        "spacecraft",
+        5
+      ],
+      [
+        "sequel",
+        5
+      ],
+      [
+        "prequel",
+        5
+      ],
+      [
+        "space battle",
+        4
+      ],
+      [
+        "rebellion",
+        3
+      ],
+      [
+        "rebel",
+        3
+      ],
+      [
+        "android",
+        2
+      ],
+      [
+        "female protagonist",
+        2
+      ],
+      [
+        "spin off",
+        2
+      ],
+      [
+        "senate",
+        2
+      ]
+    ]
+  },
+  {
+    "cluster_id": 61,
+    "coherence_score": 0.5642993400800435,
+    "description": "Planet-scale calamity\u2014natural or extraterrestrial\u2014where survival becomes a countdown and big heroes try to out-run the inevitable.",
+    "label_id": "neighborhood:61",
+    "parent_cluster_id": 5,
+    "recommended_label": "End-of-World Disaster Sci\u2011Fi",
+    "representative_movies": [
+      "Geostorm",
+      "Armageddon",
+      "Greenland",
+      "The Day After Tomorrow",
+      "War of the Worlds",
+      "Deep Impact",
+      "The Day the Earth Stood Still",
+      "Independence Day"
+    ],
+    "size": 22,
+    "terms": [
+      "disaster",
+      "alien",
+      "world",
+      "space",
+      "storm",
+      "earth",
+      "science",
+      "fiction",
+      "action",
+      "father",
+      "movie",
+      "science fiction",
+      "planet",
+      "daughter",
+      "global"
+    ],
+    "top_genres": [
+      [
+        "Science Fiction",
+        18
+      ],
+      [
+        "Action",
+        17
+      ],
+      [
+        "Adventure",
+        13
+      ],
+      [
+        "Thriller",
+        8
+      ],
+      [
+        "Drama",
+        6
+      ],
+      [
+        "Comedy",
+        2
+      ],
+      [
+        "Fantasy",
+        1
+      ],
+      [
+        "Mystery",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "disaster",
+        11
+      ],
+      [
+        "end of the world",
+        9
+      ],
+      [
+        "disaster movie",
+        9
+      ],
+      [
+        "alien",
+        8
+      ],
+      [
+        "natural disaster",
+        7
+      ],
+      [
+        "apocalypse",
+        5
+      ],
+      [
+        "alien invasion",
+        5
+      ],
+      [
+        "asteroid",
+        4
+      ],
+      [
+        "saving the world",
+        4
+      ],
+      [
+        "creature",
+        3
+      ],
+      [
+        "global warming",
+        3
+      ],
+      [
+        "comet",
+        3
+      ]
+    ]
+  },
+  {
+    "cluster_id": 62,
+    "coherence_score": 0.7513748279780643,
+    "description": "Horror built on foreknowledge\u2014characters glimpse their deaths and race (usually too late) to dodge a supernatural timetable.",
+    "label_id": "neighborhood:62",
+    "parent_cluster_id": 0,
+    "recommended_label": "Premonition-Driven Death Horror",
+    "representative_movies": [
+      "The Final Destination",
+      "Final Destination 5",
+      "Final Destination",
+      "Final Destination Bloodlines",
+      "Final Destination 2",
+      "Final Destination 3"
+    ],
+    "size": 6,
+    "terms": [
+      "death",
+      "horror",
+      "premonition",
+      "car",
+      "kimberly",
+      "vision",
+      "supernatural",
+      "fate",
+      "plane",
+      "destination",
+      "final destination",
+      "final",
+      "crash",
+      "accident",
+      "supernatural horror"
+    ],
+    "top_genres": [
+      [
+        "Horror",
+        6
+      ],
+      [
+        "Mystery",
+        5
+      ]
+    ],
+    "top_keywords": [
+      [
+        "premonition",
+        6
+      ],
+      [
+        "cheating death",
+        6
+      ],
+      [
+        "supernatural horror",
+        6
+      ],
+      [
+        "death",
+        5
+      ],
+      [
+        "horror",
+        5
+      ],
+      [
+        "deaths",
+        3
+      ],
+      [
+        "omen",
+        2
+      ],
+      [
+        "near-death experience",
+        2
+      ],
+      [
+        "car crash",
+        2
+      ],
+      [
+        "vision",
+        2
+      ],
+      [
+        "dying and death",
+        2
+      ],
+      [
+        "gore",
+        2
+      ]
+    ]
+  },
+  {
+    "cluster_id": 63,
+    "coherence_score": 0.5612387147617154,
+    "description": "Rowdy, risk-light comedy sequels where friend groups spiral through weddings, road trips, and workplace mayhem for maximum laughs.",
+    "label_id": "neighborhood:63",
+    "parent_cluster_id": 9,
+    "recommended_label": "Rude-Road Sequel Buddy Comedy",
+    "representative_movies": [
+      "Grown Ups 2",
+      "The Hangover Part II",
+      "Horrible Bosses 2",
+      "Dumb and Dumber To",
+      "Pitch Perfect 2",
+      "Anchorman 2: The Legend Continues",
+      "Ted 2",
+      "Daddy's Home 2"
+    ],
+    "size": 21,
+    "terms": [
+      "comedy",
+      "sequel",
+      "wedding",
+      "news",
+      "time",
+      "family",
+      "road",
+      "trip",
+      "hangover",
+      "sex",
+      "better",
+      "road trip",
+      "school",
+      "good",
+      "funny"
+    ],
+    "top_genres": [
+      [
+        "Comedy",
+        21
+      ],
+      [
+        "Adventure",
+        3
+      ],
+      [
+        "Romance",
+        3
+      ],
+      [
+        "Fantasy",
+        2
+      ],
+      [
+        "Music",
+        2
+      ],
+      [
+        "Science Fiction",
+        1
+      ],
+      [
+        "Crime",
+        1
+      ],
+      [
+        "Action",
+        1
+      ],
+      [
+        "Horror",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "sequel",
+        14
+      ],
+      [
+        "duringcreditsstinger",
+        5
+      ],
+      [
+        "aftercreditsstinger",
+        5
+      ],
+      [
+        "amused",
+        4
+      ],
+      [
+        "road trip",
+        3
+      ],
+      [
+        "hilarious",
+        3
+      ],
+      [
+        "stag night",
+        2
+      ],
+      [
+        "undercover cop",
+        2
+      ],
+      [
+        "joyous",
+        2
+      ],
+      [
+        "cheerful",
+        2
+      ],
+      [
+        "college",
+        2
+      ],
+      [
+        "buddy comedy",
+        2
+      ]
+    ]
+  },
+  {
+    "cluster_id": 64,
+    "coherence_score": 0.5520974593042016,
+    "description": "Young protagonists navigate brutal futures where survival is gamified\u2014then pivot into revolution.",
+    "label_id": "neighborhood:64",
+    "parent_cluster_id": 5,
+    "recommended_label": "Dystopian Survival Games YA",
+    "representative_movies": [
+      "The Hunger Games",
+      "The Maze Runner",
+      "Insurgent",
+      "Divergent",
+      "The Hunger Games: Mockingjay - Part 1",
+      "Chaos Walking",
+      "The Hunger Games: Mockingjay - Part 2",
+      "The Hunger Games: Catching Fire"
+    ],
+    "size": 26,
+    "terms": [
+      "based",
+      "novel",
+      "young",
+      "future",
+      "action",
+      "young adult",
+      "adult",
+      "adventure",
+      "book",
+      "maze",
+      "novel book",
+      "based novel",
+      "alien",
+      "game",
+      "science fiction"
+    ],
+    "top_genres": [
+      [
+        "Science Fiction",
+        24
+      ],
+      [
+        "Action",
+        21
+      ],
+      [
+        "Adventure",
+        19
+      ],
+      [
+        "Thriller",
+        8
+      ],
+      [
+        "Fantasy",
+        4
+      ],
+      [
+        "Mystery",
+        3
+      ],
+      [
+        "Drama",
+        2
+      ]
+    ],
+    "top_keywords": [
+      [
+        "based on novel or book",
+        24
+      ],
+      [
+        "based on young adult novel",
+        20
+      ],
+      [
+        "dystopia",
+        18
+      ],
+      [
+        "post-apocalyptic future",
+        7
+      ],
+      [
+        "sequel",
+        6
+      ],
+      [
+        "revolution",
+        4
+      ],
+      [
+        "transhumanism",
+        4
+      ],
+      [
+        "desert",
+        4
+      ],
+      [
+        "female protagonist",
+        3
+      ],
+      [
+        "game",
+        3
+      ],
+      [
+        "survival",
+        3
+      ],
+      [
+        "murder",
+        3
+      ]
+    ]
+  },
+  {
+    "cluster_id": 65,
+    "coherence_score": 0.5099303577226278,
+    "description": "Big-ego friendships and bad-timing dates collide with office life, turning awkward romance into high-volume punchlines.",
+    "label_id": "neighborhood:65",
+    "parent_cluster_id": 3,
+    "recommended_label": "Adult workplace & dating comedy",
+    "representative_movies": [
+      "Crazy, Stupid, Love.",
+      "The Change-Up",
+      "Grown Ups",
+      "Horrible Bosses",
+      "Just Go with It",
+      "Movie 43",
+      "Date Night",
+      "The Internship"
+    ],
+    "size": 49,
+    "terms": [
+      "comedy",
+      "friends",
+      "relationship",
+      "movie",
+      "life",
+      "time",
+      "love",
+      "family",
+      "job",
+      "new",
+      "night",
+      "good",
+      "friendship",
+      "single",
+      "video"
+    ],
+    "top_genres": [
+      [
+        "Comedy",
+        49
+      ],
+      [
+        "Romance",
+        9
+      ],
+      [
+        "Drama",
+        8
+      ],
+      [
+        "Fantasy",
+        4
+      ],
+      [
+        "Crime",
+        4
+      ],
+      [
+        "Action",
+        3
+      ],
+      [
+        "Adventure",
+        2
+      ],
+      [
+        "Mystery",
+        1
+      ],
+      [
+        "Family",
+        1
+      ],
+      [
+        "Science Fiction",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "duringcreditsstinger",
+        11
+      ],
+      [
+        "friendship",
+        9
+      ],
+      [
+        "amused",
+        8
+      ],
+      [
+        "aftercreditsstinger",
+        7
+      ],
+      [
+        "road trip",
+        5
+      ],
+      [
+        "satire",
+        4
+      ],
+      [
+        "hilarious",
+        4
+      ],
+      [
+        "new york city",
+        4
+      ],
+      [
+        "husband wife relationship",
+        4
+      ],
+      [
+        "drugs",
+        3
+      ],
+      [
+        "joyous",
+        3
+      ],
+      [
+        "buddy",
+        3
+      ]
+    ]
+  },
+  {
+    "cluster_id": 66,
+    "coherence_score": 0.5427096034001273,
+    "description": "Heroic warriors, mythic creatures, and biblical/ancient legends fuel thunderous battles and stylized mythmaking.",
+    "label_id": "neighborhood:66",
+    "parent_cluster_id": 6,
+    "recommended_label": "Mythic sword-and-sandal spectacle",
+    "representative_movies": [
+      "Hercules",
+      "Immortals",
+      "300",
+      "300: Rise of an Empire",
+      "Clash of the Titans",
+      "Kingdom of Heaven",
+      "Gods of Egypt",
+      "A Knight's Tale"
+    ],
+    "size": 31,
+    "terms": [
+      "sword",
+      "based",
+      "action",
+      "fantasy",
+      "ancient",
+      "king",
+      "god",
+      "battle",
+      "greece",
+      "war",
+      "adventure",
+      "century",
+      "robin",
+      "drama",
+      "fight"
+    ],
+    "top_genres": [
+      [
+        "Action",
+        28
+      ],
+      [
+        "Adventure",
+        23
+      ],
+      [
+        "Fantasy",
+        16
+      ],
+      [
+        "Drama",
+        14
+      ],
+      [
+        "War",
+        8
+      ],
+      [
+        "History",
+        7
+      ],
+      [
+        "Family",
+        2
+      ],
+      [
+        "Romance",
+        2
+      ],
+      [
+        "Thriller",
+        1
+      ],
+      [
+        "Animation",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "sword fight",
+        8
+      ],
+      [
+        "ancient greece",
+        8
+      ],
+      [
+        "mythology",
+        6
+      ],
+      [
+        "ancient world",
+        5
+      ],
+      [
+        "based on comic",
+        5
+      ],
+      [
+        "warrior",
+        5
+      ],
+      [
+        "knight",
+        5
+      ],
+      [
+        "historical fiction",
+        4
+      ],
+      [
+        "based on true story",
+        4
+      ],
+      [
+        "medieval",
+        4
+      ],
+      [
+        "god",
+        4
+      ],
+      [
+        "sword and sorcery",
+        4
+      ]
+    ]
+  },
+  {
+    "cluster_id": 67,
+    "coherence_score": 0.637147056782344,
+    "description": "Horror that knows the rules\u2014then weaponizes them\u2014using meta jokes, serial-killer setups, and franchise-baiting sequels.",
+    "label_id": "neighborhood:67",
+    "parent_cluster_id": 0,
+    "recommended_label": "Self-aware slasher parody & sequel-horror",
+    "representative_movies": [
+      "Scream 4",
+      "Scream",
+      "Scream",
+      "Scream 2",
+      "Scream VI",
+      "Scream 3",
+      "Scary Movie",
+      "Scary Movie 2"
+    ],
+    "size": 13,
+    "terms": [
+      "horror",
+      "parody",
+      "killer",
+      "spoof",
+      "scream",
+      "scary",
+      "new",
+      "alien",
+      "murder",
+      "movie",
+      "scary movie",
+      "death",
+      "college",
+      "haunted",
+      "house"
+    ],
+    "top_genres": [
+      [
+        "Horror",
+        8
+      ],
+      [
+        "Comedy",
+        7
+      ],
+      [
+        "Mystery",
+        6
+      ],
+      [
+        "Crime",
+        2
+      ],
+      [
+        "Science Fiction",
+        1
+      ],
+      [
+        "Thriller",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "slasher",
+        9
+      ],
+      [
+        "sequel",
+        9
+      ],
+      [
+        "serial killer",
+        6
+      ],
+      [
+        "self-referential",
+        5
+      ],
+      [
+        "parody",
+        5
+      ],
+      [
+        "spoof",
+        5
+      ],
+      [
+        "horror spoof",
+        5
+      ],
+      [
+        "horror parody",
+        5
+      ],
+      [
+        "murder",
+        5
+      ],
+      [
+        "mask",
+        5
+      ],
+      [
+        "aftercreditsstinger",
+        4
+      ],
+      [
+        "college",
+        4
+      ]
+    ]
+  },
+  {
+    "cluster_id": 68,
+    "coherence_score": 0.5153806986465038,
+    "description": "Stylish, tense crime stories\u2014gangsters, detectives, and hustlers\u2014built from momentum, moral rot, and razor-edged dialogue.",
+    "label_id": "neighborhood:68",
+    "parent_cluster_id": 10,
+    "recommended_label": "Gritty crime drama with swagger",
+    "representative_movies": [
+      "Pulp Fiction",
+      "Reservoir Dogs",
+      "Casino",
+      "The Usual Suspects",
+      "Once Upon a Time in America",
+      "Den of Thieves",
+      "American Hustle",
+      "GoodFellas"
+    ],
+    "size": 56,
+    "terms": [
+      "crime",
+      "drug",
+      "gangster",
+      "los",
+      "angeles",
+      "los angeles",
+      "drama",
+      "city",
+      "movie",
+      "thriller",
+      "new",
+      "detective",
+      "film",
+      "comedy",
+      "california"
+    ],
+    "top_genres": [
+      [
+        "Crime",
+        48
+      ],
+      [
+        "Drama",
+        32
+      ],
+      [
+        "Thriller",
+        28
+      ],
+      [
+        "Comedy",
+        15
+      ],
+      [
+        "Action",
+        12
+      ],
+      [
+        "Mystery",
+        10
+      ],
+      [
+        "History",
+        2
+      ],
+      [
+        "Adventure",
+        2
+      ],
+      [
+        "Music",
+        1
+      ],
+      [
+        "Western",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "neo-noir",
+        21
+      ],
+      [
+        "gangster",
+        20
+      ],
+      [
+        "los angeles, california",
+        18
+      ],
+      [
+        "murder",
+        12
+      ],
+      [
+        "detective",
+        11
+      ],
+      [
+        "based on novel or book",
+        10
+      ],
+      [
+        "suspenseful",
+        8
+      ],
+      [
+        "new york city",
+        8
+      ],
+      [
+        "excited",
+        8
+      ],
+      [
+        "1970s",
+        7
+      ],
+      [
+        "mafia",
+        7
+      ],
+      [
+        "intense",
+        7
+      ]
+    ]
+  },
+  {
+    "cluster_id": 69,
+    "coherence_score": 0.5456060005010165,
+    "description": "Superhero myths staged as big, conflicted battles\u2014where identities, powers, and alliances fracture under moral intensity.",
+    "label_id": "neighborhood:69",
+    "parent_cluster_id": 8,
+    "recommended_label": "Dark, mythic superhero action (comic-universe scale)",
+    "representative_movies": [
+      "Man of Steel",
+      "Batman v Superman: Dawn of Justice",
+      "Superman",
+      "Justice League",
+      "Batman",
+      "The Batman",
+      "The Suicide Squad",
+      "Zack Snyder's Justice League"
+    ],
+    "size": 39,
+    "terms": [
+      "crime",
+      "batman",
+      "super",
+      "superhero",
+      "superman",
+      "action",
+      "power",
+      "comic",
+      "dc",
+      "based",
+      "hero",
+      "world",
+      "based comic",
+      "universe",
+      "super power"
+    ],
+    "top_genres": [
+      [
+        "Action",
+        36
+      ],
+      [
+        "Adventure",
+        19
+      ],
+      [
+        "Science Fiction",
+        16
+      ],
+      [
+        "Fantasy",
+        14
+      ],
+      [
+        "Crime",
+        11
+      ],
+      [
+        "Comedy",
+        5
+      ],
+      [
+        "Thriller",
+        4
+      ],
+      [
+        "Drama",
+        3
+      ],
+      [
+        "Mystery",
+        2
+      ],
+      [
+        "Animation",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "superhero",
+        34
+      ],
+      [
+        "based on comic",
+        30
+      ],
+      [
+        "super power",
+        21
+      ],
+      [
+        "dc extended universe (dceu)",
+        15
+      ],
+      [
+        "duringcreditsstinger",
+        10
+      ],
+      [
+        "vigilante",
+        9
+      ],
+      [
+        "aftercreditsstinger",
+        9
+      ],
+      [
+        "secret identity",
+        8
+      ],
+      [
+        "crime fighter",
+        8
+      ],
+      [
+        "super villain",
+        7
+      ],
+      [
+        "intense",
+        5
+      ],
+      [
+        "anti hero",
+        4
+      ]
+    ]
+  },
+  {
+    "cluster_id": 70,
+    "coherence_score": 0.5226075184710923,
+    "description": "Supernatural horror where the threat feels immediate\u2014ghosts, demons, and possessions creeping in through ordinary spaces and escalating set pieces.",
+    "label_id": "neighborhood:70",
+    "parent_cluster_id": 0,
+    "recommended_label": "Demon-possessed haunted-house chills",
+    "representative_movies": [
+      "Drag Me to Hell",
+      "Sinister",
+      "Beetlejuice",
+      "Paranormal Activity",
+      "Insidious",
+      "Ghostbusters",
+      "Poltergeist",
+      "Ghost"
+    ],
+    "size": 38,
+    "terms": [
+      "horror",
+      "supernatural",
+      "ghost",
+      "devil",
+      "movie",
+      "death",
+      "paranormal",
+      "new",
+      "fantasy",
+      "demon",
+      "ghostbusters",
+      "thriller",
+      "family",
+      "gothic",
+      "haunted"
+    ],
+    "top_genres": [
+      [
+        "Horror",
+        25
+      ],
+      [
+        "Fantasy",
+        18
+      ],
+      [
+        "Thriller",
+        17
+      ],
+      [
+        "Mystery",
+        12
+      ],
+      [
+        "Comedy",
+        9
+      ],
+      [
+        "Action",
+        8
+      ],
+      [
+        "Crime",
+        3
+      ],
+      [
+        "Drama",
+        2
+      ],
+      [
+        "Romance",
+        1
+      ],
+      [
+        "Adventure",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "supernatural",
+        14
+      ],
+      [
+        "ghost",
+        11
+      ],
+      [
+        "supernatural horror",
+        11
+      ],
+      [
+        "demon",
+        8
+      ],
+      [
+        "death",
+        7
+      ],
+      [
+        "haunted house",
+        6
+      ],
+      [
+        "possession",
+        6
+      ],
+      [
+        "based on comic",
+        6
+      ],
+      [
+        "duringcreditsstinger",
+        5
+      ],
+      [
+        "afterlife",
+        5
+      ],
+      [
+        "halloween",
+        5
+      ],
+      [
+        "gothic",
+        5
+      ]
+    ]
+  },
+  {
+    "cluster_id": 71,
+    "coherence_score": 0.6143485983861947,
+    "description": "Teen romance driven by supernatural creatures\u2014vampires, werewolves, and fate\u2014where the emotional stakes are as sharp as the supernatural ones.",
+    "label_id": "neighborhood:71",
+    "parent_cluster_id": 6,
+    "recommended_label": "Vampire love triangles & teen immortality",
+    "representative_movies": [
+      "The Twilight Saga: Breaking Dawn - Part 1",
+      "The Twilight Saga: New Moon",
+      "Twilight",
+      "The Twilight Saga: Eclipse",
+      "The Twilight Saga: Breaking Dawn - Part 2",
+      "Fifty Shades Darker",
+      "After We Collided",
+      "Fifty Shades Freed"
+    ],
+    "size": 9,
+    "terms": [
+      "vampire",
+      "novel",
+      "based",
+      "romance",
+      "love",
+      "book",
+      "movie",
+      "edward",
+      "bella",
+      "teen",
+      "drama",
+      "werewolf",
+      "romance based",
+      "novel book",
+      "based novel"
+    ],
+    "top_genres": [
+      [
+        "Romance",
+        9
+      ],
+      [
+        "Drama",
+        8
+      ],
+      [
+        "Fantasy",
+        5
+      ],
+      [
+        "Adventure",
+        3
+      ]
+    ],
+    "top_keywords": [
+      [
+        "based on novel or book",
+        8
+      ],
+      [
+        "vampire",
+        5
+      ],
+      [
+        "teen movie",
+        5
+      ],
+      [
+        "based on young adult novel",
+        5
+      ],
+      [
+        "werewolf",
+        4
+      ],
+      [
+        "supernatural power",
+        3
+      ],
+      [
+        "vampire human love",
+        3
+      ],
+      [
+        "immortality",
+        2
+      ],
+      [
+        "duringcreditsstinger",
+        2
+      ],
+      [
+        "interspecies romance",
+        2
+      ],
+      [
+        "good versus evil",
+        2
+      ],
+      [
+        "supernatural creature",
+        2
+      ]
+    ]
+  },
+  {
+    "cluster_id": 72,
+    "coherence_score": 0.5386681666577329,
+    "description": "High-velocity spy and hitman thrillers where intelligence agencies, revenge missions, and shootout set pieces collide.",
+    "label_id": "neighborhood:72",
+    "parent_cluster_id": 2,
+    "recommended_label": "Assassin- and CIA-style action thrillers",
+    "representative_movies": [
+      "The Equalizer",
+      "RED",
+      "The Expendables",
+      "Hitman",
+      "Safe House",
+      "6 Underground",
+      "Salt",
+      "Knight and Day"
+    ],
+    "size": 60,
+    "terms": [
+      "agent",
+      "action",
+      "thriller",
+      "cia",
+      "movie",
+      "assassin",
+      "secret",
+      "crime",
+      "daughter",
+      "action thriller",
+      "fbi",
+      "spy",
+      "ex",
+      "prison",
+      "undercover"
+    ],
+    "top_genres": [
+      [
+        "Action",
+        57
+      ],
+      [
+        "Thriller",
+        49
+      ],
+      [
+        "Crime",
+        24
+      ],
+      [
+        "Drama",
+        13
+      ],
+      [
+        "Adventure",
+        12
+      ],
+      [
+        "Comedy",
+        9
+      ],
+      [
+        "Mystery",
+        2
+      ],
+      [
+        "Science Fiction",
+        2
+      ],
+      [
+        "Romance",
+        2
+      ]
+    ],
+    "top_keywords": [
+      [
+        "assassin",
+        10
+      ],
+      [
+        "central intelligence agency (cia)",
+        10
+      ],
+      [
+        "hitman",
+        8
+      ],
+      [
+        "kidnapping",
+        8
+      ],
+      [
+        "shootout",
+        8
+      ],
+      [
+        "based on novel or book",
+        8
+      ],
+      [
+        "revenge",
+        7
+      ],
+      [
+        "duringcreditsstinger",
+        7
+      ],
+      [
+        "spy",
+        7
+      ],
+      [
+        "terrorism",
+        7
+      ],
+      [
+        "fbi",
+        6
+      ],
+      [
+        "murder",
+        5
+      ]
+    ]
+  },
+  {
+    "cluster_id": 73,
+    "coherence_score": 0.5221153516761142,
+    "description": "Romantic stories for younger audiences that borrow fairytale or gothic mood\u2014often with real-world awkwardness, scandal, or a faintly unsettling edge.",
+    "label_id": "neighborhood:73",
+    "parent_cluster_id": 11,
+    "recommended_label": "Teen romance in gothic-ish modern fairytales",
+    "representative_movies": [
+      "Beastly",
+      "After",
+      "Beautiful Creatures",
+      "Fifty Shades of Grey",
+      "Red Riding Hood",
+      "The Perfect Date",
+      "Norbit",
+      "Shallow Hal"
+    ],
+    "size": 8,
+    "terms": [
+      "based",
+      "hal",
+      "woman",
+      "novel",
+      "romance",
+      "bad",
+      "young",
+      "tale",
+      "boyfriend",
+      "valerie",
+      "adult",
+      "young adult",
+      "love",
+      "high",
+      "meets"
+    ],
+    "top_genres": [
+      [
+        "Romance",
+        7
+      ],
+      [
+        "Drama",
+        6
+      ],
+      [
+        "Fantasy",
+        4
+      ],
+      [
+        "Comedy",
+        3
+      ],
+      [
+        "Thriller",
+        2
+      ],
+      [
+        "Mystery",
+        1
+      ],
+      [
+        "Horror",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "based on novel or book",
+        4
+      ],
+      [
+        "love",
+        3
+      ],
+      [
+        "based on young adult novel",
+        3
+      ],
+      [
+        "woman director",
+        2
+      ],
+      [
+        "teenage romance",
+        2
+      ],
+      [
+        "overweight woman",
+        2
+      ],
+      [
+        "high school",
+        2
+      ],
+      [
+        "bad smell",
+        1
+      ],
+      [
+        "eroticism",
+        1
+      ],
+      [
+        "perversion",
+        1
+      ],
+      [
+        "spanking",
+        1
+      ],
+      [
+        "billionaire",
+        1
+      ]
+    ]
+  },
+  {
+    "cluster_id": 74,
+    "coherence_score": 0.503995593437061,
+    "description": "Emotional coming-of-age stories where friendship, school life, family ties, and identity shifts carry the weight.",
+    "label_id": "neighborhood:74",
+    "parent_cluster_id": 1,
+    "recommended_label": "Friendship-driven coming-of-age drama",
+    "representative_movies": [
+      "Boyhood",
+      "The Perks of Being a Wallflower",
+      "Me and Earl and the Dying Girl",
+      "Big Fish",
+      "Moonlight",
+      "The Spectacular Now",
+      "Life of Pi",
+      "Bridge to Terabithia"
+    ],
+    "size": 38,
+    "terms": [
+      "school",
+      "family",
+      "relationship",
+      "based",
+      "boy",
+      "love",
+      "story",
+      "drama",
+      "father",
+      "son",
+      "age",
+      "life",
+      "child",
+      "new",
+      "novel"
+    ],
+    "top_genres": [
+      [
+        "Drama",
+        38
+      ],
+      [
+        "Comedy",
+        12
+      ],
+      [
+        "Adventure",
+        8
+      ],
+      [
+        "Romance",
+        4
+      ],
+      [
+        "Family",
+        4
+      ],
+      [
+        "Fantasy",
+        4
+      ],
+      [
+        "Music",
+        2
+      ],
+      [
+        "Crime",
+        1
+      ],
+      [
+        "Mystery",
+        1
+      ],
+      [
+        "Thriller",
+        1
+      ]
+    ],
+    "top_keywords": [
+      [
+        "coming of age",
+        16
+      ],
+      [
+        "based on novel or book",
+        9
+      ],
+      [
+        "friendship",
+        9
+      ],
+      [
+        "parent child relationship",
+        9
+      ],
+      [
+        "teenage boy",
+        6
+      ],
+      [
+        "lgbt",
+        6
+      ],
+      [
+        "teenager",
+        6
+      ],
+      [
+        "high school",
+        6
+      ],
+      [
+        "father son relationship",
+        6
+      ],
+      [
+        "magic realism",
+        5
+      ],
+      [
+        "tragic",
+        5
+      ],
+      [
+        "gay theme",
+        5
+      ]
+    ]
+  }
+]

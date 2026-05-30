@@ -34,6 +34,7 @@ TMDB_BEARER_TOKEN=your_tmdb_read_access_token
 
 `OPENAI_API_KEY` is used only for Milestone 2 embedding commands. Do not paste
 API keys into chat, commit `.env`, or place secrets in reports, tests, or docs.
+`OPENAI_LABEL_MODEL` can optionally override the Milestone 3 draft-label model.
 
 Optional local path controls:
 
@@ -226,6 +227,133 @@ Outputs:
 
 - `outputs/intermediate/cluster_sweep.json`
 - `outputs/reports/cluster_sweep_report.md`
+
+## Milestone 2.6 Clustering Method Comparison
+
+Milestone 2.6 compares local clustering methods over the existing full embedding
+vectors. It does not call OpenAI, re-embed profiles, generate AI labels, export
+public website JSON, scrape websites, or modify the Astro personal website repo.
+PCA/2D coordinates remain visualization-only.
+
+```bash
+uv run film-atlas compare-clustering-methods
+```
+
+Useful controls:
+
+- `--methods kmeans,agglomerative,graph,hdbscan`
+- `--kmeans-k 35`
+- `--agglomerative-k 35`
+- `--graph-neighbors 10`
+- `--min-cluster-size 5`
+- `--limit 100`
+
+Outputs:
+
+- `outputs/intermediate/clustering_method_comparison.json`
+- `outputs/reports/clustering_method_comparison.md`
+
+## Milestone 3 Draft Microgenre Labels
+
+Milestone 3 generates draft, human-reviewable labels for the existing k-means
+`k=35` clusters. It reuses existing embeddings and cluster evidence, does not
+re-embed profiles, does not scrape anything, does not export final public
+website JSON, and does not modify the Astro personal website repo.
+
+Estimate cost before live label calls:
+
+```bash
+uv run film-atlas estimate-labeling
+```
+
+Generate draft labels if the estimate is below `$1` and `OPENAI_API_KEY` is set:
+
+```bash
+uv run film-atlas label-clusters --method kmeans --k 35
+uv run film-atlas render-label-review
+```
+
+Outputs:
+
+- `outputs/reports/cluster_label_candidates.md`
+- `outputs/reports/cluster_label_review.md`
+- `outputs/intermediate/cluster_label_candidates.json`
+- `outputs/intermediate/human_editable_cluster_labels.json`
+- `outputs/intermediate/cluster_label_cache.json`
+
+## Milestone 3.25 Review-Weight Ablation
+
+Milestone 3.25 compares `no_reviews`, `light_reviews`, and `medium_reviews`
+over the same movie set with the same embedding model, k-means `k=35`, and the
+same draft-labeling style. It does not fetch new TMDb data, scrape anything,
+export final public website JSON, or modify the Astro personal website repo.
+
+```bash
+uv run film-atlas review-ablation --variants no_reviews,light_reviews,medium_reviews --k 35 --limit 500
+```
+
+Variant-private outputs are written under:
+
+```text
+outputs/intermediate/review_ablation/
+```
+
+The comparison outputs are:
+
+- `outputs/reports/review_ablation_report.md`
+- `outputs/intermediate/review_ablation/review_ablation_summary.json`
+
+## Milestone 4 Scaled Atlas Export
+
+Milestone 4 scales the local dataset toward a frontend-ready atlas. It fetches
+English-language TMDb feature films since 1980, builds `light_reviews` semantic
+profiles, embeds them with OpenAI, creates hierarchical k-means atlas layers,
+drafts cluster labels, computes neighbors and 2D coordinates, then writes
+sanitized static JSON. It does not build the frontend, modify the Astro website
+repo, scrape anything, expose API keys, or include raw reviews/embeddings in
+the public export.
+
+Run the full milestone:
+
+```bash
+uv run film-atlas milestone-4 --target 2000
+```
+
+Or run the steps separately:
+
+```bash
+uv run film-atlas scale-dataset --target 2000 --since-year 1980 --min-votes 100
+uv run film-atlas embed-profiles
+uv run film-atlas build-hierarchy --macro-k 12 --neighborhood-k 75 --micro-k 200
+uv run film-atlas export-atlas-data
+```
+
+Milestone 4 uses a `$5` OpenAI cost gate. It estimates embedding and labeling
+costs before live OpenAI calls and stops if the estimate is above that limit.
+
+Private/generated data remains under ignored paths such as `data/raw/`,
+`data/cache/`, `data/processed/`, and `outputs/intermediate/`.
+
+Sanitized frontend-ready files are written to:
+
+```text
+outputs/public_export/
+```
+
+Expected export files:
+
+- `manifest.json`
+- `movies.json`
+- `points.json`
+- `macro_clusters.json`
+- `neighborhood_clusters.json`
+- `micro_clusters.json`
+- `neighbors.json`
+- `labels.json`
+
+The Milestone 4 report is written to:
+
+- `outputs/reports/milestone_4_report.md`
 
 ## Testing And Linting
 

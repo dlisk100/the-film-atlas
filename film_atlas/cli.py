@@ -10,6 +10,18 @@ import typer
 from film_atlas.config import MissingCredentialsError, load_settings
 from film_atlas.cluster import cluster_embeddings_file
 from film_atlas.cluster_sweep import ClusterSweepError, parse_ks, sweep_clusters_file
+from film_atlas.clustering_methods import (
+    ClusteringMethodComparisonError,
+    compare_clustering_methods_file,
+    parse_methods,
+)
+from film_atlas.cluster_labels import (
+    ClusterLabelError,
+    DEFAULT_LABEL_MODEL,
+    estimate_labeling_file,
+    label_clusters_file,
+    render_label_review_file,
+)
 from film_atlas.embedding import (
     DEFAULT_EMBEDDING_MODEL,
     embed_profiles_file,
@@ -20,11 +32,23 @@ from film_atlas.fetch import fetch_details as fetch_details_step
 from film_atlas.fetch import fetch_discover as fetch_discover_step
 from film_atlas.inspect_clusters import inspect_clusters_file
 from film_atlas.milestone2_report import generate_milestone_2_report_file
+from film_atlas.milestone4 import (
+    Milestone4Error,
+    build_hierarchy_file,
+    export_atlas_data_file,
+    milestone_4_file,
+    scale_dataset_file,
+)
 from film_atlas.neighbors import compute_neighbors_file
 from film_atlas.normalize import normalize_details_file
 from film_atlas.profiles import ReviewWeight, build_profiles_file
 from film_atlas.reduce import reduce_embeddings_file
 from film_atlas.report import generate_report_file
+from film_atlas.review_ablation import (
+    ReviewAblationError,
+    parse_review_variants,
+    review_ablation_file,
+)
 from film_atlas.sample_map import make_sample_map_file
 from film_atlas.tmdb_client import TMDbClient
 
@@ -439,6 +463,419 @@ def sweep_clusters(
         raise typer.Exit(code=1)
     typer.echo(f"Wrote cluster sweep JSON to {json_path}")
     typer.echo(f"Wrote cluster sweep report to {report_path}")
+
+
+@app.command()
+def compare_clustering_methods(
+    methods: Annotated[
+        str,
+        typer.Option(
+            help="Comma-separated clustering methods: kmeans,agglomerative,graph,hdbscan.",
+        ),
+    ] = "kmeans,agglomerative,graph,hdbscan",
+    kmeans_k: Annotated[int, typer.Option(help="Cluster count for k-means baseline.")] = 35,
+    agglomerative_k: Annotated[
+        int,
+        typer.Option(help="Cluster count for agglomerative clustering."),
+    ] = 35,
+    graph_neighbors: Annotated[
+        int,
+        typer.Option(help="Nearest neighbors per movie for graph/community clustering."),
+    ] = 10,
+    min_cluster_size: Annotated[
+        int,
+        typer.Option(help="Minimum cluster size for optional HDBSCAN."),
+    ] = 5,
+    limit: Annotated[
+        int | None,
+        typer.Option(help="Optional embedding-record limit for local experiments."),
+    ] = None,
+    movies_path: Annotated[
+        Path,
+        typer.Option(help="Path to data/processed/movies.json."),
+    ] = Path("data/processed/movies.json"),
+    profiles_path: Annotated[
+        Path,
+        typer.Option(help="Path to data/processed/profiles.json."),
+    ] = Path("data/processed/profiles.json"),
+    embeddings_path: Annotated[
+        Path,
+        typer.Option(help="Path to outputs/intermediate/embeddings.jsonl."),
+    ] = Path("outputs/intermediate/embeddings.jsonl"),
+    output_dir: Annotated[Path, typer.Option(help="Base outputs directory.")] = Path("outputs"),
+) -> None:
+    """Compare local clustering methods over existing full embedding vectors."""
+    try:
+        json_path, report_path = compare_clustering_methods_file(
+            methods=parse_methods(methods),
+            movies_path=movies_path,
+            profiles_path=profiles_path,
+            embeddings_path=embeddings_path,
+            output_dir=output_dir,
+            kmeans_k=kmeans_k,
+            agglomerative_k=agglomerative_k,
+            graph_neighbors=graph_neighbors,
+            min_cluster_size=min_cluster_size,
+            limit=limit,
+        )
+    except ClusteringMethodComparisonError as exc:
+        typer.secho(str(exc), fg=typer.colors.RED, err=True)
+        raise typer.Exit(code=1)
+    typer.echo(f"Wrote clustering method comparison JSON to {json_path}")
+    typer.echo(f"Wrote clustering method comparison report to {report_path}")
+
+
+@app.command()
+def estimate_labeling(
+    evidence_path: Annotated[
+        Path | None,
+        typer.Option(help="Optional path to precomputed cluster evidence JSON."),
+    ] = None,
+    embeddings_path: Annotated[
+        Path,
+        typer.Option(help="Path to outputs/intermediate/embeddings.jsonl."),
+    ] = Path("outputs/intermediate/embeddings.jsonl"),
+    movies_path: Annotated[
+        Path,
+        typer.Option(help="Path to data/processed/movies.json."),
+    ] = Path("data/processed/movies.json"),
+    profiles_path: Annotated[
+        Path,
+        typer.Option(help="Path to data/processed/profiles.json."),
+    ] = Path("data/processed/profiles.json"),
+    output_dir: Annotated[Path, typer.Option(help="Base outputs directory.")] = Path("outputs"),
+    model: Annotated[str | None, typer.Option(help="OpenAI label model override.")] = None,
+    k: Annotated[int, typer.Option(help="k-means cluster count to label.")] = 35,
+) -> None:
+    """Estimate Milestone 3 draft cluster-labeling cost without calling OpenAI."""
+    settings = load_settings(output_dir=output_dir)
+    resolved_model = model or settings.openai_label_model or DEFAULT_LABEL_MODEL
+    try:
+        estimate = estimate_labeling_file(
+            evidence_path=evidence_path,
+            embeddings_path=embeddings_path,
+            movies_path=movies_path,
+            profiles_path=profiles_path,
+            cache_path=settings.output_dir / "intermediate" / "cluster_label_cache.json",
+            model=resolved_model,
+            k=k,
+            openai_api_key=settings.openai_api_key,
+        )
+    except ClusterLabelError as exc:
+        typer.secho(str(exc), fg=typer.colors.RED, err=True)
+        raise typer.Exit(code=1)
+    typer.echo(f"Clusters available: {estimate.cluster_count}")
+    typer.echo(f"Cached labels reusable: {estimate.cached_count}")
+    typer.echo(f"Clusters to label: {estimate.clusters_to_label}")
+    typer.echo(f"Label model: {estimate.model}")
+    typer.echo(f"Estimated input tokens: {estimate.estimated_input_tokens}")
+    typer.echo(f"Estimated output tokens: {estimate.estimated_output_tokens}")
+    typer.echo(f"Estimated cost: ${estimate.estimated_cost_usd:.4f}")
+    typer.echo(f"OPENAI_API_KEY: {estimate.openai_api_key_status}")
+
+
+@app.command()
+def label_clusters(
+    method: Annotated[str, typer.Option(help="Clustering method to label.")] = "kmeans",
+    k: Annotated[int, typer.Option(help="k-means cluster count to label.")] = 35,
+    evidence_path: Annotated[
+        Path | None,
+        typer.Option(help="Optional path to precomputed cluster evidence JSON."),
+    ] = None,
+    embeddings_path: Annotated[
+        Path,
+        typer.Option(help="Path to outputs/intermediate/embeddings.jsonl."),
+    ] = Path("outputs/intermediate/embeddings.jsonl"),
+    movies_path: Annotated[
+        Path,
+        typer.Option(help="Path to data/processed/movies.json."),
+    ] = Path("data/processed/movies.json"),
+    profiles_path: Annotated[
+        Path,
+        typer.Option(help="Path to data/processed/profiles.json."),
+    ] = Path("data/processed/profiles.json"),
+    output_dir: Annotated[Path | None, typer.Option(help="Base outputs directory.")] = None,
+    model: Annotated[str | None, typer.Option(help="OpenAI label model override.")] = None,
+    batch_size: Annotated[int, typer.Option(help="Clusters per label prompt.")] = 5,
+) -> None:
+    """Generate draft human-reviewable microgenre labels for k-means clusters."""
+    settings = load_settings(output_dir=output_dir)
+    resolved_model = model or settings.openai_label_model or DEFAULT_LABEL_MODEL
+    try:
+        result = label_clusters_file(
+            api_key=settings.require_openai_api_key(),
+            evidence_path=evidence_path,
+            embeddings_path=embeddings_path,
+            movies_path=movies_path,
+            profiles_path=profiles_path,
+            output_dir=settings.output_dir,
+            model=resolved_model,
+            method=method,
+            k=k,
+            batch_size=batch_size,
+        )
+    except (MissingCredentialsError, ClusterLabelError) as exc:
+        typer.secho(str(exc), fg=typer.colors.RED, err=True)
+        raise typer.Exit(code=1)
+    typer.echo(f"Wrote cluster label candidates JSON to {result.json_path}")
+    typer.echo(f"Wrote cluster label candidates report to {result.report_path}")
+    typer.echo(f"Wrote human-editable labels JSON to {result.editable_json_path}")
+    typer.echo(f"Cached labels reused: {result.cached_reused_count}")
+    typer.echo(f"New labels generated: {result.new_label_count}")
+
+
+@app.command()
+def render_label_review(
+    candidates_path: Annotated[
+        Path,
+        typer.Option(help="Path to outputs/intermediate/cluster_label_candidates.json."),
+    ] = Path("outputs/intermediate/cluster_label_candidates.json"),
+    output_dir: Annotated[Path | None, typer.Option(help="Base outputs directory.")] = None,
+) -> None:
+    """Render the Milestone 3 human label-review worksheet."""
+    settings = load_settings(output_dir=output_dir)
+    try:
+        path = render_label_review_file(
+            candidates_path=candidates_path,
+            output_dir=settings.output_dir,
+        )
+    except ClusterLabelError as exc:
+        typer.secho(str(exc), fg=typer.colors.RED, err=True)
+        raise typer.Exit(code=1)
+    typer.echo(f"Wrote cluster label review to {path}")
+
+
+@app.command()
+def review_ablation(
+    variants: Annotated[
+        str,
+        typer.Option(help="Comma-separated variants: no_reviews,light_reviews,medium_reviews."),
+    ] = "no_reviews,light_reviews,medium_reviews",
+    k: Annotated[int, typer.Option(help="k-means cluster count.")] = 35,
+    limit: Annotated[int | None, typer.Option(help="Optional movie/profile limit.")] = 500,
+    movies_path: Annotated[
+        Path,
+        typer.Option(help="Path to data/processed/movies.json."),
+    ] = Path("data/processed/movies.json"),
+    output_dir: Annotated[Path | None, typer.Option(help="Base outputs directory.")] = None,
+    embedding_model: Annotated[
+        str | None,
+        typer.Option(help="OpenAI embedding model override."),
+    ] = None,
+    label_model: Annotated[str | None, typer.Option(help="OpenAI label model override.")] = None,
+    embedding_batch_size: Annotated[
+        int,
+        typer.Option(help="OpenAI embedding request batch size."),
+    ] = 64,
+    label_batch_size: Annotated[int, typer.Option(help="Clusters per label prompt.")] = 5,
+) -> None:
+    """Run the Milestone 3.25 review-weight ablation."""
+    settings = load_settings(output_dir=output_dir)
+    resolved_embedding_model = (
+        embedding_model or settings.openai_embedding_model or DEFAULT_EMBEDDING_MODEL
+    )
+    resolved_label_model = label_model or settings.openai_label_model or DEFAULT_LABEL_MODEL
+    try:
+        summary_path, report_path, summary = review_ablation_file(
+            variants=parse_review_variants(variants),
+            movies_path=movies_path,
+            output_dir=settings.output_dir,
+            global_embeddings_path=settings.output_dir / "intermediate" / "embeddings.jsonl",
+            global_label_cache_path=settings.output_dir / "intermediate" / "cluster_label_cache.json",
+            embedding_model=resolved_embedding_model,
+            label_model=resolved_label_model,
+            openai_api_key=settings.require_openai_api_key(),
+            k=k,
+            limit=limit,
+            embedding_batch_size=embedding_batch_size,
+            label_batch_size=label_batch_size,
+        )
+    except (MissingCredentialsError, ReviewAblationError) as exc:
+        typer.secho(str(exc), fg=typer.colors.RED, err=True)
+        raise typer.Exit(code=1)
+    typer.echo(f"Wrote review ablation summary to {summary_path}")
+    typer.echo(f"Wrote review ablation report to {report_path}")
+    typer.echo(f"Recommended variant: {summary.recommended_variant}")
+    typer.echo(f"Estimated live cost: ${summary.total_estimated_cost_usd:.4f}")
+
+
+@app.command()
+def scale_dataset(
+    target: Annotated[int, typer.Option(help="Target eligible movie count.")] = 2000,
+    since_year: Annotated[int, typer.Option(help="Earliest release year to include.")] = 1980,
+    min_votes: Annotated[int, typer.Option(help="Minimum TMDb vote count.")] = 100,
+    data_dir: Annotated[Path | None, typer.Option(help="Base data directory.")] = None,
+    output_dir: Annotated[Path | None, typer.Option(help="Base outputs directory.")] = None,
+    candidate_limit: Annotated[
+        int | None,
+        typer.Option(help="Optional discover candidate count before filtering."),
+    ] = None,
+    refresh: Annotated[bool, typer.Option(help="Ignore cached TMDb responses.")] = False,
+) -> None:
+    """Fetch and profile a scaled English-language TMDb dataset."""
+    settings = load_settings(data_dir=data_dir, output_dir=output_dir)
+    try:
+        with TMDbClient(
+            settings.tmdb_bearer_token,
+            cache_dir=settings.data_dir / "cache",
+        ) as client:
+            result = scale_dataset_file(
+                client,
+                target=target,
+                since_year=since_year,
+                min_votes=min_votes,
+                data_dir=settings.data_dir,
+                output_dir=settings.output_dir,
+                candidate_limit=candidate_limit,
+                refresh=refresh,
+            )
+    except (MissingCredentialsError, Milestone4Error) as exc:
+        typer.secho(str(exc), fg=typer.colors.RED, err=True)
+        raise typer.Exit(code=1)
+    typer.echo(f"Wrote scaled movies to {result.movies_path}")
+    typer.echo(f"Wrote light-review profiles to {result.profiles_path}")
+    typer.echo(f"Selected movies: {result.selected_count}")
+    typer.echo(f"TMDb details fetched: {result.detail_count}")
+
+
+@app.command()
+def build_hierarchy(
+    macro_k: Annotated[int, typer.Option(help="Macro region k-means cluster count.")] = 12,
+    neighborhood_k: Annotated[
+        int,
+        typer.Option(help="Neighborhood k-means cluster count."),
+    ] = 75,
+    micro_k: Annotated[int, typer.Option(help="Microcluster k-means cluster count.")] = 200,
+    movies_path: Annotated[
+        Path | None,
+        typer.Option(help="Path to data/processed/movies.json."),
+    ] = None,
+    profiles_path: Annotated[
+        Path | None,
+        typer.Option(help="Path to data/processed/profiles.json."),
+    ] = None,
+    embeddings_path: Annotated[
+        Path,
+        typer.Option(help="Path to outputs/intermediate/embeddings.jsonl."),
+    ] = Path("outputs/intermediate/embeddings.jsonl"),
+    output_dir: Annotated[Path | None, typer.Option(help="Base outputs directory.")] = None,
+    label_model: Annotated[str | None, typer.Option(help="OpenAI label model override.")] = None,
+    label_batch_size: Annotated[int, typer.Option(help="Clusters per label prompt.")] = 5,
+) -> None:
+    """Build Milestone 4 hierarchy layers, labels, neighbors, and projection."""
+    settings = load_settings(output_dir=output_dir)
+    resolved_movies_path = movies_path or settings.data_dir / "processed" / "movies.json"
+    resolved_profiles_path = profiles_path or settings.data_dir / "processed" / "profiles.json"
+    resolved_label_model = label_model or settings.openai_label_model or DEFAULT_LABEL_MODEL
+    try:
+        result = build_hierarchy_file(
+            movies_path=resolved_movies_path,
+            profiles_path=resolved_profiles_path,
+            embeddings_path=embeddings_path,
+            output_dir=settings.output_dir,
+            macro_k=macro_k,
+            neighborhood_k=neighborhood_k,
+            micro_k=micro_k,
+            label_model=resolved_label_model,
+            openai_api_key=settings.require_openai_api_key(),
+            label_batch_size=label_batch_size,
+        )
+    except (MissingCredentialsError, Milestone4Error) as exc:
+        typer.secho(str(exc), fg=typer.colors.RED, err=True)
+        raise typer.Exit(code=1)
+    typer.echo(f"Wrote hierarchy summary to {result.summary_path}")
+    typer.echo(f"Projection method: {result.projection_method}")
+    typer.echo(f"Labels generated: {result.labels_generated_count}")
+    typer.echo(f"Estimated label cost: ${result.labels_total_estimated_cost_usd:.4f}")
+
+
+@app.command()
+def export_atlas_data(
+    movies_path: Annotated[
+        Path | None,
+        typer.Option(help="Path to data/processed/movies.json."),
+    ] = None,
+    hierarchy_dir: Annotated[
+        Path | None,
+        typer.Option(help="Path to outputs/intermediate/hierarchy."),
+    ] = None,
+    output_dir: Annotated[Path | None, typer.Option(help="Base outputs directory.")] = None,
+) -> None:
+    """Export sanitized static JSON for the future Astro frontend."""
+    settings = load_settings(output_dir=output_dir)
+    resolved_movies_path = movies_path or settings.data_dir / "processed" / "movies.json"
+    resolved_hierarchy_dir = hierarchy_dir or settings.output_dir / "intermediate" / "hierarchy"
+    try:
+        result = export_atlas_data_file(
+            movies_path=resolved_movies_path,
+            hierarchy_dir=resolved_hierarchy_dir,
+            output_dir=settings.output_dir,
+        )
+    except (FileNotFoundError, Milestone4Error) as exc:
+        typer.secho(str(exc), fg=typer.colors.RED, err=True)
+        raise typer.Exit(code=1)
+    typer.echo(f"Wrote public export manifest to {result.manifest_path}")
+    typer.echo(f"Wrote public export files to {result.export_dir}")
+
+
+@app.command()
+def milestone_4(
+    target: Annotated[int, typer.Option(help="Target eligible movie count.")] = 2000,
+    since_year: Annotated[int, typer.Option(help="Earliest release year to include.")] = 1980,
+    min_votes: Annotated[int, typer.Option(help="Minimum TMDb vote count.")] = 100,
+    macro_k: Annotated[int, typer.Option(help="Macro region cluster count.")] = 12,
+    neighborhood_k: Annotated[int, typer.Option(help="Neighborhood cluster count.")] = 75,
+    micro_k: Annotated[int, typer.Option(help="Microcluster count.")] = 200,
+    data_dir: Annotated[Path | None, typer.Option(help="Base data directory.")] = None,
+    output_dir: Annotated[Path | None, typer.Option(help="Base outputs directory.")] = None,
+    embedding_model: Annotated[
+        str | None,
+        typer.Option(help="OpenAI embedding model override."),
+    ] = None,
+    label_model: Annotated[str | None, typer.Option(help="OpenAI label model override.")] = None,
+    embedding_batch_size: Annotated[
+        int,
+        typer.Option(help="OpenAI embedding request batch size."),
+    ] = 64,
+    label_batch_size: Annotated[int, typer.Option(help="Clusters per label prompt.")] = 5,
+    refresh: Annotated[bool, typer.Option(help="Ignore cached TMDb responses.")] = False,
+) -> None:
+    """Run the full Milestone 4 scaled atlas pipeline."""
+    settings = load_settings(data_dir=data_dir, output_dir=output_dir)
+    resolved_embedding_model = (
+        embedding_model or settings.openai_embedding_model or DEFAULT_EMBEDDING_MODEL
+    )
+    resolved_label_model = label_model or settings.openai_label_model or DEFAULT_LABEL_MODEL
+    try:
+        with TMDbClient(
+            settings.tmdb_bearer_token,
+            cache_dir=settings.data_dir / "cache",
+        ) as client:
+            result = milestone_4_file(
+                client,
+                target=target,
+                since_year=since_year,
+                min_votes=min_votes,
+                data_dir=settings.data_dir,
+                output_dir=settings.output_dir,
+                embedding_model=resolved_embedding_model,
+                label_model=resolved_label_model,
+                openai_api_key=settings.require_openai_api_key(),
+                macro_k=macro_k,
+                neighborhood_k=neighborhood_k,
+                micro_k=micro_k,
+                embedding_batch_size=embedding_batch_size,
+                label_batch_size=label_batch_size,
+                refresh=refresh,
+            )
+    except (MissingCredentialsError, Milestone4Error) as exc:
+        typer.secho(str(exc), fg=typer.colors.RED, err=True)
+        raise typer.Exit(code=1)
+    typer.echo(f"Wrote Milestone 4 report to {result.report_path}")
+    typer.echo(f"Wrote public export to {result.export.export_dir}")
+    typer.echo(f"Movies exported: {result.scale.selected_count}")
+    typer.echo(f"Embedding cache reused/new: {result.embedding.cached_reused_count}/{result.embedding.new_embedding_count}")
+    typer.echo(f"Labels generated: {result.hierarchy.labels_generated_count}")
 
 
 @app.command()

@@ -1,0 +1,35 @@
+{
+  "files": [
+    "labels.json",
+    "macro_clusters.json",
+    "manifest.json",
+    "micro_clusters.json",
+    "movies.json",
+    "neighborhood_clusters.json",
+    "neighbors.json",
+    "points.json"
+  ],
+  "generated_at": "2026-05-30T19:14:21.418914+00:00",
+  "layers": {
+    "macro": {
+      "cluster_count": 12,
+      "labeled": true
+    },
+    "micro": {
+      "cluster_count": 200,
+      "labeled": true
+    },
+    "neighborhood": {
+      "cluster_count": 75,
+      "labeled": true
+    }
+  },
+  "movie_count": 2000,
+  "privacy": {
+    "contains_api_keys": false,
+    "contains_embeddings": false,
+    "contains_raw_reviews": false
+  },
+  "project": "The Film Atlas",
+  "projection_method": "umap"
+}
