@@ -1,273 +1,1518 @@
 [
   {
-    "title": "Lee Cronin's The Mummy",
-    "tmdb_id": 1304313,
+    "title": "Back to the Future",
+    "tmdb_id": 105,
     "top_terms": [
-      "horror",
-      "mummy",
-      "journalist",
+      "marty",
+      "car race",
+      "time",
+      "inventor",
+      "parents",
+      "race"
+    ],
+    "x": 0.20340949820492552,
+    "y": -0.015174481970881977,
+    "year": 1985
+  },
+  {
+    "title": "The Shining",
+    "tmdb_id": 694,
+    "top_terms": [
+      "psychological",
+      "hotel",
+      "new year",
+      "twins",
       "supernatural",
-      "turns living",
-      "tomb missing"
+      "writer"
     ],
-    "x": 0.1308677132139378,
-    "y": -0.13575472899689606,
-    "year": 2026
+    "x": 0.18645967210499456,
+    "y": -0.16003237954051164,
+    "year": 1980
   },
   {
-    "title": "Project Hail Mary",
-    "tmdb_id": 687163,
+    "title": "The Empire Strikes Back",
+    "tmdb_id": 1891,
     "top_terms": [
+      "luke",
+      "rebel",
+      "jedi",
       "space",
-      "spaceship",
-      "science teacher",
-      "sun",
+      "capture",
+      "empire"
+    ],
+    "x": 0.15589067419895306,
+    "y": 0.06268129461439315,
+    "year": 1980
+  },
+  {
+    "title": "Return of the Jedi",
+    "tmdb_id": 1892,
+    "top_terms": [
+      "emperor",
+      "luke",
+      "luke skywalker",
+      "skywalker",
+      "rebel",
+      "space"
+    ],
+    "x": 0.1782301726456174,
+    "y": 0.05588493475748585,
+    "year": 1983
+  },
+  {
+    "title": "Blade Runner",
+    "tmdb_id": 78,
+    "top_terms": [
+      "blade runner",
+      "blade",
+      "runner",
+      "noir",
+      "dystopian",
+      "los angeles"
+    ],
+    "x": 0.18102892098769013,
+    "y": -0.07165153127715626,
+    "year": 1982
+  },
+  {
+    "title": "The Terminator",
+    "tmdb_id": 218,
+    "top_terms": [
+      "terminator",
+      "sarah",
+      "cyborg",
+      "machine",
+      "just",
+      "future"
+    ],
+    "x": 0.23284850139907268,
+    "y": -0.006291665131845038,
+    "year": 1984
+  },
+  {
+    "title": "Back to the Future Part II",
+    "tmdb_id": 165,
+    "top_terms": [
+      "marty",
+      "future ii",
+      "car",
+      "doc",
+      "future",
+      "forward"
+    ],
+    "x": 0.16737055976211496,
+    "y": -0.0024058262812265358,
+    "year": 1989
+  },
+  {
+    "title": "Raiders of the Lost Ark",
+    "tmdb_id": 85,
+    "top_terms": [
+      "ark",
+      "archaeologist",
+      "nazi",
+      "treasure",
+      "lost",
+      "range"
+    ],
+    "x": 0.11441740059626791,
+    "y": -0.002604360735292434,
+    "year": 1981
+  },
+  {
+    "title": "Scarface",
+    "tmdb_id": 111,
+    "top_terms": [
+      "drug",
+      "miami",
+      "cocaine",
+      "drug lord",
+      "tony",
+      "rise"
+    ],
+    "x": 0.1338831115055415,
+    "y": -0.08646019080237709,
+    "year": 1983
+  },
+  {
+    "title": "Dead Poets Society",
+    "tmdb_id": 207,
+    "top_terms": [
+      "new england",
+      "school",
       "teacher",
-      "mission"
+      "rock",
+      "society",
+      "england"
     ],
-    "x": 0.17708273707876815,
-    "y": -0.07701376214252807,
-    "year": 2026
+    "x": 0.15088685998412382,
+    "y": -0.1083264313074663,
+    "year": 1989
   },
   {
-    "title": "The Super Mario Galaxy Movie",
-    "tmdb_id": 1226863,
+    "title": "Die Hard",
+    "tmdb_id": 562,
     "top_terms": [
-      "galaxy",
-      "mario",
-      "space",
-      "bowser",
-      "galaxy movie",
-      "mario galaxy"
-    ],
-    "x": 0.26941075339168435,
-    "y": -0.1692577496496223,
-    "year": 2026
-  },
-  {
-    "title": "Swapped",
-    "tmdb_id": 1007757,
-    "top_terms": [
-      "bird",
-      "valley",
-      "forest",
-      "adventure",
-      "animation",
-      "wolf buddy"
-    ],
-    "x": 0.15235661863586947,
-    "y": -0.13289818007784632,
-    "year": 2026
-  },
-  {
-    "title": "Mortal Kombat",
-    "tmdb_id": 460465,
-    "top_terms": [
-      "hand",
-      "fighter",
-      "universe",
+      "hostages",
+      "officer",
+      "christmas",
       "high",
-      "seeks trains",
-      "sub zero"
+      "duty cop",
+      "christmas party"
     ],
-    "x": 0.17558217840775384,
-    "y": -0.011886106258883693,
-    "year": 2021
+    "x": 0.2190184210542913,
+    "y": -0.10889783558764016,
+    "year": 1988
   },
   {
-    "title": "The Devil Wears Prada",
-    "tmdb_id": 350,
+    "title": "E.T. the Extra-Terrestrial",
+    "tmdb_id": 601,
     "top_terms": [
-      "fashion",
-      "editor chief",
-      "assistant",
-      "editor",
-      "chief",
-      "magazine"
+      "elliott",
+      "extra terrestrial",
+      "terrestrial",
+      "extra",
+      "alien",
+      "watched"
     ],
-    "x": 0.19870004087802756,
-    "y": -0.009626568700827006,
-    "year": 2006
+    "x": 0.1891988938318466,
+    "y": 0.029637997556916085,
+    "year": 1982
   },
   {
-    "title": "Hoppers",
-    "tmdb_id": 1327819,
+    "title": "Full Metal Jacket",
+    "tmdb_id": 600,
     "top_terms": [
-      "animal",
-      "animals",
-      "human",
-      "consciousness",
-      "robotic",
-      "animation"
+      "war",
+      "vietnam",
+      "half",
+      "recruits",
+      "vietnam war",
+      "camp"
     ],
-    "x": 0.18639106819944828,
-    "y": -0.10590120561140436,
-    "year": 2026
+    "x": 0.14298473225529257,
+    "y": -0.049276385767989955,
+    "year": 1987
   },
   {
-    "title": "Apex",
-    "tmdb_id": 1318447,
+    "title": "Indiana Jones and the Last Crusade",
+    "tmdb_id": 89,
     "top_terms": [
-      "grieving woman",
-      "grieving",
-      "interesting",
-      "film",
-      "woman",
-      "norway"
+      "jones",
+      "father",
+      "grail",
+      "holy grail",
+      "indiana jones",
+      "indiana"
     ],
-    "x": 0.11060503112694545,
-    "y": -0.06765513608545784,
-    "year": 2026
+    "x": 0.1210564506032311,
+    "y": -0.021944388184462975,
+    "year": 1989
   },
   {
-    "title": "Avatar: Fire and Ash",
-    "tmdb_id": 83533,
+    "title": "Aliens",
+    "tmdb_id": 679,
     "top_terms": [
-      "ash",
-      "jake",
-      "avatar ash",
-      "avatar",
-      "pandora",
-      "tribe"
+      "space",
+      "sci fi",
+      "sci",
+      "fi",
+      "desolate",
+      "colony"
     ],
-    "x": 0.1930975066121044,
-    "y": -0.09902179412617121,
-    "year": 2025
+    "x": 0.23071299792762195,
+    "y": 0.07871064121952269,
+    "year": 1986
   },
   {
-    "title": "Nymphomaniac: Vol. II",
-    "tmdb_id": 249397,
+    "title": "Indiana Jones and the Temple of Doom",
+    "tmdb_id": 87,
     "top_terms": [
-      "nymphomaniac",
-      "therapy",
-      "pleasure",
-      "sexually",
-      "sex",
-      "sexual"
+      "indiana",
+      "indiana jones",
+      "bridge",
+      "jones",
+      "india",
+      "treasure"
     ],
-    "x": 0.09364912987453897,
-    "y": -0.08322486166099292,
-    "year": 2013
+    "x": 0.11421415697526811,
+    "y": -0.031183379173089464,
+    "year": 1984
   },
   {
-    "title": "Michael",
-    "tmdb_id": 936075,
+    "title": "Ghostbusters",
+    "tmdb_id": 620,
     "top_terms": [
-      "music",
-      "jackson",
-      "music drama",
-      "singer",
-      "fame",
-      "drama music"
+      "ghostbusters",
+      "business",
+      "parapsychologists",
+      "supernatural",
+      "paranormal",
+      "ghost"
     ],
-    "x": 0.1390578731638259,
-    "y": -0.094942573810084,
-    "year": 2026
+    "x": 0.1700531798506432,
+    "y": -0.057748041773291445,
+    "year": 1984
   },
   {
-    "title": "The Matrix",
-    "tmdb_id": 603,
+    "title": "Top Gun",
+    "tmdb_id": 744,
     "top_terms": [
-      "matrix",
-      "hacker",
-      "allegory",
-      "reality",
-      "world",
+      "pilot",
+      "pete",
+      "training",
+      "gun",
+      "em",
+      "fighter"
+    ],
+    "x": 0.1497836274512386,
+    "y": -0.05840866173319349,
+    "year": 1986
+  },
+  {
+    "title": "Predator",
+    "tmdb_id": 106,
+    "top_terms": [
+      "predator",
+      "central",
+      "alien",
+      "favourite movie",
+      "commandos",
+      "invisible"
+    ],
+    "x": 0.18451118998350047,
+    "y": 0.05357120743808411,
+    "year": 1987
+  },
+  {
+    "title": "Batman",
+    "tmdb_id": 268,
+    "top_terms": [
+      "batman",
+      "crime",
+      "gotham",
+      "criminal",
+      "identity",
+      "identity double"
+    ],
+    "x": 0.21400912071707393,
+    "y": 0.026718877852878027,
+    "year": 1989
+  },
+  {
+    "title": "The Breakfast Club",
+    "tmdb_id": 2108,
+    "top_terms": [
+      "detention",
+      "school",
+      "princess",
+      "high school",
+      "high",
+      "club overview"
+    ],
+    "x": 0.15399440164689526,
+    "y": -0.09276718723202253,
+    "year": 1985
+  },
+  {
+    "title": "Beetlejuice",
+    "tmdb_id": 4011,
+    "top_terms": [
+      "afterlife",
+      "couple",
+      "gothic",
+      "dead",
+      "giant snake",
+      "new england"
+    ],
+    "x": 0.15844298574935844,
+    "y": -0.11826712414920451,
+    "year": 1988
+  },
+  {
+    "title": "The Little Mermaid",
+    "tmdb_id": 10144,
+    "top_terms": [
+      "mermaid",
+      "sea",
+      "princess",
+      "witch",
+      "prince",
+      "daughter"
+    ],
+    "x": 0.1846072444804032,
+    "y": -0.11238809530994605,
+    "year": 1989
+  },
+  {
+    "title": "The Thing",
+    "tmdb_id": 1091,
+    "top_terms": [
+      "alien",
+      "shape shifting",
+      "research",
+      "shifting",
+      "shape",
+      "helicopter"
+    ],
+    "x": 0.18934893414091544,
+    "y": 0.03817166016521683,
+    "year": 1982
+  },
+  {
+    "title": "Rain Man",
+    "tmdb_id": 380,
+    "top_terms": [
+      "raymond",
+      "charlie",
+      "rain man",
+      "cincinnati",
+      "charlie babbitt",
+      "rain"
+    ],
+    "x": 0.13209210947886318,
+    "y": -0.0420180927444453,
+    "year": 1988
+  },
+  {
+    "title": "Gremlins",
+    "tmdb_id": 927,
+    "top_terms": [
+      "small",
+      "pet",
+      "overall",
+      "horror",
+      "small town",
+      "animal"
+    ],
+    "x": 0.15767293348346237,
+    "y": -0.11252497845061774,
+    "year": 1984
+  },
+  {
+    "title": "First Blood",
+    "tmdb_id": 1368,
+    "top_terms": [
+      "vietnam",
+      "rambo",
+      "police",
+      "blood",
+      "war",
+      "gun"
+    ],
+    "x": 0.17441705467382698,
+    "y": -0.05437767973303827,
+    "year": 1982
+  },
+  {
+    "title": "Stand by Me",
+    "tmdb_id": 235,
+    "top_terms": [
+      "boys",
+      "coin",
+      "told",
+      "lives",
+      "ve",
       "story"
     ],
-    "x": 0.18401253262514117,
-    "y": -0.03275624742956856,
-    "year": 1999
+    "x": 0.1727782104981284,
+    "y": -0.11236680128965656,
+    "year": 1986
   },
   {
-    "title": "GOAT",
-    "tmdb_id": 1297842,
+    "title": "Dirty Dancing",
+    "tmdb_id": 88,
     "top_terms": [
-      "goat",
-      "basketball",
-      "sports",
-      "big dreams",
-      "roarball",
-      "animals"
+      "dancing",
+      "summer",
+      "teenage",
+      "romance",
+      "class differences",
+      "family holiday"
     ],
-    "x": 0.14867993657409012,
-    "y": -0.12967771002600095,
-    "year": 2026
+    "x": 0.14798004127889686,
+    "y": -0.11571619971617204,
+    "year": 1987
   },
   {
-    "title": "Damage",
-    "tmdb_id": 11012,
+    "title": "The Goonies",
+    "tmdb_id": 9340,
     "top_terms": [
-      "politician",
-      "relationship",
-      "son",
-      "tory politician",
-      "obsessed",
-      "obsessed son"
+      "walsh",
+      "treasure",
+      "pirate",
+      "kids",
+      "quest",
+      "friends"
     ],
-    "x": 0.17567361714024593,
-    "y": -0.10320110872167858,
-    "year": 1992
+    "x": 0.10865738719686635,
+    "y": -0.05990000694323739,
+    "year": 1985
   },
   {
-    "title": "After We Fell",
-    "tmdb_id": 744275,
+    "title": "Who Framed Roger Rabbit",
+    "tmdb_id": 856,
     "top_terms": [
-      "tessa",
-      "family",
-      "propelled",
-      "revelations family",
-      "secret keeping",
-      "unglued"
+      "roger",
+      "rabbit",
+      "star",
+      "cartoon",
+      "detective",
+      "innocence"
     ],
-    "x": 0.1967988656299509,
-    "y": -0.14366177510769523,
-    "year": 2021
+    "x": 0.1675962756623733,
+    "y": -0.1400884233236608,
+    "year": 1988
   },
   {
-    "title": "Zootopia 2",
-    "tmdb_id": 1084242,
+    "title": "The Untouchables",
+    "tmdb_id": 117,
     "top_terms": [
-      "zootopia",
-      "judy",
-      "nick",
+      "prohibition",
+      "gangster",
+      "agent",
+      "era gangster",
+      "al",
+      "prohibition era"
+    ],
+    "x": 0.11934569004973075,
+    "y": -0.06201263932150204,
+    "year": 1987
+  },
+  {
+    "title": "Once Upon a Time in America",
+    "tmdb_id": 311,
+    "top_terms": [
+      "prohibition",
+      "prohibition era",
+      "jewish",
+      "era",
+      "gangster",
+      "telling story"
+    ],
+    "x": 0.17842463803570474,
+    "y": -0.1041706361439538,
+    "year": 1984
+  },
+  {
+    "title": "RoboCop",
+    "tmdb_id": 5548,
+    "top_terms": [
+      "robocop",
+      "evil corporation",
+      "corporation",
+      "detroit",
+      "company",
+      "crime"
+    ],
+    "x": 0.15580203311930754,
+    "y": -0.02914491584732151,
+    "year": 1987
+  },
+  {
+    "title": "A Nightmare on Elm Street",
+    "tmdb_id": 377,
+    "top_terms": [
+      "nightmare",
+      "elm",
+      "elm street",
+      "horror",
+      "dream",
+      "dreams"
+    ],
+    "x": 0.13589103559760682,
+    "y": -0.11221765465735917,
+    "year": 1984
+  },
+  {
+    "title": "Ferris Bueller's Day Off",
+    "tmdb_id": 9377,
+    "top_terms": [
+      "school",
+      "day",
+      "chicago",
+      "high school",
+      "high",
+      "fantasy sequence"
+    ],
+    "x": 0.15803702337312103,
+    "y": -0.06568313231607883,
+    "year": 1986
+  },
+  {
+    "title": "Platoon",
+    "tmdb_id": 792,
+    "top_terms": [
+      "platoon",
+      "war",
+      "vietnam",
+      "soldier",
+      "credit",
+      "marijuana"
+    ],
+    "x": 0.14594709753559978,
+    "y": -0.04729122226824778,
+    "year": 1986
+  },
+  {
+    "title": "The Princess Bride",
+    "tmdb_id": 2493,
+    "top_terms": [
+      "fairy",
+      "fairy tale",
+      "princess",
+      "tale",
+      "story",
+      "fictitious country"
+    ],
+    "x": 0.20373675886585538,
+    "y": -0.11996783907915547,
+    "year": 1987
+  },
+  {
+    "title": "Airplane!",
+    "tmdb_id": 813,
+    "top_terms": [
+      "humor",
+      "food poisoning",
+      "poisoning",
+      "alcohol",
+      "food",
+      "airplane"
+    ],
+    "x": 0.12164724560840229,
+    "y": -0.07548781901040166,
+    "year": 1980
+  },
+  {
+    "title": "Lethal Weapon",
+    "tmdb_id": 941,
+    "top_terms": [
+      "detective",
       "cop",
-      "snake",
-      "case"
+      "buddy",
+      "ex",
+      "police",
+      "cops"
     ],
-    "x": 0.17660819074089504,
-    "y": -0.13660105856742014,
-    "year": 2025
+    "x": 0.17850191556451916,
+    "y": -0.11335540089562939,
+    "year": 1987
   },
   {
-    "title": "Ready or Not: Here I Come",
-    "tmdb_id": 1266127,
+    "title": "The Fly",
+    "tmdb_id": 9426,
     "top_terms": [
-      "sister",
-      "grace",
-      "satanic",
-      "game",
-      "estranged sister",
-      "alive"
+      "fly",
+      "slowly",
+      "laboratory",
+      "horror",
+      "animal",
+      "monster"
     ],
-    "x": 0.15313489452717835,
-    "y": -0.09580982039132134,
-    "year": 2026
+    "x": 0.1301433857409367,
+    "y": -0.028081074313000807,
+    "year": 1986
   },
   {
-    "title": "Interstellar",
-    "tmdb_id": 157336,
+    "title": "Ghostbusters II",
+    "tmdb_id": 2978,
+    "top_terms": [
+      "ghostbusters",
+      "slime",
+      "river",
+      "paranormal",
+      "supernatural",
+      "fighting supernatural"
+    ],
+    "x": 0.14170097088414482,
+    "y": -0.08117334647830221,
+    "year": 1989
+  },
+  {
+    "title": "Rocky IV",
+    "tmdb_id": 1374,
+    "top_terms": [
+      "rocky",
+      "rocky movie",
+      "rocky iv",
+      "iv",
+      "soviet union",
+      "soviet"
+    ],
+    "x": 0.12478465368638167,
+    "y": -0.04854923083833687,
+    "year": 1985
+  },
+  {
+    "title": "Raging Bull",
+    "tmdb_id": 1578,
+    "top_terms": [
+      "taxi driver",
+      "taxi",
+      "driver",
+      "streets",
+      "boxer",
+      "mean"
+    ],
+    "x": 0.1462587778121222,
+    "y": -0.05837925149200526,
+    "year": 1980
+  },
+  {
+    "title": "Amadeus",
+    "tmdb_id": 279,
+    "top_terms": [
+      "austria",
+      "composer",
+      "mozart",
+      "salieri",
+      "talented young",
+      "envy"
+    ],
+    "x": 0.07765245646632747,
+    "y": -0.05135237172606367,
+    "year": 1984
+  },
+  {
+    "title": "Coming to America",
+    "tmdb_id": 9602,
+    "top_terms": [
+      "african",
+      "new",
+      "prince",
+      "rich",
+      "new york",
+      "york"
+    ],
+    "x": 0.20353315502221625,
+    "y": -0.07169905126791654,
+    "year": 1988
+  },
+  {
+    "title": "The Karate Kid",
+    "tmdb_id": 1885,
+    "top_terms": [
+      "karate",
+      "daniel",
+      "martial arts",
+      "martial",
+      "arts",
+      "kid"
+    ],
+    "x": 0.15279385214473398,
+    "y": -0.08947187953241728,
+    "year": 1984
+  },
+  {
+    "title": "Beverly Hills Cop",
+    "tmdb_id": 90,
+    "top_terms": [
+      "cop",
+      "beverly",
+      "beverly hills",
+      "hills",
+      "detroit",
+      "cop axel"
+    ],
+    "x": 0.11585293274046735,
+    "y": -0.11324219706337665,
+    "year": 1984
+  },
+  {
+    "title": "When Harry Met Sally...",
+    "tmdb_id": 639,
+    "top_terms": [
+      "harry",
+      "sally",
+      "friendship",
+      "friends",
+      "gets way",
+      "succumbing"
+    ],
+    "x": 0.1623227107951688,
+    "y": -0.1203169343613779,
+    "year": 1989
+  },
+  {
+    "title": "The Blues Brothers",
+    "tmdb_id": 525,
+    "top_terms": [
+      "blues",
+      "music",
+      "elwood",
+      "jake",
+      "brothers",
+      "prison"
+    ],
+    "x": 0.10144591952873885,
+    "y": -0.06170359691161448,
+    "year": 1980
+  },
+  {
+    "title": "The Naked Gun: From the Files of Police Squad!",
+    "tmdb_id": 37136,
+    "top_terms": [
+      "police",
+      "comedy",
+      "illegal drugs",
+      "files",
+      "funniest",
+      "laughs"
+    ],
+    "x": 0.16671598942135382,
+    "y": -0.10612897483380261,
+    "year": 1988
+  },
+  {
+    "title": "Rocky III",
+    "tmdb_id": 1371,
+    "top_terms": [
+      "rocky",
+      "powerful",
+      "comeback",
+      "rocky balboa",
+      "contains spoilers",
+      "apollo"
+    ],
+    "x": 0.11957775847075634,
+    "y": -0.0367761205606185,
+    "year": 1982
+  },
+  {
+    "title": "The Evil Dead",
+    "tmdb_id": 764,
+    "top_terms": [
+      "cabin",
+      "dead",
+      "evil dead",
+      "book dead",
+      "students",
+      "getaway"
+    ],
+    "x": 0.10306356829858566,
+    "y": -0.0839017873306593,
+    "year": 1981
+  },
+  {
+    "title": "Rambo: First Blood Part II",
+    "tmdb_id": 1369,
+    "top_terms": [
+      "vietnam",
+      "rambo",
+      "prisoner",
+      "liberation",
+      "torture",
+      "war"
+    ],
+    "x": 0.1435844419569826,
+    "y": -0.021764711952262386,
+    "year": 1985
+  },
+  {
+    "title": "Mad Max 2",
+    "tmdb_id": 8810,
+    "top_terms": [
+      "gasoline",
+      "oil",
+      "max",
+      "post",
+      "gang",
+      "community"
+    ],
+    "x": 0.16052167748605128,
+    "y": -0.010197208175961139,
+    "year": 1981
+  },
+  {
+    "title": "Big",
+    "tmdb_id": 2280,
+    "top_terms": [
+      "machine",
+      "grown",
+      "wish",
+      "toy",
+      "job",
+      "body"
+    ],
+    "x": 0.19794254954110008,
+    "y": -0.10545455541061649,
+    "year": 1988
+  },
+  {
+    "title": "The Elephant Man",
+    "tmdb_id": 1955,
+    "top_terms": [
+      "freak",
+      "merrick",
+      "physical",
+      "elephant man",
+      "social",
+      "london"
+    ],
+    "x": 0.13059843544687127,
+    "y": -0.07307515425333751,
+    "year": 1980
+  },
+  {
+    "title": "Blue Velvet",
+    "tmdb_id": 793,
+    "top_terms": [
+      "ear",
+      "nightclub",
+      "want",
+      "severed",
+      "overview discovery",
+      "hurt"
+    ],
+    "x": 0.14632786161013409,
+    "y": -0.14080432658362413,
+    "year": 1986
+  },
+  {
+    "title": "Lethal Weapon 2",
+    "tmdb_id": 942,
+    "top_terms": [
+      "riggs",
+      "riggs murtaugh",
+      "immunity",
+      "murtaugh",
+      "cop",
+      "trail"
+    ],
+    "x": 0.14168291016011667,
+    "y": -0.07517106214825517,
+    "year": 1989
+  },
+  {
+    "title": "Brazil",
+    "tmdb_id": 68,
+    "top_terms": [
+      "great",
+      "sci fi",
+      "sci",
+      "fi",
+      "day",
+      "identities"
+    ],
+    "x": 0.19635893384347156,
+    "y": -0.04057564826201794,
+    "year": 1985
+  },
+  {
+    "title": "Trading Places",
+    "tmdb_id": 1621,
+    "top_terms": [
+      "rags",
+      "riches",
+      "christmas",
+      "new year",
+      "rich",
+      "eve"
+    ],
+    "x": 0.11626178205135654,
+    "y": -0.09227617738948485,
+    "year": 1983
+  },
+  {
+    "title": "Escape from New York",
+    "tmdb_id": 1103,
+    "top_terms": [
+      "prisoners",
+      "president",
+      "new york",
+      "york",
+      "hero",
+      "escape"
+    ],
+    "x": 0.25248929810113335,
+    "y": -0.02295739763028177,
+    "year": 1981
+  },
+  {
+    "title": "Evil Dead II",
+    "tmdb_id": 765,
+    "top_terms": [
+      "dead",
+      "evil dead",
+      "recording",
+      "evil",
+      "book dead",
+      "cabin"
+    ],
+    "x": 0.12838019418757843,
+    "y": -0.07880076489330042,
+    "year": 1987
+  },
+  {
+    "title": "Rambo III",
+    "tmdb_id": 1370,
+    "top_terms": [
+      "rambo",
+      "afghanistan",
+      "trautman",
+      "col trautman",
+      "thailand",
+      "col"
+    ],
+    "x": 0.08549917615367819,
+    "y": 0.003378168703137596,
+    "year": 1988
+  },
+  {
+    "title": "The Fox and the Hound",
+    "tmdb_id": 10948,
+    "top_terms": [
+      "fox",
+      "hound",
+      "hunting",
+      "dog",
+      "named",
+      "friendship"
+    ],
+    "x": 0.14472114972730793,
+    "y": -0.11073111927293959,
+    "year": 1981
+  },
+  {
+    "title": "They Live",
+    "tmdb_id": 8337,
+    "top_terms": [
+      "sunglasses",
+      "aliens",
+      "unique",
+      "alien",
+      "gaining",
+      "dystopia villainess"
+    ],
+    "x": 0.18510881071506446,
+    "y": -0.014350308938451057,
+    "year": 1988
+  },
+  {
+    "title": "The Abyss",
+    "tmdb_id": 2756,
+    "top_terms": [
+      "submarine",
+      "sea",
+      "nuclear",
+      "scuba",
+      "oil",
+      "ocean"
+    ],
+    "x": 0.13942695526875898,
+    "y": 0.02002007447500559,
+    "year": 1989
+  },
+  {
+    "title": "Dune",
+    "tmdb_id": 841,
+    "top_terms": [
+      "spice",
+      "dune",
+      "space",
+      "messiah",
+      "prophecy",
+      "desert"
+    ],
+    "x": 0.19582216484148496,
+    "y": 0.04890168375555939,
+    "year": 1984
+  },
+  {
+    "title": "Spaceballs",
+    "tmdb_id": 957,
     "top_terms": [
       "space",
-      "time",
-      "travel",
-      "interstellar",
-      "wormhole",
-      "space travel"
+      "star",
+      "lone",
+      "star wars",
+      "wars",
+      "satire"
     ],
-    "x": 0.2076774217857592,
-    "y": -0.07790578211357876,
-    "year": 2014
+    "x": 0.19083897588803525,
+    "y": 0.06750171759374878,
+    "year": 1987
+  },
+  {
+    "title": "Friday the 13th",
+    "tmdb_id": 4488,
+    "top_terms": [
+      "camp",
+      "summer",
+      "drowning",
+      "friday",
+      "summer camp",
+      "13th"
+    ],
+    "x": 0.09704811665844491,
+    "y": -0.06548582664421027,
+    "year": 1980
+  },
+  {
+    "title": "Child's Play",
+    "tmdb_id": 10585,
+    "top_terms": [
+      "doll",
+      "killer",
+      "mother",
+      "serial killer",
+      "serial",
+      "toy"
+    ],
+    "x": 0.13107208870596848,
+    "y": -0.1023116287409278,
+    "year": 1988
+  },
+  {
+    "title": "Big Trouble in Little China",
+    "tmdb_id": 6978,
+    "top_terms": [
+      "truck",
+      "driver",
+      "green",
+      "movie",
+      "eyed",
+      "return human"
+    ],
+    "x": 0.18515364663087053,
+    "y": -0.057427119003947195,
+    "year": 1986
+  },
+  {
+    "title": "Honey, I Shrunk the Kids",
+    "tmdb_id": 9354,
+    "top_terms": [
+      "neighbor",
+      "teens",
+      "father",
+      "overview scientist",
+      "special effects",
+      "practical"
+    ],
+    "x": 0.15678361323851173,
+    "y": -0.04093221549630957,
+    "year": 1989
+  },
+  {
+    "title": "Poltergeist",
+    "tmdb_id": 609,
+    "top_terms": [
+      "haunted",
+      "paranormal",
+      "old",
+      "frightened ominous",
+      "foreboding frightened",
+      "mom"
+    ],
+    "x": 0.14426238186159862,
+    "y": -0.10350787493775605,
+    "year": 1982
+  },
+  {
+    "title": "The Name of the Rose",
+    "tmdb_id": 192,
+    "top_terms": [
+      "priest thing",
+      "sherlock holmes",
+      "holmes",
+      "medieval",
+      "monk",
+      "sherlock"
+    ],
+    "x": 0.12225692813663529,
+    "y": -0.08706437935436012,
+    "year": 1986
+  },
+  {
+    "title": "Mad Max Beyond Thunderdome",
+    "tmdb_id": 9355,
+    "top_terms": [
+      "mad max",
+      "max",
+      "mad",
+      "desert",
+      "post",
+      "best"
+    ],
+    "x": 0.17645192414067296,
+    "y": 0.02621230414288316,
+    "year": 1985
+  },
+  {
+    "title": "Commando",
+    "tmdb_id": 10999,
+    "top_terms": [
+      "matrix",
+      "commando",
+      "daughter",
+      "army",
+      "fight",
+      "commandos"
+    ],
+    "x": 0.18813632596240723,
+    "y": -0.050124090433131666,
+    "year": 1985
+  },
+  {
+    "title": "Good Morning, Vietnam",
+    "tmdb_id": 801,
+    "top_terms": [
+      "vietnam",
+      "radio",
+      "good morning",
+      "morning",
+      "war",
+      "good"
+    ],
+    "x": 0.11459503629250926,
+    "y": -0.05471819738184393,
+    "year": 1987
+  },
+  {
+    "title": "Police Academy",
+    "tmdb_id": 9336,
+    "top_terms": [
+      "mahoney",
+      "police academy",
+      "police",
+      "academy",
+      "wants",
+      "decides"
+    ],
+    "x": 0.10890408102549257,
+    "y": -0.05297675080417445,
+    "year": 1984
+  },
+  {
+    "title": "Highlander",
+    "tmdb_id": 8009,
+    "top_terms": [
+      "playing",
+      "scotsman",
+      "sword",
+      "york city",
+      "york",
+      "new york"
+    ],
+    "x": 0.20284288891066726,
+    "y": -0.04522783067842926,
+    "year": 1986
+  },
+  {
+    "title": "Hellraiser",
+    "tmdb_id": 9003,
+    "top_terms": [
+      "sexual",
+      "puzzle box",
+      "puzzle",
+      "pain",
+      "pleasure",
+      "box"
+    ],
+    "x": 0.12169000159114123,
+    "y": -0.09180822268332904,
+    "year": 1987
+  },
+  {
+    "title": "The Running Man",
+    "tmdb_id": 865,
+    "top_terms": [
+      "running man",
+      "running",
+      "future",
+      "game",
+      "dystopian",
+      "man"
+    ],
+    "x": 0.20942643884731468,
+    "y": -0.027057629222085676,
+    "year": 1987
+  },
+  {
+    "title": "Beverly Hills Cop II",
+    "tmdb_id": 96,
+    "top_terms": [
+      "shooting",
+      "cop",
+      "detective",
+      "beverly hills",
+      "beverly",
+      "police"
+    ],
+    "x": 0.15507166014640364,
+    "y": -0.10627613276476254,
+    "year": 1987
+  },
+  {
+    "title": "Conan the Barbarian",
+    "tmdb_id": 9387,
+    "top_terms": [
+      "conan",
+      "massacre",
+      "barbarian",
+      "warriors",
+      "doom",
+      "wilderness"
+    ],
+    "x": 0.1697773721241504,
+    "y": -0.051156595712711125,
+    "year": 1982
+  },
+  {
+    "title": "Tron",
+    "tmdb_id": 97,
+    "top_terms": [
+      "tron",
+      "computer",
+      "flynn",
+      "simulation",
+      "digital",
+      "game"
+    ],
+    "x": 0.1329521531366792,
+    "y": 0.021448480414124522,
+    "year": 1982
+  },
+  {
+    "title": "The Land Before Time",
+    "tmdb_id": 12144,
+    "top_terms": [
+      "land",
+      "dinosaurs",
+      "primitive",
+      "emotional review",
+      "earthquake",
+      "order survive"
+    ],
+    "x": 0.14301588271755833,
+    "y": -0.05881756879181035,
+    "year": 1988
+  },
+  {
+    "title": "Labyrinth",
+    "tmdb_id": 13597,
+    "top_terms": [
+      "goblin",
+      "goblin king",
+      "sarah",
+      "baby",
+      "king",
+      "goblins"
+    ],
+    "x": 0.13322360072235698,
+    "y": -0.07625718119183861,
+    "year": 1986
+  },
+  {
+    "title": "Return",
+    "tmdb_id": 403587,
+    "top_terms": [
+      "hypnotic",
+      "reincarnation",
+      "grandfather",
+      "article",
+      "died",
+      "subject"
+    ],
+    "x": 0.07798345053210207,
+    "y": -0.06331729366191964,
+    "year": 1985
+  },
+  {
+    "title": "National Lampoon's Christmas Vacation",
+    "tmdb_id": 5825,
+    "top_terms": [
+      "christmas",
+      "vacation",
+      "national lampoon",
+      "lampoon",
+      "national",
+      "em"
+    ],
+    "x": 0.09470017912676258,
+    "y": -0.07728236515874679,
+    "year": 1989
+  },
+  {
+    "title": "An American Werewolf in London",
+    "tmdb_id": 814,
+    "top_terms": [
+      "london",
+      "zoo",
+      "david",
+      "nurse",
+      "werewolf",
+      "horror"
+    ],
+    "x": 0.13096445221168912,
+    "y": -0.09001814688657424,
+    "year": 1981
+  },
+  {
+    "title": "The King of Comedy",
+    "tmdb_id": 262,
+    "top_terms": [
+      "rupert",
+      "pupkin",
+      "business",
+      "receptionist",
+      "entertainer",
+      "overview aspiring"
+    ],
+    "x": 0.13092229232011574,
+    "y": -0.0520696692311343,
+    "year": 1982
+  },
+  {
+    "title": "Superman II",
+    "tmdb_id": 8536,
+    "top_terms": [
+      "superman",
+      "zod",
+      "general zod",
+      "general",
+      "strength",
+      "super"
+    ],
+    "x": 0.22101777778880935,
+    "y": 0.13241792886530457,
+    "year": 1980
+  },
+  {
+    "title": "Twins",
+    "tmdb_id": 9493,
+    "top_terms": [
+      "vincent",
+      "julius",
+      "twins",
+      "orphanage",
+      "low",
+      "experiment"
+    ],
+    "x": 0.08003850944035107,
+    "y": -0.039803412502340076,
+    "year": 1988
+  },
+  {
+    "title": "Gandhi",
+    "tmdb_id": 783,
+    "top_terms": [
+      "gandhi",
+      "independence",
+      "resistance",
+      "strike",
+      "freedom",
+      "protest"
+    ],
+    "x": 0.11148963484030928,
+    "y": -0.04407474607270512,
+    "year": 1982
+  },
+  {
+    "title": "The Karate Kid Part II",
+    "tmdb_id": 8856,
+    "top_terms": [
+      "japanese",
+      "sato",
+      "daniel",
+      "okinawa",
+      "miyagi",
+      "karate"
+    ],
+    "x": 0.14972817712888142,
+    "y": -0.07038271361315016,
+    "year": 1986
+  },
+  {
+    "title": "Videodrome",
+    "tmdb_id": 837,
+    "top_terms": [
+      "max",
+      "videodrome",
+      "channel",
+      "content",
+      "tv",
+      "video"
+    ],
+    "x": 0.10866706144705601,
+    "y": -0.030272285546784766,
+    "year": 1983
+  },
+  {
+    "title": "Look Who's Talking",
+    "tmdb_id": 9494,
+    "top_terms": [
+      "baby",
+      "single",
+      "romantic",
+      "woman",
+      "duringcreditsstinger woman",
+      "overview single"
+    ],
+    "x": 0.1401153702367711,
+    "y": -0.08403546990251848,
+    "year": 1989
+  },
+  {
+    "title": "A Fish Called Wanda",
+    "tmdb_id": 623,
+    "top_terms": [
+      "fish called",
+      "collection",
+      "fish",
+      "called",
+      "infidelity",
+      "comedies"
+    ],
+    "x": 0.09030708381454446,
+    "y": -0.07493545026865962,
+    "year": 1988
+  },
+  {
+    "title": "Pet Sematary",
+    "tmdb_id": 8913,
+    "top_terms": [
+      "pet",
+      "cat",
+      "neighbor",
+      "dead",
+      "mysterious",
+      "horror"
+    ],
+    "x": 0.1540723920662211,
+    "y": -0.11307174622211527,
+    "year": 1989
+  },
+  {
+    "title": "Raising Arizona",
+    "tmdb_id": 378,
+    "top_terms": [
+      "ex",
+      "raise",
+      "absurd amused",
+      "ed",
+      "ex cop",
+      "melodramatic review"
+    ],
+    "x": 0.15618284089182344,
+    "y": -0.11868224140950309,
+    "year": 1987
+  },
+  {
+    "title": "Fight Club",
+    "tmdb_id": 550,
+    "top_terms": [
+      "fight",
+      "identity",
+      "self destructiveness",
+      "identity disorder",
+      "quitting job",
+      "forming"
+    ],
+    "x": 0.15684952012224598,
+    "y": -0.059530217051585205,
+    "year": 1999
   },
   {
     "title": "The Shawshank Redemption",
@@ -275,314 +1520,59 @@
     "top_terms": [
       "prison",
       "dufresne",
-      "shawshank",
-      "hope",
       "redemption",
-      "1940s"
+      "1940s",
+      "hope",
+      "friendship"
     ],
-    "x": 0.13317621222599993,
-    "y": -0.08639882434003984,
+    "x": 0.14889069824748866,
+    "y": -0.10490628527795803,
     "year": 1994
   },
   {
-    "title": "Shelter",
-    "tmdb_id": 1290821,
+    "title": "Pulp Fiction",
+    "tmdb_id": 680,
     "top_terms": [
-      "storm",
-      "remote",
-      "close",
-      "living",
-      "girl",
-      "violent"
-    ],
-    "x": 0.16085927782390322,
-    "y": -0.07693280906825141,
-    "year": 2026
-  },
-  {
-    "title": "The Housemaid",
-    "tmdb_id": 1368166,
-    "top_terms": [
-      "housemaid",
-      "job",
-      "thriller",
-      "mystery",
-      "power",
-      "millie calloway"
-    ],
-    "x": 0.14732694729326568,
-    "y": -0.11472622106419027,
-    "year": 2025
-  },
-  {
-    "title": "Greenland 2: Migration",
-    "tmdb_id": 840464,
-    "top_terms": [
-      "greenland",
-      "migration",
-      "greenland migration",
-      "journey",
-      "parental sacrifice",
-      "remarkable evolution"
-    ],
-    "x": 0.15925445288016013,
-    "y": -0.08968809696714662,
-    "year": 2026
-  },
-  {
-    "title": "Predator: Badlands",
-    "tmdb_id": 1242898,
-    "top_terms": [
-      "predator",
-      "badlands",
-      "predator badlands",
-      "hostile",
-      "deadly",
-      "pursuit"
-    ],
-    "x": 0.14782239515162543,
-    "y": -0.055264188770172556,
-    "year": 2025
-  },
-  {
-    "title": "Real Steel",
-    "tmdb_id": 39254,
-    "top_terms": [
-      "robot",
-      "steel",
-      "real steel",
-      "real",
-      "son",
-      "robot fighting"
-    ],
-    "x": 0.14999621072927022,
-    "y": -0.08854597302933254,
-    "year": 2011
-  },
-  {
-    "title": "War of the Worlds",
-    "tmdb_id": 755898,
-    "top_terms": [
-      "war worlds",
-      "worlds",
-      "privacy",
-      "surveillance",
-      "war",
-      "government"
-    ],
-    "x": 0.10898527477928571,
-    "y": -0.02713016442119688,
-    "year": 2025
-  },
-  {
-    "title": "Scream 7",
-    "tmdb_id": 1159559,
-    "top_terms": [
-      "spree",
-      "murder",
-      "sidney",
-      "scream",
-      "killer",
-      "mystery"
-    ],
-    "x": 0.17848763765811548,
-    "y": -0.061801892720706936,
-    "year": 2026
-  },
-  {
-    "title": "The Avengers",
-    "tmdb_id": 24428,
-    "top_terms": [
-      "superhero",
-      "team",
-      "shield based",
-      "nick fury",
-      "story problems",
-      "peacekeeping agency"
-    ],
-    "x": 0.3176971961779645,
-    "y": 0.24696172075038958,
-    "year": 2012
-  },
-  {
-    "title": "They Will Kill You",
-    "tmdb_id": 1292695,
-    "top_terms": [
-      "cult",
-      "york city",
-      "new york",
-      "york",
-      "high rise",
-      "horror"
-    ],
-    "x": 0.24380901294719814,
-    "y": 0.04225015491031668,
-    "year": 2026
-  },
-  {
-    "title": "Apocalypto",
-    "tmdb_id": 1579,
-    "top_terms": [
-      "civilization",
-      "maya",
-      "eclipse",
-      "ancient",
-      "personally recommend",
-      "overrated"
-    ],
-    "x": 0.17083988857370902,
-    "y": -0.09119458397539058,
-    "year": 2006
-  },
-  {
-    "title": "Avengers: Infinity War",
-    "tmdb_id": 299536,
-    "top_terms": [
-      "avengers",
-      "cosmic",
-      "infinity",
-      "mcu",
-      "superhero",
-      "power"
-    ],
-    "x": 0.2656820264056141,
-    "y": 0.21482216676605184,
-    "year": 2018
-  },
-  {
-    "title": "The Devil Wears Prada 2",
-    "tmdb_id": 1314481,
-    "top_terms": [
-      "runway",
-      "fashion",
-      "magazine",
-      "sequel",
-      "navigates new",
-      "position"
-    ],
-    "x": 0.17732157021408876,
-    "y": -0.0343368022567803,
-    "year": 2026
-  },
-  {
-    "title": "Fifty Shades Freed",
-    "tmdb_id": 337167,
-    "top_terms": [
-      "threats jeopardize",
-      "relaxes",
-      "shadowy",
-      "past newlyweds",
-      "sequel bdsm",
-      "shadowy figures"
-    ],
-    "x": 0.17799509026838836,
-    "y": -0.1205444383531051,
-    "year": 2018
-  },
-  {
-    "title": "The Godfather",
-    "tmdb_id": 238,
-    "top_terms": [
-      "mafia",
-      "crime family",
-      "godfather",
       "crime",
-      "patriarch",
-      "corleone"
+      "drug",
+      "pulp fiction",
+      "pulp",
+      "hit",
+      "gangster"
     ],
-    "x": 0.21328303057837555,
-    "y": -0.11021246287483262,
-    "year": 1972
+    "x": 0.1770147006024176,
+    "y": -0.1487240445731086,
+    "year": 1994
   },
   {
-    "title": "Send Help",
-    "tmdb_id": 1198994,
+    "title": "Forrest Gump",
+    "tmdb_id": 13,
     "top_terms": [
-      "horror",
-      "island",
-      "deserted island",
-      "plane crash",
-      "colleagues",
-      "plane"
+      "vietnam",
+      "usa",
+      "single",
+      "parent",
+      "mother",
+      "ptsd"
     ],
-    "x": 0.1569420709816086,
-    "y": -0.14606636265512005,
-    "year": 2026
+    "x": 0.21529941670325953,
+    "y": -0.11733722275469473,
+    "year": 1994
   },
   {
-    "title": "The Dark Knight",
-    "tmdb_id": 155,
+    "title": "The Matrix",
+    "tmdb_id": 603,
     "top_terms": [
-      "criminal",
-      "crime",
-      "mastermind",
-      "chaos",
-      "district attorney",
-      "criminal mastermind"
+      "hacker",
+      "matrix",
+      "allegory",
+      "reality",
+      "world",
+      "gnosticism oracle"
     ],
-    "x": 0.21409730054602422,
-    "y": 0.09295586118836469,
-    "year": 2008
-  },
-  {
-    "title": "Crime 101",
-    "tmdb_id": 1171145,
-    "top_terms": [
-      "101",
-      "crime",
-      "detective",
-      "robbery",
-      "crime 101",
-      "insurance"
-    ],
-    "x": 0.15956279792583183,
-    "y": -0.104348182796872,
-    "year": 2026
-  },
-  {
-    "title": "War Machine",
-    "tmdb_id": 1265609,
-    "top_terms": [
-      "training",
-      "alien",
-      "army ranger",
-      "ranger",
-      "veteran",
-      "hostile"
-    ],
-    "x": 0.15221769050683454,
-    "y": -0.03901501979298461,
-    "year": 2026
-  },
-  {
-    "title": "The Conjuring: Last Rites",
-    "tmdb_id": 1038392,
-    "top_terms": [
-      "paranormal",
-      "horror",
-      "supernatural",
-      "rites overview",
-      "paranormal investigation",
-      "paranormal investigators"
-    ],
-    "x": 0.1162679919012356,
-    "y": -0.09588150392791848,
-    "year": 2025
-  },
-  {
-    "title": "The Lord of the Rings: The Return of the King",
-    "tmdb_id": 122,
-    "top_terms": [
-      "ring",
-      "madness",
-      "armies",
-      "king",
-      "sword",
-      "quest"
-    ],
-    "x": 0.2219630705069019,
-    "y": -0.13146730241267954,
-    "year": 2003
+    "x": 0.19849629328830526,
+    "y": 0.013800234259695716,
+    "year": 1999
   },
   {
     "title": "Titanic",
@@ -591,13 +1581,1483 @@
       "titanic",
       "ship",
       "rose",
-      "love",
       "aboard",
-      "story"
+      "love",
+      "tells story"
     ],
-    "x": 0.1346075733389394,
-    "y": -0.08613279430924485,
+    "x": 0.13375203298045366,
+    "y": -0.08189899710535631,
     "year": 1997
+  },
+  {
+    "title": "Se7en",
+    "tmdb_id": 807,
+    "top_terms": [
+      "seven",
+      "deadly sins",
+      "seven deadly",
+      "killer",
+      "sins",
+      "serial"
+    ],
+    "x": 0.11903015502544541,
+    "y": -0.10673871082013922,
+    "year": 1995
+  },
+  {
+    "title": "The Truman Show",
+    "tmdb_id": 37165,
+    "top_terms": [
+      "reality",
+      "truman",
+      "tv",
+      "make",
+      "paranoia dystopia",
+      "producer"
+    ],
+    "x": 0.11141280128815531,
+    "y": -0.05316343825786619,
+    "year": 1998
+  },
+  {
+    "title": "Toy Story",
+    "tmdb_id": 862,
+    "top_terms": [
+      "toy",
+      "woody",
+      "buzz",
+      "andy",
+      "rescue friendship",
+      "elementary school"
+    ],
+    "x": 0.12851355903780734,
+    "y": -0.07615216119064351,
+    "year": 1995
+  },
+  {
+    "title": "The Lion King",
+    "tmdb_id": 8587,
+    "top_terms": [
+      "lion",
+      "king",
+      "uncle",
+      "father",
+      "murder",
+      "confront past"
+    ],
+    "x": 0.17954985886528807,
+    "y": -0.10298761023236727,
+    "year": 1994
+  },
+  {
+    "title": "The Green Mile",
+    "tmdb_id": 497,
+    "top_terms": [
+      "guard",
+      "death row",
+      "row",
+      "coffey",
+      "prison",
+      "death"
+    ],
+    "x": 0.1432481469596099,
+    "y": -0.0739919242125084,
+    "year": 1999
+  },
+  {
+    "title": "The Silence of the Lambs",
+    "tmdb_id": 274,
+    "top_terms": [
+      "lecter",
+      "silence",
+      "clarice",
+      "psychological",
+      "psychiatrist",
+      "_the"
+    ],
+    "x": 0.15739045062752008,
+    "y": -0.1440434983655316,
+    "year": 1991
+  },
+  {
+    "title": "Jurassic Park",
+    "tmdb_id": 329,
+    "top_terms": [
+      "park",
+      "dinosaurs",
+      "theme park",
+      "dna",
+      "theme",
+      "island"
+    ],
+    "x": 0.11443097240806256,
+    "y": -0.002912549945028029,
+    "year": 1993
+  },
+  {
+    "title": "Schindler's List",
+    "tmdb_id": 424,
+    "top_terms": [
+      "schindler",
+      "concentration camp",
+      "concentration",
+      "factory",
+      "historical",
+      "nazi"
+    ],
+    "x": 0.153985654821762,
+    "y": -0.07516569057744117,
+    "year": 1993
+  },
+  {
+    "title": "Saving Private Ryan",
+    "tmdb_id": 857,
+    "top_terms": [
+      "normandy",
+      "saving private",
+      "ranger",
+      "private ryan",
+      "troops",
+      "ryan"
+    ],
+    "x": 0.1501627937367367,
+    "y": -0.04096648579523748,
+    "year": 1998
+  },
+  {
+    "title": "Star Wars: Episode I - The Phantom Menace",
+    "tmdb_id": 1893,
+    "top_terms": [
+      "phantom menace",
+      "phantom",
+      "menace",
+      "star wars",
+      "wars",
+      "star"
+    ],
+    "x": 0.15631549396565345,
+    "y": 0.06651876843119982,
+    "year": 1999
+  },
+  {
+    "title": "Reservoir Dogs",
+    "tmdb_id": 500,
+    "top_terms": [
+      "mr",
+      "gone wrong",
+      "gone",
+      "wrong",
+      "heist",
+      "botched"
+    ],
+    "x": 0.09943655011077826,
+    "y": -0.07769671943716899,
+    "year": 1992
+  },
+  {
+    "title": "Toy Story 2",
+    "tmdb_id": 863,
+    "top_terms": [
+      "toy",
+      "al",
+      "woody",
+      "collector",
+      "toys",
+      "andy"
+    ],
+    "x": 0.1446653754421685,
+    "y": -0.06881672140529468,
+    "year": 1999
+  },
+  {
+    "title": "Men in Black",
+    "tmdb_id": 607,
+    "top_terms": [
+      "agent",
+      "men black",
+      "new",
+      "men",
+      "cop",
+      "black"
+    ],
+    "x": 0.2640948511645255,
+    "y": 0.09441977691881553,
+    "year": 1997
+  },
+  {
+    "title": "GoodFellas",
+    "tmdb_id": 769,
+    "top_terms": [
+      "irish",
+      "brooklyn",
+      "mafia",
+      "florida",
+      "half",
+      "crime"
+    ],
+    "x": 0.21659036617469837,
+    "y": -0.12368985517422086,
+    "year": 1990
+  },
+  {
+    "title": "Terminator 2: Judgment Day",
+    "tmdb_id": 280,
+    "top_terms": [
+      "terminator",
+      "shape",
+      "nuclear",
+      "time",
+      "films",
+      "future villain"
+    ],
+    "x": 0.24713756976900206,
+    "y": 0.032746350598169494,
+    "year": 1991
+  },
+  {
+    "title": "Good Will Hunting",
+    "tmdb_id": 489,
+    "top_terms": [
+      "genius",
+      "hunting",
+      "professor",
+      "math",
+      "massachusetts",
+      "university"
+    ],
+    "x": 0.09747770389621536,
+    "y": -0.07283132509036788,
+    "year": 1997
+  },
+  {
+    "title": "Edward Scissorhands",
+    "tmdb_id": 162,
+    "top_terms": [
+      "frankenstein",
+      "edward",
+      "suburban",
+      "gothic",
+      "flashback",
+      "love"
+    ],
+    "x": 0.136842439974293,
+    "y": -0.12062785639654339,
+    "year": 1990
+  },
+  {
+    "title": "American Beauty",
+    "tmdb_id": 14,
+    "top_terms": [
+      "beauty",
+      "affair",
+      "purpose",
+      "dysfunctional",
+      "life",
+      "crisis"
+    ],
+    "x": 0.16810288438424478,
+    "y": -0.11680326389252348,
+    "year": 1999
+  },
+  {
+    "title": "The Sixth Sense",
+    "tmdb_id": 745,
+    "top_terms": [
+      "malcolm",
+      "cole",
+      "sense",
+      "sear",
+      "cole sear",
+      "child"
+    ],
+    "x": 0.144326388335667,
+    "y": -0.1337408896509739,
+    "year": 1999
+  },
+  {
+    "title": "American History X",
+    "tmdb_id": 73,
+    "top_terms": [
+      "derek",
+      "prison",
+      "danny",
+      "violent",
+      "prison derek",
+      "nazism"
+    ],
+    "x": 0.15105600979118528,
+    "y": -0.10624188914312871,
+    "year": 1998
+  },
+  {
+    "title": "Home Alone",
+    "tmdb_id": 771,
+    "top_terms": [
+      "home",
+      "child",
+      "christmas",
+      "really",
+      "family",
+      "christmas kids"
+    ],
+    "x": 0.17075790103460933,
+    "y": -0.12125817753667804,
+    "year": 1990
+  },
+  {
+    "title": "The Big Lebowski",
+    "tmdb_id": 115,
+    "top_terms": [
+      "bowling",
+      "lebowski",
+      "millionaire",
+      "white",
+      "angeles",
+      "los angeles"
+    ],
+    "x": 0.12012232547522214,
+    "y": -0.10501406578460268,
+    "year": 1998
+  },
+  {
+    "title": "Aladdin",
+    "tmdb_id": 812,
+    "top_terms": [
+      "aladdin",
+      "magic",
+      "princess",
+      "fulfill",
+      "fall love",
+      "love"
+    ],
+    "x": 0.18319183351087545,
+    "y": -0.0996475349424637,
+    "year": 1992
+  },
+  {
+    "title": "Back to the Future Part III",
+    "tmdb_id": 196,
+    "top_terms": [
+      "doc",
+      "marty",
+      "west",
+      "wild west",
+      "future",
+      "wild"
+    ],
+    "x": 0.13011253168736087,
+    "y": -0.004995687304559281,
+    "year": 1990
+  },
+  {
+    "title": "The Usual Suspects",
+    "tmdb_id": 629,
+    "top_terms": [
+      "verbal",
+      "crime lord",
+      "lord",
+      "heist",
+      "criminal",
+      "crime"
+    ],
+    "x": 0.1811370325892778,
+    "y": -0.13220518662771566,
+    "year": 1995
+  },
+  {
+    "title": "Jumanji",
+    "tmdb_id": 8844,
+    "top_terms": [
+      "jumanji",
+      "game",
+      "board",
+      "alan",
+      "adult",
+      "giant"
+    ],
+    "x": 0.15734741149341264,
+    "y": -0.06474539818224914,
+    "year": 1995
+  },
+  {
+    "title": "The Mask",
+    "tmdb_id": 854,
+    "top_terms": [
+      "mask",
+      "comedy",
+      "insecure",
+      "comedic",
+      "balloon",
+      "extreme"
+    ],
+    "x": 0.19927984863088646,
+    "y": -0.02134411677989073,
+    "year": 1994
+  },
+  {
+    "title": "Braveheart",
+    "tmdb_id": 197,
+    "top_terms": [
+      "scottish",
+      "scotland",
+      "english",
+      "revolt",
+      "edge seat",
+      "idealism"
+    ],
+    "x": 0.1665444808741982,
+    "y": -0.05726624842199696,
+    "year": 1995
+  },
+  {
+    "title": "Beauty and the Beast",
+    "tmdb_id": 10020,
+    "top_terms": [
+      "beast",
+      "castle",
+      "prince",
+      "belle",
+      "beauty",
+      "fairy tale"
+    ],
+    "x": 0.13668044363295404,
+    "y": -0.08828774737127093,
+    "year": 1991
+  },
+  {
+    "title": "Home Alone 2: Lost in New York",
+    "tmdb_id": 772,
+    "top_terms": [
+      "new york",
+      "york",
+      "christmas",
+      "home",
+      "kevin",
+      "amazing"
+    ],
+    "x": 0.21825889453812897,
+    "y": -0.08749379620484965,
+    "year": 1992
+  },
+  {
+    "title": "Independence Day",
+    "tmdb_id": 602,
+    "top_terms": [
+      "independence",
+      "alien",
+      "invasion",
+      "fourth july",
+      "terror",
+      "cities"
+    ],
+    "x": 0.20801973783972338,
+    "y": 0.08931742917718885,
+    "year": 1996
+  },
+  {
+    "title": "Mulan",
+    "tmdb_id": 10674,
+    "top_terms": [
+      "china",
+      "mulan",
+      "training",
+      "em",
+      "female",
+      "daughter"
+    ],
+    "x": 0.20626119606620108,
+    "y": -0.0655879629742802,
+    "year": 1998
+  },
+  {
+    "title": "Trainspotting",
+    "tmdb_id": 627,
+    "top_terms": [
+      "drug",
+      "edinburgh",
+      "heroin",
+      "scotland",
+      "mark",
+      "drugs"
+    ],
+    "x": 0.15406058724158547,
+    "y": -0.11263678302210425,
+    "year": 1996
+  },
+  {
+    "title": "The Nightmare Before Christmas",
+    "tmdb_id": 9479,
+    "top_terms": [
+      "christmas",
+      "claus",
+      "santa claus",
+      "santa",
+      "stop motion",
+      "motion"
+    ],
+    "x": 0.11214697342350602,
+    "y": -0.08734326574682488,
+    "year": 1993
+  },
+  {
+    "title": "The Mummy",
+    "tmdb_id": 564,
+    "top_terms": [
+      "egypt",
+      "1920s",
+      "secret",
+      "solar",
+      "opposites attract",
+      "secret passage"
+    ],
+    "x": 0.18296381188290878,
+    "y": -0.04151222124151782,
+    "year": 1999
+  },
+  {
+    "title": "Mission: Impossible",
+    "tmdb_id": 954,
+    "top_terms": [
+      "secret",
+      "agency",
+      "government",
+      "agent",
+      "espionage",
+      "cia"
+    ],
+    "x": 0.14686128663074002,
+    "y": 0.0017267864716447557,
+    "year": 1996
+  },
+  {
+    "title": "A Bug's Life",
+    "tmdb_id": 9487,
+    "top_terms": [
+      "bugs",
+      "ant",
+      "flea",
+      "liked",
+      "sixth",
+      "language like"
+    ],
+    "x": 0.12062701225627791,
+    "y": -0.02948225846623263,
+    "year": 1998
+  },
+  {
+    "title": "The Lost World: Jurassic Park",
+    "tmdb_id": 330,
+    "top_terms": [
+      "park",
+      "malcolm",
+      "ian malcolm",
+      "ian",
+      "jurassic park",
+      "jurassic"
+    ],
+    "x": 0.15857164262389978,
+    "y": -0.004320994851214857,
+    "year": 1997
+  },
+  {
+    "title": "Twelve Monkeys",
+    "tmdb_id": 63,
+    "top_terms": [
+      "virus",
+      "mental",
+      "monkeys",
+      "asylum",
+      "cole",
+      "research"
+    ],
+    "x": 0.17701540057530304,
+    "y": -0.055754618386226945,
+    "year": 1995
+  },
+  {
+    "title": "Fargo",
+    "tmdb_id": 275,
+    "top_terms": [
+      "ransom",
+      "going",
+      "minnesota",
+      "police",
+      "small",
+      "watch"
+    ],
+    "x": 0.16274832224030242,
+    "y": -0.11983533603321905,
+    "year": 1996
+  },
+  {
+    "title": "Pretty Woman",
+    "tmdb_id": 114,
+    "top_terms": [
+      "edward",
+      "business",
+      "street",
+      "expensive",
+      "expensive restaurant",
+      "entrepreneur"
+    ],
+    "x": 0.1437808633999496,
+    "y": -0.11183609521164523,
+    "year": 1990
+  },
+  {
+    "title": "10 Things I Hate About You",
+    "tmdb_id": 4951,
+    "top_terms": [
+      "problem",
+      "cameron",
+      "school",
+      "high school",
+      "teen",
+      "day"
+    ],
+    "x": 0.16513060544700436,
+    "y": -0.08052364331116812,
+    "year": 1999
+  },
+  {
+    "title": "Groundhog Day",
+    "tmdb_id": 137,
+    "top_terms": [
+      "groundhog",
+      "groundhog day",
+      "day",
+      "producer",
+      "time loop",
+      "romance fantasy"
+    ],
+    "x": 0.11071418789889359,
+    "y": -0.06441945978906313,
+    "year": 1993
+  },
+  {
+    "title": "Armageddon",
+    "tmdb_id": 95,
+    "top_terms": [
+      "asteroid",
+      "disaster",
+      "space",
+      "nasa",
+      "mission",
+      "harry"
+    ],
+    "x": 0.21610373898607782,
+    "y": 0.049948741863551166,
+    "year": 1998
+  },
+  {
+    "title": "Heat",
+    "tmdb_id": 949,
+    "top_terms": [
+      "mouse",
+      "heat",
+      "cat",
+      "bank",
+      "thief",
+      "job"
+    ],
+    "x": 0.15912587154452631,
+    "y": -0.13230943361648795,
+    "year": 1995
+  },
+  {
+    "title": "American Pie",
+    "tmdb_id": 2105,
+    "top_terms": [
+      "virginity",
+      "prom",
+      "pie",
+      "student",
+      "high school",
+      "school"
+    ],
+    "x": 0.12153670510992017,
+    "y": -0.08193386359711043,
+    "year": 1999
+  },
+  {
+    "title": "Scream",
+    "tmdb_id": 4232,
+    "top_terms": [
+      "scream",
+      "spree",
+      "rules",
+      "halloween",
+      "killing",
+      "killer"
+    ],
+    "x": 0.15288286210683522,
+    "y": -0.12084307026582106,
+    "year": 1996
+  },
+  {
+    "title": "Hercules",
+    "tmdb_id": 11970,
+    "top_terms": [
+      "hercules",
+      "zeus",
+      "em",
+      "connection",
+      "mortal",
+      "ancient greece"
+    ],
+    "x": 0.13673786643761893,
+    "y": -0.06321504573734571,
+    "year": 1997
+  },
+  {
+    "title": "Sleepy Hollow",
+    "tmdb_id": 2668,
+    "top_terms": [
+      "ichabod",
+      "ichabod crane",
+      "horseman",
+      "hollow",
+      "crane",
+      "sleepy"
+    ],
+    "x": 0.13052228259117044,
+    "y": -0.08663404672188285,
+    "year": 1999
+  },
+  {
+    "title": "Tarzan",
+    "tmdb_id": 37135,
+    "top_terms": [
+      "tarzan",
+      "orphan",
+      "jungle",
+      "family",
+      "child",
+      "rescued"
+    ],
+    "x": 0.10434614627444222,
+    "y": -0.06506986715665818,
+    "year": 1999
+  },
+  {
+    "title": "The Game",
+    "tmdb_id": 2649,
+    "top_terms": [
+      "present",
+      "game",
+      "birthday",
+      "san francisco",
+      "francisco",
+      "san"
+    ],
+    "x": 0.13615693410740914,
+    "y": -0.08154582735408764,
+    "year": 1997
+  },
+  {
+    "title": "Lock, Stock and Two Smoking Barrels",
+    "tmdb_id": 100,
+    "top_terms": [
+      "smoking",
+      "tea",
+      "pull heist",
+      "operating",
+      "flat",
+      "cocktail"
+    ],
+    "x": 0.12088039369747292,
+    "y": -0.07294307873493734,
+    "year": 1998
+  },
+  {
+    "title": "Batman Returns",
+    "tmdb_id": 364,
+    "top_terms": [
+      "shreck",
+      "batman",
+      "penguin",
+      "returns",
+      "christmas",
+      "super"
+    ],
+    "x": 0.18429064908571963,
+    "y": 0.06813717084790083,
+    "year": 1992
+  },
+  {
+    "title": "Eyes Wide Shut",
+    "tmdb_id": 345,
+    "top_terms": [
+      "sexual",
+      "having",
+      "party",
+      "discovers",
+      "christmas",
+      "alice"
+    ],
+    "x": 0.17350714642823872,
+    "y": -0.10213308009624336,
+    "year": 1999
+  },
+  {
+    "title": "Bad Boys",
+    "tmdb_id": 9737,
+    "top_terms": [
+      "witness",
+      "witness murder",
+      "stolen",
+      "miami",
+      "murder",
+      "drugs"
+    ],
+    "x": 0.15498551076123832,
+    "y": -0.0983686187309653,
+    "year": 1995
+  },
+  {
+    "title": "Jackie Brown",
+    "tmdb_id": 184,
+    "top_terms": [
+      "jackie",
+      "jackie brown",
+      "brown",
+      "flight attendant",
+      "flight",
+      "smuggling"
+    ],
+    "x": 0.12003133502664444,
+    "y": -0.09592291684333025,
+    "year": 1997
+  },
+  {
+    "title": "Gattaca",
+    "tmdb_id": 782,
+    "top_terms": [
+      "eugenics",
+      "space",
+      "gattaca",
+      "obsessed",
+      "genetic",
+      "identity"
+    ],
+    "x": 0.15794308111247912,
+    "y": 0.02554455126471232,
+    "year": 1997
+  },
+  {
+    "title": "The Godfather Part III",
+    "tmdb_id": 242,
+    "top_terms": [
+      "michael",
+      "italy",
+      "mafia",
+      "york",
+      "new york",
+      "cousin"
+    ],
+    "x": 0.1690405682879705,
+    "y": -0.0782392960747489,
+    "year": 1990
+  },
+  {
+    "title": "Speed",
+    "tmdb_id": 1637,
+    "top_terms": [
+      "bus",
+      "bomb",
+      "elevator",
+      "vehicle",
+      "speed",
+      "trapped"
+    ],
+    "x": 0.11861904415565107,
+    "y": -0.06929816402518693,
+    "year": 1994
+  },
+  {
+    "title": "The Devil's Advocate",
+    "tmdb_id": 1813,
+    "top_terms": [
+      "devil",
+      "firm",
+      "kevin",
+      "law",
+      "lawyer",
+      "supernatural"
+    ],
+    "x": 0.15852835229701226,
+    "y": -0.10338977682724138,
+    "year": 1997
+  },
+  {
+    "title": "Dumb and Dumber",
+    "tmdb_id": 8467,
+    "top_terms": [
+      "aspen",
+      "stupidity",
+      "suitcase",
+      "mary",
+      "money",
+      "time"
+    ],
+    "x": 0.13770481146980978,
+    "y": -0.07352178595147685,
+    "year": 1994
+  },
+  {
+    "title": "Notting Hill",
+    "tmdb_id": 509,
+    "top_terms": [
+      "notting",
+      "notting hill",
+      "hill",
+      "owner",
+      "famous actress",
+      "romance"
+    ],
+    "x": 0.12518557076825385,
+    "y": -0.08042674889606473,
+    "year": 1999
+  },
+  {
+    "title": "Blade",
+    "tmdb_id": 36647,
+    "top_terms": [
+      "blade",
+      "vampire",
+      "half",
+      "master",
+      "martial",
+      "martial arts"
+    ],
+    "x": 0.18610362600714092,
+    "y": 0.011122135840875015,
+    "year": 1998
+  },
+  {
+    "title": "Die Hard: With a Vengeance",
+    "tmdb_id": 1572,
+    "top_terms": [
+      "mcclane",
+      "deadly game",
+      "simon",
+      "york",
+      "new york",
+      "bomb"
+    ],
+    "x": 0.20063756493541804,
+    "y": -0.05186733139192105,
+    "year": 1995
+  },
+  {
+    "title": "Mrs. Doubtfire",
+    "tmdb_id": 788,
+    "top_terms": [
+      "daniel",
+      "voice",
+      "job",
+      "parent",
+      "mrs",
+      "relationship san"
+    ],
+    "x": 0.14273742737041686,
+    "y": -0.10941759222415125,
+    "year": 1993
+  },
+  {
+    "title": "Casino",
+    "tmdb_id": 524,
+    "top_terms": [
+      "casino",
+      "gambling",
+      "las vegas",
+      "las",
+      "vegas",
+      "mafia"
+    ],
+    "x": 0.1393905143187127,
+    "y": -0.1317246455804131,
+    "year": 1995
+  },
+  {
+    "title": "From Dusk Till Dawn",
+    "tmdb_id": 755,
+    "top_terms": [
+      "mexican",
+      "bank",
+      "brothers",
+      "vehicle",
+      "hide",
+      "sheriff"
+    ],
+    "x": 0.1468010583315324,
+    "y": -0.08679642669706535,
+    "year": 1996
+  },
+  {
+    "title": "Total Recall",
+    "tmdb_id": 861,
+    "top_terms": [
+      "memory",
+      "quaid",
+      "mars",
+      "planet mars",
+      "virtual",
+      "planet"
+    ],
+    "x": 0.21815176418379298,
+    "y": 0.03620674882394123,
+    "year": 1990
+  },
+  {
+    "title": "Interview with the Vampire",
+    "tmdb_id": 628,
+    "top_terms": [
+      "vampire",
+      "louisiana",
+      "gothic",
+      "century",
+      "horror",
+      "drama fantasy"
+    ],
+    "x": 0.13991819067775593,
+    "y": -0.10232380563473348,
+    "year": 1994
+  },
+  {
+    "title": "Space Jam",
+    "tmdb_id": 2300,
+    "top_terms": [
+      "basketball",
+      "cartoon",
+      "action animation",
+      "live action",
+      "animation",
+      "live"
+    ],
+    "x": 0.18655613653169878,
+    "y": -0.020800946888096184,
+    "year": 1996
+  },
+  {
+    "title": "Die Hard 2",
+    "tmdb_id": 1573,
+    "top_terms": [
+      "airport",
+      "wrong",
+      "plane",
+      "mcclane",
+      "traffic",
+      "christmas"
+    ],
+    "x": 0.1717406041588884,
+    "y": -0.09126894490141908,
+    "year": 1990
+  },
+  {
+    "title": "Ace Ventura: Pet Detective",
+    "tmdb_id": 3049,
+    "top_terms": [
+      "ace",
+      "miami",
+      "detective",
+      "movies time",
+      "eyeball",
+      "pet"
+    ],
+    "x": 0.13031844005844728,
+    "y": -0.08474941273542229,
+    "year": 1994
+  },
+  {
+    "title": "Alien\u00b3",
+    "tmdb_id": 8077,
+    "top_terms": [
+      "crash",
+      "prison",
+      "newt",
+      "planet",
+      "action horror",
+      "alien"
+    ],
+    "x": 0.21591545807063967,
+    "y": 0.05546314996793922,
+    "year": 1992
+  },
+  {
+    "title": "Liar Liar",
+    "tmdb_id": 1624,
+    "top_terms": [
+      "liar",
+      "birthday",
+      "carrey",
+      "son",
+      "attorney",
+      "wish"
+    ],
+    "x": 0.10912780613015649,
+    "y": -0.06641886545427572,
+    "year": 1997
+  },
+  {
+    "title": "The Iron Giant",
+    "tmdb_id": 10386,
+    "top_terms": [
+      "giant",
+      "iron",
+      "1950s",
+      "small town",
+      "small",
+      "robot"
+    ],
+    "x": 0.2151099046933243,
+    "y": -0.054884466483027264,
+    "year": 1999
+  },
+  {
+    "title": "Pocahontas",
+    "tmdb_id": 10530,
+    "top_terms": [
+      "pocahontas",
+      "virginia",
+      "native",
+      "love",
+      "em",
+      "century"
+    ],
+    "x": 0.13954325853430724,
+    "y": -0.08040285363474374,
+    "year": 1995
+  },
+  {
+    "title": "Ghost",
+    "tmdb_id": 251,
+    "top_terms": [
+      "ghost",
+      "afterlife",
+      "love",
+      "money",
+      "psychic",
+      "impending"
+    ],
+    "x": 0.17138821925873715,
+    "y": -0.112319574066787,
+    "year": 1990
+  },
+  {
+    "title": "Apollo 13",
+    "tmdb_id": 568,
+    "top_terms": [
+      "apollo",
+      "apollo 13",
+      "13",
+      "mission",
+      "1970",
+      "astronaut"
+    ],
+    "x": 0.10883504385627249,
+    "y": -0.021294367958695954,
+    "year": 1995
+  },
+  {
+    "title": "Face/Off",
+    "tmdb_id": 754,
+    "top_terms": [
+      "fbi",
+      "criminal",
+      "prison",
+      "transplant",
+      "fbi agent",
+      "surgery"
+    ],
+    "x": 0.18664924492452065,
+    "y": -0.0662857902715628,
+    "year": 1997
+  },
+  {
+    "title": "Mars Attacks!",
+    "tmdb_id": 75,
+    "top_terms": [
+      "congress",
+      "mars",
+      "total",
+      "president",
+      "watch",
+      "alien"
+    ],
+    "x": 0.19842068942022176,
+    "y": 0.06540612229989662,
+    "year": 1996
+  },
+  {
+    "title": "Bram Stoker's Dracula",
+    "tmdb_id": 6114,
+    "top_terms": [
+      "dracula",
+      "15th",
+      "15th century",
+      "count",
+      "century",
+      "bite"
+    ],
+    "x": 0.11368550821943897,
+    "y": -0.08859024452840887,
+    "year": 1992
+  },
+  {
+    "title": "Meet Joe Black",
+    "tmdb_id": 297,
+    "top_terms": [
+      "joe",
+      "death",
+      "reaper",
+      "grim",
+      "life death",
+      "love"
+    ],
+    "x": 0.14041248764989403,
+    "y": -0.0769051597782298,
+    "year": 1998
+  },
+  {
+    "title": "Hook",
+    "tmdb_id": 879,
+    "top_terms": [
+      "hook",
+      "peter",
+      "pan",
+      "corporate",
+      "lawyer",
+      "kids"
+    ],
+    "x": 0.11370197976127734,
+    "y": -0.028107908944548857,
+    "year": 1991
+  },
+  {
+    "title": "Rush Hour",
+    "tmdb_id": 2109,
+    "top_terms": [
+      "carter",
+      "lee",
+      "investigate",
+      "ll",
+      "fbi",
+      "case"
+    ],
+    "x": 0.17773716555302874,
+    "y": -0.09036678919360312,
+    "year": 1998
+  },
+  {
+    "title": "Anastasia",
+    "tmdb_id": 9444,
+    "top_terms": [
+      "reward",
+      "reuniting",
+      "telling story",
+      "similar",
+      "hopes",
+      "catholic"
+    ],
+    "x": 0.1934353042498223,
+    "y": -0.08283877530784504,
+    "year": 1997
+  },
+  {
+    "title": "Batman Forever",
+    "tmdb_id": 414,
+    "top_terms": [
+      "batman",
+      "face riddler",
+      "riddler",
+      "district attorney",
+      "psychologist",
+      "attorney"
+    ],
+    "x": 0.17265248925599014,
+    "y": 0.029972936052533983,
+    "year": 1995
+  },
+  {
+    "title": "Alien Resurrection",
+    "tmdb_id": 8078,
+    "top_terms": [
+      "ripley",
+      "alien",
+      "horror",
+      "sci",
+      "sci fi",
+      "fi"
+    ],
+    "x": 0.20186242058093498,
+    "y": 0.06246279195256908,
+    "year": 1997
+  },
+  {
+    "title": "L.A. Confidential",
+    "tmdb_id": 2118,
+    "top_terms": [
+      "shotgun",
+      "1950s",
+      "cop",
+      "fatale",
+      "city",
+      "movie star"
+    ],
+    "x": 0.17579317550743664,
+    "y": -0.12095767049084354,
+    "year": 1997
+  },
+  {
+    "title": "Starship Troopers",
+    "tmdb_id": 563,
+    "top_terms": [
+      "rico",
+      "bugs",
+      "officer",
+      "satire",
+      "soldier",
+      "military"
+    ],
+    "x": 0.22347571609092803,
+    "y": 0.021786970436271823,
+    "year": 1997
+  },
+  {
+    "title": "The Blair Witch Project",
+    "tmdb_id": 2667,
+    "top_terms": [
+      "documentary",
+      "maryland",
+      "legend",
+      "witch",
+      "footage",
+      "map"
+    ],
+    "x": 0.08505981161747664,
+    "y": -0.07397292304208081,
+    "year": 1999
+  },
+  {
+    "title": "Batman & Robin",
+    "tmdb_id": 415,
+    "top_terms": [
+      "terrible",
+      "robin",
+      "ice",
+      "batman",
+      "fun",
+      "way"
+    ],
+    "x": 0.2069251164432098,
+    "y": 0.08058412788394613,
+    "year": 1997
+  },
+  {
+    "title": "The Hunchback of Notre Dame",
+    "tmdb_id": 10545,
+    "top_terms": [
+      "notre dame",
+      "notre",
+      "dame",
+      "hunchback",
+      "frollo",
+      "hunchback notre"
+    ],
+    "x": 0.10373900611659818,
+    "y": -0.06636193278220699,
+    "year": 1996
+  },
+  {
+    "title": "Romeo + Juliet",
+    "tmdb_id": 454,
+    "top_terms": [
+      "romeo",
+      "romeo juliet",
+      "juliet",
+      "em",
+      "romance",
+      "years"
+    ],
+    "x": 0.10479786047024872,
+    "y": -0.06192741602751247,
+    "year": 1996
+  },
+  {
+    "title": "There's Something About Mary",
+    "tmdb_id": 544,
+    "top_terms": [
+      "prom",
+      "mary",
+      "night",
+      "romance",
+      "intellectual",
+      "ted"
+    ],
+    "x": 0.10674197016054117,
+    "y": -0.07442895917241667,
+    "year": 1998
+  },
+  {
+    "title": "The Dark Knight",
+    "tmdb_id": 155,
+    "top_terms": [
+      "criminal",
+      "district attorney",
+      "crime",
+      "attorney",
+      "criminal mastermind",
+      "chaos"
+    ],
+    "x": 0.1950475633082795,
+    "y": 0.023383908064042218,
+    "year": 2008
+  },
+  {
+    "title": "Avatar",
+    "tmdb_id": 19995,
+    "top_terms": [
+      "tribal",
+      "22nd century",
+      "paraplegic",
+      "22nd",
+      "nature",
+      "marine"
+    ],
+    "x": 0.16570895589543785,
+    "y": 0.07261657056301067,
+    "year": 2009
+  },
+  {
+    "title": "Harry Potter and the Philosopher's Stone",
+    "tmdb_id": 671,
+    "top_terms": [
+      "school",
+      "harry",
+      "harry potter",
+      "potter",
+      "wizard",
+      "teen"
+    ],
+    "x": 0.21681220467820495,
+    "y": -0.18761750986320228,
+    "year": 2001
+  },
+  {
+    "title": "Iron Man",
+    "tmdb_id": 1726,
+    "top_terms": [
+      "engineer",
+      "overview held",
+      "imaginative",
+      "cave",
+      "background",
+      "title iron"
+    ],
+    "x": 0.2477060343463808,
+    "y": 0.25302200172907696,
+    "year": 2008
   },
   {
     "title": "The Lord of the Rings: The Fellowship of the Ring",
@@ -608,86 +3068,1451 @@
       "fellowship ring",
       "uncle",
       "allegory",
-      "fantasy"
+      "journey"
     ],
-    "x": 0.19255299869994175,
-    "y": -0.1582185678855464,
+    "x": 0.184418834594153,
+    "y": -0.08122244561301803,
     "year": 2001
   },
   {
-    "title": "Spider-Man: No Way Home",
-    "tmdb_id": 634649,
+    "title": "The Lord of the Rings: The Return of the King",
+    "tmdb_id": 122,
     "top_terms": [
+      "ring",
+      "armies",
+      "madness",
+      "allegory",
+      "king",
+      "quest"
+    ],
+    "x": 0.2323687379669042,
+    "y": -0.048593125205950154,
+    "year": 2003
+  },
+  {
+    "title": "Inglourious Basterds",
+    "tmdb_id": 16869,
+    "top_terms": [
+      "basterds",
+      "france",
+      "inglourious basterds",
+      "inglourious",
+      "occupation",
+      "jewish"
+    ],
+    "x": 0.12250025775503574,
+    "y": -0.04964033475055323,
+    "year": 2009
+  },
+  {
+    "title": "The Lord of the Rings: The Two Towers",
+    "tmdb_id": 121,
+    "top_terms": [
+      "towers",
+      "ring",
+      "saruman",
+      "orthanc tower",
+      "orthanc",
+      "saruman awaits"
+    ],
+    "x": 0.15917109754173944,
+    "y": -0.0602335350905801,
+    "year": 2002
+  },
+  {
+    "title": "Harry Potter and the Chamber of Secrets",
+    "tmdb_id": 672,
+    "top_terms": [
+      "harry",
+      "chamber",
+      "secrets",
+      "hogwarts",
+      "potter",
+      "harry potter"
+    ],
+    "x": 0.19228827513354524,
+    "y": -0.13790313724816203,
+    "year": 2002
+  },
+  {
+    "title": "Harry Potter and the Prisoner of Azkaban",
+    "tmdb_id": 673,
+    "top_terms": [
+      "school",
+      "bus",
+      "magic",
+      "potter",
+      "harry potter",
+      "harry"
+    ],
+    "x": 0.22685144027254842,
+    "y": -0.1793019826182004,
+    "year": 2004
+  },
+  {
+    "title": "Batman Begins",
+    "tmdb_id": 272,
+    "top_terms": [
+      "bruce wayne",
+      "wayne",
+      "bruce",
+      "batman",
+      "identity",
+      "comic rivalry"
+    ],
+    "x": 0.21374048459441616,
+    "y": 0.04760343200622759,
+    "year": 2005
+  },
+  {
+    "title": "Pirates of the Caribbean: The Curse of the Black Pearl",
+    "tmdb_id": 22,
+    "top_terms": [
+      "pirate",
+      "black pearl",
+      "pearl",
+      "curse",
+      "barbossa",
+      "blacksmith"
+    ],
+    "x": 0.09867760558810394,
+    "y": -0.029867689354346662,
+    "year": 2003
+  },
+  {
+    "title": "Harry Potter and the Goblet of Fire",
+    "tmdb_id": 674,
+    "top_terms": [
+      "harry",
+      "tournament",
+      "potter",
+      "harry potter",
+      "goblet",
+      "school"
+    ],
+    "x": 0.19530696026805958,
+    "y": -0.16817437923182374,
+    "year": 2005
+  },
+  {
+    "title": "Up",
+    "tmdb_id": 14160,
+    "top_terms": [
+      "fredricksen",
+      "exploring",
+      "life",
+      "em",
+      "age",
+      "explorer"
+    ],
+    "x": 0.1706554344924092,
+    "y": -0.06362609240422555,
+    "year": 2009
+  },
+  {
+    "title": "Gladiator",
+    "tmdb_id": 98,
+    "top_terms": [
+      "gladiator",
+      "maximus",
+      "rome",
+      "marcus",
+      "emperor",
+      "ancient"
+    ],
+    "x": 0.1311861549737773,
+    "y": -0.03282573783943567,
+    "year": 2000
+  },
+  {
+    "title": "Harry Potter and the Order of the Phoenix",
+    "tmdb_id": 675,
+    "top_terms": [
+      "harry",
+      "hogwarts",
+      "professor",
+      "magic",
+      "rising tide",
+      "term hogwarts"
+    ],
+    "x": 0.2159329500369417,
+    "y": -0.17674412976979756,
+    "year": 2007
+  },
+  {
+    "title": "Harry Potter and the Half-Blood Prince",
+    "tmdb_id": 767,
+    "top_terms": [
+      "harry",
+      "death eaters",
+      "eaters",
+      "dumbledore",
+      "death",
+      "wizard"
+    ],
+    "x": 0.1943700988906968,
+    "y": -0.16980407442036696,
+    "year": 2009
+  },
+  {
+    "title": "Spider-Man",
+    "tmdb_id": 557,
+    "top_terms": [
+      "spider",
+      "spider man",
       "superhero",
+      "man",
+      "teenage",
+      "teenage boy"
+    ],
+    "x": 0.2995430766768166,
+    "y": 0.30020715501299183,
+    "year": 2002
+  },
+  {
+    "title": "Finding Nemo",
+    "tmdb_id": 12,
+    "top_terms": [
+      "nemo",
+      "fish",
+      "clownfish",
+      "reef",
+      "barrier",
+      "father"
+    ],
+    "x": 0.14106344177701555,
+    "y": -0.05945118866836447,
+    "year": 2003
+  },
+  {
+    "title": "WALL\u00b7E",
+    "tmdb_id": 10681,
+    "top_terms": [
+      "wall",
+      "robot",
+      "eve",
+      "humans",
+      "earth",
+      "space"
+    ],
+    "x": 0.18546089607043065,
+    "y": 0.02531133895582981,
+    "year": 2008
+  },
+  {
+    "title": "Monsters, Inc.",
+    "tmdb_id": 585,
+    "top_terms": [
+      "monsters",
+      "energy",
+      "sulley",
+      "mike",
+      "em",
+      "parallel"
+    ],
+    "x": 0.13871055822129952,
+    "y": -0.07080346560237888,
+    "year": 2001
+  },
+  {
+    "title": "Kill Bill: Vol. 1",
+    "tmdb_id": 24,
+    "top_terms": [
+      "sword",
+      "kill vol",
+      "fu sword",
+      "jackie brown",
+      "shot",
+      "jackie"
+    ],
+    "x": 0.1442659639662472,
+    "y": -0.02583197724643019,
+    "year": 2003
+  },
+  {
+    "title": "The Incredibles",
+    "tmdb_id": 9806,
+    "top_terms": [
+      "incredibles",
+      "em",
+      "raise",
+      "excited hopeful",
+      "enjoy film",
+      "don like"
+    ],
+    "x": 0.20167274591926618,
+    "y": 0.03798682285207512,
+    "year": 2004
+  },
+  {
+    "title": "Shrek",
+    "tmdb_id": 808,
+    "top_terms": [
+      "shrek",
+      "donkey",
+      "ogre",
+      "dragon",
+      "princess",
+      "great"
+    ],
+    "x": 0.13846480578006687,
+    "y": -0.09057868834702691,
+    "year": 2001
+  },
+  {
+    "title": "Ratatouille",
+    "tmdb_id": 2062,
+    "top_terms": [
+      "remy",
+      "restaurant",
+      "chef",
+      "rat",
+      "french",
+      "critic"
+    ],
+    "x": 0.09671158229164722,
+    "y": -0.07139803251514737,
+    "year": 2007
+  },
+  {
+    "title": "The Hangover",
+    "tmdb_id": 18785,
+    "top_terms": [
+      "doug",
+      "night",
+      "cheerful shaggy",
+      "raucous",
+      "time genres",
+      "supposed"
+    ],
+    "x": 0.10689907364181804,
+    "y": -0.08541219309516902,
+    "year": 2009
+  },
+  {
+    "title": "The Prestige",
+    "tmdb_id": 1124,
+    "top_terms": [
+      "rivalry",
+      "tesla",
+      "class",
+      "obsession",
+      "intense",
+      "england magic"
+    ],
+    "x": 0.14000980127221963,
+    "y": -0.04804597999825999,
+    "year": 2006
+  },
+  {
+    "title": "Pirates of the Caribbean: Dead Man's Chest",
+    "tmdb_id": 58,
+    "top_terms": [
+      "davy",
+      "jack",
+      "debt",
+      "jones",
+      "davy jones",
+      "jack sparrow"
+    ],
+    "x": 0.11282699754294999,
+    "y": -0.0339353453600664,
+    "year": 2006
+  },
+  {
+    "title": "Catch Me If You Can",
+    "tmdb_id": 640,
+    "top_terms": [
+      "frank",
+      "fbi",
+      "true story",
+      "true",
+      "engagement",
+      "checks"
+    ],
+    "x": 0.1521354540122405,
+    "y": -0.1055057350391896,
+    "year": 2002
+  },
+  {
+    "title": "I Am Legend",
+    "tmdb_id": 6479,
+    "top_terms": [
+      "neville",
+      "virus",
+      "desperate",
+      "york city",
+      "world",
+      "just"
+    ],
+    "x": 0.23673414366444842,
+    "y": -0.029375255629858456,
+    "year": 2007
+  },
+  {
+    "title": "Spider-Man 2",
+    "tmdb_id": 558,
+    "top_terms": [
+      "identity",
+      "parker",
       "spider man",
       "spider",
-      "hero",
-      "parker",
-      "peter"
+      "superhero alter",
+      "carnage"
     ],
-    "x": 0.4510048328647017,
-    "y": 0.5617698355695427,
-    "year": 2021
+    "x": 0.3046545809921346,
+    "y": 0.2181060009279286,
+    "year": 2004
   },
   {
-    "title": "How to Have Sex",
-    "tmdb_id": 1075175,
+    "title": "Eternal Sunshine of the Spotless Mind",
+    "tmdb_id": 38,
     "top_terms": [
-      "holiday",
-      "summer",
-      "party",
-      "sex",
-      "female",
-      "teenage"
+      "memory",
+      "city regret",
+      "enchant review",
+      "procedure",
+      "vu",
+      "deja vu"
     ],
-    "x": 0.11448929513455523,
-    "y": -0.09765128345996801,
-    "year": 2023
+    "x": 0.15893213353586547,
+    "y": -0.05022022485389821,
+    "year": 2004
   },
   {
-    "title": "F1",
-    "tmdb_id": 911430,
+    "title": "Memento",
+    "tmdb_id": 77,
     "top_terms": [
-      "racing",
-      "driver",
-      "f1",
-      "formula",
-      "sports",
+      "memory",
+      "suffers",
+      "memory loss",
+      "short",
+      "form",
+      "wife"
+    ],
+    "x": 0.15507365042368113,
+    "y": -0.11596425756181075,
+    "year": 2000
+  },
+  {
+    "title": "The Departed",
+    "tmdb_id": 1422,
+    "top_terms": [
+      "police",
+      "undercover",
+      "undercover cop",
+      "mole",
+      "boston",
+      "irish"
+    ],
+    "x": 0.12533794005570947,
+    "y": -0.10721681354637329,
+    "year": 2006
+  },
+  {
+    "title": "Charlie and the Chocolate Factory",
+    "tmdb_id": 118,
+    "top_terms": [
+      "chocolate",
+      "candy",
+      "factory",
+      "chocolate factory",
+      "good",
+      "child"
+    ],
+    "x": 0.15772793191991097,
+    "y": -0.1017683778201099,
+    "year": 2005
+  },
+  {
+    "title": "V for Vendetta",
+    "tmdb_id": 752,
+    "top_terms": [
+      "fascist",
+      "vendetta",
+      "vengeful",
+      "masked vigilante",
+      "britain",
+      "comic book"
+    ],
+    "x": 0.18882632545573644,
+    "y": 0.04705118146057677,
+    "year": 2006
+  },
+  {
+    "title": "Pirates of the Caribbean: At World's End",
+    "tmdb_id": 285,
+    "top_terms": [
+      "davy",
+      "davy jones",
+      "jones",
+      "locker",
+      "jack",
+      "stuck"
+    ],
+    "x": 0.12041497420152734,
+    "y": -0.02144964993304261,
+    "year": 2007
+  },
+  {
+    "title": "Spider-Man 3",
+    "tmdb_id": 559,
+    "top_terms": [
+      "spider",
+      "spider man",
+      "hurdle",
+      "man",
+      "alien",
+      "organism"
+    ],
+    "x": 0.2323245664192803,
+    "y": 0.2677489592217276,
+    "year": 2007
+  },
+  {
+    "title": "Cars",
+    "tmdb_id": 920,
+    "top_terms": [
+      "route",
+      "cars",
+      "rookie",
+      "em",
+      "town",
+      "race"
+    ],
+    "x": 0.15402239535777948,
+    "y": -0.07942753669716188,
+    "year": 2006
+  },
+  {
+    "title": "Kill Bill: Vol. 2",
+    "tmdb_id": 393,
+    "top_terms": [
+      "kill",
+      "vol",
+      "kill vol",
+      "assassin",
+      "revenge",
+      "duringcreditsstinger review"
+    ],
+    "x": 0.15668587284827085,
+    "y": -0.02626075454334621,
+    "year": 2004
+  },
+  {
+    "title": "Star Wars: Episode III - Revenge of the Sith",
+    "tmdb_id": 1895,
+    "top_terms": [
+      "sith",
+      "star wars",
+      "wars",
+      "episode iii",
+      "iii revenge",
+      "revenge sith"
+    ],
+    "x": 0.14461007504426593,
+    "y": 0.043309427097835175,
+    "year": 2005
+  },
+  {
+    "title": "Sherlock Holmes",
+    "tmdb_id": 10528,
+    "top_terms": [
+      "holmes",
+      "sherlock",
+      "sherlock holmes",
+      "england",
+      "detective",
+      "mystery"
+    ],
+    "x": 0.14378415754705412,
+    "y": -0.11865190283537762,
+    "year": 2009
+  },
+  {
+    "title": "300",
+    "tmdb_id": 1271,
+    "top_terms": [
+      "sparta",
+      "ancient",
+      "greece",
+      "thermopylae",
+      "300",
+      "ancient greece"
+    ],
+    "x": 0.16732598444755273,
+    "y": -0.0030813505386076815,
+    "year": 2007
+  },
+  {
+    "title": "Twilight",
+    "tmdb_id": 8966,
+    "top_terms": [
+      "vampire",
+      "edward",
+      "romance",
+      "high school",
+      "love",
+      "teen"
+    ],
+    "x": 0.23014014733378482,
+    "y": -0.1558070438399599,
+    "year": 2008
+  },
+  {
+    "title": "Star Wars: Episode II - Attack of the Clones",
+    "tmdb_id": 1894,
+    "top_terms": [
+      "sequel prequel",
+      "prequel",
+      "wars",
+      "teenage rebellion",
+      "production line",
+      "phantom menace"
+    ],
+    "x": 0.1800589376285201,
+    "y": 0.06443843520020462,
+    "year": 2002
+  },
+  {
+    "title": "Ice Age",
+    "tmdb_id": 425,
+    "top_terms": [
+      "mammoth",
+      "sloth",
+      "toothed tiger",
+      "toothed",
+      "prehistoric",
+      "ice age"
+    ],
+    "x": 0.13525152597216653,
+    "y": -0.06377119489025493,
+    "year": 2002
+  },
+  {
+    "title": "The Curious Case of Benjamin Button",
+    "tmdb_id": 4922,
+    "top_terms": [
+      "benjamin",
+      "reverse",
+      "unusual",
+      "fiction period",
+      "elderly",
+      "dancer"
+    ],
+    "x": 0.19356342292678633,
+    "y": -0.08175943546469343,
+    "year": 2008
+  },
+  {
+    "title": "The Devil Wears Prada",
+    "tmdb_id": 350,
+    "top_terms": [
+      "fashion",
+      "editor chief",
+      "fashion magazine",
+      "editor",
+      "assistant",
+      "magazine"
+    ],
+    "x": 0.14154888213216224,
+    "y": -0.07203141008193727,
+    "year": 2006
+  },
+  {
+    "title": "Shrek 2",
+    "tmdb_id": 809,
+    "top_terms": [
+      "shrek",
+      "fairy",
+      "fairy godmother",
+      "godmother",
+      "donkey",
+      "ogre"
+    ],
+    "x": 0.1334693020737801,
+    "y": -0.08760701422877004,
+    "year": 2004
+  },
+  {
+    "title": "Donnie Darko",
+    "tmdb_id": 141,
+    "top_terms": [
+      "school",
+      "imaginary friend",
+      "visions",
+      "imaginary",
+      "commit",
+      "fully understand"
+    ],
+    "x": 0.16847985423689546,
+    "y": -0.08264262306147872,
+    "year": 2001
+  },
+  {
+    "title": "No Country for Old Men",
+    "tmdb_id": 6977,
+    "top_terms": [
+      "western",
+      "cartel",
+      "drug",
+      "sheriff",
+      "motel",
+      "texas"
+    ],
+    "x": 0.13902957915936975,
+    "y": -0.09918903751792742,
+    "year": 2007
+  },
+  {
+    "title": "Zombieland",
+    "tmdb_id": 19908,
+    "top_terms": [
+      "zombie",
+      "body",
+      "fun",
+      "horror",
+      "columbus",
+      "relationship saving"
+    ],
+    "x": 0.15143551865448696,
+    "y": -0.05879842660231106,
+    "year": 2009
+  },
+  {
+    "title": "2012",
+    "tmdb_id": 14161,
+    "top_terms": [
+      "disaster",
+      "een",
+      "race",
+      "adrian",
+      "solar",
+      "earth"
+    ],
+    "x": 0.16319797594167842,
+    "y": 0.05825190899611428,
+    "year": 2009
+  },
+  {
+    "title": "The Incredible Hulk",
+    "tmdb_id": 1724,
+    "top_terms": [
+      "hulk",
+      "incredible",
+      "face",
+      "military",
+      "force",
+      "scientist"
+    ],
+    "x": 0.2693308742755663,
+    "y": 0.21769815211027224,
+    "year": 2008
+  },
+  {
+    "title": "I, Robot",
+    "tmdb_id": 2048,
+    "top_terms": [
+      "robot",
+      "robotics",
+      "homicide",
+      "humanity",
+      "investigation",
       "car"
     ],
-    "x": 0.09623698394604192,
-    "y": -0.05760035815629213,
-    "year": 2025
+    "x": 0.16136705348410932,
+    "y": -0.011430709486840824,
+    "year": 2004
   },
   {
-    "title": "KPop Demon Hunters",
-    "tmdb_id": 803796,
+    "title": "Kung Fu Panda",
+    "tmdb_id": 9502,
     "top_terms": [
-      "demon",
-      "pop",
-      "rumi",
-      "girl",
-      "boy",
-      "group"
+      "po",
+      "panda",
+      "kung",
+      "kung fu",
+      "fu",
+      "clumsy"
     ],
-    "x": 0.14940655410724157,
-    "y": -0.10120580591622662,
-    "year": 2025
+    "x": 0.13120989445660264,
+    "y": -0.03366048436689279,
+    "year": 2008
   },
   {
-    "title": "Deadpool & Wolverine",
-    "tmdb_id": 533535,
+    "title": "The Notebook",
+    "tmdb_id": 11036,
     "top_terms": [
-      "deadpool",
-      "wade",
-      "wolverine",
+      "notebook",
+      "couple",
+      "love",
+      "day",
+      "reunited",
+      "tears"
+    ],
+    "x": 0.18667789537073476,
+    "y": -0.09167690902423266,
+    "year": 2004
+  },
+  {
+    "title": "Ocean's Eleven",
+    "tmdb_id": 161,
+    "top_terms": [
+      "danny",
+      "ocean",
+      "casino",
+      "plan",
+      "ex",
+      "ex wife"
+    ],
+    "x": 0.09593357021381753,
+    "y": -0.08037377307300406,
+    "year": 2001
+  },
+  {
+    "title": "American Psycho",
+    "tmdb_id": 1359,
+    "top_terms": [
+      "wall street",
+      "businessman",
+      "wealthy",
+      "wall",
+      "street",
+      "psychological"
+    ],
+    "x": 0.19990429995423456,
+    "y": -0.1281988128292163,
+    "year": 2000
+  },
+  {
+    "title": "Cast Away",
+    "tmdb_id": 8358,
+    "top_terms": [
+      "chuck",
+      "island",
+      "plane",
+      "important task",
+      "presumed dead",
+      "presumed"
+    ],
+    "x": 0.12701500723884873,
+    "y": -0.05587094812075281,
+    "year": 2000
+  },
+  {
+    "title": "Transformers",
+    "tmdb_id": 1858,
+    "top_terms": [
+      "decepticons",
+      "robot",
+      "autobots",
+      "sam",
+      "sort",
+      "alien"
+    ],
+    "x": 0.1501815728078286,
+    "y": 0.052085317348379366,
+    "year": 2007
+  },
+  {
+    "title": "X-Men",
+    "tmdb_id": 36657,
+    "top_terms": [
+      "men",
       "superhero",
-      "hero",
-      "mercenary deadpool"
+      "come",
+      "flicks",
+      "similar",
+      "mutant based"
     ],
-    "x": 0.2150135201516235,
-    "y": 0.1868435550580936,
-    "year": 2024
+    "x": 0.21518903389934985,
+    "y": 0.19482993457194633,
+    "year": 2000
+  },
+  {
+    "title": "Taken",
+    "tmdb_id": 8681,
+    "top_terms": [
+      "daughter",
+      "paris",
+      "ex",
+      "abducted",
+      "trying",
+      "gang"
+    ],
+    "x": 0.1671486935602538,
+    "y": -0.0536632711814243,
+    "year": 2008
+  },
+  {
+    "title": "The Matrix Reloaded",
+    "tmdb_id": 604,
+    "top_terms": [
+      "matrix",
+      "reloaded",
+      "zion",
+      "computer",
+      "machine",
+      "neo"
+    ],
+    "x": 0.18815086388340085,
+    "y": -0.0007113135862937316,
+    "year": 2003
+  },
+  {
+    "title": "Madagascar",
+    "tmdb_id": 953,
+    "top_terms": [
+      "madagascar",
+      "animal",
+      "zoo",
+      "island",
+      "movie",
+      "taste"
+    ],
+    "x": 0.14647801908124222,
+    "y": -0.0887855142051497,
+    "year": 2005
+  },
+  {
+    "title": "Casino Royale",
+    "tmdb_id": 36557,
+    "top_terms": [
+      "bond",
+      "poker",
+      "chiffre",
+      "game",
+      "casino",
+      "banker"
+    ],
+    "x": 0.16255360645547395,
+    "y": -0.0419233576112691,
+    "year": 2006
+  },
+  {
+    "title": "Gran Torino",
+    "tmdb_id": 13223,
+    "top_terms": [
+      "gran",
+      "gran torino",
+      "torino",
+      "war veteran",
+      "veteran",
+      "kowalski"
+    ],
+    "x": 0.09119142717210986,
+    "y": -0.04699741035534659,
+    "year": 2008
+  },
+  {
+    "title": "Zodiac",
+    "tmdb_id": 1949,
+    "top_terms": [
+      "zodiac",
+      "killer",
+      "fincher",
+      "newspaper",
+      "san francisco",
+      "francisco"
+    ],
+    "x": 0.15206945452835216,
+    "y": -0.12095355540914822,
+    "year": 2007
+  },
+  {
+    "title": "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
+    "tmdb_id": 411,
+    "top_terms": [
+      "narnia",
+      "witch",
+      "lion",
+      "wardrobe",
+      "chronicles narnia",
+      "chronicles"
+    ],
+    "x": 0.184980252849867,
+    "y": -0.0878452743348364,
+    "year": 2005
+  },
+  {
+    "title": "Bruce Almighty",
+    "tmdb_id": 310,
+    "top_terms": [
+      "bruce",
+      "almighty",
+      "god",
+      "nolan",
+      "reporter",
+      "fun filled"
+    ],
+    "x": 0.12939065898760194,
+    "y": -0.01933889402228856,
+    "year": 2003
+  },
+  {
+    "title": "Slumdog Millionaire",
+    "tmdb_id": 12405,
+    "top_terms": [
+      "millionaire",
+      "indian version",
+      "mumbai",
+      "indian",
+      "india",
+      "cheating"
+    ],
+    "x": 0.11646689646365688,
+    "y": -0.06892720928956603,
+    "year": 2008
+  },
+  {
+    "title": "X-Men Origins: Wolverine",
+    "tmdb_id": 2080,
+    "top_terms": [
+      "wolverine",
+      "mutant",
+      "logan",
+      "comic prequel",
+      "excited powerful",
+      "excuse"
+    ],
+    "x": 0.21099242113061065,
+    "y": 0.1302372646872525,
+    "year": 2009
+  },
+  {
+    "title": "Mr. & Mrs. Smith",
+    "tmdb_id": 787,
+    "top_terms": [
+      "marriage",
+      "mrs",
+      "smith",
+      "mr",
+      "couple",
+      "action comedy"
+    ],
+    "x": 0.1276558290732814,
+    "y": -0.046113433572587265,
+    "year": 2005
+  },
+  {
+    "title": "A Beautiful Mind",
+    "tmdb_id": 453,
+    "top_terms": [
+      "nash",
+      "mathematician",
+      "discovery",
+      "cryptography",
+      "math",
+      "self discovery"
+    ],
+    "x": 0.13820778493859087,
+    "y": -0.08429703382173656,
+    "year": 2001
+  },
+  {
+    "title": "Troy",
+    "tmdb_id": 652,
+    "top_terms": [
+      "troy",
+      "trojan",
+      "sparta",
+      "greece",
+      "000",
+      "ancient"
+    ],
+    "x": 0.1266938591226808,
+    "y": -0.03490012874223519,
+    "year": 2004
+  },
+  {
+    "title": "(500) Days of Summer",
+    "tmdb_id": 19913,
+    "top_terms": [
+      "summer",
+      "500 days",
+      "500",
+      "tom",
+      "days",
+      "romcom"
+    ],
+    "x": 0.11940703545051415,
+    "y": -0.08573879388424213,
+    "year": 2009
+  },
+  {
+    "title": "Requiem for a Dream",
+    "tmdb_id": 641,
+    "top_terms": [
+      "dream",
+      "drug",
+      "said",
+      "expose",
+      "doubt film",
+      "spite"
+    ],
+    "x": 0.11911416423105267,
+    "y": -0.09522689876957685,
+    "year": 2000
+  },
+  {
+    "title": "Night at the Museum",
+    "tmdb_id": 1593,
+    "top_terms": [
+      "museum",
+      "night",
+      "natural",
+      "chaos",
+      "history",
+      "inanimate"
+    ],
+    "x": 0.11859735776431601,
+    "y": -0.05193633358699805,
+    "year": 2006
+  },
+  {
+    "title": "X2",
+    "tmdb_id": 36658,
+    "top_terms": [
+      "better",
+      "mutants",
+      "mutant",
+      "improvement",
+      "professor charles",
+      "superhuman super"
+    ],
+    "x": 0.18886672761809395,
+    "y": 0.14105709487456292,
+    "year": 2003
+  },
+  {
+    "title": "The Fast and the Furious",
+    "tmdb_id": 9799,
+    "top_terms": [
+      "toretto",
+      "street",
+      "gang",
+      "racing",
+      "los angeles",
+      "angeles"
+    ],
+    "x": 0.13611296271488307,
+    "y": -0.07713248851867865,
+    "year": 2001
+  },
+  {
+    "title": "The Matrix Revolutions",
+    "tmdb_id": 605,
+    "top_terms": [
+      "matrix",
+      "computer",
+      "allegory",
+      "machine",
+      "end",
+      "year"
+    ],
+    "x": 0.21985908538238927,
+    "y": 0.0006514841680731613,
+    "year": 2003
+  },
+  {
+    "title": "Men in Black II",
+    "tmdb_id": 608,
+    "top_terms": [
+      "mib",
+      "reunite",
+      "years",
+      "earth",
+      "identity",
+      "alien"
+    ],
+    "x": 0.2465219442037599,
+    "y": 0.1275440846964329,
+    "year": 2002
+  },
+  {
+    "title": "The Pursuit of Happyness",
+    "tmdb_id": 1402,
+    "top_terms": [
+      "salesman",
+      "single",
+      "son",
+      "father",
+      "overview struggling",
+      "stockbroker"
+    ],
+    "x": 0.1430393112925331,
+    "y": -0.1026300828756288,
+    "year": 2006
+  },
+  {
+    "title": "Star Trek",
+    "tmdb_id": 13475,
+    "top_terms": [
+      "space",
+      "warp",
+      "unlikely",
+      "did",
+      "century",
+      "like"
+    ],
+    "x": 0.21264900729513958,
+    "y": 0.047248143759131035,
+    "year": 2009
+  },
+  {
+    "title": "X-Men: The Last Stand",
+    "tmdb_id": 36668,
+    "top_terms": [
+      "men",
+      "professor charles",
+      "complete",
+      "charles xavier",
+      "storyline",
+      "mutant based"
+    ],
+    "x": 0.18712518318699511,
+    "y": 0.1445552690721271,
+    "year": 2006
+  },
+  {
+    "title": "Million Dollar Baby",
+    "tmdb_id": 70,
+    "top_terms": [
+      "boxing",
+      "trainer",
+      "dunn",
+      "dollar",
+      "million dollar",
+      "female"
+    ],
+    "x": 0.10511925970885418,
+    "y": -0.06803252490068552,
+    "year": 2004
+  },
+  {
+    "title": "District 9",
+    "tmdb_id": 17654,
+    "top_terms": [
+      "aliens",
+      "footage",
+      "company",
+      "technology",
+      "master",
+      "alien"
+    ],
+    "x": 0.1539677558023782,
+    "y": 0.025153488920569105,
+    "year": 2009
+  },
+  {
+    "title": "Ice Age: The Meltdown",
+    "tmdb_id": 950,
+    "top_terms": [
+      "ice",
+      "ice age",
+      "age",
+      "return sequel",
+      "saber toothed",
+      "sloth"
+    ],
+    "x": 0.11697333836346153,
+    "y": -0.0321672963824515,
+    "year": 2006
+  },
+  {
+    "title": "Hancock",
+    "tmdb_id": 8960,
+    "top_terms": [
+      "hancock",
+      "expert",
+      "second half",
+      "faded",
+      "ended",
+      "love"
+    ],
+    "x": 0.14716298496129282,
+    "y": -0.014575601128260863,
+    "year": 2008
+  },
+  {
+    "title": "Corpse Bride",
+    "tmdb_id": 3933,
+    "top_terms": [
+      "bride",
+      "wedding",
+      "corpse",
+      "underworld",
+      "ring",
+      "19th century"
+    ],
+    "x": 0.10732676164142811,
+    "y": -0.07833319064405612,
+    "year": 2005
+  },
+  {
+    "title": "The Pianist",
+    "tmdb_id": 423,
+    "top_terms": [
+      "ghetto",
+      "pianist",
+      "szpilman",
+      "war",
+      "nazi",
+      "resistance"
+    ],
+    "x": 0.12891642891173302,
+    "y": -0.05922615628901536,
+    "year": 2002
+  },
+  {
+    "title": "Into the Wild",
+    "tmdb_id": 5915,
+    "top_terms": [
+      "wilderness",
+      "relationship self",
+      "camping",
+      "account",
+      "university",
+      "gives"
+    ],
+    "x": 0.13103626529175014,
+    "y": -0.09602060562963279,
+    "year": 2007
+  },
+  {
+    "title": "The Bourne Identity",
+    "tmdb_id": 2501,
+    "top_terms": [
+      "bourne",
+      "amnesia",
+      "identity",
+      "number",
+      "hand",
+      "spy"
+    ],
+    "x": 0.1575944834107643,
+    "y": -0.05466408111492731,
+    "year": 2002
+  },
+  {
+    "title": "The Da Vinci Code",
+    "tmdb_id": 591,
+    "top_terms": [
+      "vinci",
+      "da",
+      "da vinci",
+      "christianity",
+      "secret society",
+      "museum"
+    ],
+    "x": 0.10186776802458586,
+    "y": -0.06028625555140188,
+    "year": 2006
+  },
+  {
+    "title": "Saw",
+    "tmdb_id": 176,
+    "top_terms": [
+      "game",
+      "voice",
+      "horror",
+      "saw",
+      "game review",
+      "theatrical"
+    ],
+    "x": 0.1421966622849053,
+    "y": -0.09434041411568535,
+    "year": 2004
+  },
+  {
+    "title": "Watchmen",
+    "tmdb_id": 13183,
+    "top_terms": [
+      "doomsday",
+      "david",
+      "masked",
+      "reunited",
+      "brutally",
+      "soviet union"
+    ],
+    "x": 0.17043121787271184,
+    "y": 0.04408896284673185,
+    "year": 2009
+  },
+  {
+    "title": "Fantastic Four",
+    "tmdb_id": 9738,
+    "top_terms": [
+      "storm",
+      "space",
+      "sue storm",
+      "sue",
+      "richards",
+      "reed richards"
+    ],
+    "x": 0.16226928294343254,
+    "y": 0.08916875180486934,
+    "year": 2005
+  },
+  {
+    "title": "Snatch",
+    "tmdb_id": 107,
+    "top_terms": [
+      "diamond",
+      "gangster",
+      "snatch",
+      "boxing",
+      "priceless",
+      "gambling"
+    ],
+    "x": 0.09812051881928484,
+    "y": -0.06531545233219277,
+    "year": 2000
+  },
+  {
+    "title": "Unbreakable",
+    "tmdb_id": 9741,
+    "top_terms": [
+      "glass",
+      "accident",
+      "train",
+      "mystery",
+      "price",
+      "forgotten"
+    ],
+    "x": 0.1681558382366877,
+    "y": -0.06417730647319722,
+    "year": 2000
+  },
+  {
+    "title": "Shrek the Third",
+    "tmdb_id": 810,
+    "top_terms": [
+      "shrek",
+      "kingdom",
+      "king",
+      "fiona",
+      "heir throne",
+      "heir"
+    ],
+    "x": 0.13292870773128423,
+    "y": -0.06311917894018913,
+    "year": 2007
+  },
+  {
+    "title": "Interstellar",
+    "tmdb_id": 157336,
+    "top_terms": [
+      "space",
+      "time",
+      "interstellar",
+      "travel",
+      "space travel",
+      "father"
+    ],
+    "x": 0.23655129523262344,
+    "y": 0.03324192120074679,
+    "year": 2014
   },
   {
     "title": "Inception",
@@ -696,58 +4521,88 @@
       "subconscious",
       "inception",
       "trailer",
-      "lot",
       "dream",
-      "offered chance"
+      "lot",
+      "targets"
     ],
-    "x": 0.14728634231838766,
-    "y": -0.05567027899328834,
+    "x": 0.13389099095158738,
+    "y": 0.005001560998383403,
     "year": 2010
   },
   {
-    "title": "9 Songs",
-    "tmdb_id": 27,
+    "title": "The Avengers",
+    "tmdb_id": 24428,
     "top_terms": [
-      "concert",
-      "rock",
-      "london",
-      "sexual",
-      "exchange",
-      "exchange student"
+      "team",
+      "city superhero",
+      "team aftercreditsstinger",
+      "fury",
+      "jr",
+      "safety"
     ],
-    "x": 0.11151311134934362,
-    "y": -0.08484519699605644,
-    "year": 2004
+    "x": 0.29242260104525397,
+    "y": 0.29227398868983984,
+    "year": 2012
   },
   {
-    "title": "Harry Potter and the Philosopher's Stone",
-    "tmdb_id": 671,
+    "title": "Deadpool",
+    "tmdb_id": 293660,
     "top_terms": [
-      "school",
-      "harry",
-      "potter",
-      "harry potter",
-      "wizard",
-      "teen"
+      "deadpool",
+      "mercenary",
+      "forces operative",
+      "wade wilson",
+      "wade",
+      "operative"
     ],
-    "x": 0.2183517984739518,
-    "y": -0.1205014695307799,
-    "year": 2001
+    "x": 0.1753609115631206,
+    "y": 0.09413716553300347,
+    "year": 2016
   },
   {
-    "title": "28 Years Later: The Bone Temple",
-    "tmdb_id": 1272837,
+    "title": "Avengers: Infinity War",
+    "tmdb_id": 299536,
     "top_terms": [
-      "bone",
-      "bone temple",
-      "later bone",
-      "28 years",
-      "28",
-      "zombie"
+      "avengers",
+      "infinity",
+      "cosmic",
+      "mcu",
+      "power",
+      "collect"
     ],
-    "x": 0.1606244614856672,
-    "y": -0.0959759989966235,
-    "year": 2026
+    "x": 0.2175995193791836,
+    "y": 0.26881171424612704,
+    "year": 2018
+  },
+  {
+    "title": "Guardians of the Galaxy",
+    "tmdb_id": 118340,
+    "top_terms": [
+      "years",
+      "guardians galaxy",
+      "abducted",
+      "comic space",
+      "title guardians",
+      "peter quill"
+    ],
+    "x": 0.2704167469761863,
+    "y": 0.28901168956057033,
+    "year": 2014
+  },
+  {
+    "title": "Django Unchained",
+    "tmdb_id": 68718,
+    "top_terms": [
+      "slave",
+      "plantation",
+      "mississippi",
+      "bounty",
+      "bounty hunter",
+      "hunter"
+    ],
+    "x": 0.09141556206392981,
+    "y": -0.04239147385727022,
+    "year": 2012
   },
   {
     "title": "Avengers: Endgame",
@@ -760,594 +4615,1404 @@
       "avengers infinity",
       "universe"
     ],
-    "x": 0.27955152824695645,
-    "y": 0.18468300855981803,
+    "x": 0.2326880980116292,
+    "y": 0.24715206870375542,
     "year": 2019
   },
   {
-    "title": "The Super Mario Bros. Movie",
-    "tmdb_id": 502356,
+    "title": "Joker",
+    "tmdb_id": 475557,
     "top_terms": [
-      "mario",
-      "super",
-      "mario bros",
-      "bros",
-      "super mario",
-      "luigi"
-    ],
-    "x": 0.19212690298769985,
-    "y": -0.09565696648951186,
-    "year": 2023
-  },
-  {
-    "title": "Pulp Fiction",
-    "tmdb_id": 680,
-    "top_terms": [
+      "joker",
+      "1980s",
+      "social",
       "crime",
-      "drug",
-      "pulp fiction",
-      "pulp",
-      "los angeles",
-      "hit"
+      "comedian",
+      "clown"
     ],
-    "x": 0.16949842919623395,
-    "y": -0.0908822882570719,
-    "year": 1994
+    "x": 0.17794526442806266,
+    "y": -0.0834617748664902,
+    "year": 2019
   },
   {
-    "title": "Jurassic World Rebirth",
-    "tmdb_id": 1234821,
+    "title": "The Wolf of Wall Street",
+    "tmdb_id": 106646,
     "top_terms": [
-      "world",
-      "dinosaurs",
-      "zora",
-      "jurassic",
-      "secret mission",
-      "jurassic world"
+      "wall street",
+      "wall",
+      "street",
+      "fraud",
+      "wolf",
+      "financial"
     ],
-    "x": 0.16175925002501235,
-    "y": -0.07157583488077503,
-    "year": 2025
+    "x": 0.15938800773939302,
+    "y": -0.09234500428313248,
+    "year": 2013
   },
   {
-    "title": "xXx",
-    "tmdb_id": 7451,
+    "title": "Shutter Island",
+    "tmdb_id": 11324,
     "top_terms": [
-      "adrenaline",
-      "adrenaline junkie",
-      "junkie",
-      "mission",
-      "republic",
-      "yorgi"
+      "patient",
+      "visions",
+      "insane",
+      "hospital",
+      "mystery",
+      "war ii"
     ],
-    "x": 0.12672562506045312,
-    "y": -0.058616367224163676,
-    "year": 2002
+    "x": 0.16399804461003392,
+    "y": -0.0984799562281141,
+    "year": 2010
   },
   {
-    "title": "The Mummy",
-    "tmdb_id": 564,
+    "title": "Avengers: Age of Ultron",
+    "tmdb_id": 99861,
     "top_terms": [
-      "egypt",
-      "1920s",
-      "mummy",
-      "secret",
-      "fantasy",
-      "worse death"
+      "ultron",
+      "avengers",
+      "fictitious",
+      "enacting",
+      "fictitious country",
+      "overview tony"
     ],
-    "x": 0.17103847328504815,
-    "y": -0.11288138296293629,
-    "year": 1999
-  },
-  {
-    "title": "The Wrecking Crew",
-    "tmdb_id": 1168190,
-    "top_terms": [
-      "wrecking",
-      "wrecking crew",
-      "hand",
-      "crew",
-      "brother",
-      "father"
-    ],
-    "x": 0.2013596312568334,
-    "y": -0.12058522051198305,
-    "year": 2026
-  },
-  {
-    "title": "Now You See Me: Now You Don't",
-    "tmdb_id": 425274,
-    "top_terms": [
-      "diamond",
-      "heist",
-      "horsemen",
-      "antwerp",
-      "team",
-      "new"
-    ],
-    "x": 0.1431491113653973,
-    "y": -0.05408384236259217,
-    "year": 2025
-  },
-  {
-    "title": "Top Gun: Maverick",
-    "tmdb_id": 361743,
-    "top_terms": [
-      "maverick",
-      "gun",
-      "gun maverick",
-      "pilot",
-      "em",
-      "navy"
-    ],
-    "x": 0.10629036759399689,
-    "y": -0.05164771419357965,
-    "year": 2022
-  },
-  {
-    "title": "Sinners",
-    "tmdb_id": 1233413,
-    "top_terms": [
-      "vampire",
-      "sinners",
-      "cousin",
-      "mississippi",
-      "brother",
-      "horror"
-    ],
-    "x": 0.13851972429742854,
-    "y": -0.11059135651592798,
-    "year": 2025
-  },
-  {
-    "title": "Forrest Gump",
-    "tmdb_id": 13,
-    "top_terms": [
-      "vietnam",
-      "parent",
-      "single",
-      "mother",
-      "usa",
-      "war"
-    ],
-    "x": 0.21284679736385623,
-    "y": -0.11096227714679417,
-    "year": 1994
-  },
-  {
-    "title": "The Drama",
-    "tmdb_id": 1325734,
-    "top_terms": [
-      "engaged",
-      "week",
-      "engaged couple",
-      "couple",
-      "unexpected turn",
-      "sit"
-    ],
-    "x": 0.09933001231462595,
-    "y": -0.09425284997741079,
-    "year": 2026
-  },
-  {
-    "title": "Avatar",
-    "tmdb_id": 19995,
-    "top_terms": [
-      "tribal",
-      "marine",
-      "paraplegic",
-      "nature",
-      "22nd century",
-      "22nd"
-    ],
-    "x": 0.15605150941359935,
-    "y": -0.04916849163520145,
-    "year": 2009
-  },
-  {
-    "title": "Fifty Shades of Grey",
-    "tmdb_id": 216015,
-    "top_terms": [
-      "christian",
-      "ana",
-      "rich",
-      "grey",
-      "bad",
-      "rich bdsm"
-    ],
-    "x": 0.15738471779172983,
-    "y": -0.11508566743272144,
+    "x": 0.28217060458059273,
+    "y": 0.2802449631492743,
     "year": 2015
   },
   {
-    "title": "\"Wuthering Heights\"",
-    "tmdb_id": 1316092,
+    "title": "The Dark Knight Rises",
+    "tmdb_id": 49026,
     "top_terms": [
-      "romance",
-      "period",
-      "wuthering",
-      "18th",
-      "18th century",
-      "gothic"
+      "dark knight",
+      "knight",
+      "batman",
+      "rises",
+      "dent",
+      "attorney"
     ],
-    "x": 0.1492573094108457,
-    "y": -0.13571091611450453,
-    "year": 2026
+    "x": 0.17654385756836594,
+    "y": 0.01849954972766298,
+    "year": 2012
   },
   {
-    "title": "Shrek",
-    "tmdb_id": 808,
+    "title": "Mad Max: Fury Road",
+    "tmdb_id": 76341,
     "top_terms": [
-      "shrek",
-      "donkey",
-      "dragon",
-      "ogre",
-      "princess",
-      "great"
+      "future",
+      "desert",
+      "road",
+      "apocalyptic",
+      "run",
+      "reaches"
     ],
-    "x": 0.12701813533880488,
-    "y": -0.10014057528450897,
-    "year": 2001
+    "x": 0.21534887361413818,
+    "y": 0.038348679334379965,
+    "year": 2015
+  },
+  {
+    "title": "Captain America: Civil War",
+    "tmdb_id": 271110,
+    "top_terms": [
+      "captain america",
+      "captain",
+      "america",
+      "superhero",
+      "versus",
+      "marvel"
+    ],
+    "x": 0.2535905599740887,
+    "y": 0.35601193040810636,
+    "year": 2016
+  },
+  {
+    "title": "Black Panther",
+    "tmdb_id": 284054,
+    "top_terms": [
+      "challa",
+      "wakanda",
+      "panther",
+      "black panther",
+      "country",
+      "mcu"
+    ],
+    "x": 0.22539261395821322,
+    "y": 0.19623747054061091,
+    "year": 2018
+  },
+  {
+    "title": "Inside Out",
+    "tmdb_id": 150540,
+    "top_terms": [
+      "joy",
+      "sadness",
+      "disgust",
+      "anger",
+      "emotions",
+      "fear"
+    ],
+    "x": 0.1540960922491368,
+    "y": -0.08794929532116455,
+    "year": 2015
+  },
+  {
+    "title": "Doctor Strange",
+    "tmdb_id": 284052,
+    "top_terms": [
+      "sorcerer",
+      "doctor",
+      "marvel",
+      "push",
+      "push limits",
+      "injury"
+    ],
+    "x": 0.25089518301599417,
+    "y": 0.23014284545434563,
+    "year": 2016
+  },
+  {
+    "title": "Iron Man 3",
+    "tmdb_id": 68721,
+    "top_terms": [
+      "return sequel",
+      "overview tony",
+      "reasons",
+      "superhero malibu",
+      "tennessee",
+      "terror"
+    ],
+    "x": 0.24642984770718088,
+    "y": 0.27169113308934584,
+    "year": 2013
+  },
+  {
+    "title": "The Hunger Games",
+    "tmdb_id": 70160,
+    "top_terms": [
+      "futuristic",
+      "hunger",
+      "survival",
+      "televised",
+      "sympathetic tragic",
+      "provocative dramatic"
+    ],
+    "x": 0.20858151248700663,
+    "y": -0.05482961049883985,
+    "year": 2012
+  },
+  {
+    "title": "Spider-Man: Homecoming",
+    "tmdb_id": 315635,
+    "top_terms": [
+      "spider man",
+      "spider",
+      "superhero",
+      "high school",
+      "man",
+      "school"
+    ],
+    "x": 0.3426429965527637,
+    "y": 0.38229978235286083,
+    "year": 2017
+  },
+  {
+    "title": "Guardians of the Galaxy Vol. 2",
+    "tmdb_id": 283995,
+    "top_terms": [
+      "long",
+      "guardians",
+      "galaxy vol",
+      "30",
+      "humour",
+      "shouldn"
+    ],
+    "x": 0.267333546361252,
+    "y": 0.29359332534097043,
+    "year": 2017
+  },
+  {
+    "title": "Captain America: The First Avenger",
+    "tmdb_id": 1771,
+    "top_terms": [
+      "captain america",
+      "captain",
+      "america",
+      "rogers",
+      "war",
+      "super soldier"
+    ],
+    "x": 0.2885844399992395,
+    "y": 0.21603543471472753,
+    "year": 2011
   },
   {
     "title": "Iron Man 2",
     "tmdb_id": 10138,
     "top_terms": [
       "iron man",
-      "iron",
       "stark",
+      "iron",
       "technology",
-      "superhero",
-      "man"
+      "dual life",
+      "forge new"
     ],
-    "x": 0.24569882696810416,
-    "y": 0.20744545677728624,
+    "x": 0.23727554959230857,
+    "y": 0.26704804727133213,
     "year": 2010
   },
   {
-    "title": "Spider-Man",
-    "tmdb_id": 557,
+    "title": "Thor",
+    "tmdb_id": 10195,
     "top_terms": [
-      "spider",
-      "superhero",
-      "spider man",
-      "man",
-      "teenage",
-      "comic"
+      "thor",
+      "god",
+      "brother",
+      "marvel",
+      "earth",
+      "forced live"
     ],
-    "x": 0.4041691300841352,
-    "y": 0.5265959119557938,
-    "year": 2002
+    "x": 0.2491307770781851,
+    "y": 0.18249172831233007,
+    "year": 2011
   },
   {
-    "title": "Spider-Man: Homecoming",
-    "tmdb_id": 315635,
+    "title": "Suicide Squad",
+    "tmdb_id": 297761,
     "top_terms": [
-      "superhero",
-      "spider man",
-      "spider",
-      "officially",
-      "man",
-      "high school"
+      "comics",
+      "dc",
+      "suicide squad",
+      "squad",
+      "suicide",
+      "consistently"
     ],
-    "x": 0.4518217593400045,
-    "y": 0.5500620974332465,
+    "x": 0.17115030725369718,
+    "y": 0.12287218558228054,
+    "year": 2016
+  },
+  {
+    "title": "Thor: Ragnarok",
+    "tmdb_id": 284053,
+    "top_terms": [
+      "ragnarok",
+      "thor",
+      "norse",
+      "universe",
+      "overview thor",
+      "imprisoned"
+    ],
+    "x": 0.2786157471298114,
+    "y": 0.2532925420396507,
     "year": 2017
   },
   {
-    "title": "Anaconda",
-    "tmdb_id": 1234731,
+    "title": "Harry Potter and the Deathly Hallows: Part 2",
+    "tmdb_id": 12445,
     "top_terms": [
-      "anaconda",
-      "rainforest",
-      "meta",
-      "animal",
-      "horror",
-      "film"
+      "harry",
+      "voldemort",
+      "school",
+      "sacrifice magic",
+      "followers",
+      "evil"
     ],
-    "x": 0.1357177597352499,
-    "y": -0.1174568715061101,
-    "year": 2025
+    "x": 0.22328398892604706,
+    "y": -0.15131572873489563,
+    "year": 2011
   },
   {
-    "title": "Coraline",
-    "tmdb_id": 14836,
+    "title": "Jurassic World",
+    "tmdb_id": 135397,
     "top_terms": [
+      "park",
+      "jurassic",
+      "jurassic world",
+      "theme park",
+      "dinosaur",
+      "theme"
+    ],
+    "x": 0.13528948810556435,
+    "y": -0.00010418392629185422,
+    "year": 2015
+  },
+  {
+    "title": "The Martian",
+    "tmdb_id": 286217,
+    "top_terms": [
+      "martian",
+      "mars",
+      "stranded",
+      "astronaut",
+      "survival",
+      "planet"
+    ],
+    "x": 0.1786245468377352,
+    "y": 0.03968818063592117,
+    "year": 2015
+  },
+  {
+    "title": "Coco",
+    "tmdb_id": 354912,
+    "top_terms": [
+      "miguel",
+      "music",
+      "musician",
+      "dead",
+      "family",
+      "way"
+    ],
+    "x": 0.15312089803651063,
+    "y": -0.08673643937939056,
+    "year": 2017
+  },
+  {
+    "title": "Wonder Woman",
+    "tmdb_id": 297762,
+    "top_terms": [
+      "empowerment",
+      "woman",
+      "world war",
+      "female",
+      "world",
+      "comic female"
+    ],
+    "x": 0.25951940505563814,
+    "y": 0.08946358290907458,
+    "year": 2017
+  },
+  {
+    "title": "Ant-Man",
+    "tmdb_id": 102899,
+    "top_terms": [
+      "ant",
+      "master thief",
+      "ant man",
+      "pym",
+      "lang",
+      "mentor"
+    ],
+    "x": 0.2198960267821838,
+    "y": 0.17991363746642863,
+    "year": 2015
+  },
+  {
+    "title": "John Wick",
+    "tmdb_id": 245891,
+    "top_terms": [
+      "wick",
+      "john wick",
+      "hitman",
+      "john",
+      "retired",
+      "overview ex"
+    ],
+    "x": 0.14584699913678476,
+    "y": -0.04409434436226076,
+    "year": 2014
+  },
+  {
+    "title": "Star Wars: The Force Awakens",
+    "tmdb_id": 140607,
+    "top_terms": [
+      "star wars",
+      "wars",
+      "star",
+      "imagination",
+      "solo",
+      "han"
+    ],
+    "x": 0.18232511291591044,
+    "y": 0.11213926544512824,
+    "year": 2015
+  },
+  {
+    "title": "Logan",
+    "tmdb_id": 263115,
+    "top_terms": [
+      "logan",
+      "mutant",
+      "future",
+      "super",
+      "sequel super",
+      "pursued"
+    ],
+    "x": 0.20684372558839645,
+    "y": 0.10055726740752657,
+    "year": 2017
+  },
+  {
+    "title": "Harry Potter and the Deathly Hallows: Part 1",
+    "tmdb_id": 12444,
+    "top_terms": [
+      "harry",
+      "voldemort",
+      "harry potter",
+      "potter",
+      "road",
+      "really"
+    ],
+    "x": 0.19618166128047643,
+    "y": -0.18241733868459123,
+    "year": 2010
+  },
+  {
+    "title": "It",
+    "tmdb_id": 346364,
+    "top_terms": [
+      "town",
+      "house",
+      "small town",
+      "small",
+      "maine",
+      "clown"
+    ],
+    "x": 0.1592547534615786,
+    "y": -0.13147392521385698,
+    "year": 2017
+  },
+  {
+    "title": "Captain America: The Winter Soldier",
+    "tmdb_id": 100402,
+    "top_terms": [
+      "captain america",
+      "captain",
+      "america",
+      "black widow",
+      "widow",
+      "steve"
+    ],
+    "x": 0.22474476693463888,
+    "y": 0.23505281801415748,
+    "year": 2014
+  },
+  {
+    "title": "Gone Girl",
+    "tmdb_id": 210577,
+    "top_terms": [
+      "wife",
+      "disappearance",
+      "missing",
+      "good",
+      "thriller",
+      "controlling"
+    ],
+    "x": 0.17626928284302665,
+    "y": -0.12758862326290096,
+    "year": 2014
+  },
+  {
+    "title": "Fantastic Beasts and Where to Find Them",
+    "tmdb_id": 259316,
+    "top_terms": [
+      "magical",
+      "fantastic beasts",
+      "newt",
+      "briefcase",
+      "beasts",
+      "fantastic"
+    ],
+    "x": 0.14711663953054485,
+    "y": -0.07628721831969876,
+    "year": 2016
+  },
+  {
+    "title": "The Hobbit: An Unexpected Journey",
+    "tmdb_id": 49051,
+    "top_terms": [
+      "hobbit",
       "fantasy",
-      "coraline",
-      "parallel",
-      "door",
-      "children",
-      "old"
+      "mountain",
+      "ring",
+      "quest",
+      "journey"
     ],
-    "x": 0.2218912356792058,
-    "y": -0.13140058496322746,
-    "year": 2009
+    "x": 0.2029723040929356,
+    "y": -0.07980163796404739,
+    "year": 2012
   },
   {
-    "title": "Star Wars",
-    "tmdb_id": 11,
+    "title": "Arrival",
+    "tmdb_id": 329865,
     "top_terms": [
-      "empire",
-      "vader theme",
-      "darth vader",
-      "darth",
-      "imperial",
-      "vader"
+      "alien",
+      "alien language",
+      "contact",
+      "military",
+      "come peace",
+      "fiction mystery"
     ],
-    "x": 0.15322467260647837,
-    "y": -0.037549463874810035,
-    "year": 1977
+    "x": 0.2149290718220961,
+    "y": 0.04643299378283034,
+    "year": 2016
   },
   {
-    "title": "The Green Mile",
-    "tmdb_id": 497,
+    "title": "The Revenant",
+    "tmdb_id": 281957,
     "top_terms": [
-      "guard",
-      "death row",
-      "prison",
-      "row",
-      "death",
-      "jail"
+      "bear",
+      "attack",
+      "revenant",
+      "western",
+      "survival",
+      "dead"
     ],
-    "x": 0.1454161884631205,
-    "y": -0.07141400451132897,
-    "year": 1999
+    "x": 0.15332293010275358,
+    "y": -0.11399199872348316,
+    "year": 2015
   },
   {
-    "title": "Inside Out 2",
-    "tmdb_id": 1022789,
+    "title": "Deadpool 2",
+    "tmdb_id": 383498,
     "top_terms": [
-      "anxiety",
-      "joy",
-      "sadness",
-      "anger",
-      "riley",
-      "emotions"
+      "deadpool",
+      "mercenary",
+      "eagerly",
+      "eagerly awaited",
+      "mercenary based",
+      "title deadpool"
     ],
-    "x": 0.15954946646594093,
-    "y": -0.10314772750760014,
-    "year": 2024
+    "x": 0.1634179703016314,
+    "y": 0.11804343888157501,
+    "year": 2018
   },
   {
-    "title": "The Babysitters",
-    "tmdb_id": 13078,
-    "top_terms": [
-      "shirley",
-      "unhappy",
-      "michael",
-      "works",
-      "babysitter",
-      "idea"
-    ],
-    "x": 0.11906417514069709,
-    "y": -0.037390034518252874,
-    "year": 2008
-  },
-  {
-    "title": "Mission: Impossible - The Final Reckoning",
-    "tmdb_id": 575265,
-    "top_terms": [
-      "watched",
-      "watched watched",
-      "hunt",
-      "government",
-      "mission impossible",
-      "government agency"
-    ],
-    "x": 0.15304461635735736,
-    "y": -0.047644208113298996,
-    "year": 2025
-  },
-  {
-    "title": "Pirates of the Caribbean: The Curse of the Black Pearl",
-    "tmdb_id": 22,
-    "top_terms": [
-      "pirate",
-      "pearl",
-      "black pearl",
-      "curse",
-      "black",
-      "governor"
-    ],
-    "x": 0.09278034750147524,
-    "y": -0.06562707427389082,
-    "year": 2003
-  },
-  {
-    "title": "The Gorge",
-    "tmdb_id": 950396,
-    "top_terms": [
-      "gorge",
-      "romance",
-      "mysterious",
-      "sent guard",
-      "sent",
-      "operatives grow"
-    ],
-    "x": 0.13665752772766762,
-    "y": -0.084277440728308,
-    "year": 2025
-  },
-  {
-    "title": "Superman",
-    "tmdb_id": 1061474,
+    "title": "Batman v Superman: Dawn of Justice",
+    "tmdb_id": 209112,
     "top_terms": [
       "superman",
-      "heritage",
-      "upbringing clark",
-      "modern",
-      "upbringing",
-      "visual"
+      "batman",
+      "vigilante",
+      "versus",
+      "super",
+      "revered"
     ],
-    "x": 0.23651149252242887,
-    "y": 0.0934706139144573,
-    "year": 2025
+    "x": 0.24980899190384742,
+    "y": 0.16971087157134138,
+    "year": 2016
   },
   {
-    "title": "The Rip",
-    "tmdb_id": 1306368,
+    "title": "Get Out",
+    "tmdb_id": 419430,
     "top_terms": [
-      "miami",
-      "rip",
-      "trust",
-      "money",
-      "operation cartel",
-      "question genres"
+      "interracial",
+      "weekend",
+      "chris",
+      "parents",
+      "horror",
+      "racist"
     ],
-    "x": 0.12726368745297256,
-    "y": -0.09184074755151897,
-    "year": 2026
+    "x": 0.14550772522835162,
+    "y": -0.10274003558442152,
+    "year": 2017
   },
   {
-    "title": "A Working Man",
-    "tmdb_id": 1197306,
-    "top_terms": [
-      "working",
-      "construction",
-      "ops",
-      "working man",
-      "black ops",
-      "black"
-    ],
-    "x": 0.20489255639540144,
-    "y": -0.08518450911593652,
-    "year": 2025
-  },
-  {
-    "title": "Fight Club",
-    "tmdb_id": 550,
-    "top_terms": [
-      "crazy",
-      "fight",
-      "identity",
-      "ticking",
-      "tyler du",
-      "time bomb"
-    ],
-    "x": 0.15674045978327278,
-    "y": -0.03646270320470796,
-    "year": 1999
-  },
-  {
-    "title": "Spider-Man: Across the Spider-Verse",
-    "tmdb_id": 569094,
+    "title": "The Amazing Spider-Man",
+    "tmdb_id": 1930,
     "top_terms": [
       "spider",
+      "spider man",
+      "peter",
+      "vigilante",
+      "connors",
+      "amazing spider"
+    ],
+    "x": 0.24756834707888303,
+    "y": 0.24520819759603027,
+    "year": 2012
+  },
+  {
+    "title": "The Hunger Games: Catching Fire",
+    "tmdb_id": 101299,
+    "top_terms": [
+      "hunger games",
+      "games",
+      "hunger",
+      "survival",
+      "panem",
+      "survival murder"
+    ],
+    "x": 0.19915141723641985,
+    "y": -0.023686471747214374,
+    "year": 2013
+  },
+  {
+    "title": "Thor: The Dark World",
+    "tmdb_id": 76338,
+    "top_terms": [
+      "thor",
+      "universe",
+      "embark perilous",
+      "overview thor",
+      "restore order",
+      "asgard"
+    ],
+    "x": 0.23786457747295123,
+    "y": 0.2633917490868655,
+    "year": 2013
+  },
+  {
+    "title": "Split",
+    "tmdb_id": 381288,
+    "top_terms": [
+      "split",
+      "personality",
+      "kevin",
+      "teenage",
+      "horror",
+      "fletcher"
+    ],
+    "x": 0.1362379095404709,
+    "y": -0.056932616542664696,
+    "year": 2017
+  },
+  {
+    "title": "La La Land",
+    "tmdb_id": 313369,
+    "top_terms": [
+      "jazz",
+      "la",
+      "aspiring",
+      "party",
+      "gigs",
+      "coffee"
+    ],
+    "x": 0.11572156555696538,
+    "y": -0.0963072177966877,
+    "year": 2016
+  },
+  {
+    "title": "The Maze Runner",
+    "tmdb_id": 198663,
+    "top_terms": [
+      "maze",
+      "memory",
+      "escape",
+      "just",
+      "runner overview",
+      "clues lead"
+    ],
+    "x": 0.19826898541393836,
+    "y": -0.06626268073013844,
+    "year": 2014
+  },
+  {
+    "title": "The Imitation Game",
+    "tmdb_id": 205596,
+    "top_terms": [
+      "turing",
+      "code",
+      "alan",
+      "genius",
+      "war ii",
+      "war"
+    ],
+    "x": 0.17685096877146475,
+    "y": -0.06711993108153096,
+    "year": 2014
+  },
+  {
+    "title": "Zootopia",
+    "tmdb_id": 269149,
+    "top_terms": [
+      "cartoon",
+      "fox",
+      "bear",
+      "artist",
+      "villain",
+      "cop"
+    ],
+    "x": 0.1538303082371064,
+    "y": -0.08208123362608681,
+    "year": 2016
+  },
+  {
+    "title": "Kingsman: The Secret Service",
+    "tmdb_id": 207703,
+    "top_terms": [
+      "secret",
+      "global threat",
+      "spy",
+      "organization",
+      "great",
+      "global"
+    ],
+    "x": 0.19490608916521376,
+    "y": 0.05859637196223898,
+    "year": 2015
+  },
+  {
+    "title": "Bohemian Rhapsody",
+    "tmdb_id": 424694,
+    "top_terms": [
+      "band",
+      "singer",
+      "rock",
+      "queen",
+      "music",
+      "true"
+    ],
+    "x": 0.13204786201367213,
+    "y": -0.08587113687535934,
+    "year": 2018
+  },
+  {
+    "title": "Frozen",
+    "tmdb_id": 109445,
+    "top_terms": [
+      "frozen",
+      "sister",
+      "true love",
+      "true",
+      "princess",
+      "musical"
+    ],
+    "x": 0.1964819108213082,
+    "y": -0.09870210605387703,
+    "year": 2013
+  },
+  {
+    "title": "Dunkirk",
+    "tmdb_id": 374720,
+    "top_terms": [
+      "dunkirk",
+      "evacuation",
+      "royal",
+      "army",
+      "war ii",
+      "france"
+    ],
+    "x": 0.1599386362086061,
+    "y": -0.04437394461491755,
+    "year": 2017
+  },
+  {
+    "title": "Venom",
+    "tmdb_id": 335983,
+    "top_terms": [
+      "venom",
+      "symbiote",
+      "alien",
+      "form based",
+      "comeback",
+      "rely"
+    ],
+    "x": 0.19291003668583137,
+    "y": 0.12037228971498835,
+    "year": 2018
+  },
+  {
+    "title": "Spider-Man: Into the Spider-Verse",
+    "tmdb_id": 324857,
+    "top_terms": [
+      "spider",
+      "verse",
+      "spider verse",
+      "miles",
+      "spider man",
+      "animation"
+    ],
+    "x": 0.2503187039257882,
+    "y": 0.21905358383153228,
+    "year": 2018
+  },
+  {
+    "title": "Lucy",
+    "tmdb_id": 240832,
+    "top_terms": [
+      "brain",
+      "drug",
+      "intelligence",
+      "human",
+      "production line",
+      "pretentious"
+    ],
+    "x": 0.17430962699923022,
+    "y": 0.015520571935925678,
+    "year": 2014
+  },
+  {
+    "title": "Spider-Man: Far From Home",
+    "tmdb_id": 429617,
+    "top_terms": [
+      "europe",
+      "spider",
+      "trip",
+      "peter",
       "superhero",
-      "alternate",
-      "heroes",
-      "team spider",
-      "multiverse"
+      "relentless"
     ],
-    "x": 0.43140256445415337,
-    "y": 0.48207057451993723,
-    "year": 2023
+    "x": 0.30535495746590247,
+    "y": 0.3743827173749072,
+    "year": 2019
   },
   {
-    "title": "Oppenheimer",
-    "tmdb_id": 872585,
+    "title": "Ready Player One",
+    "tmdb_id": 333339,
     "top_terms": [
-      "atomic",
-      "oppenheimer",
-      "atomic bomb",
-      "bomb",
-      "project",
-      "war ii"
+      "virtual",
+      "video game",
+      "video",
+      "game",
+      "columbus",
+      "game virtual"
     ],
-    "x": 0.1467991609954462,
-    "y": -0.10330756839937377,
-    "year": 2023
+    "x": 0.2161243546093717,
+    "y": -0.03543727168378562,
+    "year": 2018
   },
   {
-    "title": "Schindler's List",
-    "tmdb_id": 424,
+    "title": "Baby Driver",
+    "tmdb_id": 339403,
     "top_terms": [
-      "poland",
-      "camp",
-      "factory",
-      "concentration camp",
-      "concentration",
-      "schindler"
+      "getaway",
+      "driver",
+      "getaway driver",
+      "robbery",
+      "soundtrack",
+      "crime boss"
     ],
-    "x": 0.131830657042013,
-    "y": -0.08239519291606999,
-    "year": 1993
+    "x": 0.12779824742010218,
+    "y": -0.06758610667620468,
+    "year": 2017
   },
   {
-    "title": "Toy Story",
-    "tmdb_id": 862,
+    "title": "Now You See Me",
+    "tmdb_id": 75656,
     "top_terms": [
-      "toy",
-      "buzz",
-      "woody",
-      "andy",
-      "animation",
-      "title toy"
+      "bank",
+      "fbi",
+      "money",
+      "interpol",
+      "reward",
+      "louisiana"
     ],
-    "x": 0.13074531497554004,
-    "y": -0.07143545454624502,
-    "year": 1995
+    "x": 0.16734326871259736,
+    "y": -0.08938326674022291,
+    "year": 2013
   },
   {
-    "title": "The Wild Robot",
-    "tmdb_id": 1184918,
+    "title": "Captain Marvel",
+    "tmdb_id": 299537,
     "top_terms": [
-      "robot",
-      "island",
-      "roz",
-      "goose",
-      "animals",
-      "roz stranded"
+      "marvel",
+      "alien",
+      "1990s",
+      "universe",
+      "captain",
+      "cinematic universe"
     ],
-    "x": 0.16697149571393635,
-    "y": -0.10768973531162261,
-    "year": 2024
+    "x": 0.31876575757016434,
+    "y": 0.3869222434339842,
+    "year": 2019
   },
   {
-    "title": "The Godfather Part II",
-    "tmdb_id": 240,
+    "title": "The Hunger Games: Mockingjay - Part 1",
+    "tmdb_id": 131631,
     "top_terms": [
-      "corleone",
-      "cuba",
-      "godfather",
-      "new year",
-      "mafia",
-      "1950s"
-    ],
-    "x": 0.24786888870115598,
-    "y": -0.036594909694590824,
-    "year": 1974
-  },
-  {
-    "title": "The Terminator",
-    "tmdb_id": 218,
-    "top_terms": [
-      "terminator",
-      "cyborg",
-      "sarah",
-      "machine",
+      "katniss",
+      "resistance",
       "future",
-      "just"
+      "prejudice",
+      "dystopia post",
+      "quarter"
     ],
-    "x": 0.18784202144315354,
-    "y": -0.03911777698337822,
-    "year": 1984
+    "x": 0.20083371157780583,
+    "y": -0.034731156578618604,
+    "year": 2014
   },
   {
-    "title": "Moana 2",
-    "tmdb_id": 1241982,
+    "title": "Whiplash",
+    "tmdb_id": 244786,
     "top_terms": [
-      "moana",
-      "explorer",
-      "maui",
-      "crew",
-      "moana overview",
-      "recruit"
+      "music",
+      "drummer",
+      "jazz",
+      "abuse",
+      "talented young",
+      "instructor"
     ],
-    "x": 0.14017530636026015,
-    "y": -0.09744036262229547,
-    "year": 2024
+    "x": 0.14945594930236455,
+    "y": -0.09849973610397657,
+    "year": 2014
+  },
+  {
+    "title": "Big Hero 6",
+    "tmdb_id": 177572,
+    "top_terms": [
+      "villain",
+      "robot",
+      "best",
+      "relationship san",
+      "inflatable",
+      "friendship martial"
+    ],
+    "x": 0.2603289094373595,
+    "y": 0.011069947918133793,
+    "year": 2014
+  },
+  {
+    "title": "World War Z",
+    "tmdb_id": 72190,
+    "top_terms": [
+      "lane",
+      "zombie",
+      "apocalypse",
+      "world",
+      "human",
+      "epidemic"
+    ],
+    "x": 0.17886561768280054,
+    "y": -0.02287351016382898,
+    "year": 2013
+  },
+  {
+    "title": "Rogue One: A Star Wars Story",
+    "tmdb_id": 330459,
+    "top_terms": [
+      "space",
+      "odds",
+      "rogue",
+      "star",
+      "mission",
+      "rebel space"
+    ],
+    "x": 0.2272622666096948,
+    "y": 0.10998452317710247,
+    "year": 2016
+  },
+  {
+    "title": "Gravity",
+    "tmdb_id": 49047,
+    "top_terms": [
+      "space",
+      "space mission",
+      "astronaut",
+      "great",
+      "mission",
+      "ryan"
+    ],
+    "x": 0.1647441813277455,
+    "y": 0.0334824023174201,
+    "year": 2013
+  },
+  {
+    "title": "Star Wars: The Last Jedi",
+    "tmdb_id": 181808,
+    "top_terms": [
+      "pump",
+      "jedi",
+      "space",
+      "battle",
+      "sequel space",
+      "order genres"
+    ],
+    "x": 0.16476608223218753,
+    "y": 0.08621942929199568,
+    "year": 2017
+  },
+  {
+    "title": "X-Men: Days of Future Past",
+    "tmdb_id": 127585,
+    "top_terms": [
+      "past",
+      "future",
+      "future past",
+      "men",
+      "days",
+      "ellen"
+    ],
+    "x": 0.21809234226024488,
+    "y": 0.12876324120623417,
+    "year": 2014
+  },
+  {
+    "title": "Man of Steel",
+    "tmdb_id": 49521,
+    "top_terms": [
+      "save",
+      "alien",
+      "hope",
+      "saving",
+      "planet",
+      "save day"
+    ],
+    "x": 0.2808358841071624,
+    "y": 0.19987978877608756,
+    "year": 2013
+  },
+  {
+    "title": "Skyfall",
+    "tmdb_id": 37724,
+    "top_terms": [
+      "bond",
+      "mi6",
+      "agent",
+      "secret",
+      "field agent",
+      "globetrotting"
+    ],
+    "x": 0.1538704962035361,
+    "y": -0.02714578164223353,
+    "year": 2012
+  },
+  {
+    "title": "The Grand Budapest Hotel",
+    "tmdb_id": 120467,
+    "top_terms": [
+      "hotel",
+      "painting",
+      "european hotel",
+      "renaissance",
+      "europe",
+      "european"
+    ],
+    "x": 0.09434687138212101,
+    "y": -0.06145636446087714,
+    "year": 2014
+  },
+  {
+    "title": "Despicable Me",
+    "tmdb_id": 20352,
+    "top_terms": [
+      "despicable",
+      "stealing",
+      "girls",
+      "supervillain",
+      "moon",
+      "surprise"
+    ],
+    "x": 0.1509673423255271,
+    "y": -0.04594965959092705,
+    "year": 2010
+  },
+  {
+    "title": "Beauty and the Beast",
+    "tmdb_id": 321612,
+    "top_terms": [
+      "live action",
+      "beast",
+      "live",
+      "remake",
+      "tale",
+      "beauty beast"
+    ],
+    "x": 0.15206008088160752,
+    "y": -0.10067093282886282,
+    "year": 2017
+  },
+  {
+    "title": "Toy Story 3",
+    "tmdb_id": 10193,
+    "top_terms": [
+      "andy",
+      "toys",
+      "college",
+      "toy",
+      "escape",
+      "duringcreditsstinger toy"
+    ],
+    "x": 0.13330579610354287,
+    "y": -0.07611058712090618,
+    "year": 2010
+  },
+  {
+    "title": "Black Swan",
+    "tmdb_id": 44214,
+    "top_terms": [
+      "swan",
+      "swan lake",
+      "dancer",
+      "ballet",
+      "lake",
+      "horror"
+    ],
+    "x": 0.15376461542585965,
+    "y": -0.09829906159156837,
+    "year": 2010
+  },
+  {
+    "title": "The Hobbit: The Battle of the Five Armies",
+    "tmdb_id": 122917,
+    "top_terms": [
+      "elves",
+      "battle",
+      "dwarves",
+      "armies",
+      "bilbo",
+      "mountain"
+    ],
+    "x": 0.2146064035831171,
+    "y": -0.052650459733329845,
+    "year": 2014
+  },
+  {
+    "title": "A Quiet Place",
+    "tmdb_id": 447332,
+    "top_terms": [
+      "alien",
+      "horror",
+      "quiet",
+      "form",
+      "forced live",
+      "contains spoilers"
+    ],
+    "x": 0.21329951361461721,
+    "y": -0.008106354236853438,
+    "year": 2018
+  },
+  {
+    "title": "Her",
+    "tmdb_id": 152601,
+    "top_terms": [
+      "operating",
+      "theodore",
+      "future",
+      "love",
+      "romance",
+      "provocative dramatic"
+    ],
+    "x": 0.15260920704755246,
+    "y": -0.03579254978376343,
+    "year": 2013
+  },
+  {
+    "title": "The Hateful Eight",
+    "tmdb_id": 273248,
+    "top_terms": [
+      "hateful",
+      "blizzard",
+      "epic",
+      "bounty",
+      "raging",
+      "western keywords"
+    ],
+    "x": 0.1107929260026347,
+    "y": -0.04924388602161226,
+    "year": 2015
+  },
+  {
+    "title": "Blade Runner 2049",
+    "tmdb_id": 335984,
+    "top_terms": [
+      "blade runner",
+      "blade",
+      "runner",
+      "runner 2049",
+      "lapd",
+      "years"
+    ],
+    "x": 0.11034931693151584,
+    "y": -0.02922173532206728,
+    "year": 2017
+  },
+  {
+    "title": "Edge of Tomorrow",
+    "tmdb_id": 137113,
+    "top_terms": [
+      "alien",
+      "ok",
+      "cage",
+      "loop",
+      "time loop",
+      "officer"
+    ],
+    "x": 0.2001784737449359,
+    "y": 0.030992333588636442,
+    "year": 2014
+  },
+  {
+    "title": "Pirates of the Caribbean: On Stranger Tides",
+    "tmdb_id": 1865,
+    "top_terms": [
+      "swashbuckler 18th",
+      "overview jack",
+      "sailing",
+      "duke",
+      "minister",
+      "mermaid"
+    ],
+    "x": 0.13963645697380253,
+    "y": -0.037038901275395594,
+    "year": 2011
+  },
+  {
+    "title": "Aquaman",
+    "tmdb_id": 297802,
+    "top_terms": [
+      "half",
+      "good movie",
+      "royalty",
+      "advanced",
+      "worth",
+      "underwater"
+    ],
+    "x": 0.2236029179554703,
+    "y": 0.11244657189203312,
+    "year": 2018
+  },
+  {
+    "title": "Hacksaw Ridge",
+    "tmdb_id": 324786,
+    "top_terms": [
+      "medic",
+      "okinawa",
+      "conscientious objector",
+      "conscientious",
+      "congressional medal",
+      "ridge"
+    ],
+    "x": 0.1329885271141577,
+    "y": -0.043480756078349385,
+    "year": 2016
+  },
+  {
+    "title": "Once Upon a Time... in Hollywood",
+    "tmdb_id": 466272,
+    "top_terms": [
+      "hollywood",
+      "tate",
+      "filmmaking",
+      "cult",
+      "struggling",
+      "actor"
+    ],
+    "x": 0.17072123602463565,
+    "y": -0.11224387931424713,
+    "year": 2019
+  },
+  {
+    "title": "Alice in Wonderland",
+    "tmdb_id": 12155,
+    "top_terms": [
+      "wonderland",
+      "alice",
+      "queen",
+      "psychotic",
+      "embarks journey",
+      "19"
+    ],
+    "x": 0.19592373115296766,
+    "y": -0.09157066866168567,
+    "year": 2010
+  },
+  {
+    "title": "Jumanji: Welcome to the Jungle",
+    "tmdb_id": 353486,
+    "top_terms": [
+      "game",
+      "detention",
+      "jumanji",
+      "jungle",
+      "video game",
+      "video"
+    ],
+    "x": 0.1874031969615078,
+    "y": -0.058848691203597224,
+    "year": 2017
+  },
+  {
+    "title": "How to Train Your Dragon",
+    "tmdb_id": 10191,
+    "top_terms": [
+      "dragon",
+      "warrior",
+      "blacksmith",
+      "realizes",
+      "gentle hopeful",
+      "optimistic powerful"
+    ],
+    "x": 0.17039784981807976,
+    "y": -0.08765892615742486,
+    "year": 2010
+  },
+  {
+    "title": "Ex Machina",
+    "tmdb_id": 264660,
+    "top_terms": [
+      "company",
+      "ex machina",
+      "intelligence",
+      "surveillance",
+      "arrives",
+      "tech"
+    ],
+    "x": 0.1719157052266247,
+    "y": -0.016122597124548988,
+    "year": 2015
+  },
+  {
+    "title": "John Wick: Chapter 2",
+    "tmdb_id": 324552,
+    "top_terms": [
+      "wick",
+      "john wick",
+      "rome",
+      "hand",
+      "right",
+      "john"
+    ],
+    "x": 0.15775700527934117,
+    "y": -0.05658339474191077,
+    "year": 2017
+  },
+  {
+    "title": "The Amazing Spider-Man 2",
+    "tmdb_id": 102382,
+    "top_terms": [
+      "peter",
+      "spider man",
+      "spider",
+      "promise",
+      "gwen",
+      "superhero"
+    ],
+    "x": 0.28731471441589984,
+    "y": 0.2674463657038387,
+    "year": 2014
+  },
+  {
+    "title": "Passengers",
+    "tmdb_id": 274870,
+    "top_terms": [
+      "passengers",
+      "space",
+      "spacecraft",
+      "people",
+      "romance science",
+      "swimming"
+    ],
+    "x": 0.17836915841394477,
+    "y": 0.057740102002541135,
+    "year": 2016
+  },
+  {
+    "title": "The Hobbit: The Desolation of Smaug",
+    "tmdb_id": 57158,
+    "top_terms": [
+      "smaug",
+      "bilbo",
+      "gold",
+      "ring",
+      "dragon",
+      "journey"
+    ],
+    "x": 0.1920126979440625,
+    "y": -0.05627531502691388,
+    "year": 2013
+  },
+  {
+    "title": "Spider-Man: No Way Home",
+    "tmdb_id": 634649,
+    "top_terms": [
+      "spider man",
+      "superhero",
+      "spider",
+      "parker",
+      "peter parker",
+      "stakes"
+    ],
+    "x": 0.3304295336002449,
+    "y": 0.3825806366735533,
+    "year": 2021
   },
   {
     "title": "Dune",
@@ -1357,102 +6022,27 @@
       "sand",
       "destiny",
       "oscar",
-      "creature",
-      "giant"
+      "giant",
+      "creature"
     ],
-    "x": 0.1809309227073324,
-    "y": -0.08242815500967561,
+    "x": 0.18565963341096633,
+    "y": 0.016964898157369197,
     "year": 2021
   },
   {
-    "title": "Harry Potter and the Chamber of Secrets",
-    "tmdb_id": 672,
+    "title": "Avatar: The Way of Water",
+    "tmdb_id": 76600,
     "top_terms": [
-      "harry",
-      "chamber secrets",
-      "chamber",
-      "potter",
-      "secrets",
-      "harry potter"
+      "avatar",
+      "adopted",
+      "follows",
+      "effects",
+      "water",
+      "family"
     ],
-    "x": 0.2022171165931256,
-    "y": -0.09901817203004631,
-    "year": 2002
-  },
-  {
-    "title": "Cruel Intentions",
-    "tmdb_id": 796,
-    "top_terms": [
-      "kathryn",
-      "dangerous",
-      "great",
-      "love",
-      "thirst dangerous",
-      "sadistic"
-    ],
-    "x": 0.15152014514207002,
-    "y": -0.12450981348812717,
-    "year": 1999
-  },
-  {
-    "title": "Sonic the Hedgehog 3",
-    "tmdb_id": 939243,
-    "top_terms": [
-      "shadow",
-      "sonic",
-      "hedgehog",
-      "animal",
-      "unlikely alliance",
-      "overview sonic"
-    ],
-    "x": 0.20117981507666804,
-    "y": -0.06701661746093297,
-    "year": 2024
-  },
-  {
-    "title": "After",
-    "tmdb_id": 537915,
-    "top_terms": [
-      "meets",
-      "tessa",
-      "teenage",
-      "romance",
-      "mysterious",
-      "riverdale"
-    ],
-    "x": 0.18463259889158784,
-    "y": -0.08159969904964691,
-    "year": 2019
-  },
-  {
-    "title": "Inside Out",
-    "tmdb_id": 150540,
-    "top_terms": [
-      "sadness",
-      "joy",
-      "anger",
-      "disgust",
-      "emotions",
-      "fear"
-    ],
-    "x": 0.17710625843875227,
-    "y": -0.10567320458093181,
-    "year": 2015
-  },
-  {
-    "title": "Wolfs",
-    "tmdb_id": 877817,
-    "top_terms": [
-      "fixer",
-      "wolfs",
-      "comedy",
-      "crime",
-      "unexpected",
-      "work unexpected"
-    ],
-    "x": 0.1657056228086903,
-    "y": -0.10943518958501972,
-    "year": 2024
+    "x": 0.2085003481366592,
+    "y": 0.01468443854170747,
+    "year": 2022
   },
   {
     "title": "The Batman",
@@ -1462,41 +6052,1451 @@
       "crime",
       "serial killer",
       "serial",
-      "killer",
-      "corruption"
+      "corruption",
+      "killer"
     ],
-    "x": 0.227445659703119,
-    "y": 0.0955958176712878,
+    "x": 0.19254797822018394,
+    "y": -0.021206479538069527,
     "year": 2022
   },
   {
-    "title": "Harry Potter and the Deathly Hallows: Part 1",
-    "tmdb_id": 12444,
+    "title": "Oppenheimer",
+    "tmdb_id": 872585,
     "top_terms": [
-      "harry",
-      "voldemort",
-      "road",
-      "potter",
-      "harry potter",
-      "really"
+      "oppenheimer",
+      "atomic",
+      "atomic bomb",
+      "bomb",
+      "project",
+      "war ii"
     ],
-    "x": 0.17836429351381988,
-    "y": -0.15673369741646093,
-    "year": 2010
+    "x": 0.15349367080195697,
+    "y": -0.07554100532711774,
+    "year": 2023
   },
   {
-    "title": "Peaky Blinders: The Immortal Man",
-    "tmdb_id": 875828,
+    "title": "Soul",
+    "tmdb_id": 508442,
     "top_terms": [
-      "birmingham",
-      "gangster",
-      "england",
-      "crime",
-      "peaky blinders",
-      "nazis counterfeited"
+      "jazz",
+      "soul",
+      "seminar",
+      "transported",
+      "joe",
+      "teacher"
     ],
-    "x": 0.15462249593780333,
-    "y": -0.09280802195977803,
-    "year": 2026
+    "x": 0.17363704651487077,
+    "y": -0.07797688784130295,
+    "year": 2020
+  },
+  {
+    "title": "Black Widow",
+    "tmdb_id": 497698,
+    "top_terms": [
+      "black widow",
+      "widow",
+      "spy",
+      "female",
+      "black",
+      "assassin"
+    ],
+    "x": 0.22719106064275837,
+    "y": 0.2540938740207079,
+    "year": 2021
+  },
+  {
+    "title": "Venom: Let There Be Carnage",
+    "tmdb_id": 580489,
+    "top_terms": [
+      "carnage",
+      "symbiote",
+      "venom",
+      "eddie brock",
+      "brock",
+      "eddie"
+    ],
+    "x": 0.19275614979746583,
+    "y": 0.12356729777263464,
+    "year": 2021
+  },
+  {
+    "title": "Tenet",
+    "tmdb_id": 577922,
+    "top_terms": [
+      "tenet",
+      "espionage",
+      "time",
+      "terrorist",
+      "real time",
+      "overview armed"
+    ],
+    "x": 0.17018783044241023,
+    "y": 0.014428869192875591,
+    "year": 2020
+  },
+  {
+    "title": "Barbie",
+    "tmdb_id": 346698,
+    "top_terms": [
+      "barbie",
+      "world",
+      "satire",
+      "fantasy",
+      "real world",
+      "satire based"
+    ],
+    "x": 0.19973811671750746,
+    "y": -0.06694507689368559,
+    "year": 2023
+  },
+  {
+    "title": "Top Gun: Maverick",
+    "tmdb_id": 361743,
+    "top_terms": [
+      "maverick",
+      "gun",
+      "navy",
+      "pilot",
+      "em",
+      "good actually"
+    ],
+    "x": 0.12713373043394538,
+    "y": -0.027344633821531017,
+    "year": 2022
+  },
+  {
+    "title": "Zack Snyder's Justice League",
+    "tmdb_id": 791373,
+    "top_terms": [
+      "superhero",
+      "team",
+      "teamwork review",
+      "ensure",
+      "bros",
+      "opportunity"
+    ],
+    "x": 0.23903794002183149,
+    "y": 0.1609860719621703,
+    "year": 2021
+  },
+  {
+    "title": "Birds of Prey (and the Fantabulous Emancipation of One Harley Quinn)",
+    "tmdb_id": 495764,
+    "top_terms": [
+      "police",
+      "harley quinn",
+      "harley",
+      "quinn",
+      "police officer",
+      "crime"
+    ],
+    "x": 0.2102292291212988,
+    "y": -0.044505185265137914,
+    "year": 2020
+  },
+  {
+    "title": "The Super Mario Bros. Movie",
+    "tmdb_id": 502356,
+    "top_terms": [
+      "mario",
+      "super mario",
+      "bros",
+      "super",
+      "brothers",
+      "brother"
+    ],
+    "x": 0.1632528938556703,
+    "y": -0.0151173089670654,
+    "year": 2023
+  },
+  {
+    "title": "Godzilla vs. Kong",
+    "tmdb_id": 399566,
+    "top_terms": [
+      "godzilla",
+      "kong",
+      "godzilla vs",
+      "dinosaur",
+      "vs",
+      "giant"
+    ],
+    "x": 0.13072564195561426,
+    "y": 0.03408121630165472,
+    "year": 2021
+  },
+  {
+    "title": "Sonic the Hedgehog",
+    "tmdb_id": 454626,
+    "top_terms": [
+      "sonic",
+      "hedgehog",
+      "super",
+      "robotnik",
+      "sonic hedgehog",
+      "speed"
+    ],
+    "x": 0.1764094322081544,
+    "y": 0.007154889841118993,
+    "year": 2020
+  },
+  {
+    "title": "Shang-Chi and the Legend of the Ten Rings",
+    "tmdb_id": 566525,
+    "top_terms": [
+      "shang chi",
+      "shang",
+      "chi",
+      "rings",
+      "chi legend",
+      "legend"
+    ],
+    "x": 0.161081691601379,
+    "y": 0.15366345951937,
+    "year": 2021
+  },
+  {
+    "title": "Doctor Strange in the Multiverse of Madness",
+    "tmdb_id": 453395,
+    "top_terms": [
+      "multiverse",
+      "strange",
+      "doctor strange",
+      "doctor",
+      "horror",
+      "reality aftercreditsstinger"
+    ],
+    "x": 0.21863963610087928,
+    "y": 0.19548237010149697,
+    "year": 2022
+  },
+  {
+    "title": "Encanto",
+    "tmdb_id": 568124,
+    "top_terms": [
+      "encanto",
+      "family",
+      "magical",
+      "colombia",
+      "mountains",
+      "magic"
+    ],
+    "x": 0.15905548470408337,
+    "y": -0.12693388786879256,
+    "year": 2021
+  },
+  {
+    "title": "Cruella",
+    "tmdb_id": 337404,
+    "top_terms": [
+      "fashion",
+      "estella",
+      "punk",
+      "punk rock",
+      "rock",
+      "1970s"
+    ],
+    "x": 0.13933123296983463,
+    "y": -0.07806072741392164,
+    "year": 2021
+  },
+  {
+    "title": "Free Guy",
+    "tmdb_id": 550988,
+    "top_terms": [
+      "bank",
+      "teller",
+      "guy",
+      "video game",
+      "video",
+      "game"
+    ],
+    "x": 0.20541516052529046,
+    "y": -0.012051007319739826,
+    "year": 2021
+  },
+  {
+    "title": "The Suicide Squad",
+    "tmdb_id": 436969,
+    "top_terms": [
+      "suicide squad",
+      "squad",
+      "super",
+      "anti hero",
+      "suicide",
+      "dc"
+    ],
+    "x": 0.22946762503629478,
+    "y": 0.13467216907623056,
+    "year": 2021
+  },
+  {
+    "title": "Don't Look Up",
+    "tmdb_id": 646380,
+    "top_terms": [
+      "don look",
+      "comet",
+      "look",
+      "satire",
+      "social",
+      "don"
+    ],
+    "x": 0.16201495053668907,
+    "y": -0.009584069602666815,
+    "year": 2021
+  },
+  {
+    "title": "Eternals",
+    "tmdb_id": 524434,
+    "top_terms": [
+      "eternals",
+      "ancient",
+      "mcu",
+      "superhero supernatural",
+      "god like",
+      "deliver"
+    ],
+    "x": 0.23795625880330076,
+    "y": 0.23554484576142184,
+    "year": 2021
+  },
+  {
+    "title": "Wonder Woman 1984",
+    "tmdb_id": 464052,
+    "top_terms": [
+      "wonder woman",
+      "wonder",
+      "woman",
+      "1984",
+      "botched",
+      "overview botched"
+    ],
+    "x": 0.19494012678432765,
+    "y": 0.09956352633683987,
+    "year": 2020
+  },
+  {
+    "title": "Luca",
+    "tmdb_id": 508943,
+    "top_terms": [
+      "luca",
+      "sea",
+      "sea monster",
+      "riviera",
+      "monster",
+      "italian"
+    ],
+    "x": 0.13634336379340595,
+    "y": -0.07607733561904183,
+    "year": 2021
+  },
+  {
+    "title": "Puss in Boots: The Last Wish",
+    "tmdb_id": 315162,
+    "top_terms": [
+      "puss",
+      "boots",
+      "puss boots",
+      "wish",
+      "talking",
+      "lives"
+    ],
+    "x": 0.11935846453919907,
+    "y": -0.057106731943803134,
+    "year": 2022
+  },
+  {
+    "title": "Bad Boys for Life",
+    "tmdb_id": 38700,
+    "top_terms": [
+      "miami",
+      "bad boys",
+      "bad",
+      "drug cartel",
+      "cartel",
+      "mike"
+    ],
+    "x": 0.15807317962721523,
+    "y": -0.07928266809272326,
+    "year": 2020
+  },
+  {
+    "title": "Deadpool & Wolverine",
+    "tmdb_id": 533535,
+    "top_terms": [
+      "wade",
+      "deadpool",
+      "wolverine",
+      "existential",
+      "wade wilson",
+      "civilian"
+    ],
+    "x": 0.21600439999909418,
+    "y": 0.24707647803991897,
+    "year": 2024
+  },
+  {
+    "title": "Spider-Man: Across the Spider-Verse",
+    "tmdb_id": 569094,
+    "top_terms": [
+      "spider",
+      "superhero",
+      "alternate",
+      "team spider",
+      "multiverse",
+      "double life"
+    ],
+    "x": 0.2960909808565187,
+    "y": 0.2685992175762344,
+    "year": 2023
+  },
+  {
+    "title": "Thor: Love and Thunder",
+    "tmdb_id": 616037,
+    "top_terms": [
+      "god",
+      "thor",
+      "god butcher",
+      "ex girlfriend",
+      "thunder",
+      "norse"
+    ],
+    "x": 0.18881068004202078,
+    "y": 0.1719399122267033,
+    "year": 2022
+  },
+  {
+    "title": "Nobody",
+    "tmdb_id": 615457,
+    "top_terms": [
+      "hutch",
+      "home",
+      "retaliation",
+      "derek",
+      "russian mafia",
+      "protection"
+    ],
+    "x": 0.1610884172142611,
+    "y": -0.048908300087735584,
+    "year": 2021
+  },
+  {
+    "title": "Guardians of the Galaxy Vol. 3",
+    "tmdb_id": 447365,
+    "top_terms": [
+      "guardians",
+      "galaxy vol",
+      "guardians galaxy",
+      "vol",
+      "universe",
+      "galaxy"
+    ],
+    "x": 0.24722771939460492,
+    "y": 0.3509691590416619,
+    "year": 2023
+  },
+  {
+    "title": "Dune: Part Two",
+    "tmdb_id": 693134,
+    "top_terms": [
+      "dune",
+      "paul",
+      "giant",
+      "creature",
+      "future",
+      "conspirators"
+    ],
+    "x": 0.16984389614716003,
+    "y": 0.013578106329561322,
+    "year": 2024
+  },
+  {
+    "title": "Everything Everywhere All at Once",
+    "tmdb_id": 545611,
+    "top_terms": [
+      "chinese",
+      "asian",
+      "chinese immigrant",
+      "immigrant",
+      "mother",
+      "woman"
+    ],
+    "x": 0.17091769116117922,
+    "y": -0.005756097707256172,
+    "year": 2022
+  },
+  {
+    "title": "John Wick: Chapter 4",
+    "tmdb_id": 603692,
+    "top_terms": [
+      "wick",
+      "john wick",
+      "john",
+      "wick chapter",
+      "chapter",
+      "japan"
+    ],
+    "x": 0.16383580974182974,
+    "y": -0.05139684623240887,
+    "year": 2023
+  },
+  {
+    "title": "Prey",
+    "tmdb_id": 766507,
+    "top_terms": [
+      "prey",
+      "alien",
+      "comanche",
+      "severed",
+      "predator",
+      "highly"
+    ],
+    "x": 0.15846733057564205,
+    "y": 0.029994519003714273,
+    "year": 2022
+  },
+  {
+    "title": "F9",
+    "tmdb_id": 385128,
+    "top_terms": [
+      "brother",
+      "encountered",
+      "relationships sequel",
+      "overview dominic",
+      "toretto",
+      "title good"
+    ],
+    "x": 0.1747124543532783,
+    "y": -0.043662705284525906,
+    "year": 2021
+  },
+  {
+    "title": "Bullet Train",
+    "tmdb_id": 718930,
+    "top_terms": [
+      "train",
+      "bullet train",
+      "bullet",
+      "assassin",
+      "mission",
+      "professional assassin"
+    ],
+    "x": 0.11680730226490936,
+    "y": -0.03447451284896261,
+    "year": 2022
+  },
+  {
+    "title": "Black Panther: Wakanda Forever",
+    "tmdb_id": 505642,
+    "top_terms": [
+      "wakanda",
+      "death",
+      "forever",
+      "king",
+      "dora",
+      "challa"
+    ],
+    "x": 0.24301557645519783,
+    "y": 0.17932970951025642,
+    "year": 2022
+  },
+  {
+    "title": "A Quiet Place Part II",
+    "tmdb_id": 520763,
+    "top_terms": [
+      "alien",
+      "quiet",
+      "horror",
+      "quiet place",
+      "psychological",
+      "ii"
+    ],
+    "x": 0.2339698904717548,
+    "y": -0.010284094800228634,
+    "year": 2021
+  },
+  {
+    "title": "Raya and the Last Dragon",
+    "tmdb_id": 527774,
+    "top_terms": [
+      "dragons",
+      "dragon",
+      "raya",
+      "humans dragons",
+      "warrior",
+      "land"
+    ],
+    "x": 0.14747633499971008,
+    "y": -0.03243054575970253,
+    "year": 2021
+  },
+  {
+    "title": "No Time to Die",
+    "tmdb_id": 370172,
+    "top_terms": [
+      "bond",
+      "james bond",
+      "die",
+      "service",
+      "james",
+      "turns"
+    ],
+    "x": 0.19548351601945216,
+    "y": -0.052787526488958084,
+    "year": 2021
+  },
+  {
+    "title": "Jurassic World Dominion",
+    "tmdb_id": 507086,
+    "top_terms": [
+      "jurassic world",
+      "claire",
+      "sanctuary",
+      "determine",
+      "paleontology",
+      "title jurassic"
+    ],
+    "x": 0.1879780861216961,
+    "y": 0.010369485896521854,
+    "year": 2022
+  },
+  {
+    "title": "Mulan",
+    "tmdb_id": 337401,
+    "top_terms": [
+      "hua",
+      "mulan",
+      "chinese",
+      "china",
+      "live action",
+      "remake"
+    ],
+    "x": 0.1863280506935135,
+    "y": -0.046762896635523105,
+    "year": 2020
+  },
+  {
+    "title": "Black Adam",
+    "tmdb_id": 436270,
+    "top_terms": [
+      "black adam",
+      "adam",
+      "black",
+      "earthly",
+      "almighty",
+      "egotistical"
+    ],
+    "x": 0.1904275400503631,
+    "y": 0.15289896292610447,
+    "year": 2022
+  },
+  {
+    "title": "Uncharted",
+    "tmdb_id": 335787,
+    "top_terms": [
+      "treasure",
+      "nathan",
+      "lost",
+      "embark dangerous",
+      "sully",
+      "clues lead"
+    ],
+    "x": 0.13720113759359923,
+    "y": -0.022548998328635095,
+    "year": 2022
+  },
+  {
+    "title": "Glass Onion: A Knives Out Mystery",
+    "tmdb_id": 661374,
+    "top_terms": [
+      "mystery",
+      "knives",
+      "greece",
+      "billionaire",
+      "murder",
+      "detective"
+    ],
+    "x": 0.12164633438871168,
+    "y": -0.09665501117775224,
+    "year": 2022
+  },
+  {
+    "title": "Inside Out 2",
+    "tmdb_id": 1022789,
+    "top_terms": [
+      "disgust",
+      "riley",
+      "anxiety",
+      "joy",
+      "emotions",
+      "anger"
+    ],
+    "x": 0.13156574234685578,
+    "y": -0.04031275079631507,
+    "year": 2024
+  },
+  {
+    "title": "Mortal Kombat",
+    "tmdb_id": 460465,
+    "top_terms": [
+      "hand",
+      "fighter",
+      "high",
+      "universe",
+      "expectation",
+      "shang"
+    ],
+    "x": 0.1955803237134669,
+    "y": 0.030193187860115933,
+    "year": 2021
+  },
+  {
+    "title": "Extraction",
+    "tmdb_id": 545609,
+    "top_terms": [
+      "drug",
+      "rescue",
+      "mission",
+      "based graphic",
+      "hire",
+      "bombay india"
+    ],
+    "x": 0.2072445793258743,
+    "y": -0.05742860551456849,
+    "year": 2020
+  },
+  {
+    "title": "The Gentlemen",
+    "tmdb_id": 522627,
+    "top_terms": [
+      "gentlemen",
+      "marijuana",
+      "business",
+      "london",
+      "schemes",
+      "gangster dark"
+    ],
+    "x": 0.12629987616949725,
+    "y": -0.07514802379463946,
+    "year": 2020
+  },
+  {
+    "title": "Onward",
+    "tmdb_id": 508439,
+    "top_terms": [
+      "fantasy world",
+      "brother",
+      "dead",
+      "teenage",
+      "fantasy",
+      "magic"
+    ],
+    "x": 0.2162790566905809,
+    "y": -0.12562357569764232,
+    "year": 2020
+  },
+  {
+    "title": "Enola Holmes",
+    "tmdb_id": 497582,
+    "top_terms": [
+      "holmes",
+      "enola holmes",
+      "enola",
+      "runaway",
+      "sherlock",
+      "detective"
+    ],
+    "x": 0.17749459650791224,
+    "y": -0.11528066063040297,
+    "year": 2020
+  },
+  {
+    "title": "The Conjuring: The Devil Made Me Do It",
+    "tmdb_id": 423108,
+    "top_terms": [
+      "conjuring",
+      "paranormal",
+      "horror",
+      "paranormal investigators",
+      "files",
+      "paranormal investigation"
+    ],
+    "x": 0.15683567663526196,
+    "y": -0.08843690622369535,
+    "year": 2021
+  },
+  {
+    "title": "The Matrix Resurrections",
+    "tmdb_id": 624860,
+    "top_terms": [
+      "matrix",
+      "inside matrix",
+      "pac",
+      "future man",
+      "prophecy dystopia",
+      "surprisingly"
+    ],
+    "x": 0.1984629315527669,
+    "y": 0.026663904035795414,
+    "year": 2021
+  },
+  {
+    "title": "Red Notice",
+    "tmdb_id": 512195,
+    "top_terms": [
+      "red notice",
+      "interpol",
+      "red",
+      "fbi",
+      "heist",
+      "primitive"
+    ],
+    "x": 0.11827524795638975,
+    "y": -0.04746229519503882,
+    "year": 2021
+  },
+  {
+    "title": "Fast X",
+    "tmdb_id": 385687,
+    "top_terms": [
+      "dom",
+      "fast",
+      "family",
+      "revenge",
+      "emerging",
+      "cliffhanger"
+    ],
+    "x": 0.1462362926871164,
+    "y": -0.045570784434336715,
+    "year": 2023
+  },
+  {
+    "title": "The Invisible Man",
+    "tmdb_id": 570670,
+    "top_terms": [
+      "invisible",
+      "invisible man",
+      "man",
+      "like",
+      "suspects",
+      "death"
+    ],
+    "x": 0.16930239134608022,
+    "y": -0.04584940093316876,
+    "year": 2020
+  },
+  {
+    "title": "The Menu",
+    "tmdb_id": 593643,
+    "top_terms": [
+      "menu",
+      "cuisine",
+      "exclusive",
+      "chef",
+      "food",
+      "remote"
+    ],
+    "x": 0.10577780773428266,
+    "y": -0.07886249298589255,
+    "year": 2022
+  },
+  {
+    "title": "Jungle Cruise",
+    "tmdb_id": 451048,
+    "top_terms": [
+      "jungle",
+      "amazon",
+      "park",
+      "frank",
+      "enlists",
+      "based theme"
+    ],
+    "x": 0.12704721054731408,
+    "y": -0.01491871805999685,
+    "year": 2021
+  },
+  {
+    "title": "Wrath of Man",
+    "tmdb_id": 637649,
+    "top_terms": [
+      "truck",
+      "security guard",
+      "cash",
+      "guard",
+      "security",
+      "angeles"
+    ],
+    "x": 0.1850049385680579,
+    "y": -0.11900557322998445,
+    "year": 2021
+  },
+  {
+    "title": "The Wild Robot",
+    "tmdb_id": 1184918,
+    "top_terms": [
+      "robot",
+      "island",
+      "goose",
+      "animals",
+      "robot overview",
+      "environment"
+    ],
+    "x": 0.1603782361501662,
+    "y": -0.024572684134835564,
+    "year": 2024
+  },
+  {
+    "title": "The Substance",
+    "tmdb_id": 933260,
+    "top_terms": [
+      "substance",
+      "beauty",
+      "celebrity",
+      "black market",
+      "youth",
+      "market"
+    ],
+    "x": 0.14914393294010597,
+    "y": -0.07442467312920259,
+    "year": 2024
+  },
+  {
+    "title": "Sonic the Hedgehog 2",
+    "tmdb_id": 675353,
+    "top_terms": [
+      "sonic",
+      "emerald",
+      "hedgehog",
+      "takes true",
+      "robotnik",
+      "dr robotnik"
+    ],
+    "x": 0.17454150362396775,
+    "y": -0.00991927918657718,
+    "year": 2022
+  },
+  {
+    "title": "Turning Red",
+    "tmdb_id": 508947,
+    "top_terms": [
+      "red",
+      "red panda",
+      "canada",
+      "panda",
+      "toronto",
+      "turning"
+    ],
+    "x": 0.15024048590747136,
+    "y": -0.08184685899363484,
+    "year": 2022
+  },
+  {
+    "title": "The Black Phone",
+    "tmdb_id": 756999,
+    "top_terms": [
+      "finney",
+      "basement",
+      "killer",
+      "sadistic",
+      "phone",
+      "short story"
+    ],
+    "x": 0.15029856589640173,
+    "y": -0.1248641017277441,
+    "year": 2022
+  },
+  {
+    "title": "Ant-Man and the Wasp: Quantumania",
+    "tmdb_id": 640146,
+    "top_terms": [
+      "ant",
+      "dyne",
+      "ant man",
+      "lang",
+      "scott",
+      "van"
+    ],
+    "x": 0.21836014715603408,
+    "y": 0.23673096967809848,
+    "year": 2023
+  },
+  {
+    "title": "Poor Things",
+    "tmdb_id": 792307,
+    "top_terms": [
+      "sexuality",
+      "female",
+      "poor",
+      "liberation",
+      "lawyer",
+      "things"
+    ],
+    "x": 0.20312845499169235,
+    "y": -0.08012821341956168,
+    "year": 2023
+  },
+  {
+    "title": "After We Collided",
+    "tmdb_id": 613504,
+    "top_terms": [
+      "collided",
+      "forgot",
+      "sat",
+      "dilemma",
+      "grand review",
+      "painful"
+    ],
+    "x": 0.1373278914697308,
+    "y": -0.09576465023588188,
+    "year": 2020
+  },
+  {
+    "title": "Greenland",
+    "tmdb_id": 524047,
+    "top_terms": [
+      "emergency",
+      "comet",
+      "apocalypse",
+      "disaster",
+      "wife",
+      "planet"
+    ],
+    "x": 0.17939461998006934,
+    "y": -0.011621932381556918,
+    "year": 2020
+  },
+  {
+    "title": "Elemental",
+    "tmdb_id": 976573,
+    "top_terms": [
+      "elemental",
+      "water",
+      "elements",
+      "temper",
+      "finding way",
+      "fiery"
+    ],
+    "x": 0.1564048863099102,
+    "y": -0.07293437793904746,
+    "year": 2023
+  },
+  {
+    "title": "Transformers: Rise of the Beasts",
+    "tmdb_id": 667538,
+    "top_terms": [
+      "transformers",
+      "robot",
+      "brother",
+      "robot duringcreditsstinger",
+      "autobots",
+      "engage"
+    ],
+    "x": 0.18653087221993642,
+    "y": 0.055185034750742934,
+    "year": 2023
+  },
+  {
+    "title": "Bloodshot",
+    "tmdb_id": 338762,
+    "top_terms": [
+      "bloodshot",
+      "ray",
+      "wife",
+      "overview wife",
+      "breaks",
+      "mediocre"
+    ],
+    "x": 0.1979093197818296,
+    "y": 0.10292210160185473,
+    "year": 2020
+  },
+  {
+    "title": "Ghostbusters: Afterlife",
+    "tmdb_id": 425909,
+    "top_terms": [
+      "ghostbusters",
+      "grandfather",
+      "afterlife",
+      "paranormal",
+      "small",
+      "town"
+    ],
+    "x": 0.14798685900471786,
+    "y": -0.05351802659874848,
+    "year": 2021
+  },
+  {
+    "title": "The Kissing Booth 2",
+    "tmdb_id": 583083,
+    "top_terms": [
+      "don",
+      "romance",
+      "schools",
+      "classmate",
+      "lee",
+      "appear"
+    ],
+    "x": 0.12484241623832808,
+    "y": -0.0642000205551841,
+    "year": 2020
+  },
+  {
+    "title": "Mission: Impossible - Dead Reckoning Part One",
+    "tmdb_id": 575264,
+    "top_terms": [
+      "ethan",
+      "mission",
+      "agency",
+      "government",
+      "government agency",
+      "secret"
+    ],
+    "x": 0.19100459528905142,
+    "y": 0.022284868236582153,
+    "year": 2023
+  },
+  {
+    "title": "Fantastic Beasts: The Secrets of Dumbledore",
+    "tmdb_id": 338953,
+    "top_terms": [
+      "beasts",
+      "dumbledore",
+      "secrets dumbledore",
+      "fantastic beasts",
+      "secrets",
+      "fantastic"
+    ],
+    "x": 0.16523636984837314,
+    "y": -0.07291779160633523,
+    "year": 2022
+  },
+  {
+    "title": "The King's Man",
+    "tmdb_id": 476669,
+    "top_terms": [
+      "king",
+      "man",
+      "comic prequel",
+      "war",
+      "film series",
+      "planned"
+    ],
+    "x": 0.23347240255591045,
+    "y": 0.0354047455693201,
+    "year": 2021
+  },
+  {
+    "title": "The Northman",
+    "tmdb_id": 639933,
+    "top_terms": [
+      "amleth",
+      "prince amleth",
+      "prince",
+      "uncle",
+      "later",
+      "sword"
+    ],
+    "x": 0.1572284526625123,
+    "y": -0.046094518444126015,
+    "year": 2022
+  },
+  {
+    "title": "Five Nights at Freddy's",
+    "tmdb_id": 507089,
+    "top_terms": [
+      "freddy",
+      "child",
+      "security guard",
+      "troubled",
+      "abandoned",
+      "restaurant"
+    ],
+    "x": 0.15525574099657993,
+    "y": -0.111649152793502,
+    "year": 2023
+  },
+  {
+    "title": "The Flash",
+    "tmdb_id": 298618,
+    "top_terms": [
+      "flash",
+      "dc",
+      "universe",
+      "superhuman",
+      "save",
+      "future"
+    ],
+    "x": 0.2508930809577729,
+    "y": 0.19880516703511822,
+    "year": 2023
+  },
+  {
+    "title": "The Adam Project",
+    "tmdb_id": 696806,
+    "top_terms": [
+      "adam",
+      "project",
+      "save future",
+      "future genres",
+      "reed",
+      "explore"
+    ],
+    "x": 0.16639377441568562,
+    "y": 0.006283962123854408,
+    "year": 2022
+  },
+  {
+    "title": "Nope",
+    "tmdb_id": 762504,
+    "top_terms": [
+      "horror",
+      "horror sci",
+      "alien",
+      "western",
+      "sci",
+      "sci fi"
+    ],
+    "x": 0.18910673473330708,
+    "y": 0.0014584780333294506,
+    "year": 2022
+  },
+  {
+    "title": "Old",
+    "tmdb_id": 631843,
+    "top_terms": [
+      "beach",
+      "experiment",
+      "secluded beach",
+      "secluded",
+      "vacation",
+      "holiday"
+    ],
+    "x": 0.17018364866997565,
+    "y": -0.09610050958940194,
+    "year": 2021
+  },
+  {
+    "title": "Furiosa: A Mad Max Saga",
+    "tmdb_id": 786892,
+    "top_terms": [
+      "furiosa",
+      "wasteland",
+      "warlord",
+      "post apocalyptic",
+      "apocalyptic",
+      "post"
+    ],
+    "x": 0.15659665487184818,
+    "y": 0.006079444440051655,
+    "year": 2024
+  },
+  {
+    "title": "The Old Guard",
+    "tmdb_id": 547016,
+    "top_terms": [
+      "guard",
+      "old",
+      "immortal genres",
+      "immortal",
+      "instant classic",
+      "targeted"
+    ],
+    "x": 0.15946406936739274,
+    "y": 0.019512605397586952,
+    "year": 2020
+  },
+  {
+    "title": "Morbius",
+    "tmdb_id": 526896,
+    "top_terms": [
+      "morbius",
+      "fiction fantasy",
+      "gamble",
+      "duringcreditsstinger supervillain",
+      "reveals",
+      "captivating"
+    ],
+    "x": 0.1775711187177593,
+    "y": 0.09671022290955425,
+    "year": 2022
+  },
+  {
+    "title": "M3GAN",
+    "tmdb_id": 536554,
+    "top_terms": [
+      "doll",
+      "m3gan",
+      "niece",
+      "android",
+      "dog",
+      "artificial intelligence"
+    ],
+    "x": 0.12631560799399186,
+    "y": -0.050829109278827354,
+    "year": 2022
+  },
+  {
+    "title": "Superman",
+    "tmdb_id": 1061474,
+    "top_terms": [
+      "superman",
+      "heritage",
+      "symbol hope",
+      "supervillain dc",
+      "embarks journey",
+      "comic super"
+    ],
+    "x": 0.2300136037056425,
+    "y": 0.1787884407914849,
+    "year": 2025
+  },
+  {
+    "title": "Sing 2",
+    "tmdb_id": 438695,
+    "top_terms": [
+      "sing",
+      "buster",
+      "crystal",
+      "clay",
+      "wolf",
+      "stage"
+    ],
+    "x": 0.11914140382635607,
+    "y": -0.049347408919799926,
+    "year": 2021
+  },
+  {
+    "title": "The Whale",
+    "tmdb_id": 785084,
+    "top_terms": [
+      "daughter",
+      "english teacher",
+      "english",
+      "eating",
+      "teacher",
+      "father daughter"
+    ],
+    "x": 0.13954434121890388,
+    "y": -0.06907073107474658,
+    "year": 2022
+  },
+  {
+    "title": "Godzilla x Kong: The New Empire",
+    "tmdb_id": 823464,
+    "top_terms": [
+      "godzilla",
+      "kong",
+      "godzilla kong",
+      "giant",
+      "empire",
+      "giant ape"
+    ],
+    "x": 0.14448458557513202,
+    "y": 0.040295890884756214,
+    "year": 2024
+  },
+  {
+    "title": "Dungeons & Dragons: Honor Among Thieves",
+    "tmdb_id": 493529,
+    "top_terms": [
+      "thieves",
+      "dragons honor",
+      "dungeons dragons",
+      "dungeons",
+      "dragons",
+      "charming"
+    ],
+    "x": 0.15228202969751084,
+    "y": -0.07541145546939594,
+    "year": 2023
+  },
+  {
+    "title": "Fall",
+    "tmdb_id": 985939,
+    "top_terms": [
+      "climbing",
+      "tower",
+      "best friends",
+      "stranded",
+      "hunter",
+      "kind"
+    ],
+    "x": 0.12552150036457455,
+    "y": -0.04084350194336541,
+    "year": 2022
+  },
+  {
+    "title": "Alien: Romulus",
+    "tmdb_id": 945961,
+    "top_terms": [
+      "alien",
+      "space",
+      "life form",
+      "station",
+      "face",
+      "em"
+    ],
+    "x": 0.2108006618568745,
+    "y": 0.08108457525038998,
+    "year": 2024
+  },
+  {
+    "title": "Sinners",
+    "tmdb_id": 1233413,
+    "top_terms": [
+      "cousin",
+      "mississippi",
+      "vampire",
+      "brother",
+      "horror",
+      "chinese immigrant"
+    ],
+    "x": 0.1540093088775243,
+    "y": -0.09196615398063981,
+    "year": 2025
+  },
+  {
+    "title": "Love and Monsters",
+    "tmdb_id": 590223,
+    "top_terms": [
+      "joel",
+      "monsters",
+      "families",
+      "order survive",
+      "ok",
+      "bunker"
+    ],
+    "x": 0.17680376345007806,
+    "y": -0.025513081812952327,
+    "year": 2020
+  },
+  {
+    "title": "Gladiator II",
+    "tmdb_id": 558449,
+    "top_terms": [
+      "gladiator",
+      "rome",
+      "gladiator ii",
+      "roman",
+      "empire",
+      "sword"
+    ],
+    "x": 0.1608848694395762,
+    "y": -0.005687204798722697,
+    "year": 2024
+  },
+  {
+    "title": "Army of the Dead",
+    "tmdb_id": 503736,
+    "top_terms": [
+      "zombie",
+      "casino",
+      "heist",
+      "apocalypse",
+      "las",
+      "las vegas"
+    ],
+    "x": 0.11917034230501426,
+    "y": -0.07254665820979944,
+    "year": 2021
   }
 ]

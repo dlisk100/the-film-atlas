@@ -1,72 +1,72 @@
 [
   {
-    "neighbor_title": "Spider-Man: Homecoming",
-    "neighbor_tmdb_id": 315635,
-    "similarity": 0.4427770021149221,
-    "source_title": "Spider-Man: No Way Home",
-    "source_tmdb_id": 634649
+    "neighbor_title": "The Matrix Revolutions",
+    "neighbor_tmdb_id": 605,
+    "similarity": 0.6572219211976814,
+    "source_title": "The Matrix Reloaded",
+    "source_tmdb_id": 604
   },
   {
-    "neighbor_title": "The Godfather Part II",
-    "neighbor_tmdb_id": 240,
-    "similarity": 0.4263168471903574,
-    "source_title": "The Godfather",
-    "source_tmdb_id": 238
+    "neighbor_title": "A Quiet Place Part II",
+    "neighbor_tmdb_id": 520763,
+    "similarity": 0.6495716535799841,
+    "source_title": "A Quiet Place",
+    "source_tmdb_id": 447332
   },
   {
-    "neighbor_title": "Spider-Man",
-    "neighbor_tmdb_id": 557,
-    "similarity": 0.4236944974230162,
-    "source_title": "Spider-Man: No Way Home",
-    "source_tmdb_id": 634649
+    "neighbor_title": "Godzilla x Kong: The New Empire",
+    "neighbor_tmdb_id": 823464,
+    "similarity": 0.6349717856450087,
+    "source_title": "Godzilla vs. Kong",
+    "source_tmdb_id": 399566
   },
   {
-    "neighbor_title": "The Lord of the Rings: The Fellowship of the Ring",
-    "neighbor_tmdb_id": 120,
-    "similarity": 0.4235731259103707,
-    "source_title": "The Lord of the Rings: The Return of the King",
-    "source_tmdb_id": 122
+    "neighbor_title": "Blade Runner 2049",
+    "neighbor_tmdb_id": 335984,
+    "similarity": 0.6321434678118354,
+    "source_title": "Blade Runner",
+    "source_tmdb_id": 78
   },
   {
-    "neighbor_title": "Spider-Man: Homecoming",
-    "neighbor_tmdb_id": 315635,
-    "similarity": 0.42225615004003053,
-    "source_title": "Spider-Man",
-    "source_tmdb_id": 557
-  },
-  {
-    "neighbor_title": "Spider-Man: Across the Spider-Verse",
-    "neighbor_tmdb_id": 569094,
-    "similarity": 0.3977477905303512,
-    "source_title": "Spider-Man: No Way Home",
-    "source_tmdb_id": 634649
-  },
-  {
-    "neighbor_title": "Harry Potter and the Chamber of Secrets",
-    "neighbor_tmdb_id": 672,
-    "similarity": 0.3943184704952528,
+    "neighbor_title": "Harry Potter and the Prisoner of Azkaban",
+    "neighbor_tmdb_id": 673,
+    "similarity": 0.5804070898001731,
     "source_title": "Harry Potter and the Philosopher's Stone",
     "source_tmdb_id": 671
   },
   {
-    "neighbor_title": "Spider-Man: Across the Spider-Verse",
-    "neighbor_tmdb_id": 569094,
-    "similarity": 0.3936073550165122,
-    "source_title": "Spider-Man",
-    "source_tmdb_id": 557
+    "neighbor_title": "Dune: Part Two",
+    "neighbor_tmdb_id": 693134,
+    "similarity": 0.5776658798528579,
+    "source_title": "Dune",
+    "source_tmdb_id": 438631
   },
   {
-    "neighbor_title": "Inside Out",
-    "neighbor_tmdb_id": 150540,
-    "similarity": 0.384200710311533,
-    "source_title": "Inside Out 2",
-    "source_tmdb_id": 1022789
+    "neighbor_title": "Pirates of the Caribbean: At World's End",
+    "neighbor_tmdb_id": 285,
+    "similarity": 0.5698506406020699,
+    "source_title": "Pirates of the Caribbean: Dead Man's Chest",
+    "source_tmdb_id": 58
   },
   {
-    "neighbor_title": "The Devil Wears Prada 2",
-    "neighbor_tmdb_id": 1314481,
-    "similarity": 0.3802899573069353,
-    "source_title": "The Devil Wears Prada",
-    "source_tmdb_id": 350
+    "neighbor_title": "Guardians of the Galaxy Vol. 3",
+    "neighbor_tmdb_id": 447365,
+    "similarity": 0.5684313311427249,
+    "source_title": "Guardians of the Galaxy Vol. 2",
+    "source_tmdb_id": 283995
+  },
+  {
+    "neighbor_title": "Harry Potter and the Goblet of Fire",
+    "neighbor_tmdb_id": 674,
+    "similarity": 0.5632811994884138,
+    "source_title": "Harry Potter and the Philosopher's Stone",
+    "source_tmdb_id": 671
+  },
+  {
+    "neighbor_title": "Jurassic World",
+    "neighbor_tmdb_id": 135397,
+    "similarity": 0.555339717907591,
+    "source_title": "Jurassic Park",
+    "source_tmdb_id": 329
   }
 ]

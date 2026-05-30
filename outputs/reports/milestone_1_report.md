@@ -4,124 +4,125 @@ Milestone 1 uses only TMDb API data, local processing, and a TF-IDF sample map. 
 
 ## Summary
 
-- Discovered movies: 100
-- Detail records fetched: 100
-- With overview: 100.0% (100/100)
-- With keywords: 100.0% (100/100)
-- With reviews: 98.0% (98/100)
-- From 2024 or later: 45.0% (45/100)
-- From future release years: 0.0% (0/100)
+- Discovered movies: 500
+- Detail records fetched: 500
+- With overview: 100.0% (500/500)
+- With keywords: 99.8% (499/500)
+- With reviews: 98.2% (491/500)
+- From 2024 or later: 2.2% (11/500)
+- From future release years: 0.0% (0/500)
 
 ## Year Distribution
 
 | Year | Count |
 | --- | ---: |
-| 2026 | 23 |
-| 2025 | 16 |
-| 2024 | 6 |
-| 1999 | 5 |
-| 2021 | 4 |
-| 2023 | 4 |
-| 1994 | 3 |
-| 2001 | 3 |
-| 2010 | 3 |
-| 2002 | 3 |
-| 2006 | 2 |
-| 2018 | 2 |
-| 2008 | 2 |
-| 2003 | 2 |
-| 2019 | 2 |
-| 2022 | 2 |
-| 2009 | 2 |
-| 2015 | 2 |
-| 2013 | 1 |
-| 1992 | 1 |
-| 2014 | 1 |
-| 2011 | 1 |
-| 2012 | 1 |
-| 1972 | 1 |
-| 1997 | 1 |
+| 2021 | 30 |
+| 2022 | 26 |
+| 2020 | 18 |
+| 1999 | 16 |
+| 1997 | 16 |
+| 2014 | 16 |
+| 2017 | 16 |
+| 2023 | 15 |
+| 1987 | 14 |
+| 1989 | 13 |
+| 1988 | 13 |
+| 1995 | 13 |
+| 2009 | 13 |
+| 1986 | 12 |
+| 1998 | 12 |
+| 2006 | 12 |
+| 2016 | 12 |
+| 1984 | 11 |
+| 2008 | 11 |
+| 2004 | 11 |
+| 2007 | 11 |
+| 2013 | 11 |
+| 2015 | 11 |
+| 1982 | 10 |
+| 1996 | 10 |
 
 ## Top Official Genres
 
 | Genre | Count |
 | --- | ---: |
-| Adventure | 40 |
-| Action | 39 |
-| Drama | 32 |
-| Science Fiction | 30 |
-| Comedy | 24 |
-| Thriller | 23 |
-| Fantasy | 17 |
-| Crime | 17 |
-| Animation | 15 |
-| Family | 14 |
-| Romance | 12 |
-| Horror | 9 |
-| Mystery | 7 |
-| Music | 3 |
-| History | 3 |
-| War | 1 |
+| Action | 220 |
+| Adventure | 209 |
+| Science Fiction | 160 |
+| Comedy | 127 |
+| Drama | 127 |
+| Thriller | 111 |
+| Fantasy | 107 |
+| Crime | 77 |
+| Family | 71 |
+| Animation | 56 |
+| Horror | 46 |
+| Romance | 43 |
+| Mystery | 37 |
+| War | 16 |
+| History | 13 |
+| Music | 8 |
+| Western | 4 |
 
 ## Top Keywords
 
 | Keyword | Count |
 | --- | ---: |
-| based on novel or book | 25 |
-| sequel | 22 |
-| aftercreditsstinger | 19 |
-| duringcreditsstinger | 17 |
-| superhero | 12 |
-| based on comic | 11 |
-| friendship | 9 |
-| magic | 9 |
-| new york city | 9 |
-| villain | 8 |
-| marvel cinematic universe (mcu) | 7 |
-| space | 6 |
-| love | 6 |
-| secret identity | 6 |
-| space travel | 5 |
-| 3d animation | 5 |
-| reboot | 5 |
-| artificial intelligence (a.i.) | 5 |
-| dystopia | 5 |
-| anthropomorphism | 5 |
-| playful | 5 |
-| loss of loved one | 5 |
-| woman director | 5 |
-| suspenseful | 5 |
-| superhero team | 5 |
+| based on comic | 85 |
+| based on novel or book | 82 |
+| superhero | 80 |
+| duringcreditsstinger | 79 |
+| sequel | 77 |
+| aftercreditsstinger | 77 |
+| villain | 57 |
+| excited | 46 |
+| dystopia | 41 |
+| new york city | 38 |
+| los angeles, california | 34 |
+| suspenseful | 33 |
+| revenge | 33 |
+| marvel cinematic universe (mcu) | 32 |
+| magic | 31 |
+| good versus evil | 30 |
+| amused | 30 |
+| super power | 29 |
+| murder | 28 |
+| hilarious | 27 |
+| intense | 26 |
+| friendship | 26 |
+| based on true story | 25 |
+| alien | 25 |
+| hero | 24 |
 
 ## Sampling Bias Diagnostics
 
-- Movies from 2024 or later: 45.0% (45/100)
-- Movies from future release years: 0.0% (0/100)
-- Movies with franchise/sequel keywords: 44.0% (44/100)
+- Movies from 2024 or later: 2.2% (11/500)
+- Movies from future release years: 0.0% (0/500)
+- Movies with franchise/sequel keywords: 43.6% (218/500)
 
 ### Franchise/Sequel Keywords
 
 | Keyword | Count |
 | --- | ---: |
-| sequel | 22 |
-| aftercreditsstinger | 19 |
-| duringcreditsstinger | 17 |
-| superhero | 12 |
-| based on comic | 11 |
-| marvel cinematic universe (mcu) | 7 |
-| reboot | 5 |
-| superhero team | 5 |
-| based on video game | 4 |
-| masked superhero | 4 |
-| teen superhero | 3 |
-| superhero teamup | 3 |
-| remake | 1 |
-| female superhero | 1 |
+| based on comic | 85 |
+| superhero | 80 |
+| duringcreditsstinger | 79 |
+| sequel | 77 |
+| aftercreditsstinger | 77 |
+| marvel cinematic universe (mcu) | 32 |
+| remake | 13 |
+| superhero team | 9 |
+| teen superhero | 7 |
+| reboot | 6 |
+| masked superhero | 6 |
+| based on video game | 6 |
+| superhero teamup | 5 |
+| live action remake | 5 |
+| aging superhero | 1 |
 
 ### Warnings
 
-- Warning: Current-release concentration is high: 45.0% of movies are from 2024 or later.
-- Warning: Franchise/sequel concentration is high: 44.0% of movies have franchise-related keywords.
+- Warning: Franchise/sequel concentration is high: 43.6% of movies have franchise-related keywords.
 
 ### Recommended Balanced Command
 
@@ -140,243 +141,244 @@ uv run film-atlas report
 
 | Term | Count |
 | --- | ---: |
-| full | 84 |
-| review | 80 |
-| http | 47 |
-| https | 46 |
-| rating | 40 |
-| spoiler | 38 |
-| stars | 19 |
-| www | 16 |
-| letterboxd | 1 |
+| full | 340 |
+| review | 306 |
+| spoiler | 156 |
+| http | 155 |
+| https | 145 |
+| rating | 138 |
+| www | 117 |
+| stars | 93 |
+| letterboxd | 9 |
 
 ### Review Noise Examples
 
-- Lee Cronin's The Mummy: Lee Cronin’s The Mummy isn’t scary or memorable; it’s raunchy exploitation and over-orchestrated expired cheese. It is a horror film that reeks of nothing but ridiculousness. The s
-- Lee Cronin's The Mummy: 9/10 stars review ratings At first was about to quit watching since it have that pale effect, on top of that the story do back and forth of flash back.. for their overall story tel
-- Lee Cronin's The Mummy: 9/10 stars review ratings At first was about to quit watching since it have that pale effect, on top of that the story do back and forth of flash back.. for their overall story tel
-- Project Hail Mary: Full review: Rating: A- "Project Hail Mary stands as a triumph of narrative over technique, where the redemption of a man who believed himself a coward becomes the symbol of hope f
-- Project Hail Mary: Never read (or heard of the book but not much of a book reader aside from crime-thrillers) so I don't know anything about it, but thought this was a lot of fun with heart and Ryan
+- Back to the Future: **Entertaining** A man goes back in time to save his mother - or something like that anyway - I was too entertained to fully grasp what was going on. Seriously, this film moves so
+- The Shining: If you enjoy reading my Spoiler-Free reviews, please follow my blog :) With Doctor Sleep, an almost 40-year sequel to The Shining, being released this week, now it’s the perfect ti
+- The Shining: "Darling, I'm not gonna hurt you. I'm just gonna bash your brains in." <i>The Shining</i> is a great example of how musical score and cinematography can elevate a movie to the best
+- The Shining: "Darling, I'm not gonna hurt you. I'm just gonna bash your brains in." The Shining is a great example of how musical score and cinematography can elevate a movie to the best-of-the
+- The Empire Strikes Back: I have reviewed this film before but I thought that it deserved an extra special mention. Yesterday, this was the first film I saw in a cinema since we were all confined to barrack
 
 ## Movies Missing Important Fields
 
-_No important fields are missing from the normalized sample._
+| TMDb ID | Title | Missing Fields |
+| ---: | --- | --- |
+| 583083 | The Kissing Booth 2 | keywords |
 
 ## Sample Movie Text Profiles
 
-### Lee Cronin's The Mummy
+### Back to the Future
 
 ```text
-Title: Lee Cronin's The Mummy
-Overview: The young daughter of a journalist disappears into the desert without a trace—eight years later, the broken family is shocked when she is returned to them, as what should be a joyful reunion turns into a living nightmare.
-Genres: Horror; Mystery
-Keywords: journalist; egypt; monster; ritual; kidnapping; pyramid; investigation; supernatural; mummy; possession; disappearance; curse; demon; tomb; missing person; supernatural horror; body horror; horror
-Review language: ’s The Mummy isn’t scary or memorable; it’s raunchy exploitation and over-orchestrated expired cheese. It is a horror film that reeks of nothing but ridiculousness. The sad part is
+Title: Back to the Future
+Overview: Eighties teenager Marty McFly is accidentally sent back in time to 1955, inadvertently disrupting his parents' first meeting and attracting his mother's romantic interest. Marty must repair the damage to history by rekindling his parents' romance and - with the help of his eccentric inventor friend Doc Brown - return to .
+Genres: Adventure; Comedy; Science Fiction
+Keywords: flying car; race against time; clock tower; car race; lightning; guitar; inventor; journey in the past; invention; time travel; bullying; mad scientist; love; fish out of water; terrorism; teenage love; destiny; burlesque; hidden identity; teenage life; changing the past or future; 1950s
+Review language: **Entertaining** A man goes back in time to save his mother - or something like that anyway - I was too entertained to fully grasp what was going on. Seriously, this film moves so
 ```
 
-### Project Hail Mary
+### The Shining
 
 ```text
-Title: Project Hail Mary
-Overview: Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction.
-Genres: Science Fiction; Adventure
-Keywords: friendship; coma; based on novel or book; bravery; sun; language barrier; space travel; space mission; alien; space; memory loss; suicide mission; astronaut; scientist; curious; science teacher; save the planet; wonder; spaceship; interspecies friendship
-Review language: When times are tough and world-weary souls have looked for an avenue of escapism to retreat from their woes, worries and weltschmerz, they’ve often flocked to the movies to relieve
+Title: The Shining
+Overview: Jack Torrance accepts a caretaker job at the Overlook Hotel, where he, along with his wife Wendy and their son Danny, must live isolated from the rest of the world for the winter. But they aren't prepared for the madness that lurks within.
+Genres: Horror; Thriller
+Keywords: hotel; new year's eve; child abuse; based on novel or book; isolation; telepathy; delusion; halloween; snowstorm; colorado; seclusion; surrealism; writer's block; alcoholism; premonition; psychic power; caretaker; loneliness; vision; domestic violence; postmodern; psychological thriller; writer; twins; labyrinth; alcoholic; blizzard; mutilation; bloody body of child; extrasensory perception; uxoricide; motherhood; hypothermia; haunted hotel; psychological disintegration; disturbed; pediatrician; repetition; mother son relationship; supernatural power; new year; supernatural horror; ghost c
 ```
 
-### The Super Mario Galaxy Movie
+### The Empire Strikes Back
 
 ```text
-Title: The Super Mario Galaxy Movie
-Overview: Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.
-Genres: Family; Comedy; Adventure; Fantasy; Animation
-Keywords: galaxy; friendship; sibling relationship; space travel; turtle; sequel; slapstick comedy; space; robot; based on video game; buddy comedy; aftercreditsstinger; duringcreditsstinger; globetrotting; space adventure; children's adventure; father son relationship; parallel universe; brother brother relationship; talking animal; magic land; fictional country
-Review language: Full review: Rating: B+ "The Super Mario Galaxy Movie is a sequel that, while losing some of the narrative
+Title: The Empire Strikes Back
+Overview: The epic saga continues as Luke Skywalker, in hopes of defeating the evil Galactic Empire, learns the ways of the Jedi from aging master Yoda. But Darth Vader is more determined than ever to capture Luke. Meanwhile, rebel leader Princess Leia, cocky Han Solo, Chewbacca, and droids C-3PO and R2-D2 are thrown into various stages of capture, betrayal and despair.
+Genres: Adventure; Action; Science Fiction
+Keywords: rebellion; android; spacecraft; asteroid; rebel; space battle; snowstorm; space colony; swamp; sequel; space opera; arctic; intense; tuwaderalit
+Review language: **Overrated ** An enjoyable film - just not as engaging as parts IV and VI. The argument that Jedi was ruined by little furry creatures is laughable as this instalment features a _
 ```
 
-### Swapped
+### Return of the Jedi
 
 ```text
-Title: Swapped
-Overview: A small woodland creature and a majestic bird, two natural sworn enemies of the Valley, magically trade places and set off on an adventure of a lifetime to switch back. Their journey soon uncovers a greater threat—one that could endanger not only their species, but the entire valley they call home.
-Genres: Adventure; Animation; Family; Fantasy
-Keywords: wolf; buddy; forest fire; woodlands; forest lore; bird; 3d animation; empathetic; vibrant; body swap; animal adventure
-Review language: I recently watched this movie and found it to be an enjoyable experience overall. The performances were solid, the visuals were impressive, and the story kept me interested from be
+Title: Return of the Jedi
+Overview: Luke Skywalker leads a mission to rescue his friend Han Solo from the clutches of Jabba the Hutt, the Emperor prepares to crush the Rebellion with a more powerful Death Star, and the Rebel fleet mounts a massive attack on the space station. Luke Skywalker confronts Darth Vader in a final climactic duel before the evil Emperor.
+Genres: Adventure; Action; Science Fiction
+Keywords: spacecraft; sibling relationship; rebel; emperor; space battle; matter of life and death; forest; sequel; desert; space opera; bold; tuwaderalit
+Review language: This is not quite Bantha fodder. Following on from the freshness of Star Wars (1977) and the all round greatness of craft and story telling that was The Empire Strikes Back (1980),
 ```
 
-### Mortal Kombat
+### Blade Runner
 
 ```text
-Title: Mortal Kombat
-Overview: Washed-up MMA fighter Cole Young, unaware of his heritage, and hunted by Emperor Shang Tsung's best warrior, Sub-Zero, seeks out and trains with Earth's greatest champions as he prepares to stand against the enemies of Outworld in a high stakes battle for the universe.
-Genres: Action; Fantasy; Adventure
-Keywords: saving the world; magic; ninja fighter; gore; god; alternate dimension; shaolin monk; fighting; based on video game; martial arts tournament; reboot; hand to hand combat; casual
-Review language: I will be short. You should understand how hard to make movies based on such a legendary universe (expectation is too high!), with a lot of characters that need screen time, and wi
+Title: Blade Runner
+Overview: In the smog-choked dystopian Los Angeles of 2019, blade runner Rick Deckard is called out of retirement to terminate a quartet of replicants who have escaped to Earth seeking their creator for a way to extend their short life spans.
+Genres: Science Fiction; Drama; Thriller
+Keywords: android; flying car; bounty hunter; artificial intelligence (a.i.); genetics; based on novel or book; dystopia; melancholy; futuristic; fugitive; cyberpunk; los angeles, california; alcoholic; origami; unicorn; tech noir; humanity; neo-noir; grim; human clone; humanoid robot; blade runner; 2010s; suspenseful; excited; dystopian
+Review language: **Planet Noir** I declare _Blade Runner_ the best sci-fi movie of all time. Arguments? No? Okay. So long. Please upvote the guest book on your way out. WAIT! There's more. At the r
 ```
 
-### The Devil Wears Prada
+### The Terminator
 
 ```text
-Title: The Devil Wears Prada
-Overview: A young woman from the Midwest gets more than she bargained for when she moves to New York to become a writer and ends up as the assistant to the tyrannical, larger-than-life editor-in-chief of a major fashion magazine.
-Genres: Drama; Comedy
-Keywords: new york city; journalist; paris, france; based on novel or book; journalism; fashion journal; assistant; job entrant; job interview; editor-in-chief; fashion; fashion magazine; bullied; city life; fashion industry; wonder; absurd; conceited; mean spirited; ridiculous; workplace drama
-Review language: Normally this sort of film wouldn't interest me, but I was fascinated by the cast (, , and ARE four of my favourite contemporary actors) AND I liked the three previous films I've s
+Title: The Terminator
+Overview: In the post-apocalyptic future, reigning tyrannical supercomputers teleport a cyborg assassin known as the "Terminator" back to to kill Sarah Connor, whose unborn son is destined to lead insurgents against 21st century mechanical hegemony. Meanwhile, the human-resistance movement dispatches a lone warrior to safeguard Sarah. Can he stop the virtually indestructible killing machine?
+Genres: Action; Thriller; Science Fiction
+Keywords: man vs machine; artificial intelligence (a.i.); saving the world; laser gun; cyborg; killer robot; shotgun; rebel; dystopia; villain; time travel; los angeles, california; urban setting; future war; savior; tech noir; time paradox; action hero; griffith observatory; good versus evil; dystopian
+Review language: I can't. Nobody goes home. Nobody else comes through. It's just him - and me. It's funny really, writing a review for T
 ```
 
-### Hoppers
+### Back to the Future Part II
 
 ```text
-Title: Hoppers
-Overview: Scientists have discovered how to 'hop' human consciousness into lifelike robotic animals, allowing people to communicate with animals as animals. Animal lover Mabel seizes an opportunity to use the technology, uncovering mysteries within the animal world beyond anything she could have imagined.
-Genres: Adventure; Animation; Comedy; Family; Science Fiction
-Keywords: human vs nature; spy; beaver; oregon, usa; transhumanism; consciousness; aftercreditsstinger; duringcreditsstinger; human becoming an animal; robotic animal; 3d animation
-Review language: I REALLY liked this movie, the best movie in years for me. To be fair, maybe that's just because of me being an environmentalist myself, but hey, in the end, reviews here are suppo
+Title: Back to the Future Part II
+Overview: Marty and Doc are at it again as the time-traveling duo head to 2015 to nip some McFly family woes in the bud. But things go awry thanks to bully Biff Tannen and a pesky sports almanac. In a last-ditch attempt to set things straight, Marty finds himself bound for 1955 and face to face with his teenage parents -- again.
+Genres: Adventure; Comedy; Science Fiction
+Keywords: flying car; skateboarding; car race; lightning; guitar; inventor; time travel; diner; car crash; sequel; alternate history; thunderstorm; tunnel; high school dance; angry; hoverboard; 2010s; lighthearted; enthusiastic
+Review language: You gotta go forward to save the past and back to alter the future. Yikes! Back to the Future Part II sees Marty & Jennifer coerced by Doc into travelling forward in time to correc
 ```
 
-### Apex
+### Raiders of the Lost Ark
 
 ```text
-Title: Apex
-Overview: A grieving woman pushing her limits on a solo adventure in the wild is ensnared in a twisted game with a cunning killer who thinks she's prey.
+Title: Raiders of the Lost Ark
+Overview: When Dr. Indiana Jones – the tweed-suited professor who just happens to be a celebrated archaeologist – is hired by the government to locate the legendary Ark of the Covenant, he finds himself up against the entire Nazi regime.
+Genres: Adventure; Action
+Keywords: egypt; treasure; medallion; swastika; saving the world; nepal; himalaya mountain range; cairo; moses; hat; whip; leather jacket; mediterranean; ark of the covenant; ten commandments; nazi; excavation; riddle; treasure hunt; archaeologist; adventurer; archeology; globetrotting; religious history; 1930s
+Review language: **Trailblazers of a Lost Art** Little wonder James Cameron and Joss Whelon movies are the biggest box-office earners. They are masters of cinematic rhetoric. The unfolding dramatic
+```
+
+### Scarface
+
+```text
+Title: Scarface
+Overview: After getting a green card in exchange for assassinating a Cuban government official, Tony Montana stakes a claim on the drug trade in Miami. Viciously murdering anyone who stands in his way, Tony eventually becomes the biggest drug lord in the state, controlling nearly all the cocaine that comes through Miami. But increased pressure from the police, wars with Colombian drug cartels and his own drug-fueled paranoia serve to fuel the flames of his eventual downfall.
+Genres: Action; Crime; Drama
+Keywords: corruption; sibling relationship; miami, florida; cuba; loss of loved one; gangster; cocaine; rise and fall; remake; tragedy; drug cartel; mafia; drug lord; bitterness; rise to power; miami beach; cuban refugees; drug war; excited; tragic
+Review language: Immensely great crime-drama that features some great performances and excellent writing from Oliver Stone (an
+```
+
+### Dead Poets Society
+
+```text
+Title: Dead Poets Society
+Overview: At an elite, old-fashioned boarding school in New England, a passionate English teacher inspires his students to rebel against convention and seize the potential of every day, courting the disdain of the stern headmaster.
+Genres: Drama
+Keywords: individual; friendship; philosophy; poetry; literature; professor; based on true story; coming of age; teacher; school play; new england; vermont; schoolteacher; preparatory school; 1950s; teenager
+Review language: Carpe Diem & The Punk Rock Movie. Dead Poets Society is directed by (Picnic At Hanging Rock/Gallipoli) and stars , , , , & . The script is written by Tom Schulman, based on his lif
+```
+
+### Die Hard
+
+```text
+Title: Die Hard
+Overview: High above the city of L.A. a team of terrorists has seized a building, taken hostages, and declared war. One man has manages to escape... An off-duty cop hiding somewhere inside. He's alone, tired... and the only chance anyone has got.
 Genres: Action; Thriller
-Keywords: canoe trip; rock climbing; nutcase; survival instinct; wilderness; missing persons case; cat‑and‑mouse chase; dangerous threat; trollveggen mountains, norway; extreme challenges; deadly fall; grieving woman; wandarra national park,; crossbow hunting; investigation resolution
-Review language: Predictible. A silly and boring film, unfortunately. It could have been interesting but the landscape was the most interesting thing in the film.
+Keywords: husband wife relationship; based on novel or book; s.w.a.t.; fbi; christmas party; vault; heist; murder; shootout; los angeles, california; terrorism; one man army; explosion; police officer; hostage negotiator; one night; lapd; christmas; action hero; hostages; patrol officer; absurd; high octane; suspenseful; amused; excited
+Review language: **This is one of the definitive 80s Action Films.** There is no nonsense whatsoever, the plot moves along with such a pace that the viewer is not disturbed by implausabilities. pla
 ```
 
-### Avatar: Fire and Ash
+### E.T. the Extra-Terrestrial
 
 ```text
-Title: Avatar: Fire and Ash
-Overview: In the wake of the devastating war against the RDA and the loss of their eldest son, Jake Sully and Neytiri face a new threat on Pandora: the Ash People, a violent and power-hungry Na'vi tribe led by the ruthless Varang. Jake's family must fight for their survival and the future of Pandora in a conflict that pushes them to their emotional and physical limits.
-Genres: Science Fiction; Adventure; Fantasy
-Keywords: witch; clone; space war; tribe; sequel; alien; transhumanism; family; space adventure; motion capture; family dynamics; rival; dreary; oscar winner
-Review language: FULL SPOILER-FREE REVIEW @ "Avatar: Fire and Ash leaves me with mixed feelings of technical admiration and creative exhaustion. It's a film that lives off its scale, scope, and tec
+Title: E.T. the Extra-Terrestrial
+Overview: An alien is left behind on Earth and saved by the 10-year-old Elliott who decides to keep him hidden in his home. While a task force hunts for the extra-terrestrial, Elliott, his brother, and his little sister Gertie form an emotional bond with their new friend, and try to help him find his way home.
+Genres: Adventure; Science Fiction; Family
+Keywords: farewell; space marine; operation; flying saucer; nasa; homesickness; loss of loved one; extraterrestrial technology; prosecution; riding a bicycle; halloween; finger; flowerpot; alien; single; single mother; alien contact; homesick; space sci-fi
+Review language: Watched with my wife, the 7th grader, and the kindergartner. I only kind of half watched. It's been a long week. I really wanted to check out my youngest's reactions. Watching this
 ```
 
-### Nymphomaniac: Vol. II
+### Full Metal Jacket
 
 ```text
-Title: Nymphomaniac: Vol. II
-Overview: The continuation of Joe's sexually dictated life delves into the darker aspects of her adult life and what led to her being in Seligman's care.
-Genres: Drama; Mystery
-Keywords: bondage; whip; sexuality; masochism; sex therapy; chapter; sadomasochism; sequel; sexual violence; love; nymphomaniac; tragedy; loneliness; masturbation; therapy; softcore; bdsm; addict; sexual pleasure; sexually aggressive woman; pleasure; virginity; abortion; sex; cruel
+Title: Full Metal Jacket
+Overview: A pragmatic U.S. Marine observes the dehumanizing effects the U.S.-Vietnam War has on his fellow recruits from their brutal boot camp training to the bloody street fighting in Hue.
+Genres: Drama; War
+Keywords: rescue; sniper; vietnam war; suicide; vietnam; helicopter; army; prostitute; based on novel or book; propaganda; war correspondent; journalism; recruit; infantry; war photographer; boot camp; jungle; sergeant; racism; genocide; fighting; platoon; combat; discipline; u.s. marine; obstacle course; military; anti war; mass grave; blanket party; soldiers; war; critical; frustrated; harsh; scathing
+Review language: **The second half is better than the first half.** A film of two halves. The first half of the fiim focuses on the training of raw recruits and features shenanigans we have seen co
 ```
 
-### Michael
+### Indiana Jones and the Last Crusade
 
 ```text
-Title: Michael
-Overview: The story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music. His journey from the discovery of his extraordinary talent as the lead of the Jackson Five, to the visionary artist whose creative ambition fueled a relentless pursuit to become the biggest entertainer in the world, highlighting both his life off-stage and some of the most iconic performances from his early solo career.
-Genres: Music; Drama
-Keywords: child abuse; sibling relationship; 1970s; abusive father; ambition; biography; singer; period drama; music history; price of fame; singer-songwriter; rise to fame; 1980s; 1960s; music; sentimental; approving; biographical drama; music drama; biopic
-Review language: Given the whole slew of Jackson's involved in this stylish production, I couldn't help but feel a bit disappointed by the hollowness 
+Title: Indiana Jones and the Last Crusade
+Overview: In 1938, an art collector appeals to eminent archaeologist Dr. Indiana Jones to embark on a search for the Holy Grail. Indy learns that a medieval historian has vanished while searching for it, and the missing man is his own father, Dr. Henry Jones Sr.. He sets out to rescue his father by following clues in the old man's notebook, which his father had mailed to him before he went missing. Indy arrives in Venice, where he enlists the help of a beautiful academic, Dr. Elsa Schneider, along with Marcus Brody and Sallah. Together they must stop the Nazis from recovering the power of eternal life and taking over the world!
+Genres: Adventure; Action
+Keywords: saving the world; nazi; holy grail; venice, italy; entrapment; crusader; germany; riddle; brotherhood; zeppelin; tank; book burning; nazi officer; boat chase; gestapo; single father; tra
 ```
 
-### The Matrix
+### Aliens
 
 ```text
-Title: The Matrix
-Overview: Set in the 22nd century, The Matrix tells the story of a computer hacker who joins a group of underground insurgents fighting the vast and powerful computers who now rule the earth.
-Genres: Action; Science Fiction
-Keywords: man vs machine; martial arts; kung fu; dreams; fortune teller; artificial intelligence (a.i.); saving the world; hacker; self sacrifice; virtual reality; fight; prophecy; truth; philosophy; dystopia; allegory; insurgence; chosen one; pill; simulated reality; cyberpunk; dream world; action hero; gnosticism; oracle; soothsayer; commanding; allegory of the cave; dystopian
-Review language: The Martix is a great example of a movie that will live for ever or a very log time. The story and concept are out of this world. plays his role with utter brilliance, the cast was
+Title: Aliens
+Overview: Ripley, the sole survivor of the Nostromo's deadly encounter with the monstrous Alien, returns to Earth after drifting through space in hypersleep for 57 years. Although her story is initially met with skepticism, she agrees to accompany a team of Colonial Marines back to LV-426.
+Genres: Action; Thriller; Science Fiction
+Keywords: android; space marine; extraterrestrial technology; spaceman; space travel; settler; colony; cryogenics; vacuum; space colony; warrior woman; alien; space; female protagonist; creature; desolate; female hero; aggressive; military sci-fi; desolate planet; critical; sinister; sci-fi horror; assertive; commanding; empathetic; exhilarated; action horror; sci-fi action
+Review language: One of my all time favorites. It still contains some of the drama and suspense of the first but with far more action leading to what I find a far more appealin
 ```
 
-### GOAT
+### Indiana Jones and the Temple of Doom
 
 ```text
-Title: GOAT
-Overview: A small goat with big dreams gets a once-in-a-lifetime shot to join the pros and play roarball, a high-intensity, co-ed, full-contact sport dominated by the fastest, fiercest animals in the world.
-Genres: Animation; Comedy; Family
-Keywords: underdog; friendship; sports; allies; ambition; bullying; challenge; basketball; rivalry; coming of age; anthropomorphism; animals; intimidation; stereotype; basketball team; basketball player; big dreams; imaginary world; sneakers; vulture; playful; talking animal; anthropomorphic animal; athlete; inspirational; enemy; courage; feel good; heartwarming; exciting; fantasy sports; admiring; amused; joyful; sports comedy
-Review language: The “Thorns” aren’t doing so well in the “Roarball” league despite the presence of the legendary leopard “Jet” so when owner “Flo” sees a video of the feisty young goat “Will” givi
+Title: Indiana Jones and the Temple of Doom
+Overview: After arriving in India, Indiana Jones is asked by a desperate village to find a mystical stone. He agrees – and stumbles upon a secret cult plotting a terrible plan in the catacombs of an ancient palace.
+Genres: Adventure; Action
+Keywords: treasure; skeleton; wind; elephant; heart; riddle; crocodile; bridge; treasure hunt; torture; india; monkey; archaeologist; conveyor belt; child driving car; mine car; rope bridge; splits; adventurer; archeology; 1930s; excited; exhilarated
+Review language: **The best film in the series** _Raiders_ was great but suffered patches of slowness where the momentum was damaged - I know people who actually fast forward Raiders when Indy and
 ```
 
-### Damage
+### Ghostbusters
 
 ```text
-Title: Damage
-Overview: The life of a respected politician at the height of his career crumbles when he becomes obsessed with his son's lover.
-Genres: Drama; Romance
-Keywords: london, england; sibling relationship; loss of loved one; longing; politician; scandal; in flagranti; femme fatale; older man younger woman relationship; extramarital affair; voyeur; father son relationship; tory politician
-Review language: Harrowing movie, and have great chemistry. It’s a very ‘arty’ film . But it leaves you feeling queasy when you realize the consequences. Good show!
+Title: Ghostbusters
+Overview: After losing their university jobs, three parapsychologists start a ghost-catching business in New York City and uncover a supernatural threat that could destroy the world.
+Genres: Comedy; Fantasy
+Keywords: new york city; environmental protection agency; library; supernatural; paranormal phenomena; loser; slime; gatekeeper; nerd; giant monster; haunting; hybrid; possession; mythology; horror spoof; paranormal investigation; urban setting; super power; receptionist; world trade center; ghost; nostalgic; duringcreditsstinger; fighting supernatural; satirical; ghostbusters; witty; amused; enchant
+Review language: They came, they saw, they briefly conquered the 80s. A trio of misfit parapsychologists set up business as Ghostbusters. Ideal really because although slow at first, their business
 ```
 
-### After We Fell
+### Top Gun
 
 ```text
-Title: After We Fell
-Overview: Just as Tessa's life begins to become unglued, nothing is what she thought it would be. Not her friends nor her family. The only person that she should be able to rely on is Hardin, who is furious when he discovers the massive secret that she's been keeping. Before Tessa makes the biggest decision of her life, everything changes because of revelations about her family.
-Genres: Drama; Romance
-Keywords: based on novel or book; family history; love; teenage crush; woman director; family tension; zealous; mischievous; enraged
-Review language: I seem to recall seeing the previous episode of this trilogy in the cinema - a beneficiary of the lockdown dearth that propelled some serious dross onto the big screen. This, merci
+Title: Top Gun
+Overview: For Lieutenant Pete 'Maverick' Mitchell and his friend and co-pilot Nick 'Goose' Bradshaw, being accepted into an elite training school for fighter pilots is a dream come true. But a tragedy, as well as personal demons, will threaten Pete's dreams of becoming an ace pilot.
+Genres: Action; Drama; Romance
+Keywords: dying and death; secret love; lovesickness; airplane; loss of loved one; self-discovery; hostility; fighter pilot; pilot; training camp; battle assignment; u.s. navy; cowardliness; homoeroticism; pilot school; based on magazine, newspaper or article; admiring; celebratory; commanding; exuberant; gay men
+Review language: You'll struggle to find a more cheesy film, even so <em>'Top Gun'</em> is a super film. I need to check out more of 's work because he has yet to let me down from the flicks of his
 ```
 
-### Zootopia 2
+### Predator
 
 ```text
-Title: Zootopia 2
-Overview: After cracking the biggest case in Zootopia's history, rookie cops Judy Hopps and Nick Wilde find themselves on the twisting trail of a great mystery when Gary De'Snake arrives and turns the animal metropolis upside down. To crack the case, Judy and Nick must go undercover to unexpected new parts of town, where their growing partnership is tested like never before.
-Genres: Action; Adventure; Animation; Comedy; Family; Mystery
-Keywords: snake; bunny; fox; cop; sequel; anthropomorphism; animals; displacement; buddy cop; buddy comedy; complex; playful; talking animal; 3d animation; embarrassed; excited
-Review language: FULL SPOILER-FREE REVIEW @ Rating: A- "Zootopia 2 asserts itself as a worthy and even necessary sequel, overcoming the natural loss of the novelty factor with a narrative that dare
+Title: Predator
+Overview: A team of elite commandos on a secret mission in a Central jungle come to find themselves hunted by an extraterrestrial warrior.
+Genres: Science Fiction; Action; Adventure; Thriller
+Keywords: guerrilla warfare; central and south america; predator; trap; alien; survival; stalking; creature; alien invasion; invisible; commando; aggressive; prey; violence
+Review language: From about 1996 to about 2009 (roughly ages 4 til 17 for those playing at home), this was my all-time favourite movie. It was the first non-pirated VHS I ever owned, and it probabl
 ```
 
-### Ready or Not: Here I Come
+### Batman
 
 ```text
-Title: Ready or Not: Here I Come
-Overview: Moments after surviving an all-out attack from the Le Domas family, Grace discovers she’s reached the next level of the nightmarish game — and this time with her estranged sister Faith at her side. Grace has one chance to survive, keep her sister alive, and claim the High Seat of the Council that controls the world. Four rival families are hunting her for the throne, and whoever wins rules it all.
-Genres: Thriller; Horror; Comedy
-Keywords: escape; ritual; dark comedy; satanism; gore; pact with the devil; sequel; game; exploding body; satanic ritual; satanic cult; estranged sister; sister sister relationship; satanic; sisters; death game; horror
-Review language: Having barely escaped from her nuptials alive, poor old “Grace” () finds her recovery in hospital brought to quite a violent end. It seems that the fraternity that had assumed she
-```
-
-### Interstellar
-
-```text
-Title: Interstellar
-Overview: The adventures of a group of explorers who make use of a newly discovered wormhole to surpass the limitations on human space travel and conquer the vast distances involved in an interstellar voyage.
-Genres: Adventure; Drama; Science Fiction
-Keywords: rescue; future; spacecraft; race against time; artificial intelligence (a.i.); nasa; time warp; dystopia; expedition; time travel; space travel; wormhole; famine; hibernation; black hole; quantum mechanics; family relationships; love; space; apocalypse; planet; robot; astronaut; scientist; single father; farmer; space station; gravity; space adventure; quest; time paradox; time-manipulation; cryonics; father daughter relationship; 2060s
-Review language: Well, one off from two of this year's most expected movies alongside 'The Battle of Five Armies'. Like all the Chris Nolan fans, I was equally excited to see the
-```
-
-### The Shawshank Redemption
-
-```text
-Title: The Shawshank Redemption
-Overview: Imprisoned in the 1940s for the double murder of his wife and her lover, upstanding banker Andy Dufresne begins a new life at the Shawshank prison, where he puts his accounting skills to work for an amoral warden. During his long stretch in prison, Dufresne comes to be admired by the other inmates -- including an older prisoner named Red -- for his integrity and unquenchable sense of hope.
-Genres: Drama; Crime
-Keywords: prison; friendship; police brutality; corruption; based on novel or book; freedom; hope; prison cell; delinquent; redemption; parole board; prison escape; wrongful imprisonment; interracial friendship; framed for murder; 1940s; voiceover
-Review language: very good movie 9.5/10 محمد الشعراوى
-```
-
-### Shelter
-
-```text
-Title: Shelter
-Overview: A man living in self-imposed exile on a remote island rescues a young girl from a violent storm, setting off a chain of events that forces him out of seclusion to protect her from enemies tied to his past.
-Genres: Action; Crime; Thriller
-Keywords: home invasion; mysterious girl; ghosts of the past; isolated island; child protection; suspenseful; solitary life; hidden secret; close‑quarters combat; dangerous escalation; storm rescue; unexpected threat; violent assault; protective instinct; lone protector; intense action thriller; siege situation
-Review language: I’ve always loved the idea of living in a remote Scottish lighthouse where the weather could close in and cut me off from everything and everyone - with, of course, wifi and all th
+Title: Batman
+Overview: Having witnessed his parents' brutal murder as a child, millionaire philanthropist Bruce Wayne fights crime in Gotham City disguised as Batman, a costumed hero who strikes fear into the hearts of villains. But when a deformed madman known as 'The Joker' seizes control of Gotham's criminal underworld, Batman must face his most ruthless nemesis ever while protecting both his identity and his love interest, reporter Vicki Vale.
+Genres: Fantasy; Action; Crime
+Keywords: dual identity; double life; chemical; crime fighter; superhero; villain; based on comic; vigilante; mobster; organized crime; criminal; super power; madness; vigilantism; cautionary; good versus evil
+Review language: Vision not fully realised, but still a template of sorts. It could never have lived up to the hype back in , it was hailed as the film to rival the impact of "Jaws" & "Star Wars" a
 ```
 
 ## Example Nearest-Neighbor Pairs
 
 | Source | Neighbor | Similarity |
 | --- | --- | ---: |
-| Spider-Man: No Way Home | Spider-Man: Homecoming | 0.443 |
-| The Godfather | The Godfather Part II | 0.426 |
-| Spider-Man: No Way Home | Spider-Man | 0.424 |
-| The Lord of the Rings: The Return of the King | The Lord of the Rings: The Fellowship of the Ring | 0.424 |
-| Spider-Man | Spider-Man: Homecoming | 0.422 |
-| Spider-Man: No Way Home | Spider-Man: Across the Spider-Verse | 0.398 |
-| Harry Potter and the Philosopher's Stone | Harry Potter and the Chamber of Secrets | 0.394 |
-| Spider-Man | Spider-Man: Across the Spider-Verse | 0.394 |
-| Inside Out 2 | Inside Out | 0.384 |
-| The Devil Wears Prada | The Devil Wears Prada 2 | 0.380 |
+| The Matrix Reloaded | The Matrix Revolutions | 0.657 |
+| A Quiet Place | A Quiet Place Part II | 0.650 |
+| Godzilla vs. Kong | Godzilla x Kong: The New Empire | 0.635 |
+| Blade Runner | Blade Runner 2049 | 0.632 |
+| Harry Potter and the Philosopher's Stone | Harry Potter and the Prisoner of Azkaban | 0.580 |
+| Dune | Dune: Part Two | 0.578 |
+| Pirates of the Caribbean: Dead Man's Chest | Pirates of the Caribbean: At World's End | 0.570 |
+| Guardians of the Galaxy Vol. 2 | Guardians of the Galaxy Vol. 3 | 0.568 |
+| Harry Potter and the Philosopher's Stone | Harry Potter and the Goblet of Fire | 0.563 |
+| Jurassic Park | Jurassic World | 0.555 |
 
 ## Notes
 

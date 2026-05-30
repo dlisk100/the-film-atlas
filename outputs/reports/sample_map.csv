@@ -1,101 +1,501 @@
 tmdb_id,title,year,x,y,top_terms
-1304313,Lee Cronin's The Mummy,2026,0.1308677132139378,-0.13575472899689606,horror; mummy; journalist; supernatural; turns living; tomb missing
-687163,Project Hail Mary,2026,0.17708273707876815,-0.07701376214252807,space; spaceship; science teacher; sun; teacher; mission
-1226863,The Super Mario Galaxy Movie,2026,0.26941075339168435,-0.1692577496496223,galaxy; mario; space; bowser; galaxy movie; mario galaxy
-1007757,Swapped,2026,0.15235661863586947,-0.13289818007784632,bird; valley; forest; adventure; animation; wolf buddy
-460465,Mortal Kombat,2021,0.17558217840775384,-0.011886106258883693,hand; fighter; universe; high; seeks trains; sub zero
-350,The Devil Wears Prada,2006,0.19870004087802756,-0.009626568700827006,fashion; editor chief; assistant; editor; chief; magazine
-1327819,Hoppers,2026,0.18639106819944828,-0.10590120561140436,animal; animals; human; consciousness; robotic; animation
-1318447,Apex,2026,0.11060503112694545,-0.06765513608545784,grieving woman; grieving; interesting; film; woman; norway
-83533,Avatar: Fire and Ash,2025,0.1930975066121044,-0.09902179412617121,ash; jake; avatar ash; avatar; pandora; tribe
-249397,Nymphomaniac: Vol. II,2013,0.09364912987453897,-0.08322486166099292,nymphomaniac; therapy; pleasure; sexually; sex; sexual
-936075,Michael,2026,0.1390578731638259,-0.094942573810084,music; jackson; music drama; singer; fame; drama music
-603,The Matrix,1999,0.18401253262514117,-0.03275624742956856,matrix; hacker; allegory; reality; world; story
-1297842,GOAT,2026,0.14867993657409012,-0.12967771002600095,goat; basketball; sports; big dreams; roarball; animals
-11012,Damage,1992,0.17567361714024593,-0.10320110872167858,politician; relationship; son; tory politician; obsessed; obsessed son
-744275,After We Fell,2021,0.1967988656299509,-0.14366177510769523,tessa; family; propelled; revelations family; secret keeping; unglued
-1084242,Zootopia 2,2025,0.17660819074089504,-0.13660105856742014,zootopia; judy; nick; cop; snake; case
-1266127,Ready or Not: Here I Come,2026,0.15313489452717835,-0.09580982039132134,sister; grace; satanic; game; estranged sister; alive
-157336,Interstellar,2014,0.2076774217857592,-0.07790578211357876,space; time; travel; interstellar; wormhole; space travel
-278,The Shawshank Redemption,1994,0.13317621222599993,-0.08639882434003984,prison; dufresne; shawshank; hope; redemption; 1940s
-1290821,Shelter,2026,0.16085927782390322,-0.07693280906825141,storm; remote; close; living; girl; violent
-1368166,The Housemaid,2025,0.14732694729326568,-0.11472622106419027,housemaid; job; thriller; mystery; power; millie calloway
-840464,Greenland 2: Migration,2026,0.15925445288016013,-0.08968809696714662,greenland; migration; greenland migration; journey; parental sacrifice; remarkable evolution
-1242898,Predator: Badlands,2025,0.14782239515162543,-0.055264188770172556,predator; badlands; predator badlands; hostile; deadly; pursuit
-39254,Real Steel,2011,0.14999621072927022,-0.08854597302933254,robot; steel; real steel; real; son; robot fighting
-755898,War of the Worlds,2025,0.10898527477928571,-0.02713016442119688,war worlds; worlds; privacy; surveillance; war; government
-1159559,Scream 7,2026,0.17848763765811548,-0.061801892720706936,spree; murder; sidney; scream; killer; mystery
-24428,The Avengers,2012,0.3176971961779645,0.24696172075038958,superhero; team; shield based; nick fury; story problems; peacekeeping agency
-1292695,They Will Kill You,2026,0.24380901294719814,0.04225015491031668,cult; york city; new york; york; high rise; horror
-1579,Apocalypto,2006,0.17083988857370902,-0.09119458397539058,civilization; maya; eclipse; ancient; personally recommend; overrated
-299536,Avengers: Infinity War,2018,0.2656820264056141,0.21482216676605184,avengers; cosmic; infinity; mcu; superhero; power
-1314481,The Devil Wears Prada 2,2026,0.17732157021408876,-0.0343368022567803,runway; fashion; magazine; sequel; navigates new; position
-337167,Fifty Shades Freed,2018,0.17799509026838836,-0.1205444383531051,threats jeopardize; relaxes; shadowy; past newlyweds; sequel bdsm; shadowy figures
-238,The Godfather,1972,0.21328303057837555,-0.11021246287483262,mafia; crime family; godfather; crime; patriarch; corleone
-1198994,Send Help,2026,0.1569420709816086,-0.14606636265512005,horror; island; deserted island; plane crash; colleagues; plane
-155,The Dark Knight,2008,0.21409730054602422,0.09295586118836469,criminal; crime; mastermind; chaos; district attorney; criminal mastermind
-1171145,Crime 101,2026,0.15956279792583183,-0.104348182796872,101; crime; detective; robbery; crime 101; insurance
-1265609,War Machine,2026,0.15221769050683454,-0.03901501979298461,training; alien; army ranger; ranger; veteran; hostile
-1038392,The Conjuring: Last Rites,2025,0.1162679919012356,-0.09588150392791848,paranormal; horror; supernatural; rites overview; paranormal investigation; paranormal investigators
-122,The Lord of the Rings: The Return of the King,2003,0.2219630705069019,-0.13146730241267954,ring; madness; armies; king; sword; quest
-597,Titanic,1997,0.1346075733389394,-0.08613279430924485,titanic; ship; rose; love; aboard; story
-120,The Lord of the Rings: The Fellowship of the Ring,2001,0.19255299869994175,-0.1582185678855464,ring; fellowship; fellowship ring; uncle; allegory; fantasy
-634649,Spider-Man: No Way Home,2021,0.4510048328647017,0.5617698355695427,superhero; spider man; spider; hero; parker; peter
-1075175,How to Have Sex,2023,0.11448929513455523,-0.09765128345996801,holiday; summer; party; sex; female; teenage
-911430,F1,2025,0.09623698394604192,-0.05760035815629213,racing; driver; f1; formula; sports; car
-803796,KPop Demon Hunters,2025,0.14940655410724157,-0.10120580591622662,demon; pop; rumi; girl; boy; group
-533535,Deadpool & Wolverine,2024,0.2150135201516235,0.1868435550580936,deadpool; wade; wolverine; superhero; hero; mercenary deadpool
-27205,Inception,2010,0.14728634231838766,-0.05567027899328834,subconscious; inception; trailer; lot; dream; offered chance
-27,9 Songs,2004,0.11151311134934362,-0.08484519699605644,concert; rock; london; sexual; exchange; exchange student
-671,Harry Potter and the Philosopher's Stone,2001,0.2183517984739518,-0.1205014695307799,school; harry; potter; harry potter; wizard; teen
-1272837,28 Years Later: The Bone Temple,2026,0.1606244614856672,-0.0959759989966235,bone; bone temple; later bone; 28 years; 28; zombie
-299534,Avengers: Endgame,2019,0.27955152824695645,0.18468300855981803,avengers; thanos; infinity war; infinity; avengers infinity; universe
-502356,The Super Mario Bros. Movie,2023,0.19212690298769985,-0.09565696648951186,mario; super; mario bros; bros; super mario; luigi
-680,Pulp Fiction,1994,0.16949842919623395,-0.0908822882570719,crime; drug; pulp fiction; pulp; los angeles; hit
-1234821,Jurassic World Rebirth,2025,0.16175925002501235,-0.07157583488077503,world; dinosaurs; zora; jurassic; secret mission; jurassic world
-7451,xXx,2002,0.12672562506045312,-0.058616367224163676,adrenaline; adrenaline junkie; junkie; mission; republic; yorgi
-564,The Mummy,1999,0.17103847328504815,-0.11288138296293629,egypt; 1920s; mummy; secret; fantasy; worse death
-1168190,The Wrecking Crew,2026,0.2013596312568334,-0.12058522051198305,wrecking; wrecking crew; hand; crew; brother; father
-425274,Now You See Me: Now You Don't,2025,0.1431491113653973,-0.05408384236259217,diamond; heist; horsemen; antwerp; team; new
-361743,Top Gun: Maverick,2022,0.10629036759399689,-0.05164771419357965,maverick; gun; gun maverick; pilot; em; navy
-1233413,Sinners,2025,0.13851972429742854,-0.11059135651592798,vampire; sinners; cousin; mississippi; brother; horror
-13,Forrest Gump,1994,0.21284679736385623,-0.11096227714679417,vietnam; parent; single; mother; usa; war
-1325734,The Drama,2026,0.09933001231462595,-0.09425284997741079,engaged; week; engaged couple; couple; unexpected turn; sit
-19995,Avatar,2009,0.15605150941359935,-0.04916849163520145,tribal; marine; paraplegic; nature; 22nd century; 22nd
-216015,Fifty Shades of Grey,2015,0.15738471779172983,-0.11508566743272144,christian; ana; rich; grey; bad; rich bdsm
-1316092,"""Wuthering Heights""",2026,0.1492573094108457,-0.13571091611450453,romance; period; wuthering; 18th; 18th century; gothic
-808,Shrek,2001,0.12701813533880488,-0.10014057528450897,shrek; donkey; dragon; ogre; princess; great
-10138,Iron Man 2,2010,0.24569882696810416,0.20744545677728624,iron man; iron; stark; technology; superhero; man
-557,Spider-Man,2002,0.4041691300841352,0.5265959119557938,spider; superhero; spider man; man; teenage; comic
-315635,Spider-Man: Homecoming,2017,0.4518217593400045,0.5500620974332465,superhero; spider man; spider; officially; man; high school
-1234731,Anaconda,2025,0.1357177597352499,-0.1174568715061101,anaconda; rainforest; meta; animal; horror; film
-14836,Coraline,2009,0.2218912356792058,-0.13140058496322746,fantasy; coraline; parallel; door; children; old
-11,Star Wars,1977,0.15322467260647837,-0.037549463874810035,empire; vader theme; darth vader; darth; imperial; vader
-497,The Green Mile,1999,0.1454161884631205,-0.07141400451132897,guard; death row; prison; row; death; jail
-1022789,Inside Out 2,2024,0.15954946646594093,-0.10314772750760014,anxiety; joy; sadness; anger; riley; emotions
-13078,The Babysitters,2008,0.11906417514069709,-0.037390034518252874,shirley; unhappy; michael; works; babysitter; idea
-575265,Mission: Impossible - The Final Reckoning,2025,0.15304461635735736,-0.047644208113298996,watched; watched watched; hunt; government; mission impossible; government agency
-22,Pirates of the Caribbean: The Curse of the Black Pearl,2003,0.09278034750147524,-0.06562707427389082,pirate; pearl; black pearl; curse; black; governor
-950396,The Gorge,2025,0.13665752772766762,-0.084277440728308,gorge; romance; mysterious; sent guard; sent; operatives grow
-1061474,Superman,2025,0.23651149252242887,0.0934706139144573,superman; heritage; upbringing clark; modern; upbringing; visual
-1306368,The Rip,2026,0.12726368745297256,-0.09184074755151897,miami; rip; trust; money; operation cartel; question genres
-1197306,A Working Man,2025,0.20489255639540144,-0.08518450911593652,working; construction; ops; working man; black ops; black
-550,Fight Club,1999,0.15674045978327278,-0.03646270320470796,crazy; fight; identity; ticking; tyler du; time bomb
-569094,Spider-Man: Across the Spider-Verse,2023,0.43140256445415337,0.48207057451993723,spider; superhero; alternate; heroes; team spider; multiverse
-872585,Oppenheimer,2023,0.1467991609954462,-0.10330756839937377,atomic; oppenheimer; atomic bomb; bomb; project; war ii
-424,Schindler's List,1993,0.131830657042013,-0.08239519291606999,poland; camp; factory; concentration camp; concentration; schindler
-862,Toy Story,1995,0.13074531497554004,-0.07143545454624502,toy; buzz; woody; andy; animation; title toy
-1184918,The Wild Robot,2024,0.16697149571393635,-0.10768973531162261,robot; island; roz; goose; animals; roz stranded
-240,The Godfather Part II,1974,0.24786888870115598,-0.036594909694590824,corleone; cuba; godfather; new year; mafia; 1950s
-218,The Terminator,1984,0.18784202144315354,-0.03911777698337822,terminator; cyborg; sarah; machine; future; just
-1241982,Moana 2,2024,0.14017530636026015,-0.09744036262229547,moana; explorer; maui; crew; moana overview; recruit
-438631,Dune,2021,0.1809309227073324,-0.08242815500967561,dune; sand; destiny; oscar; creature; giant
-672,Harry Potter and the Chamber of Secrets,2002,0.2022171165931256,-0.09901817203004631,harry; chamber secrets; chamber; potter; secrets; harry potter
-796,Cruel Intentions,1999,0.15152014514207002,-0.12450981348812717,kathryn; dangerous; great; love; thirst dangerous; sadistic
-939243,Sonic the Hedgehog 3,2024,0.20117981507666804,-0.06701661746093297,shadow; sonic; hedgehog; animal; unlikely alliance; overview sonic
-537915,After,2019,0.18463259889158784,-0.08159969904964691,meets; tessa; teenage; romance; mysterious; riverdale
-150540,Inside Out,2015,0.17710625843875227,-0.10567320458093181,sadness; joy; anger; disgust; emotions; fear
-877817,Wolfs,2024,0.1657056228086903,-0.10943518958501972,fixer; wolfs; comedy; crime; unexpected; work unexpected
-414906,The Batman,2022,0.227445659703119,0.0955958176712878,batman; crime; serial killer; serial; killer; corruption
-12444,Harry Potter and the Deathly Hallows: Part 1,2010,0.17836429351381988,-0.15673369741646093,harry; voldemort; road; potter; harry potter; really
-875828,Peaky Blinders: The Immortal Man,2026,0.15462249593780333,-0.09280802195977803,birmingham; gangster; england; crime; peaky blinders; nazis counterfeited
+105,Back to the Future,1985,0.20340949820492552,-0.015174481970881977,marty; car race; time; inventor; parents; race
+694,The Shining,1980,0.18645967210499456,-0.16003237954051164,psychological; hotel; new year; twins; supernatural; writer
+1891,The Empire Strikes Back,1980,0.15589067419895306,0.06268129461439315,luke; rebel; jedi; space; capture; empire
+1892,Return of the Jedi,1983,0.1782301726456174,0.05588493475748585,emperor; luke; luke skywalker; skywalker; rebel; space
+78,Blade Runner,1982,0.18102892098769013,-0.07165153127715626,blade runner; blade; runner; noir; dystopian; los angeles
+218,The Terminator,1984,0.23284850139907268,-0.006291665131845038,terminator; sarah; cyborg; machine; just; future
+165,Back to the Future Part II,1989,0.16737055976211496,-0.0024058262812265358,marty; future ii; car; doc; future; forward
+85,Raiders of the Lost Ark,1981,0.11441740059626791,-0.002604360735292434,ark; archaeologist; nazi; treasure; lost; range
+111,Scarface,1983,0.1338831115055415,-0.08646019080237709,drug; miami; cocaine; drug lord; tony; rise
+207,Dead Poets Society,1989,0.15088685998412382,-0.1083264313074663,new england; school; teacher; rock; society; england
+562,Die Hard,1988,0.2190184210542913,-0.10889783558764016,hostages; officer; christmas; high; duty cop; christmas party
+601,E.T. the Extra-Terrestrial,1982,0.1891988938318466,0.029637997556916085,elliott; extra terrestrial; terrestrial; extra; alien; watched
+600,Full Metal Jacket,1987,0.14298473225529257,-0.049276385767989955,war; vietnam; half; recruits; vietnam war; camp
+89,Indiana Jones and the Last Crusade,1989,0.1210564506032311,-0.021944388184462975,jones; father; grail; holy grail; indiana jones; indiana
+679,Aliens,1986,0.23071299792762195,0.07871064121952269,space; sci fi; sci; fi; desolate; colony
+87,Indiana Jones and the Temple of Doom,1984,0.11421415697526811,-0.031183379173089464,indiana; indiana jones; bridge; jones; india; treasure
+620,Ghostbusters,1984,0.1700531798506432,-0.057748041773291445,ghostbusters; business; parapsychologists; supernatural; paranormal; ghost
+744,Top Gun,1986,0.1497836274512386,-0.05840866173319349,pilot; pete; training; gun; em; fighter
+106,Predator,1987,0.18451118998350047,0.05357120743808411,predator; central; alien; favourite movie; commandos; invisible
+268,Batman,1989,0.21400912071707393,0.026718877852878027,batman; crime; gotham; criminal; identity; identity double
+2108,The Breakfast Club,1985,0.15399440164689526,-0.09276718723202253,detention; school; princess; high school; high; club overview
+4011,Beetlejuice,1988,0.15844298574935844,-0.11826712414920451,afterlife; couple; gothic; dead; giant snake; new england
+10144,The Little Mermaid,1989,0.1846072444804032,-0.11238809530994605,mermaid; sea; princess; witch; prince; daughter
+1091,The Thing,1982,0.18934893414091544,0.03817166016521683,alien; shape shifting; research; shifting; shape; helicopter
+380,Rain Man,1988,0.13209210947886318,-0.0420180927444453,raymond; charlie; rain man; cincinnati; charlie babbitt; rain
+927,Gremlins,1984,0.15767293348346237,-0.11252497845061774,small; pet; overall; horror; small town; animal
+1368,First Blood,1982,0.17441705467382698,-0.05437767973303827,vietnam; rambo; police; blood; war; gun
+235,Stand by Me,1986,0.1727782104981284,-0.11236680128965656,boys; coin; told; lives; ve; story
+88,Dirty Dancing,1987,0.14798004127889686,-0.11571619971617204,dancing; summer; teenage; romance; class differences; family holiday
+9340,The Goonies,1985,0.10865738719686635,-0.05990000694323739,walsh; treasure; pirate; kids; quest; friends
+856,Who Framed Roger Rabbit,1988,0.1675962756623733,-0.1400884233236608,roger; rabbit; star; cartoon; detective; innocence
+117,The Untouchables,1987,0.11934569004973075,-0.06201263932150204,prohibition; gangster; agent; era gangster; al; prohibition era
+311,Once Upon a Time in America,1984,0.17842463803570474,-0.1041706361439538,prohibition; prohibition era; jewish; era; gangster; telling story
+5548,RoboCop,1987,0.15580203311930754,-0.02914491584732151,robocop; evil corporation; corporation; detroit; company; crime
+377,A Nightmare on Elm Street,1984,0.13589103559760682,-0.11221765465735917,nightmare; elm; elm street; horror; dream; dreams
+9377,Ferris Bueller's Day Off,1986,0.15803702337312103,-0.06568313231607883,school; day; chicago; high school; high; fantasy sequence
+792,Platoon,1986,0.14594709753559978,-0.04729122226824778,platoon; war; vietnam; soldier; credit; marijuana
+2493,The Princess Bride,1987,0.20373675886585538,-0.11996783907915547,fairy; fairy tale; princess; tale; story; fictitious country
+813,Airplane!,1980,0.12164724560840229,-0.07548781901040166,humor; food poisoning; poisoning; alcohol; food; airplane
+941,Lethal Weapon,1987,0.17850191556451916,-0.11335540089562939,detective; cop; buddy; ex; police; cops
+9426,The Fly,1986,0.1301433857409367,-0.028081074313000807,fly; slowly; laboratory; horror; animal; monster
+2978,Ghostbusters II,1989,0.14170097088414482,-0.08117334647830221,ghostbusters; slime; river; paranormal; supernatural; fighting supernatural
+1374,Rocky IV,1985,0.12478465368638167,-0.04854923083833687,rocky; rocky movie; rocky iv; iv; soviet union; soviet
+1578,Raging Bull,1980,0.1462587778121222,-0.05837925149200526,taxi driver; taxi; driver; streets; boxer; mean
+279,Amadeus,1984,0.07765245646632747,-0.05135237172606367,austria; composer; mozart; salieri; talented young; envy
+9602,Coming to America,1988,0.20353315502221625,-0.07169905126791654,african; new; prince; rich; new york; york
+1885,The Karate Kid,1984,0.15279385214473398,-0.08947187953241728,karate; daniel; martial arts; martial; arts; kid
+90,Beverly Hills Cop,1984,0.11585293274046735,-0.11324219706337665,cop; beverly; beverly hills; hills; detroit; cop axel
+639,When Harry Met Sally...,1989,0.1623227107951688,-0.1203169343613779,harry; sally; friendship; friends; gets way; succumbing
+525,The Blues Brothers,1980,0.10144591952873885,-0.06170359691161448,blues; music; elwood; jake; brothers; prison
+37136,The Naked Gun: From the Files of Police Squad!,1988,0.16671598942135382,-0.10612897483380261,police; comedy; illegal drugs; files; funniest; laughs
+1371,Rocky III,1982,0.11957775847075634,-0.0367761205606185,rocky; powerful; comeback; rocky balboa; contains spoilers; apollo
+764,The Evil Dead,1981,0.10306356829858566,-0.0839017873306593,cabin; dead; evil dead; book dead; students; getaway
+1369,Rambo: First Blood Part II,1985,0.1435844419569826,-0.021764711952262386,vietnam; rambo; prisoner; liberation; torture; war
+8810,Mad Max 2,1981,0.16052167748605128,-0.010197208175961139,gasoline; oil; max; post; gang; community
+2280,Big,1988,0.19794254954110008,-0.10545455541061649,machine; grown; wish; toy; job; body
+1955,The Elephant Man,1980,0.13059843544687127,-0.07307515425333751,freak; merrick; physical; elephant man; social; london
+793,Blue Velvet,1986,0.14632786161013409,-0.14080432658362413,ear; nightclub; want; severed; overview discovery; hurt
+942,Lethal Weapon 2,1989,0.14168291016011667,-0.07517106214825517,riggs; riggs murtaugh; immunity; murtaugh; cop; trail
+68,Brazil,1985,0.19635893384347156,-0.04057564826201794,great; sci fi; sci; fi; day; identities
+1621,Trading Places,1983,0.11626178205135654,-0.09227617738948485,rags; riches; christmas; new year; rich; eve
+1103,Escape from New York,1981,0.25248929810113335,-0.02295739763028177,prisoners; president; new york; york; hero; escape
+765,Evil Dead II,1987,0.12838019418757843,-0.07880076489330042,dead; evil dead; recording; evil; book dead; cabin
+1370,Rambo III,1988,0.08549917615367819,0.003378168703137596,rambo; afghanistan; trautman; col trautman; thailand; col
+10948,The Fox and the Hound,1981,0.14472114972730793,-0.11073111927293959,fox; hound; hunting; dog; named; friendship
+8337,They Live,1988,0.18510881071506446,-0.014350308938451057,sunglasses; aliens; unique; alien; gaining; dystopia villainess
+2756,The Abyss,1989,0.13942695526875898,0.02002007447500559,submarine; sea; nuclear; scuba; oil; ocean
+841,Dune,1984,0.19582216484148496,0.04890168375555939,spice; dune; space; messiah; prophecy; desert
+957,Spaceballs,1987,0.19083897588803525,0.06750171759374878,space; star; lone; star wars; wars; satire
+4488,Friday the 13th,1980,0.09704811665844491,-0.06548582664421027,camp; summer; drowning; friday; summer camp; 13th
+10585,Child's Play,1988,0.13107208870596848,-0.1023116287409278,doll; killer; mother; serial killer; serial; toy
+6978,Big Trouble in Little China,1986,0.18515364663087053,-0.057427119003947195,truck; driver; green; movie; eyed; return human
+9354,"Honey, I Shrunk the Kids",1989,0.15678361323851173,-0.04093221549630957,neighbor; teens; father; overview scientist; special effects; practical
+609,Poltergeist,1982,0.14426238186159862,-0.10350787493775605,haunted; paranormal; old; frightened ominous; foreboding frightened; mom
+192,The Name of the Rose,1986,0.12225692813663529,-0.08706437935436012,priest thing; sherlock holmes; holmes; medieval; monk; sherlock
+9355,Mad Max Beyond Thunderdome,1985,0.17645192414067296,0.02621230414288316,mad max; max; mad; desert; post; best
+10999,Commando,1985,0.18813632596240723,-0.050124090433131666,matrix; commando; daughter; army; fight; commandos
+801,"Good Morning, Vietnam",1987,0.11459503629250926,-0.05471819738184393,vietnam; radio; good morning; morning; war; good
+9336,Police Academy,1984,0.10890408102549257,-0.05297675080417445,mahoney; police academy; police; academy; wants; decides
+8009,Highlander,1986,0.20284288891066726,-0.04522783067842926,playing; scotsman; sword; york city; york; new york
+9003,Hellraiser,1987,0.12169000159114123,-0.09180822268332904,sexual; puzzle box; puzzle; pain; pleasure; box
+865,The Running Man,1987,0.20942643884731468,-0.027057629222085676,running man; running; future; game; dystopian; man
+96,Beverly Hills Cop II,1987,0.15507166014640364,-0.10627613276476254,shooting; cop; detective; beverly hills; beverly; police
+9387,Conan the Barbarian,1982,0.1697773721241504,-0.051156595712711125,conan; massacre; barbarian; warriors; doom; wilderness
+97,Tron,1982,0.1329521531366792,0.021448480414124522,tron; computer; flynn; simulation; digital; game
+12144,The Land Before Time,1988,0.14301588271755833,-0.05881756879181035,land; dinosaurs; primitive; emotional review; earthquake; order survive
+13597,Labyrinth,1986,0.13322360072235698,-0.07625718119183861,goblin; goblin king; sarah; baby; king; goblins
+403587,Return,1985,0.07798345053210207,-0.06331729366191964,hypnotic; reincarnation; grandfather; article; died; subject
+5825,National Lampoon's Christmas Vacation,1989,0.09470017912676258,-0.07728236515874679,christmas; vacation; national lampoon; lampoon; national; em
+814,An American Werewolf in London,1981,0.13096445221168912,-0.09001814688657424,london; zoo; david; nurse; werewolf; horror
+262,The King of Comedy,1982,0.13092229232011574,-0.0520696692311343,rupert; pupkin; business; receptionist; entertainer; overview aspiring
+8536,Superman II,1980,0.22101777778880935,0.13241792886530457,superman; zod; general zod; general; strength; super
+9493,Twins,1988,0.08003850944035107,-0.039803412502340076,vincent; julius; twins; orphanage; low; experiment
+783,Gandhi,1982,0.11148963484030928,-0.04407474607270512,gandhi; independence; resistance; strike; freedom; protest
+8856,The Karate Kid Part II,1986,0.14972817712888142,-0.07038271361315016,japanese; sato; daniel; okinawa; miyagi; karate
+837,Videodrome,1983,0.10866706144705601,-0.030272285546784766,max; videodrome; channel; content; tv; video
+9494,Look Who's Talking,1989,0.1401153702367711,-0.08403546990251848,baby; single; romantic; woman; duringcreditsstinger woman; overview single
+623,A Fish Called Wanda,1988,0.09030708381454446,-0.07493545026865962,fish called; collection; fish; called; infidelity; comedies
+8913,Pet Sematary,1989,0.1540723920662211,-0.11307174622211527,pet; cat; neighbor; dead; mysterious; horror
+378,Raising Arizona,1987,0.15618284089182344,-0.11868224140950309,ex; raise; absurd amused; ed; ex cop; melodramatic review
+550,Fight Club,1999,0.15684952012224598,-0.059530217051585205,fight; identity; self destructiveness; identity disorder; quitting job; forming
+278,The Shawshank Redemption,1994,0.14889069824748866,-0.10490628527795803,prison; dufresne; redemption; 1940s; hope; friendship
+680,Pulp Fiction,1994,0.1770147006024176,-0.1487240445731086,crime; drug; pulp fiction; pulp; hit; gangster
+13,Forrest Gump,1994,0.21529941670325953,-0.11733722275469473,vietnam; usa; single; parent; mother; ptsd
+603,The Matrix,1999,0.19849629328830526,0.013800234259695716,hacker; matrix; allegory; reality; world; gnosticism oracle
+597,Titanic,1997,0.13375203298045366,-0.08189899710535631,titanic; ship; rose; aboard; love; tells story
+807,Se7en,1995,0.11903015502544541,-0.10673871082013922,seven; deadly sins; seven deadly; killer; sins; serial
+37165,The Truman Show,1998,0.11141280128815531,-0.05316343825786619,reality; truman; tv; make; paranoia dystopia; producer
+862,Toy Story,1995,0.12851355903780734,-0.07615216119064351,toy; woody; buzz; andy; rescue friendship; elementary school
+8587,The Lion King,1994,0.17954985886528807,-0.10298761023236727,lion; king; uncle; father; murder; confront past
+497,The Green Mile,1999,0.1432481469596099,-0.0739919242125084,guard; death row; row; coffey; prison; death
+274,The Silence of the Lambs,1991,0.15739045062752008,-0.1440434983655316,lecter; silence; clarice; psychological; psychiatrist; _the
+329,Jurassic Park,1993,0.11443097240806256,-0.002912549945028029,park; dinosaurs; theme park; dna; theme; island
+424,Schindler's List,1993,0.153985654821762,-0.07516569057744117,schindler; concentration camp; concentration; factory; historical; nazi
+857,Saving Private Ryan,1998,0.1501627937367367,-0.04096648579523748,normandy; saving private; ranger; private ryan; troops; ryan
+1893,Star Wars: Episode I - The Phantom Menace,1999,0.15631549396565345,0.06651876843119982,phantom menace; phantom; menace; star wars; wars; star
+500,Reservoir Dogs,1992,0.09943655011077826,-0.07769671943716899,mr; gone wrong; gone; wrong; heist; botched
+863,Toy Story 2,1999,0.1446653754421685,-0.06881672140529468,toy; al; woody; collector; toys; andy
+607,Men in Black,1997,0.2640948511645255,0.09441977691881553,agent; men black; new; men; cop; black
+769,GoodFellas,1990,0.21659036617469837,-0.12368985517422086,irish; brooklyn; mafia; florida; half; crime
+280,Terminator 2: Judgment Day,1991,0.24713756976900206,0.032746350598169494,terminator; shape; nuclear; time; films; future villain
+489,Good Will Hunting,1997,0.09747770389621536,-0.07283132509036788,genius; hunting; professor; math; massachusetts; university
+162,Edward Scissorhands,1990,0.136842439974293,-0.12062785639654339,frankenstein; edward; suburban; gothic; flashback; love
+14,American Beauty,1999,0.16810288438424478,-0.11680326389252348,beauty; affair; purpose; dysfunctional; life; crisis
+745,The Sixth Sense,1999,0.144326388335667,-0.1337408896509739,malcolm; cole; sense; sear; cole sear; child
+73,American History X,1998,0.15105600979118528,-0.10624188914312871,derek; prison; danny; violent; prison derek; nazism
+771,Home Alone,1990,0.17075790103460933,-0.12125817753667804,home; child; christmas; really; family; christmas kids
+115,The Big Lebowski,1998,0.12012232547522214,-0.10501406578460268,bowling; lebowski; millionaire; white; angeles; los angeles
+812,Aladdin,1992,0.18319183351087545,-0.0996475349424637,aladdin; magic; princess; fulfill; fall love; love
+196,Back to the Future Part III,1990,0.13011253168736087,-0.004995687304559281,doc; marty; west; wild west; future; wild
+629,The Usual Suspects,1995,0.1811370325892778,-0.13220518662771566,verbal; crime lord; lord; heist; criminal; crime
+8844,Jumanji,1995,0.15734741149341264,-0.06474539818224914,jumanji; game; board; alan; adult; giant
+854,The Mask,1994,0.19927984863088646,-0.02134411677989073,mask; comedy; insecure; comedic; balloon; extreme
+197,Braveheart,1995,0.1665444808741982,-0.05726624842199696,scottish; scotland; english; revolt; edge seat; idealism
+10020,Beauty and the Beast,1991,0.13668044363295404,-0.08828774737127093,beast; castle; prince; belle; beauty; fairy tale
+772,Home Alone 2: Lost in New York,1992,0.21825889453812897,-0.08749379620484965,new york; york; christmas; home; kevin; amazing
+602,Independence Day,1996,0.20801973783972338,0.08931742917718885,independence; alien; invasion; fourth july; terror; cities
+10674,Mulan,1998,0.20626119606620108,-0.0655879629742802,china; mulan; training; em; female; daughter
+627,Trainspotting,1996,0.15406058724158547,-0.11263678302210425,drug; edinburgh; heroin; scotland; mark; drugs
+9479,The Nightmare Before Christmas,1993,0.11214697342350602,-0.08734326574682488,christmas; claus; santa claus; santa; stop motion; motion
+564,The Mummy,1999,0.18296381188290878,-0.04151222124151782,egypt; 1920s; secret; solar; opposites attract; secret passage
+954,Mission: Impossible,1996,0.14686128663074002,0.0017267864716447557,secret; agency; government; agent; espionage; cia
+9487,A Bug's Life,1998,0.12062701225627791,-0.02948225846623263,bugs; ant; flea; liked; sixth; language like
+330,The Lost World: Jurassic Park,1997,0.15857164262389978,-0.004320994851214857,park; malcolm; ian malcolm; ian; jurassic park; jurassic
+63,Twelve Monkeys,1995,0.17701540057530304,-0.055754618386226945,virus; mental; monkeys; asylum; cole; research
+275,Fargo,1996,0.16274832224030242,-0.11983533603321905,ransom; going; minnesota; police; small; watch
+114,Pretty Woman,1990,0.1437808633999496,-0.11183609521164523,edward; business; street; expensive; expensive restaurant; entrepreneur
+4951,10 Things I Hate About You,1999,0.16513060544700436,-0.08052364331116812,problem; cameron; school; high school; teen; day
+137,Groundhog Day,1993,0.11071418789889359,-0.06441945978906313,groundhog; groundhog day; day; producer; time loop; romance fantasy
+95,Armageddon,1998,0.21610373898607782,0.049948741863551166,asteroid; disaster; space; nasa; mission; harry
+949,Heat,1995,0.15912587154452631,-0.13230943361648795,mouse; heat; cat; bank; thief; job
+2105,American Pie,1999,0.12153670510992017,-0.08193386359711043,virginity; prom; pie; student; high school; school
+4232,Scream,1996,0.15288286210683522,-0.12084307026582106,scream; spree; rules; halloween; killing; killer
+11970,Hercules,1997,0.13673786643761893,-0.06321504573734571,hercules; zeus; em; connection; mortal; ancient greece
+2668,Sleepy Hollow,1999,0.13052228259117044,-0.08663404672188285,ichabod; ichabod crane; horseman; hollow; crane; sleepy
+37135,Tarzan,1999,0.10434614627444222,-0.06506986715665818,tarzan; orphan; jungle; family; child; rescued
+2649,The Game,1997,0.13615693410740914,-0.08154582735408764,present; game; birthday; san francisco; francisco; san
+100,"Lock, Stock and Two Smoking Barrels",1998,0.12088039369747292,-0.07294307873493734,smoking; tea; pull heist; operating; flat; cocktail
+364,Batman Returns,1992,0.18429064908571963,0.06813717084790083,shreck; batman; penguin; returns; christmas; super
+345,Eyes Wide Shut,1999,0.17350714642823872,-0.10213308009624336,sexual; having; party; discovers; christmas; alice
+9737,Bad Boys,1995,0.15498551076123832,-0.0983686187309653,witness; witness murder; stolen; miami; murder; drugs
+184,Jackie Brown,1997,0.12003133502664444,-0.09592291684333025,jackie; jackie brown; brown; flight attendant; flight; smuggling
+782,Gattaca,1997,0.15794308111247912,0.02554455126471232,eugenics; space; gattaca; obsessed; genetic; identity
+242,The Godfather Part III,1990,0.1690405682879705,-0.0782392960747489,michael; italy; mafia; york; new york; cousin
+1637,Speed,1994,0.11861904415565107,-0.06929816402518693,bus; bomb; elevator; vehicle; speed; trapped
+1813,The Devil's Advocate,1997,0.15852835229701226,-0.10338977682724138,devil; firm; kevin; law; lawyer; supernatural
+8467,Dumb and Dumber,1994,0.13770481146980978,-0.07352178595147685,aspen; stupidity; suitcase; mary; money; time
+509,Notting Hill,1999,0.12518557076825385,-0.08042674889606473,notting; notting hill; hill; owner; famous actress; romance
+36647,Blade,1998,0.18610362600714092,0.011122135840875015,blade; vampire; half; master; martial; martial arts
+1572,Die Hard: With a Vengeance,1995,0.20063756493541804,-0.05186733139192105,mcclane; deadly game; simon; york; new york; bomb
+788,Mrs. Doubtfire,1993,0.14273742737041686,-0.10941759222415125,daniel; voice; job; parent; mrs; relationship san
+524,Casino,1995,0.1393905143187127,-0.1317246455804131,casino; gambling; las vegas; las; vegas; mafia
+755,From Dusk Till Dawn,1996,0.1468010583315324,-0.08679642669706535,mexican; bank; brothers; vehicle; hide; sheriff
+861,Total Recall,1990,0.21815176418379298,0.03620674882394123,memory; quaid; mars; planet mars; virtual; planet
+628,Interview with the Vampire,1994,0.13991819067775593,-0.10232380563473348,vampire; louisiana; gothic; century; horror; drama fantasy
+2300,Space Jam,1996,0.18655613653169878,-0.020800946888096184,basketball; cartoon; action animation; live action; animation; live
+1573,Die Hard 2,1990,0.1717406041588884,-0.09126894490141908,airport; wrong; plane; mcclane; traffic; christmas
+3049,Ace Ventura: Pet Detective,1994,0.13031844005844728,-0.08474941273542229,ace; miami; detective; movies time; eyeball; pet
+8077,Alien³,1992,0.21591545807063967,0.05546314996793922,crash; prison; newt; planet; action horror; alien
+1624,Liar Liar,1997,0.10912780613015649,-0.06641886545427572,liar; birthday; carrey; son; attorney; wish
+10386,The Iron Giant,1999,0.2151099046933243,-0.054884466483027264,giant; iron; 1950s; small town; small; robot
+10530,Pocahontas,1995,0.13954325853430724,-0.08040285363474374,pocahontas; virginia; native; love; em; century
+251,Ghost,1990,0.17138821925873715,-0.112319574066787,ghost; afterlife; love; money; psychic; impending
+568,Apollo 13,1995,0.10883504385627249,-0.021294367958695954,apollo; apollo 13; 13; mission; 1970; astronaut
+754,Face/Off,1997,0.18664924492452065,-0.0662857902715628,fbi; criminal; prison; transplant; fbi agent; surgery
+75,Mars Attacks!,1996,0.19842068942022176,0.06540612229989662,congress; mars; total; president; watch; alien
+6114,Bram Stoker's Dracula,1992,0.11368550821943897,-0.08859024452840887,dracula; 15th; 15th century; count; century; bite
+297,Meet Joe Black,1998,0.14041248764989403,-0.0769051597782298,joe; death; reaper; grim; life death; love
+879,Hook,1991,0.11370197976127734,-0.028107908944548857,hook; peter; pan; corporate; lawyer; kids
+2109,Rush Hour,1998,0.17773716555302874,-0.09036678919360312,carter; lee; investigate; ll; fbi; case
+9444,Anastasia,1997,0.1934353042498223,-0.08283877530784504,reward; reuniting; telling story; similar; hopes; catholic
+414,Batman Forever,1995,0.17265248925599014,0.029972936052533983,batman; face riddler; riddler; district attorney; psychologist; attorney
+8078,Alien Resurrection,1997,0.20186242058093498,0.06246279195256908,ripley; alien; horror; sci; sci fi; fi
+2118,L.A. Confidential,1997,0.17579317550743664,-0.12095767049084354,shotgun; 1950s; cop; fatale; city; movie star
+563,Starship Troopers,1997,0.22347571609092803,0.021786970436271823,rico; bugs; officer; satire; soldier; military
+2667,The Blair Witch Project,1999,0.08505981161747664,-0.07397292304208081,documentary; maryland; legend; witch; footage; map
+415,Batman & Robin,1997,0.2069251164432098,0.08058412788394613,terrible; robin; ice; batman; fun; way
+10545,The Hunchback of Notre Dame,1996,0.10373900611659818,-0.06636193278220699,notre dame; notre; dame; hunchback; frollo; hunchback notre
+454,Romeo + Juliet,1996,0.10479786047024872,-0.06192741602751247,romeo; romeo juliet; juliet; em; romance; years
+544,There's Something About Mary,1998,0.10674197016054117,-0.07442895917241667,prom; mary; night; romance; intellectual; ted
+155,The Dark Knight,2008,0.1950475633082795,0.023383908064042218,criminal; district attorney; crime; attorney; criminal mastermind; chaos
+19995,Avatar,2009,0.16570895589543785,0.07261657056301067,tribal; 22nd century; paraplegic; 22nd; nature; marine
+671,Harry Potter and the Philosopher's Stone,2001,0.21681220467820495,-0.18761750986320228,school; harry; harry potter; potter; wizard; teen
+1726,Iron Man,2008,0.2477060343463808,0.25302200172907696,engineer; overview held; imaginative; cave; background; title iron
+120,The Lord of the Rings: The Fellowship of the Ring,2001,0.184418834594153,-0.08122244561301803,ring; fellowship; fellowship ring; uncle; allegory; journey
+122,The Lord of the Rings: The Return of the King,2003,0.2323687379669042,-0.048593125205950154,ring; armies; madness; allegory; king; quest
+16869,Inglourious Basterds,2009,0.12250025775503574,-0.04964033475055323,basterds; france; inglourious basterds; inglourious; occupation; jewish
+121,The Lord of the Rings: The Two Towers,2002,0.15917109754173944,-0.0602335350905801,towers; ring; saruman; orthanc tower; orthanc; saruman awaits
+672,Harry Potter and the Chamber of Secrets,2002,0.19228827513354524,-0.13790313724816203,harry; chamber; secrets; hogwarts; potter; harry potter
+673,Harry Potter and the Prisoner of Azkaban,2004,0.22685144027254842,-0.1793019826182004,school; bus; magic; potter; harry potter; harry
+272,Batman Begins,2005,0.21374048459441616,0.04760343200622759,bruce wayne; wayne; bruce; batman; identity; comic rivalry
+22,Pirates of the Caribbean: The Curse of the Black Pearl,2003,0.09867760558810394,-0.029867689354346662,pirate; black pearl; pearl; curse; barbossa; blacksmith
+674,Harry Potter and the Goblet of Fire,2005,0.19530696026805958,-0.16817437923182374,harry; tournament; potter; harry potter; goblet; school
+14160,Up,2009,0.1706554344924092,-0.06362609240422555,fredricksen; exploring; life; em; age; explorer
+98,Gladiator,2000,0.1311861549737773,-0.03282573783943567,gladiator; maximus; rome; marcus; emperor; ancient
+675,Harry Potter and the Order of the Phoenix,2007,0.2159329500369417,-0.17674412976979756,harry; hogwarts; professor; magic; rising tide; term hogwarts
+767,Harry Potter and the Half-Blood Prince,2009,0.1943700988906968,-0.16980407442036696,harry; death eaters; eaters; dumbledore; death; wizard
+557,Spider-Man,2002,0.2995430766768166,0.30020715501299183,spider; spider man; superhero; man; teenage; teenage boy
+12,Finding Nemo,2003,0.14106344177701555,-0.05945118866836447,nemo; fish; clownfish; reef; barrier; father
+10681,WALL·E,2008,0.18546089607043065,0.02531133895582981,wall; robot; eve; humans; earth; space
+585,"Monsters, Inc.",2001,0.13871055822129952,-0.07080346560237888,monsters; energy; sulley; mike; em; parallel
+24,Kill Bill: Vol. 1,2003,0.1442659639662472,-0.02583197724643019,sword; kill vol; fu sword; jackie brown; shot; jackie
+9806,The Incredibles,2004,0.20167274591926618,0.03798682285207512,incredibles; em; raise; excited hopeful; enjoy film; don like
+808,Shrek,2001,0.13846480578006687,-0.09057868834702691,shrek; donkey; ogre; dragon; princess; great
+2062,Ratatouille,2007,0.09671158229164722,-0.07139803251514737,remy; restaurant; chef; rat; french; critic
+18785,The Hangover,2009,0.10689907364181804,-0.08541219309516902,doug; night; cheerful shaggy; raucous; time genres; supposed
+1124,The Prestige,2006,0.14000980127221963,-0.04804597999825999,rivalry; tesla; class; obsession; intense; england magic
+58,Pirates of the Caribbean: Dead Man's Chest,2006,0.11282699754294999,-0.0339353453600664,davy; jack; debt; jones; davy jones; jack sparrow
+640,Catch Me If You Can,2002,0.1521354540122405,-0.1055057350391896,frank; fbi; true story; true; engagement; checks
+6479,I Am Legend,2007,0.23673414366444842,-0.029375255629858456,neville; virus; desperate; york city; world; just
+558,Spider-Man 2,2004,0.3046545809921346,0.2181060009279286,identity; parker; spider man; spider; superhero alter; carnage
+38,Eternal Sunshine of the Spotless Mind,2004,0.15893213353586547,-0.05022022485389821,memory; city regret; enchant review; procedure; vu; deja vu
+77,Memento,2000,0.15507365042368113,-0.11596425756181075,memory; suffers; memory loss; short; form; wife
+1422,The Departed,2006,0.12533794005570947,-0.10721681354637329,police; undercover; undercover cop; mole; boston; irish
+118,Charlie and the Chocolate Factory,2005,0.15772793191991097,-0.1017683778201099,chocolate; candy; factory; chocolate factory; good; child
+752,V for Vendetta,2006,0.18882632545573644,0.04705118146057677,fascist; vendetta; vengeful; masked vigilante; britain; comic book
+285,Pirates of the Caribbean: At World's End,2007,0.12041497420152734,-0.02144964993304261,davy; davy jones; jones; locker; jack; stuck
+559,Spider-Man 3,2007,0.2323245664192803,0.2677489592217276,spider; spider man; hurdle; man; alien; organism
+920,Cars,2006,0.15402239535777948,-0.07942753669716188,route; cars; rookie; em; town; race
+393,Kill Bill: Vol. 2,2004,0.15668587284827085,-0.02626075454334621,kill; vol; kill vol; assassin; revenge; duringcreditsstinger review
+1895,Star Wars: Episode III - Revenge of the Sith,2005,0.14461007504426593,0.043309427097835175,sith; star wars; wars; episode iii; iii revenge; revenge sith
+10528,Sherlock Holmes,2009,0.14378415754705412,-0.11865190283537762,holmes; sherlock; sherlock holmes; england; detective; mystery
+1271,300,2007,0.16732598444755273,-0.0030813505386076815,sparta; ancient; greece; thermopylae; 300; ancient greece
+8966,Twilight,2008,0.23014014733378482,-0.1558070438399599,vampire; edward; romance; high school; love; teen
+1894,Star Wars: Episode II - Attack of the Clones,2002,0.1800589376285201,0.06443843520020462,sequel prequel; prequel; wars; teenage rebellion; production line; phantom menace
+425,Ice Age,2002,0.13525152597216653,-0.06377119489025493,mammoth; sloth; toothed tiger; toothed; prehistoric; ice age
+4922,The Curious Case of Benjamin Button,2008,0.19356342292678633,-0.08175943546469343,benjamin; reverse; unusual; fiction period; elderly; dancer
+350,The Devil Wears Prada,2006,0.14154888213216224,-0.07203141008193727,fashion; editor chief; fashion magazine; editor; assistant; magazine
+809,Shrek 2,2004,0.1334693020737801,-0.08760701422877004,shrek; fairy; fairy godmother; godmother; donkey; ogre
+141,Donnie Darko,2001,0.16847985423689546,-0.08264262306147872,school; imaginary friend; visions; imaginary; commit; fully understand
+6977,No Country for Old Men,2007,0.13902957915936975,-0.09918903751792742,western; cartel; drug; sheriff; motel; texas
+19908,Zombieland,2009,0.15143551865448696,-0.05879842660231106,zombie; body; fun; horror; columbus; relationship saving
+14161,2012,2009,0.16319797594167842,0.05825190899611428,disaster; een; race; adrian; solar; earth
+1724,The Incredible Hulk,2008,0.2693308742755663,0.21769815211027224,hulk; incredible; face; military; force; scientist
+2048,"I, Robot",2004,0.16136705348410932,-0.011430709486840824,robot; robotics; homicide; humanity; investigation; car
+9502,Kung Fu Panda,2008,0.13120989445660264,-0.03366048436689279,po; panda; kung; kung fu; fu; clumsy
+11036,The Notebook,2004,0.18667789537073476,-0.09167690902423266,notebook; couple; love; day; reunited; tears
+161,Ocean's Eleven,2001,0.09593357021381753,-0.08037377307300406,danny; ocean; casino; plan; ex; ex wife
+1359,American Psycho,2000,0.19990429995423456,-0.1281988128292163,wall street; businessman; wealthy; wall; street; psychological
+8358,Cast Away,2000,0.12701500723884873,-0.05587094812075281,chuck; island; plane; important task; presumed dead; presumed
+1858,Transformers,2007,0.1501815728078286,0.052085317348379366,decepticons; robot; autobots; sam; sort; alien
+36657,X-Men,2000,0.21518903389934985,0.19482993457194633,men; superhero; come; flicks; similar; mutant based
+8681,Taken,2008,0.1671486935602538,-0.0536632711814243,daughter; paris; ex; abducted; trying; gang
+604,The Matrix Reloaded,2003,0.18815086388340085,-0.0007113135862937316,matrix; reloaded; zion; computer; machine; neo
+953,Madagascar,2005,0.14647801908124222,-0.0887855142051497,madagascar; animal; zoo; island; movie; taste
+36557,Casino Royale,2006,0.16255360645547395,-0.0419233576112691,bond; poker; chiffre; game; casino; banker
+13223,Gran Torino,2008,0.09119142717210986,-0.04699741035534659,gran; gran torino; torino; war veteran; veteran; kowalski
+1949,Zodiac,2007,0.15206945452835216,-0.12095355540914822,zodiac; killer; fincher; newspaper; san francisco; francisco
+411,"The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",2005,0.184980252849867,-0.0878452743348364,narnia; witch; lion; wardrobe; chronicles narnia; chronicles
+310,Bruce Almighty,2003,0.12939065898760194,-0.01933889402228856,bruce; almighty; god; nolan; reporter; fun filled
+12405,Slumdog Millionaire,2008,0.11646689646365688,-0.06892720928956603,millionaire; indian version; mumbai; indian; india; cheating
+2080,X-Men Origins: Wolverine,2009,0.21099242113061065,0.1302372646872525,wolverine; mutant; logan; comic prequel; excited powerful; excuse
+787,Mr. & Mrs. Smith,2005,0.1276558290732814,-0.046113433572587265,marriage; mrs; smith; mr; couple; action comedy
+453,A Beautiful Mind,2001,0.13820778493859087,-0.08429703382173656,nash; mathematician; discovery; cryptography; math; self discovery
+652,Troy,2004,0.1266938591226808,-0.03490012874223519,troy; trojan; sparta; greece; 000; ancient
+19913,(500) Days of Summer,2009,0.11940703545051415,-0.08573879388424213,summer; 500 days; 500; tom; days; romcom
+641,Requiem for a Dream,2000,0.11911416423105267,-0.09522689876957685,dream; drug; said; expose; doubt film; spite
+1593,Night at the Museum,2006,0.11859735776431601,-0.05193633358699805,museum; night; natural; chaos; history; inanimate
+36658,X2,2003,0.18886672761809395,0.14105709487456292,better; mutants; mutant; improvement; professor charles; superhuman super
+9799,The Fast and the Furious,2001,0.13611296271488307,-0.07713248851867865,toretto; street; gang; racing; los angeles; angeles
+605,The Matrix Revolutions,2003,0.21985908538238927,0.0006514841680731613,matrix; computer; allegory; machine; end; year
+608,Men in Black II,2002,0.2465219442037599,0.1275440846964329,mib; reunite; years; earth; identity; alien
+1402,The Pursuit of Happyness,2006,0.1430393112925331,-0.1026300828756288,salesman; single; son; father; overview struggling; stockbroker
+13475,Star Trek,2009,0.21264900729513958,0.047248143759131035,space; warp; unlikely; did; century; like
+36668,X-Men: The Last Stand,2006,0.18712518318699511,0.1445552690721271,men; professor charles; complete; charles xavier; storyline; mutant based
+70,Million Dollar Baby,2004,0.10511925970885418,-0.06803252490068552,boxing; trainer; dunn; dollar; million dollar; female
+17654,District 9,2009,0.1539677558023782,0.025153488920569105,aliens; footage; company; technology; master; alien
+950,Ice Age: The Meltdown,2006,0.11697333836346153,-0.0321672963824515,ice; ice age; age; return sequel; saber toothed; sloth
+8960,Hancock,2008,0.14716298496129282,-0.014575601128260863,hancock; expert; second half; faded; ended; love
+3933,Corpse Bride,2005,0.10732676164142811,-0.07833319064405612,bride; wedding; corpse; underworld; ring; 19th century
+423,The Pianist,2002,0.12891642891173302,-0.05922615628901536,ghetto; pianist; szpilman; war; nazi; resistance
+5915,Into the Wild,2007,0.13103626529175014,-0.09602060562963279,wilderness; relationship self; camping; account; university; gives
+2501,The Bourne Identity,2002,0.1575944834107643,-0.05466408111492731,bourne; amnesia; identity; number; hand; spy
+591,The Da Vinci Code,2006,0.10186776802458586,-0.06028625555140188,vinci; da; da vinci; christianity; secret society; museum
+176,Saw,2004,0.1421966622849053,-0.09434041411568535,game; voice; horror; saw; game review; theatrical
+13183,Watchmen,2009,0.17043121787271184,0.04408896284673185,doomsday; david; masked; reunited; brutally; soviet union
+9738,Fantastic Four,2005,0.16226928294343254,0.08916875180486934,storm; space; sue storm; sue; richards; reed richards
+107,Snatch,2000,0.09812051881928484,-0.06531545233219277,diamond; gangster; snatch; boxing; priceless; gambling
+9741,Unbreakable,2000,0.1681558382366877,-0.06417730647319722,glass; accident; train; mystery; price; forgotten
+810,Shrek the Third,2007,0.13292870773128423,-0.06311917894018913,shrek; kingdom; king; fiona; heir throne; heir
+157336,Interstellar,2014,0.23655129523262344,0.03324192120074679,space; time; interstellar; travel; space travel; father
+27205,Inception,2010,0.13389099095158738,0.005001560998383403,subconscious; inception; trailer; dream; lot; targets
+24428,The Avengers,2012,0.29242260104525397,0.29227398868983984,team; city superhero; team aftercreditsstinger; fury; jr; safety
+293660,Deadpool,2016,0.1753609115631206,0.09413716553300347,deadpool; mercenary; forces operative; wade wilson; wade; operative
+299536,Avengers: Infinity War,2018,0.2175995193791836,0.26881171424612704,avengers; infinity; cosmic; mcu; power; collect
+118340,Guardians of the Galaxy,2014,0.2704167469761863,0.28901168956057033,years; guardians galaxy; abducted; comic space; title guardians; peter quill
+68718,Django Unchained,2012,0.09141556206392981,-0.04239147385727022,slave; plantation; mississippi; bounty; bounty hunter; hunter
+299534,Avengers: Endgame,2019,0.2326880980116292,0.24715206870375542,avengers; thanos; infinity war; infinity; avengers infinity; universe
+475557,Joker,2019,0.17794526442806266,-0.0834617748664902,joker; 1980s; social; crime; comedian; clown
+106646,The Wolf of Wall Street,2013,0.15938800773939302,-0.09234500428313248,wall street; wall; street; fraud; wolf; financial
+11324,Shutter Island,2010,0.16399804461003392,-0.0984799562281141,patient; visions; insane; hospital; mystery; war ii
+99861,Avengers: Age of Ultron,2015,0.28217060458059273,0.2802449631492743,ultron; avengers; fictitious; enacting; fictitious country; overview tony
+49026,The Dark Knight Rises,2012,0.17654385756836594,0.01849954972766298,dark knight; knight; batman; rises; dent; attorney
+76341,Mad Max: Fury Road,2015,0.21534887361413818,0.038348679334379965,future; desert; road; apocalyptic; run; reaches
+271110,Captain America: Civil War,2016,0.2535905599740887,0.35601193040810636,captain america; captain; america; superhero; versus; marvel
+284054,Black Panther,2018,0.22539261395821322,0.19623747054061091,challa; wakanda; panther; black panther; country; mcu
+150540,Inside Out,2015,0.1540960922491368,-0.08794929532116455,joy; sadness; disgust; anger; emotions; fear
+284052,Doctor Strange,2016,0.25089518301599417,0.23014284545434563,sorcerer; doctor; marvel; push; push limits; injury
+68721,Iron Man 3,2013,0.24642984770718088,0.27169113308934584,return sequel; overview tony; reasons; superhero malibu; tennessee; terror
+70160,The Hunger Games,2012,0.20858151248700663,-0.05482961049883985,futuristic; hunger; survival; televised; sympathetic tragic; provocative dramatic
+315635,Spider-Man: Homecoming,2017,0.3426429965527637,0.38229978235286083,spider man; spider; superhero; high school; man; school
+283995,Guardians of the Galaxy Vol. 2,2017,0.267333546361252,0.29359332534097043,long; guardians; galaxy vol; 30; humour; shouldn
+1771,Captain America: The First Avenger,2011,0.2885844399992395,0.21603543471472753,captain america; captain; america; rogers; war; super soldier
+10138,Iron Man 2,2010,0.23727554959230857,0.26704804727133213,iron man; stark; iron; technology; dual life; forge new
+10195,Thor,2011,0.2491307770781851,0.18249172831233007,thor; god; brother; marvel; earth; forced live
+297761,Suicide Squad,2016,0.17115030725369718,0.12287218558228054,comics; dc; suicide squad; squad; suicide; consistently
+284053,Thor: Ragnarok,2017,0.2786157471298114,0.2532925420396507,ragnarok; thor; norse; universe; overview thor; imprisoned
+12445,Harry Potter and the Deathly Hallows: Part 2,2011,0.22328398892604706,-0.15131572873489563,harry; voldemort; school; sacrifice magic; followers; evil
+135397,Jurassic World,2015,0.13528948810556435,-0.00010418392629185422,park; jurassic; jurassic world; theme park; dinosaur; theme
+286217,The Martian,2015,0.1786245468377352,0.03968818063592117,martian; mars; stranded; astronaut; survival; planet
+354912,Coco,2017,0.15312089803651063,-0.08673643937939056,miguel; music; musician; dead; family; way
+297762,Wonder Woman,2017,0.25951940505563814,0.08946358290907458,empowerment; woman; world war; female; world; comic female
+102899,Ant-Man,2015,0.2198960267821838,0.17991363746642863,ant; master thief; ant man; pym; lang; mentor
+245891,John Wick,2014,0.14584699913678476,-0.04409434436226076,wick; john wick; hitman; john; retired; overview ex
+140607,Star Wars: The Force Awakens,2015,0.18232511291591044,0.11213926544512824,star wars; wars; star; imagination; solo; han
+263115,Logan,2017,0.20684372558839645,0.10055726740752657,logan; mutant; future; super; sequel super; pursued
+12444,Harry Potter and the Deathly Hallows: Part 1,2010,0.19618166128047643,-0.18241733868459123,harry; voldemort; harry potter; potter; road; really
+346364,It,2017,0.1592547534615786,-0.13147392521385698,town; house; small town; small; maine; clown
+100402,Captain America: The Winter Soldier,2014,0.22474476693463888,0.23505281801415748,captain america; captain; america; black widow; widow; steve
+210577,Gone Girl,2014,0.17626928284302665,-0.12758862326290096,wife; disappearance; missing; good; thriller; controlling
+259316,Fantastic Beasts and Where to Find Them,2016,0.14711663953054485,-0.07628721831969876,magical; fantastic beasts; newt; briefcase; beasts; fantastic
+49051,The Hobbit: An Unexpected Journey,2012,0.2029723040929356,-0.07980163796404739,hobbit; fantasy; mountain; ring; quest; journey
+329865,Arrival,2016,0.2149290718220961,0.04643299378283034,alien; alien language; contact; military; come peace; fiction mystery
+281957,The Revenant,2015,0.15332293010275358,-0.11399199872348316,bear; attack; revenant; western; survival; dead
+383498,Deadpool 2,2018,0.1634179703016314,0.11804343888157501,deadpool; mercenary; eagerly; eagerly awaited; mercenary based; title deadpool
+209112,Batman v Superman: Dawn of Justice,2016,0.24980899190384742,0.16971087157134138,superman; batman; vigilante; versus; super; revered
+419430,Get Out,2017,0.14550772522835162,-0.10274003558442152,interracial; weekend; chris; parents; horror; racist
+1930,The Amazing Spider-Man,2012,0.24756834707888303,0.24520819759603027,spider; spider man; peter; vigilante; connors; amazing spider
+101299,The Hunger Games: Catching Fire,2013,0.19915141723641985,-0.023686471747214374,hunger games; games; hunger; survival; panem; survival murder
+76338,Thor: The Dark World,2013,0.23786457747295123,0.2633917490868655,thor; universe; embark perilous; overview thor; restore order; asgard
+381288,Split,2017,0.1362379095404709,-0.056932616542664696,split; personality; kevin; teenage; horror; fletcher
+313369,La La Land,2016,0.11572156555696538,-0.0963072177966877,jazz; la; aspiring; party; gigs; coffee
+198663,The Maze Runner,2014,0.19826898541393836,-0.06626268073013844,maze; memory; escape; just; runner overview; clues lead
+205596,The Imitation Game,2014,0.17685096877146475,-0.06711993108153096,turing; code; alan; genius; war ii; war
+269149,Zootopia,2016,0.1538303082371064,-0.08208123362608681,cartoon; fox; bear; artist; villain; cop
+207703,Kingsman: The Secret Service,2015,0.19490608916521376,0.05859637196223898,secret; global threat; spy; organization; great; global
+424694,Bohemian Rhapsody,2018,0.13204786201367213,-0.08587113687535934,band; singer; rock; queen; music; true
+109445,Frozen,2013,0.1964819108213082,-0.09870210605387703,frozen; sister; true love; true; princess; musical
+374720,Dunkirk,2017,0.1599386362086061,-0.04437394461491755,dunkirk; evacuation; royal; army; war ii; france
+335983,Venom,2018,0.19291003668583137,0.12037228971498835,venom; symbiote; alien; form based; comeback; rely
+324857,Spider-Man: Into the Spider-Verse,2018,0.2503187039257882,0.21905358383153228,spider; verse; spider verse; miles; spider man; animation
+240832,Lucy,2014,0.17430962699923022,0.015520571935925678,brain; drug; intelligence; human; production line; pretentious
+429617,Spider-Man: Far From Home,2019,0.30535495746590247,0.3743827173749072,europe; spider; trip; peter; superhero; relentless
+333339,Ready Player One,2018,0.2161243546093717,-0.03543727168378562,virtual; video game; video; game; columbus; game virtual
+339403,Baby Driver,2017,0.12779824742010218,-0.06758610667620468,getaway; driver; getaway driver; robbery; soundtrack; crime boss
+75656,Now You See Me,2013,0.16734326871259736,-0.08938326674022291,bank; fbi; money; interpol; reward; louisiana
+299537,Captain Marvel,2019,0.31876575757016434,0.3869222434339842,marvel; alien; 1990s; universe; captain; cinematic universe
+131631,The Hunger Games: Mockingjay - Part 1,2014,0.20083371157780583,-0.034731156578618604,katniss; resistance; future; prejudice; dystopia post; quarter
+244786,Whiplash,2014,0.14945594930236455,-0.09849973610397657,music; drummer; jazz; abuse; talented young; instructor
+177572,Big Hero 6,2014,0.2603289094373595,0.011069947918133793,villain; robot; best; relationship san; inflatable; friendship martial
+72190,World War Z,2013,0.17886561768280054,-0.02287351016382898,lane; zombie; apocalypse; world; human; epidemic
+330459,Rogue One: A Star Wars Story,2016,0.2272622666096948,0.10998452317710247,space; odds; rogue; star; mission; rebel space
+49047,Gravity,2013,0.1647441813277455,0.0334824023174201,space; space mission; astronaut; great; mission; ryan
+181808,Star Wars: The Last Jedi,2017,0.16476608223218753,0.08621942929199568,pump; jedi; space; battle; sequel space; order genres
+127585,X-Men: Days of Future Past,2014,0.21809234226024488,0.12876324120623417,past; future; future past; men; days; ellen
+49521,Man of Steel,2013,0.2808358841071624,0.19987978877608756,save; alien; hope; saving; planet; save day
+37724,Skyfall,2012,0.1538704962035361,-0.02714578164223353,bond; mi6; agent; secret; field agent; globetrotting
+120467,The Grand Budapest Hotel,2014,0.09434687138212101,-0.06145636446087714,hotel; painting; european hotel; renaissance; europe; european
+20352,Despicable Me,2010,0.1509673423255271,-0.04594965959092705,despicable; stealing; girls; supervillain; moon; surprise
+321612,Beauty and the Beast,2017,0.15206008088160752,-0.10067093282886282,live action; beast; live; remake; tale; beauty beast
+10193,Toy Story 3,2010,0.13330579610354287,-0.07611058712090618,andy; toys; college; toy; escape; duringcreditsstinger toy
+44214,Black Swan,2010,0.15376461542585965,-0.09829906159156837,swan; swan lake; dancer; ballet; lake; horror
+122917,The Hobbit: The Battle of the Five Armies,2014,0.2146064035831171,-0.052650459733329845,elves; battle; dwarves; armies; bilbo; mountain
+447332,A Quiet Place,2018,0.21329951361461721,-0.008106354236853438,alien; horror; quiet; form; forced live; contains spoilers
+152601,Her,2013,0.15260920704755246,-0.03579254978376343,operating; theodore; future; love; romance; provocative dramatic
+273248,The Hateful Eight,2015,0.1107929260026347,-0.04924388602161226,hateful; blizzard; epic; bounty; raging; western keywords
+335984,Blade Runner 2049,2017,0.11034931693151584,-0.02922173532206728,blade runner; blade; runner; runner 2049; lapd; years
+137113,Edge of Tomorrow,2014,0.2001784737449359,0.030992333588636442,alien; ok; cage; loop; time loop; officer
+1865,Pirates of the Caribbean: On Stranger Tides,2011,0.13963645697380253,-0.037038901275395594,swashbuckler 18th; overview jack; sailing; duke; minister; mermaid
+297802,Aquaman,2018,0.2236029179554703,0.11244657189203312,half; good movie; royalty; advanced; worth; underwater
+324786,Hacksaw Ridge,2016,0.1329885271141577,-0.043480756078349385,medic; okinawa; conscientious objector; conscientious; congressional medal; ridge
+466272,Once Upon a Time... in Hollywood,2019,0.17072123602463565,-0.11224387931424713,hollywood; tate; filmmaking; cult; struggling; actor
+12155,Alice in Wonderland,2010,0.19592373115296766,-0.09157066866168567,wonderland; alice; queen; psychotic; embarks journey; 19
+353486,Jumanji: Welcome to the Jungle,2017,0.1874031969615078,-0.058848691203597224,game; detention; jumanji; jungle; video game; video
+10191,How to Train Your Dragon,2010,0.17039784981807976,-0.08765892615742486,dragon; warrior; blacksmith; realizes; gentle hopeful; optimistic powerful
+264660,Ex Machina,2015,0.1719157052266247,-0.016122597124548988,company; ex machina; intelligence; surveillance; arrives; tech
+324552,John Wick: Chapter 2,2017,0.15775700527934117,-0.05658339474191077,wick; john wick; rome; hand; right; john
+102382,The Amazing Spider-Man 2,2014,0.28731471441589984,0.2674463657038387,peter; spider man; spider; promise; gwen; superhero
+274870,Passengers,2016,0.17836915841394477,0.057740102002541135,passengers; space; spacecraft; people; romance science; swimming
+57158,The Hobbit: The Desolation of Smaug,2013,0.1920126979440625,-0.05627531502691388,smaug; bilbo; gold; ring; dragon; journey
+634649,Spider-Man: No Way Home,2021,0.3304295336002449,0.3825806366735533,spider man; superhero; spider; parker; peter parker; stakes
+438631,Dune,2021,0.18565963341096633,0.016964898157369197,dune; sand; destiny; oscar; giant; creature
+76600,Avatar: The Way of Water,2022,0.2085003481366592,0.01468443854170747,avatar; adopted; follows; effects; water; family
+414906,The Batman,2022,0.19254797822018394,-0.021206479538069527,batman; crime; serial killer; serial; corruption; killer
+872585,Oppenheimer,2023,0.15349367080195697,-0.07554100532711774,oppenheimer; atomic; atomic bomb; bomb; project; war ii
+508442,Soul,2020,0.17363704651487077,-0.07797688784130295,jazz; soul; seminar; transported; joe; teacher
+497698,Black Widow,2021,0.22719106064275837,0.2540938740207079,black widow; widow; spy; female; black; assassin
+580489,Venom: Let There Be Carnage,2021,0.19275614979746583,0.12356729777263464,carnage; symbiote; venom; eddie brock; brock; eddie
+577922,Tenet,2020,0.17018783044241023,0.014428869192875591,tenet; espionage; time; terrorist; real time; overview armed
+346698,Barbie,2023,0.19973811671750746,-0.06694507689368559,barbie; world; satire; fantasy; real world; satire based
+361743,Top Gun: Maverick,2022,0.12713373043394538,-0.027344633821531017,maverick; gun; navy; pilot; em; good actually
+791373,Zack Snyder's Justice League,2021,0.23903794002183149,0.1609860719621703,superhero; team; teamwork review; ensure; bros; opportunity
+495764,Birds of Prey (and the Fantabulous Emancipation of One Harley Quinn),2020,0.2102292291212988,-0.044505185265137914,police; harley quinn; harley; quinn; police officer; crime
+502356,The Super Mario Bros. Movie,2023,0.1632528938556703,-0.0151173089670654,mario; super mario; bros; super; brothers; brother
+399566,Godzilla vs. Kong,2021,0.13072564195561426,0.03408121630165472,godzilla; kong; godzilla vs; dinosaur; vs; giant
+454626,Sonic the Hedgehog,2020,0.1764094322081544,0.007154889841118993,sonic; hedgehog; super; robotnik; sonic hedgehog; speed
+566525,Shang-Chi and the Legend of the Ten Rings,2021,0.161081691601379,0.15366345951937,shang chi; shang; chi; rings; chi legend; legend
+453395,Doctor Strange in the Multiverse of Madness,2022,0.21863963610087928,0.19548237010149697,multiverse; strange; doctor strange; doctor; horror; reality aftercreditsstinger
+568124,Encanto,2021,0.15905548470408337,-0.12693388786879256,encanto; family; magical; colombia; mountains; magic
+337404,Cruella,2021,0.13933123296983463,-0.07806072741392164,fashion; estella; punk; punk rock; rock; 1970s
+550988,Free Guy,2021,0.20541516052529046,-0.012051007319739826,bank; teller; guy; video game; video; game
+436969,The Suicide Squad,2021,0.22946762503629478,0.13467216907623056,suicide squad; squad; super; anti hero; suicide; dc
+646380,Don't Look Up,2021,0.16201495053668907,-0.009584069602666815,don look; comet; look; satire; social; don
+524434,Eternals,2021,0.23795625880330076,0.23554484576142184,eternals; ancient; mcu; superhero supernatural; god like; deliver
+464052,Wonder Woman 1984,2020,0.19494012678432765,0.09956352633683987,wonder woman; wonder; woman; 1984; botched; overview botched
+508943,Luca,2021,0.13634336379340595,-0.07607733561904183,luca; sea; sea monster; riviera; monster; italian
+315162,Puss in Boots: The Last Wish,2022,0.11935846453919907,-0.057106731943803134,puss; boots; puss boots; wish; talking; lives
+38700,Bad Boys for Life,2020,0.15807317962721523,-0.07928266809272326,miami; bad boys; bad; drug cartel; cartel; mike
+533535,Deadpool & Wolverine,2024,0.21600439999909418,0.24707647803991897,wade; deadpool; wolverine; existential; wade wilson; civilian
+569094,Spider-Man: Across the Spider-Verse,2023,0.2960909808565187,0.2685992175762344,spider; superhero; alternate; team spider; multiverse; double life
+616037,Thor: Love and Thunder,2022,0.18881068004202078,0.1719399122267033,god; thor; god butcher; ex girlfriend; thunder; norse
+615457,Nobody,2021,0.1610884172142611,-0.048908300087735584,hutch; home; retaliation; derek; russian mafia; protection
+447365,Guardians of the Galaxy Vol. 3,2023,0.24722771939460492,0.3509691590416619,guardians; galaxy vol; guardians galaxy; vol; universe; galaxy
+693134,Dune: Part Two,2024,0.16984389614716003,0.013578106329561322,dune; paul; giant; creature; future; conspirators
+545611,Everything Everywhere All at Once,2022,0.17091769116117922,-0.005756097707256172,chinese; asian; chinese immigrant; immigrant; mother; woman
+603692,John Wick: Chapter 4,2023,0.16383580974182974,-0.05139684623240887,wick; john wick; john; wick chapter; chapter; japan
+766507,Prey,2022,0.15846733057564205,0.029994519003714273,prey; alien; comanche; severed; predator; highly
+385128,F9,2021,0.1747124543532783,-0.043662705284525906,brother; encountered; relationships sequel; overview dominic; toretto; title good
+718930,Bullet Train,2022,0.11680730226490936,-0.03447451284896261,train; bullet train; bullet; assassin; mission; professional assassin
+505642,Black Panther: Wakanda Forever,2022,0.24301557645519783,0.17932970951025642,wakanda; death; forever; king; dora; challa
+520763,A Quiet Place Part II,2021,0.2339698904717548,-0.010284094800228634,alien; quiet; horror; quiet place; psychological; ii
+527774,Raya and the Last Dragon,2021,0.14747633499971008,-0.03243054575970253,dragons; dragon; raya; humans dragons; warrior; land
+370172,No Time to Die,2021,0.19548351601945216,-0.052787526488958084,bond; james bond; die; service; james; turns
+507086,Jurassic World Dominion,2022,0.1879780861216961,0.010369485896521854,jurassic world; claire; sanctuary; determine; paleontology; title jurassic
+337401,Mulan,2020,0.1863280506935135,-0.046762896635523105,hua; mulan; chinese; china; live action; remake
+436270,Black Adam,2022,0.1904275400503631,0.15289896292610447,black adam; adam; black; earthly; almighty; egotistical
+335787,Uncharted,2022,0.13720113759359923,-0.022548998328635095,treasure; nathan; lost; embark dangerous; sully; clues lead
+661374,Glass Onion: A Knives Out Mystery,2022,0.12164633438871168,-0.09665501117775224,mystery; knives; greece; billionaire; murder; detective
+1022789,Inside Out 2,2024,0.13156574234685578,-0.04031275079631507,disgust; riley; anxiety; joy; emotions; anger
+460465,Mortal Kombat,2021,0.1955803237134669,0.030193187860115933,hand; fighter; high; universe; expectation; shang
+545609,Extraction,2020,0.2072445793258743,-0.05742860551456849,drug; rescue; mission; based graphic; hire; bombay india
+522627,The Gentlemen,2020,0.12629987616949725,-0.07514802379463946,gentlemen; marijuana; business; london; schemes; gangster dark
+508439,Onward,2020,0.2162790566905809,-0.12562357569764232,fantasy world; brother; dead; teenage; fantasy; magic
+497582,Enola Holmes,2020,0.17749459650791224,-0.11528066063040297,holmes; enola holmes; enola; runaway; sherlock; detective
+423108,The Conjuring: The Devil Made Me Do It,2021,0.15683567663526196,-0.08843690622369535,conjuring; paranormal; horror; paranormal investigators; files; paranormal investigation
+624860,The Matrix Resurrections,2021,0.1984629315527669,0.026663904035795414,matrix; inside matrix; pac; future man; prophecy dystopia; surprisingly
+512195,Red Notice,2021,0.11827524795638975,-0.04746229519503882,red notice; interpol; red; fbi; heist; primitive
+385687,Fast X,2023,0.1462362926871164,-0.045570784434336715,dom; fast; family; revenge; emerging; cliffhanger
+570670,The Invisible Man,2020,0.16930239134608022,-0.04584940093316876,invisible; invisible man; man; like; suspects; death
+593643,The Menu,2022,0.10577780773428266,-0.07886249298589255,menu; cuisine; exclusive; chef; food; remote
+451048,Jungle Cruise,2021,0.12704721054731408,-0.01491871805999685,jungle; amazon; park; frank; enlists; based theme
+637649,Wrath of Man,2021,0.1850049385680579,-0.11900557322998445,truck; security guard; cash; guard; security; angeles
+1184918,The Wild Robot,2024,0.1603782361501662,-0.024572684134835564,robot; island; goose; animals; robot overview; environment
+933260,The Substance,2024,0.14914393294010597,-0.07442467312920259,substance; beauty; celebrity; black market; youth; market
+675353,Sonic the Hedgehog 2,2022,0.17454150362396775,-0.00991927918657718,sonic; emerald; hedgehog; takes true; robotnik; dr robotnik
+508947,Turning Red,2022,0.15024048590747136,-0.08184685899363484,red; red panda; canada; panda; toronto; turning
+756999,The Black Phone,2022,0.15029856589640173,-0.1248641017277441,finney; basement; killer; sadistic; phone; short story
+640146,Ant-Man and the Wasp: Quantumania,2023,0.21836014715603408,0.23673096967809848,ant; dyne; ant man; lang; scott; van
+792307,Poor Things,2023,0.20312845499169235,-0.08012821341956168,sexuality; female; poor; liberation; lawyer; things
+613504,After We Collided,2020,0.1373278914697308,-0.09576465023588188,collided; forgot; sat; dilemma; grand review; painful
+524047,Greenland,2020,0.17939461998006934,-0.011621932381556918,emergency; comet; apocalypse; disaster; wife; planet
+976573,Elemental,2023,0.1564048863099102,-0.07293437793904746,elemental; water; elements; temper; finding way; fiery
+667538,Transformers: Rise of the Beasts,2023,0.18653087221993642,0.055185034750742934,transformers; robot; brother; robot duringcreditsstinger; autobots; engage
+338762,Bloodshot,2020,0.1979093197818296,0.10292210160185473,bloodshot; ray; wife; overview wife; breaks; mediocre
+425909,Ghostbusters: Afterlife,2021,0.14798685900471786,-0.05351802659874848,ghostbusters; grandfather; afterlife; paranormal; small; town
+583083,The Kissing Booth 2,2020,0.12484241623832808,-0.0642000205551841,don; romance; schools; classmate; lee; appear
+575264,Mission: Impossible - Dead Reckoning Part One,2023,0.19100459528905142,0.022284868236582153,ethan; mission; agency; government; government agency; secret
+338953,Fantastic Beasts: The Secrets of Dumbledore,2022,0.16523636984837314,-0.07291779160633523,beasts; dumbledore; secrets dumbledore; fantastic beasts; secrets; fantastic
+476669,The King's Man,2021,0.23347240255591045,0.0354047455693201,king; man; comic prequel; war; film series; planned
+639933,The Northman,2022,0.1572284526625123,-0.046094518444126015,amleth; prince amleth; prince; uncle; later; sword
+507089,Five Nights at Freddy's,2023,0.15525574099657993,-0.111649152793502,freddy; child; security guard; troubled; abandoned; restaurant
+298618,The Flash,2023,0.2508930809577729,0.19880516703511822,flash; dc; universe; superhuman; save; future
+696806,The Adam Project,2022,0.16639377441568562,0.006283962123854408,adam; project; save future; future genres; reed; explore
+762504,Nope,2022,0.18910673473330708,0.0014584780333294506,horror; horror sci; alien; western; sci; sci fi
+631843,Old,2021,0.17018364866997565,-0.09610050958940194,beach; experiment; secluded beach; secluded; vacation; holiday
+786892,Furiosa: A Mad Max Saga,2024,0.15659665487184818,0.006079444440051655,furiosa; wasteland; warlord; post apocalyptic; apocalyptic; post
+547016,The Old Guard,2020,0.15946406936739274,0.019512605397586952,guard; old; immortal genres; immortal; instant classic; targeted
+526896,Morbius,2022,0.1775711187177593,0.09671022290955425,morbius; fiction fantasy; gamble; duringcreditsstinger supervillain; reveals; captivating
+536554,M3GAN,2022,0.12631560799399186,-0.050829109278827354,doll; m3gan; niece; android; dog; artificial intelligence
+1061474,Superman,2025,0.2300136037056425,0.1787884407914849,superman; heritage; symbol hope; supervillain dc; embarks journey; comic super
+438695,Sing 2,2021,0.11914140382635607,-0.049347408919799926,sing; buster; crystal; clay; wolf; stage
+785084,The Whale,2022,0.13954434121890388,-0.06907073107474658,daughter; english teacher; english; eating; teacher; father daughter
+823464,Godzilla x Kong: The New Empire,2024,0.14448458557513202,0.040295890884756214,godzilla; kong; godzilla kong; giant; empire; giant ape
+493529,Dungeons & Dragons: Honor Among Thieves,2023,0.15228202969751084,-0.07541145546939594,thieves; dragons honor; dungeons dragons; dungeons; dragons; charming
+985939,Fall,2022,0.12552150036457455,-0.04084350194336541,climbing; tower; best friends; stranded; hunter; kind
+945961,Alien: Romulus,2024,0.2108006618568745,0.08108457525038998,alien; space; life form; station; face; em
+1233413,Sinners,2025,0.1540093088775243,-0.09196615398063981,cousin; mississippi; vampire; brother; horror; chinese immigrant
+590223,Love and Monsters,2020,0.17680376345007806,-0.025513081812952327,joel; monsters; families; order survive; ok; bunker
+558449,Gladiator II,2024,0.1608848694395762,-0.005687204798722697,gladiator; rome; gladiator ii; roman; empire; sword
+503736,Army of the Dead,2021,0.11917034230501426,-0.07254665820979944,zombie; casino; heist; apocalypse; las; las vegas
