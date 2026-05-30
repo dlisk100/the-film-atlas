@@ -30,6 +30,7 @@ def test_discover_movies_uses_required_filters_and_caches(tmp_path: Path) -> Non
     assert len(seen_requests) == 1
     request = seen_requests[0]
     assert request.url.path == "/3/discover/movie"
+    assert request.headers["Authorization"] == "Bearer test-token"
     assert request.url.params["with_original_language"] == "en"
     assert request.url.params["include_adult"] == "false"
     assert request.url.params["include_video"] == "false"

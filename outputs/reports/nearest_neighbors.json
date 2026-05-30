@@ -1,0 +1,72 @@
+[
+  {
+    "neighbor_title": "Spider-Man: Homecoming",
+    "neighbor_tmdb_id": 315635,
+    "similarity": 0.6896465586750934,
+    "source_title": "Spider-Man: No Way Home",
+    "source_tmdb_id": 634649
+  },
+  {
+    "neighbor_title": "Spider-Man: Homecoming",
+    "neighbor_tmdb_id": 315635,
+    "similarity": 0.6156521828090323,
+    "source_title": "Spider-Man",
+    "source_tmdb_id": 557
+  },
+  {
+    "neighbor_title": "Spider-Man",
+    "neighbor_tmdb_id": 557,
+    "similarity": 0.61307355637284,
+    "source_title": "Spider-Man: No Way Home",
+    "source_tmdb_id": 634649
+  },
+  {
+    "neighbor_title": "Spider-Man: Across the Spider-Verse",
+    "neighbor_tmdb_id": 569094,
+    "similarity": 0.5451026732575806,
+    "source_title": "Spider-Man: Homecoming",
+    "source_tmdb_id": 315635
+  },
+  {
+    "neighbor_title": "Spider-Man: Across the Spider-Verse",
+    "neighbor_tmdb_id": 569094,
+    "similarity": 0.5417713435799216,
+    "source_title": "Spider-Man: No Way Home",
+    "source_tmdb_id": 634649
+  },
+  {
+    "neighbor_title": "The Lord of the Rings: The Fellowship of the Ring",
+    "neighbor_tmdb_id": 120,
+    "similarity": 0.504505296863475,
+    "source_title": "The Lord of the Rings: The Return of the King",
+    "source_tmdb_id": 122
+  },
+  {
+    "neighbor_title": "The Batman",
+    "neighbor_tmdb_id": 414906,
+    "similarity": 0.5042069232362036,
+    "source_title": "The Dark Knight",
+    "source_tmdb_id": 155
+  },
+  {
+    "neighbor_title": "Spider-Man: Across the Spider-Verse",
+    "neighbor_tmdb_id": 569094,
+    "similarity": 0.48808958599658886,
+    "source_title": "Spider-Man",
+    "source_tmdb_id": 557
+  },
+  {
+    "neighbor_title": "Harry Potter and the Chamber of Secrets",
+    "neighbor_tmdb_id": 672,
+    "similarity": 0.47912947550818363,
+    "source_title": "Harry Potter and the Philosopher's Stone",
+    "source_tmdb_id": 671
+  },
+  {
+    "neighbor_title": "The Devil Wears Prada 2",
+    "neighbor_tmdb_id": 1314481,
+    "similarity": 0.44638470657232027,
+    "source_title": "The Devil Wears Prada",
+    "source_tmdb_id": 350
+  }
+]

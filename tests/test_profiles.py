@@ -21,7 +21,10 @@ def test_semantic_profile_excludes_forbidden_production_context_fields() -> None
         vote_average=7.4,
         vote_count=860,
         popularity=42.5,
-        reviews=["Dreamy, eerie science fiction about isolation and impossible signals."],
+        reviews=[
+            "Dreamy 2019 science fiction with Avery Stone, June Archer, "
+            "and Northstar Pictures energy."
+        ],
         original_language="forbidden-language-marker",
         production_countries=["United States of America"],
         production_companies=["Northstar Pictures"],
