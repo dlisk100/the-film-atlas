@@ -1,0 +1,57 @@
+{
+  "adult": false,
+  "backdrop_path": "/moon-backdrop.jpg",
+  "credits": {
+    "cast": [
+      {"name": "Avery Stone"},
+      {"name": "Mira Vale"}
+    ],
+    "crew": [
+      {"job": "Director", "name": "June Archer"},
+      {"job": "Writer", "name": "Lee Compass"}
+    ]
+  },
+  "external_ids": {
+    "imdb_id": "tt0101001"
+  },
+  "genres": [
+    {"id": 878, "name": "Science Fiction"},
+    {"id": 12, "name": "Adventure"}
+  ],
+  "id": 101,
+  "imdb_id": "tt0101001",
+  "keywords": {
+    "keywords": [
+      {"id": 1, "name": "moon colony"},
+      {"id": 2, "name": "distress signal"},
+      {"id": 3, "name": "salvage crew"}
+    ]
+  },
+  "original_language": "en",
+  "original_title": "Moon Harbor",
+  "overview": "A lonely salvager follows a signal into a haunted lunar port.",
+  "popularity": 42.5,
+  "poster_path": "/moon-poster.jpg",
+  "production_companies": [
+    {"id": 55, "name": "Northstar Pictures"}
+  ],
+  "production_countries": [
+    {"iso_3166_1": "US", "name": "United States of America"}
+  ],
+  "release_date": "2019-03-15",
+  "reviews": {
+    "page": 1,
+    "results": [
+      {
+        "author": "sample_user",
+        "content": "Dreamy, eerie science fiction about isolation, grief, and impossible signals."
+      }
+    ],
+    "total_pages": 1,
+    "total_results": 1
+  },
+  "runtime": 111,
+  "title": "Moon Harbor",
+  "vote_average": 7.4,
+  "vote_count": 860
+}

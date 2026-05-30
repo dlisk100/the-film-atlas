@@ -1,14 +1,38 @@
 [project]
-name = "the-film-atlas"
+name = "film-atlas"
 version = "0.1.0"
-description = "Add your description here"
+description = "Offline TMDb data pipeline for The Film Atlas."
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "httpx>=0.28.1",
+    "pandas>=2.2.3",
+    "pyarrow>=18.1.0",
+    "python-dotenv>=1.0.1",
+    "scikit-learn>=1.5.2",
+    "typer>=0.15.1",
+]
 
 [project.scripts]
-the-film-atlas = "the_film_atlas:main"
+film-atlas = "film_atlas.cli:app"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.4",
+    "ruff>=0.8.4",
+]
 
 [build-system]
-requires = ["uv_build>=0.11.17,<0.12.0"]
-build-backend = "uv_build"
+requires = ["setuptools>=75.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["film_atlas*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
