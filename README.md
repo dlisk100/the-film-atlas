@@ -32,8 +32,8 @@ Add a TMDb API bearer token to `.env` before running live fetch commands:
 TMDB_BEARER_TOKEN=your_tmdb_read_access_token
 ```
 
-`OPENAI_API_KEY` may exist in the environment for future milestones, but
-Milestone 1 never reads or uses it.
+`OPENAI_API_KEY` is used only for Milestone 2 embedding commands. Do not paste
+API keys into chat, commit `.env`, or place secrets in reports, tests, or docs.
 
 Optional local path controls:
 
@@ -157,6 +157,76 @@ Profile building strips obvious review noise such as URLs, hashtags, repeated
 punctuation, and excessive repeated tokens. It also redacts known
 production-context values from non-title profile text.
 
+## Milestone 2 Semantic Neighborhoods
+
+Milestone 2 turns the existing semantic profiles into OpenAI embeddings, projects
+movies into 2D, clusters them into emergent vibe neighborhoods, computes nearest
+neighbors, and writes an inspection report. It still does not build the final
+website, generate final AI microgenre labels, export public website JSON, scrape
+websites, or modify David's Astro personal website repo.
+
+Before running live embeddings, estimate cost:
+
+```bash
+uv run film-atlas estimate-embeddings --limit 100
+```
+
+Small live run:
+
+```bash
+uv run film-atlas milestone-2 --limit 100
+```
+
+Milestone 2 writes generated private/intermediate artifacts under
+`outputs/intermediate/`, which is gitignored:
+
+- `embeddings.jsonl`
+- `embedding_manifest.json`
+- `coordinates.json`
+- `cluster_assignments.json`
+- `neighbors.json`
+- `cluster_evidence.json`
+
+The human-readable inspection report is:
+
+```text
+outputs/reports/milestone_2_report.md
+```
+
+Embedding cache behavior:
+
+- Embeddings are cached by TMDb ID, embedding model, and profile hash.
+- Re-running unchanged profiles reuses cached vectors.
+- Changed profile text gets a new hash and is embedded again.
+- Live embedding commands support `--limit`; start with `--limit 100`.
+- If the estimated live API cost exceeds `$1`, the CLI stops before calling
+  OpenAI.
+
+Useful individual commands:
+
+```bash
+uv run film-atlas embed-profiles --limit 100
+uv run film-atlas reduce-embeddings
+uv run film-atlas cluster-movies
+uv run film-atlas compute-neighbors
+uv run film-atlas inspect-clusters
+```
+
+## Milestone 2.5 Cluster Granularity Sweep
+
+Milestone 2.5 compares several local k-means cluster counts over the existing
+embedding file. It does not call OpenAI, re-embed profiles, generate AI labels,
+export public JSON, scrape websites, or modify the Astro personal website repo.
+
+```bash
+uv run film-atlas sweep-clusters --ks 15,25,35,50
+```
+
+Outputs:
+
+- `outputs/intermediate/cluster_sweep.json`
+- `outputs/reports/cluster_sweep_report.md`
+
 ## Testing And Linting
 
 Tests use fixtures and mocks, not live API calls:
@@ -168,6 +238,6 @@ uv run ruff check .
 
 ## Next Milestone Outline
 
-Later milestones can add higher-quality semantic embeddings, final clustering,
-human-readable cluster labels, static public JSON exports, and integration into
-the Astro personal site. Those steps are intentionally outside Milestone 1.
+Later milestones can add human-readable cluster labels, final public JSON
+exports, and integration into the Astro personal site. Those steps are
+intentionally outside Milestone 2.

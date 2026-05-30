@@ -18,6 +18,8 @@ class Settings:
     """Runtime settings loaded from environment variables."""
 
     tmdb_bearer_token: str | None
+    openai_api_key: str | None
+    openai_embedding_model: str
     data_dir: Path
     output_dir: Path
 
@@ -28,6 +30,15 @@ class Settings:
         raise MissingCredentialsError(
             "TMDB_BEARER_TOKEN is required for live TMDb fetches. "
             "Copy .env.example to .env, add the token, then run the fetch command again."
+        )
+
+    def require_openai_api_key(self) -> str:
+        """Return the OpenAI API key or raise a clear runtime error."""
+        if self.openai_api_key:
+            return self.openai_api_key
+        raise MissingCredentialsError(
+            "OPENAI_API_KEY is required for live embedding calls. "
+            "Add it to .env, then run the command again."
         )
 
 
@@ -44,8 +55,12 @@ def load_settings(
     env_output_dir = os.getenv("FILM_ATLAS_OUTPUT_DIR", "outputs")
 
     token = os.getenv("TMDB_BEARER_TOKEN") or None
+    openai_api_key = os.getenv("OPENAI_API_KEY") or None
+    openai_embedding_model = os.getenv("OPENAI_EMBEDDING_MODEL", "text-embedding-3-large")
     return Settings(
         tmdb_bearer_token=token,
+        openai_api_key=openai_api_key,
+        openai_embedding_model=openai_embedding_model,
         data_dir=Path(data_dir or env_data_dir),
         output_dir=Path(output_dir or env_output_dir),
     )
