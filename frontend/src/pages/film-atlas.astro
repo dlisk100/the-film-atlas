@@ -1,0 +1,13 @@
+---
+import FilmAtlasExperience from "../components/film-atlas/FilmAtlasExperience.astro";
+import AtlasLabLayout from "../layouts/AtlasLabLayout.astro";
+
+const dataBase = "/film-atlas/data/public_export";
+---
+
+<AtlasLabLayout
+  title="The Film Atlas Lab"
+  description="A local sandbox for reviewing The Film Atlas frontend against the generated public export."
+>
+  <FilmAtlasExperience dataBase={dataBase} />
+</AtlasLabLayout>

@@ -6,6 +6,7 @@ __pycache__/
 .pytest_cache/
 .ruff_cache/
 .mypy_cache/
+node_modules/
 
 # Secrets
 .env
@@ -21,6 +22,11 @@ data/processed/
 # Large/private outputs
 outputs/private/
 outputs/intermediate/
+
+# Frontend sandbox build artifacts
+frontend/.astro/
+frontend/dist/
+frontend/node_modules/
 
 # Keep folders
 !data/.gitkeep

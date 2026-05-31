@@ -1,0 +1,436 @@
+---
+interface Props {
+  dataBase: string;
+}
+
+const { dataBase } = Astro.props;
+---
+
+<div class="film-atlas-page relative left-1/2 w-screen -translate-x-1/2 -mt-12 -mb-20 overflow-hidden bg-[#050505] text-[#f7ead2] sm:-mt-16" data-film-atlas-root data-data-base={dataBase}>
+  <section class="relative min-h-[calc(100vh-3.5rem)] overflow-hidden border-b border-[#f2c46d]/15">
+    <div class="atlas-page-field absolute inset-0"></div>
+    <div class="relative mx-auto flex min-h-[calc(100vh-3.5rem)] max-w-7xl flex-col px-4 pb-8 pt-14 sm:px-6 sm:pt-20 lg:px-8">
+      <div class="max-w-4xl">
+        <p class="font-mono text-xs uppercase text-[#68d8c5]">Static cinema topology</p>
+        <h1 class="mt-5 font-serif text-5xl font-semibold leading-[0.96] tracking-[0] text-[#fff8ea] sm:text-7xl">
+          The Film Atlas
+        </h1>
+        <p class="mt-6 max-w-2xl text-lg leading-8 text-[#d9c7a3] sm:text-xl">
+          Mapping cinema's hidden genres as a navigable constellation of films, neighborhoods, and uncanny near-neighbors.
+        </p>
+        <div class="mt-7 flex flex-wrap gap-x-6 gap-y-3 font-mono text-xs uppercase text-[#d9c7a3]/80">
+          <span><strong class="text-[#f2c46d]" data-atlas-movie-count>2,000</strong> films</span>
+          <span><strong class="text-[#68d8c5]" data-atlas-cluster-count>287</strong> labeled regions</span>
+          <span><strong class="text-[#f29bb2]" data-atlas-generated-at>Static export</strong></span>
+        </div>
+      </div>
+
+      <div class="mt-10 grid flex-1 gap-4 lg:grid-cols-[minmax(0,1fr)_350px]">
+        <section class="atlas-map-panel min-h-[520px] overflow-hidden border border-[#f2c46d]/20 bg-[#070707]/88 shadow-[0_20px_80px_rgba(0,0,0,0.42)] backdrop-blur" aria-label="Interactive movie map">
+          <div class="flex flex-col gap-3 border-b border-[#f2c46d]/15 bg-[#080807]/78 p-3 sm:flex-row sm:items-center sm:justify-between">
+            <form class="relative min-w-0 flex-1" data-atlas-search-form>
+              <label class="sr-only" for="film-atlas-search">Search by movie title</label>
+              <input
+                id="film-atlas-search"
+                class="h-11 w-full rounded-md border border-[#f2c46d]/20 bg-[#0d0b09]/90 px-4 pr-10 font-sans text-sm text-[#fff8ea] outline-none transition placeholder:text-[#d9c7a3]/45 focus:border-[#f2c46d]/55 focus:ring-2 focus:ring-[#f2c46d]/15"
+                data-atlas-search
+                autocomplete="off"
+                placeholder="Search by movie title"
+                type="search"
+              />
+              <div class="atlas-search-results" data-atlas-search-results hidden></div>
+            </form>
+
+            <div class="flex shrink-0 items-center justify-between gap-2">
+              <span class="rounded border border-[#68d8c5]/20 bg-[#071211]/80 px-3 py-2 font-mono text-[0.68rem] uppercase text-[#68d8c5]" data-atlas-label-tier>Macro clusters</span>
+              <div class="flex items-center gap-1">
+                <button class="atlas-icon-button" type="button" data-atlas-zoom-out aria-label="Zoom out">-</button>
+                <button class="atlas-icon-button" type="button" data-atlas-zoom-in aria-label="Zoom in">+</button>
+                <button class="atlas-reset-button" type="button" data-atlas-reset>Reset</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="atlas-stage relative h-[58vh] min-h-[430px] touch-none select-none overflow-hidden sm:h-[62vh]" data-atlas-stage>
+            <canvas class="absolute inset-0 h-full w-full touch-none cursor-grab" data-atlas-canvas aria-label="Every movie in The Film Atlas plotted by UMAP coordinates"></canvas>
+            <div class="atlas-tooltip" data-atlas-tooltip hidden></div>
+            <div class="pointer-events-none absolute inset-0 flex items-center justify-center bg-[#050505]/78 font-mono text-xs uppercase text-[#f2c46d]" data-atlas-status hidden>
+              Loading constellation
+            </div>
+          </div>
+        </section>
+
+        <aside class="atlas-detail-panel border border-[#f2c46d]/20 bg-[#090807]/92 p-5 shadow-[0_20px_80px_rgba(0,0,0,0.38)] backdrop-blur">
+          <p class="font-mono text-xs uppercase text-[#68d8c5]">Selected film</p>
+          <h2 class="mt-3 font-serif text-3xl leading-tight tracking-[0] text-[#fff8ea]" data-atlas-selected-title>
+            The Film Atlas
+          </h2>
+          <p class="mt-2 font-mono text-xs uppercase text-[#d9c7a3]/70" data-atlas-selected-meta>
+            2,000 films arranged by semantic distance
+          </p>
+          <div class="mt-5 flex flex-wrap gap-2" data-atlas-selected-genres></div>
+          <p class="mt-5 text-sm leading-7 text-[#d9c7a3]" data-atlas-selected-overview>
+            A static cinema topology built from public movie metadata, layered clustering, and UMAP projection.
+          </p>
+
+          <div class="mt-6 space-y-2" data-atlas-selected-labels></div>
+
+          <div class="mt-8 border-t border-[#f2c46d]/15 pt-6">
+            <h3 class="font-mono text-xs uppercase text-[#f2c46d]">Nearest neighbors</h3>
+            <div class="mt-3 space-y-2" data-atlas-neighbors></div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="relative border-b border-[#f2c46d]/12 bg-[#080706] px-4 py-16 sm:px-6 lg:px-8">
+    <div class="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.9fr_1.1fr]">
+      <div>
+        <p class="font-mono text-xs uppercase text-[#68d8c5]">Methodology</p>
+        <h2 class="mt-3 font-serif text-4xl leading-tight tracking-[0] text-[#fff8ea]">A map of movie meaning, not release metadata.</h2>
+      </div>
+      <div class="space-y-6 text-base leading-8 text-[#d9c7a3]">
+        <p>
+          Each dot is one movie from the static Film Atlas export. The page reads public JSON only: movie display metadata, UMAP x/y points, layered cluster labels, and nearest-neighbor lists.
+        </p>
+        <p>
+          The coordinates come from an offline projection of semantic movie profiles. Macro clusters name broad cinematic territories, neighborhoods describe medium-scale regions, and microclusters surface tight pockets of related films.
+        </p>
+        <p>
+          The public export manifest reports no API keys, embeddings, or raw reviews. The frontend does not call external APIs and does not ship the pipeline's intermediate artifacts.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-[#050505] px-4 py-10 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-7xl text-sm leading-7 text-[#d9c7a3]/82">
+      <p>
+        Movie metadata is sourced from TMDB. This product uses the TMDB API but is not endorsed or certified by TMDB.
+      </p>
+    </div>
+  </section>
+</div>
+
+<script>
+  import { initFilmAtlas } from "../../lib/film-atlas/map";
+
+  for (const root of document.querySelectorAll<HTMLElement>("[data-film-atlas-root]")) {
+    initFilmAtlas(root);
+  }
+</script>
+
+<style>
+  :global(body:has(.film-atlas-page)) {
+    --bg: 30 12% 3%;
+    --fg: 42 36% 93%;
+    --muted: 41 17% 66%;
+    --surface: 30 10% 6%;
+    --border: 36 28% 18%;
+    --accent: 38 82% 69%;
+    background: #050505;
+  }
+
+  :global(html:has(.film-atlas-page)) {
+    background: #050505;
+  }
+
+  .film-atlas-page {
+    font-feature-settings: "kern";
+  }
+
+  .atlas-page-field {
+    background:
+      linear-gradient(180deg, rgba(5, 5, 5, 0.18), rgba(5, 5, 5, 0.9)),
+      repeating-linear-gradient(90deg, rgba(242, 196, 109, 0.035) 0 1px, transparent 1px 96px),
+      repeating-linear-gradient(0deg, rgba(104, 216, 197, 0.026) 0 1px, transparent 1px 96px),
+      #050505;
+  }
+
+  .atlas-page-field::after {
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(125deg, rgba(242, 196, 109, 0.13), transparent 32%),
+      linear-gradient(238deg, rgba(104, 216, 197, 0.10), transparent 38%),
+      linear-gradient(18deg, rgba(242, 155, 178, 0.08), transparent 44%);
+    content: "";
+    opacity: 0.72;
+  }
+
+  .atlas-map-panel,
+  .atlas-detail-panel {
+    border-radius: 8px;
+  }
+
+  .atlas-stage::after {
+    position: absolute;
+    inset: 0;
+    border: 1px solid rgba(242, 196, 109, 0.08);
+    box-shadow: inset 0 0 80px rgba(0, 0, 0, 0.64);
+    content: "";
+    pointer-events: none;
+  }
+
+  :global([data-atlas-status][hidden]) {
+    display: none !important;
+  }
+
+  .atlas-icon-button,
+  .atlas-reset-button {
+    align-items: center;
+    background: rgba(13, 11, 9, 0.9);
+    border: 1px solid rgba(242, 196, 109, 0.2);
+    border-radius: 6px;
+    color: #fff8ea;
+    display: inline-flex;
+    font-family: Inter, ui-sans-serif, system-ui;
+    height: 2.25rem;
+    justify-content: center;
+    transition: border-color 160ms ease, background 160ms ease, color 160ms ease;
+  }
+
+  .atlas-icon-button {
+    font-size: 1.05rem;
+    width: 2.25rem;
+  }
+
+  .atlas-reset-button {
+    font-size: 0.78rem;
+    padding: 0 0.72rem;
+  }
+
+  .atlas-icon-button:hover,
+  .atlas-reset-button:hover {
+    background: rgba(242, 196, 109, 0.1);
+    border-color: rgba(242, 196, 109, 0.48);
+    color: #f2c46d;
+  }
+
+  :global(.atlas-tooltip) {
+    background: rgba(7, 7, 7, 0.92);
+    border: 1px solid rgba(242, 196, 109, 0.28);
+    border-radius: 6px;
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.44);
+    color: #fff8ea;
+    left: 0;
+    max-width: min(280px, calc(100% - 20px));
+    padding: 0.7rem 0.82rem;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+  }
+
+  :global(.atlas-tooltip-title) {
+    font-family: "Source Serif 4", ui-serif, Georgia, serif;
+    font-size: 1rem;
+    line-height: 1.15;
+  }
+
+  :global(.atlas-tooltip-meta) {
+    color: rgba(217, 199, 163, 0.78);
+    font-family: Inter, ui-sans-serif, system-ui;
+    font-size: 0.73rem;
+    line-height: 1.35;
+    margin-top: 0.28rem;
+  }
+
+  .atlas-search-results {
+    background: rgba(7, 7, 7, 0.98);
+    border: 1px solid rgba(242, 196, 109, 0.22);
+    border-radius: 6px;
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.42);
+    left: 0;
+    max-height: 22rem;
+    overflow: auto;
+    padding: 0.35rem;
+    position: absolute;
+    right: 0;
+    top: calc(100% + 0.45rem);
+    z-index: 20;
+  }
+
+  :global(.atlas-search-result),
+  :global(.atlas-neighbor-button) {
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: #fff8ea;
+    display: grid;
+    gap: 0.16rem;
+    padding: 0.65rem 0.7rem;
+    text-align: left;
+    transition: background 160ms ease, border-color 160ms ease;
+    width: 100%;
+  }
+
+  :global(.atlas-search-result:hover),
+  :global(.atlas-neighbor-button:hover) {
+    background: rgba(242, 196, 109, 0.08);
+    border-color: rgba(242, 196, 109, 0.18);
+  }
+
+  :global(.atlas-search-title),
+  :global(.atlas-neighbor-title) {
+    font-family: "Source Serif 4", ui-serif, Georgia, serif;
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+
+  :global(.atlas-search-meta),
+  :global(.atlas-neighbor-score),
+  :global(.atlas-search-empty) {
+    color: rgba(217, 199, 163, 0.7);
+    font-family: Inter, ui-sans-serif, system-ui;
+    font-size: 0.73rem;
+    line-height: 1.3;
+  }
+
+  :global(.atlas-search-empty) {
+    padding: 0.75rem;
+  }
+
+  :global(.atlas-neighbor-button) {
+    align-items: center;
+    grid-template-columns: 1fr auto;
+  }
+
+  :global(.atlas-label-pill) {
+    align-items: flex-start;
+    background: rgba(255, 248, 234, 0.035);
+    border: 1px solid rgba(242, 196, 109, 0.14);
+    border-radius: 6px;
+    color: #f7ead2;
+    display: grid;
+    gap: 0.2rem;
+    padding: 0.62rem 0.72rem;
+  }
+
+  :global(.atlas-label-disclosure) {
+    background: rgba(255, 248, 234, 0.035);
+    border: 1px solid rgba(242, 196, 109, 0.14);
+    border-radius: 6px;
+    color: #f7ead2;
+    overflow: hidden;
+  }
+
+  :global(.atlas-label-disclosure[open]) {
+    border-color: rgba(104, 216, 197, 0.28);
+    background: rgba(104, 216, 197, 0.045);
+  }
+
+  :global(.atlas-label-summary) {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    gap: 0.75rem;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0.62rem 0.72rem;
+  }
+
+  :global(.atlas-label-summary::-webkit-details-marker) {
+    display: none;
+  }
+
+  :global(.atlas-label-summary-text) {
+    display: grid;
+    gap: 0.2rem;
+    min-width: 0;
+  }
+
+  :global(.atlas-label-value) {
+    color: #f7ead2;
+    line-height: 1.25;
+  }
+
+  :global(.atlas-label-count) {
+    color: rgba(217, 199, 163, 0.66);
+    font-family: Inter, ui-sans-serif, system-ui;
+    font-size: 0.72rem;
+    line-height: 1.2;
+  }
+
+  :global(.atlas-label-chevron) {
+    color: rgba(104, 216, 197, 0.82);
+    flex: 0 0 auto;
+    font-size: 1rem;
+    line-height: 1;
+    transition: transform 160ms ease;
+  }
+
+  :global(.atlas-label-disclosure[open] .atlas-label-chevron) {
+    transform: rotate(180deg);
+  }
+
+  :global(.atlas-label-key) {
+    color: #68d8c5;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 0.64rem;
+    text-transform: uppercase;
+  }
+
+  :global(.atlas-cluster-members) {
+    border-top: 1px solid rgba(242, 196, 109, 0.12);
+    display: grid;
+    max-height: 18rem;
+    overflow: auto;
+    padding: 0.35rem;
+  }
+
+  :global(.atlas-cluster-member) {
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: #fff8ea;
+    display: grid;
+    gap: 0.14rem;
+    padding: 0.5rem 0.55rem;
+    text-align: left;
+    transition: background 160ms ease, border-color 160ms ease;
+    width: 100%;
+  }
+
+  :global(.atlas-cluster-member:hover),
+  :global(.atlas-cluster-member[aria-current="true"]) {
+    background: rgba(242, 196, 109, 0.08);
+    border-color: rgba(242, 196, 109, 0.18);
+  }
+
+  :global(.atlas-cluster-member-title) {
+    font-size: 0.86rem;
+    line-height: 1.2;
+  }
+
+  :global(.atlas-cluster-member-meta) {
+    color: rgba(217, 199, 163, 0.64);
+    font-size: 0.68rem;
+    line-height: 1.25;
+  }
+
+  :global(.atlas-genre-pill) {
+    border: 1px solid rgba(104, 216, 197, 0.22);
+    border-radius: 4px;
+    color: #9ee7dc;
+    font-size: 0.72rem;
+    padding: 0.16rem 0.42rem;
+  }
+
+  @media (max-width: 1023px) {
+    .atlas-detail-panel {
+      min-height: 22rem;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .film-atlas-page {
+      margin-top: -3rem;
+    }
+
+    .atlas-page-field::after {
+      opacity: 0.48;
+    }
+  }
+</style>
