@@ -35,22 +35,37 @@
   "projection_method": "umap",
   "territory_layouts": {
     "file": "territory_layouts.json",
-    "variant_count": 3,
+    "variant_count": 6,
     "variants": [
       {
-        "description": "Maximizes visible hierarchy: movies pack into microclusters, microclusters pack into neighborhoods, and neighborhoods pack into macro territories.",
-        "id": "strict_pack",
-        "label": "Strict Packed Atlas"
+        "description": "Experimental GMap-inspired layer: films keep graph-driven semantic positions, then movie-level Voronoi cells are colored by macro, neighborhood, and micro membership so map borders emerge from the underlying film positions.",
+        "id": "semantic_gmap_cells",
+        "label": "GMap Cells - Semantic"
       },
       {
-        "description": "Keeps the hierarchy nested while anchoring continents and subregions toward their original UMAP semantic directions.",
-        "id": "semantic_territories",
-        "label": "Semantic Territory Atlas"
+        "description": "Graph-driven map geometry: semantic neighbor links pull related macro, neighborhood, and micro territories together before borders are drawn.",
+        "id": "semantic_graph_balanced",
+        "label": "Semantic Graph - Balanced"
       },
       {
-        "description": "Uses readable macro territories, semantically nudged neighborhoods, and tighter local islands for microcluster-level browsing.",
-        "id": "hybrid_micro_islands",
-        "label": "Hybrid Micro-Islands"
+        "description": "A denser graph layout for comparing how much compactness the semantic geography can tolerate before adjacency starts to distort.",
+        "id": "semantic_graph_compact",
+        "label": "Semantic Graph - Compact"
+      },
+      {
+        "description": "A looser graph layout that spends screen space to preserve semantic neighbor relationships and make questionable borders easier to audit.",
+        "id": "semantic_graph_spacious",
+        "label": "Semantic Graph - Spacious"
+      },
+      {
+        "description": "A graph layout with a stronger pull toward the original projection, useful when you want semantic adjacency without losing the old atlas orientation.",
+        "id": "semantic_umap_anchored",
+        "label": "Semantic Graph - UMAP Anchored"
+      },
+      {
+        "description": "The previous centroid-and-packing layout kept for comparison; useful as a control when auditing whether graph physics improves map geography.",
+        "id": "legacy_packed_baseline",
+        "label": "Legacy Packed Baseline"
       }
     ]
   }

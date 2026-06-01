@@ -6,33 +6,42 @@ interface Props {
 const { dataBase } = Astro.props;
 ---
 
-<div class="film-atlas-page relative left-1/2 w-screen -translate-x-1/2 -mt-12 -mb-20 overflow-hidden bg-[#050505] text-[#f7ead2] sm:-mt-16" data-film-atlas-root data-data-base={dataBase}>
-  <section class="relative min-h-[calc(100vh-3.5rem)] overflow-hidden border-b border-[#f2c46d]/15">
+<div class="film-atlas-page relative left-1/2 w-screen -translate-x-1/2 overflow-hidden bg-[#050505] text-[#f7ead2]" data-film-atlas-root data-data-base={dataBase}>
+  <section class="atlas-shell relative overflow-hidden border-b border-[#f2c46d]/15">
     <div class="atlas-page-field absolute inset-0"></div>
-    <div class="relative mx-auto flex min-h-[calc(100vh-3.5rem)] max-w-7xl flex-col px-4 pb-8 pt-14 sm:px-6 sm:pt-20 lg:px-8">
-      <div class="max-w-4xl">
-        <p class="font-mono text-xs uppercase text-[#68d8c5]">Static cinema topology</p>
-        <h1 class="mt-5 font-serif text-5xl font-semibold leading-[0.96] tracking-[0] text-[#fff8ea] sm:text-7xl">
-          The Film Atlas
-        </h1>
-        <p class="mt-6 max-w-2xl text-lg leading-8 text-[#d9c7a3] sm:text-xl">
-          Mapping cinema's hidden genres as a navigable constellation of films, neighborhoods, and uncanny near-neighbors.
-        </p>
-        <div class="mt-7 flex flex-wrap gap-x-6 gap-y-3 font-mono text-xs uppercase text-[#d9c7a3]/80">
-          <span><strong class="text-[#f2c46d]" data-atlas-movie-count>10,000</strong> films</span>
-          <span><strong class="text-[#68d8c5]" data-atlas-cluster-count>946</strong> labeled regions</span>
-          <span><strong class="text-[#f29bb2]" data-atlas-generated-at>Static export</strong></span>
+    <div class="atlas-app-frame relative mx-auto flex max-w-[1540px] flex-col">
+      <header class="atlas-masthead">
+        <div class="atlas-title-block">
+          <p class="atlas-eyebrow">Static cinema topology</p>
+          <h1>The Film Atlas</h1>
+          <p class="atlas-dek">
+            A navigable map of cinema's hidden genres, built from semantic movie profiles and nearest-neighbor evidence.
+          </p>
         </div>
-      </div>
+        <dl class="atlas-stat-grid">
+          <div>
+            <dt>Films</dt>
+            <dd data-atlas-movie-count>10,000</dd>
+          </div>
+          <div>
+            <dt>Regions</dt>
+            <dd data-atlas-cluster-count>946</dd>
+          </div>
+          <div>
+            <dt>Export</dt>
+            <dd data-atlas-generated-at>Static</dd>
+          </div>
+        </dl>
+      </header>
 
-      <div class="mt-10 grid flex-1 gap-4 lg:grid-cols-[minmax(0,1fr)_350px]">
-        <section class="atlas-map-panel min-h-[520px] overflow-hidden border border-[#f2c46d]/20 bg-[#070707]/88 shadow-[0_20px_80px_rgba(0,0,0,0.42)] backdrop-blur" aria-label="Interactive movie map">
-          <div class="flex flex-col gap-3 border-b border-[#f2c46d]/15 bg-[#080807]/78 p-3 xl:flex-row xl:items-center xl:justify-between">
-            <form class="relative min-w-0 flex-1" data-atlas-search-form>
+      <div class="atlas-workspace">
+        <section class="atlas-map-panel" aria-label="Interactive movie map">
+          <div class="atlas-toolbar">
+            <form class="atlas-search-form" data-atlas-search-form>
               <label class="sr-only" for="film-atlas-search">Search by movie title</label>
               <input
                 id="film-atlas-search"
-                class="h-11 w-full rounded-md border border-[#f2c46d]/20 bg-[#0d0b09]/90 px-4 pr-10 font-sans text-sm text-[#fff8ea] outline-none transition placeholder:text-[#d9c7a3]/45 focus:border-[#f2c46d]/55 focus:ring-2 focus:ring-[#f2c46d]/15"
+                class="atlas-search-input"
                 data-atlas-search
                 autocomplete="off"
                 placeholder="Search by movie title"
@@ -41,75 +50,97 @@ const { dataBase } = Astro.props;
               <div class="atlas-search-results" data-atlas-search-results hidden></div>
             </form>
 
-            <div class="flex shrink-0 flex-col gap-2 sm:min-w-[380px]">
-              <div class="flex items-center justify-between gap-2">
-                <label class="sr-only" for="film-atlas-layout">Map layout</label>
-                <select
-                  id="film-atlas-layout"
-                  class="atlas-layout-select"
-                  data-atlas-layout-select
-                  aria-label="Map layout"
-                >
-                  <option value="projection">Projection</option>
-                </select>
-                <span class="rounded border border-[#68d8c5]/20 bg-[#071211]/80 px-3 py-2 font-mono text-[0.68rem] uppercase text-[#68d8c5]" data-atlas-label-tier>Macro clusters</span>
-                <div class="flex items-center gap-1">
-                  <button class="atlas-icon-button" type="button" data-atlas-zoom-out aria-label="Zoom out">-</button>
-                  <button class="atlas-icon-button" type="button" data-atlas-zoom-in aria-label="Zoom in">+</button>
-                  <button class="atlas-reset-button" type="button" data-atlas-reset>Reset</button>
-                </div>
+            <div class="atlas-control-rack">
+              <select
+                id="film-atlas-layout"
+                class="atlas-layout-select"
+                data-atlas-layout-select
+                aria-label="Map layout"
+              >
+                <option value="semantic_graph_balanced">Semantic Graph - Balanced</option>
+              </select>
+              <select
+                id="film-atlas-render"
+                class="atlas-layout-select"
+                data-atlas-render-select
+                aria-label="Render model"
+              >
+                <option value="gmap">GMap cells</option>
+                <option value="territory">Territory map - clean</option>
+                <option value="organic">Organic territory</option>
+                <option value="coastal">Coastal territory</option>
+                <option value="dense_coast">Dense coast</option>
+                <option value="biological">Biological cells</option>
+              </select>
+              <select
+                id="film-atlas-color"
+                class="atlas-layout-select"
+                data-atlas-color-select
+                aria-label="Color mode"
+              >
+                <option value="macro">Macro colors</option>
+                <option value="neighborhood">Neighborhood shades</option>
+              </select>
+              <span class="atlas-tier-pill" data-atlas-label-tier>Macro clusters</span>
+              <div class="atlas-zoom-controls">
+                <button class="atlas-icon-button" type="button" data-atlas-zoom-out aria-label="Zoom out">-</button>
+                <button class="atlas-icon-button" type="button" data-atlas-zoom-in aria-label="Zoom in">+</button>
+                <button class="atlas-reset-button" type="button" data-atlas-reset>Reset</button>
               </div>
-              <p class="atlas-layout-description" data-atlas-layout-description>
-                Original 2D semantic projection.
-              </p>
             </div>
           </div>
 
-          <div class="atlas-stage relative h-[58vh] min-h-[430px] touch-none select-none overflow-hidden sm:h-[62vh]" data-atlas-stage>
-            <canvas class="absolute inset-0 h-full w-full touch-none cursor-grab" data-atlas-canvas aria-label="Every movie in The Film Atlas plotted by UMAP coordinates"></canvas>
+          <p class="atlas-layout-description" data-atlas-layout-description>
+            Nested semantic territories with compact spacing.
+          </p>
+
+          <div class="atlas-stage" data-atlas-stage>
+            <canvas class="absolute inset-0 h-full w-full touch-none cursor-grab" data-atlas-canvas aria-label="Interactive semantic territory map of 10,000 films"></canvas>
             <div class="atlas-tooltip" data-atlas-tooltip hidden></div>
-            <div class="pointer-events-none absolute inset-0 flex items-center justify-center bg-[#050505]/78 font-mono text-xs uppercase text-[#f2c46d]" data-atlas-status hidden>
+            <div class="atlas-loading" data-atlas-status hidden>
               Loading constellation
             </div>
           </div>
         </section>
 
-        <aside class="atlas-detail-panel border border-[#f2c46d]/20 bg-[#090807]/92 p-5 shadow-[0_20px_80px_rgba(0,0,0,0.38)] backdrop-blur">
-          <p class="font-mono text-xs uppercase text-[#68d8c5]">Selected film</p>
-          <h2 class="mt-3 font-serif text-3xl leading-tight tracking-[0] text-[#fff8ea]" data-atlas-selected-title>
-            The Film Atlas
-          </h2>
-          <p class="mt-2 font-mono text-xs uppercase text-[#d9c7a3]/70" data-atlas-selected-meta>
-            10,000 films arranged by semantic distance
-          </p>
-          <div class="mt-5 flex flex-wrap gap-2" data-atlas-selected-genres></div>
-          <p class="mt-5 text-sm leading-7 text-[#d9c7a3]" data-atlas-selected-overview>
-            A static cinema topology built from public movie metadata, layered clustering, and UMAP projection.
-          </p>
+        <aside class="atlas-detail-panel">
+          <div class="atlas-detail-scroll">
+            <p class="atlas-panel-eyebrow">Selected film</p>
+            <h2 data-atlas-selected-title>
+              The Film Atlas
+            </h2>
+            <p class="atlas-selected-meta" data-atlas-selected-meta>
+              10,000 films arranged by semantic distance
+            </p>
+            <div class="atlas-genre-row" data-atlas-selected-genres></div>
+            <p class="atlas-selected-overview" data-atlas-selected-overview>
+              A static cinema topology built from public movie metadata, layered clustering, and semantic territory layout.
+            </p>
 
-          <div class="mt-6 space-y-2" data-atlas-selected-labels></div>
+            <div class="atlas-selected-labels" data-atlas-selected-labels></div>
 
-          <div class="mt-8 border-t border-[#f2c46d]/15 pt-6">
-            <h3 class="font-mono text-xs uppercase text-[#f2c46d]">Nearest neighbors</h3>
-            <div class="mt-3 space-y-2" data-atlas-neighbors></div>
+            <div class="atlas-neighbor-section" data-atlas-neighbor-section hidden>
+              <h3>Nearest neighbors</h3>
+              <div class="atlas-neighbor-list" data-atlas-neighbors></div>
+            </div>
           </div>
         </aside>
       </div>
     </div>
   </section>
 
-  <section class="relative border-b border-[#f2c46d]/12 bg-[#080706] px-4 py-16 sm:px-6 lg:px-8">
-    <div class="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.9fr_1.1fr]">
-      <div>
-        <p class="font-mono text-xs uppercase text-[#68d8c5]">Methodology</p>
-        <h2 class="mt-3 font-serif text-4xl leading-tight tracking-[0] text-[#fff8ea]">A map of movie meaning, not release metadata.</h2>
+  <section class="atlas-method-section">
+    <div class="atlas-method-grid">
+      <div class="atlas-method-heading">
+        <p class="atlas-eyebrow">Methodology</p>
+        <h2>A map of movie meaning, not release metadata.</h2>
       </div>
-      <div class="space-y-6 text-base leading-8 text-[#d9c7a3]">
+      <div class="atlas-method-copy">
         <p>
           Each dot is one movie from the static Film Atlas export. The page reads public JSON only: movie display metadata, UMAP x/y points, layered cluster labels, and nearest-neighbor lists.
         </p>
         <p>
-          The coordinates come from an offline projection of semantic movie profiles. Macro clusters name broad cinematic territories, neighborhoods describe medium-scale regions, and microclusters surface tight pockets of related films.
+          The map uses an offline semantic projection as evidence, then nests films into macro territories, neighborhoods, and microclusters so the interface behaves more like a readable atlas than a raw scatterplot.
         </p>
         <p>
           The public export manifest reports no API keys, embeddings, or raw reviews. The frontend does not call external APIs and does not ship the pipeline's intermediate artifacts.
@@ -118,8 +149,8 @@ const { dataBase } = Astro.props;
     </div>
   </section>
 
-  <section class="bg-[#050505] px-4 py-10 sm:px-6 lg:px-8">
-    <div class="mx-auto max-w-7xl text-sm leading-7 text-[#d9c7a3]/82">
+  <section class="atlas-credit-section">
+    <div>
       <p>
         Movie metadata is sourced from TMDB. This product uses the TMDB API but is not endorsed or certified by TMDB.
       </p>
@@ -154,11 +185,17 @@ const { dataBase } = Astro.props;
     font-feature-settings: "kern";
   }
 
+  .atlas-shell {
+    min-height: calc(100vh - 3.5rem);
+  }
+
   .atlas-page-field {
     background:
-      linear-gradient(180deg, rgba(5, 5, 5, 0.18), rgba(5, 5, 5, 0.9)),
-      repeating-linear-gradient(90deg, rgba(242, 196, 109, 0.035) 0 1px, transparent 1px 96px),
-      repeating-linear-gradient(0deg, rgba(104, 216, 197, 0.026) 0 1px, transparent 1px 96px),
+      linear-gradient(180deg, rgba(5, 5, 5, 0.10), rgba(5, 5, 5, 0.88)),
+      linear-gradient(110deg, rgba(104, 216, 197, 0.10), transparent 36%),
+      linear-gradient(250deg, rgba(242, 196, 109, 0.11), transparent 42%),
+      repeating-linear-gradient(90deg, rgba(242, 196, 109, 0.028) 0 1px, transparent 1px 112px),
+      repeating-linear-gradient(0deg, rgba(104, 216, 197, 0.020) 0 1px, transparent 1px 112px),
       #050505;
   }
 
@@ -166,16 +203,188 @@ const { dataBase } = Astro.props;
     position: absolute;
     inset: 0;
     background:
-      linear-gradient(125deg, rgba(242, 196, 109, 0.13), transparent 32%),
-      linear-gradient(238deg, rgba(104, 216, 197, 0.10), transparent 38%),
-      linear-gradient(18deg, rgba(242, 155, 178, 0.08), transparent 44%);
+      linear-gradient(125deg, rgba(242, 196, 109, 0.10), transparent 32%),
+      linear-gradient(238deg, rgba(104, 216, 197, 0.09), transparent 38%),
+      linear-gradient(180deg, transparent, rgba(5, 5, 5, 0.64));
     content: "";
-    opacity: 0.72;
+    opacity: 0.78;
+  }
+
+  .atlas-app-frame {
+    min-height: calc(100vh - 3.5rem);
+    padding: clamp(1.1rem, 2vw, 2rem);
+  }
+
+  .atlas-masthead {
+    align-items: end;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: minmax(0, 1fr) minmax(18rem, 0.52fr);
+    margin-bottom: 1rem;
+  }
+
+  .atlas-title-block {
+    max-width: 58rem;
+  }
+
+  .atlas-eyebrow,
+  .atlas-panel-eyebrow,
+  .atlas-stat-grid dt,
+  .atlas-neighbor-section h3 {
+    color: #68d8c5;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  .atlas-title-block h1 {
+    color: #fff8ea;
+    font-family: "Source Serif 4", ui-serif, Georgia, serif;
+    font-size: 4.65rem;
+    font-weight: 600;
+    line-height: 0.92;
+    margin: 0.42rem 0 0;
+  }
+
+  .atlas-dek {
+    color: rgba(217, 199, 163, 0.86);
+    font-size: 1.08rem;
+    line-height: 1.55;
+    margin: 0.78rem 0 0;
+    max-width: 46rem;
+  }
+
+  .atlas-stat-grid {
+    display: grid;
+    gap: 0.55rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin: 0;
+  }
+
+  .atlas-stat-grid div {
+    background: rgba(5, 5, 5, 0.42);
+    border: 1px solid rgba(242, 196, 109, 0.16);
+    border-radius: 8px;
+    padding: 0.76rem 0.85rem;
+  }
+
+  .atlas-stat-grid dd {
+    color: #fff8ea;
+    font-family: "Source Serif 4", ui-serif, Georgia, serif;
+    font-size: 1.28rem;
+    line-height: 1.1;
+    margin: 0.18rem 0 0;
+    white-space: nowrap;
+  }
+
+  .atlas-workspace {
+    display: grid;
+    flex: 1;
+    gap: 1rem;
+    grid-template-columns: minmax(0, 1fr) minmax(330px, 0.34fr);
+    min-height: 0;
   }
 
   .atlas-map-panel,
   .atlas-detail-panel {
+    background: rgba(7, 7, 6, 0.88);
+    border: 1px solid rgba(242, 196, 109, 0.18);
     border-radius: 8px;
+    box-shadow: 0 24px 90px rgba(0, 0, 0, 0.42);
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .atlas-map-panel {
+    display: grid;
+    grid-template-rows: auto auto minmax(28rem, 1fr);
+  }
+
+  .atlas-toolbar {
+    align-items: center;
+    background: rgba(8, 8, 7, 0.84);
+    border-bottom: 1px solid rgba(242, 196, 109, 0.12);
+    display: grid;
+    gap: 0.72rem;
+    grid-template-columns: minmax(18rem, 1fr) minmax(28rem, 0.94fr);
+    padding: 0.72rem;
+  }
+
+  .atlas-search-form {
+    min-width: 0;
+    position: relative;
+  }
+
+  .atlas-search-input {
+    background: rgba(13, 11, 9, 0.92);
+    border: 1px solid rgba(242, 196, 109, 0.22);
+    border-radius: 6px;
+    color: #fff8ea;
+    font-family: Inter, ui-sans-serif, system-ui;
+    font-size: 0.9rem;
+    height: 2.7rem;
+    outline: none;
+    padding: 0 0.95rem;
+    transition: border-color 160ms ease, box-shadow 160ms ease, background 160ms ease;
+    width: 100%;
+  }
+
+  .atlas-search-input::placeholder {
+    color: rgba(217, 199, 163, 0.48);
+  }
+
+  .atlas-search-input:focus {
+    background: rgba(16, 13, 11, 0.98);
+    border-color: rgba(242, 196, 109, 0.58);
+    box-shadow: 0 0 0 3px rgba(242, 196, 109, 0.10);
+  }
+
+  .atlas-control-rack {
+    align-items: center;
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: minmax(0, 1.12fr) minmax(0, 1fr) minmax(0, 1fr) auto auto;
+    min-width: 0;
+  }
+
+  .atlas-tier-pill {
+    background: rgba(7, 18, 17, 0.88);
+    border: 1px solid rgba(104, 216, 197, 0.24);
+    border-radius: 6px;
+    color: #8ee6d9;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 0.66rem;
+    line-height: 1;
+    padding: 0.76rem 0.78rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .atlas-zoom-controls {
+    display: inline-flex;
+    gap: 0.32rem;
+  }
+
+  .atlas-layout-description {
+    background: rgba(8, 8, 7, 0.72);
+    border-bottom: 1px solid rgba(242, 196, 109, 0.10);
+    color: rgba(217, 199, 163, 0.72);
+    font-family: Inter, ui-sans-serif, system-ui;
+    font-size: 0.74rem;
+    line-height: 1.4;
+    min-height: 2.55rem;
+    padding: 0.62rem 0.86rem;
+  }
+
+  .atlas-stage {
+    background: #030303;
+    min-height: clamp(31rem, calc(100vh - 17.5rem), 48rem);
+    overflow: hidden;
+    position: relative;
+    touch-action: none;
+    user-select: none;
   }
 
   .atlas-stage::after {
@@ -189,6 +398,86 @@ const { dataBase } = Astro.props;
 
   :global([data-atlas-status][hidden]) {
     display: none !important;
+  }
+
+  .atlas-loading {
+    align-items: center;
+    background: rgba(5, 5, 5, 0.78);
+    color: #f2c46d;
+    display: flex;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 0.72rem;
+    inset: 0;
+    justify-content: center;
+    pointer-events: none;
+    position: absolute;
+    text-transform: uppercase;
+  }
+
+  .atlas-detail-panel {
+    align-self: stretch;
+  }
+
+  .atlas-detail-scroll {
+    max-height: calc(100vh - 8.2rem);
+    overflow: auto;
+    padding: 1.25rem;
+  }
+
+  .atlas-detail-panel h2 {
+    color: #fff8ea;
+    font-family: "Source Serif 4", ui-serif, Georgia, serif;
+    font-size: 2.55rem;
+    font-weight: 600;
+    line-height: 1.02;
+    margin: 0.62rem 0 0;
+    overflow-wrap: anywhere;
+  }
+
+  .atlas-selected-meta {
+    color: rgba(217, 199, 163, 0.72);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 0.74rem;
+    line-height: 1.45;
+    margin: 0.56rem 0 0;
+    text-transform: uppercase;
+  }
+
+  .atlas-genre-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.42rem;
+    margin-top: 1.15rem;
+  }
+
+  .atlas-selected-overview {
+    color: #d9c7a3;
+    font-size: 0.94rem;
+    line-height: 1.75;
+    margin: 1.2rem 0 0;
+  }
+
+  .atlas-selected-labels {
+    display: grid;
+    gap: 0.55rem;
+    margin-top: 1.25rem;
+  }
+
+  .atlas-neighbor-section {
+    border-top: 1px solid rgba(242, 196, 109, 0.14);
+    margin-top: 1.7rem;
+    padding-top: 1.25rem;
+  }
+
+  .atlas-neighbor-section h3 {
+    color: #f2c46d;
+    margin: 0;
+  }
+
+  .atlas-neighbor-list {
+    display: grid;
+    gap: 0.5rem;
+    margin-top: 0.72rem;
   }
 
   .atlas-icon-button,
@@ -224,26 +513,18 @@ const { dataBase } = Astro.props;
     border: 1px solid rgba(104, 216, 197, 0.24);
     border-radius: 6px;
     color: #e9fff8;
-    flex: 1 1 auto;
     font-family: Inter, ui-sans-serif, system-ui;
     font-size: 0.76rem;
-    height: 2.25rem;
-    min-width: 10rem;
+    height: 2.36rem;
+    min-width: 0;
     outline: none;
     padding: 0 1.6rem 0 0.72rem;
+    width: 100%;
   }
 
   .atlas-layout-select:focus {
     border-color: rgba(104, 216, 197, 0.56);
     box-shadow: 0 0 0 2px rgba(104, 216, 197, 0.14);
-  }
-
-  .atlas-layout-description {
-    color: rgba(217, 199, 163, 0.72);
-    font-family: Inter, ui-sans-serif, system-ui;
-    font-size: 0.72rem;
-    line-height: 1.35;
-    min-height: 1rem;
   }
 
   .atlas-icon-button:hover,
@@ -400,15 +681,18 @@ const { dataBase } = Astro.props;
   }
 
   :global(.atlas-label-chevron) {
-    color: rgba(104, 216, 197, 0.82);
+    border-bottom: 2px solid rgba(104, 216, 197, 0.82);
+    border-right: 2px solid rgba(104, 216, 197, 0.82);
     flex: 0 0 auto;
-    font-size: 1rem;
-    line-height: 1;
-    transition: transform 160ms ease;
+    height: 0.46rem;
+    transform: rotate(45deg);
+    transition: transform 160ms ease, border-color 160ms ease;
+    width: 0.46rem;
   }
 
   :global(.atlas-label-disclosure[open] .atlas-label-chevron) {
-    transform: rotate(180deg);
+    border-color: rgba(242, 196, 109, 0.88);
+    transform: rotate(225deg);
   }
 
   :global(.atlas-label-key) {
@@ -464,15 +748,152 @@ const { dataBase } = Astro.props;
     padding: 0.16rem 0.42rem;
   }
 
+  .atlas-method-section {
+    background: linear-gradient(180deg, #080706, #050505);
+    border-bottom: 1px solid rgba(242, 196, 109, 0.12);
+    padding: clamp(3rem, 6vw, 5.5rem) clamp(1rem, 3vw, 2rem);
+  }
+
+  .atlas-method-grid {
+    display: grid;
+    gap: clamp(2rem, 4vw, 4rem);
+    grid-template-columns: minmax(18rem, 0.78fr) minmax(0, 1fr);
+    margin: 0 auto;
+    max-width: 82rem;
+  }
+
+  .atlas-method-heading h2 {
+    color: #fff8ea;
+    font-family: "Source Serif 4", ui-serif, Georgia, serif;
+    font-size: 3.4rem;
+    line-height: 1;
+    margin: 0.7rem 0 0;
+  }
+
+  .atlas-method-copy {
+    color: rgba(217, 199, 163, 0.86);
+    display: grid;
+    font-size: 1rem;
+    gap: 1.1rem;
+    line-height: 1.85;
+  }
+
+  .atlas-method-copy p {
+    margin: 0;
+  }
+
+  .atlas-credit-section {
+    background: #050505;
+    color: rgba(217, 199, 163, 0.78);
+    font-size: 0.86rem;
+    line-height: 1.7;
+    padding: 1.8rem clamp(1rem, 3vw, 2rem);
+  }
+
+  .atlas-credit-section div {
+    margin: 0 auto;
+    max-width: 82rem;
+  }
+
+  .atlas-credit-section p {
+    margin: 0;
+  }
+
+  @media (min-width: 1024px) {
+    .atlas-detail-panel {
+      position: sticky;
+      top: 1rem;
+    }
+  }
+
+  @media (max-width: 1180px) {
+    .atlas-title-block h1 {
+      font-size: 3.85rem;
+    }
+
+    .atlas-detail-panel h2 {
+      font-size: 2.35rem;
+    }
+
+    .atlas-masthead {
+      grid-template-columns: 1fr;
+    }
+
+    .atlas-stat-grid {
+      max-width: 42rem;
+    }
+
+    .atlas-toolbar {
+      grid-template-columns: 1fr;
+    }
+
+    .atlas-control-rack {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
   @media (max-width: 1023px) {
+    .atlas-workspace,
+    .atlas-method-grid {
+      grid-template-columns: 1fr;
+    }
+
     .atlas-detail-panel {
       min-height: 22rem;
+    }
+
+    .atlas-detail-scroll {
+      max-height: none;
     }
   }
 
   @media (max-width: 640px) {
-    .film-atlas-page {
-      margin-top: -3rem;
+    .atlas-app-frame {
+      padding: 0.85rem;
+    }
+
+    .atlas-title-block h1 {
+      font-size: 3rem;
+    }
+
+    .atlas-dek {
+      font-size: 0.98rem;
+    }
+
+    .atlas-detail-panel h2 {
+      font-size: 2.1rem;
+    }
+
+    .atlas-method-heading h2 {
+      font-size: 2.45rem;
+    }
+
+    .atlas-masthead {
+      margin-bottom: 0.75rem;
+    }
+
+    .atlas-stat-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .atlas-toolbar {
+      padding: 0.58rem;
+    }
+
+    .atlas-control-rack {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .atlas-tier-pill {
+      text-align: center;
+    }
+
+    .atlas-zoom-controls {
+      justify-content: end;
+    }
+
+    .atlas-stage {
+      min-height: 28rem;
     }
 
     .atlas-page-field::after {

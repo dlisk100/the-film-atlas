@@ -44,16 +44,20 @@ def test_build_territory_layouts_preserves_nested_public_export(tmp_path: Path) 
 
     result = build_territory_layouts_file(export_dir=export_dir)
 
-    assert result.variant_count == 3
+    assert result.variant_count == 6
     payload = json.loads(result.layout_path.read_text(encoding="utf-8"))
     assert {variant["id"] for variant in payload["variants"]} == {
-        "strict_pack",
-        "semantic_territories",
-        "hybrid_micro_islands",
+        "legacy_packed_baseline",
+        "semantic_gmap_cells",
+        "semantic_graph_balanced",
+        "semantic_graph_compact",
+        "semantic_graph_spacious",
+        "semantic_umap_anchored",
     }
 
     for variant in payload["variants"]:
         assert {point["tmdb_id"] for point in variant["points"]} == {1, 2, 3, 4, 5, 6}
+        assert "macro_weighted_neighbor_distance" in variant["metrics"]
         regions = {
             (region["layer"], region["cluster_id"]): region
             for region in variant["regions"]
@@ -72,6 +76,13 @@ def test_build_territory_layouts_preserves_nested_public_export(tmp_path: Path) 
             distance = math.hypot(point["x"] - micro["x"], point["y"] - micro["y"])
             assert distance <= micro["radius"] + 1e-5
 
+    gmap_variant = next(variant for variant in payload["variants"] if variant["id"] == "semantic_gmap_cells")
+    assert len(gmap_variant["gmap_cells"]) == 6
+    assert gmap_variant["metrics"]["gmap_cells"] == 6
+    for cell in gmap_variant["gmap_cells"]:
+        assert {"tmdb_id", "macro_id", "neighborhood_id", "micro_id", "polygon"} <= set(cell)
+        assert len(cell["polygon"]) >= 3
+
     manifest = json.loads((export_dir / "manifest.json").read_text(encoding="utf-8"))
     assert "territory_layouts.json" in manifest["files"]
-    assert manifest["territory_layouts"]["variant_count"] == 3
+    assert manifest["territory_layouts"]["variant_count"] == 6

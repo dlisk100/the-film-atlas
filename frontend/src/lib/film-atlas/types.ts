@@ -97,12 +97,23 @@ export interface FilmAtlasTerritoryRegion {
   y: number;
 }
 
+export interface FilmAtlasGmapCell {
+  macro_id: number;
+  micro_id: number;
+  neighborhood_id: number;
+  polygon: Array<[number, number]>;
+  tmdb_id: number;
+}
+
 export interface FilmAtlasTerritoryVariant {
   algorithm?: string;
   description?: string;
+  gmap_cells?: FilmAtlasGmapCell[];
   id: string;
   label: string;
   metrics?: {
+    gmap_cells?: number;
+    gmap_outer_vertices?: number;
     macro_regions?: number;
     micro_regions?: number;
     movie_points?: number;
