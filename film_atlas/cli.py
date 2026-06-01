@@ -8,6 +8,7 @@ from typing import Annotated, cast
 import typer
 
 from film_atlas.config import MissingCredentialsError, load_settings
+from film_atlas.classification_v2 import ClassificationV2Error, classification_v2_file
 from film_atlas.cluster import cluster_embeddings_file
 from film_atlas.cluster_sweep import ClusterSweepError, parse_ks, sweep_clusters_file
 from film_atlas.clustering_methods import (
@@ -31,6 +32,7 @@ from film_atlas.fetch import fetch_balanced as fetch_balanced_step
 from film_atlas.fetch import fetch_details as fetch_details_step
 from film_atlas.fetch import fetch_discover as fetch_discover_step
 from film_atlas.inspect_clusters import inspect_clusters_file
+from film_atlas.large_audit import LargeAuditError, large_audit_file
 from film_atlas.milestone2_report import generate_milestone_2_report_file
 from film_atlas.milestone4 import (
     Milestone4Error,
@@ -50,6 +52,7 @@ from film_atlas.review_ablation import (
     review_ablation_file,
 )
 from film_atlas.sample_map import make_sample_map_file
+from film_atlas.territory_layout import TerritoryLayoutError, build_territory_layouts_file
 from film_atlas.tmdb_client import TMDbClient
 
 app = typer.Typer(help="The Film Atlas offline data pipeline.")
@@ -819,6 +822,25 @@ def export_atlas_data(
 
 
 @app.command()
+def build_territory_layouts(
+    export_dir: Annotated[
+        Path,
+        typer.Option(help="Path to the public export directory."),
+    ] = Path("outputs/public_export"),
+) -> None:
+    """Build experimental nested territory layouts for frontend review."""
+    try:
+        result = build_territory_layouts_file(export_dir=export_dir)
+    except TerritoryLayoutError as exc:
+        typer.secho(str(exc), fg=typer.colors.RED, err=True)
+        raise typer.Exit(code=1)
+    typer.echo(f"Wrote {result.variant_count} territory layout variants to {result.layout_path}")
+    typer.echo(
+        f"Layouts cover {result.movie_count:,} movies and {result.region_count:,} regions."
+    )
+
+
+@app.command()
 def milestone_4(
     target: Annotated[int, typer.Option(help="Target eligible movie count.")] = 2000,
     since_year: Annotated[int, typer.Option(help="Earliest release year to include.")] = 1980,
@@ -874,8 +896,99 @@ def milestone_4(
     typer.echo(f"Wrote Milestone 4 report to {result.report_path}")
     typer.echo(f"Wrote public export to {result.export.export_dir}")
     typer.echo(f"Movies exported: {result.scale.selected_count}")
-    typer.echo(f"Embedding cache reused/new: {result.embedding.cached_reused_count}/{result.embedding.new_embedding_count}")
-    typer.echo(f"Labels generated: {result.hierarchy.labels_generated_count}")
+
+
+@app.command()
+def classification_v2(
+    movies_path: Annotated[
+        Path | None,
+        typer.Option(help="Path to data/processed/movies.json."),
+    ] = None,
+    raw_details_path: Annotated[
+        Path | None,
+        typer.Option(help="Path to data/raw/movie_details.json for richer TMDb-only text."),
+    ] = None,
+    output_dir: Annotated[Path | None, typer.Option(help="Base outputs directory.")] = None,
+    variants: Annotated[
+        str | None,
+        typer.Option(help="Comma-separated profile variants. Defaults to all Milestone 5 variants."),
+    ] = None,
+    strategies: Annotated[
+        str | None,
+        typer.Option(help="Comma-separated clustering strategies. Defaults to all Milestone 5 strategies."),
+    ] = None,
+    limit: Annotated[int | None, typer.Option(help="Optional movie/profile limit.")] = None,
+    macro_k: Annotated[int, typer.Option(help="Macro cluster count.")] = 12,
+    neighborhood_k: Annotated[int, typer.Option(help="Neighborhood cluster count.")] = 75,
+    micro_k: Annotated[int, typer.Option(help="Microcluster count.")] = 200,
+    embedding_batch_size: Annotated[int, typer.Option(help="Embedding API batch size.")] = 64,
+    label_batch_size: Annotated[int, typer.Option(help="Cluster label API batch size.")] = 5,
+    cost_gate_usd: Annotated[float, typer.Option(help="Maximum estimated OpenAI spend.")] = 10.0,
+) -> None:
+    """Run Milestone 5 classification/profile experiments and export the selected atlas."""
+    settings = load_settings(output_dir=output_dir)
+    resolved_movies_path = movies_path or settings.data_dir / "processed" / "movies.json"
+    resolved_raw_details_path = raw_details_path or settings.data_dir / "raw" / "movie_details.json"
+    try:
+        result = classification_v2_file(
+            api_key=settings.openai_api_key,
+            movies_path=resolved_movies_path,
+            raw_details_path=resolved_raw_details_path,
+            output_dir=settings.output_dir,
+            embedding_model=settings.openai_embedding_model,
+            label_model=settings.openai_label_model,
+            macro_k=macro_k,
+            neighborhood_k=neighborhood_k,
+            micro_k=micro_k,
+            variants=_parse_optional_csv(variants),
+            strategies=_parse_optional_csv(strategies),
+            limit=limit,
+            embedding_batch_size=embedding_batch_size,
+            label_batch_size=label_batch_size,
+            cost_gate_usd=cost_gate_usd,
+        )
+    except (ClassificationV2Error, MissingCredentialsError) as exc:
+        raise typer.BadParameter(str(exc)) from exc
+    typer.echo(f"Wrote Classification V2 summary to {result.summary_path}")
+    typer.echo(f"Wrote Milestone 5 report to {result.report_path}")
+    typer.echo(f"Wrote audit report to {result.audit_path}")
+    typer.echo(f"Wrote selected public export to {result.export_dir}")
+    typer.echo(f"Winner: {result.winner_variant} + {result.winner_strategy}")
+    typer.echo(f"Estimated OpenAI cost: ${result.estimated_openai_cost_usd:.4f}")
+    typer.echo(f"Labels generated: {result.labels_generated}")
+
+
+@app.command()
+def large_audit(
+    export_dir: Annotated[Path | None, typer.Option(help="Path to public export directory.")] = None,
+    output_dir: Annotated[Path | None, typer.Option(help="Base outputs directory.")] = None,
+    model: Annotated[str, typer.Option(help="OpenAI chat model for the audit.")] = "gpt-4.1-mini",
+    review_count: Annotated[int, typer.Option(help="Number of movies to review.")] = 1000,
+    batch_size: Annotated[int, typer.Option(help="Movies per audit request.")] = 25,
+    workers: Annotated[int, typer.Option(help="Concurrent audit batch requests.")] = 1,
+    seed: Annotated[int, typer.Option(help="Deterministic sample seed.")] = 42,
+) -> None:
+    """Run an LLM-assisted large QA pass over the public atlas export."""
+    settings = load_settings(output_dir=output_dir)
+    resolved_export_dir = export_dir or settings.output_dir / "public_export"
+    try:
+        result = large_audit_file(
+            api_key=settings.openai_api_key,
+            export_dir=resolved_export_dir,
+            output_dir=settings.output_dir,
+            model=model,
+            review_count=review_count,
+            batch_size=batch_size,
+            workers=workers,
+            seed=seed,
+        )
+    except (LargeAuditError, MissingCredentialsError) as exc:
+        raise typer.BadParameter(str(exc)) from exc
+    typer.echo(f"Wrote large audit JSON to {result.json_path}")
+    typer.echo(f"Wrote large audit report to {result.report_path}")
+    typer.echo(f"Reviewed movies: {result.reviewed_count}")
+    typer.echo(f"Verdicts: {result.verdict_counts}")
+    typer.echo(f"Estimated audit cost: ${result.estimated_cost_usd:.4f}")
 
 
 @app.command()
@@ -1036,6 +1149,12 @@ def _missing_token_exit(exc: MissingCredentialsError) -> None:
     typer.echo("After adding TMDB_BEARER_TOKEN to .env, run:", err=True)
     typer.echo("  uv run film-atlas quickstart --limit 100", err=True)
     raise typer.Exit(code=1)
+
+
+def _parse_optional_csv(value: str | None) -> list[str] | None:
+    if value is None:
+        return None
+    return [part.strip() for part in value.split(",") if part.strip()]
 
 
 def _parse_review_weight(value: str) -> ReviewWeight:

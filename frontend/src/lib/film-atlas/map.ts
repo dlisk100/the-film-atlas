@@ -6,6 +6,9 @@ import type {
   FilmAtlasMovie,
   FilmAtlasNeighborRecord,
   FilmAtlasPoint,
+  FilmAtlasTerritoryLayouts,
+  FilmAtlasTerritoryRegion,
+  FilmAtlasTerritoryVariant,
 } from "./types";
 
 type AtlasNode = {
@@ -32,6 +35,15 @@ type ClusterLabel = {
   y: number;
 };
 
+type AtlasLayoutMode = {
+  description: string;
+  id: string;
+  isTerritory: boolean;
+  label: string;
+  pointsById: Map<number, ScreenPoint>;
+  regions: FilmAtlasTerritoryRegion[];
+};
+
 type Bounds = {
   maxX: number;
   maxY: number;
@@ -42,13 +54,6 @@ type Bounds = {
 type ScreenPoint = {
   x: number;
   y: number;
-};
-
-type LabelBox = {
-  bottom: number;
-  left: number;
-  right: number;
-  top: number;
 };
 
 const FILES: Record<keyof FilmAtlasExport, string> = {
@@ -77,6 +82,36 @@ const PALETTE = [
   "#d9c7a3",
 ];
 
+const TERRITORY_LAYER_SETTINGS: Record<FilmAtlasLayer, {
+  bridgeAlpha: number;
+  bridgeThreshold: number;
+  fillAlpha: number;
+  inflate: number;
+  strokeAlpha: number;
+}> = {
+  macro: {
+    bridgeAlpha: 0.082,
+    bridgeThreshold: 1.55,
+    fillAlpha: 0.068,
+    inflate: 1.08,
+    strokeAlpha: 0.31,
+  },
+  neighborhood: {
+    bridgeAlpha: 0.046,
+    bridgeThreshold: 1.34,
+    fillAlpha: 0.034,
+    inflate: 1.05,
+    strokeAlpha: 0.18,
+  },
+  micro: {
+    bridgeAlpha: 0.022,
+    bridgeThreshold: 1.18,
+    fillAlpha: 0.016,
+    inflate: 1.02,
+    strokeAlpha: 0.09,
+  },
+};
+
 const MIN_ZOOM = 0.72;
 const MAX_ZOOM = 10;
 const LABEL_TRANSITION_MS = 280;
@@ -89,12 +124,6 @@ const midpoint = (a: ScreenPoint, b: ScreenPoint): ScreenPoint => ({
   x: (a.x + b.x) / 2,
   y: (a.y + b.y) / 2,
 });
-
-const boxesOverlap = (a: LabelBox, b: LabelBox, gap: number) =>
-  a.left - gap < b.right
-  && a.right + gap > b.left
-  && a.top - gap < b.bottom
-  && a.bottom + gap > b.top;
 
 const labelTextForLayer = (layer: FilmAtlasLayer) => {
   if (layer === "macro") return "Macro clusters";
@@ -157,7 +186,7 @@ const getElement = <T extends Element>(root: ParentNode, selector: string) => {
 
 async function fetchJson<T>(baseUrl: string, fileName: string): Promise<T> {
   const response = await fetch(`${baseUrl.replace(/\/$/, "")}/${fileName}`, {
-    cache: "force-cache",
+    cache: "no-cache",
   });
 
   if (!response.ok) {
@@ -175,6 +204,18 @@ async function loadAtlasData(baseUrl: string): Promise<FilmAtlasExport> {
   );
 
   return Object.fromEntries(entries) as FilmAtlasExport;
+}
+
+async function loadTerritoryLayouts(baseUrl: string): Promise<FilmAtlasTerritoryLayouts | null> {
+  const response = await fetch(`${baseUrl.replace(/\/$/, "")}/territory_layouts.json`, {
+    cache: "no-cache",
+  });
+  if (response.status === 404) return null;
+  if (!response.ok) {
+    console.warn(`Could not load territory layouts: ${response.status}`);
+    return null;
+  }
+  return response.json() as Promise<FilmAtlasTerritoryLayouts>;
 }
 
 function buildLabelMap(labels: FilmAtlasLabel[], clusterSets: Array<[FilmAtlasLayer, FilmAtlasCluster[]]>) {
@@ -243,19 +284,37 @@ function buildNodes(data: FilmAtlasExport) {
     .filter((node): node is AtlasNode => node !== null);
 }
 
-function getBounds(nodes: AtlasNode[]): Bounds {
-  return nodes.reduce(
+function getBounds(
+  nodes: AtlasNode[],
+  coordinateForNode: (node: AtlasNode) => ScreenPoint,
+  regions: FilmAtlasTerritoryRegion[] = [],
+): Bounds {
+  const pointBounds = nodes.reduce(
     (bounds, node) => ({
-      maxX: Math.max(bounds.maxX, node.point.x),
-      maxY: Math.max(bounds.maxY, node.point.y),
-      minX: Math.min(bounds.minX, node.point.x),
-      minY: Math.min(bounds.minY, node.point.y),
+      maxX: Math.max(bounds.maxX, coordinateForNode(node).x),
+      maxY: Math.max(bounds.maxY, coordinateForNode(node).y),
+      minX: Math.min(bounds.minX, coordinateForNode(node).x),
+      minY: Math.min(bounds.minY, coordinateForNode(node).y),
     }),
     { maxX: -Infinity, maxY: -Infinity, minX: Infinity, minY: Infinity },
   );
+
+  return regions.reduce(
+    (bounds, region) => ({
+      maxX: Math.max(bounds.maxX, region.x + region.radius),
+      maxY: Math.max(bounds.maxY, region.y + region.radius),
+      minX: Math.min(bounds.minX, region.x - region.radius),
+      minY: Math.min(bounds.minY, region.y - region.radius),
+    }),
+    pointBounds,
+  );
 }
 
-function buildClusterLabels(nodes: AtlasNode[], layer: FilmAtlasLayer): ClusterLabel[] {
+function buildClusterLabels(
+  nodes: AtlasNode[],
+  layer: FilmAtlasLayer,
+  coordinateForNode: (node: AtlasNode) => ScreenPoint,
+): ClusterLabel[] {
   const groups = new Map<string, {
     color: string;
     count: number;
@@ -280,8 +339,9 @@ function buildClusterLabels(nodes: AtlasNode[], layer: FilmAtlasLayer): ClusterL
     };
 
     current.count += 1;
-    current.x += node.point.x;
-    current.y += node.point.y;
+    const coordinate = coordinateForNode(node);
+    current.x += coordinate.x;
+    current.y += coordinate.y;
     groups.set(key, current);
   }
 
@@ -296,8 +356,8 @@ function buildClusterLabels(nodes: AtlasNode[], layer: FilmAtlasLayer): ClusterL
 }
 
 function getLabelLayer(scale: number): FilmAtlasLayer {
-  if (scale < 1.85) return "macro";
-  if (scale < 4.2) return "neighborhood";
+  if (scale < 3.15) return "macro";
+  if (scale < 7.1) return "neighborhood";
   return "micro";
 }
 
@@ -357,6 +417,8 @@ export function initFilmAtlas(root: HTMLElement) {
   const resetButton = getElement<HTMLButtonElement>(root, "[data-atlas-reset]");
   const zoomInButton = getElement<HTMLButtonElement>(root, "[data-atlas-zoom-in]");
   const zoomOutButton = getElement<HTMLButtonElement>(root, "[data-atlas-zoom-out]");
+  const layoutSelect = getElement<HTMLSelectElement>(root, "[data-atlas-layout-select]");
+  const layoutDescription = getElement<HTMLElement>(root, "[data-atlas-layout-description]");
   const selectedTitle = getElement<HTMLElement>(root, "[data-atlas-selected-title]");
   const selectedMeta = getElement<HTMLElement>(root, "[data-atlas-selected-meta]");
   const selectedOverview = getElement<HTMLElement>(root, "[data-atlas-selected-overview]");
@@ -379,6 +441,8 @@ export function initFilmAtlas(root: HTMLElement) {
     micro: [],
     neighborhood: [],
   };
+  let layoutModes: AtlasLayoutMode[] = [];
+  let activeLayout: AtlasLayoutMode | null = null;
   let neighborsById = new Map<number, FilmAtlasNeighborRecord>();
   let nodesById = new Map<number, AtlasNode>();
   let bounds: Bounds = { maxX: 1, maxY: 1, minX: 0, minY: 0 };
@@ -406,6 +470,16 @@ export function initFilmAtlas(root: HTMLElement) {
   let labelTransitionStartedAt = 0;
   let cameraInitialized = false;
   let pendingDraw = 0;
+  let currentSearchResults: AtlasNode[] = [];
+  let activeSearchIndex = -1;
+
+  const projectionCoordinateForNode = (node: AtlasNode): ScreenPoint => ({
+    x: node.point.x,
+    y: node.point.y,
+  });
+
+  const coordinateForNode = (node: AtlasNode): ScreenPoint =>
+    activeLayout?.pointsById.get(node.movie.tmdb_id) ?? projectionCoordinateForNode(node);
 
   const centerX = () => (bounds.minX + bounds.maxX) / 2;
   const centerY = () => (bounds.minY + bounds.maxY) / 2;
@@ -464,6 +538,91 @@ export function initFilmAtlas(root: HTMLElement) {
     }
   };
 
+  const buildLayoutMode = (variant: FilmAtlasTerritoryVariant): AtlasLayoutMode => ({
+    description: variant.description || "Nested territory experiment.",
+    id: variant.id,
+    isTerritory: true,
+    label: variant.label,
+    pointsById: new Map(variant.points.map((point) => [
+      point.tmdb_id,
+      { x: point.x, y: point.y },
+    ])),
+    regions: variant.regions,
+  });
+
+  const rebuildLabelsForActiveLayout = () => {
+    const labelSets = {
+      macro: buildClusterLabels(nodes, "macro", coordinateForNode),
+      micro: buildClusterLabels(nodes, "micro", coordinateForNode),
+      neighborhood: buildClusterLabels(nodes, "neighborhood", coordinateForNode),
+    };
+
+    if (!activeLayout?.isTerritory) {
+      labelsByLayer = labelSets;
+      return;
+    }
+
+    const regionLabels = (layer: FilmAtlasLayer) => {
+      const labelsById = new Map(labelSets[layer].map((label) => [label.id, label]));
+      return activeLayout.regions
+        .filter((region) => region.layer === layer)
+        .map((region): ClusterLabel | null => {
+          const label = labelsById.get(region.cluster_id);
+          if (!label) return null;
+          return {
+            ...label,
+            count: region.size ?? label.count,
+            x: region.x,
+            y: region.y,
+          };
+        })
+        .filter((label): label is ClusterLabel => label !== null)
+        .sort((a, b) => b.count - a.count);
+    };
+
+    labelsByLayer = {
+      macro: regionLabels("macro"),
+      micro: regionLabels("micro"),
+      neighborhood: regionLabels("neighborhood"),
+    };
+  };
+
+  const populateLayoutOptions = () => {
+    layoutSelect.innerHTML = "";
+    for (const mode of layoutModes) {
+      const option = document.createElement("option");
+      option.value = mode.id;
+      option.textContent = mode.label;
+      layoutSelect.append(option);
+    }
+    layoutSelect.disabled = layoutModes.length <= 1;
+  };
+
+  const setActiveLayout = (id: string, options: { resetCamera?: boolean } = {}) => {
+    activeLayout = layoutModes.find((mode) => mode.id === id) ?? layoutModes[0] ?? null;
+    if (!activeLayout) return;
+    layoutSelect.value = activeLayout.id;
+    layoutDescription.textContent = activeLayout.description;
+    bounds = getBounds(nodes, coordinateForNode, activeLayout.regions);
+    rebuildLabelsForActiveLayout();
+
+    if (options.resetCamera) {
+      zoom = 1;
+      offsetX = 0;
+      offsetY = 0;
+      cameraInitialized = false;
+      hideTooltip();
+    }
+
+    fitToView();
+    if (selected && !options.resetCamera) {
+      const screen = worldToScreen(coordinateForNode(selected).x, coordinateForNode(selected).y);
+      moveTooltip(selected, screen);
+    }
+    renderSelected();
+    requestDraw();
+  };
+
   const resizeCanvas = () => {
     const rect = stage.getBoundingClientRect();
     cssWidth = Math.max(1, rect.width);
@@ -483,18 +642,149 @@ export function initFilmAtlas(root: HTMLElement) {
     ctx.fillRect(0, 0, cssWidth, cssHeight);
   };
 
+  const regionColor = (region: FilmAtlasTerritoryRegion) =>
+    PALETTE[Math.abs(region.macro_id ?? region.cluster_id) % PALETTE.length];
+
+  const territorySettings = (layer: FilmAtlasLayer) => {
+    const base = TERRITORY_LAYER_SETTINGS[layer];
+    if (activeLayout?.id !== "strict_pack") return base;
+    return {
+      bridgeAlpha: base.bridgeAlpha * (layer === "macro" ? 1.18 : 1.08),
+      bridgeThreshold: base.bridgeThreshold + (layer === "macro" ? 0.42 : 0.18),
+      fillAlpha: base.fillAlpha * (layer === "macro" ? 1.08 : 1.02),
+      inflate: base.inflate * (layer === "macro" ? 1.12 : 1.07),
+      strokeAlpha: base.strokeAlpha * 0.62,
+    };
+  };
+
+  const organicRadius = (region: FilmAtlasTerritoryRegion, angle: number) => {
+    const seed = (region.cluster_id + 1) * 0.417 + (region.macro_id ?? 0) * 0.113;
+    const strictBoost = activeLayout?.id === "strict_pack" ? 1.42 : 1;
+    const layerScale = (
+      region.layer === "macro" ? 0.065 : region.layer === "neighborhood" ? 0.052 : 0.032
+    ) * strictBoost;
+    return 1
+      + Math.sin(angle * 3 + seed) * layerScale
+      + Math.cos(angle * 5 - seed * 1.7) * layerScale * 0.58
+      + Math.sin(angle * 7 + seed * 2.3) * layerScale * 0.34;
+  };
+
+  const drawOrganicRegion = (
+    region: FilmAtlasTerritoryRegion,
+    settings: typeof TERRITORY_LAYER_SETTINGS[FilmAtlasLayer],
+  ) => {
+    const screen = worldToScreen(region.x, region.y);
+    const radius = region.radius * settings.inflate * baseScale * zoom;
+    if (radius < 1.5) return;
+    if (
+      screen.x + radius < -30
+      || screen.x - radius > cssWidth + 30
+      || screen.y + radius < -30
+      || screen.y - radius > cssHeight + 30
+    ) {
+      return;
+    }
+
+    const steps = region.layer === "macro" ? 58 : region.layer === "neighborhood" ? 42 : 24;
+    ctx.beginPath();
+    for (let index = 0; index <= steps; index += 1) {
+      const angle = (index / steps) * Math.PI * 2;
+      const warpedRadius = radius * organicRadius(region, angle);
+      const x = screen.x + Math.cos(angle) * warpedRadius;
+      const y = screen.y + Math.sin(angle) * warpedRadius;
+      if (index === 0) ctx.moveTo(x, y);
+      else ctx.lineTo(x, y);
+    }
+    ctx.closePath();
+    ctx.fillStyle = regionColor(region);
+    ctx.globalAlpha = settings.fillAlpha;
+    ctx.fill();
+    ctx.globalAlpha = settings.strokeAlpha;
+    ctx.lineWidth = region.layer === "macro" ? 1.6 : region.layer === "neighborhood" ? 1 : 0.7;
+    ctx.strokeStyle = regionColor(region);
+    ctx.stroke();
+  };
+
+  const drawTerritoryBridges = (
+    regions: FilmAtlasTerritoryRegion[],
+    settings: typeof TERRITORY_LAYER_SETTINGS[FilmAtlasLayer],
+  ) => {
+    if (regions.length < 2 || regions[0]?.layer === "micro") return;
+    for (let index = 0; index < regions.length; index += 1) {
+      const fromRegion = regions[index];
+      if (!fromRegion) continue;
+      const fromScreen = worldToScreen(fromRegion.x, fromRegion.y);
+      let connected = 0;
+      for (let otherIndex = index + 1; otherIndex < regions.length; otherIndex += 1) {
+        const toRegion = regions[otherIndex];
+        if (!toRegion) continue;
+        if (
+          fromRegion.layer !== "macro"
+          && toRegion.parent_cluster_id !== fromRegion.parent_cluster_id
+        ) {
+          continue;
+        }
+
+        const worldDistance = Math.hypot(fromRegion.x - toRegion.x, fromRegion.y - toRegion.y);
+        const threshold = (fromRegion.radius + toRegion.radius) * settings.bridgeThreshold;
+        if (worldDistance > threshold) continue;
+
+        const toScreen = worldToScreen(toRegion.x, toRegion.y);
+        const gradient = ctx.createLinearGradient(fromScreen.x, fromScreen.y, toScreen.x, toScreen.y);
+        gradient.addColorStop(0, regionColor(fromRegion));
+        gradient.addColorStop(1, regionColor(toRegion));
+        ctx.globalAlpha = settings.bridgeAlpha;
+        ctx.strokeStyle = gradient;
+        ctx.lineCap = "round";
+        ctx.lineWidth = Math.max(
+          2,
+          Math.min(fromRegion.radius, toRegion.radius) * baseScale * zoom * 1.85,
+        );
+        ctx.beginPath();
+        ctx.moveTo(fromScreen.x, fromScreen.y);
+        ctx.lineTo(toScreen.x, toScreen.y);
+        ctx.stroke();
+        connected += 1;
+        if (connected >= (fromRegion.layer === "macro" ? 3 : 2)) break;
+      }
+    }
+  };
+
+  const visibleTerritoryLayers = () => {
+    const layers: FilmAtlasLayer[] = ["macro"];
+    if (zoom >= 1.45) layers.push("neighborhood");
+    if (zoom >= 3.4) layers.push("micro");
+    return layers;
+  };
+
+  const drawTerritoryRegions = () => {
+    if (!activeLayout?.isTerritory) return;
+    ctx.save();
+    for (const layer of visibleTerritoryLayers()) {
+      const settings = territorySettings(layer);
+      const layerRegions = activeLayout.regions.filter((region) => region.layer === layer);
+      drawTerritoryBridges(layerRegions, settings);
+      for (const region of layerRegions) {
+        drawOrganicRegion(region, settings);
+      }
+    }
+    ctx.restore();
+  };
+
   const drawNeighborLines = () => {
     if (!selected) return;
     const record = neighborsById.get(selected.movie.tmdb_id);
     if (!record?.neighbors?.length) return;
 
-    const from = worldToScreen(selected.point.x, selected.point.y);
+    const selectedCoordinate = coordinateForNode(selected);
+    const from = worldToScreen(selectedCoordinate.x, selectedCoordinate.y);
     ctx.save();
     ctx.lineWidth = 1;
     for (const neighbor of record.neighbors.slice(0, 8)) {
       const node = nodesById.get(neighbor.tmdb_id);
       if (!node) continue;
-      const to = worldToScreen(node.point.x, node.point.y);
+      const coordinate = coordinateForNode(node);
+      const to = worldToScreen(coordinate.x, coordinate.y);
       ctx.globalAlpha = 0.18 + clamp((neighbor.similarity ?? 0.5) - 0.45, 0, 0.25);
       ctx.strokeStyle = selected.color;
       ctx.beginPath();
@@ -510,7 +800,8 @@ export function initFilmAtlas(root: HTMLElement) {
 
     ctx.save();
     for (const node of nodes) {
-      const screen = worldToScreen(node.point.x, node.point.y);
+      const coordinate = coordinateForNode(node);
+      const screen = worldToScreen(coordinate.x, coordinate.y);
       if (screen.x < -20 || screen.x > cssWidth + 20 || screen.y < -20 || screen.y > cssHeight + 20) {
         continue;
       }
@@ -519,11 +810,25 @@ export function initFilmAtlas(root: HTMLElement) {
       const isHovered = hovered?.movie.tmdb_id === node.movie.tmdb_id;
       const radius = isSelected ? baseRadius + 3.9 : isHovered ? baseRadius + 2.4 : baseRadius;
 
-      ctx.globalAlpha = isSelected || isHovered ? 1 : 0.72;
+      ctx.globalAlpha = isSelected || isHovered ? 0.82 : 0.46;
+      ctx.fillStyle = "#030303";
+      ctx.beginPath();
+      ctx.arc(screen.x, screen.y, radius + 1.35, 0, Math.PI * 2);
+      ctx.fill();
+
+      ctx.globalAlpha = isSelected || isHovered ? 1 : activeLayout?.isTerritory ? 0.93 : 0.78;
       ctx.fillStyle = node.color;
       ctx.beginPath();
       ctx.arc(screen.x, screen.y, radius, 0, Math.PI * 2);
       ctx.fill();
+
+      if (!isSelected && !isHovered && zoom < 2.2) {
+        ctx.globalAlpha = activeLayout?.isTerritory ? 0.24 : 0.16;
+        ctx.fillStyle = "#fff8ea";
+        ctx.beginPath();
+        ctx.arc(screen.x - radius * 0.18, screen.y - radius * 0.18, Math.max(0.35, radius * 0.32), 0, Math.PI * 2);
+        ctx.fill();
+      }
 
       if (isSelected || isHovered) {
         ctx.globalAlpha = isSelected ? 0.46 : 0.26;
@@ -537,44 +842,76 @@ export function initFilmAtlas(root: HTMLElement) {
     ctx.restore();
   };
 
+  const labelPositionInWorld = (
+    label: ClusterLabel,
+    labelIndex: number,
+    layer: FilmAtlasLayer,
+  ): ScreenPoint => {
+    if (!activeLayout?.isTerritory) {
+      return { x: label.x, y: label.y };
+    }
+
+    const span = Math.max(bounds.maxX - bounds.minX, bounds.maxY - bounds.minY, 1);
+    const dx = label.x - centerX();
+    const dy = label.y - centerY();
+    const fallbackAngle = (label.id * 0.61803398875 + labelIndex * 0.173) * Math.PI * 2;
+    const baseAngle = Math.hypot(dx, dy) > 0.001 ? Math.atan2(dy, dx) : fallbackAngle;
+    const angle = baseAngle + Math.sin((label.id + 1) * 1.913) * 0.18;
+    const perpendicular = angle + Math.PI / 2;
+    const distanceScale = layer === "macro" ? 0.026 : layer === "neighborhood" ? 0.009 : 0.0038;
+    const jitterScale = layer === "macro" ? 0.007 : layer === "neighborhood" ? 0.0035 : 0.0016;
+    const distance = span * distanceScale * (0.72 + ((label.id + labelIndex) % 5) * 0.08);
+    const jitter = span * jitterScale * ((((label.id * 37 + labelIndex * 11) % 9) - 4) / 4);
+
+    return {
+      x: label.x + Math.cos(angle) * distance + Math.cos(perpendicular) * jitter,
+      y: label.y + Math.sin(angle) * distance + Math.sin(perpendicular) * jitter,
+    };
+  };
+
   const drawLabelSet = (layer: FilmAtlasLayer, alpha: number) => {
     const labels = labelsByLayer[layer];
-    const maxLabels = layer === "macro" ? 12 : layer === "neighborhood" ? (zoom < 2.6 ? 20 : 30) : 34;
-    const fontSize = layer === "macro" ? 14 : layer === "neighborhood" ? 11.5 : 9.5;
+    const fontSize = layer === "macro" ? (activeLayout?.isTerritory ? 12.8 : 13.4) : layer === "neighborhood" ? 10.5 : 8.8;
     const lineHeight = fontSize * (layer === "macro" ? 1.08 : 1.16);
-    const collisionGap = layer === "macro" ? 8 : layer === "neighborhood" ? 5 : 3;
 
     ctx.save();
     ctx.textAlign = "center";
     ctx.textBaseline = "middle";
     ctx.font = `${fontSize}px Inter, ui-sans-serif, system-ui`;
 
-    let drawn = 0;
-    const placed: LabelBox[] = [];
-    for (const label of labels) {
-      if (drawn >= maxLabels) break;
-      const screen = worldToScreen(label.x, label.y);
+    for (const [labelIndex, label] of labels.entries()) {
+      const anchor = worldToScreen(label.x, label.y);
+      const labelWorld = labelPositionInWorld(label, labelIndex, layer);
+      const screen = worldToScreen(labelWorld.x, labelWorld.y);
       const lines = getLabelLines(label.label, layer);
       const width = Math.max(...lines.map((line) => ctx.measureText(line).width));
       const height = lines.length * lineHeight;
-      const box = {
-        bottom: screen.y + height / 2 + 4,
-        left: screen.x - width / 2 - 8,
-        right: screen.x + width / 2 + 8,
-        top: screen.y - height / 2 - 4,
-      };
-
-      if (box.left < 8 || box.right > cssWidth - 8 || box.top < 8 || box.bottom > cssHeight - 8) {
+      const viewportMargin = layer === "macro" ? 180 : layer === "neighborhood" ? 36 : 24;
+      if (
+        screen.x < -viewportMargin - width / 2
+        || screen.x > cssWidth + viewportMargin + width / 2
+        || screen.y < -viewportMargin - height / 2
+        || screen.y > cssHeight + viewportMargin + height / 2
+      ) {
         continue;
       }
 
-      if (placed.some((placedBox) => boxesOverlap(box, placedBox, collisionGap))) {
-        continue;
+      const isCallout = Math.hypot(screen.x - anchor.x, screen.y - anchor.y) > (
+        layer === "macro" ? 18 : layer === "neighborhood" ? 12 : 8
+      );
+      if (isCallout) {
+        ctx.globalAlpha = alpha * (layer === "macro" ? 0.36 : layer === "neighborhood" ? 0.25 : 0.18);
+        ctx.strokeStyle = layer === "macro" ? label.color : "#f7ead2";
+        ctx.lineWidth = layer === "macro" ? 1 : 0.7;
+        ctx.beginPath();
+        ctx.moveTo(anchor.x, anchor.y);
+        ctx.lineTo(screen.x, screen.y);
+        ctx.stroke();
       }
 
       ctx.lineWidth = layer === "macro" ? 7 : 5;
-      ctx.strokeStyle = "rgba(5, 5, 5, 0.82)";
-      ctx.globalAlpha = alpha * (layer === "macro" ? 0.86 : 0.72);
+      ctx.strokeStyle = "rgba(5, 5, 5, 0.94)";
+      ctx.globalAlpha = alpha * (layer === "macro" ? 0.98 : 0.72);
       ctx.fillStyle = layer === "macro" ? label.color : "#f7ead2";
       lines.forEach((line, lineIndex) => {
         const y = screen.y + (lineIndex - (lines.length - 1) / 2) * lineHeight;
@@ -582,8 +919,6 @@ export function initFilmAtlas(root: HTMLElement) {
         ctx.fillText(line, screen.x, y);
       });
       ctx.globalAlpha = 1;
-      placed.push(box);
-      drawn += 1;
     }
     ctx.restore();
   };
@@ -605,6 +940,7 @@ export function initFilmAtlas(root: HTMLElement) {
   function draw() {
     updateLabelTransition();
     drawBackground();
+    drawTerritoryRegions();
     drawNeighborLines();
     drawPoints();
     drawLabels();
@@ -616,7 +952,8 @@ export function initFilmAtlas(root: HTMLElement) {
     const hitRadius = clamp(10 + zoom * 1.5, 10, 18);
 
     for (const node of nodes) {
-      const screen = worldToScreen(node.point.x, node.point.y);
+      const coordinate = coordinateForNode(node);
+      const screen = worldToScreen(coordinate.x, coordinate.y);
       const distance = (screen.x - x) ** 2 + (screen.y - y) ** 2;
       if (distance < nearestDistance) {
         nearestDistance = distance;
@@ -761,9 +1098,12 @@ export function initFilmAtlas(root: HTMLElement) {
       selectedGenres.innerHTML = "";
       neighborList.innerHTML = "";
       selectedLabels.append(
-        renderLabelPill("Macro", "12 constellations"),
-        renderLabelPill("Neighborhood", "75 local regions"),
-        renderLabelPill("Micro", "200 tight clusters"),
+        renderLabelPill("Macro", `${labelsByLayer.macro.length.toLocaleString()} constellations`),
+        renderLabelPill(
+          "Neighborhood",
+          `${labelsByLayer.neighborhood.length.toLocaleString()} local regions`,
+        ),
+        renderLabelPill("Micro", `${labelsByLayer.micro.length.toLocaleString()} tight clusters`),
       );
       return;
     }
@@ -811,7 +1151,8 @@ export function initFilmAtlas(root: HTMLElement) {
 
       const title = document.createElement("span");
       title.className = "atlas-neighbor-title";
-      title.textContent = node.movie.title || neighbor.title || "Untitled";
+      const neighborTitle = node.movie.title || neighbor.title || "Untitled";
+      title.textContent = `${neighborTitle} (${formatYear(node.movie)})`;
       button.append(title);
 
       const similarity = document.createElement("span");
@@ -826,9 +1167,10 @@ export function initFilmAtlas(root: HTMLElement) {
   };
 
   const centerOnNode = (node: AtlasNode, targetZoom = zoom) => {
+    const coordinate = coordinateForNode(node);
     zoom = clamp(targetZoom, MIN_ZOOM, MAX_ZOOM);
-    offsetX = -(node.point.x - centerX()) * baseScale * zoom;
-    offsetY = (node.point.y - centerY()) * baseScale * zoom;
+    offsetX = -(coordinate.x - centerX()) * baseScale * zoom;
+    offsetY = (coordinate.y - centerY()) * baseScale * zoom;
   };
 
   function selectNode(node: AtlasNode, options: { center?: boolean; zoom?: number } = {}) {
@@ -836,7 +1178,8 @@ export function initFilmAtlas(root: HTMLElement) {
     hovered = node;
     if (options.center) centerOnNode(node, options.zoom);
     renderSelected();
-    const screen = worldToScreen(node.point.x, node.point.y);
+    const coordinate = coordinateForNode(node);
+    const screen = worldToScreen(coordinate.x, coordinate.y);
     moveTooltip(node, screen);
     requestDraw();
   }
@@ -920,6 +1263,14 @@ export function initFilmAtlas(root: HTMLElement) {
     isDragging = true;
   };
 
+  const selectSearchResult = (node: AtlasNode) => {
+    searchInput.value = node.movie.title || "";
+    searchResults.hidden = true;
+    currentSearchResults = [];
+    activeSearchIndex = -1;
+    selectNode(node, { center: true, zoom: Math.max(zoom, 3.5) });
+  };
+
   const renderSearchResults = (results: AtlasNode[]) => {
     searchResults.innerHTML = "";
 
@@ -937,15 +1288,12 @@ export function initFilmAtlas(root: HTMLElement) {
       return;
     }
 
-    for (const node of results.slice(0, 8)) {
+    for (const [index, node] of results.slice(0, 8).entries()) {
       const button = document.createElement("button");
       button.className = "atlas-search-result";
       button.type = "button";
-      button.addEventListener("click", () => {
-        searchInput.value = node.movie.title || "";
-        searchResults.hidden = true;
-        selectNode(node, { center: true, zoom: Math.max(zoom, 3.5) });
-      });
+      button.setAttribute("aria-selected", index === activeSearchIndex ? "true" : "false");
+      button.addEventListener("click", () => selectSearchResult(node));
 
       const title = document.createElement("span");
       title.className = "atlas-search-title";
@@ -966,6 +1314,8 @@ export function initFilmAtlas(root: HTMLElement) {
   const runSearch = () => {
     const query = normalizeText(searchInput.value.trim());
     if (query.length < 2) {
+      currentSearchResults = [];
+      activeSearchIndex = -1;
       renderSearchResults([]);
       return [];
     }
@@ -976,18 +1326,54 @@ export function initFilmAtlas(root: HTMLElement) {
       .sort((a, b) => a.score - b.score)
       .map((result) => result.node);
 
-    renderSearchResults(results);
-    return results;
+    currentSearchResults = results.slice(0, 8);
+    activeSearchIndex = -1;
+    renderSearchResults(currentSearchResults);
+    return currentSearchResults;
   };
 
   searchInput.addEventListener("input", runSearch);
   searchInput.addEventListener("focus", runSearch);
+  searchInput.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      searchResults.hidden = true;
+      return;
+    }
+
+    if (event.key !== "ArrowDown" && event.key !== "ArrowUp" && event.key !== "Enter") {
+      return;
+    }
+
+    if (!currentSearchResults.length) {
+      runSearch();
+    }
+    if (!currentSearchResults.length) return;
+
+    if (event.key === "ArrowDown") {
+      event.preventDefault();
+      activeSearchIndex = (activeSearchIndex + 1) % currentSearchResults.length;
+      renderSearchResults(currentSearchResults);
+      return;
+    }
+
+    if (event.key === "ArrowUp") {
+      event.preventDefault();
+      activeSearchIndex = (activeSearchIndex - 1 + currentSearchResults.length) % currentSearchResults.length;
+      renderSearchResults(currentSearchResults);
+      return;
+    }
+
+    if (event.key === "Enter" && activeSearchIndex >= 0) {
+      event.preventDefault();
+      selectSearchResult(currentSearchResults[activeSearchIndex]);
+    }
+  });
   searchForm.addEventListener("submit", (event) => {
     event.preventDefault();
-    const [first] = runSearch();
-    if (first) {
-      searchResults.hidden = true;
-      selectNode(first, { center: true, zoom: Math.max(zoom, 3.5) });
+    if (!currentSearchResults.length) runSearch();
+    const node = currentSearchResults[activeSearchIndex >= 0 ? activeSearchIndex : 0];
+    if (node) {
+      selectSearchResult(node);
     }
   });
 
@@ -995,6 +1381,7 @@ export function initFilmAtlas(root: HTMLElement) {
     if (!root.contains(event.target as Node)) return;
     if (event.target === searchInput || searchResults.contains(event.target as Node)) return;
     searchResults.hidden = true;
+    activeSearchIndex = -1;
   });
 
   canvas.addEventListener("wheel", (event) => {
@@ -1111,23 +1498,31 @@ export function initFilmAtlas(root: HTMLElement) {
   resetButton.addEventListener("click", resetView);
   zoomInButton.addEventListener("click", () => zoomAt(1.35, cssWidth / 2, cssHeight / 2));
   zoomOutButton.addEventListener("click", () => zoomAt(1 / 1.35, cssWidth / 2, cssHeight / 2));
+  layoutSelect.addEventListener("change", () => setActiveLayout(layoutSelect.value, { resetCamera: true }));
 
   const observer = new ResizeObserver(resizeCanvas);
   observer.observe(stage);
 
   setStatus("Loading constellation");
 
-  loadAtlasData(dataBase)
-    .then((data) => {
+  Promise.all([loadAtlasData(dataBase), loadTerritoryLayouts(dataBase)])
+    .then(([data, territoryLayouts]) => {
       nodes = buildNodes(data);
       nodesById = new Map(nodes.map((node) => [node.movie.tmdb_id, node]));
       neighborsById = new Map(data.neighbors.map((record) => [record.tmdb_id, record]));
-      bounds = getBounds(nodes);
-      labelsByLayer = {
-        macro: buildClusterLabels(nodes, "macro"),
-        micro: buildClusterLabels(nodes, "micro"),
-        neighborhood: buildClusterLabels(nodes, "neighborhood"),
-      };
+      layoutModes = [
+        {
+          description: "Original 2D UMAP semantic projection. Best for raw similarity, least map-like.",
+          id: "projection",
+          isTerritory: false,
+          label: "Projection",
+          pointsById: new Map(),
+          regions: [],
+        },
+        ...(territoryLayouts?.variants ?? []).map(buildLayoutMode),
+      ];
+      populateLayoutOptions();
+      setActiveLayout("projection", { resetCamera: true });
       movieCount.textContent = (data.manifest.movie_count ?? nodes.length).toLocaleString();
       const totalClusters = (data.manifest.layers?.macro?.cluster_count ?? labelsByLayer.macro.length)
         + (data.manifest.layers?.neighborhood?.cluster_count ?? labelsByLayer.neighborhood.length)

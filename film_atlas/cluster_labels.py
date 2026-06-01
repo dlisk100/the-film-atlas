@@ -18,7 +18,7 @@ from film_atlas.inspect_clusters import ClusterEvidence, build_cluster_evidence,
 from film_atlas.normalize import load_movie_records
 from film_atlas.profiles import load_profiles
 
-LABEL_PROMPT_VERSION = "cluster-labels-v1"
+LABEL_PROMPT_VERSION = "cluster-labels-v2"
 DEFAULT_LABEL_MODEL = "gpt-4.1-mini"
 LABEL_CACHE_FILENAME = "cluster_label_cache.json"
 LABEL_CANDIDATES_JSON_FILENAME = "cluster_label_candidates.json"
@@ -398,9 +398,10 @@ def build_label_messages(evidence: list[ClusterEvidence]) -> list[dict[str, str]
     """Build the label prompt for a batch of cluster evidence records."""
     system = (
         "You name clusters of movies for The Film Atlas, a non-commercial portfolio project. "
-        "Create vivid but useful movie microgenre labels. Avoid cringe phrasing, avoid generic "
-        "official-genre restatements, and avoid franchise-only labels unless the evidence is "
-        "truly franchise-specific. Return strict JSON only."
+        "Create vivid but useful movie microgenre labels. The labels should feel alive, like "
+        "a good playlist name, but they must stay faithful to the evidence. Avoid cringe "
+        "phrasing, avoid generic official-genre restatements, and avoid franchise-only labels "
+        "unless the evidence is truly franchise-specific. Return strict JSON only."
     )
     user_payload = {
         "task": "Draft human-reviewable Spotify-style movie microgenre labels.",
@@ -423,6 +424,20 @@ def build_label_messages(evidence: list[ClusterEvidence]) -> list[dict[str, str]
             "recommended_label should be concise, vivid, and usable in a UI.",
             "plain_label can be direct; poetic_label can be more evocative.",
             "spotify_style_label should feel like a playlist or microgenre name.",
+            "Prefer poetic-but-true over specific-but-false.",
+            "The recommended_label must fit the cluster as a whole, not only the first "
+            "or most famous representative movie.",
+            "If top genres/keywords show multiple subfamilies, name the shared axis "
+            "broadly instead of choosing one narrow subfamily.",
+            "Do not use specifics like moon, arctic, spacefaring, battlefield, alien, heist, "
+            "rom-com, witchcraft, road trip, or phone unless cluster evidence strongly supports them.",
+            "Likewise, avoid animation, spooky, dinosaur, wizard, pirate, war, boxing, or "
+            "music unless those terms are broadly supported across genres, keywords, and representatives.",
+            "For mixed franchise clusters, prefer inclusive labels like legacy sequels, "
+            "creature adventures, comeback battles, or fantasy quests over a single franchise setting.",
+            "Use parent-context warnings only as context; the child cluster evidence must still "
+            "justify the label.",
+            "If evidence is broad or mixed, choose a broader evocative label and explain the risk.",
             "confidence_score must be between 0 and 1.",
             "edge_case_movies and possible_misfits should only use titles from the evidence.",
         ],
@@ -544,6 +559,7 @@ def evidence_hash(evidence: ClusterEvidence) -> str:
         "top_tmdb_keywords": evidence.top_tmdb_keywords,
         "aggregated_profile_terms": evidence.aggregated_profile_terms,
         "coherence_score": evidence.coherence_score,
+        "warnings": evidence.warnings,
     }
     serialized = json.dumps(payload, sort_keys=True, ensure_ascii=False)
     return hashlib.sha256(serialized.encode("utf-8")).hexdigest()

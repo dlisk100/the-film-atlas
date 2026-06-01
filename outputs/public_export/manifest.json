@@ -7,29 +7,51 @@
     "movies.json",
     "neighborhood_clusters.json",
     "neighbors.json",
-    "points.json"
+    "points.json",
+    "territory_layouts.json"
   ],
-  "generated_at": "2026-05-30T19:14:21.418914+00:00",
+  "generated_at": "2026-05-31T11:30:52.596695+00:00",
   "layers": {
     "macro": {
-      "cluster_count": 12,
+      "cluster_count": 16,
       "labeled": true
     },
     "micro": {
-      "cluster_count": 200,
+      "cluster_count": 750,
       "labeled": true
     },
     "neighborhood": {
-      "cluster_count": 75,
+      "cluster_count": 180,
       "labeled": true
     }
   },
-  "movie_count": 2000,
+  "movie_count": 10000,
   "privacy": {
     "contains_api_keys": false,
     "contains_embeddings": false,
     "contains_raw_reviews": false
   },
   "project": "The Film Atlas",
-  "projection_method": "umap"
+  "projection_method": "umap",
+  "territory_layouts": {
+    "file": "territory_layouts.json",
+    "variant_count": 3,
+    "variants": [
+      {
+        "description": "Maximizes visible hierarchy: movies pack into microclusters, microclusters pack into neighborhoods, and neighborhoods pack into macro territories.",
+        "id": "strict_pack",
+        "label": "Strict Packed Atlas"
+      },
+      {
+        "description": "Keeps the hierarchy nested while anchoring continents and subregions toward their original UMAP semantic directions.",
+        "id": "semantic_territories",
+        "label": "Semantic Territory Atlas"
+      },
+      {
+        "description": "Uses readable macro territories, semantically nudged neighborhoods, and tighter local islands for microcluster-level browsing.",
+        "id": "hybrid_micro_islands",
+        "label": "Hybrid Micro-Islands"
+      }
+    ]
+  }
 }

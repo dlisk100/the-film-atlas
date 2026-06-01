@@ -19,15 +19,15 @@ const { dataBase } = Astro.props;
           Mapping cinema's hidden genres as a navigable constellation of films, neighborhoods, and uncanny near-neighbors.
         </p>
         <div class="mt-7 flex flex-wrap gap-x-6 gap-y-3 font-mono text-xs uppercase text-[#d9c7a3]/80">
-          <span><strong class="text-[#f2c46d]" data-atlas-movie-count>2,000</strong> films</span>
-          <span><strong class="text-[#68d8c5]" data-atlas-cluster-count>287</strong> labeled regions</span>
+          <span><strong class="text-[#f2c46d]" data-atlas-movie-count>10,000</strong> films</span>
+          <span><strong class="text-[#68d8c5]" data-atlas-cluster-count>946</strong> labeled regions</span>
           <span><strong class="text-[#f29bb2]" data-atlas-generated-at>Static export</strong></span>
         </div>
       </div>
 
       <div class="mt-10 grid flex-1 gap-4 lg:grid-cols-[minmax(0,1fr)_350px]">
         <section class="atlas-map-panel min-h-[520px] overflow-hidden border border-[#f2c46d]/20 bg-[#070707]/88 shadow-[0_20px_80px_rgba(0,0,0,0.42)] backdrop-blur" aria-label="Interactive movie map">
-          <div class="flex flex-col gap-3 border-b border-[#f2c46d]/15 bg-[#080807]/78 p-3 sm:flex-row sm:items-center sm:justify-between">
+          <div class="flex flex-col gap-3 border-b border-[#f2c46d]/15 bg-[#080807]/78 p-3 xl:flex-row xl:items-center xl:justify-between">
             <form class="relative min-w-0 flex-1" data-atlas-search-form>
               <label class="sr-only" for="film-atlas-search">Search by movie title</label>
               <input
@@ -41,13 +41,27 @@ const { dataBase } = Astro.props;
               <div class="atlas-search-results" data-atlas-search-results hidden></div>
             </form>
 
-            <div class="flex shrink-0 items-center justify-between gap-2">
-              <span class="rounded border border-[#68d8c5]/20 bg-[#071211]/80 px-3 py-2 font-mono text-[0.68rem] uppercase text-[#68d8c5]" data-atlas-label-tier>Macro clusters</span>
-              <div class="flex items-center gap-1">
-                <button class="atlas-icon-button" type="button" data-atlas-zoom-out aria-label="Zoom out">-</button>
-                <button class="atlas-icon-button" type="button" data-atlas-zoom-in aria-label="Zoom in">+</button>
-                <button class="atlas-reset-button" type="button" data-atlas-reset>Reset</button>
+            <div class="flex shrink-0 flex-col gap-2 sm:min-w-[380px]">
+              <div class="flex items-center justify-between gap-2">
+                <label class="sr-only" for="film-atlas-layout">Map layout</label>
+                <select
+                  id="film-atlas-layout"
+                  class="atlas-layout-select"
+                  data-atlas-layout-select
+                  aria-label="Map layout"
+                >
+                  <option value="projection">Projection</option>
+                </select>
+                <span class="rounded border border-[#68d8c5]/20 bg-[#071211]/80 px-3 py-2 font-mono text-[0.68rem] uppercase text-[#68d8c5]" data-atlas-label-tier>Macro clusters</span>
+                <div class="flex items-center gap-1">
+                  <button class="atlas-icon-button" type="button" data-atlas-zoom-out aria-label="Zoom out">-</button>
+                  <button class="atlas-icon-button" type="button" data-atlas-zoom-in aria-label="Zoom in">+</button>
+                  <button class="atlas-reset-button" type="button" data-atlas-reset>Reset</button>
+                </div>
               </div>
+              <p class="atlas-layout-description" data-atlas-layout-description>
+                Original 2D semantic projection.
+              </p>
             </div>
           </div>
 
@@ -66,7 +80,7 @@ const { dataBase } = Astro.props;
             The Film Atlas
           </h2>
           <p class="mt-2 font-mono text-xs uppercase text-[#d9c7a3]/70" data-atlas-selected-meta>
-            2,000 films arranged by semantic distance
+            10,000 films arranged by semantic distance
           </p>
           <div class="mt-5 flex flex-wrap gap-2" data-atlas-selected-genres></div>
           <p class="mt-5 text-sm leading-7 text-[#d9c7a3]" data-atlas-selected-overview>
@@ -201,6 +215,37 @@ const { dataBase } = Astro.props;
     padding: 0 0.72rem;
   }
 
+  .atlas-layout-select {
+    appearance: none;
+    background:
+      linear-gradient(45deg, transparent 50%, #68d8c5 50%) calc(100% - 14px) 50% / 6px 6px no-repeat,
+      linear-gradient(135deg, #68d8c5 50%, transparent 50%) calc(100% - 9px) 50% / 6px 6px no-repeat,
+      rgba(7, 18, 17, 0.84);
+    border: 1px solid rgba(104, 216, 197, 0.24);
+    border-radius: 6px;
+    color: #e9fff8;
+    flex: 1 1 auto;
+    font-family: Inter, ui-sans-serif, system-ui;
+    font-size: 0.76rem;
+    height: 2.25rem;
+    min-width: 10rem;
+    outline: none;
+    padding: 0 1.6rem 0 0.72rem;
+  }
+
+  .atlas-layout-select:focus {
+    border-color: rgba(104, 216, 197, 0.56);
+    box-shadow: 0 0 0 2px rgba(104, 216, 197, 0.14);
+  }
+
+  .atlas-layout-description {
+    color: rgba(217, 199, 163, 0.72);
+    font-family: Inter, ui-sans-serif, system-ui;
+    font-size: 0.72rem;
+    line-height: 1.35;
+    min-height: 1rem;
+  }
+
   .atlas-icon-button:hover,
   .atlas-reset-button:hover {
     background: rgba(242, 196, 109, 0.1);
@@ -267,6 +312,7 @@ const { dataBase } = Astro.props;
   }
 
   :global(.atlas-search-result:hover),
+  :global(.atlas-search-result[aria-selected="true"]),
   :global(.atlas-neighbor-button:hover) {
     background: rgba(242, 196, 109, 0.08);
     border-color: rgba(242, 196, 109, 0.18);

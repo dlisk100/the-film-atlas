@@ -79,6 +79,46 @@ export interface FilmAtlasNeighborRecord {
   neighbors?: FilmAtlasNeighbor[];
 }
 
+export interface FilmAtlasTerritoryPoint {
+  tmdb_id: number;
+  x: number;
+  y: number;
+}
+
+export interface FilmAtlasTerritoryRegion {
+  cluster_id: number;
+  layer: FilmAtlasLayer;
+  macro_id?: number | null;
+  neighborhood_id?: number | null;
+  parent_cluster_id?: number | null;
+  radius: number;
+  size?: number;
+  x: number;
+  y: number;
+}
+
+export interface FilmAtlasTerritoryVariant {
+  algorithm?: string;
+  description?: string;
+  id: string;
+  label: string;
+  metrics?: {
+    macro_regions?: number;
+    micro_regions?: number;
+    movie_points?: number;
+    neighborhood_regions?: number;
+  };
+  points: FilmAtlasTerritoryPoint[];
+  regions: FilmAtlasTerritoryRegion[];
+}
+
+export interface FilmAtlasTerritoryLayouts {
+  generated_at?: string;
+  movie_count?: number;
+  source?: string;
+  variants: FilmAtlasTerritoryVariant[];
+}
+
 export interface FilmAtlasExport {
   labels: FilmAtlasLabel[];
   macro_clusters: FilmAtlasCluster[];

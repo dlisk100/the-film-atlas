@@ -22,6 +22,7 @@ data/processed/
 # Large/private outputs
 outputs/private/
 outputs/intermediate/
+outputs/experiments/
 
 # Frontend sandbox build artifacts
 frontend/.astro/
