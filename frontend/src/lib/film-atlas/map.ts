@@ -435,9 +435,7 @@ const getOptionalElement = <T extends Element>(root: ParentNode, selector: strin
   root.querySelector<T>(selector);
 
 async function fetchJson<T>(baseUrl: string, fileName: string): Promise<T> {
-  const response = await fetch(`${baseUrl.replace(/\/$/, "")}/${fileName}`, {
-    cache: "no-cache",
-  });
+  const response = await fetch(`${baseUrl.replace(/\/$/, "")}/${fileName}`);
 
   if (!response.ok) {
     throw new Error(`Could not load ${fileName}: ${response.status}`);
@@ -726,7 +724,10 @@ export function initFilmAtlas(root: HTMLElement) {
   let activeLayout: AtlasLayoutMode | null = null;
   let activeColorMode: AtlasColorMode = "neighborhood";
   let neighborsById = new Map<number, FilmAtlasNeighborRecord>();
-  let neighborsLoaded = false;
+  let neighborShardCount = 100;
+  let neighborShardDirectory = "neighbor_shards";
+  const loadedNeighborShards = new Set<number>();
+  const loadingNeighborShards = new Map<number, Promise<void>>();
   let nodesById = new Map<number, AtlasNode>();
   let bounds: Bounds = { maxX: 1, maxY: 1, minX: 0, minY: 0 };
   let cssWidth = 1;
@@ -2157,6 +2158,34 @@ export function initFilmAtlas(root: HTMLElement) {
     ctx.restore();
   };
 
+  const neighborShardForMovie = (tmdbId: number) =>
+    Math.abs(tmdbId) % Math.max(1, neighborShardCount);
+
+  const loadNeighborShard = (tmdbId: number) => {
+    const shardId = neighborShardForMovie(tmdbId);
+    if (loadedNeighborShards.has(shardId)) return Promise.resolve();
+    const existing = loadingNeighborShards.get(shardId);
+    if (existing) return existing;
+
+    const shardName = `${neighborShardDirectory.replace(/\/$/, "")}/${String(shardId).padStart(2, "0")}.json`;
+    const promise = fetchJson<FilmAtlasNeighborRecord[]>(dataBase, shardName)
+      .then((records) => {
+        for (const record of records) {
+          neighborsById.set(record.tmdb_id, record);
+        }
+        loadedNeighborShards.add(shardId);
+      })
+      .catch((error: unknown) => {
+        loadedNeighborShards.add(shardId);
+        console.warn(`Could not load ${shardName}`, error);
+      })
+      .finally(() => {
+        loadingNeighborShards.delete(shardId);
+      });
+    loadingNeighborShards.set(shardId, promise);
+    return promise;
+  };
+
   const drawPoints = () => {
     const isGmapRender = territoryRenderMode === "gmap";
     const baseRadius = isGmapRender
@@ -2786,15 +2815,23 @@ export function initFilmAtlas(root: HTMLElement) {
     }
 
     neighborList.innerHTML = "";
-    const record = neighborsById.get(movie.tmdb_id);
-    const neighbors = record?.neighbors ?? [];
-    if (!neighborsLoaded) {
+    const shardId = neighborShardForMovie(movie.tmdb_id);
+    if (!loadedNeighborShards.has(shardId)) {
+      void loadNeighborShard(movie.tmdb_id).then(() => {
+        if (selected?.movie.tmdb_id === movie.tmdb_id) {
+          renderSelected();
+          requestDraw();
+        }
+      });
       const loading = document.createElement("p");
       loading.className = "atlas-neighbor-empty";
       loading.textContent = "Loading semantic neighbors...";
       neighborList.append(loading);
       return;
     }
+
+    const record = neighborsById.get(movie.tmdb_id);
+    const neighbors = record?.neighbors ?? [];
     for (const neighbor of neighbors.slice(0, 7)) {
       const node = nodesById.get(neighbor.tmdb_id);
       if (!node) continue;
@@ -3190,6 +3227,8 @@ export function initFilmAtlas(root: HTMLElement) {
       populateColorOptions();
       populateLayoutOptions();
       setActiveLayout(initialLayoutId, { resetCamera: true });
+      neighborShardCount = data.manifest.neighbor_shards?.count ?? neighborShardCount;
+      neighborShardDirectory = data.manifest.neighbor_shards?.directory ?? neighborShardDirectory;
       movieCount.textContent = (data.manifest.movie_count ?? nodes.length).toLocaleString();
       const totalClusters = (data.manifest.layers?.macro?.cluster_count ?? labelsByLayer.macro.length)
         + (data.manifest.layers?.neighborhood?.cluster_count ?? labelsByLayer.neighborhood.length)
@@ -3206,27 +3245,6 @@ export function initFilmAtlas(root: HTMLElement) {
       setStatus("", false);
       renderSelected();
       resizeCanvas();
-
-      const loadNeighbors = () => {
-        fetchJson<FilmAtlasNeighborRecord[]>(dataBase, "neighbors.json")
-          .then((neighbors) => {
-            neighborsById = new Map(neighbors.map((record) => [record.tmdb_id, record]));
-            neighborsLoaded = true;
-            if (selected) {
-              renderSelected();
-              requestDraw();
-            }
-          })
-          .catch((error: unknown) => {
-            neighborsLoaded = true;
-            console.warn("Could not load neighbors.json", error);
-          });
-      };
-      if ("requestIdleCallback" in window) {
-        window.requestIdleCallback(loadNeighbors, { timeout: 1500 });
-      } else {
-        window.setTimeout(loadNeighbors, 250);
-      }
     })
     .catch((error: unknown) => {
       const message = error instanceof Error ? error.message : "Unknown load error";

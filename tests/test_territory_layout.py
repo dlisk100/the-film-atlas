@@ -40,6 +40,11 @@ def test_build_territory_layouts_preserves_nested_public_export(tmp_path: Path) 
         {"cluster_id": 2001, "parent_cluster_id": 200, "size": 1},
         {"cluster_id": 2002, "parent_cluster_id": 201, "size": 1},
     ])
+    neighbor_shards = export_dir / "neighbor_shards"
+    neighbor_shards.mkdir()
+    _write_json(neighbor_shards / "01.json", [
+        {"tmdb_id": 1, "neighbors": [{"tmdb_id": 2, "title": "Two", "similarity": 0.95}]},
+    ])
     _write_json(export_dir / "manifest.json", {"files": ["points.json"], "movie_count": 6})
 
     result = build_territory_layouts_file(export_dir=export_dir)

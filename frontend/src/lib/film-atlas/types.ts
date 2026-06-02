@@ -8,6 +8,11 @@ export interface FilmAtlasManifest {
     labeled?: boolean;
   }>>;
   movie_count?: number;
+  neighbor_shards?: {
+    count?: number;
+    directory?: string;
+    strategy?: string;
+  };
   privacy?: {
     contains_api_keys?: boolean;
     contains_embeddings?: boolean;

@@ -48,6 +48,8 @@ from film_atlas.tmdb_client import TMDbClient
 MILESTONE4_DIRNAME = "milestone_4"
 HIERARCHY_DIRNAME = "hierarchy"
 PUBLIC_EXPORT_DIRNAME = "public_export"
+NEIGHBOR_SHARD_COUNT = 100
+NEIGHBOR_SHARD_DIRNAME = "neighbor_shards"
 MILESTONE4_REPORT_FILENAME = "milestone_4_report.md"
 MILESTONE4_SUMMARY_FILENAME = "milestone_4_summary.json"
 SCALE_DATASET_SUMMARY_FILENAME = "scale_dataset_summary.json"
@@ -627,6 +629,7 @@ def export_atlas_data_file(
     neighbors = [
         _sanitize_neighbors(entry) for entry in _read_json(hierarchy_path / "neighbors.json")
     ]
+    neighbor_shards = _shard_neighbors(neighbors)
     layers = {
         "macro": _load_layer_export(hierarchy_path, "macro"),
         "neighborhood": _load_layer_export(hierarchy_path, "neighborhood"),
@@ -661,7 +664,6 @@ def export_atlas_data_file(
         "macro_clusters.json": _export_clusters(layers["macro"]),
         "neighborhood_clusters.json": _export_clusters(layers["neighborhood"]),
         "micro_clusters.json": _export_clusters(layers["micro"]),
-        "neighbors.json": neighbors,
         "labels.json": labels,
     }
     manifest = {
@@ -669,7 +671,12 @@ def export_atlas_data_file(
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "movie_count": len(movie_rows),
         "projection_method": coordinates_payload.get("projection_method"),
-        "files": sorted([*files, "manifest.json"]),
+        "files": sorted([*files, "manifest.json", NEIGHBOR_SHARD_DIRNAME]),
+        "neighbor_shards": {
+            "count": NEIGHBOR_SHARD_COUNT,
+            "directory": NEIGHBOR_SHARD_DIRNAME,
+            "strategy": "tmdb_id_modulo",
+        },
         "layers": {
             layer: {
                 "cluster_count": len(payload["clusters"]),
@@ -690,6 +697,16 @@ def export_atlas_data_file(
         path = export_dir / filename
         path.write_text(json.dumps(payload, separators=(",", ":"), sort_keys=True), encoding="utf-8")
         file_sizes[filename] = path.stat().st_size
+    shard_dir = export_dir / NEIGHBOR_SHARD_DIRNAME
+    if shard_dir.exists():
+        for stale_file in shard_dir.glob("*.json"):
+            stale_file.unlink()
+    shard_dir.mkdir(parents=True, exist_ok=True)
+    for shard_id, payload in neighbor_shards.items():
+        filename = f"{shard_id:02d}.json"
+        path = shard_dir / filename
+        path.write_text(json.dumps(payload, separators=(",", ":"), sort_keys=True), encoding="utf-8")
+        file_sizes[f"{NEIGHBOR_SHARD_DIRNAME}/{filename}"] = path.stat().st_size
 
     return PublicExportResult(
         export_dir=export_dir,
@@ -1201,6 +1218,15 @@ def _sanitize_neighbors(entry: dict[str, Any]) -> dict[str, Any]:
     }
 
 
+def _shard_neighbors(neighbors: list[dict[str, Any]]) -> dict[int, list[dict[str, Any]]]:
+    shards: dict[int, list[dict[str, Any]]] = {
+        shard_id: [] for shard_id in range(NEIGHBOR_SHARD_COUNT)
+    }
+    for entry in neighbors:
+        shards[int(entry["tmdb_id"]) % NEIGHBOR_SHARD_COUNT].append(entry)
+    return shards
+
+
 def _load_hierarchy_summary(hierarchy_dir: Path) -> HierarchyResult:
     payload = _read_json(hierarchy_dir / MILESTONE4_SUMMARY_FILENAME)
     layers = []
@@ -1350,7 +1376,6 @@ def _frontend_recommendation(
         "macro_clusters.json",
         "neighborhood_clusters.json",
         "micro_clusters.json",
-        "neighbors.json",
         "labels.json",
     }
     missing = sorted(required_files.difference(export.file_sizes))

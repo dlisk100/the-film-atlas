@@ -233,10 +233,14 @@ def test_hierarchy_metrics_and_public_export_are_sanitized(tmp_path: Path) -> No
     assert (export.export_dir / "manifest.json").exists()
     movies_payload = json.loads((export.export_dir / "movies.json").read_text(encoding="utf-8"))
     points_payload = json.loads((export.export_dir / "points.json").read_text(encoding="utf-8"))
+    manifest_payload = json.loads((export.export_dir / "manifest.json").read_text(encoding="utf-8"))
 
     assert "reviews" not in movies_payload[0]
     assert "embedding" not in movies_payload[0]
     assert {"macro_id", "neighborhood_id", "micro_id"}.issubset(points_payload[0])
+    assert "neighbors.json" not in manifest_payload["files"]
+    assert manifest_payload["neighbor_shards"]["count"] == 100
+    assert (export.export_dir / "neighbor_shards" / "00.json").exists()
 
 
 def test_milestone_4_report_rendering(tmp_path: Path) -> None:

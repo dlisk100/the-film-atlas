@@ -120,7 +120,7 @@ def build_territory_layouts_file(
     macro_clusters = _load_clusters(export_path / "macro_clusters.json")
     neighborhood_clusters = _load_clusters(export_path / "neighborhood_clusters.json")
     micro_clusters = _load_clusters(export_path / "micro_clusters.json")
-    neighbor_links = _load_neighbor_links(export_path / "neighbors.json")
+    neighbor_links = _load_neighbor_links(export_path)
 
     variants = [
         _build_variant(
@@ -182,27 +182,34 @@ def _load_clusters(path: Path) -> dict[int, dict[str, Any]]:
     return {int(cluster["cluster_id"]): cluster for cluster in clusters}
 
 
-def _load_neighbor_links(path: Path) -> list[NeighborLink]:
-    if not path.exists():
+def _load_neighbor_links(export_path: Path) -> list[NeighborLink]:
+    neighbor_paths = [export_path / "neighbors.json"]
+    shard_dir = export_path / "neighbor_shards"
+    if not neighbor_paths[0].exists() and shard_dir.exists():
+        neighbor_paths = sorted(shard_dir.glob("*.json"))
+    if not neighbor_paths:
         return []
-    raw_records = json.loads(path.read_text(encoding="utf-8"))
     links = []
-    for raw in raw_records:
-        try:
-            source_tmdb_id = int(raw["tmdb_id"])
-        except (KeyError, TypeError, ValueError):
+    for path in neighbor_paths:
+        if not path.exists():
             continue
-        for neighbor in raw.get("neighbors") or []:
+        raw_records = json.loads(path.read_text(encoding="utf-8"))
+        for raw in raw_records:
             try:
-                links.append(
-                    NeighborLink(
-                        source_tmdb_id=source_tmdb_id,
-                        target_tmdb_id=int(neighbor["tmdb_id"]),
-                        similarity=float(neighbor.get("similarity", 0.0)),
-                    )
-                )
+                source_tmdb_id = int(raw["tmdb_id"])
             except (KeyError, TypeError, ValueError):
                 continue
+            for neighbor in raw.get("neighbors") or []:
+                try:
+                    links.append(
+                        NeighborLink(
+                            source_tmdb_id=source_tmdb_id,
+                            target_tmdb_id=int(neighbor["tmdb_id"]),
+                            similarity=float(neighbor.get("similarity", 0.0)),
+                        )
+                    )
+                except (KeyError, TypeError, ValueError):
+                    continue
     return links
 
 
