@@ -695,6 +695,8 @@ export function initFilmAtlas(root: HTMLElement) {
   const selectedOverview = getElement<HTMLElement>(root, "[data-atlas-selected-overview]");
   const selectedLabels = getElement<HTMLElement>(root, "[data-atlas-selected-labels]");
   const selectedGenres = getElement<HTMLElement>(root, "[data-atlas-selected-genres]");
+  const selectedChip = getElement<HTMLButtonElement>(root, "[data-atlas-selected-chip]");
+  const selectedChipTitle = getElement<HTMLElement>(root, "[data-atlas-selected-chip-title]");
   const neighborSection = getElement<HTMLElement>(root, "[data-atlas-neighbor-section]");
   const neighborList = getElement<HTMLElement>(root, "[data-atlas-neighbors]");
   const movieCount = getElement<HTMLElement>(root, "[data-atlas-movie-count]");
@@ -2224,9 +2226,30 @@ export function initFilmAtlas(root: HTMLElement) {
         ctx.fill();
       }
 
-      if (isSelected || isHovered) {
-        ctx.globalAlpha = isSelected ? 0.46 : 0.26;
-        ctx.lineWidth = isSelected ? 2 : 1.5;
+      if (isSelected) {
+        ctx.globalAlpha = 0.74;
+        ctx.lineWidth = 5.5;
+        ctx.strokeStyle = "#030303";
+        ctx.beginPath();
+        ctx.arc(screen.x, screen.y, radius + 6.4, 0, Math.PI * 2);
+        ctx.stroke();
+
+        ctx.globalAlpha = 0.96;
+        ctx.lineWidth = 2.6;
+        ctx.strokeStyle = "#f2c46d";
+        ctx.beginPath();
+        ctx.arc(screen.x, screen.y, radius + 6.4, 0, Math.PI * 2);
+        ctx.stroke();
+
+        ctx.globalAlpha = 0.72;
+        ctx.lineWidth = 1.2;
+        ctx.strokeStyle = "#fff8ea";
+        ctx.beginPath();
+        ctx.arc(screen.x, screen.y, radius + 2.8, 0, Math.PI * 2);
+        ctx.stroke();
+      } else if (isHovered) {
+        ctx.globalAlpha = 0.26;
+        ctx.lineWidth = 1.5;
         ctx.strokeStyle = nodeColor(node);
         ctx.beginPath();
         ctx.arc(screen.x, screen.y, radius + 5, 0, Math.PI * 2);
@@ -2771,6 +2794,8 @@ export function initFilmAtlas(root: HTMLElement) {
         "A static cinema topology built from public movie metadata, layered clustering, and semantic territory layout.";
       selectedLabels.innerHTML = "";
       selectedGenres.innerHTML = "";
+      selectedChip.hidden = true;
+      selectedChipTitle.textContent = "";
       neighborSection.hidden = true;
       neighborList.innerHTML = "";
       selectedLabels.append(
@@ -2785,7 +2810,11 @@ export function initFilmAtlas(root: HTMLElement) {
     }
 
     const movie = selected.movie;
-    selectedTitle.textContent = movie.title || movie.original_title || "Untitled";
+    const movieTitle = movie.title || movie.original_title || "Untitled";
+    selectedTitle.textContent = movieTitle;
+    selectedChip.hidden = false;
+    selectedChipTitle.textContent = movieTitle;
+    selectedChip.setAttribute("aria-label", `Recenter ${movieTitle}`);
     selectedMeta.textContent = [
       formatYear(movie),
       formatRuntime(movie.runtime),
@@ -2863,6 +2892,15 @@ export function initFilmAtlas(root: HTMLElement) {
     zoom = clamp(targetZoom, MIN_ZOOM, MAX_ZOOM);
     offsetX = -(coordinate.x - centerX()) * baseScale * zoom;
     offsetY = (coordinate.y - centerY()) * baseScale * zoom;
+  };
+
+  const recenterSelected = () => {
+    if (!selected) return;
+    centerOnNode(selected, Math.max(zoom, 3.5));
+    const coordinate = coordinateForNode(selected);
+    const screen = worldToScreen(coordinate.x, coordinate.y);
+    moveTooltip(selected, screen);
+    requestDraw();
   };
 
   function selectNode(node: AtlasNode, options: { center?: boolean; zoom?: number } = {}) {
@@ -3188,6 +3226,7 @@ export function initFilmAtlas(root: HTMLElement) {
   });
 
   resetButton.addEventListener("click", resetView);
+  selectedChip.addEventListener("click", recenterSelected);
   zoomInButton.addEventListener("click", () => zoomAt(1.35, cssWidth / 2, cssHeight / 2));
   zoomOutButton.addEventListener("click", () => zoomAt(1 / 1.35, cssWidth / 2, cssHeight / 2));
   layoutSelect?.addEventListener("change", () => setActiveLayout(layoutSelect.value, { resetCamera: true }));
