@@ -44,16 +44,9 @@ def test_build_territory_layouts_preserves_nested_public_export(tmp_path: Path) 
 
     result = build_territory_layouts_file(export_dir=export_dir)
 
-    assert result.variant_count == 6
+    assert result.variant_count == 1
     payload = json.loads(result.layout_path.read_text(encoding="utf-8"))
-    assert {variant["id"] for variant in payload["variants"]} == {
-        "legacy_packed_baseline",
-        "semantic_gmap_cells",
-        "semantic_graph_balanced",
-        "semantic_graph_compact",
-        "semantic_graph_spacious",
-        "semantic_umap_anchored",
-    }
+    assert {variant["id"] for variant in payload["variants"]} == {"semantic_gmap_cells"}
 
     for variant in payload["variants"]:
         assert {point["tmdb_id"] for point in variant["points"]} == {1, 2, 3, 4, 5, 6}
@@ -85,4 +78,4 @@ def test_build_territory_layouts_preserves_nested_public_export(tmp_path: Path) 
 
     manifest = json.loads((export_dir / "manifest.json").read_text(encoding="utf-8"))
     assert "territory_layouts.json" in manifest["files"]
-    assert manifest["territory_layouts"]["variant_count"] == 6
+    assert manifest["territory_layouts"]["variant_count"] == 1

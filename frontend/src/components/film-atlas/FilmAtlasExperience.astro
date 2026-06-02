@@ -51,36 +51,6 @@ const { dataBase } = Astro.props;
             </form>
 
             <div class="atlas-control-rack">
-              <select
-                id="film-atlas-layout"
-                class="atlas-layout-select"
-                data-atlas-layout-select
-                aria-label="Map layout"
-              >
-                <option value="semantic_graph_balanced">Semantic Graph - Balanced</option>
-              </select>
-              <select
-                id="film-atlas-render"
-                class="atlas-layout-select"
-                data-atlas-render-select
-                aria-label="Render model"
-              >
-                <option value="gmap">GMap cells</option>
-                <option value="territory">Territory map - clean</option>
-                <option value="organic">Organic territory</option>
-                <option value="coastal">Coastal territory</option>
-                <option value="dense_coast">Dense coast</option>
-                <option value="biological">Biological cells</option>
-              </select>
-              <select
-                id="film-atlas-color"
-                class="atlas-layout-select"
-                data-atlas-color-select
-                aria-label="Color mode"
-              >
-                <option value="macro">Macro colors</option>
-                <option value="neighborhood">Neighborhood shades</option>
-              </select>
               <span class="atlas-tier-pill" data-atlas-label-tier>Macro clusters</span>
               <div class="atlas-zoom-controls">
                 <button class="atlas-icon-button" type="button" data-atlas-zoom-out aria-label="Zoom out">-</button>
@@ -89,10 +59,6 @@ const { dataBase } = Astro.props;
               </div>
             </div>
           </div>
-
-          <p class="atlas-layout-description" data-atlas-layout-description>
-            Nested semantic territories with compact spacing.
-          </p>
 
           <div class="atlas-stage" data-atlas-stage>
             <canvas class="absolute inset-0 h-full w-full touch-none cursor-grab" data-atlas-canvas aria-label="Interactive semantic territory map of 10,000 films"></canvas>
@@ -299,7 +265,7 @@ const { dataBase } = Astro.props;
 
   .atlas-map-panel {
     display: grid;
-    grid-template-rows: auto auto minmax(28rem, 1fr);
+    grid-template-rows: auto minmax(28rem, 1fr);
   }
 
   .atlas-toolbar {
@@ -308,7 +274,7 @@ const { dataBase } = Astro.props;
     border-bottom: 1px solid rgba(242, 196, 109, 0.12);
     display: grid;
     gap: 0.72rem;
-    grid-template-columns: minmax(18rem, 1fr) minmax(28rem, 0.94fr);
+    grid-template-columns: minmax(20rem, 1fr) auto;
     padding: 0.72rem;
   }
 
@@ -343,9 +309,9 @@ const { dataBase } = Astro.props;
 
   .atlas-control-rack {
     align-items: center;
-    display: grid;
+    display: flex;
     gap: 0.5rem;
-    grid-template-columns: minmax(0, 1.12fr) minmax(0, 1fr) minmax(0, 1fr) auto auto;
+    justify-content: flex-end;
     min-width: 0;
   }
 
@@ -365,17 +331,6 @@ const { dataBase } = Astro.props;
   .atlas-zoom-controls {
     display: inline-flex;
     gap: 0.32rem;
-  }
-
-  .atlas-layout-description {
-    background: rgba(8, 8, 7, 0.72);
-    border-bottom: 1px solid rgba(242, 196, 109, 0.10);
-    color: rgba(217, 199, 163, 0.72);
-    font-family: Inter, ui-sans-serif, system-ui;
-    font-size: 0.74rem;
-    line-height: 1.4;
-    min-height: 2.55rem;
-    padding: 0.62rem 0.86rem;
   }
 
   .atlas-stage {
@@ -502,29 +457,6 @@ const { dataBase } = Astro.props;
   .atlas-reset-button {
     font-size: 0.78rem;
     padding: 0 0.72rem;
-  }
-
-  .atlas-layout-select {
-    appearance: none;
-    background:
-      linear-gradient(45deg, transparent 50%, #68d8c5 50%) calc(100% - 14px) 50% / 6px 6px no-repeat,
-      linear-gradient(135deg, #68d8c5 50%, transparent 50%) calc(100% - 9px) 50% / 6px 6px no-repeat,
-      rgba(7, 18, 17, 0.84);
-    border: 1px solid rgba(104, 216, 197, 0.24);
-    border-radius: 6px;
-    color: #e9fff8;
-    font-family: Inter, ui-sans-serif, system-ui;
-    font-size: 0.76rem;
-    height: 2.36rem;
-    min-width: 0;
-    outline: none;
-    padding: 0 1.6rem 0 0.72rem;
-    width: 100%;
-  }
-
-  .atlas-layout-select:focus {
-    border-color: rgba(104, 216, 197, 0.56);
-    box-shadow: 0 0 0 2px rgba(104, 216, 197, 0.14);
   }
 
   .atlas-icon-button:hover,
@@ -828,7 +760,7 @@ const { dataBase } = Astro.props;
     }
 
     .atlas-control-rack {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      justify-content: flex-start;
     }
   }
 
@@ -878,10 +810,6 @@ const { dataBase } = Astro.props;
 
     .atlas-toolbar {
       padding: 0.58rem;
-    }
-
-    .atlas-control-rack {
-      grid-template-columns: 1fr 1fr;
     }
 
     .atlas-tier-pill {

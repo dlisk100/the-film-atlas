@@ -80,14 +80,14 @@ class VariantSpec:
     gmap_cells: bool = False
 
 
-VARIANT_SPECS = [
+PRODUCTION_VARIANT_SPECS = [
     VariantSpec(
         id="semantic_gmap_cells",
-        label="GMap Cells - Semantic",
+        label="Semantic Cells",
         description=(
-            "Experimental GMap-inspired layer: films keep graph-driven semantic positions, "
-            "then movie-level Voronoi cells are colored by macro, neighborhood, and micro "
-            "membership so map borders emerge from the underlying film positions."
+            "Final GMap-inspired atlas layer: films keep graph-driven semantic positions, "
+            "then movie-level cells are shaded by macro, neighborhood, and micro membership "
+            "so map borders emerge from the underlying film positions."
         ),
         layout_method="graph_stress",
         macro_fill_ratio=0.60,
@@ -103,111 +103,6 @@ VARIANT_SPECS = [
         fill_ratio=0.38,
         padding_ratio=0.108,
         gmap_cells=True,
-    ),
-    VariantSpec(
-        id="semantic_graph_balanced",
-        label="Semantic Graph - Balanced",
-        description=(
-            "Graph-driven map geometry: semantic neighbor links pull related macro, "
-            "neighborhood, and micro territories together before borders are drawn."
-        ),
-        layout_method="graph_stress",
-        macro_fill_ratio=0.58,
-        macro_semantic_weight=1.0,
-        macro_target_ratio=0.86,
-        child_semantic_weight=1.0,
-        child_target_ratio=0.70,
-        graph_weight=1.35,
-        anchor_weight=0.055,
-        graph_iterations=190,
-        movie_local_weight=0.94,
-        movie_spread_ratio=0.82,
-        fill_ratio=0.38,
-        padding_ratio=0.115,
-    ),
-    VariantSpec(
-        id="semantic_graph_compact",
-        label="Semantic Graph - Compact",
-        description=(
-            "A denser graph layout for comparing how much compactness the semantic "
-            "geography can tolerate before adjacency starts to distort."
-        ),
-        layout_method="graph_stress",
-        macro_fill_ratio=0.68,
-        macro_semantic_weight=1.0,
-        macro_target_ratio=0.78,
-        child_semantic_weight=0.98,
-        child_target_ratio=0.62,
-        graph_weight=1.12,
-        anchor_weight=0.07,
-        graph_iterations=165,
-        movie_local_weight=0.92,
-        movie_spread_ratio=0.78,
-        fill_ratio=0.46,
-        padding_ratio=0.09,
-    ),
-    VariantSpec(
-        id="semantic_graph_spacious",
-        label="Semantic Graph - Spacious",
-        description=(
-            "A looser graph layout that spends screen space to preserve semantic "
-            "neighbor relationships and make questionable borders easier to audit."
-        ),
-        layout_method="graph_stress",
-        macro_fill_ratio=0.52,
-        macro_semantic_weight=1.0,
-        macro_target_ratio=0.92,
-        child_semantic_weight=1.0,
-        child_target_ratio=0.78,
-        graph_weight=1.55,
-        anchor_weight=0.038,
-        graph_iterations=220,
-        movie_local_weight=0.97,
-        movie_spread_ratio=0.86,
-        fill_ratio=0.30,
-        padding_ratio=0.155,
-    ),
-    VariantSpec(
-        id="semantic_umap_anchored",
-        label="Semantic Graph - UMAP Anchored",
-        description=(
-            "A graph layout with a stronger pull toward the original projection, useful "
-            "when you want semantic adjacency without losing the old atlas orientation."
-        ),
-        layout_method="umap_anchored_graph",
-        macro_fill_ratio=0.56,
-        macro_semantic_weight=1.0,
-        macro_target_ratio=0.90,
-        child_semantic_weight=1.0,
-        child_target_ratio=0.74,
-        graph_weight=1.05,
-        anchor_weight=0.14,
-        graph_iterations=180,
-        movie_local_weight=0.98,
-        movie_spread_ratio=0.84,
-        fill_ratio=0.34,
-        padding_ratio=0.13,
-    ),
-    VariantSpec(
-        id="legacy_packed_baseline",
-        label="Legacy Packed Baseline",
-        description=(
-            "The previous centroid-and-packing layout kept for comparison; useful as "
-            "a control when auditing whether graph physics improves map geography."
-        ),
-        layout_method="packed_baseline",
-        macro_fill_ratio=0.64,
-        macro_semantic_weight=1.0,
-        macro_target_ratio=0.80,
-        child_semantic_weight=0.97,
-        child_target_ratio=0.62,
-        graph_weight=0.0,
-        anchor_weight=0.0,
-        graph_iterations=0,
-        movie_local_weight=0.94,
-        movie_spread_ratio=0.80,
-        fill_ratio=0.42,
-        padding_ratio=0.105,
     ),
 ]
 
@@ -236,7 +131,7 @@ def build_territory_layouts_file(
             micro_clusters=micro_clusters,
             neighbor_links=neighbor_links,
         )
-        for spec in VARIANT_SPECS
+        for spec in PRODUCTION_VARIANT_SPECS
     ]
     region_count = max(len(variant["regions"]) for variant in variants)
     layout_payload = {
@@ -247,7 +142,7 @@ def build_territory_layouts_file(
     }
 
     layout_path = export_path / TERRITORY_LAYOUTS_FILENAME
-    layout_path.write_text(json.dumps(layout_payload, indent=2, sort_keys=True), encoding="utf-8")
+    layout_path.write_text(json.dumps(layout_payload, separators=(",", ":"), sort_keys=True), encoding="utf-8")
     _update_manifest(export_path / "manifest.json", layout_payload)
     return TerritoryLayoutResult(
         export_dir=export_path,
@@ -1570,4 +1465,4 @@ def _update_manifest(path: Path, payload: dict[str, Any]) -> None:
             for variant in payload["variants"]
         ],
     }
-    path.write_text(json.dumps(manifest, indent=2, sort_keys=True), encoding="utf-8")
+    path.write_text(json.dumps(manifest, separators=(",", ":"), sort_keys=True), encoding="utf-8")

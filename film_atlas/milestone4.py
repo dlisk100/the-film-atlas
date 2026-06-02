@@ -688,7 +688,7 @@ def export_atlas_data_file(
     file_sizes = {}
     for filename, payload in files.items():
         path = export_dir / filename
-        path.write_text(json.dumps(payload, indent=2, sort_keys=True), encoding="utf-8")
+        path.write_text(json.dumps(payload, separators=(",", ":"), sort_keys=True), encoding="utf-8")
         file_sizes[filename] = path.stat().st_size
 
     return PublicExportResult(
@@ -1177,20 +1177,13 @@ def _export_clusters(payload: dict[str, Any]) -> list[dict[str, Any]]:
 def _sanitize_movie(movie: MovieRecord) -> dict[str, Any]:
     return {
         "tmdb_id": movie.tmdb_id,
-        "imdb_id": movie.imdb_id,
         "title": movie.title,
         "original_title": movie.original_title,
-        "release_date": movie.release_date,
         "year": movie.year,
         "runtime": movie.runtime,
         "overview": movie.overview,
         "genres": movie.genres,
-        "keywords": movie.keywords,
-        "poster_path": movie.poster_path,
-        "backdrop_path": movie.backdrop_path,
         "vote_average": movie.vote_average,
-        "vote_count": movie.vote_count,
-        "popularity": movie.popularity,
     }
 
 

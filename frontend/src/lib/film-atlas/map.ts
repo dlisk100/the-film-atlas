@@ -54,6 +54,7 @@ type TerritoryCell = {
 
 type TerritoryCellsByLayer = Record<FilmAtlasLayer, TerritoryCell[]>;
 type GmapCell = Omit<FilmAtlasGmapCell, "polygon"> & {
+  bounds: Bounds;
   polygon: ScreenPoint[];
 };
 type GmapBoundaryEdge = {
@@ -132,14 +133,15 @@ type HslColor = {
   saturation: number;
 };
 
-const FILES: Record<keyof FilmAtlasExport, string> = {
+type InitialFilmAtlasExport = Omit<FilmAtlasExport, "neighbors">;
+
+const FILES: Record<keyof InitialFilmAtlasExport, string> = {
   labels: "labels.json",
   macro_clusters: "macro_clusters.json",
   manifest: "manifest.json",
   micro_clusters: "micro_clusters.json",
   movies: "movies.json",
   neighborhood_clusters: "neighborhood_clusters.json",
-  neighbors: "neighbors.json",
   points: "points.json",
 };
 
@@ -158,10 +160,8 @@ const PALETTE = [
   "#d9c7a3",
 ];
 
-const COLOR_MODE_LABELS: Record<AtlasColorMode, string> = {
-  macro: "Macro colors",
+const COLOR_MODE_LABELS: Partial<Record<AtlasColorMode, string>> = {
   neighborhood: "Neighborhood shades",
-  micro: "Micro shades",
 };
 
 const TERRITORY_LAYER_SETTINGS: Record<FilmAtlasLayer, {
@@ -186,64 +186,9 @@ const TERRITORY_LAYER_SETTINGS: Record<FilmAtlasLayer, {
   },
 };
 
-const TERRITORY_RENDER_ORDER: TerritoryRenderMode[] = [
-  "gmap",
-  "territory",
-  "organic",
-  "coastal",
-  "dense_coast",
-  "biological",
-];
+const TERRITORY_RENDER_ORDER: TerritoryRenderMode[] = ["gmap"];
 
-const TERRITORY_RENDER_SPECS: Record<TerritoryRenderMode, TerritoryRenderSpec> = {
-  biological: {
-    description: "Biological cell rendering keeps the previous organic cluster shapes and tighter local islands.",
-    edgeAmplitudeScale: 1,
-    fillAlphaScale: 0.72,
-    frame: "superellipse",
-    frameMargin: 0.025,
-    frameWave: 0,
-    label: "Biological cells",
-    organicEdges: false,
-    outerStrokeScale: 1,
-    pointFillScale: 1,
-    pointSampleScale: 1,
-    regionRadiusScale: 1,
-    strokeAlphaScale: 0.72,
-    viewportPaddingRatio: 0.075,
-  },
-  coastal: {
-    description: "Coastal territory tightens the outer atlas boundary around the semantic countries and gives the edge a map-like coastline.",
-    edgeAmplitudeScale: 1.38,
-    fillAlphaScale: 1.12,
-    frame: "coast",
-    frameMargin: 0.016,
-    frameWave: 0.012,
-    label: "Coastal territory",
-    organicEdges: true,
-    outerStrokeScale: 1.55,
-    pointFillScale: 1.04,
-    pointSampleScale: 1.035,
-    regionRadiusScale: 1.055,
-    strokeAlphaScale: 1.12,
-    viewportPaddingRatio: 0.052,
-  },
-  dense_coast: {
-    description: "Dense coast is the bolder cartography pass: less empty outer padding, stronger coastline, and fuller point spread inside each territory.",
-    edgeAmplitudeScale: 1.72,
-    fillAlphaScale: 1.28,
-    frame: "coast",
-    frameMargin: 0.007,
-    frameWave: 0.018,
-    label: "Dense coast",
-    organicEdges: true,
-    outerStrokeScale: 1.95,
-    pointFillScale: 1.08,
-    pointSampleScale: 1.06,
-    regionRadiusScale: 1.025,
-    strokeAlphaScale: 1.25,
-    viewportPaddingRatio: 0.038,
-  },
+const TERRITORY_RENDER_SPECS: Partial<Record<TerritoryRenderMode, TerritoryRenderSpec>> = {
   gmap: {
     description: "Cell borders keep each film in its semantic position while revealing the active atlas tier.",
     edgeAmplitudeScale: 1,
@@ -259,38 +204,6 @@ const TERRITORY_RENDER_SPECS: Record<TerritoryRenderMode, TerritoryRenderSpec> =
     regionRadiusScale: 1,
     strokeAlphaScale: 1.18,
     viewportPaddingRatio: 0.048,
-  },
-  organic: {
-    description: "Organic territory rendering keeps shared borders continuous while softening straight Voronoi edges.",
-    edgeAmplitudeScale: 1,
-    fillAlphaScale: 1,
-    frame: "superellipse",
-    frameMargin: 0.025,
-    frameWave: 0,
-    label: "Organic territory",
-    organicEdges: true,
-    outerStrokeScale: 1,
-    pointFillScale: 1,
-    pointSampleScale: 1,
-    regionRadiusScale: 1,
-    strokeAlphaScale: 1,
-    viewportPaddingRatio: 0.075,
-  },
-  territory: {
-    description: "Clean territory rendering fills the atlas with straight shared borders and spreads films across each active cell.",
-    edgeAmplitudeScale: 1,
-    fillAlphaScale: 1,
-    frame: "superellipse",
-    frameMargin: 0.025,
-    frameWave: 0,
-    label: "Territory map - clean",
-    organicEdges: false,
-    outerStrokeScale: 1,
-    pointFillScale: 1,
-    pointSampleScale: 1,
-    regionRadiusScale: 1,
-    strokeAlphaScale: 1,
-    viewportPaddingRatio: 0.075,
   },
 };
 
@@ -452,41 +365,24 @@ const normalizeText = (value: string | number | null | undefined) =>
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "");
 
-const renderModeLabel = (mode: TerritoryRenderMode) => TERRITORY_RENDER_SPECS[mode].label;
+const renderModeSpec = (mode: TerritoryRenderMode) => TERRITORY_RENDER_SPECS[mode] ?? TERRITORY_RENDER_SPECS.gmap!;
 
-const renderModeDescription = (mode: TerritoryRenderMode) => TERRITORY_RENDER_SPECS[mode].description;
+const renderModeLabel = (mode: TerritoryRenderMode) => renderModeSpec(mode).label;
 
 const layoutModeLabel = (mode: AtlasLayoutMode) => {
   const labels: Record<string, string> = {
-    legacy_packed_baseline: "Legacy Packed Baseline",
     semantic_gmap_cells: "Semantic Cells",
-    semantic_graph_balanced: "Semantic Territory - Balanced",
-    semantic_graph_compact: "Semantic Territory - Compact",
-    semantic_graph_spacious: "Semantic Territory - Spacious",
-    semantic_umap_anchored: "Semantic Territory - UMAP Anchored",
   };
   return labels[mode.id] ?? mode.label;
-};
-
-const layoutModeDescription = (mode: AtlasLayoutMode) => {
-  const descriptions: Record<string, string> = {
-    legacy_packed_baseline: "Previous packed layout kept as a control for visual comparison.",
-    semantic_gmap_cells: "Films keep graph-driven semantic positions while the renderer changes the territory treatment.",
-    semantic_graph_balanced: "Balanced semantic territory layout keeps related regions close without crowding the map.",
-    semantic_graph_compact: "Compact semantic territory layout spends less screen space while preserving major adjacencies.",
-    semantic_graph_spacious: "Spacious semantic territory layout gives neighboring regions more room to breathe.",
-    semantic_umap_anchored: "UMAP-anchored semantic territory layout keeps a stronger pull toward the original projection.",
-  };
-  return descriptions[mode.id] ?? mode.description;
 };
 
 const parseTerritoryRenderMode = (value: string): TerritoryRenderMode =>
   TERRITORY_RENDER_ORDER.includes(value as TerritoryRenderMode)
     ? value as TerritoryRenderMode
-    : "territory";
+    : "gmap";
 
 const parseColorMode = (value: string): AtlasColorMode =>
-  value === "micro" || value === "neighborhood" ? value : "macro";
+  value === "neighborhood" ? value : "neighborhood";
 
 const formatYear = (movie: FilmAtlasMovie) => {
   if (typeof movie.year === "number") return String(movie.year);
@@ -535,6 +431,9 @@ const getElement = <T extends Element>(root: ParentNode, selector: string) => {
   return element;
 };
 
+const getOptionalElement = <T extends Element>(root: ParentNode, selector: string) =>
+  root.querySelector<T>(selector);
+
 async function fetchJson<T>(baseUrl: string, fileName: string): Promise<T> {
   const response = await fetch(`${baseUrl.replace(/\/$/, "")}/${fileName}`, {
     cache: "no-cache",
@@ -547,14 +446,14 @@ async function fetchJson<T>(baseUrl: string, fileName: string): Promise<T> {
   return response.json() as Promise<T>;
 }
 
-async function loadAtlasData(baseUrl: string): Promise<FilmAtlasExport> {
+async function loadAtlasData(baseUrl: string): Promise<InitialFilmAtlasExport> {
   const entries = await Promise.all(
-    (Object.entries(FILES) as Array<[keyof FilmAtlasExport, string]>).map(
-      async ([key, file]) => [key, await fetchJson<FilmAtlasExport[typeof key]>(baseUrl, file)] as const,
+    (Object.entries(FILES) as Array<[keyof InitialFilmAtlasExport, string]>).map(
+      async ([key, file]) => [key, await fetchJson<InitialFilmAtlasExport[typeof key]>(baseUrl, file)] as const,
     ),
   );
 
-  return Object.fromEntries(entries) as FilmAtlasExport;
+  return Object.fromEntries(entries) as InitialFilmAtlasExport;
 }
 
 async function loadTerritoryLayouts(baseUrl: string): Promise<FilmAtlasTerritoryLayouts | null> {
@@ -588,7 +487,7 @@ function buildLabelMap(labels: FilmAtlasLabel[], clusterSets: Array<[FilmAtlasLa
   return labelsByKey;
 }
 
-function buildNodes(data: FilmAtlasExport) {
+function buildNodes(data: InitialFilmAtlasExport) {
   const moviesById = new Map(data.movies.map((movie) => [movie.tmdb_id, movie]));
   const labelsByKey = buildLabelMap(data.labels, [
     ["macro", data.macro_clusters],
@@ -661,16 +560,25 @@ function getBounds(
     pointBounds,
   );
   return gmapCells.reduce(
-    (bounds, cell) => cell.polygon.reduce(
-      (cellBounds, point) => ({
-        maxX: Math.max(cellBounds.maxX, point.x),
-        maxY: Math.max(cellBounds.maxY, point.y),
-        minX: Math.min(cellBounds.minX, point.x),
-        minY: Math.min(cellBounds.minY, point.y),
-      }),
-      bounds,
-    ),
+    (bounds, cell) => ({
+      maxX: Math.max(bounds.maxX, cell.bounds.maxX),
+      maxY: Math.max(bounds.maxY, cell.bounds.maxY),
+      minX: Math.min(bounds.minX, cell.bounds.minX),
+      minY: Math.min(bounds.minY, cell.bounds.minY),
+    }),
     regionBounds,
+  );
+}
+
+function boundsForPoints(points: ScreenPoint[]): Bounds {
+  return points.reduce(
+    (bounds, point) => ({
+      maxX: Math.max(bounds.maxX, point.x),
+      maxY: Math.max(bounds.maxY, point.y),
+      minX: Math.min(bounds.minX, point.x),
+      minY: Math.min(bounds.minY, point.y),
+    }),
+    { maxX: -Infinity, maxY: -Infinity, minX: Infinity, minY: Infinity },
   );
 }
 
@@ -781,10 +689,9 @@ export function initFilmAtlas(root: HTMLElement) {
   const resetButton = getElement<HTMLButtonElement>(root, "[data-atlas-reset]");
   const zoomInButton = getElement<HTMLButtonElement>(root, "[data-atlas-zoom-in]");
   const zoomOutButton = getElement<HTMLButtonElement>(root, "[data-atlas-zoom-out]");
-  const layoutSelect = getElement<HTMLSelectElement>(root, "[data-atlas-layout-select]");
-  const renderSelect = getElement<HTMLSelectElement>(root, "[data-atlas-render-select]");
-  const colorSelect = getElement<HTMLSelectElement>(root, "[data-atlas-color-select]");
-  const layoutDescription = getElement<HTMLElement>(root, "[data-atlas-layout-description]");
+  const layoutSelect = getOptionalElement<HTMLSelectElement>(root, "[data-atlas-layout-select]");
+  const renderSelect = getOptionalElement<HTMLSelectElement>(root, "[data-atlas-render-select]");
+  const colorSelect = getOptionalElement<HTMLSelectElement>(root, "[data-atlas-color-select]");
   const selectedTitle = getElement<HTMLElement>(root, "[data-atlas-selected-title]");
   const selectedMeta = getElement<HTMLElement>(root, "[data-atlas-selected-meta]");
   const selectedOverview = getElement<HTMLElement>(root, "[data-atlas-selected-overview]");
@@ -814,11 +721,12 @@ export function initFilmAtlas(root: HTMLElement) {
   let territoryCells: TerritoryCellsByLayer = emptyTerritoryCells();
   let organicEdgesByLayer: OrganicEdgeMapByLayer = emptyOrganicEdgeMaps();
   let territoryPointPositions: Record<FilmAtlasLayer, Map<number, ScreenPoint>> = emptyPointPositionMaps();
-  let territoryRenderMode: TerritoryRenderMode = "territory";
+  let territoryRenderMode: TerritoryRenderMode = "gmap";
   let layoutModes: AtlasLayoutMode[] = [];
   let activeLayout: AtlasLayoutMode | null = null;
-  let activeColorMode: AtlasColorMode = "macro";
+  let activeColorMode: AtlasColorMode = "neighborhood";
   let neighborsById = new Map<number, FilmAtlasNeighborRecord>();
+  let neighborsLoaded = false;
   let nodesById = new Map<number, AtlasNode>();
   let bounds: Bounds = { maxX: 1, maxY: 1, minX: 0, minY: 0 };
   let cssWidth = 1;
@@ -856,7 +764,7 @@ export function initFilmAtlas(root: HTMLElement) {
   const originalCoordinateForNode = (node: AtlasNode): ScreenPoint =>
     activeLayout?.pointsById.get(node.movie.tmdb_id) ?? projectionCoordinateForNode(node);
 
-  const currentRenderSpec = () => TERRITORY_RENDER_SPECS[territoryRenderMode];
+  const currentRenderSpec = () => renderModeSpec(territoryRenderMode);
 
   const usesTerritoryPointFill = () =>
     activeLayout?.isTerritory && territoryRenderMode !== "biological" && territoryRenderMode !== "gmap";
@@ -938,13 +846,17 @@ export function initFilmAtlas(root: HTMLElement) {
 
   const buildLayoutMode = (variant: FilmAtlasTerritoryVariant): AtlasLayoutMode => ({
     description: variant.description || "Nested territory experiment.",
-    gmapCells: (variant.gmap_cells ?? []).map((cell) => ({
-      macro_id: cell.macro_id,
-      micro_id: cell.micro_id,
-      neighborhood_id: cell.neighborhood_id,
-      polygon: cell.polygon.map(([x, y]) => ({ x, y })),
-      tmdb_id: cell.tmdb_id,
-    })),
+    gmapCells: (variant.gmap_cells ?? []).map((cell) => {
+      const polygon = cell.polygon.map(([x, y]) => ({ x, y }));
+      return {
+        bounds: boundsForPoints(polygon),
+        macro_id: cell.macro_id,
+        micro_id: cell.micro_id,
+        neighborhood_id: cell.neighborhood_id,
+        polygon,
+        tmdb_id: cell.tmdb_id,
+      };
+    }),
     id: variant.id,
     isTerritory: true,
     label: variant.label,
@@ -1716,6 +1628,7 @@ export function initFilmAtlas(root: HTMLElement) {
   };
 
   const populateLayoutOptions = () => {
+    if (!layoutSelect) return;
     layoutSelect.innerHTML = "";
     for (const mode of layoutModes) {
       const option = document.createElement("option");
@@ -1727,6 +1640,7 @@ export function initFilmAtlas(root: HTMLElement) {
   };
 
   const populateRenderOptions = () => {
+    if (!renderSelect) return;
     renderSelect.innerHTML = "";
     for (const mode of TERRITORY_RENDER_ORDER) {
       const option = document.createElement("option");
@@ -1736,10 +1650,11 @@ export function initFilmAtlas(root: HTMLElement) {
       renderSelect.append(option);
     }
     renderSelect.value = territoryRenderMode;
-    renderSelect.disabled = !activeLayout?.isTerritory;
+    renderSelect.disabled = !activeLayout?.isTerritory || TERRITORY_RENDER_ORDER.length <= 1;
   };
 
   const populateColorOptions = () => {
+    if (!colorSelect) return;
     colorSelect.innerHTML = "";
     for (const [value, label] of Object.entries(COLOR_MODE_LABELS)) {
       const option = document.createElement("option");
@@ -1748,11 +1663,12 @@ export function initFilmAtlas(root: HTMLElement) {
       colorSelect.append(option);
     }
     colorSelect.value = activeColorMode;
+    colorSelect.disabled = Object.keys(COLOR_MODE_LABELS).length <= 1;
   };
 
   const setColorMode = (mode: AtlasColorMode) => {
     activeColorMode = mode;
-    colorSelect.value = mode;
+    if (colorSelect) colorSelect.value = mode;
     if (selected) {
       const coordinate = coordinateForNode(selected);
       moveTooltip(selected, worldToScreen(coordinate.x, coordinate.y));
@@ -1761,15 +1677,7 @@ export function initFilmAtlas(root: HTMLElement) {
   };
 
   const updateLayoutDescription = () => {
-    if (!activeLayout) return;
-    if (activeLayout.isTerritory && territoryRenderMode === "gmap") {
-      layoutDescription.textContent =
-        "Semantic cell borders reveal each atlas tier; dots spread within the active territory to show the 10,000-film scale.";
-      return;
-    }
-    layoutDescription.textContent = activeLayout.isTerritory
-      ? `${layoutModeDescription(activeLayout)} ${renderModeDescription(territoryRenderMode)}`
-      : layoutModeDescription(activeLayout);
+    return;
   };
 
   const setTerritoryRenderMode = (mode: TerritoryRenderMode) => {
@@ -1777,8 +1685,10 @@ export function initFilmAtlas(root: HTMLElement) {
       mode = "territory";
     }
     territoryRenderMode = mode;
-    renderSelect.value = mode;
-    renderSelect.disabled = !activeLayout?.isTerritory;
+    if (renderSelect) {
+      renderSelect.value = mode;
+      renderSelect.disabled = !activeLayout?.isTerritory || TERRITORY_RENDER_ORDER.length <= 1;
+    }
     if (activeLayout?.isTerritory) {
       rebuildTerritoryCells();
       rebuildGmapCellIndex();
@@ -1800,7 +1710,7 @@ export function initFilmAtlas(root: HTMLElement) {
   const setActiveLayout = (id: string, options: { resetCamera?: boolean } = {}) => {
     activeLayout = layoutModes.find((mode) => mode.id === id) ?? layoutModes[0] ?? null;
     if (!activeLayout) return;
-    layoutSelect.value = activeLayout.id;
+    if (layoutSelect) layoutSelect.value = activeLayout.id;
     populateRenderOptions();
     updateLayoutDescription();
     if (territoryRenderMode === "gmap" && !activeLayout.gmapCells.length) {
@@ -2086,17 +1996,20 @@ export function initFilmAtlas(root: HTMLElement) {
 
   const drawGmapCellFill = (cell: GmapCell, alpha: number) => {
     if (cell.polygon.length < 3) return;
-    const screenPoints = cell.polygon.map((point) => worldToScreen(point.x, point.y));
-    const minX = Math.min(...screenPoints.map((point) => point.x));
-    const maxX = Math.max(...screenPoints.map((point) => point.x));
-    const minY = Math.min(...screenPoints.map((point) => point.y));
-    const maxY = Math.max(...screenPoints.map((point) => point.y));
+    const firstBoundsCorner = worldToScreen(cell.bounds.minX, cell.bounds.minY);
+    const secondBoundsCorner = worldToScreen(cell.bounds.maxX, cell.bounds.maxY);
+    const minX = Math.min(firstBoundsCorner.x, secondBoundsCorner.x);
+    const maxX = Math.max(firstBoundsCorner.x, secondBoundsCorner.x);
+    const minY = Math.min(firstBoundsCorner.y, secondBoundsCorner.y);
+    const maxY = Math.max(firstBoundsCorner.y, secondBoundsCorner.y);
     if (maxX < -24 || minX > cssWidth + 24 || maxY < -24 || minY > cssHeight + 24) return;
 
     ctx.beginPath();
-    for (const [index, point] of screenPoints.entries()) {
-      if (index === 0) ctx.moveTo(point.x, point.y);
-      else ctx.lineTo(point.x, point.y);
+    for (let index = 0; index < cell.polygon.length; index += 1) {
+      const point = cell.polygon[index];
+      const screenPoint = worldToScreen(point.x, point.y);
+      if (index === 0) ctx.moveTo(screenPoint.x, screenPoint.y);
+      else ctx.lineTo(screenPoint.x, screenPoint.y);
     }
     ctx.closePath();
     ctx.fillStyle = gmapCellColor(cell);
@@ -2875,6 +2788,13 @@ export function initFilmAtlas(root: HTMLElement) {
     neighborList.innerHTML = "";
     const record = neighborsById.get(movie.tmdb_id);
     const neighbors = record?.neighbors ?? [];
+    if (!neighborsLoaded) {
+      const loading = document.createElement("p");
+      loading.className = "atlas-neighbor-empty";
+      loading.textContent = "Loading semantic neighbors...";
+      neighborList.append(loading);
+      return;
+    }
     for (const neighbor of neighbors.slice(0, 7)) {
       const node = nodesById.get(neighbor.tmdb_id);
       if (!node) continue;
@@ -3233,11 +3153,11 @@ export function initFilmAtlas(root: HTMLElement) {
   resetButton.addEventListener("click", resetView);
   zoomInButton.addEventListener("click", () => zoomAt(1.35, cssWidth / 2, cssHeight / 2));
   zoomOutButton.addEventListener("click", () => zoomAt(1 / 1.35, cssWidth / 2, cssHeight / 2));
-  layoutSelect.addEventListener("change", () => setActiveLayout(layoutSelect.value, { resetCamera: true }));
-  renderSelect.addEventListener("change", () => {
+  layoutSelect?.addEventListener("change", () => setActiveLayout(layoutSelect.value, { resetCamera: true }));
+  renderSelect?.addEventListener("change", () => {
     setTerritoryRenderMode(parseTerritoryRenderMode(renderSelect.value));
   });
-  colorSelect.addEventListener("change", () => {
+  colorSelect?.addEventListener("change", () => {
     setColorMode(parseColorMode(colorSelect.value));
   });
 
@@ -3250,7 +3170,6 @@ export function initFilmAtlas(root: HTMLElement) {
     .then(([data, territoryLayouts]) => {
       nodes = buildNodes(data);
       nodesById = new Map(nodes.map((node) => [node.movie.tmdb_id, node]));
-      neighborsById = new Map(data.neighbors.map((record) => [record.tmdb_id, record]));
       const projectionMode: AtlasLayoutMode = {
         description: "Fallback raw 2D semantic projection used only when territory layouts are unavailable.",
         gmapCells: [],
@@ -3260,15 +3179,14 @@ export function initFilmAtlas(root: HTMLElement) {
         pointsById: new Map(),
         regions: [],
       };
-      const semanticModes = (territoryLayouts?.variants ?? []).map(buildLayoutMode);
+      const semanticModes = (territoryLayouts?.variants ?? [])
+        .filter((variant) => variant.id === "semantic_gmap_cells")
+        .map(buildLayoutMode);
       layoutModes = semanticModes.length > 0 ? semanticModes : [projectionMode];
       const hasGmapLayout = semanticModes.some((mode) => mode.id === "semantic_gmap_cells");
-      const hasBalancedLayout = semanticModes.some((mode) => mode.id === "semantic_graph_balanced");
       const initialLayoutId = hasGmapLayout
         ? "semantic_gmap_cells"
-        : hasBalancedLayout
-          ? "semantic_graph_balanced"
-          : layoutModes[0]?.id ?? "projection";
+        : layoutModes[0]?.id ?? "projection";
       populateColorOptions();
       populateLayoutOptions();
       setActiveLayout(initialLayoutId, { resetCamera: true });
@@ -3288,6 +3206,27 @@ export function initFilmAtlas(root: HTMLElement) {
       setStatus("", false);
       renderSelected();
       resizeCanvas();
+
+      const loadNeighbors = () => {
+        fetchJson<FilmAtlasNeighborRecord[]>(dataBase, "neighbors.json")
+          .then((neighbors) => {
+            neighborsById = new Map(neighbors.map((record) => [record.tmdb_id, record]));
+            neighborsLoaded = true;
+            if (selected) {
+              renderSelected();
+              requestDraw();
+            }
+          })
+          .catch((error: unknown) => {
+            neighborsLoaded = true;
+            console.warn("Could not load neighbors.json", error);
+          });
+      };
+      if ("requestIdleCallback" in window) {
+        window.requestIdleCallback(loadNeighbors, { timeout: 1500 });
+      } else {
+        window.setTimeout(loadNeighbors, 250);
+      }
     })
     .catch((error: unknown) => {
       const message = error instanceof Error ? error.message : "Unknown load error";
