@@ -695,12 +695,12 @@ export function initFilmAtlas(root: HTMLElement) {
   const selectedOverview = getElement<HTMLElement>(root, "[data-atlas-selected-overview]");
   const selectedLabels = getElement<HTMLElement>(root, "[data-atlas-selected-labels]");
   const selectedGenres = getElement<HTMLElement>(root, "[data-atlas-selected-genres]");
+  const panelEyebrow = getElement<HTMLElement>(root, "[data-atlas-panel-eyebrow]");
   const selectedChip = getElement<HTMLButtonElement>(root, "[data-atlas-selected-chip]");
   const selectedChipTitle = getElement<HTMLElement>(root, "[data-atlas-selected-chip-title]");
   const neighborSection = getElement<HTMLElement>(root, "[data-atlas-neighbor-section]");
   const neighborList = getElement<HTMLElement>(root, "[data-atlas-neighbors]");
   const movieCount = getElement<HTMLElement>(root, "[data-atlas-movie-count]");
-  const clusterCount = getElement<HTMLElement>(root, "[data-atlas-cluster-count]");
   const generatedAt = getElement<HTMLElement>(root, "[data-atlas-generated-at]");
 
   const ctx = canvas.getContext("2d", { alpha: true });
@@ -2763,7 +2763,7 @@ export function initFilmAtlas(root: HTMLElement) {
       }
       button.addEventListener("click", (event) => {
         event.preventDefault();
-        selectNode(node, { center: true, zoom: Math.max(zoom, 3.2) });
+        selectNode(node);
       });
 
       const title = document.createElement("span");
@@ -2788,10 +2788,11 @@ export function initFilmAtlas(root: HTMLElement) {
 
   const renderSelected = () => {
     if (!selected) {
-      selectedTitle.textContent = "The Film Atlas";
-      selectedMeta.textContent = `${nodes.length.toLocaleString()} films arranged by semantic distance`;
+      panelEyebrow.textContent = "Start exploring";
+      selectedTitle.textContent = "Choose a film";
+      selectedMeta.textContent = "Search or click any dot";
       selectedOverview.textContent =
-        "A static cinema topology built from public movie metadata, layered clustering, and semantic territory layout.";
+        "Search for a movie or click any dot on the map to see where it lives in the atlas. Each film belongs to a nested semantic path: a broad region, a local neighborhood, and a tight microcluster. From there, you can expand related clusters or follow nearest neighbors to browse films with similar story, mood, and texture.";
       selectedLabels.innerHTML = "";
       selectedGenres.innerHTML = "";
       selectedChip.hidden = true;
@@ -2799,18 +2800,19 @@ export function initFilmAtlas(root: HTMLElement) {
       neighborSection.hidden = true;
       neighborList.innerHTML = "";
       selectedLabels.append(
-        renderLabelPill("Macro", `${labelsByLayer.macro.length.toLocaleString()} constellations`),
+        renderLabelPill("Macro region", `${labelsByLayer.macro.length.toLocaleString()} broad territories`),
         renderLabelPill(
           "Neighborhood",
           `${labelsByLayer.neighborhood.length.toLocaleString()} local regions`,
         ),
-        renderLabelPill("Micro", `${labelsByLayer.micro.length.toLocaleString()} tight clusters`),
+        renderLabelPill("Microcluster", `${labelsByLayer.micro.length.toLocaleString()} tight film families`),
       );
       return;
     }
 
     const movie = selected.movie;
     const movieTitle = movie.title || movie.original_title || "Untitled";
+    panelEyebrow.textContent = "Selected film";
     selectedTitle.textContent = movieTitle;
     selectedChip.hidden = false;
     selectedChipTitle.textContent = movieTitle;
@@ -2868,7 +2870,7 @@ export function initFilmAtlas(root: HTMLElement) {
       const button = document.createElement("button");
       button.className = "atlas-neighbor-button";
       button.type = "button";
-      button.addEventListener("click", () => selectNode(node, { center: true, zoom: Math.max(zoom, 3.2) }));
+      button.addEventListener("click", () => selectNode(node));
 
       const title = document.createElement("span");
       title.className = "atlas-neighbor-title";
@@ -2896,7 +2898,7 @@ export function initFilmAtlas(root: HTMLElement) {
 
   const recenterSelected = () => {
     if (!selected) return;
-    centerOnNode(selected, Math.max(zoom, 3.5));
+    centerOnNode(selected);
     const coordinate = coordinateForNode(selected);
     const screen = worldToScreen(coordinate.x, coordinate.y);
     moveTooltip(selected, screen);
@@ -2998,7 +3000,7 @@ export function initFilmAtlas(root: HTMLElement) {
     searchResults.hidden = true;
     currentSearchResults = [];
     activeSearchIndex = -1;
-    selectNode(node, { center: true, zoom: Math.max(zoom, 3.5) });
+    selectNode(node);
   };
 
   const renderSearchResults = (results: AtlasNode[]) => {
@@ -3269,17 +3271,7 @@ export function initFilmAtlas(root: HTMLElement) {
       neighborShardCount = data.manifest.neighbor_shards?.count ?? neighborShardCount;
       neighborShardDirectory = data.manifest.neighbor_shards?.directory ?? neighborShardDirectory;
       movieCount.textContent = (data.manifest.movie_count ?? nodes.length).toLocaleString();
-      const totalClusters = (data.manifest.layers?.macro?.cluster_count ?? labelsByLayer.macro.length)
-        + (data.manifest.layers?.neighborhood?.cluster_count ?? labelsByLayer.neighborhood.length)
-        + (data.manifest.layers?.micro?.cluster_count ?? labelsByLayer.micro.length);
-      clusterCount.textContent = totalClusters.toLocaleString();
-      generatedAt.textContent = data.manifest.generated_at
-        ? new Date(data.manifest.generated_at).toLocaleDateString(undefined, {
-          day: "numeric",
-          month: "short",
-          year: "numeric",
-        })
-        : "Static export";
+      generatedAt.textContent = "June 2026";
 
       setStatus("", false);
       renderSelected();
