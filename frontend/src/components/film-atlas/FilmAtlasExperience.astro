@@ -12,7 +12,7 @@ const { dataBase } = Astro.props;
     <div class="atlas-app-frame relative mx-auto flex max-w-[1540px] flex-col">
       <header class="atlas-masthead">
         <div class="atlas-title-block">
-          <p class="atlas-eyebrow">Semantic Cinema Atlas</p>
+          <p class="atlas-eyebrow">Film Microgenres Mapped</p>
           <h1>The Film Atlas</h1>
           <p class="atlas-dek">
             An interactive map of 10,000 of the most popular films on TMDb, released from 1980 onward and arranged by experiential similarity: story, mood, texture, theme, and audience perception, not genre alone.
@@ -407,6 +407,7 @@ const { dataBase } = Astro.props;
   }
 
   .atlas-workspace {
+    --atlas-panel-height: calc(100vh - 8.2rem + 2px);
     align-items: start;
     display: grid;
     flex: 1;
@@ -583,7 +584,7 @@ const { dataBase } = Astro.props;
   }
 
   .atlas-detail-scroll {
-    max-height: calc(100vh - 8.2rem);
+    height: 100%;
     overflow: auto;
     padding: 1.25rem;
   }
@@ -1049,6 +1050,11 @@ const { dataBase } = Astro.props;
   }
 
   @media (min-width: 1024px) {
+    .atlas-map-panel,
+    .atlas-detail-panel {
+      height: var(--atlas-panel-height);
+    }
+
     .atlas-detail-panel {
       position: sticky;
       top: 1rem;
@@ -1099,6 +1105,7 @@ const { dataBase } = Astro.props;
     }
 
     .atlas-detail-scroll {
+      height: auto;
       max-height: none;
     }
   }
