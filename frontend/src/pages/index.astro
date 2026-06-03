@@ -2,12 +2,12 @@
 import FilmAtlasExperience from "../components/film-atlas/FilmAtlasExperience.astro";
 import AtlasLabLayout from "../layouts/AtlasLabLayout.astro";
 
-const dataBase = "/film-atlas/data/public_export";
+const dataBase = "/film-atlas/data";
 ---
 
 <AtlasLabLayout
-  title="The Film Atlas Lab"
-  description="A local sandbox for reviewing The Film Atlas frontend against the generated public export."
+  title="The Film Atlas"
+  description="An interactive map of 10,000 films arranged by experiential similarity: story, mood, texture, theme, and audience perception."
 >
   <FilmAtlasExperience dataBase={dataBase} />
 </AtlasLabLayout>

@@ -354,9 +354,9 @@ const emptyOrganicEdgeMaps = (): OrganicEdgeMapByLayer => ({
 });
 
 const labelTextForLayer = (layer: FilmAtlasLayer) => {
-  if (layer === "macro") return "Macro clusters";
+  if (layer === "macro") return "Macro regions";
   if (layer === "neighborhood") return "Neighborhoods";
-  return "Microclusters";
+  return "Micro clusters";
 };
 
 const normalizeText = (value: string | number | null | undefined) =>
@@ -2792,7 +2792,7 @@ export function initFilmAtlas(root: HTMLElement) {
       selectedTitle.textContent = "Choose a film";
       selectedMeta.textContent = "Search or click any dot";
       selectedOverview.textContent =
-        "Search for a movie or click any dot on the map to see where it lives in the atlas. Each film belongs to a nested semantic path: a broad region, a local neighborhood, and a tight microcluster. From there, you can expand related clusters or follow nearest neighbors to browse films with similar story, mood, and texture.";
+        "Search for a movie or click any dot on the map to see where it lives in the atlas. Each film belongs to a nested semantic path: a broad region, a local neighborhood, and a tight micro cluster. From there, you can expand related clusters or follow nearest neighbors to browse films with similar story, mood, and texture.";
       selectedLabels.innerHTML = "";
       selectedGenres.innerHTML = "";
       selectedChip.hidden = true;
@@ -2805,7 +2805,7 @@ export function initFilmAtlas(root: HTMLElement) {
           "Neighborhood",
           `${labelsByLayer.neighborhood.length.toLocaleString()} local regions`,
         ),
-        renderLabelPill("Microcluster", `${labelsByLayer.micro.length.toLocaleString()} tight film families`),
+        renderLabelPill("Micro cluster", `${labelsByLayer.micro.length.toLocaleString()} tight film families`),
       );
       return;
     }

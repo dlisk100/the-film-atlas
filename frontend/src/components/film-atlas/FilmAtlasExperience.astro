@@ -10,6 +10,15 @@ const { dataBase } = Astro.props;
   <section class="atlas-shell relative overflow-hidden border-b border-[#f2c46d]/15">
     <div class="atlas-page-field absolute inset-0"></div>
     <div class="atlas-app-frame relative mx-auto flex max-w-[1540px] flex-col">
+      <nav class="atlas-site-nav" aria-label="Project navigation">
+        <a class="atlas-site-home" href="/">The Film Atlas</a>
+        <div class="atlas-site-links" aria-label="Project sections">
+          <a href="#atlas-map">Map</a>
+          <a href="#atlas-method">Method</a>
+          <a href="#atlas-writeup">Build</a>
+        </div>
+      </nav>
+
       <header class="atlas-masthead">
         <div class="atlas-title-block">
           <p class="atlas-eyebrow">Film Microgenres Mapped</p>
@@ -31,14 +40,14 @@ const { dataBase } = Astro.props;
       </header>
 
       <div class="atlas-workspace">
-        <section class="atlas-map-panel" aria-label="Interactive movie map">
+        <section id="atlas-map" class="atlas-map-panel" aria-label="Interactive movie map">
           <div class="atlas-toolbar">
             <form class="atlas-search-form" data-atlas-search-form>
-              <label class="sr-only" for="film-atlas-search">Search by movie title</label>
               <input
                 id="film-atlas-search"
                 class="atlas-search-input"
                 data-atlas-search
+                aria-label="Search by movie title"
                 autocomplete="off"
                 placeholder="Search by movie title"
                 type="search"
@@ -47,7 +56,7 @@ const { dataBase } = Astro.props;
             </form>
 
             <div class="atlas-control-rack">
-              <span class="atlas-tier-pill" data-atlas-label-tier>Macro clusters</span>
+              <span class="atlas-tier-pill" data-atlas-label-tier>Macro regions</span>
               <div class="atlas-zoom-controls">
                 <button class="atlas-icon-button" type="button" data-atlas-zoom-out aria-label="Zoom out">-</button>
                 <button class="atlas-icon-button" type="button" data-atlas-zoom-in aria-label="Zoom in">+</button>
@@ -80,7 +89,7 @@ const { dataBase } = Astro.props;
             </p>
             <div class="atlas-genre-row" data-atlas-selected-genres></div>
             <p class="atlas-selected-overview" data-atlas-selected-overview>
-              Search for a movie or click any dot on the map to see where it lives in the atlas. Each film belongs to a nested semantic path: a broad region, a local neighborhood, and a tight microcluster.
+              Search for a movie or click any dot on the map to see where it lives in the atlas. Each film belongs to a nested semantic path: a broad region, a local neighborhood, and a tight micro cluster.
             </p>
 
             <div class="atlas-selected-labels" data-atlas-selected-labels></div>
@@ -95,7 +104,7 @@ const { dataBase } = Astro.props;
     </div>
   </section>
 
-  <section class="atlas-method-section">
+  <section id="atlas-method" class="atlas-method-section">
     <div class="atlas-method-grid">
       <div class="atlas-method-heading">
         <p class="atlas-eyebrow">How to read it</p>
@@ -106,10 +115,10 @@ const { dataBase } = Astro.props;
           Every dot is one film. The atlas maps 10,000 popular TMDb movies released from 1980 onward. At the widest zoom, it shows broad cinematic territories: crime worlds, family animation, dystopian futures, romance and becoming, survival dread, mythic spectacle, and more.
         </p>
         <p>
-          Zoom in and those territories split into neighborhoods. Zoom further and neighborhoods reveal microclusters: smaller groups of films with unusually similar themes, tone, story mechanics, or audience vibe.
+          Zoom in and those territories split into neighborhoods. Zoom further and neighborhoods reveal micro clusters: smaller groups of films with unusually similar themes, tone, story mechanics, or audience vibe.
         </p>
         <p>
-          Search for a film, click a dot, or follow a nearest neighbor to move through the map. The side panel shows the selected movie's macro region, neighborhood, microcluster, and closest semantic neighbors.
+          Search for a film, click a dot, or follow a nearest neighbor to move through the map. The side panel shows the selected movie's macro region, neighborhood, micro cluster, and closest semantic neighbors.
         </p>
         <p>
           Visual distance is a guide, not the whole truth. Nearest neighbors are calculated in the full semantic embedding space; the map is a browser-rendered projection designed to make that high-dimensional structure explorable.
@@ -132,13 +141,13 @@ const { dataBase } = Astro.props;
           Movies already have genres, but genre is blunt. A film can be comedy, horror, romance, or sci-fi and still belong to a stranger experiential family: lonely future intimacy, corporate satire, cozy mystery, survival dread, mythic spectacle, suburban paranoia, or slacker noir.
         </p>
         <p>
-          The Film Atlas asks whether cinema can be organized the way people often discover music: by texture, mood, story shape, and felt similarity. It is not a replacement for genre. It is a second map underneath it.
+          The Film Atlas asks whether cinema can be explored the way people often discover music: by texture, mood, story shape, and felt similarity. It is not a replacement for genre. It is a second map underneath it.
         </p>
       </div>
     </div>
   </section>
 
-  <section class="atlas-writeup-section">
+  <section id="atlas-writeup" class="atlas-writeup-section">
     <div class="atlas-writeup-inner">
       <div class="atlas-writeup-heading">
         <p class="atlas-eyebrow">How I built it</p>
@@ -159,7 +168,7 @@ const { dataBase } = Astro.props;
             The first version used the official TMDb API to build controlled movie profiles from titles, overviews, genres, keywords, and short review-language snippets.
           </p>
           <p>
-            That made the project viable as a public portfolio piece: no Letterboxd scraping, no IMDb review scraping, no private datasets, and no raw review text exposed in the browser. But the early profiles were too thin. They produced some good neighbors, but not enough depth for the kind of vibe map the interface wanted.
+            That made the project publishable: no Letterboxd scraping, no IMDb review scraping, no private datasets, and no raw review text exposed in the browser. But the early profiles were too thin. They produced some good neighbors, but not enough depth for the kind of vibe map the interface wanted.
           </p>
         </article>
 
@@ -192,10 +201,10 @@ const { dataBase } = Astro.props;
           <p class="atlas-writeup-step">04</p>
           <h3>Make the hierarchy real</h3>
           <p>
-            The biggest early failure was structural. Macro regions, neighborhoods, and microclusters originally behaved like separate layers that looked nested in the UI but were not always truly nested in the data.
+            The biggest early failure was structural. Macro regions, neighborhoods, and micro clusters originally behaved like separate layers that looked nested in the UI but were not always truly nested in the data.
           </p>
           <p>
-            The final system uses strict hierarchical clustering: cluster the full set into macro regions, cluster within each macro region into neighborhoods, then cluster within each neighborhood into microclusters. That means every film has one real path through the atlas: macro region -> neighborhood -> microcluster.
+            The final system uses strict hierarchical clustering: cluster the full set into macro regions, cluster within each macro region into neighborhoods, then cluster within each neighborhood into micro clusters. That means every film has one real path through the atlas: macro region -> neighborhood -> micro cluster.
           </p>
           <p>
             The geography is not just a visual effect. It is enforced by the data model.
@@ -209,7 +218,7 @@ const { dataBase } = Astro.props;
             The labels are the product surface. They are how people understand the map.
           </p>
           <p>
-            I used LLM-assisted labeling to generate names for regions, neighborhoods, and microclusters, but the goal was not to blindly accept whatever sounded clever. Labels had to be vivid enough to feel human and specific enough to be useful.
+            I used LLM-assisted labeling to generate names for regions, neighborhoods, and micro clusters, but the goal was not to blindly accept whatever sounded clever. Labels had to be vivid enough to feel human and specific enough to be useful.
           </p>
           <p>
             The guiding phrase became: poetic but accountable. A good label should be memorable, but it should also be supported by representative films, tags, cluster evidence, and nearest-neighbor behavior.
@@ -231,6 +240,87 @@ const { dataBase } = Astro.props;
         </article>
       </div>
 
+      <div class="atlas-writeup-split atlas-technical-section">
+        <div>
+          <p class="atlas-eyebrow">Technical implementation</p>
+          <h3>The public atlas is static. The semantic system is built offline.</h3>
+        </div>
+        <div class="atlas-writeup-copy">
+          <p>
+            The production page is intentionally simple: Astro serves sanitized JSON, and a custom Canvas renderer draws the atlas in the browser. There is no recommendation API, no model call, and no private data dependency on the public page. All of the expensive work happens ahead of time in an offline pipeline.
+          </p>
+          <p>
+            TMDb is the foundation for movie identity and metadata: titles, release years, overviews, genres, keywords, taglines, popularity signals, and stable IDs for matching. The MovieLens Tag Genome adds structured audience-perception signal through tag relevance scores, which helps the atlas capture vibe, tone, theme, and style more directly than genre fields alone. MPST contributes plot tags and controlled synopsis texture, giving thin TMDb summaries more narrative shape without letting long synopses overwhelm the representation.
+          </p>
+          <p>
+            Those sources are combined into semantic profiles: compact, source-balanced descriptions of what each film is about, how it feels, and what viewers tend to associate with it. The profiles are embedded with OpenAI embeddings, then used in two separate ways. Nearest neighbors are computed in the full embedding space, where semantic similarity is strongest. Clustering is also performed in embedding space, using a strict hierarchy: macro regions first, neighborhoods inside each macro region, and micro clusters inside each neighborhood.
+          </p>
+          <p>
+            Labels are generated with LLM assistance, but treated as a reviewable product layer rather than ground truth. The labeling pass uses cluster evidence, representative films, tags, and neighbor behavior to make names vivid enough for a public-facing atlas while keeping them inspectable. The final export keeps only what the browser needs: movie display fields, points, hierarchy records, labels, territory layouts, and neighbor shards. API keys, raw reviews, raw embeddings, and private experiment artifacts stay out of the static site.
+          </p>
+        </div>
+      </div>
+
+      <div class="atlas-experiment-block">
+        <div class="atlas-experiment-heading">
+          <p class="atlas-eyebrow">Experiments and tradeoffs</p>
+          <h3>What improved the atlas, and what did not.</h3>
+        </div>
+        <div class="atlas-experiment-table-wrap">
+          <table class="atlas-experiment-table">
+            <thead>
+              <tr>
+                <th scope="col">Area</th>
+                <th scope="col">Tradeoff</th>
+                <th scope="col">Final choice</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Data</th>
+                <td>Richer sources improved semantic texture, but scraped review ecosystems would weaken the public data story.</td>
+                <td>Use TMDb plus public MovieLens and MPST signals; avoid Letterboxd and IMDb scraping.</td>
+              </tr>
+              <tr>
+                <th scope="row">Profiles</th>
+                <td>More text was not automatically better; title-heavy or review-heavy profiles could create leakage and noise.</td>
+                <td>Build balanced semantic profiles from plot, theme, tone, tags, and controlled review/synopsis texture.</td>
+              </tr>
+              <tr>
+                <th scope="row">Clustering</th>
+                <td>Flat clusters were easier to generate, but made the UI imply a hierarchy the data did not fully support.</td>
+                <td>Use a strict macro region -> neighborhood -> micro cluster hierarchy so each film has one real atlas path.</td>
+              </tr>
+              <tr>
+                <th scope="row">Methods</th>
+                <td>A beautiful 2D projection can hide or distort high-dimensional relationships.</td>
+                <td>Compute neighbors and clusters in full embedding space; use the map as an explorable projection.</td>
+              </tr>
+              <tr>
+                <th scope="row">Labels</th>
+                <td>Purely literal labels felt flat; purely poetic labels could overstate the evidence.</td>
+                <td>Use LLM-assisted labels that are vivid, inspectable, and accountable to cluster evidence.</td>
+              </tr>
+              <tr>
+                <th scope="row">Validation</th>
+                <td>Semantic quality is partly subjective, so a single metric would be false confidence.</td>
+                <td>Combine structural scans, spot checks, large audits, failure-set rechecks, and browser QA.</td>
+              </tr>
+              <tr>
+                <th scope="row">UI</th>
+                <td>More explanation in the map surface added cognitive weight.</td>
+                <td>Keep the interaction lightweight and move deeper methodology lower on the page.</td>
+              </tr>
+              <tr>
+                <th scope="row">Frontend</th>
+                <td>A backend could make exploration more dynamic, but would add operational and privacy surface area.</td>
+                <td>Ship a static Astro + Canvas experience backed by sanitized JSON and lazy neighbor shards.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
       <div class="atlas-writeup-split">
         <div>
           <p class="atlas-eyebrow">Validation</p>
@@ -241,13 +331,19 @@ const { dataBase } = Astro.props;
             A semantic map is partly subjective, so validation could not be purely mathematical. I used a mix of known-film spot checks, cluster-label review, structural scans, large LLM-assisted audits, and targeted repairs.
           </p>
           <p>
-            The technical checks focused on whether the hierarchy was real, not merely visual: every movie needed one valid macro region, one neighborhood inside that macro region, and one microcluster inside that neighborhood. The export was also scanned for duplicate path labels, missing cluster assignments, malformed neighbor lists, and accidental leakage of private artifacts.
+            The technical checks focused on whether the hierarchy was real, not merely visual: every movie needed one valid macro region, one neighborhood inside that macro region, and one micro cluster inside that neighborhood. The export was also scanned for duplicate path labels, missing cluster assignments, malformed neighbor lists, and accidental leakage of private artifacts.
           </p>
           <p>
             Nearest-neighbor quality was checked separately from screen position. That mattered because the map is a projection: a point can look distant on the canvas while still being close in the full embedding space. Validation therefore compared selected films against their semantic neighbors, cluster memberships, labels, and visible territory placement as separate signals.
           </p>
           <p>
             Browser QA became part of the validation loop too. Search, zoom, selected-film panels, expandable cluster cards, labels, territory boundaries, and console health were all inspected against the sanitized static export so the public page stayed aligned with the offline pipeline.
+          </p>
+          <p>
+            The final public export contains 10,000 films, 946 labels, 16 macro regions, 180 neighborhoods, and 750 micro clusters. The hierarchy scan found no duplicate macro region/neighborhood/micro cluster path labels, and the browser export contains no API keys, raw reviews, or embeddings.
+          </p>
+          <p>
+            The largest audit before targeted repair scored 9,633 pass, 336 mixed, and 31 fail. After repair rules were applied to the failure set, the recheck found 22 pass, 9 mixed, and 0 fail. I treated audit results as directional quality checks, not as objective truth: evidence that the atlas is useful and inspectable, not proof of perfect classification.
           </p>
         </div>
       </div>
@@ -339,6 +435,49 @@ const { dataBase } = Astro.props;
   .atlas-app-frame {
     min-height: calc(100vh - 3.5rem);
     padding: clamp(1.1rem, 2vw, 2rem);
+  }
+
+  .atlas-site-nav {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    margin-bottom: clamp(1rem, 2vw, 1.55rem);
+    min-height: 2rem;
+  }
+
+  .atlas-site-home {
+    color: #fff8ea;
+    font-family: "Source Serif 4", ui-serif, Georgia, serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    line-height: 1;
+    text-decoration: none;
+    transition: color 160ms ease;
+  }
+
+  .atlas-site-links {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(0.8rem, 2vw, 1.25rem);
+    justify-content: flex-end;
+  }
+
+  .atlas-site-links a {
+    color: rgba(217, 199, 163, 0.72);
+    font-size: 0.82rem;
+    line-height: 1;
+    text-decoration: none;
+    transition: color 160ms ease;
+  }
+
+  .atlas-site-home:hover,
+  .atlas-site-home:focus-visible,
+  .atlas-site-links a:hover,
+  .atlas-site-links a:focus-visible {
+    color: #f2c46d;
+    outline: none;
   }
 
   .atlas-masthead {
@@ -1016,6 +1155,10 @@ const { dataBase } = Astro.props;
     padding-top: clamp(2rem, 4vw, 3rem);
   }
 
+  .atlas-technical-section {
+    margin-top: clamp(2.5rem, 5vw, 4rem);
+  }
+
   .atlas-writeup-copy {
     display: grid;
     gap: 1rem;
@@ -1023,6 +1166,61 @@ const { dataBase } = Astro.props;
 
   .atlas-writeup-copy p {
     margin: 0;
+  }
+
+  .atlas-experiment-block {
+    border-top: 1px solid rgba(242, 196, 109, 0.14);
+    display: grid;
+    gap: clamp(1.25rem, 2.5vw, 2rem);
+    margin-top: clamp(2.5rem, 5vw, 4rem);
+    padding-top: clamp(2rem, 4vw, 3rem);
+  }
+
+  .atlas-experiment-heading {
+    max-width: 42rem;
+  }
+
+  .atlas-experiment-heading h3 {
+    color: #fff8ea;
+    font-family: "Source Serif 4", ui-serif, Georgia, serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.08;
+    margin: 0.72rem 0 0;
+  }
+
+  .atlas-experiment-table-wrap {
+    overflow-x: auto;
+  }
+
+  .atlas-experiment-table {
+    border-collapse: collapse;
+    color: rgba(217, 199, 163, 0.84);
+    font-size: 0.88rem;
+    line-height: 1.55;
+    min-width: 48rem;
+    width: 100%;
+  }
+
+  .atlas-experiment-table th,
+  .atlas-experiment-table td {
+    border-bottom: 1px solid rgba(242, 196, 109, 0.12);
+    padding: 0.82rem 0.9rem;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .atlas-experiment-table thead th {
+    color: #68d8c5;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 0.66rem;
+    text-transform: uppercase;
+  }
+
+  .atlas-experiment-table tbody th {
+    color: #fff8ea;
+    font-weight: 600;
+    white-space: nowrap;
   }
 
   .atlas-lessons-grid {
